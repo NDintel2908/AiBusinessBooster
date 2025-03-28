@@ -1,4 +1,5 @@
 import { Link } from 'wouter';
+import BCPAILogo from './BCPAI.png';
 
 export default function Footer() {
   return (
@@ -11,9 +12,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 relative overflow-hidden mr-3">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-blue to-electric-purple rounded-lg opacity-80"></div>
-                <div className="absolute inset-0 flex items-center justify-center text-white font-orbitron font-bold">AI</div>
+              <div className="w-14 h-14 relative overflow-hidden mr-3">
+                <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
               </div>
               <h1 className="text-white font-orbitron text-xl font-bold tracking-wider">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Nexus</span>Match
