@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { useIsMobile } from "@/hooks/use-mobile";
+import BCPAILogo from "./BCPAI.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,9 +32,8 @@ export default function Header() {
     }`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="w-10 h-10 relative overflow-hidden mr-3">
-            <div className="absolute inset-0 bg-gradient-to-br from-neon-blue to-electric-purple rounded-lg opacity-80"></div>
-            <div className="absolute inset-0 flex items-center justify-center text-white font-orbitron font-bold">AI</div>
+          <div className="w-12 h-12 relative overflow-hidden mr-3">
+            <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-white font-orbitron text-xl md:text-2xl font-bold tracking-wider">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-electric-purple">Nexus</span>Match
