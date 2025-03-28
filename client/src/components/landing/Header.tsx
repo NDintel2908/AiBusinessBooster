@@ -36,7 +36,7 @@ export default function Header() {
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-white font-orbitron text-xl md:text-2xl font-bold tracking-wider">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-electric-purple">Nexus</span>Match
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-electric-purple"></span>
           </h1>
         </div>
         

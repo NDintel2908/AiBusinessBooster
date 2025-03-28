@@ -16,7 +16,7 @@ export default function Footer() {
                 <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
               </div>
               <h1 className="text-white font-orbitron text-xl font-bold tracking-wider">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Nexus</span>Match
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>
               </h1>
             </div>
             <p className="text-gray-400 mb-6">
