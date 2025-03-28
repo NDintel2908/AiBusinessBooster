@@ -30,9 +30,9 @@ export default function Header() {
     <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       isScrolled ? "bg-deep-dark/80 backdrop-blur-md border-b border-gray-700/20" : "bg-transparent"
     }`}>
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 relative overflow-hidden mr-3">
+          <div className="w-32 h-32 md:w-40 md:h-40 relative overflow-hidden mr-3" style={{ marginTop: '-24px', marginBottom: '-24px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-white font-orbitron text-xl md:text-2xl font-bold tracking-wider">

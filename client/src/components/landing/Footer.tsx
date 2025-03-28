@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center mb-6">
+            <div className="flex items-center">
               <div className="w-28 h-28 relative overflow-hidden mr-3">
                 <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
               </div>
@@ -19,7 +19,7 @@ export default function Footer() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>
               </h1>
             </div>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 mt-2 mb-6">
               Revolutionizing business connections through the power of artificial intelligence.
             </p>
             <p className="text-gray-500 text-sm">
