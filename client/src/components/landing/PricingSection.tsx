@@ -148,7 +148,7 @@ export default function PricingSection() {
             <span className="text-sm font-medium text-bright-teal">Pricing Plans</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
-            Choose the <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Right Plan</span> for Your Business
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span> Choose the right package for your Business
           </h2>
           <p className="text-gray-300">
             Select from our flexible pricing options designed to fit businesses of all sizes, from startups to enterprises.

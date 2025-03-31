@@ -140,7 +140,7 @@ export default function ChallengesSection() {
             <span className="text-sm font-medium text-neon-blue">B2B Challenges</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
-            Challenges of the <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B Market</span>
+            Challenges of the B2B market <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B Market</span>
           </h2>
           <p className="text-gray-300">
             Businesses today face significant obstacles when seeking the right partnerships. Our AI-powered platform addresses these pain points.

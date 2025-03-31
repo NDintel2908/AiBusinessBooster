@@ -76,7 +76,7 @@ export default function AboutSection() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Business Story</span>
             </h2>
             <p className="text-gray-300 mb-6">
-              Founded in 2021, NexusMatch was born from a simple observation: despite all the digital advances, finding the right business partners remained frustratingly inefficient and often came down to luck rather than data.
+              Founded in 2018, BCP was born from a simple observation: despite all the digital advances, finding the right business partners remained frustratingly inefficient and often came down to luck rather than data.
             </p>
             <p className="text-gray-300 mb-6">
               Our team of AI specialists, business analysts, and tech innovators set out to create a platform that would transform B2B connections through the power of artificial intelligence and data science.

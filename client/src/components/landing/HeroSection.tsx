@@ -56,7 +56,7 @@ export default function HeroSection() {
               variants={itemVariants}
               className="text-lg md:text-xl text-gray-300 max-w-2xl"
             >
-              Nền tảng kết nối doanh nghiệp thông minh, giúp bạn tìm kiếm đối tác nhanh chóng và chính xác hơn với AI.
+              An intelligent business matching platform that helps you find partners quickly and accurately with AI.
             </motion.p>
             
             <motion.div 

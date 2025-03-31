@@ -22,9 +22,7 @@ export default function Footer() {
             <p className="text-gray-400 mt-2 mb-6">
               Revolutionizing business connections through the power of artificial intelligence.
             </p>
-            <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} NexusMatch AI. All rights reserved.
-            </p>
+            
           </div>
           
           <div>
@@ -69,7 +67,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>Designed with ❤️ for businesses seeking meaningful connections.</p>
+          © {new Date().getFullYear()} Business Connecting Platform (BCP). All rights reserved.
         </div>
       </div>
     </footer>

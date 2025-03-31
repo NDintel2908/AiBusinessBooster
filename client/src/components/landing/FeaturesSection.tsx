@@ -96,7 +96,7 @@ export default function FeaturesSection() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Unique Selling Points</span>
           </h2>
           <p className="text-gray-300">
-            Our AI-powered platform revolutionizes how businesses connect, offering unprecedented matching precision and efficiency.
+            The 1st B2B AI Matching Agent
           </p>
         </motion.div>
         
@@ -110,8 +110,11 @@ export default function FeaturesSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                   </svg>
                 }
-                title="AI-Powered Matching"
-                description="Our proprietary AI algorithm analyzes over 200 data points to identify the most compatible business partners with 99% accuracy."
+                title="AI learns and intelligently connects you with the best-fit business partners"
+                description="Forget the endless meetings and the laborious partner-seeking efforts of traditional methods.
+
+                BCP AI learns and remembers every small detail about your business's information and demands. The robust AI technology will proactively suggest connections with the most suitable businesses. 
+                The more detailed the information - the more accurate the matching!"
               />
               
               <FeatureCard
@@ -121,8 +124,8 @@ export default function FeaturesSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                   </svg>
                 }
-                title="Verified Business Profiles"
-                description="Every business on our platform undergoes a thorough verification process, ensuring you only connect with legitimate, trusted partners."
+                title="Cut out the middleman - Direct access to the highest authority"
+                description="Eliminate intermediaries - BCP AI provides a streamlined route to connect directly with the final authority - where deals are finalized."
               />
               
               <FeatureCard
@@ -132,9 +135,22 @@ export default function FeaturesSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                   </svg>
                 }
-                title="Real-time Insights"
-                description="Our dashboard provides live market intelligence and compatibility metrics, helping you make informed decisions quickly."
+                title="Top-tier security"
+                description="Your data security is our priority.
+                At BCP, we implement robust technical and organizational measures to protect user data, following industry best practices in cloud infrastructure, access control, and encryption. While BCP is actively working toward internationally recognized security certifications, we already maintain strict internal policies to ensure the confidentiality, integrity, and availability of your information."
               />
+
+              <FeatureCard
+                index={1}
+                icon={
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  </svg>
+                }
+                title="Borderless connections"
+                description="BCP is not just a bridge, but also a springboard for businesses that dare to dream big - to expand internationally. From the dynamic pace of life in Vietnam, reaching out to the advanced Japanese market, and spreading throughout Southeast Asia - we are a strategic bridge that helps your business transcend geographical boundaries."
+              />
+              
             </div>
           </div>
           
