@@ -11,8 +11,8 @@ export default function Footer() {
       <div className="container mx-auto px-4 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center">
-              <div className="w-56 h-56 relative overflow-hidden mr-3">
+            <div>
+              <div className="w-40 h-40 relative overflow-hidden mb-2">
                 <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
               </div>
               <h1 className="text-white font-orbitron text-xl font-bold tracking-wider">
