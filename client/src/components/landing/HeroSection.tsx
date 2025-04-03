@@ -49,14 +49,14 @@ export default function HeroSection() {
               variants={itemVariants}
               className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold leading-tight text-white"
             >
-              Revolutionizing <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B Connections</span> with AI
+              Connect with AI
             </motion.h1>
             
             <motion.p 
               variants={itemVariants}
               className="text-lg md:text-xl text-gray-300 max-w-2xl"
             >
-              An intelligent business matching platform that helps you find partners quickly and accurately with AI.
+              Remove Obstacles. Simplify B2B Connections. With BCP, Engage Directly with Final Decision-Makers
             </motion.p>
             
             <motion.div 
