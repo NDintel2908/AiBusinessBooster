@@ -136,7 +136,7 @@ export default function ChallengesSection() {
             }
           }}
         >
-          <div className="flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4 w-fit">
+          <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
             <span className="text-sm font-medium text-neon-blue">B2B Challenges</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
