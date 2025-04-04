@@ -42,21 +42,21 @@ export default function HeroSection() {
               className="inline-flex items-center px-3 py-1 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-bright-teal animate-pulse mr-2"></span>
-              <span className="text-sm font-medium text-bright-teal">AI-Powered Business Matching</span>
+              <span className="text-sm font-medium text-bright-teal">The 1st AI B2B Matching Agent</span>
             </motion.div>
             
             <motion.h1 
               variants={itemVariants}
               className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold leading-tight text-white"
             >
-              Connect with AI
+              Simplify B2B Connections
             </motion.h1>
             
             <motion.p 
               variants={itemVariants}
               className="text-lg md:text-xl text-gray-300 max-w-2xl"
             >
-              Remove Obstacles. Simplify B2B Connections. With BCP, Engage Directly with Final Decision-Makers
+              BCP is a premier AI-powered B2B connecting platform, enabling real-time global transactions and scaling revenue through intelligent connections.
             </motion.p>
             
             <motion.div 

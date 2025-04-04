@@ -31,7 +31,7 @@ export default function AboutSection() {
           >
             <GlassCard className="rounded-2xl p-3 relative">
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                src="https://cdnmedia.baotintuc.vn/Upload/r2ZmuVn2vsFEWUzMUAXAg/files/2024/12/startupVoetNhat.jpg" 
                 alt="Our Team" 
                 className="w-full h-auto rounded-xl"
               />
