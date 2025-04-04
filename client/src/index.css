@@ -11,3 +11,56 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+@layer components {
+  /* Custom accordion animations */
+  @keyframes accordionDown {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  
+  @keyframes accordionUp {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  
+  .animate-accordion-down {
+    animation: accordionDown 300ms ease-out;
+  }
+  
+  .animate-accordion-up {
+    animation: accordionUp 200ms ease-out;
+  }
+  
+  /* Enhanced accordion item hover effect */
+  .faq-accordion-item {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .faq-accordion-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .faq-accordion-item:hover::before {
+    opacity: 1;
+  }
+}

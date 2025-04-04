@@ -1,34 +1,90 @@
 
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import { cn } from "@/lib/utils";
+
+// Custom Accordion components
+const Accordion = AccordionPrimitive.Root;
+
+const AccordionItem = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
+>(({ className, ...props }, ref) => (
+  <AccordionPrimitive.Item
+    ref={ref}
+    className={cn(
+      "overflow-hidden rounded-xl mb-4 bg-black/20 border border-gray-800/50 backdrop-blur-sm transition-all duration-200 hover:border-electric-purple/30 group faq-accordion-item", 
+      className
+    )}
+    {...props}
+  />
+));
+AccordionItem.displayName = "AccordionItem";
+
+const AccordionTrigger = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Header className="flex">
+    <AccordionPrimitive.Trigger
+      ref={ref}
+      className={cn(
+        "flex flex-1 items-center justify-between p-5 font-medium text-white transition-all duration-300 group-hover:text-neon-blue",
+        className
+      )}
+      {...props}
+    >
+      <span className="text-left font-semibold">{children}</span>
+      <div className="relative flex h-5 w-5 items-center justify-center">
+        <span className="absolute h-0.5 w-3 bg-current transition-transform duration-300 data-[state=open]:rotate-0 data-[state=closed]:rotate-0" />
+        <span className="absolute h-0.5 w-3 bg-current rotate-90 transition-transform duration-300 data-[state=open]:rotate-0" />
+      </div>
+    </AccordionPrimitive.Trigger>
+  </AccordionPrimitive.Header>
+));
+AccordionTrigger.displayName = "AccordionTrigger";
+
+const AccordionContent = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Content
+    ref={ref}
+    className={cn(
+      "overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+      className
+    )}
+    {...props}
+  >
+    <div className="px-5 pb-5 pt-0 text-gray-400 leading-relaxed">
+      {children}
+    </div>
+  </AccordionPrimitive.Content>
+));
+AccordionContent.displayName = "AccordionContent";
 
 const faqItems = [
   {
-    question: "What countries can Arrowster support me apply to?",
-    answer: "We support applications to universities in major educational destinations worldwide, including the USA, UK, Canada, Australia, and many European countries. Our network of mentors has experience with institutions across these regions."
+    question: "How does NexusMatch's AI technology work?",
+    answer: "Our proprietary AI algorithm analyzes thousands of data points from both businesses to identify complementary strengths, needs, and growth opportunities. It evaluates factors like industry synergy, business goals, resource capabilities, and market positioning to suggest the most promising partnerships with over 90% match accuracy."
   },
   {
-    question: "What can Arrowster mentors help me with?",
-    answer: "Our mentors provide comprehensive support including university selection, application strategy, essay review, scholarship applications, interview preparation, and guidance on required documentation. They're experienced professionals who've helped many students succeed."
+    question: "What types of businesses can benefit from NexusMatch?",
+    answer: "NexusMatch caters to businesses of all sizes and industries - from startups and SMEs to large enterprises. Our platform is particularly valuable for companies looking to expand their network, enter new markets, find strategic suppliers, identify investment opportunities, or secure distribution partnerships."
   },
   {
-    question: "How many schools will Arrowster help me apply to?",
-    answer: "We typically help students apply to 6-10 schools, carefully selected based on their academic profile, career goals, and preferences. This range ensures a balanced portfolio of reach, target, and safety schools."
+    question: "How long does it take to find relevant business matches?",
+    answer: "Most users receive their first batch of high-quality matches within 48 hours of completing their profile. Our AI continuously works in the background to identify new potential matches as they join the platform, meaning you'll receive fresh opportunities regularly without any additional effort."
   },
   {
-    question: "What's the cost to work with Arrowster?",
-    answer: "Our pricing varies based on the level of support needed and number of applications. We offer flexible packages to accommodate different needs and budgets. Contact us for a personalized quote."
+    question: "Is my business information kept confidential?",
+    answer: "Absolutely. We take data privacy extremely seriously. You control exactly what information is visible to potential matches, and all sensitive business data is encrypted and protected. We never sell your information to third parties, and you can request complete deletion of your data at any time."
   },
   {
-    question: "Will I work with you online or offline?",
-    answer: "We offer both online and offline consultation options. While most of our services are delivered through our advanced online platform, we can arrange in-person meetings in select locations when needed."
+    question: "What makes NexusMatch different from traditional networking platforms?",
+    answer: "Unlike traditional platforms that rely on manual searching or basic keyword matching, NexusMatch uses advanced AI to proactively identify optimal business partnerships based on deep compatibility analysis. Our platform eliminates the guesswork and countless hours typically spent on networking, dramatically increasing your chances of finding transformative business relationships."
   }
 ];
 
@@ -44,7 +100,7 @@ export default function FAQSection() {
   }, [controls, isInView]);
   
   return (
-    <section className="py-20 relative">
+    <section id="faq" className="py-20 relative">
       <div className="absolute inset-0 z-0 opacity-30">
         <div className="absolute top-1/4 right-1/4 w-1/3 h-1/3 bg-electric-purple opacity-10 blur-[120px] rounded-full"></div>
       </div>
@@ -61,10 +117,10 @@ export default function FAQSection() {
           }}
         >
           <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
-            Frequently asked questions
+            Frequently Asked Questions
           </h2>
           <p className="text-gray-400">
-            Curious about choosing the right university or securing scholarships? We've got you covered!
+            Get answers to common questions about our AI-powered business matching platform
           </p>
         </motion.div>
         
@@ -80,12 +136,11 @@ export default function FAQSection() {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border-b border-gray-700 last:border-0"
               >
-                <AccordionTrigger className="text-white hover:no-underline">
+                <AccordionTrigger>
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-400">
+                <AccordionContent>
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
