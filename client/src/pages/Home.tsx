@@ -7,6 +7,7 @@ import AboutSection from "@/components/landing/AboutSection";
 import PricingSection from "@/components/landing/PricingSection";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
+import FAQSection from "@/components/landing/FAQSection"; // Import the new component
 
 export default function Home() {
   return (
@@ -16,9 +17,9 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-electric-purple opacity-10 blur-[150px] rounded-full"></div>
         <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-neon-blue opacity-10 blur-[150px] rounded-full"></div>
       </div>
-      
+
       <Header />
-      
+
       <main>
         <Suspense fallback={<div>Loading...</div>}>
           <HeroSection />
@@ -26,10 +27,11 @@ export default function Home() {
           <FeaturesSection />
           <AboutSection />
           <PricingSection />
+          <FAQSection /> {/* Added FAQSection */}
           <ContactSection />
         </Suspense>
       </main>
-      
+
       <Footer />
     </div>
   );
