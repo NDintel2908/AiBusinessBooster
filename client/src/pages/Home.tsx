@@ -3,6 +3,7 @@ import Header from "@/components/landing/Header";
 import HeroSection from "@/components/landing/HeroSection";
 import ChallengesSection from "@/components/landing/ChallengesSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
+import ServiceSection from "@/components/landing/ServiceSection";
 import AboutSection from "@/components/landing/AboutSection";
 import PricingSection from "@/components/landing/PricingSection";
 import ContactSection from "@/components/landing/ContactSection";
@@ -24,6 +25,7 @@ export default function Home() {
         <Suspense fallback={<div>Loading...</div>}>
           <HeroSection />
           <ChallengesSection />
+          <ServiceSection />
           <FeaturesSection />
           <AboutSection />
           <PricingSection />
