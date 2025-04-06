@@ -37,10 +37,10 @@ export default function ServiceSection() {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-[2.5rem] font-bold text-white mb-4">
-            How Arrowster supports you & what makes us unique
+            How BCP supports you & what makes us unique
           </h2>
           <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto">
-            Discover the exceptional support and unique advantages that set Arrowster apart in your study abroad journey.
+            Discover the exceptional support and unique advantages that set BCP apart in your business stories.
           </p>
         </div>
 
@@ -53,26 +53,38 @@ export default function ServiceSection() {
           >
             <Accordion.Root type="single" defaultValue="career" className="space-y-2">
               <ServiceAccordionItem 
-                value="career" 
-                title="Career Orientation"
+                value="AI intelligence" 
+                title="AI intelligently connects you with ideal business partners"
                 isExpanded={true}
               >
-                Our expert counselors work closely with you to explore your interests, strengths, and career aspirations. We provide comprehensive career guidance and help you align your study abroad goals with your professional future.
+                Forget the endless meetings and the laborious partner-seeking efforts of traditional methods.
+
+                BCP AI learns and remembers every small detail about your business's information and demands. The robust AI technology will proactively suggest connections with the most suitable businesses. 
+                The more detailed the information - the more accurate the matching!
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
-                value="selection" 
-                title="School Selection & Scholarship Assistance"
+                value="cutoff" 
+                title="Cut out the middleman - Direct access to the highest authority"
               >
-                We help you identify the best-fit universities and programs while maximizing your scholarship opportunities through our extensive network of partner institutions.
+                Eliminate intermediaries - BCP AI provides a streamlined route to connect directly with the final authority - where deals are finalized.
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
-                value="application" 
-                title="Application Preparation"
+                value="security" 
+                title="Top-tier security"
               >
-                From personal statements to recommendation letters, we guide you through every step of the application process with personalized support and expert feedback.
+                Your data security is our priority.
+                At BCP, we implement robust technical and organizational measures to protect user data, following industry best practices in cloud infrastructure, access control, and encryption. While BCP is actively working toward internationally recognized security certifications, we already maintain strict internal policies to ensure the confidentiality, integrity, and availability of your information.
               </ServiceAccordionItem>
+
+              <ServiceAccordionItem 
+                value="connection" 
+                title="Borderless connections"
+              >
+                BCP is not just a "bridge", but also a "springboard" for businesses that dare to dream big - to expand internationally. From the dynamic pace of life in Vietnam, reaching out to the advanced Japanese market, and spreading throughout Southeast Asia - we are a strategic bridge that helps your business transcend geographical boundaries.
+              </ServiceAccordionItem>
+              
             </Accordion.Root>
           </motion.div>
 
