@@ -29,10 +29,10 @@ export default function FeaturesSection() {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
           <h2 className="font-sans text-[3rem] font-semibold text-[#0066cc] mb-2">
-            Arrowster in Numbers
+            BCP in Numbers
           </h2>
           <p className="text-[1.2rem] text-[#4a90e2]">
-            A data-driven look at our student success and partnerships
+            A data-driven look at our company success and partnerships
           </p>
         </div>
 
@@ -44,8 +44,8 @@ export default function FeaturesSection() {
             viewport={{ once: true }}
           >
             <StatItem 
-              number="500"
-              description="Students have worked with Arrowster"
+              number="2268"
+              description="Members"
             />
           </motion.div>
 
@@ -56,8 +56,8 @@ export default function FeaturesSection() {
             viewport={{ once: true }}
           >
             <StatItem 
-              number="2000"
-              description="Partner schools in the US, Australia, Canada, and Europe"
+              number="1654"
+              description="Connections"
             />
           </motion.div>
 
@@ -68,8 +68,8 @@ export default function FeaturesSection() {
             viewport={{ once: true }}
           >
             <StatItem 
-              number="4"
-              description="Countries with a team of 30 members"
+              number="7"
+              description="Years of Experience"
             />
           </motion.div>
         </div>
