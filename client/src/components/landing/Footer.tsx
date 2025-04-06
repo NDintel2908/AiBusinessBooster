@@ -12,10 +12,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div>
-              <div className="w-40 h-40 relative overflow-hidden mb-2">
+              <div className="w-40 h-40 relative overflow-hidden mb-2 logo">
                 <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
               </div>
-              <h1 className="text-white font-orbitron text-xl font-bold tracking-wider">
+              <h1 className="text-white font-orbitron text-xl font-bold tracking-wider hero-title">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>
               </h1>
             </div>

@@ -67,16 +67,22 @@ AccordionContent.displayName = "AccordionContent";
 
 const faqItems = [
   {
-    question: "How does NexusMatch's AI technology work?",
-    answer: "Our proprietary AI algorithm analyzes thousands of data points from both businesses to identify complementary strengths, needs, and growth opportunities. It evaluates factors like industry synergy, business goals, resource capabilities, and market positioning to suggest the most promising partnerships with over 90% match accuracy."
+    question: "BCP là gì?",
+    answer: `BCP - Business Connecting Platform được phát triển bởi Công ty Cổ phần BCP.
+
+    Nền tảng BCP là một hệ sinh thái kỹ thuật số tiên tiến, kết nối hàng nghìn doanh nghiệp trên khắp thế giới. Chúng tôi tạo ra cơ hội để các công ty:
+
+    1. Tìm kiếm đối tác mua bán sản phẩm/dịch vụ
+    2. Khám phá cơ hội hợp tác đầu tư
+    3. Mở rộng mạng lưới kinh doanh quốc tế`
   },
   {
-    question: "What types of businesses can benefit from NexusMatch?",
-    answer: "NexusMatch caters to businesses of all sizes and industries - from startups and SMEs to large enterprises. Our platform is particularly valuable for companies looking to expand their network, enter new markets, find strategic suppliers, identify investment opportunities, or secure distribution partnerships."
+    question: "BCP phục vụ được bao nhiêu ngành nghề, lĩnh vực?",
+    answer: "Cho đến nay chúng tôi không đặt ra bất kỳ giới hạn nào đối với các ngành nghề, lĩnh vực kinh doanh hợp pháp."
   },
   {
-    question: "How long does it take to find relevant business matches?",
-    answer: "Most users receive their first batch of high-quality matches within 48 hours of completing their profile. Our AI continuously works in the background to identify new potential matches as they join the platform, meaning you'll receive fresh opportunities regularly without any additional effort."
+    question: "Dữ liệu của tôi và công ty có được bảo mật khi dùng nền tảng này không?",
+    answer: "Dữ liệu của bạn và công ty được bảo mật nghiêm ngặt khi sử dụng nền tảng này. Chúng tôi sử dụng mã hóa TLS để bảo vệ đường truyền dữ liệu, dữ liệu được lưu trữ trong cơ sở dữ liệu mã hóa và máy chủ được đặt trong mạng riêng, đảm bảo an toàn. Ngoài ra, tường lửa chặn các IP độc hại và các nhu cầu tấn công phổ biến như SQL injection, giúp bảo vệ dữ liệu của bạn khỏi các mối đe dọa."
   },
   {
     question: "Is my business information kept confidential?",

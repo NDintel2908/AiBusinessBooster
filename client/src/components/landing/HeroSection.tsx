@@ -47,7 +47,7 @@ export default function HeroSection() {
             
             <motion.h1 
               variants={itemVariants}
-              className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold leading-tight text-white"
+              className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold leading-tight text-white hero-title"
             >
               Simplify B2B Connections
             </motion.h1>
@@ -63,8 +63,8 @@ export default function HeroSection() {
               variants={itemVariants}
               className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6"
             >
-              <GradientButton size="lg" animate>Get Started</GradientButton>
-              <GradientButton size="lg" variant="outline">
+              <GradientButton size="lg" animate className="cta-button">Get Started</GradientButton>
+              <GradientButton size="lg" variant="outline" className="cta-button">
                 <span className="flex items-center justify-center">
                   <span>How it works</span>
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

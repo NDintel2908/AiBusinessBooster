@@ -32,10 +32,10 @@ export default function Header() {
     }`}>
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 relative overflow-hidden mr-3" style={{ marginTop: '-24px', marginBottom: '-24px' }}>
+          <div className="w-32 h-32 md:w-40 md:h-40 relative overflow-hidden mr-3 logo" style={{ marginTop: '-24px', marginBottom: '-24px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
-          <h1 className="text-white font-orbitron text-xl md:text-2xl font-bold tracking-wider">
+          <h1 className="text-white font-orbitron text-xl md:text-2xl font-bold tracking-wider hero-title">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-electric-purple"></span>
           </h1>
         </div>
@@ -97,7 +97,7 @@ export default function Header() {
           </a>
           <a 
             href="#contact" 
-            className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-white font-medium text-center"
+            className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-white font-medium text-center cta-button"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Get Started
