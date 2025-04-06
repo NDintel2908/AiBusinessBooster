@@ -95,11 +95,11 @@ export default function ServiceSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="overflow-hidden rounded-xl bg-sky-50/5">
+            <div className="overflow-hidden rounded-xl bg-sky-50/5 p-6">
               <img 
                 src="/src/components/landing/Service.png"
-                alt="Asian student in urban environment"
-                className="w-full h-[500px] object-cover"
+                alt="Service illustration"
+                className="w-full h-[500px] object-contain mix-blend-lighten opacity-90"
               />
             </div>
           </motion.div>
