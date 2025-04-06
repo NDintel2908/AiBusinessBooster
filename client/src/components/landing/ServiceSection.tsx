@@ -85,7 +85,7 @@ export default function ServiceSection() {
           >
             <div className="overflow-hidden rounded-xl bg-sky-50/5">
               <img 
-                src="Service.png"
+                src="/src/components/landing/Service.png"
                 alt="Asian student in urban environment"
                 className="w-full h-[500px] object-cover"
               />
