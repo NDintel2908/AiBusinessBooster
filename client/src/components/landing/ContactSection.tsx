@@ -26,38 +26,21 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      // Use the enhanced apiRequest function from queryClient.ts
-      // This handles both local development and Vercel deployment
-      const response = await apiRequest('POST', '/api', formData);
-      
-      // Parse response
-      const data = await response.json();
-      
-      if (data.success) {
-        toast({
-          title: "Success!",
-          description: "Your inquiry has been submitted successfully.",
-        });
-        // Reset form
-        setFormData({
-          name: "",
-          email: "",
-          company: "",
-          requirements: ""
-        });
-      } else {
-        // Display error message from server
-        const errorMessage = data.message || "Failed to submit your inquiry";
-        throw new Error(errorMessage);
-      }
-    } catch (error: any) {
-      console.error("Contact form submission error:", error);
-      // Extract error message if available
-      const errorMessage = error.message || "Failed to submit your inquiry. Please try again.";
-      
+      await apiRequest("POST", "/api/contact", formData);
+      toast({
+        title: "Success!",
+        description: "Your inquiry has been submitted successfully.",
+      });
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        requirements: ""
+      });
+    } catch (error) {
       toast({
         title: "Error",
-        description: errorMessage,
+        description: "Failed to submit your inquiry. Please try again.",
         variant: "destructive"
       });
     } finally {
