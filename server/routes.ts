@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { z } from "zod";
-import { contactSchema } from "@shared/schema";
+import { contactSchema } from "../shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission API endpoint

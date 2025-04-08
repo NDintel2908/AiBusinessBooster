@@ -26,18 +26,27 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      await apiRequest("POST", "/api/contact", formData);
-      toast({
-        title: "Success!",
-        description: "Your inquiry has been submitted successfully.",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        requirements: ""
-      });
+      // Trong môi trường production (Vercel), sử dụng /api endpoint 
+      const endpoint = process.env.NODE_ENV === 'production' ? '/api' : '/api/contact';
+      const response = await apiRequest("POST", endpoint, formData);
+      const data = await response.json();
+      
+      if (data.success) {
+        toast({
+          title: "Success!",
+          description: "Your inquiry has been submitted successfully.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          requirements: ""
+        });
+      } else {
+        throw new Error(data.message || "Unknown error occurred");
+      }
     } catch (error) {
+      console.error("Contact form submission error:", error);
       toast({
         title: "Error",
         description: "Failed to submit your inquiry. Please try again.",
