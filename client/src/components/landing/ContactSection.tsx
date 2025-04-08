@@ -26,9 +26,19 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      // Trong môi trường production (Vercel), sử dụng /api endpoint 
-      const endpoint = process.env.NODE_ENV === 'production' ? '/api' : '/api/contact';
-      const response = await apiRequest("POST", endpoint, formData);
+      // Sử dụng endpoint API cho môi trường production hoặc development
+      const apiEndpoint = '/api';
+      
+      // Gửi request
+      const response = await fetch(apiEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      // Parse response
       const data = await response.json();
       
       if (data.success) {
@@ -36,6 +46,7 @@ export default function ContactSection() {
           title: "Success!",
           description: "Your inquiry has been submitted successfully.",
         });
+        // Reset form
         setFormData({
           name: "",
           email: "",
@@ -43,7 +54,9 @@ export default function ContactSection() {
           requirements: ""
         });
       } else {
-        throw new Error(data.message || "Unknown error occurred");
+        // Hiển thị error message từ server
+        const errorMessage = data.message || "Failed to submit your inquiry";
+        throw new Error(errorMessage);
       }
     } catch (error) {
       console.error("Contact form submission error:", error);
