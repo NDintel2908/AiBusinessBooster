@@ -26,17 +26,9 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      // Sử dụng endpoint API cho môi trường production hoặc development
-      const apiEndpoint = '/api';
-      
-      // Gửi request
-      const response = await fetch(apiEndpoint, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
+      // Use the enhanced apiRequest function from queryClient.ts
+      // This handles both local development and Vercel deployment
+      const response = await apiRequest('POST', '/api', formData);
       
       // Parse response
       const data = await response.json();
@@ -54,15 +46,18 @@ export default function ContactSection() {
           requirements: ""
         });
       } else {
-        // Hiển thị error message từ server
+        // Display error message from server
         const errorMessage = data.message || "Failed to submit your inquiry";
         throw new Error(errorMessage);
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error("Contact form submission error:", error);
+      // Extract error message if available
+      const errorMessage = error.message || "Failed to submit your inquiry. Please try again.";
+      
       toast({
         title: "Error",
-        description: "Failed to submit your inquiry. Please try again.",
+        description: errorMessage,
         variant: "destructive"
       });
     } finally {

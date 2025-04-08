@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "/api(/?.*)",
+      "dest": "/api/index.js"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/(.*).png$",
+      "dest": "/$1.png"
+    },
+    {
+      "src": "^/(.*).jpg$",
+      "dest": "/$1.jpg"
+    },
+    {
+      "src": "^/(.*).svg$",
+      "dest": "/$1.svg"
+    },
+    {
+      "src": "^/(.*).ico$",
+      "dest": "/$1.ico"
+    },
+    {
+      "src": "^/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

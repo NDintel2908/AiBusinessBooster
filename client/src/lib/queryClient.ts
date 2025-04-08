@@ -2,9 +2,33 @@ import { QueryClient, QueryFunction } from "@tanstack/react-query";
 
 async function throwIfResNotOk(res: Response) {
   if (!res.ok) {
-    const text = (await res.text()) || res.statusText;
-    throw new Error(`${res.status}: ${text}`);
+    let errorMessage: string;
+    try {
+      // Try to parse error as JSON first
+      const errorData = await res.json();
+      errorMessage = errorData.message || JSON.stringify(errorData);
+    } catch {
+      // If not JSON, get as text
+      errorMessage = await res.text() || res.statusText;
+    }
+    throw new Error(`API Error (${res.status}): ${errorMessage}`);
   }
+}
+
+// Determine if we're in a Vercel production environment or local environment
+const isVercelProduction = typeof window !== 'undefined' && window.location.hostname.includes('vercel');
+
+// Helper to build API URLs, accounting for Vercel deployment
+export function getApiUrl(path: string): string {
+  // Remove leading slash if present for consistency
+  const cleanPath = path.startsWith('/') ? path.substring(1) : path;
+  
+  // For API routes in Vercel, use the absolute path
+  if (isVercelProduction && cleanPath.startsWith('api')) {
+    return `/${cleanPath}`;
+  }
+  
+  return cleanPath;
 }
 
 export async function apiRequest(
@@ -13,7 +37,10 @@ export async function apiRequest(
   data?: unknown | undefined,
 ): Promise<Response> {
   try {
-    const res = await fetch(url, {
+    // Get the full API URL, accounting for Vercel deployment
+    const fullUrl = url.startsWith('http') ? url : getApiUrl(url);
+    
+    const res = await fetch(fullUrl, {
       method,
       headers: data ? { "Content-Type": "application/json" } : {},
       body: data ? JSON.stringify(data) : undefined,
@@ -27,7 +54,7 @@ export async function apiRequest(
     
     return res;
   } catch (error) {
-    console.error("API request error:", error);
+    console.error(`API Request Error (${method} ${url}):`, error);
     throw error;
   }
 }
@@ -38,16 +65,25 @@ export const getQueryFn: <T>(options: {
 }) => QueryFunction<T> =
   ({ on401: unauthorizedBehavior }) =>
   async ({ queryKey }) => {
-    const res = await fetch(queryKey[0] as string, {
-      credentials: "include",
-    });
+    // Get the full API URL, accounting for Vercel deployment
+    const url = queryKey[0] as string;
+    const fullUrl = url.startsWith('http') ? url : getApiUrl(url);
+    
+    try {
+      const res = await fetch(fullUrl, {
+        credentials: "include",
+      });
 
-    if (unauthorizedBehavior === "returnNull" && res.status === 401) {
-      return null;
+      if (unauthorizedBehavior === "returnNull" && res.status === 401) {
+        return null;
+      }
+
+      await throwIfResNotOk(res);
+      return await res.json();
+    } catch (error) {
+      console.error(`Query Error (${url}):`, error);
+      throw error;
     }
-
-    await throwIfResNotOk(res);
-    return await res.json();
   };
 
 export const queryClient = new QueryClient({
@@ -56,11 +92,11 @@ export const queryClient = new QueryClient({
       queryFn: getQueryFn({ on401: "throw" }),
       refetchInterval: false,
       refetchOnWindowFocus: false,
-      staleTime: Infinity,
-      retry: false,
+      staleTime: 5 * 60 * 1000, // 5 minutes
+      retry: 1,
     },
     mutations: {
-      retry: false,
+      retry: 1,
     },
   },
 });

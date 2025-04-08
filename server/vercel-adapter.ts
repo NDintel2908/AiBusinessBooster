@@ -1,5 +1,6 @@
 import { Express } from 'express';
 import { log } from './vite';
+import path from 'path';
 
 /**
  * Cấu hình Express app cho môi trường Vercel
@@ -13,14 +14,25 @@ export function setupVercelAdapter(app: Express): Express {
   if (isVercel) {
     log('Running on Vercel environment', 'vercel-adapter');
     
-    // Cấu hình các header bảo mật
+    // Set CORS headers for Vercel environment
     app.use((req, res, next) => {
+      // Set security headers
       res.setHeader('X-Powered-By', 'NexusMatch AI');
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+      res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+      
+      // Handle OPTIONS method
+      if (req.method === 'OPTIONS') {
+        return res.status(200).end();
+      }
+      
       next();
     });
     
-    // Đặt app trong chế độ production khi chạy trên Vercel
+    // Set production mode on Vercel
     app.set('env', 'production');
+    process.env.NODE_ENV = 'production';
   }
   
   return app;
