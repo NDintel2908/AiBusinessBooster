@@ -52,8 +52,8 @@ export default function AboutSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Customer Satisfaction</p>
-                    <p className="text-xs text-gray-400">98% positive feedback</p>
+                    <p className="text-white font-medium">Hài lòng khách hàng</p>
+                    <p className="text-xs text-gray-400">98% phản hồi tích cực</p>
                   </div>
                 </div>
               </GlassCard>
@@ -70,10 +70,10 @@ export default function AboutSection() {
             }}
           >
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-              <span className="text-sm font-medium text-neon-blue">Our Story</span>
+              <span className="text-sm font-medium text-neon-blue">Câu chuyện của chúng tôi</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Business Story</span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Câu chuyện doanh nghiệp</span>
             </h2>
             <p className="text-gray-300 mb-6">
               BCP được thành lập vào năm 2018 từ một nhận định đơn giản: dù công nghệ số đã phát triển mạnh mẽ, việc tìm kiếm đối tác kinh doanh phù hợp vẫn còn quá kém hiệu quả – và phần lớn dựa vào may rủi hơn là dữ liệu.
@@ -91,7 +91,7 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2 } }
               }}
             >
-              <h3 className="text-xl font-orbitron font-semibold mb-4 text-white">Tầm nhìn</h3>
+              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Tầm nhìn</h3>
               <p className="text-gray-300">
                 Chúng tôi hướng tới một thế giới nơi mọi doanh nghiệp đều tìm thấy đối tác lý tưởng của mình – từ đó thúc đẩy đổi mới và tăng trưởng cho toàn bộ nền kinh tế toàn cầu.
               </p>
@@ -103,7 +103,7 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.4 } }
               }}
             >
-              <h3 className="text-xl font-orbitron font-semibold mb-4 text-white">Sứ mạng</h3>
+              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Sứ mạng</h3>
               <p className="text-gray-300">
                 Chúng tôi ứng dụng công nghệ AI tiên tiến nhằm xóa bỏ mọi rào cản khiến doanh nghiệp khó tìm thấy đối tác phù hợp – mở ra cơ hội hợp tác hiệu quả và bền vững cho mọi tổ chức, dù lớn hay nhỏ.
               </p>

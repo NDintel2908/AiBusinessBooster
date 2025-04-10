@@ -85,8 +85,8 @@ const faqItems = [
     answer: "Dữ liệu của bạn và công ty được bảo mật nghiêm ngặt khi sử dụng nền tảng này. Chúng tôi sử dụng mã hóa TLS để bảo vệ đường truyền dữ liệu, dữ liệu được lưu trữ trong cơ sở dữ liệu mã hóa và máy chủ được đặt trong mạng riêng, đảm bảo an toàn. Ngoài ra, tường lửa chặn các IP độc hại và các nhu cầu tấn công phổ biến như SQL injection, giúp bảo vệ dữ liệu của bạn khỏi các mối đe dọa."
   },
   {
-    question: "Is my business information kept confidential?",
-    answer: "Absolutely. We take data privacy extremely seriously. You control exactly what information is visible to potential matches, and all sensitive business data is encrypted and protected. We never sell your information to third parties, and you can request complete deletion of your data at any time."
+    question: "Thông tin doanh nghiệp của tôi có được giữ bí mật không?",
+    answer: "Hoàn toàn có. Chúng tôi coi trọng quyền riêng tư dữ liệu một cách nghiêm túc. Bạn kiểm soát chính xác thông tin nào hiển thị cho các đối tác tiềm năng, và tất cả dữ liệu kinh doanh nhạy cảm đều được mã hóa và bảo vệ. Chúng tôi không bao giờ bán thông tin của bạn cho bên thứ ba, và bạn có thể yêu cầu xóa hoàn toàn dữ liệu của mình bất cứ lúc nào."
   },
   {
     question: "What makes NexusMatch different from traditional networking platforms?",
@@ -122,11 +122,11 @@ export default function FAQSection() {
             visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
           }}
         >
-          <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
-            Frequently Asked Questions
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
+            Câu hỏi thường gặp
           </h2>
           <p className="text-gray-400">
-            Get answers to common questions about our AI-powered business matching platform
+            Tìm hiểu câu trả lời cho các câu hỏi phổ biến về nền tảng kết nối doanh nghiệp AI của chúng tôi
           </p>
         </motion.div>
         
