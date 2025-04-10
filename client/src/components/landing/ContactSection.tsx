@@ -63,13 +63,13 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-              <span className="text-sm font-medium text-neon-blue">Get in Touch</span>
+              <span className="text-sm font-medium text-neon-blue">Liên hệ với chúng tôi</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>Become a qualified vendor recommended by BCP
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>Trở thành đối tác được BCP giới thiệu
             </h2>
-            <p className="text-gray-300 mb-8">
-              Fill out the form and one of our AI business specialists will get back to you within 24 hours to discuss how NexusMatch can revolutionize your partnership strategy.
+            <p className="text-gray-300 mb-8 font-primary">
+              Điền vào biểu mẫu và chuyên gia kinh doanh AI của chúng tôi sẽ liên hệ lại với bạn trong vòng 24 giờ để thảo luận về cách BCP có thể cách mạng hóa chiến lược đối tác của bạn.
             </p>
             
             

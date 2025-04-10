@@ -7,8 +7,8 @@ interface StatItemProps {
 
 const StatItem = ({ number, description }: StatItemProps) => (
   <div className="text-center">
-    <div className="text-[5rem] font-bold text-[#0066cc]">{number}</div>
-    <p className="text-[1.1rem] text-[#4a90e2] max-w-sm mx-auto">{description}</p>
+    <div className="text-[5rem] font-heading font-bold text-[#0066cc]">{number}</div>
+    <p className="text-[1.1rem] font-primary text-[#4a90e2] max-w-sm mx-auto">{description}</p>
   </div>
 );
 
@@ -28,10 +28,10 @@ export default function FeaturesSection() {
 
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
-          <h2 className="font-sans text-[3rem] font-semibold text-[#0066cc] mb-2">
+          <h2 className="font-heading text-[3rem] font-semibold text-[#0066cc] mb-2">
             BCP qua những con số
           </h2>
-          <p className="text-[1.2rem] text-[#4a90e2]">
+          <p className="text-[1.2rem] text-[#4a90e2] font-primary">
             Thành tựu được thể hiện dưới góc nhìn dữ liệu
           </p>
         </div>

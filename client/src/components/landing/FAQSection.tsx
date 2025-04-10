@@ -89,8 +89,8 @@ const faqItems = [
     answer: "Hoàn toàn có. Chúng tôi coi trọng quyền riêng tư dữ liệu một cách nghiêm túc. Bạn kiểm soát chính xác thông tin nào hiển thị cho các đối tác tiềm năng, và tất cả dữ liệu kinh doanh nhạy cảm đều được mã hóa và bảo vệ. Chúng tôi không bao giờ bán thông tin của bạn cho bên thứ ba, và bạn có thể yêu cầu xóa hoàn toàn dữ liệu của mình bất cứ lúc nào."
   },
   {
-    question: "What makes NexusMatch different from traditional networking platforms?",
-    answer: "Unlike traditional platforms that rely on manual searching or basic keyword matching, NexusMatch uses advanced AI to proactively identify optimal business partnerships based on deep compatibility analysis. Our platform eliminates the guesswork and countless hours typically spent on networking, dramatically increasing your chances of finding transformative business relationships."
+    question: "Điều gì khiến BCP khác biệt so với các nền tảng kết nối truyền thống?",
+    answer: "Khác với các nền tảng truyền thống dựa vào tìm kiếm thủ công hoặc khớp từ khóa cơ bản, BCP sử dụng AI tiên tiến để chủ động xác định các đối tác kinh doanh tối ưu dựa trên phân tích tương thích sâu. Nền tảng của chúng tôi loại bỏ sự phỏng đoán và vô số giờ thường dành cho việc kết nối, làm tăng đáng kể cơ hội tìm kiếm mối quan hệ kinh doanh chuyển đổi."
   }
 ];
 

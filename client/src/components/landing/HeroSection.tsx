@@ -163,7 +163,7 @@ export default function HeroSection() {
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <span className="text-xs text-gray-400 mb-2">Cuộn xuống để khám phá</span>
+          <span className="text-xs text-gray-400 mb-2 font-primary">Cuộn xuống để khám phá</span>
           <svg className="w-6 h-6 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
