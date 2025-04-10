@@ -36,26 +36,26 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-white font-orbitron font-semibold mb-6">Resources</h4>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Documentation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Support Center</a></li>
+            <h4 className="text-white font-heading font-semibold mb-6">Tài nguyên</h4>
+            <ul className="space-y-4 font-primary">
+              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Tài liệu</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Trung tâm hỗ trợ</a></li>
               <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">API</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Terms of Service</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách bảo mật</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Điều khoản dịch vụ</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-white font-orbitron font-semibold mb-6">Subscribe</h4>
-            <p className="text-gray-400 mb-4">
-              Stay updated with the latest in AI business matching technology.
+            <h4 className="text-white font-heading font-semibold mb-6">Đăng ký</h4>
+            <p className="text-gray-400 mb-4 font-primary">
+              Cập nhật thông tin mới nhất về công nghệ kết nối doanh nghiệp bằng AI.
             </p>
             <form className="flex">
               <input 
                 type="email" 
-                placeholder="Enter your email" 
-                className="flex-1 px-4 py-2 rounded-l-md bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300"
+                placeholder="Nhập email của bạn" 
+                className="flex-1 px-4 py-2 rounded-l-md bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
               />
               <button className="px-4 py-2 rounded-r-md bg-gradient-to-r from-neon-blue to-electric-purple text-white hover:shadow-lg hover:shadow-electric-purple/20 transition duration-300">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,8 +66,8 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} Business Connecting Platform (BCP). All rights reserved.
+        <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm font-primary">
+          © {new Date().getFullYear()} Business Connecting Platform (BCP). Bản quyền đã được đăng ký.
         </div>
       </div>
     </footer>

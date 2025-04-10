@@ -33,19 +33,19 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
         gradientBorder={isPopular}
       >
         {isPopular && (
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-neon-blue to-electric-purple text-white px-4 py-1 rounded-full text-sm font-medium">
-            Most Popular
+          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-neon-blue to-electric-purple text-white px-4 py-1 rounded-full text-sm font-medium font-primary">
+            Phổ biến nhất
           </div>
         )}
         
         <div className="text-center mb-6 pt-2">
-          <h3 className="text-xl font-orbitron font-semibold text-white mb-2">{name}</h3>
+          <h3 className="text-xl font-heading font-semibold text-white mb-2">{name}</h3>
           <div className="flex justify-center items-baseline">
             <span className="text-gray-400 mr-2">$</span>
-            <span className="text-4xl font-bold text-white">{price}</span>
-            <span className="text-gray-400 ml-1">/month</span>
+            <span className="text-4xl font-bold text-white font-heading">{price}</span>
+            <span className="text-gray-400 ml-1 font-primary">/tháng</span>
           </div>
-          <p className="text-gray-400 mt-2">{description}</p>
+          <p className="text-gray-400 mt-2 font-primary">{description}</p>
         </div>
         
         <div className="h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent mb-6"></div>
@@ -56,17 +56,17 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
               <svg className="w-5 h-5 text-bright-teal mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span className="text-gray-300">{feature.text}</span>
+              <span className="text-gray-300 font-primary">{feature.text}</span>
             </li>
           ))}
         </ul>
         
         <a href="#contact">
           {isPopular ? (
-            <GradientButton className="w-full" animate>Upgrade Now</GradientButton>
+            <GradientButton className="w-full font-primary" animate>Nâng cấp ngay</GradientButton>
           ) : (
-            <GradientButton className="w-full" variant="outline">
-              {name === "Basic" ? "Get Started" : "Contact Sales"}
+            <GradientButton className="w-full font-primary" variant="outline">
+              {name === "Cơ bản" ? "Bắt đầu ngay" : "Liên hệ bán hàng"}
             </GradientButton>
           )}
         </a>
@@ -88,41 +88,41 @@ export default function PricingSection() {
   
   const pricingPlans = [
     {
-      name: "Basic",
+      name: "Cơ bản",
       price: "0",
-      description: "Perfect for startups exploring opportunities",
+      description: "Phù hợp với startup đang tìm kiếm cơ hội",
       features: [
-        { text: "Basic AI matching algorithm", included: true },
-        { text: "Up to 10 matches per month", included: true },
-        { text: "Standard business profile", included: true },
-        { text: "Email support", included: true }
+        { text: "Thuật toán kết nối AI cơ bản", included: true },
+        { text: "Lên đến 10 kết nối mỗi tháng", included: true },
+        { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
+        { text: "Hỗ trợ qua email", included: true }
       ]
     },
     {
       name: "Premium",
       price: "99",
-      description: "For growing businesses seeking quality connections",
+      description: "Cho doanh nghiệp đang phát triển cần kết nối chất lượng",
       features: [
-        { text: "Advanced AI matching algorithm", included: true },
-        { text: "Unlimited matches", included: true },
-        { text: "Enhanced business profile", included: true },
-        { text: "Priority support (24/7)", included: true },
-        { text: "Real-time analytics dashboard", included: true },
-        { text: "Direct messaging platform", included: true }
+        { text: "Thuật toán kết nối AI nâng cao", included: true },
+        { text: "Kết nối không giới hạn", included: true },
+        { text: "Hồ sơ doanh nghiệp nâng cao", included: true },
+        { text: "Hỗ trợ ưu tiên (24/7)", included: true },
+        { text: "Bảng phân tích thời gian thực", included: true },
+        { text: "Nền tảng nhắn tin trực tiếp", included: true }
       ],
       isPopular: true
     },
     {
-      name: "Enterprise",
+      name: "Doanh nghiệp",
       price: "499",
-      description: "For large organizations with complex needs",
+      description: "Cho tổ chức lớn có nhu cầu phức tạp",
       features: [
-        { text: "Custom AI matching solution", included: true },
-        { text: "Unlimited matches with priority ranking", included: true },
-        { text: "Premium business profile with branding", included: true },
-        { text: "Dedicated account manager", included: true },
-        { text: "Advanced analytics & reporting", included: true },
-        { text: "API access for custom integration", included: true }
+        { text: "Giải pháp kết nối AI tùy chỉnh", included: true },
+        { text: "Kết nối không giới hạn với xếp hạng ưu tiên", included: true },
+        { text: "Hồ sơ doanh nghiệp cao cấp có thương hiệu", included: true },
+        { text: "Quản lý tài khoản chuyên biệt", included: true },
+        { text: "Phân tích & báo cáo nâng cao", included: true },
+        { text: "Truy cập API để tích hợp tùy chỉnh", included: true }
       ]
     }
   ];
@@ -145,13 +145,13 @@ export default function PricingSection() {
           }}
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-bright-teal/20 border border-bright-teal/40 mb-4">
-            <span className="text-sm font-medium text-bright-teal">Pricing Plans</span>
+            <span className="text-sm font-medium text-bright-teal">Bảng giá</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span> Choose the right package for your Business
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span> Chọn gói phù hợp với doanh nghiệp của bạn
           </h2>
-          <p className="text-gray-300">
-            Select from our flexible pricing options designed to fit businesses of all sizes, from startups to enterprises.
+          <p className="text-gray-300 font-primary">
+            Lựa chọn từ các tùy chọn giá linh hoạt của chúng tôi được thiết kế phù hợp với doanh nghiệp thuộc mọi quy mô, từ startup đến doanh nghiệp lớn.
           </p>
         </motion.div>
         
