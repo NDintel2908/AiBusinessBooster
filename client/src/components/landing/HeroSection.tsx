@@ -84,7 +84,7 @@ export default function HeroSection() {
                 <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
                 <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
               </div>
-              <div className="text-sm text-gray-400">
+              <div className="text-sm text-gray-400 font-primary">
                 <span className="font-semibold text-white">500+</span> doanh nghiệp mới đăng ký trong tháng
               </div>
             </motion.div>
@@ -122,8 +122,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">99% Tỷ lệ phù hợp</p>
-                    <p className="text-xs text-gray-400">Vận hành bởi thuật toán AI</p>
+                    <p className="text-white font-medium font-primary">99% Tỷ lệ phù hợp</p>
+                    <p className="text-xs text-gray-400 font-primary">Vận hành bởi thuật toán AI</p>
                   </div>
                 </div>
               </GlassCard>
@@ -143,8 +143,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Đối tác đã xác minh</p>
-                    <p className="text-xs text-gray-400">Bảo mật cấp doanh nghiệp</p>
+                    <p className="text-white font-medium font-primary">Đối tác đã xác minh</p>
+                    <p className="text-xs text-gray-400 font-primary">Bảo mật cấp doanh nghiệp</p>
                   </div>
                 </div>
               </GlassCard>
