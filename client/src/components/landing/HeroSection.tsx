@@ -42,7 +42,7 @@ export default function HeroSection() {
               className="inline-flex items-center px-3 py-1 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-bright-teal animate-pulse mr-2"></span>
-              <span className="text-sm font-medium text-bright-teal">Kết nối B2B bằng AI Matching Agent đầu tiên tại ĐNA</span>
+              <span className="text-sm font-medium text-bright-teal font-primary">Kết nối B2B bằng AI Matching Agent đầu tiên tại ĐNA</span>
             </motion.div>
             
             <motion.h1 
@@ -54,7 +54,7 @@ export default function HeroSection() {
             
             <motion.p 
               variants={itemVariants}
-              className="text-lg md:text-xl text-gray-300 max-w-2xl"
+              className="text-lg md:text-xl text-gray-300 max-w-2xl font-primary"
             >
               BCP là nền tảng kết nối B2B hàng đầu ứng dụng AI, cho phép giao dịch toàn cầu theo thời gian thực và gia tăng doanh thu thông qua các kết nối thông minh.
             </motion.p>
