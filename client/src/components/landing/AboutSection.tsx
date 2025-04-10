@@ -76,10 +76,10 @@ export default function AboutSection() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Business Story</span>
             </h2>
             <p className="text-gray-300 mb-6">
-              Founded in 2018, BCP was born from a simple observation: despite all the digital advances, finding the right business partners remained frustratingly inefficient and often came down to luck rather than data.
+              BCP được thành lập vào năm 2018 từ một nhận định đơn giản: dù công nghệ số đã phát triển mạnh mẽ, việc tìm kiếm đối tác kinh doanh phù hợp vẫn còn quá kém hiệu quả – và phần lớn dựa vào may rủi hơn là dữ liệu.
             </p>
             <p className="text-gray-300 mb-6">
-              Our team of AI specialists, business analysts, and tech innovators set out to create a platform that would transform B2B connections through the power of artificial intelligence and data science.
+              Với đội ngũ chuyên gia AI, phân tích kinh doanh và đổi mới công nghệ, chúng tôi đã bắt đầu hành trình xây dựng một nền tảng kết nối B2B mới – nơi trí tuệ nhân tạo và khoa học dữ liệu trở thành động lực thay đổi cuộc chơi.
             </p>
             
             <div className="my-8 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
@@ -91,9 +91,9 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2 } }
               }}
             >
-              <h3 className="text-xl font-orbitron font-semibold mb-4 text-white">Our Vision</h3>
+              <h3 className="text-xl font-orbitron font-semibold mb-4 text-white">Tầm nhìn</h3>
               <p className="text-gray-300">
-                To create a world where every business can find its perfect match, accelerating innovation and growth across the global economy.
+                Chúng tôi hướng tới một thế giới nơi mọi doanh nghiệp đều tìm thấy đối tác lý tưởng của mình – từ đó thúc đẩy đổi mới và tăng trưởng cho toàn bộ nền kinh tế toàn cầu.
               </p>
             </motion.div>
             
@@ -103,9 +103,9 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.4 } }
               }}
             >
-              <h3 className="text-xl font-orbitron font-semibold mb-4 text-white">Our Mission</h3>
+              <h3 className="text-xl font-orbitron font-semibold mb-4 text-white">Sứ mạng</h3>
               <p className="text-gray-300">
-                To leverage cutting-edge AI technology to eliminate the barriers that prevent businesses from finding their ideal partners, empowering organizations of all sizes to forge meaningful, profitable collaborations.
+                Chúng tôi ứng dụng công nghệ AI tiên tiến nhằm xóa bỏ mọi rào cản khiến doanh nghiệp khó tìm thấy đối tác phù hợp – mở ra cơ hội hợp tác hiệu quả và bền vững cho mọi tổ chức, dù lớn hay nhỏ.
               </p>
             </motion.div>
           </motion.div>

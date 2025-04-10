@@ -29,10 +29,10 @@ export default function FeaturesSection() {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
           <h2 className="font-sans text-[3rem] font-semibold text-[#0066cc] mb-2">
-            BCP in Numbers
+            BCP qua những con số
           </h2>
           <p className="text-[1.2rem] text-[#4a90e2]">
-            A data-driven look at our company success and partnerships
+            Thành tựu được thể hiện dưới góc nhìn dữ liệu
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function FeaturesSection() {
           >
             <StatItem 
               number="2268"
-              description="Members"
+              description="Thành viên"
             />
           </motion.div>
 
@@ -57,7 +57,7 @@ export default function FeaturesSection() {
           >
             <StatItem 
               number="1654"
-              description="Connections"
+              description="Kết nối thành công"
             />
           </motion.div>
 
@@ -69,7 +69,7 @@ export default function FeaturesSection() {
           >
             <StatItem 
               number="7"
-              description="Years of Experience"
+              description="Năm kinh nghiệm"
             />
           </motion.div>
         </div>

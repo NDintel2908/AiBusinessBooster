@@ -42,21 +42,21 @@ export default function HeroSection() {
               className="inline-flex items-center px-3 py-1 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-bright-teal animate-pulse mr-2"></span>
-              <span className="text-sm font-medium text-bright-teal">The 1st AI B2B Matching Agent</span>
+              <span className="text-sm font-medium text-bright-teal">Kết nối B2B bằng AI Matching Agent đầu tiên tại ĐNA</span>
             </motion.div>
             
             <motion.h1 
               variants={itemVariants}
               className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold leading-tight text-white hero-title"
             >
-              Simplify B2B Connections
+              ĐƠN GIẢN QUÁ TRÌNH KẾT NỐI B2B
             </motion.h1>
             
             <motion.p 
               variants={itemVariants}
               className="text-lg md:text-xl text-gray-300 max-w-2xl"
             >
-              BCP is a premier AI-powered B2B connecting platform, enabling real-time global transactions and scaling revenue through intelligent connections.
+              BCP là nền tảng kết nối B2B hàng đầu ứng dụng AI, cho phép giao dịch toàn cầu theo thời gian thực và gia tăng doanh thu thông qua các kết nối thông minh.
             </motion.p>
             
             <motion.div 
@@ -66,7 +66,7 @@ export default function HeroSection() {
               <GradientButton size="lg" animate className="cta-button">Get Started</GradientButton>
               <GradientButton size="lg" variant="outline" className="cta-button">
                 <span className="flex items-center justify-center">
-                  <span>How it works</span>
+                  <span>Contact Us</span>
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
@@ -85,7 +85,7 @@ export default function HeroSection() {
                 <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
               </div>
               <div className="text-sm text-gray-400">
-                <span className="font-semibold text-white">500+</span> businesses connected this month
+                <span className="font-semibold text-white">500+</span> doanh nghiệp mới đăng ký trong tháng
               </div>
             </motion.div>
           </motion.div>

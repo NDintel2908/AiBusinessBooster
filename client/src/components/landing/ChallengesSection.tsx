@@ -137,10 +137,10 @@ export default function ChallengesSection() {
           }}
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-            <span className="text-sm font-medium text-neon-blue">B2B Challenges</span>
+            <span className="text-sm font-medium text-neon-blue">Thách thức của thị trường</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-white">
-            Challenges of the B2B market <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B Market</span>
+            Nan giải kết nối thị trường B2B <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B Market</span>
           </h2>
           <p className="text-gray-300">
             Businesses today face significant obstacles when seeking the right partnerships. Our AI-powered platform addresses these pain points.

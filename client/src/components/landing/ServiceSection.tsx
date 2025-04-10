@@ -54,35 +54,38 @@ export default function ServiceSection() {
             <Accordion.Root type="single" defaultValue="career" className="space-y-2">
               <ServiceAccordionItem 
                 value="AI intelligence" 
-                title="AI intelligently connects you with ideal business partners"
+                title="AI học và chủ động kết nối với Doanh nghiệp phù hợp nhất"
                 isExpanded={true}
               >
-                Forget the endless meetings and the laborious partner-seeking efforts of traditional methods.
+                Hãy quên đi những cuộc họp dài đằng đẵng và những nỗ lực bôn ba tìm kiếm đối tác của phương pháp truyền thống.
 
-                BCP AI learns and remembers every small detail about your business's information and demands. The robust AI technology will proactively suggest connections with the most suitable businesses. 
-                The more detailed the information - the more accurate the matching!
+                BCP AI học và ghi nhớ từng chi tiết nhỏ về thông tin cũng như nhu cầu của doanh nghiệp bạn. Công nghệ AI thông minh sẽ chủ động gợi ý kết nối với Doanh nghiệp phù hợp nhất. Thông tin càng chi tiết - Matching càng chính xác!
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
                 value="cutoff" 
-                title="Cut out the middleman - Direct access to the highest authority"
+                title="Không trung gian - Gặp luôn người có thẩm quyền cao nhất"
               >
-                Eliminate intermediaries - BCP AI provides a streamlined route to connect directly with the final authority - where deals are finalized.
+                Bỏ qua trung gian - BCP AI mở ra con đường "thẳng tắp" trao đổi trực tiếp với người có quyền quyết định cuối cùng - nơi mà mọi thương vụ được định đoạt.
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
                 value="security" 
-                title="Top-tier security"
+                title="Bảo mật là ưu tiên hàng đầu"
               >
-                Your data security is our priority.
-                At BCP, we implement robust technical and organizational measures to protect user data, following industry best practices in cloud infrastructure, access control, and encryption. While BCP is actively working toward internationally recognized security certifications, we already maintain strict internal policies to ensure the confidentiality, integrity, and availability of your information.
+                Bảo mật dữ liệu là ưu tiên hàng đầu tại BCP
+                Tại BCP, chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức nghiêm ngặt nhằm bảo vệ dữ liệu người dùng, tuân theo các thông lệ tốt nhất trong ngành về hạ tầng đám mây, kiểm soát truy cập và mã hóa dữ liệu.
+
+                Mặc dù hiện tại BCP chưa sở hữu các chứng chỉ bảo mật quốc tế như ISO 27001 hoặc SOC 2, chúng tôi đang tích cực xây dựng quy trình vận hành và kiểm soát nội bộ hướng đến các tiêu chuẩn này.
+
+                BCP cam kết duy trì tính bảo mật (confidentiality), toàn vẹn (integrity) và sẵn sàng (availability) của thông tin, nhằm đảm bảo quyền riêng tư và an toàn cho toàn bộ người dùng và đối tác trên nền tảng.
               </ServiceAccordionItem>
 
               <ServiceAccordionItem 
                 value="connection" 
-                title="Borderless connections"
+                title="Kết nối không biên giới"
               >
-                BCP is not just a "bridge", but also a "springboard" for businesses that dare to dream big - to expand internationally. From the dynamic pace of life in Vietnam, reaching out to the advanced Japanese market, and spreading throughout Southeast Asia - we are a strategic bridge that helps your business transcend geographical boundaries.
+                BCP không chỉ là "cầu nối", mà còn là "bàn đạp" cho các doanh nghiệp dám mơ lớn - vươn mình ra quốc tế. Từ nhịp sống năng động Việt Nam, vươn tới thị trường Nhật Bản tiên tiến, và lan tỏa khắp Đông Nam Á - chúng tôi là cầu nối chiến lược giúp doanh nghiệp bạn vượt ranh giới địa lý.
               </ServiceAccordionItem>
               
             </Accordion.Root>
