@@ -101,7 +101,7 @@ export default function HeroSection() {
               <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-neon-blue opacity-60 blur-[60px] rounded-full"></div>
               <GlassCard className="rounded-2xl p-2">
                 <img 
-                  src="/src/components/landing/demo.png" 
+                  src="/demo.png" 
                   alt="AI Business Matching" 
                   className="w-full h-auto rounded-xl object-cover"
                 />
