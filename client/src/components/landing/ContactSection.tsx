@@ -28,8 +28,8 @@ export default function ContactSection() {
     try {
       await apiRequest("POST", "/api/contact", formData);
       toast({
-        title: "Success!",
-        description: "Your inquiry has been submitted successfully.",
+        title: "Thành công!",
+        description: "Yêu cầu của bạn đã được gửi thành công.",
       });
       setFormData({
         name: "",
@@ -39,8 +39,8 @@ export default function ContactSection() {
       });
     } catch (error) {
       toast({
-        title: "Error",
-        description: "Failed to submit your inquiry. Please try again.",
+        title: "Lỗi",
+        description: "Không thể gửi yêu cầu của bạn. Vui lòng thử lại.",
         variant: "destructive"
       });
     } finally {
@@ -96,73 +96,73 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <GlassCard className="rounded-xl p-6 border border-gray-700">
-              <h3 className="text-2xl font-orbitron font-semibold mb-6 text-white">Contact Form</h3>
+              <h3 className="text-2xl font-heading font-semibold mb-6 text-white">Biểu mẫu liên hệ</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-gray-300 mb-2">Full Name</label>
+                    <label htmlFor="name" className="block text-gray-300 mb-2 font-primary">Họ tên</label>
                     <input 
                       type="text" 
                       id="name" 
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300"
-                      placeholder="John Doe"
+                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                      placeholder="Nguyễn Văn A"
                       required
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-gray-300 mb-2">Email Address</label>
+                    <label htmlFor="email" className="block text-gray-300 mb-2 font-primary">Địa chỉ email</label>
                     <input 
                       type="email" 
                       id="email" 
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300"
-                      placeholder="john@company.com"
+                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                      placeholder="example@company.com"
                       required
                     />
                   </div>
                 </div>
                 
                 <div>
-                  <label htmlFor="company" className="block text-gray-300 mb-2">Company Name</label>
+                  <label htmlFor="company" className="block text-gray-300 mb-2 font-primary">Tên công ty</label>
                   <input 
                     type="text" 
                     id="company" 
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300"
-                    placeholder="Your Company Inc."
+                    className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                    placeholder="Công ty của bạn"
                     required
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="requirements" className="block text-gray-300 mb-2">Specific Requirements</label>
+                  <label htmlFor="requirements" className="block text-gray-300 mb-2 font-primary">Yêu cầu cụ thể</label>
                   <textarea 
                     id="requirements" 
                     name="requirements"
                     value={formData.requirements}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300"
-                    placeholder="Tell us about your needs and how we can help..."
+                    className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                    placeholder="Hãy cho chúng tôi biết về nhu cầu và cách chúng tôi có thể giúp đỡ..."
                   ></textarea>
                 </div>
                 
                 <div>
                   <GradientButton 
                     type="submit" 
-                    className="w-full py-4"
+                    className="w-full py-4 font-primary"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? "Submitting..." : "Submit Inquiry"}
+                    {isSubmitting ? "Đang gửi..." : "Gửi yêu cầu"}
                   </GradientButton>
                 </div>
               </form>

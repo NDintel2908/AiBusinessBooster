@@ -15,23 +15,23 @@ export default function Footer() {
               <div className="w-40 h-40 relative overflow-hidden mb-2 logo">
                 <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
               </div>
-              <h1 className="text-white font-orbitron text-xl font-bold tracking-wider hero-title">
+              <h1 className="text-white font-heading text-xl font-bold tracking-wider hero-title">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>
               </h1>
             </div>
-            <p className="text-gray-400 mt-2 mb-6">
-              Revolutionizing business connections through the power of artificial intelligence.
+            <p className="text-gray-400 mt-2 mb-6 font-primary">
+              Cách mạng hóa kết nối kinh doanh thông qua sức mạnh của trí tuệ nhân tạo.
             </p>
             
           </div>
           
           <div>
-            <h4 className="text-white font-orbitron font-semibold mb-6">Company</h4>
-            <ul className="space-y-4">
-              <li><a href="#about" className="text-gray-400 hover:text-neon-blue transition duration-300">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Careers</a></li>
+            <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
+            <ul className="space-y-4 font-primary">
+              <li><a href="#about" className="text-gray-400 hover:text-neon-blue transition duration-300">Về chúng tôi</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Tuyển dụng</a></li>
               <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Press</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Báo chí</a></li>
             </ul>
           </div>
           

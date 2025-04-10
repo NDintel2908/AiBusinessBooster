@@ -35,7 +35,7 @@ export default function Header() {
           <div className="w-32 h-32 md:w-40 md:h-40 relative overflow-hidden mr-3 logo" style={{ marginTop: '-24px', marginBottom: '-24px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
-          <h1 className="text-white font-orbitron text-xl md:text-2xl font-bold tracking-wider hero-title">
+          <h1 className="text-white font-heading text-xl md:text-2xl font-bold tracking-wider hero-title">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-electric-purple"></span>
           </h1>
         </div>
@@ -53,54 +53,54 @@ export default function Header() {
         </div>
         
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex space-x-8 items-center font-inter text-sm">
-          <a href="#features" className="text-gray-300 hover:text-neon-blue transition duration-300">Features</a>
-          <a href="#how-it-works" className="text-gray-300 hover:text-neon-blue transition duration-300">How It Works</a>
-          <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">About Us</a>
-          <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Pricing</a>
+        <nav className="hidden lg:flex space-x-8 items-center font-primary text-sm">
+          <a href="#features" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</a>
+          <a href="#challenges" className="text-gray-300 hover:text-neon-blue transition duration-300">Thách thức</a>
+          <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</a>
+          <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</a>
           <a href="#contact">
-            <GradientButton>Get Started</GradientButton>
+            <GradientButton>Bắt đầu ngay</GradientButton>
           </a>
         </nav>
       </div>
       
       {/* Mobile Menu */}
       <div className={`lg:hidden bg-deep-dark border-t border-gray-800 p-4 ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-        <nav className="flex flex-col space-y-4 font-inter text-sm">
+        <nav className="flex flex-col space-y-4 font-primary text-sm">
           <a 
             href="#features" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Features
+            Tính năng
           </a>
           <a 
-            href="#how-it-works" 
+            href="#challenges" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            How It Works
+            Thách thức
           </a>
           <a 
             href="#about" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            About Us
+            Về chúng tôi
           </a>
           <a 
             href="#pricing" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Pricing
+            Bảng giá
           </a>
           <a 
             href="#contact" 
-            className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-white font-medium text-center cta-button"
+            className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-white font-medium text-center cta-button font-primary"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Get Started
+            Bắt đầu ngay
           </a>
         </nav>
       </div>
