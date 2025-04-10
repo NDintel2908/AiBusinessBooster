@@ -47,7 +47,7 @@ export default function HeroSection() {
             
             <motion.h1 
               variants={itemVariants}
-              className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold leading-tight text-white hero-title"
+              className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-white hero-title"
             >
               ĐƠN GIẢN QUÁ TRÌNH KẾT NỐI B2B
             </motion.h1>
@@ -63,10 +63,10 @@ export default function HeroSection() {
               variants={itemVariants}
               className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6"
             >
-              <GradientButton size="lg" animate className="cta-button">Get Started</GradientButton>
+              <GradientButton size="lg" animate className="cta-button">Bắt Đầu Ngay</GradientButton>
               <GradientButton size="lg" variant="outline" className="cta-button">
                 <span className="flex items-center justify-center">
-                  <span>Contact Us</span>
+                  <span>Liên Hệ Ngay</span>
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
@@ -122,8 +122,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">99% Match Rate</p>
-                    <p className="text-xs text-gray-400">Powered by AI Algorithm</p>
+                    <p className="text-white font-medium">99% Tỷ lệ phù hợp</p>
+                    <p className="text-xs text-gray-400">Vận hành bởi thuật toán AI</p>
                   </div>
                 </div>
               </GlassCard>
@@ -143,8 +143,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Verified Partners</p>
-                    <p className="text-xs text-gray-400">Enterprise-grade security</p>
+                    <p className="text-white font-medium">Đối tác đã xác minh</p>
+                    <p className="text-xs text-gray-400">Bảo mật cấp doanh nghiệp</p>
                   </div>
                 </div>
               </GlassCard>
@@ -163,7 +163,7 @@ export default function HeroSection() {
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <span className="text-xs text-gray-400 mb-2">Scroll to explore</span>
+          <span className="text-xs text-gray-400 mb-2">Cuộn xuống để khám phá</span>
           <svg className="w-6 h-6 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
