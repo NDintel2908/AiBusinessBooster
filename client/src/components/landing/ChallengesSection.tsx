@@ -41,7 +41,7 @@ const ChallengeCard = ({ icon, title, description, delay }: ChallengeCardProps) 
           {icon}
         </div>
         <h3 className="text-xl font-heading font-semibold mb-3 text-white">{title}</h3>
-        <p className="text-gray-400">{description}</p>
+        <p className="text-gray-400 font-primary">{description}</p>
       </GlassCard>
     </motion.div>
   );
@@ -137,12 +137,12 @@ export default function ChallengesSection() {
           }}
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-            <span className="text-sm font-medium text-neon-blue">Thách thức của thị trường</span>
+            <span className="text-sm font-medium text-neon-blue font-primary">Thách thức của thị trường</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
             Vấn đề nan giải khi kết nối thị trường <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B</span>
           </h2>
-          <p className="text-gray-300">
+          <p className="text-gray-300 font-primary">
             Doanh nghiệp ngày nay gặp nhiều khó khăn khi tìm kiếm đối tác phù hợp. Nền tảng ứng dụng AI của chúng tôi giải quyết những thách thức này.
           </p>
         </motion.div>

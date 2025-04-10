@@ -36,7 +36,7 @@ const AccordionTrigger = React.forwardRef<
       )}
       {...props}
     >
-      <span className="text-left font-semibold">{children}</span>
+      <span className="text-left font-semibold font-primary">{children}</span>
       <div className="relative flex h-5 w-5 items-center justify-center">
         <span className="absolute h-0.5 w-3 bg-current transition-transform duration-300 data-[state=open]:rotate-0 data-[state=closed]:rotate-0" />
         <span className="absolute h-0.5 w-3 bg-current rotate-90 transition-transform duration-300 data-[state=open]:rotate-0" />
@@ -58,7 +58,7 @@ const AccordionContent = React.forwardRef<
     )}
     {...props}
   >
-    <div className="px-5 pb-5 pt-0 text-gray-400 leading-relaxed">
+    <div className="px-5 pb-5 pt-0 text-gray-400 leading-relaxed font-primary">
       {children}
     </div>
   </AccordionPrimitive.Content>
@@ -125,7 +125,7 @@ export default function FAQSection() {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
             Câu hỏi thường gặp
           </h2>
-          <p className="text-gray-400">
+          <p className="text-gray-400 font-primary">
             Tìm hiểu câu trả lời cho các câu hỏi phổ biến về nền tảng kết nối doanh nghiệp AI của chúng tôi
           </p>
         </motion.div>

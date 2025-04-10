@@ -36,11 +36,11 @@ export default function ServiceSection() {
     <section className="relative py-16 md:py-20 px-4 md:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-[2.5rem] font-bold text-white mb-4">
-            How BCP supports you & what makes us unique
+          <h2 className="text-[2.5rem] font-bold text-white mb-4 font-heading">
+            BCP hỗ trợ bạn như thế nào & điều gì làm chúng tôi độc đáo
           </h2>
-          <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto">
-            Discover the exceptional support and unique advantages that set BCP apart in your business stories.
+          <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto font-primary">
+            Khám phá sự hỗ trợ đặc biệt và những lợi thế độc đáo giúp BCP nổi bật trong câu chuyện kinh doanh của bạn.
           </p>
         </div>
 
