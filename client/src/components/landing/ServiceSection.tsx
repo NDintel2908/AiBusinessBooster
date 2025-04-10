@@ -37,7 +37,7 @@ export default function ServiceSection() {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-[2.5rem] font-bold text-white mb-4 font-heading">
-            BCP hỗ trợ bạn như thế nào & điều gì làm chúng tôi độc đáo
+            Cách BCP Global hỗ trợ bạn & Điều khiến BCP Global khác biệt
           </h2>
           <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto font-primary">
             Khám phá sự hỗ trợ đặc biệt và những lợi thế độc đáo giúp BCP nổi bật trong câu chuyện kinh doanh của bạn.
@@ -54,29 +54,25 @@ export default function ServiceSection() {
             <Accordion.Root type="single" defaultValue="career" className="space-y-2">
               <ServiceAccordionItem 
                 value="AI intelligence" 
-                title="AI học và chủ động kết nối với Doanh nghiệp phù hợp nhất"
+                title="Tăng sự chủ động"
                 isExpanded={true}
               >
-                Hãy quên đi những cuộc họp dài đằng đẵng và những nỗ lực bôn ba tìm kiếm đối tác của phương pháp truyền thống.
-
-                BCP AI học và ghi nhớ từng chi tiết nhỏ về thông tin cũng như nhu cầu của doanh nghiệp bạn. Công nghệ AI thông minh sẽ chủ động gợi ý kết nối với Doanh nghiệp phù hợp nhất. Thông tin càng chi tiết - Matching càng chính xác!
+                Dựa trên thông tin yêu cầu mà Doanh nghiệp mô tả, BCP AI học và gửi danh sách các Doanh nghiệp phù hợp rồi trao quyền lựa chọn kết nối chủ động cho Doanh nghiệp mà không tốn quá nhiều chi phí cũng như thời gian. 
+                Song, Doanh nghiệp hoàn toàn chủ động dạy BCP AI hiểu về công ty và các dịch vụ/ sản phẩm mà Doanh nghiệp cung cấp.
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
                 value="cutoff" 
-                title="Không trung gian - Gặp luôn người có thẩm quyền cao nhất"
+                title="Trò chuyện 1on1"
               >
-                Bỏ qua trung gian - BCP AI mở ra con đường "thẳng tắp" trao đổi trực tiếp với người có quyền quyết định cuối cùng - nơi mà mọi thương vụ được định đoạt.
+                BCP AI hỗ trợ tạo nhóm trò chuyện mới và Doanh nghiệp có thể trao đổi với đối tác trực tiếp mà không cần có điều phối viên.
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
                 value="security" 
                 title="Bảo mật là ưu tiên hàng đầu"
               >
-                Bảo mật dữ liệu là ưu tiên hàng đầu tại BCP
                 Tại BCP, chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức nghiêm ngặt nhằm bảo vệ dữ liệu người dùng, tuân theo các thông lệ tốt nhất trong ngành về hạ tầng đám mây, kiểm soát truy cập và mã hóa dữ liệu.
-
-                Mặc dù hiện tại BCP chưa sở hữu các chứng chỉ bảo mật quốc tế như ISO 27001 hoặc SOC 2, chúng tôi đang tích cực xây dựng quy trình vận hành và kiểm soát nội bộ hướng đến các tiêu chuẩn này.
 
                 BCP cam kết duy trì tính bảo mật (confidentiality), toàn vẹn (integrity) và sẵn sàng (availability) của thông tin, nhằm đảm bảo quyền riêng tư và an toàn cho toàn bộ người dùng và đối tác trên nền tảng.
               </ServiceAccordionItem>

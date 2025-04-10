@@ -34,14 +34,14 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
       >
         {isPopular && (
           <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-neon-blue to-electric-purple text-white px-4 py-1 rounded-full text-sm font-medium font-primary">
-            Phổ biến nhất
+            Phổ biến
           </div>
         )}
         
         <div className="text-center mb-6 pt-2">
           <h3 className="text-xl font-heading font-semibold text-white mb-2">{name}</h3>
           <div className="flex justify-center items-baseline">
-            <span className="text-gray-400 mr-2">$</span>
+            <span className="text-gray-400 mr-2"></span>
             <span className="text-4xl font-bold text-white font-heading">{price}</span>
             <span className="text-gray-400 ml-1 font-primary">/tháng</span>
           </div>
@@ -88,7 +88,7 @@ export default function PricingSection() {
   
   const pricingPlans = [
     {
-      name: "Cơ bản",
+      name: "Dùng thử",
       price: "0",
       description: "Phù hợp với startup đang tìm kiếm cơ hội",
       features: [
@@ -99,8 +99,8 @@ export default function PricingSection() {
       ]
     },
     {
-      name: "Premium",
-      price: "99",
+      name: "Gói kết nối",
+      price: "250k",
       description: "Cho doanh nghiệp đang phát triển cần kết nối chất lượng",
       features: [
         { text: "Thuật toán kết nối AI nâng cao", included: true },
@@ -113,8 +113,8 @@ export default function PricingSection() {
       isPopular: true
     },
     {
-      name: "Doanh nghiệp",
-      price: "499",
+      name: "Trust Provider",
+      price: "?",
       description: "Cho tổ chức lớn có nhu cầu phức tạp",
       features: [
         { text: "Giải pháp kết nối AI tùy chỉnh", included: true },
@@ -145,7 +145,7 @@ export default function PricingSection() {
           }}
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-bright-teal/20 border border-bright-teal/40 mb-4">
-            <span className="text-sm font-medium text-bright-teal">Bảng giá</span>
+            <span className="text-sm font-medium text-bright-teal">Chính sách giá</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span> Chọn gói phù hợp với doanh nghiệp của bạn

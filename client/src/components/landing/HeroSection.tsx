@@ -49,7 +49,7 @@ export default function HeroSection() {
               variants={itemVariants}
               className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-white hero-title"
             >
-              ĐƠN GIẢN QUÁ TRÌNH KẾT NỐI B2B
+              ĐƠN GIẢN KẾT NỐI B2B
             </motion.h1>
             
             <motion.p 
