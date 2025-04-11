@@ -57,14 +57,14 @@ export default function Header() {
           <a href="#features" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</a>
           <a href="#challenges" className="text-gray-300 hover:text-neon-blue transition duration-300">Thách thức</a>
           <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</a>
-          <a href="#cart" className="text-gray-300 hover:text-neon-blue transition duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="9" cy="21" r="1"/>
               <circle cx="20" cy="21" r="1"/>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
             </svg>
+            Bảng giá
           </a>
-          <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</a>
           <a href="#contact">
             <GradientButton>Bắt đầu ngay</GradientButton>
           </a>
