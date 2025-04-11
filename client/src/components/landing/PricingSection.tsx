@@ -1,3 +1,4 @@
+
 import { useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -43,7 +44,7 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           <div className="flex justify-center items-baseline">
             <span className="text-gray-400 mr-2"></span>
             <span className="text-4xl font-bold text-white font-heading">{price}</span>
-            <span className="text-gray-400 ml-1 font-primary">{name === "Gói kết nối" ? "/lượt kết nối" : "/tháng"}</span>
+            <span className="text-gray-400 ml-1 font-primary">{name === "Connecting Slot" ? "/lượt kết nối thành công" : "/tháng"}</span>
           </div>
           <p className="text-gray-400 mt-2 font-primary">{description}</p>
         </div>
@@ -65,9 +66,7 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           {isPopular ? (
             <GradientButton className="w-full font-primary" animate>Mua ngay</GradientButton>
           ) : (
-            <GradientButton className="w-full font-primary" variant="outline">
-              {name === "Dùng thử" ? "Trải nghiệm" : "Liên hệ bán hàng"}
-            </GradientButton>
+            <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
           )}
         </a>
       </GlassCard>
@@ -88,7 +87,7 @@ export default function PricingSection() {
   
   const pricingPlans = [
     {
-      name: "Dùng thử",
+      name: "Starter",
       price: "0",
       description: "Phù hợp với startup đang tìm kiếm cơ hội",
       features: [
@@ -99,7 +98,7 @@ export default function PricingSection() {
       ]
     },
     {
-      name: "Gói kết nối",
+      name: "Connecting Slot",
       price: "250.000 VND",
       description: "Cho doanh nghiệp đang phát triển cần kết nối chất lượng",
       features: [
@@ -111,19 +110,6 @@ export default function PricingSection() {
         { text: "Nền tảng nhắn tin trực tiếp", included: true }
       ],
       isPopular: true
-    },
-    {
-      name: "Trust Provider",
-      price: "?",
-      description: "Cho tổ chức lớn có nhu cầu phức tạp",
-      features: [
-        { text: "Giải pháp kết nối AI tùy chỉnh", included: true },
-        { text: "Kết nối không giới hạn với xếp hạng ưu tiên", included: true },
-        { text: "Hồ sơ doanh nghiệp cao cấp có thương hiệu", included: true },
-        { text: "Quản lý tài khoản chuyên biệt", included: true },
-        { text: "Phân tích & báo cáo nâng cao", included: true },
-        { text: "Truy cập API để tích hợp tùy chỉnh", included: true }
-      ]
     }
   ];
   
@@ -155,7 +141,7 @@ export default function PricingSection() {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <PricingPlan
               key={plan.name}
