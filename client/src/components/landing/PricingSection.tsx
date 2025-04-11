@@ -63,10 +63,10 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
         
         <a href="#contact">
           {isPopular ? (
-            <GradientButton className="w-full font-primary" animate>Nâng cấp ngay</GradientButton>
+            <GradientButton className="w-full font-primary" animate>Mua ngay</GradientButton>
           ) : (
             <GradientButton className="w-full font-primary" variant="outline">
-              {name === "Cơ bản" ? "Bắt đầu ngay" : "Liên hệ bán hàng"}
+              {name === "Dùng thử" ? "Trải nghiệm" : "Liên hệ bán hàng"}
             </GradientButton>
           )}
         </a>
@@ -100,7 +100,7 @@ export default function PricingSection() {
     },
     {
       name: "Gói kết nối",
-      price: "250k",
+      price: "250.000 VND",
       description: "Cho doanh nghiệp đang phát triển cần kết nối chất lượng",
       features: [
         { text: "Thuật toán kết nối AI nâng cao", included: true },
