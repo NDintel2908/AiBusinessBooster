@@ -65,7 +65,7 @@ export default function Header() {
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
             </svg>
           </a>
-          <a href="#contact">
+          <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
             <GradientButton>Bắt đầu ngay</GradientButton>
           </a>
         </nav>

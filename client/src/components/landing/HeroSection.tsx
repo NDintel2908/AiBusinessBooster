@@ -63,7 +63,9 @@ export default function HeroSection() {
               variants={itemVariants}
               className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6"
             >
-              <GradientButton size="lg" animate className="cta-button">Bắt Đầu Ngay</GradientButton>
+              <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
+                <GradientButton size="lg" animate className="cta-button">Bắt Đầu Ngay</GradientButton>
+              </a>
               <GradientButton size="lg" variant="outline" className="cta-button">
                 <span className="flex items-center justify-center">
                   <span>Liên Hệ Ngay</span>
