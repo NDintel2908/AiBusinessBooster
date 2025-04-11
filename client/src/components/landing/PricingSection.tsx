@@ -44,7 +44,7 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           <div className="flex justify-center items-baseline">
             <span className="text-gray-400 mr-2"></span>
             <span className="text-4xl font-bold text-white font-heading">{price}</span>
-            <span className="text-gray-400 ml-1 font-primary">{name === "Connecting Slot" ? "/lượt kết nối thành công" : "/tháng"}</span>
+            <span className="text-gray-400 ml-1 font-primary">{name === "B2B Connection 1on1" ? "/lượt kết nối" : "/tháng"}</span>
           </div>
           <p className="text-gray-400 mt-2 font-primary">{description}</p>
         </div>
@@ -98,7 +98,7 @@ export default function PricingSection() {
       ]
     },
     {
-      name: "Connecting Slot",
+      name: "B2B Connection 1on1",
       price: "250.000 VND",
       description: "Cho doanh nghiệp đang phát triển cần kết nối chất lượng",
       features: [
