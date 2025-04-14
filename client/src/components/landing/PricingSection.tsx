@@ -35,7 +35,7 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
       >
         {isPopular && (
           <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-neon-blue to-electric-purple text-white px-4 py-1 rounded-full text-sm font-medium font-primary">
-            Phổ biến
+            (Chưa bao gồm 8% VAT)
           </div>
         )}
         
