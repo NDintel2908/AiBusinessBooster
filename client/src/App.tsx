@@ -7,12 +7,14 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 
 function Router() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
         <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-of-service" component={TermsOfService} />
         <Route path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
