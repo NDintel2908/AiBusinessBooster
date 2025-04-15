@@ -60,30 +60,278 @@ export default function PrivacyPolicy() {
           >
             <h1 className="text-4xl font-heading font-bold mb-4 text-white">Điều Khoản Dịch Vụ</h1>
             <p className="text-gray-400 mb-8">Cập nhật: Tháng 3/2024</p>
-
-            <div className="prose prose-invert max-w-none space-y-8 font-primary">
+            
+  <div className="prose prose-invert max-w-none space-y-6">
+    <p>
+      Chào mừng bạn đến với Business Connecting Platform ("BCP" hoặc "Nền tảng").
+    </p>
+    <p>
+      Chính sách Quyền Riêng Tư này áp dụng cho các dịch vụ của BCP, bao gồm trang web, ứng dụng, sản phẩm, phần mềm, nội dung và các dịch vụ liên quan khác, được truy cập thông qua bất kỳ nền tảng hoặc thiết bị nào có liên kết với Chính sách này. Nền tảng được cung cấp và vận hành bởi Công ty Cổ phần BCP (“chúng tôi”).
+    </p>
+    <p>Chúng tôi cam kết bảo vệ và tôn trọng quyền riêng tư của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng, chia sẻ và xử lý thông tin doanh nghiệp của người dùng cũng như các doanh nghiệp khác có liên quan đến Nền tảng của chúng tôi. Nếu bạn không đồng ý với Chính sách này, vui lòng không sử dụng Nền tảng.</p>
+    <p>BCP bảo lưu quyền thay đổi Chính sách này bất kỳ lúc nào, và các cập nhật sẽ được thông báo đến bạn qua các phương tiện phù hợp, chẳng hạn như tin nhắn trong Nền tảng. Chúng tôi khuyến nghị bạn thường xuyên xem xét Chính sách này cùng với Điều khoản và Điều kiện sử dụng ("Điều khoản") để hiểu rõ cách chúng tôi thu thập và sử dụng thông tin của bạn ("dữ liệu doanh nghiệp", "dữ liệu người dùng" hoặc "thông tin doanh nghiệp").</p>
+    <p>Bằng cách cài đặt, sử dụng, đăng ký hoặc truy cập dịch vụ theo bất kỳ hình thức nào, bạn đồng ý với Chính sách Quyền Riêng Tư này và xác nhận rằng bạn đã cung cấp sự chấp thuận rõ ràng, đầy đủ về việc xử lý dữ liệu doanh nghiệp của mình theo các điều khoản trong Chính sách này.</p>
+    <p>
+      Chính sách này bao gồm các nội dung chính sau:
+      <ul>1. Thông tin người dùng cung cấp</ul>
+      <ul>2. Cách BCP sử dụng thông tin người dùng</ul>
+      <ul>3. Cách BCP chia sẻ thông tin người dùng</ul>
+      <ul>4. Cách BCP lưu trữ thông tin người dùng</ul>
+      <ul>5. Quyền và lựa chọn của người dùng</ul> 
+      <ul>6. Bảo mật thông tin</ul>
+      <ul>7. Thời gian thông tin được lưu trữ</ul>
+      <ul>8. Điều khoản bổ sung</ul> 
+      <ul>9. Liên hệ</ul>
+    </p>
+  </div>
+  
+              <div className="prose prose-invert max-w-none space-y-6">
               <section id="section1">
                 <h2 className="text-2xl font-heading font-semibold mb-4">1. Thông tin người dùng cung cấp</h2>
-                <p className="text-gray-300">
-                  Khi sử dụng nền tảng BCP, chúng tôi thu thập các thông tin mà bạn cung cấp trực tiếp cho chúng tôi, bao gồm:
-                  • Thông tin doanh nghiệp (tên công ty, mã số thuế, địa chỉ)
-                  • Thông tin người đại diện (họ tên, email, số điện thoại)
-                  • Thông tin kinh doanh (ngành nghề, sản phẩm/dịch vụ, quy mô)
+                <p>
+                Chúng tôi có thể thu thập những thông tin sau từ người dùng.
                 </p>
+                <p><strong>1.1. Thông tin hồ sơ</strong></p>
+                <p>Người dùng cung cấp cho chúng tôi thông tin khi đăng ký trên Nền tảng, bao gồm tên người dùng, mật khẩu, địa chỉ email công ty, Giấy phép Kinh doanh/Chứng nhận Đăng ký Công ty, số điện thoại, thông tin người dùng tiết lộ trong hồ sơ của mình, ảnh, và các thông tin dữ liệu khác được chia sẻ trong quá trình sử dụng.</p>
               </section>
+                <p><strong>1.2. Nội dung người dùng</strong></p>
+                <p>Hệ thống trí tuệ nhân tạo của chúng tôi sẽ thu thập và xử lý nội dung người dùng tải lên hoặc tạo trên Nền tảng, bao gồm và không giới hạn ở lịch sử trò chuyện, lịch sử giao dịch, nhật ký liên lạc, dữ liệu liên quan đến hoạt động kinh doanh, mô hình sử dụng nền tảng, thông tin hồ sơ doanh nghiệp, hình ảnh, và video ("Nội dung người dùng"). Ngay cả khi bạn không phải là người dùng, thông tin của bạn có thể xuất hiện trong Nội dung người dùng do người dùng trên Nền tảng tạo hoặc xuất bản.</p>
+
+                <p><strong>1.3. Tin nhắn</strong></p>
+                <p>Chúng tôi thu thông tin người dùng cung cấp trong quá trình sử dụng Nền tảng khi soạn, gửi hoặc nhận tin nhắn thông qua các chức năng nhắn tin của Nền tảng. Điều này bao gồm các tin nhắn bạn gửi hoặc nhận thông qua tính năng trò chuyện khi liên lạc với các đối tác được kết nối bởi BCP. Thông tin bao gồm nội dung tin nhắn và thông tin về tin nhắn, chẳng hạn như thời điểm tin nhắn được gửi, nhận hoặc đọc và người tham gia tin nhắn.</p>
+
+                <p>Xin lưu ý rằng các tin nhắn mà bạn chọn gửi cho những người dùng khác của Nền tảng có thể được những người dùng đó truy cập và BCP miễn trừ mọi trách nhiệm liên quan về cách những người dùng đó sử dụng hoặc chia sẻ tin nhắn.</p>
+
+                <p>Chúng tôi có thể truy cập nội dung, bao gồm văn bản, hình ảnh và video, được tìm thấy trong bộ nhớ đệm của thiết bị của người dùng, với sự cho phép của bạn.</p>
+
+                <p>Ví dụ: nếu người dùng chọn bắt đầu chia sẻ nội dung với nền tảng của bên thứ ba hoặc chọn dán nội dung từ bộ nhớ đệm vào Nền tảng, chúng tôi có quyền truy cập thông tin được lưu trữ trong bộ nhớ đệm để đáp ứng yêu cầu của bạn.</p>
+
+                <p><strong>1.4. Thông tin mua hàng</strong></p>
+                <p>Trong trường hợp người dùng mua hoặc thanh toán trên hoặc thông qua Nền tảng, bao gồm cả khi bạn mua Credits thông qua cổng thanh toán được cung cấp bởi bên thứ ba, chúng tôi thu thập thông tin về lịch sử mua hàng, thông tin thanh toán, hoá đơn, khu vực, quốc gia và thông tin liên hệ.</p>
+
+                <p><strong>1.5. Bằng chứng về danh tính</strong></p>
+                <p>Vui lòng lưu ý, chúng tôi sẽ yêu cầu chủ sở hữuu của tài khoản cung cấp bằng chứng về danh tính để phục vụ cho quy trình đối soát thông tin pháp lý trên Giấy phép Kinh doanh/Chứng nhận Đăng ký Công ty hoặc các trường hợp khác yêu cầu xác minh danh tính theo chỉ thị của pháp luật nước sở tại và nơi mà BCP đặt trụ sở chính.</p>
+
+                <p><strong>1.6. Thông tin Kỹ thuật</strong></p>
+                <p>Chúng tôi thu thập một số dữ liệu kỹ thuật liên quan đến thiết bị mà bạn sử dụng để truy cập Nền tảng, bao gồm nhưng không giới hạn ở địa chỉ IP, chuỗi nhận dạng trình duyệt, nhà cung cấp dịch vụ mạng, cài đặt múi giờ, mã nhận dạng cho mục đích quảng cáo, loại và kiểu thiết bị, hệ điều hành, loại mạng, ID thiết bị, độ phân giải màn hình, tên và loại ứng dụng và tệp, kiểu hoặc nhịp gõ phím, trạng thái pin, cài đặt âm thanh và các thiết bị âm thanh được kết nối.</p>
+
+                <p>Trong trường hợp bạn đăng nhập từ nhiều thiết bị, chúng tôi có thể sử dụng thông tin hồ sơ của bạn để xác định và đồng bộ hóa hoạt động của bạn trên các thiết bị này. Ngoài ra, chúng tôi có thể liên kết dữ liệu của bạn với thông tin được thu thập từ các thiết bị khác không trực tiếp được sử dụng để truy cập Nền tảng, nhằm đảm bảo tính toàn vẹn của trải nghiệm người dùng và mục đích bảo mật.</p>
+
+                <p><strong>1.7. Thông tin Vị trí</strong></p>
+                <p>Chúng tôi thu thập thông tin về vị trí gần đúng của bạn, bao gồm dữ liệu vị trí được xác định dựa trên thẻ SIM và/hoặc địa chỉ IP. Trong trường hợp bạn cấp quyền truy cập, chúng tôi cũng có thể thu thập dữ liệu vị trí chính xác (ví dụ: thông tin GPS).</p>
+
+                <p>Bên cạnh đó, chúng tôi có thể thu thập và xử lý dữ liệu liên quan đến các vị trí cụ thể mà bạn quan tâm (chẳng hạn như địa danh, cửa hàng) nếu bạn tự nguyện cung cấp thông tin vị trí trong Nội dung Người Dùng của mình.</p>
+
+                <p><strong>1.8. Các thông tin thu thập từ các nguồn khác</strong></p>
+
+                <p><strong>1.8.1.</strong> Thông tin thông qua các cuộc khảo sát, nghiên cứu, quảng bá, cuộc thi, thi đấu hoặc sự kiện do chúng tôi tiến hành hoặc tài trợ mà bạn tham gia.</p>
+
+                <p><strong>1.8.2.</strong> Thông tin thu thập qua các đối tác quảng cáo, đo lường và các đối tác khác chia sẻ với chúng tôi thông tin về bạn và các hoạt động của bạn bên ngoài Nền tảng, chẳng hạn như hành vi của bạn trên các trang web, ứng dụng khác hoặc tại cửa hàng, bao gồm các sản phẩm hoặc dịch vụ bạn đã mua, trực tuyến hoặc trực tiếp. Các đối tác này cũng chia sẻ với chúng tôi các thông tin như mã định danh di động phục vụ quảng cáo, địa chỉ email và số điện thoại được mã hóa, cũng như mã định danh cookie. Chúng tôi sử dụng những dữ liệu này để đối chiếu thông tin của bạn và các hành động của bạn bên ngoài Nền tảng với tài khoản BCP của bạn. Một số đối tác quảng cáo và đối tác khác cho phép chúng tôi thu thập thông tin tương tự trực tiếp từ trang web hoặc ứng dụng của họ thông qua việc tích hợp Công cụ Quảng Cáo của BCP (chẳng hạn như BCP Pixel).</p>
+
+                <p><strong>1.8.3.</strong> Chúng tôi có thể nhận được thông tin về bạn từ các đơn vị liên kết trong cùng hệ sinh thái doanh nghiệp của chúng tôi, bao gồm thông tin về các hoạt động của bạn trên nền tảng của họ.</p>
+
+                <p><strong>1.8.4.</strong> Chúng tôi có thể nhận được thông tin về bạn từ người khác, bao gồm khi bạn được đề cập trong Nội dung người dùng, tin nhắn trực tiếp, khiếu nại, đơn kháng nghị, yêu cầu hoặc phản hồi gửi đến chúng tôi, hoặc khi thông tin liên hệ của bạn được cung cấp cho chúng tôi.</p>
+
+                <p><strong>1.8.5.</strong> Chúng tôi cũng có thể thu thập hoặc nhận thông tin về bạn từ các tổ chức, doanh nghiệp, cá nhân và các nguồn khác, bao gồm các nguồn thông tin công khai, cơ quan chính phủ, tổ chức chuyên môn và tổ chức từ thiện.</p>
+
+                <p>Chúng tôi không chịu trách nhiệm đối với các thực tiễn bảo mật dữ liệu của các nhà cung cấp dịch vụ và đối tác kinh doanh của mình. Các hoạt động thu thập và xử lý thông tin của những nhà cung cấp dịch vụ và đối tác này không thuộc phạm vi điều chỉnh của Chính sách Bảo mật này.</p>
+
+                <p>Chúng tôi có thể tổng hợp hoặc ẩn danh thông tin được mô tả ở trên. Dữ liệu đã được tổng hợp hoặc ẩn danh sẽ không chịu sự điều chỉnh của Chính sách Bảo mật này.</p>
 
               <section id="section2">
                 <h2 className="text-2xl font-heading font-semibold mb-4">2. Cách BCP sử dụng thông tin người dùng</h2>
-                <p className="text-gray-300">
-                  BCP sử dụng thông tin của bạn để:
-                  • Cung cấp và cải thiện dịch vụ kết nối B2B
-                  • Phân tích và đề xuất đối tác phù hợp
-                  • Bảo mật và xác thực tài khoản
-                  • Gửi thông báo và cập nhật về dịch vụ
+                <div className="prose prose-invert max-w-none space-y-6">
+                  <p>BCP sử dụng thông tin của người dùng để cải thiện, hỗ trợ và quản lý Nền Tảng, cho phép người dùng sử dụng các chức năng của Nền Tảng, đồng thời thực hiện và thực thi Điều Khoản Dịch Vụ của chúng tôi. Chúng tôi cũng có thể sử dụng thông tin của bạn để phục vụ cho các quy trình kiểm tra, đối soát của Nền tảng và nâng cấp trải nghiệm sử dụng, cùng với các mục đích khác.                   </p>
+                <p>
+                  Chúng tôi thường sử dụng thông tin chúng tôi thu thập được theo những cách sau:
+
+                <ul>a. Để đáp ứng các yêu cầu về sản phẩm, dịch vụ, chức năng Nền tảng, hỗ trợ và thông tin cho các hoạt động nội bộ, bao gồm các mục đích về khắc phục sự cố, phân tích dữ liệu, thử nghiệm, nghiên cứu, thống kê và khảo sát và lấy ý kiến phản hồi của người dùng;</ul>
+                <ul>b. Để cung cấp các tính năng kết nối của chúng tôi và tạo thuận lợi cho việc tìm kiếm đối tác phù hợp, bao gồm chia sẻ thông tin của người dùng với các bên có nhu cầu mua/bán/hợp tác, nhà cung cấp dịch vụ, quản lý thanh toán và các dịch vụ khác có liên quan;</ul>
+                <ul>c. Để cá nhân hóa nội dung khi sử dụng Nền tảng. Ví dụ: chúng tôi có thể cung cấp cho người dùng các dịch vụ dựa trên cài đặt quốc gia mà bạn đã chọn hoặc hiển thị cho bạn nội dung tương tự như nội dung mà bạn đã yêu cầu hoặc tương tác;</ul>
+                <ul>d. Để gửi tài liệu quảng bá từ chúng tôi hoặc thay mặt cho đơn vị liên kết của chúng tôi và các bên thứ ba đáng tin cậy, bao gồm thông qua tin nhắn tức thời hoặc email;</ul>
+                <ul>e. Để cải thiện và phát triển Nền tảng của chúng tôi và tiến hành phát triển sản phẩm;</ul>
+                <ul>f. Để sử dụng Nội dung người dùng trong các chiến dịch quảng cáo và tiếp thị của chúng tôi để quảng bá Nền tảng, mời bạn tham gia sự kiện và quảng bá các chủ đề, hashtag và chiến dịch phổ biến trên Nền tảng;</ul>
+                <ul>g. Để xác định thông tin bổ sung về người dùng, chẳng hạn như ngành kinh doanh đang quan tâm đến;</ul>
+                <ul>h. Để giúp chúng tôi phát hiện và chống lại hành vi lạm dụng, hoạt động gây hại, lừa đảo, gửi thư rác, và hoạt động bất hợp pháp trên Nền tảng;</ul>
+                <ul>i. Để đảm bảo nội dung được trình bày theo cách hiệu quả nhất cho bạn và thiết bị của bạn;</ul>
+                <ul>j. Để tăng cường tính an toàn, bảo mật của Nền tảng, bao gồm bằng cách sàng lọc, phân tích và xem xét Nội dung người dùng, tin nhắn và siêu dữ liệu liên quan nhằm phát hiện những vi phạm đối với Điều khoản Dịch vụ, Nguyên tắc Cộng đồng hoặc các điều kiện và chính sách khác của chúng tôi;</ul>
+                  <ul>k. Để tạo điều kiện thuận lợi cho việc nghiên cứu được tiến hành bởi các nghiên cứu viên độc lập đáp ứng các tiêu chí nhất định;</ul>
+                  <ul>l. Để xác minh danh tính người dùng;</ul>
+                  <ul>m. Để liên lạc với bạn, bao gồm thông báo cho bạn về những thay đổi trong các dịch vụ của chúng tôi;</ul>
+                  <ul>n. Để thông báo bạn là người chiến thắng trong các cuộc thi hoặc chương trình khuyến mãi của chúng tôi nếu được phép theo quy tắc khuyến mãi và gửi cho bạn giải thưởng liên quan;</ul>
+                  <ul>o. Để thực thi Điều khoản Dịch vụ, Nguyên tắc Cộng đồng và các điều kiện và chính sách khác của chúng tôi;</ul>
+                  <ul>p. Để đào tạo và cải thiện công nghệ của chúng tôi, chẳng hạn như các mô hình và thuật toán trí tuệ nhân tạo của chúng tôi.</ul>
+
                 </p>
+                <p>
+                  Phân mục: Chúng tôi không thực hiện việc phân mục dẫn đến các tác động pháp lý hoặc ảnh hưởng đáng kể tương tự, theo quy định của pháp luật hiện hành.
+                </p>
+                <p>
+                  Chúng tôi xử lý dữ liệu người dùng dựa trên một hoặc nhiều cơ sở pháp lý sau:
+                
+                  <ul>- Người dùng đã đồng ý rõ ràng với việc xử lý dữ liệu (ví dụ: khi đăng ký tài khoản hoặc cấp quyền truy cập thông tin);</ul>
+                  <ul>- Việc xử lý là cần thiết để thực hiện hợp đồng hoặc cung cấp dịch vụ trên nền tảng;</ul>
+                  <ul>- Việc xử lý là cần thiết để tuân thủ nghĩa vụ pháp lý (ví dụ: xác minh thông tin pháp nhân theo quy định pháp luật Việt Nam);</ul>
+                  <ul>- Việc xử lý là cần thiết nhằm phục vụ lợi ích hợp pháp của BCP, chẳng hạn như cải thiện sản phẩm, đảm bảo an toàn hệ thống hoặc ngăn chặn gian lận.</ul>
+
+                </p>
+                </div>
               </section>
 
-              {/* Add remaining sections similarly */}
+                <section id="section3">
+                  <h2 className="text-2xl font-heading font-semibold mb-4">3. Cách BCP chia sẻ thông tin người dùng</h2>
+                  <div className="prose prose-invert max-w-none space-y-6">
+                    <p>Chúng tôi chia sẻ thông tin của bạn với các bên sau đây:</p>
+
+                    <p><strong>3.1. Đối tác Kinh doanh</strong></p>
+                    <p>Người dùng tham gia vào BCP có trách nhiệm đảm bảo tính minh bạch trong hoạt động kinh doanh và cung cấp đầy đủ thông tin cần thiết cho các quy trình xác minh và đối soát, bao gồm nhưng không giới hạn ở Giấy phép Kinh doanh/Chứng nhận Đăng ký Công ty, thông tin pháp lý, chứng chỉ chuyên môn và các dữ liệu liên quan khác.</p>
+                    <p>BCP có thể thu thập, tổng hợp và phân tích các thông tin này để đánh giá mức độ tín nhiệm của doanh nghiệp bạn và đề xuất kết nối với các đối tác có mức tín nhiệm tương ứng nhằm hỗ trợ quá trình kết nối và tối ưu hóa trải nghiệm người dùng.</p>
+                    <p>Trong trường hợp bạn cho phép bên thứ ba truy cập vào tài khoản của mình, chúng tôi có thể chia sẻ một số thông tin nhất định với bên thứ ba đó. Phạm vi thông tin được chia sẻ sẽ phụ thuộc vào các quyền mà bạn cấp và có thể bao gồm thông tin tài khoản của bạn cũng như các dữ liệu khác mà bạn chủ động cung cấp.</p>
+                    <p><strong>Miễn trừ trách nhiệm:</strong> BCP không chịu trách nhiệm đối với bất kỳ tổn thất, thiệt hại hoặc rủi ro nào phát sinh từ việc bên thứ ba sử dụng, lưu trữ hoặc tiết lộ thông tin của bạn, bao gồm nhưng không giới hạn ở các hành vi vi phạm bảo mật, lạm dụng dữ liệu hoặc tiết lộ thông tin trái phép do bên thứ ba thực hiện. Bạn nên xem xét và đánh giá chính sách quyền riêng tư cũng như các biện pháp bảo mật của bên thứ ba trước khi cấp quyền truy cập vào tài khoản hoặc thông tin cá nhân của mình.</p>
+
+                    <p><strong>3.2. Nhà Cung cấp Dịch vụ</strong></p>
+                    <p>Chúng tôi cung cấp thông tin và nội dung cho nhà cung cấp dịch vụ mà hỗ trợ hoạt động kinh doanh của chúng tôi, chẳng hạn như nhà cung cấp dịch vụ đám mây, nhà cung cấp dịch vụ kiểm duyệt nội dung để đảm bảo Nền tảng là nơi an toàn, và các nhà cung cấp các dịch vụ có liên quan khác.</p>
+
+                    <p><strong>3.2.1. Nhà Cung cấp Dịch vụ Thanh toán</strong></p>
+                    <p>Trong trường hợp người dùng thực hiện giao dịch mua Credit, chúng tôi sẽ chia sẻ dữ liệu với nhà cung cấp dịch vụ thanh toán để tạo điều kiện thực hiện giao dịch này bằng cách chia sẻ ID giao dịch nhằm cho phép diện bạn và ghi có vào tài khoản của bạn với giá trị chính xác bằng số lượng Credit bạn đã thực hiện thanh toán.</p>
+
+                    <p><strong>3.2.2. Nhà Cung cấp Dịch vụ Phân tích</strong></p>
+                    <p>Chúng tôi sử dụng nhà cung cấp dịch vụ phân tích để giúp chúng tôi tối ưu hóa và cải thiện Nền tảng. Nhà cung cấp dịch vụ phân tích bên thứ ba của chúng tôi cũng giúp chúng tôi phân phối các quảng cáo mục tiêu.</p>
+
+                    <p><strong>3.3. Nhà Quảng cáo, Mạng lưới Quảng cáo và Đối tác Đo lường</strong></p>
+                    <p>Chúng tôi chia sẻ thông tin với các nhà quảng cáo và công ty đo lường bên thứ ba để cho họ biết có bao nhiêu người dùng và kiểu người dùng nào của Nền tảng đã xem hoặc nhấp vào quảng cáo.</p>
+                    <p>Chúng tôi không chịu trách nhiệm về các hoạt động liên quan đến quyền riêng tư của các bên thứ ba này, và các hoạt động của các bên thứ ba này liên quan đến thông tin không nằm trong Chính sách Quyền Riêng Tư này.</p>
+
+                    <p><strong>3.4. Nghiên Cứu Viên Độc Lập</strong></p>
+                    <p>Chúng tôi chia sẻ thông tin của bạn với các nghiên cứu viên độc lập để tạo điều kiện thực hiện nghiên cứu đáp ứng một số tiêu chí nhất định.</p>
+
+                    <p><strong>3.5. Công ty của Chúng tôi</strong></p>
+                    <p>Chúng tôi cũng có thể chia sẻ thông tin của bạn với các thành viên khác, công ty con, hoặc công ty liên kết trong tập đoàn của chúng tôi, bao gồm để cung cấp Nền Tảng, cải thiện và tối ưu hóa Nền Tảng, ngăn chặn việc sử dụng trái pháp luật và hỗ trợ người dùng.</p>
+
+                    <p><strong>3.6. Lý Do Pháp Lý</strong></p>
+                    <p>Chúng tôi sẽ chia sẻ thông tin của người dùng với các cơ quan thực thi pháp luật, cơ quan công quyền hoặc các tổ chức khác nếu được pháp luật yêu cầu phải làm như vậy, hoặc nếu việc đó là cần thiết một cách hợp lý để:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>a. tuân thủ nghĩa vụ, quy trình hoặc yêu cầu pháp lý;</li>
+                      <li>b. thực thi Điều khoản Dịch vụ và các thỏa thuận, chính sách, và tiêu chuẩn khác của chúng tôi, bao gồm cả việc điều tra bất kỳ vi phạm nào có thể xảy ra đối với Điều khoản Dịch vụ của chúng tôi và các thỏa thuận, chính sách và tiêu chuẩn đó;</li>
+                      <li>c. phát hiện, ngăn chặn hoặc giải quyết các vấn đề về bảo mật, gian lận hoặc kỹ thuật; hoặc</li>
+                      <li>d. bảo vệ các quyền, tài sản hoặc sự an toàn của chúng tôi, người dùng của chúng tôi, bên thứ ba hoặc công chúng khi được pháp luật yêu cầu hoặc cho phép (bao gồm cả việc trao đổi thông tin với các công ty và tổ chức khác nhằm mục đích chống lừa đảo và giảm rủi ro tín dụng).</li>
+                    </ul>
+
+                    <p><strong>3.7. Bán, Sáp nhập, hoặc Giao dịch Kinh doanh khác</strong></p>
+                    <p>Chúng tôi có thể tiết lộ thông tin của người dùng cho các bên thứ ba, trong trường hợp sau:</p>
+
+                    <p><strong>3.7.1.</strong> BCP bán hoặc mua bất kỳ cơ sở kinh doanh hoặc tài sản nào (cho dù đó là kết quả của việc thanh lý, phá sản, hoặc theo cách khác), trong trường hợp này chúng tôi sẽ tiết lộ dữ liệu của bạn cho bên bán hoặc bên mua tiềm năng của cơ sở kinh doanh hoặc tài sản đó;</p>
+
+                    <p><strong>3.7.2.</strong> BCP bán, mua, sáp nhập, được mua lại bởi hoặc liên danh với các công ty hoặc doanh nghiệp khác, hoặc bán một số hoặc tất cả tài sản của chúng tôi. Trong các giao dịch đó, thông tin người dùng có thể nằm trong số các tài sản được chuyển nhượng.</p>
+
+                  </div>
+                </section>
+
+                <section id="section4">
+                  <h2 className="text-2xl font-heading font-semibold mb-4">4. Cách BCP lưu trữ thông tin người dùng</h2>
+                  <div className="prose prose-invert max-w-none space-y-6">
+                    <p>
+                      Thông tin của người dùng có thể được lưu trữ trên các máy chủ ở bên ngoài quốc gia nơi bạn sống, chẳng hạn như ở Singapore nhằm đảm bảo tốc độ truy cập, hiệu năng mạnh mẽ và khả năng bảo vệ trong trường hợp máy chủ không hoạt động. 
+                    </p>
+                    <p>
+                      Các Đối tác, nhà cung cấp và nhà thầu mà chúng tôi chia sẻ dữ liệu như được mô tả trong Chính sách Quyền Riêng Tư này đặt trụ sở và truyền dữ liệu cá nhân đến nhiều khu vực tài phán trên thế giới.
+
+                    </p>
+                  </div>
+                </section>
+
+                <section id="section5">
+                  <h2 className="text-2xl font-heading font-semibold mb-4">5. Quyền và lựa chọn của người dùng</h2>
+                  <div className="prose prose-invert max-w-none space-y-6">
+
+                  <p>
+                    Người dùng có các quyền và lựa chọn liên quan đến thông tin của doanh nghiệp. Người dùng có thể được cấp một số quyền nhất định theo luật hiện hành, các quyền này có thể bao gồm quyền truy cập, xoá, cập nhật hoặc chỉnh sửa dữ liệu của bạn, bạn sẽ được thông báo về việc xử lý dữ liệu của bạn, nộp đơn khiếu nại lên các cơ quan chức năng, và các quyền khác. Người dùng có thể gửi yêu cầu thực hiện các quyền của mình theo luật hiện hành.
+                  </p>
+                  
+                  <p>
+                    Người dùng có thể kháng nghị bất kỳ quyết định nào chúng tôi đã đưa ra về yêu cầu của bạn bằng cách làm theo hướng dẫn trong thông tin liên lạc bạn nhận được từ chúng tôi thông báo cho bạn về quyết định của chúng tôi.
+                  </p>
+
+                  <p>
+                    Vui lòng xem thêm các Điều khoản bổ sung dưới đây để biết liệu quốc gia của bạn có người đại diện tại địa phương hoặc người liên hệ tại địa phương hay không.
+                  </p>
+
+                  </div>
+                </section>
+
+                <section id="section6">
+                  <h2 className="text-2xl font-heading font-semibold mb-4">6. Bảo mật thông tin
+</h2>
+                  <div className="prose prose-invert max-w-none space-y-6">
+                    <p>BCP cam kết bảo vệ dữ liệu của bạn bằng các biện pháp bảo mật theo tiêu chuẩn ngành, bao gồm mã hóa, kiểm soát truy cập và các giao thức lưu trữ an toàn. Tuy nhiên, người dùng xác nhận rằng không có hệ thống nào hoàn toàn miễn nhiễm với rủi ro, và mặc dù chúng tôi nỗ lực và áp dụng các biện pháp hợp lý để bảo vệ dữ liệu của bạn, ví dụ như, bằng mã hoá, chúng tôi không thể đảm bảo tuyệt đối trước các hành vi truy cập trái phép hoặc vi phạm bảo mật.</p>
+
+                    <p>Chúng tôi có các biện pháp thích hợp về kỹ thuật và tổ chức để đảm bảo mức độ bảo mật phù hợp với rủi ro có khả năng xảy ra khác nhau và mức độ nghiêm trọng đối với các quyền và quyền tự do của bạn và những người dùng khác. Chúng tôi duy trì các biện pháp tổ chức và kỹ thuật này và sẽ sửa đổi các biện pháp này tùy từng thời điểm để cải thiện tính bảo mật tổng thể của hệ thống của chúng tôi.</p>
+
+                    <p>Chúng tôi sẽ, tùy từng thời điểm, đưa vào các liên kết đến và từ trang web của các mạng lưới đối tác, nhà quảng cáo và bên liên kết của chúng tôi. Nếu bạn theo một liên kết đến bất kỳ trang web nào trong số những trang web này, xin lưu ý rằng các trang web này có chính sách quyền riêng tư của riêng họ và rằng chúng tôi không chịu bất kỳ trách nhiệm hoặc nghĩa vụ pháp lý nào đối với các chính sách này. Vui lòng kiểm tra các chính sách này trước khi bạn cung cấp bất kỳ thông tin nào lên các trang web này.</p>
+
+                    <p>Khi có vi phạm dữ liệu cá nhân, BCP sẽ thông báo cho người dùng trong vòng XX giờ, đồng thời báo cáo với cơ quan có thẩm quyền nếu bắt buộc theo pháp luật.</p>
+                  </div>
+                </section>
+
+                <section id="section7">
+                  <h2 className="text-2xl font-heading font-semibold mb-4">7. Thời gian thông tin được lưu trữ</h2>
+                  <div className="prose prose-invert max-w-none space-y-6">
+                    <p>Chúng tôi lưu giữ thông tin trong khoảng thời gian cần thiết để cung cấp Nền tảng và cho các mục đích khác được nêu trong Chính sách Quyền Riêng Tư này. Chúng tôi cũng lưu giữ thông tin khi cần thiết để tuân thủ các nghĩa vụ theo hợp đồng và nghĩa vụ pháp lý, khi chúng tôi có lợi ích kinh doanh hợp pháp đối với việc lưu giữ đó (chẳng hạn như cải thiện và phát triển Nền tảng, và tăng cường sự an toàn, bảo mật và ổn định của Nền tảng), và để thực thi hoặc biện hộ các khiếu nại pháp lý.</p>
+
+                    <p>Thời gian lưu giữ khác nhau tùy thuộc vào các tiêu chí khác nhau, chẳng hạn như loại thông tin và mục đích mà chúng tôi sử dụng thông tin. Ví dụ: khi chúng tôi xử lý thông tin của người dùng, chẳng hạn như thông tin Giấy phép Kinh doanh/Chứng nhận Đăng ký Công ty để cung cấp Nền tảng cho bạn, chúng tôi sẽ lưu giữ thông tin này cho đến khi bạn không còn tài khoản hợp lệ trên BCP nữa.</p>
+
+                    <p>Nếu người dùng vi phạm Điều khoản Dịch vụ, Nguyên tắc Cộng đồng của chúng tôi hoặc các điều kiện hoặc chính sách khác, chúng tôi có thể ngay lập tức vô hiệu hoá tài khoản và đóng hồ sơ cũng như Nội dung người dùng của bạn, nhưng mọi thông tin đều được lưu giữ để xử lý vi phạm.</p>
+                  </div>
+                </section>
+
+                <section id="section8">
+                  <h2 className="text-2xl font-heading font-semibold mb-4">8. Điều khoản bổ sung 
+</h2>
+                  <div className="prose prose-invert max-w-none space-y-6">
+                    <p>Trong trường hợp có mâu thuẫn giữa các quy định của Điều khoản bổ sung – Khu Vực Pháp Lý Cụ Thể có liên quan đến khu vực pháp lý của người dùng là nơi người dùng truy cập hoặc sử dụng dịch vụ, và phần quy định còn lại của chính sách, thì Điều khoản bổ sung – Khu Vực Pháp Lý Cụ Thể của khu vực pháp lý liên quan sẽ thay thế và có hiệu lực.</p>
+
+                    <p><strong>Việt Nam</strong></p>
+                    <p>Nếu bạn đang sử dụng dịch vụ của chúng tôi ở Việt Nam, thì các điều khoản bổ sung sau đây sẽ được áp dụng. Trong trường hợp có bất kỳ mâu thuẫn nào giữa các điều khoản bổ sung sau đây và các quy định trong phần chính của chính sách này, thì các điều khoản sau đây sẽ được ưu tiên áp dụng.</p>
+
+                    <p><strong>Cách thức xử lý dữ liệu doanh nghiệp</strong> - Chúng tôi có thể xử lý dữ liệu của người dùng bằng các cách thức thủ công hoặc tự động.</p>
+
+                    <p><strong>Quyền và nghĩa vụ của chủ thể dữ liệu.</strong> Ngoại trừ một số ngoại lệ nhất định, người dùng có quyền lợi và nghĩa vụ theo pháp luật hiện hành. Cụ thể, người dùng có các quyền theo luật như sau:</p>
+
+                    <ul className="list-disc pl-6"><li>Quyền được biết;</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền đồng ý và rút lại sự đồng ý;</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền truy cập;</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền xóa dữ liệu;</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền hạn chế xử lý dữ liệu;</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền được cung cấp dữ liệu;</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền phản đối xử lý dữ liệu;</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền khiếu nại, tố cáo hoặc khởi kiện;</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền yêu cầu bồi thường thiệt hại; và</li></ul>
+                    <ul className="list-disc pl-6"><li>Quyền tự bảo vệ.</li></ul>
+
+                    <p>Người dùng có thể thực hiện những quyền này bằng cách liên hệ với chúng tôi theo chi tiết tại mục “Liên hệ” và chúng tôi sẽ phản hồi yêu cầu của người dùng bất kể địa điểm lưu trữ dữ liệu của người dùng.</p>
+
+                    <p>Người dùng có những nghĩa vụ theo luật định như sau:</p>
+
+                    <ul className="list-disc pl-6"><li>Tự bảo vệ dữ liệu của mình;</li></ul>
+                    <ul className="list-disc pl-6"><li>Yêu cầu các tổ chức và cá nhân khác có liên quan bảo vệ dữ liệu của mình;</li></ul>
+                    <ul className="list-disc pl-6"><li>Tôn trọng và bảo vệ dữ liệu của người khác;</li></ul>
+                    <ul className="list-disc pl-6"><li>Cung cấp đầy đủ, chính xác dữ liệu khi người dùng đồng ý cho phép xử lý dữ liệu của mình; và</li></ul>
+                    <ul className="list-disc pl-6"><li>Các nghĩa vụ khác theo pháp luật hiện hành.</li></ul>
+                  </div>
+                </section>
+
+                <section id="section9">
+                  <h2 className="text-2xl font-heading font-semibold mb-4">9. Liên hệ</h2>
+                  <div className="prose prose-invert max-w-none space-y-6">
+                    <p>Mọi câu hỏi, bình luận, khiếu nại và yêu cầu liên quan đến Chính sách Quyền Riêng Tư này có thể gửi về email: <a href="mailto:connect@bcp.global" className="underline text-blue-400">connect@bcp.global</a></p>
+
+                    <p>Vui lòng xem thêm các điều khoản bổ sung dưới đây để biết liệu quốc gia của bạn có người đại diện tại địa phương hoặc người liên hệ tại địa phương hay không.</p>
+
+                    <p>Chúng tôi sẽ nỗ lực giải quyết yêu cầu của bạn trong thời gian sớm nhất. Điều này không ảnh hưởng đến quyền khiếu nại của bạn với cơ quan bảo vệ dữ liệu thích hợp, nếu áp dụng.</p>
+                  </div>
+                </section>
+
+            
             </div>
           </motion.div>
         </div>

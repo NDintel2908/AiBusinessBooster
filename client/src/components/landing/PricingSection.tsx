@@ -94,7 +94,7 @@ export default function PricingSection() {
       description: "Phù hợp với startup đang tìm kiếm cơ hội",
       features: [
         { text: "Thuật toán kết nối AI cơ bản", included: true },
-        { text: "Lên đến 10 kết nối mỗi tháng", included: true },
+        { text: "Lên đến 30 kết nối mỗi tháng", included: true },
         { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
         { text: "Hỗ trợ qua email", included: true }
       ]
