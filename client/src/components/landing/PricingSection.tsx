@@ -66,7 +66,9 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           {isPopular ? (
             <GradientButton className="w-full font-primary" animate>Mua ngay</GradientButton>
           ) : (
-            <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
+            <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
+              <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
+            </a>
           )}
         </a>
       </GlassCard>
