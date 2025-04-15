@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
+const PaymentPolicy = lazy(() => import("@/pages/PaymentPolicy"));
 
 function Router() {
   return (
@@ -15,6 +16,7 @@ function Router() {
       <Switch>
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
+        <Route path="/payment-policy" component={PaymentPolicy} />
         <Route path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
