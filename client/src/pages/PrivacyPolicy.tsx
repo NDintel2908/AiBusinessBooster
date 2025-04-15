@@ -1,9 +1,12 @@
 
 import { motion } from "framer-motion";
+import Header from "@/components/landing/Header";
+import Footer from "@/components/landing/Footer";
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-deep-dark text-gray-200">
+      <Header />
       <div className="container mx-auto px-4 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,6 +57,7 @@ export default function PrivacyPolicy() {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 }
