@@ -9,6 +9,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/privacy-policy" component={lazy(() => import("@/pages/PrivacyPolicy"))} />
       <Route component={NotFound} />
     </Switch>
   );
