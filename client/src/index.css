@@ -14,6 +14,13 @@
   
   * {
     @apply border-border;
+    user-select: text;
+  }
+
+  /* Allow text selection with a nice highlight color */
+  ::selection {
+    background-color: rgba(0, 151, 251, 0.3);
+    color: inherit;
   }
 
   html {
@@ -47,6 +54,17 @@
     padding: 8px;
     position: relative;
     z-index: 10;
+    user-select: none; /* Keep logo non-selectable */
+  }
+
+  /* Ensure text content is selectable */
+  p, h1, h2, h3, h4, h5, h6, span, li {
+    user-select: text;
+  }
+
+  /* Allow button text to be selectable while keeping click functionality */
+  button {
+    user-select: text;
   }
 
   .logo img {
