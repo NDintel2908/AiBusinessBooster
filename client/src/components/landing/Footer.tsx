@@ -4,7 +4,7 @@ import BCPAILogo from './BCPAI.png';
 export default function Footer() {
   return (
     <footer className="py-12 border-t border-gray-800 relative">
-      <div className="absolute inset-0 z-0 opacity-30">
+      <div className="absolute inset-0 z-0 opacity-30 pointer-events-none">
         <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-electric-purple/10 to-transparent"></div>
       </div>
       
