@@ -82,9 +82,9 @@ export default function HeroSection() {
               ref={statsRef}
             >
               <div className="flex -space-x-2">
-                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Business Person 1" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
-                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Business Person 2" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
-                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Business Person 3" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
+                <img src="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg" alt="Business Person 1" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
+                <img src="https://s3-symbol-logo.tradingview.com/vingroup-joint-stock-company--600.png" alt="Business Person 2" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
+                <img src="https://freelogopng.com/images/all_img/1657952641google-logo-png-image.png" alt="Business Person 3" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
               </div>
               <div className="text-sm text-gray-400 font-primary">
                 <span className="font-semibold text-white">500+</span> doanh nghiệp mới đăng ký trong tháng
