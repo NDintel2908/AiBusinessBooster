@@ -29,17 +29,14 @@ export default function Footer() {
             <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
             <ul className="space-y-4 font-primary">
               <li><a href="#about" className="text-gray-400 hover:text-neon-blue transition duration-300">Về chúng tôi</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Tuyển dụng</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Báo chí</a></li>
+              
             </ul>
           </div>
           
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Tài nguyên</h4>
             <ul className="space-y-4 font-primary">
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Tài liệu</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-neon-blue transition duration-300">Trung tâm hỗ trợ</a></li>
+              
               <li><Link href="/payment-policy" className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách thanh toán</Link></li>
               <li><Link href="/privacy-policy" className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách Quyền Riêng Tư</Link></li>
               <li><Link href="/terms-of-service" className="text-gray-400 hover:text-neon-blue transition duration-300">Điều khoản Dịch vụ</Link></li>
