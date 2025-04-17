@@ -82,9 +82,9 @@ export default function HeroSection() {
               ref={statsRef}
             >
               <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo_FPT_Software.png" alt="Company Logo 1" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white p-1" />
+                <img src="https://vcdn1-kinhdoanh.vnecdn.net/2023/02/14/LOGO-VNPT-3-8812-1676336897.jpg" alt="Company Logo 2" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white p-1" />
+                <img src="https://vcdn1-giaitri.vnecdn.net/2021/05/19/Logo-moi-cua-Viettel-1-16214273-6644-7890-1621427392.jpg" alt="Company Logo 3" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white p-1" />
               </div>
               <div className="text-sm text-gray-400 font-primary">
                 <span className="font-semibold text-white">500+</span> doanh nghiệp mới đăng ký trong tháng
