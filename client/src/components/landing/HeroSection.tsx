@@ -82,9 +82,9 @@ export default function HeroSection() {
               ref={statsRef}
             >
               <div className="flex -space-x-2">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/FPT_Software_logo.svg/2560px-FPT_Software_logo.svg.png" alt="FPT Logo" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white p-1" />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Viettel_logo_2021.svg/2560px-Viettel_logo_2021.svg.png" alt="Viettel Logo" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white p-1" />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Vnpt_Logo.svg/2560px-Vnpt_Logo.svg.png" alt="VNPT Logo" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white p-1" />
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Business Person 1" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Business Person 2" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Business Person 3" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
               </div>
               <div className="text-sm text-gray-400 font-primary">
                 <span className="font-semibold text-white">500+</span> doanh nghiệp mới đăng ký trong tháng
