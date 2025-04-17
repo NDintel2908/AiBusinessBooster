@@ -82,9 +82,9 @@ export default function HeroSection() {
               ref={statsRef}
             >
               <div className="flex -space-x-2">
-                <img src="https://i.pravatar.cc/40?img=1" alt="User 1" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
-                <img src="https://i.pravatar.cc/40?img=2" alt="User 2" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
-                <img src="https://i.pravatar.cc/40?img=3" alt="User 3" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
+                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
+                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
+                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
               </div>
               <div className="text-sm text-gray-400 font-primary">
                 <span className="font-semibold text-white">500+</span> doanh nghiệp mới đăng ký trong tháng
