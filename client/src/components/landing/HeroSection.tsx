@@ -82,9 +82,9 @@ export default function HeroSection() {
               ref={statsRef}
             >
               <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-deep-dark bg-gray-300"></div>
+                <img src="https://cdn-icons-png.flaticon.com/128/2065/2065187.png" alt="Business Profile 1" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white" />
+                <img src="https://cdn-icons-png.flaticon.com/128/11120/11120216.png" alt="Business Profile 2" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white" />
+                <img src="https://cdn-icons-png.flaticon.com/128/6821/6821002.png" alt="Business Profile 3" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover bg-white" />
               </div>
               <div className="text-sm text-gray-400 font-primary">
                 <span className="font-semibold text-white">500+</span> doanh nghiệp mới đăng ký trong tháng
