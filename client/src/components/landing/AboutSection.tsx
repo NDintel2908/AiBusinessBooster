@@ -44,19 +44,7 @@ export default function AboutSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <GlassCard className="p-4 rounded-lg">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-neon-blue to-electric-purple flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Hài lòng khách hàng</p>
-                    <p className="text-xs text-gray-400">98% phản hồi tích cực</p>
-                  </div>
-                </div>
-              </GlassCard>
+              
             </motion.div>
           </motion.div>
           

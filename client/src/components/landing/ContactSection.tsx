@@ -65,7 +65,7 @@ export default function ContactSection() {
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
               <span className="text-sm font-medium text-neon-blue">Liên hệ với chúng tôi</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
+            <h2 className="text-3xl md:text-3xl font-heading font-bold mb-6 text-white">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>Trở thành đối tác được BCP giới thiệu
             </h2>
             <p className="text-gray-300 mb-8 font-primary">
@@ -108,7 +108,7 @@ export default function ContactSection() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
                       placeholder="Nguyễn Văn A"
                       required
                     />
@@ -122,7 +122,7 @@ export default function ContactSection() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
                       placeholder="example@company.com"
                       required
                     />
@@ -137,7 +137,7 @@ export default function ContactSection() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                    className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
                     placeholder="Công ty của bạn"
                     required
                   />
@@ -151,7 +151,7 @@ export default function ContactSection() {
                     value={formData.requirements}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                    className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
                     placeholder="Hãy cho chúng tôi biết về nhu cầu và cách chúng tôi có thể giúp đỡ..."
                   ></textarea>
                 </div>
