@@ -14,6 +14,28 @@
   
   * {
     @apply border-border;
+    user-select: text;
+  }
+
+  /* Enable text selection with a nice highlight color */
+  ::selection {
+    background-color: rgba(0, 151, 251, 0.3);
+    color: inherit;
+  }
+
+  /* Make sure absolute overlays don't block text selection */
+  .absolute {
+    pointer-events: none;
+  }
+
+  /* But keep pointer events for interactive elements inside absolute containers */
+  .absolute a,
+  .absolute button,
+  .absolute input,
+  .absolute textarea,
+  .absolute select,
+  .absolute [role="button"] {
+    pointer-events: auto;
   }
 
   html {
