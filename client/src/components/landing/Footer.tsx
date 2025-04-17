@@ -29,7 +29,7 @@ export default function Footer() {
             <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
             <ul className="space-y-4 font-primary">
               <li><a href="#about" className="text-gray-400 hover:text-neon-blue transition duration-300">Về chúng tôi</a></li>
-              <li><a href="#features-section" className="text-gray-400 hover:text-neon-blue transition duration-300">Tính năng</a></li>
+              <li><a href="#service-section" className="text-gray-400 hover:text-neon-blue transition duration-300">Tính năng</a></li>
               <li><a href="#pricing" className="text-gray-400 hover:text-neon-blue transition duration-300">Bảng giá</a></li>
             </ul>
           </div>

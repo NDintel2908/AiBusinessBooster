@@ -55,7 +55,7 @@ export default function Header() {
         
         {/* Desktop Menu */}
         <nav className="hidden lg:flex space-x-8 items-center font-primary text-sm">
-          <a href="#features-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</a>
+          <a href="#service-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</a>
           <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</a>
           <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</a>
           <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300 flex items-center gap-2">
