@@ -28,13 +28,13 @@ export default function Header() {
   }, [isMobile, isMobileMenuOpen]);
 
   return (
-    <header className="fixed w-full top-0 z-50 px-4 py-1">
+    <header className="fixed w-full top-0 z-50 px-4 py-0.5">
       <div className={`max-w-6xl mx-auto rounded-full transition-all duration-300 ${
         isScrolled ? "bg-black/85 backdrop-blur-lg border border-gray-800/30" : "bg-transparent"
       }`}>
-        <div className="container mx-auto px-6 py-1.5 flex justify-between items-center">
+        <div className="container mx-auto px-6 py-1 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="w-24 h-24 md:w-28 md:h-28 relative overflow-hidden mr-3 logo" style={{ marginTop: '-12px', marginBottom: '-12px' }}>
+          <div className="w-20 h-20 md:w-24 md:h-24 relative overflow-hidden mr-3 logo" style={{ marginTop: '-8px', marginBottom: '-8px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-white font-heading text-xl md:text-2xl font-bold tracking-wider hero-title">
