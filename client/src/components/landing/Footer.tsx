@@ -28,9 +28,42 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
             <ul className="space-y-4 font-primary">
-              <li><Link href="/#about" className="text-gray-400 hover:text-neon-blue transition duration-300">Về chúng tôi</Link></li>
-              <li><Link href="/#service-section" className="text-gray-400 hover:text-neon-blue transition duration-300">Tính năng</Link></li>
-              <li><Link href="/#pricing" className="text-gray-400 hover:text-neon-blue transition duration-300">Bảng giá</Link></li>
+              <li>
+                <a 
+                  href="/" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#about';
+                  }}
+                  className="text-gray-400 hover:text-neon-blue transition duration-300"
+                >
+                  Về chúng tôi
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#service-section';
+                  }}
+                  className="text-gray-400 hover:text-neon-blue transition duration-300"
+                >
+                  Tính năng
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#pricing';
+                  }}
+                  className="text-gray-400 hover:text-neon-blue transition duration-300"
+                >
+                  Bảng giá
+                </a>
+              </li>
             </ul>
           </div>
           

@@ -69,9 +69,36 @@ export default function Header() {
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center justify-center flex-1 px-8">
           <div className="flex space-x-8 font-primary text-sm">
-            <Link href="/#service-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</Link>
-            <Link href="/#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</Link>
-            <Link href="/#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</Link>
+            <a 
+              href="/" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = '/#service-section';
+              }}
+              className="text-gray-300 hover:text-neon-blue transition duration-300"
+            >
+              Tính năng
+            </a>
+            <a 
+              href="/" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = '/#pricing';
+              }}
+              className="text-gray-300 hover:text-neon-blue transition duration-300"
+            >
+              Bảng giá
+            </a>
+            <a 
+              href="/" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = '/#about';
+              }}
+              className="text-gray-300 hover:text-neon-blue transition duration-300"
+            >
+              Về chúng tôi
+            </a>
           </div>
         </nav>
 
