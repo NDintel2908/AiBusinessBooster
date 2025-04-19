@@ -16,9 +16,9 @@ const ServiceAccordionItem = ({
     <Accordion.Trigger className="flex w-full items-center justify-between py-4 text-left group" data-state="closed">
       <div className="flex items-center gap-3">
         <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gray-600 group-data-[state=open]:bg-blue-500">
-          <Plus className="h-4 w-4 text-white" />
+          <Plus className="h-4 w-4 text-white transition-transform group-data-[state=open]:rotate-45" />
         </div>
-        <span className="text-lg text-white group-data-[state=open]:text-blue-500">{title}</span>
+        <span className="text-lg text-white transition-colors group-data-[state=open]:text-blue-500">{title}</span>
       </div>
     </Accordion.Trigger>
     <Accordion.Content className="pb-4 pl-9">
