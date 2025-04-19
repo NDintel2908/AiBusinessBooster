@@ -29,40 +29,46 @@ export default function Footer() {
             <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
             <ul className="space-y-4 font-primary">
               <li>
-                <a 
-                  href="/" 
+                <Link
+                  href="/#about"
                   onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/#about';
+                    if (window.location.pathname !== '/') {
+                      e.preventDefault();
+                      window.location.href = '/#about';
+                    }
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
                   Về chúng tôi
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href="/" 
+                <Link
+                  href="/#service-section"
                   onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/#service-section';
+                    if (window.location.pathname !== '/') {
+                      e.preventDefault();
+                      window.location.href = '/#service-section';
+                    }
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
                   Tính năng
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href="/" 
+                <Link
+                  href="/#pricing"
                   onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/#pricing';
+                    if (window.location.pathname !== '/') {
+                      e.preventDefault();
+                      window.location.href = '/#pricing';
+                    }
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
                   Bảng giá
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
