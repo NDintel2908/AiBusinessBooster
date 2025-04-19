@@ -28,10 +28,11 @@ export default function Header() {
   }, [isMobile, isMobileMenuOpen]);
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-black/85 backdrop-blur-lg border-b border-gray-800/30" : "bg-transparent"
-    }`}>
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+    <header className="fixed w-full top-0 z-50 px-4 py-2">
+      <div className={`max-w-6xl mx-auto rounded-full transition-all duration-300 ${
+        isScrolled ? "bg-black/85 backdrop-blur-lg border border-gray-800/30" : "bg-transparent"
+      }`}>
+        <div className="container mx-auto px-6 py-2 flex justify-between items-center">
         <div className="flex items-center">
           <div className="w-32 h-32 md:w-40 md:h-40 relative overflow-hidden mr-3 logo" style={{ marginTop: '-24px', marginBottom: '-24px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
@@ -69,10 +70,11 @@ export default function Header() {
             <GradientButton>Bắt đầu ngay</GradientButton>
           </a>
         </nav>
+        </div>
       </div>
       
       {/* Mobile Menu */}
-      <div className={`lg:hidden bg-deep-dark border-t border-gray-800 p-4 ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+      <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-2 p-4 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <nav className="flex flex-col space-y-4 font-primary text-sm">
           <a 
             href="#features" 
