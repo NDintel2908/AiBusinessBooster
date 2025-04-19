@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 import { GradientButton } from "@/components/ui/gradient-button";
@@ -17,17 +16,17 @@ export default function Header() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       setIsScrolled(currentScrollY > 10);
-      
+
       // Show header when scrolling up, hide when scrolling down
       if (currentScrollY > lastScrollY.current) {
         setIsVisible(false); // Scrolling down
       } else {
         setIsVisible(true); // Scrolling up
       }
-      
+
       lastScrollY.current = currentScrollY;
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -54,7 +53,7 @@ export default function Header() {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-electric-purple"></span>
           </h1>
         </div>
-        
+
         {/* Mobile Menu Button */}
         <div className="block lg:hidden">
           <button 
@@ -66,7 +65,7 @@ export default function Header() {
             </svg>
           </button>
         </div>
-        
+
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center justify-center flex-1 px-8">
           <div className="flex space-x-8 font-primary text-sm">
@@ -75,16 +74,16 @@ export default function Header() {
             <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</a>
           </div>
         </nav>
-        
+
         {/* CTA Button */}
         <div className="hidden lg:block">
           <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
-            <GradientButton>Bắt đầu ngay</GradientButton>
+            <GradientButton className="cta-button text-black">Bắt đầu ngay</GradientButton>
           </a>
         </div>
         </div>
       </div>
-      
+
       {/* Mobile Menu */}
       <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-1 p-3 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <nav className="flex flex-col space-y-3 font-primary text-sm">
