@@ -28,9 +28,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
             <ul className="space-y-4 font-primary">
-              <li><a href="#about" className="text-gray-400 hover:text-neon-blue transition duration-300">Về chúng tôi</a></li>
-              <li><a href="#service-section" className="text-gray-400 hover:text-neon-blue transition duration-300" onClick={(e) => { e.preventDefault(); document.getElementById('service-section')?.scrollIntoView({ behavior: 'smooth' }); }}>Tính năng</a></li>
-              <li><a href="#pricing" className="text-gray-400 hover:text-neon-blue transition duration-300">Bảng giá</a></li>
+              <li><Link href="/#about" className="text-gray-400 hover:text-neon-blue transition duration-300">Về chúng tôi</Link></li>
+              <li><Link href="/#service-section" className="text-gray-400 hover:text-neon-blue transition duration-300">Tính năng</Link></li>
+              <li><Link href="/#pricing" className="text-gray-400 hover:text-neon-blue transition duration-300">Bảng giá</Link></li>
             </ul>
           </div>
           

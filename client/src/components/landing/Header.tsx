@@ -69,9 +69,9 @@ export default function Header() {
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center justify-center flex-1 px-8">
           <div className="flex space-x-8 font-primary text-sm">
-            <a href="#service-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</a>
-            <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</a>
-            <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</a>
+            <Link href="/#service-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</Link>
+            <Link href="/#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</Link>
+            <Link href="/#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</Link>
           </div>
         </nav>
 
@@ -87,27 +87,27 @@ export default function Header() {
       {/* Mobile Menu */}
       <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-1 p-3 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <nav className="flex flex-col space-y-3 font-primary text-sm">
-          <a 
-            href="#features-section" 
+          <Link 
+            href="/#service-section" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Tính năng
-          </a>
-          <a 
-            href="#pricing" 
+          </Link>
+          <Link 
+            href="/#pricing" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Bảng giá
-          </a>
-          <a 
-            href="#about" 
+          </Link>
+          <Link 
+            href="/#about" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Về chúng tôi
-          </a>
+          </Link>
           <a 
             href="#contact" 
             className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-black font-medium text-center cta-button font-primary"
