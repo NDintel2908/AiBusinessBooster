@@ -111,7 +111,7 @@ export default function Header() {
           </a>
           <a 
             href="#contact" 
-            className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-white font-medium text-center cta-button font-primary"
+            className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-black font-medium text-center cta-button font-primary"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Bắt đầu ngay
