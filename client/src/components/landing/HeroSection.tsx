@@ -82,8 +82,8 @@ export default function HeroSection() {
               ref={statsRef}
             >
               <div className="flex -space-x-2">
-                <img src="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg" alt="Business Person 1" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
-                <img src="https://s3-symbol-logo.tradingview.com/vingroup-joint-stock-company--600.png" alt="Business Person 2" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
+                <img src="https://miro.medium.com/v2/resize:fit:2400/1*_sL-AjS_oCEvJO1DY51ULg.png" alt="Business Person 1" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
+                <img src="https://static.ybox.vn/2024/6/1/1718600454382-Vietlink-logo.jpg" alt="Business Person 2" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
                 <img src="https://freelogopng.com/images/all_img/1657952641google-logo-png-image.png" alt="Business Person 3" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
               </div>
               <div className="text-sm text-gray-400 font-primary">
