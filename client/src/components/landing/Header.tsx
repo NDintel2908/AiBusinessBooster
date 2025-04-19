@@ -28,12 +28,13 @@ export default function Header() {
   }, [isMobile, isMobileMenuOpen]);
 
   return (
-    <header className="fixed w-full top-0 z-50 px-4 py-0.5">
-      <div className={`max-w-6xl mx-auto rounded-xl transition-all duration-300 ${
+    <header className="fixed w-full top-0 z-50 px-4 mt-5">
+      <div className={`max-w-2xl mx-auto rounded-xl transition-all duration-300 ${
         isScrolled ? "bg-black/85 backdrop-blur-lg border border-gray-800/30" : "bg-transparent"
       }`}>
-        <div className="container mx-auto px-6 py-1 flex justify-between items-center">
-        <div className="flex items-center">
+        <div className="px-4 py-2 flex items-center justify-between">
+          {/* Logo section */}
+          <div className="flex-shrink-0">
           <div className="w-20 h-20 md:w-24 md:h-24 relative overflow-hidden mr-3 logo" style={{ marginTop: '-8px', marginBottom: '-8px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
@@ -55,21 +56,20 @@ export default function Header() {
         </div>
         
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex space-x-8 items-center font-primary text-sm">
-          <a href="#features-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</a>
-          <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</a>
-          <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</a>
-          <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300 flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="9" cy="21" r="1"/>
-              <circle cx="20" cy="21" r="1"/>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-            </svg>
-          </a>
+        <nav className="hidden lg:flex items-center justify-center flex-1 px-8">
+          <div className="flex space-x-8 font-primary text-sm">
+            <a href="#features-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</a>
+            <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</a>
+            <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</a>
+          </div>
+        </nav>
+        
+        {/* CTA Button */}
+        <div className="hidden lg:block">
           <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
             <GradientButton>Bắt đầu ngay</GradientButton>
           </a>
-        </nav>
+        </div>
         </div>
       </div>
       
