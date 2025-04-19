@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { useIsMobile } from "@/hooks/use-mobile";
