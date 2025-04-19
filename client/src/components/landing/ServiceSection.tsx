@@ -6,21 +6,19 @@ import { Plus } from "lucide-react";
 const ServiceAccordionItem = ({ 
   value, 
   title, 
-  children, 
-  isExpanded 
+  children 
 }: { 
   value: string;
   title: string;
   children: React.ReactNode;
-  isExpanded?: boolean;
 }) => (
   <Accordion.Item value={value} className="border-b border-gray-200/10">
-    <Accordion.Trigger className="flex w-full items-center justify-between py-4 text-left">
+    <Accordion.Trigger className="flex w-full items-center justify-between py-4 text-left group" data-state="closed">
       <div className="flex items-center gap-3">
-        <div className={`flex h-6 w-6 items-center justify-center rounded-full ${isExpanded ? 'bg-blue-500' : 'bg-gray-600'}`}>
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gray-600 group-data-[state=open]:bg-blue-500">
           <Plus className="h-4 w-4 text-white" />
         </div>
-        <span className={`text-lg ${isExpanded ? 'text-blue-500' : 'text-white'}`}>{title}</span>
+        <span className="text-lg text-white group-data-[state=open]:text-blue-500">{title}</span>
       </div>
     </Accordion.Trigger>
     <Accordion.Content className="pb-4 pl-9">
@@ -55,7 +53,6 @@ export default function ServiceSection() {
               <ServiceAccordionItem 
                 value="AI intelligence" 
                 title="Tăng sự chủ động"
-                isExpanded={true}
               >
                 Dựa trên thông tin yêu cầu mà Doanh nghiệp mô tả, BCP AI học và gửi danh sách các Doanh nghiệp phù hợp rồi trao quyền lựa chọn kết nối chủ động cho Doanh nghiệp mà không tốn quá nhiều chi phí cũng như thời gian. 
                 Song, Doanh nghiệp hoàn toàn chủ động dạy BCP AI hiểu về công ty và các dịch vụ/ sản phẩm mà Doanh nghiệp cung cấp.
