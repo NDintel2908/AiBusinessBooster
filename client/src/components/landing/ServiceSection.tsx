@@ -31,7 +31,7 @@ const ServiceAccordionItem = ({
 
 export default function ServiceSection() {
   return (
-    <section className="relative py-16 md:py-20 px-4 md:px-8">
+    <section id="service-section" className="relative py-16 md:py-20 px-4 md:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-[2.5rem] font-bold text-white mb-4 font-heading">
