@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50 px-4 py-0.5">
-      <div className={`max-w-6xl mx-auto rounded-full transition-all duration-300 ${
+      <div className={`max-w-6xl mx-auto rounded-md transition-all duration-300 ${
         isScrolled ? "bg-black/85 backdrop-blur-lg border border-gray-800/30" : "bg-transparent"
       }`}>
         <div className="container mx-auto px-6 py-1 flex justify-between items-center">
