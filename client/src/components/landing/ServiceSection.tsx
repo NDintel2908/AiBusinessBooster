@@ -20,7 +20,7 @@ const ServiceAccordionItem = ({
         <div className={`flex h-6 w-6 items-center justify-center rounded-full ${isExpanded ? 'bg-blue-500' : 'bg-gray-600'}`}>
           <Plus className="h-4 w-4 text-white" />
         </div>
-        <span className={`text-lg ${isExpanded ? 'text-blue-500' : 'text-gray-400'}`}>{title}</span>
+        <span className={`text-lg ${isExpanded ? 'text-blue-500' : 'text-white'}`}>{title}</span>
       </div>
     </Accordion.Trigger>
     <Accordion.Content className="pb-4 pl-9">
