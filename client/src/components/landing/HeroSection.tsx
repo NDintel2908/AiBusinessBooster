@@ -66,7 +66,17 @@ export default function HeroSection() {
               <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
                 <GradientButton size="lg" animate className="cta-button">Bắt Đầu Ngay</GradientButton>
               </a>
-              <GradientButton size="lg" variant="outline" className="cta-button">
+              <GradientButton 
+                size="lg" 
+                variant="outline" 
+                className="cta-button"
+                onClick={() => {
+                  document.getElementById('contact')?.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  });
+                }}
+              >
                 <span className="flex items-center justify-center">
                   <span>Liên Hệ Ngay</span>
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
