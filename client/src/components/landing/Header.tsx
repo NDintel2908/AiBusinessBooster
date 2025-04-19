@@ -7,13 +7,25 @@ import BCPAILogo from "./BCPAI.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const lastScrollY = useRef(0);
 
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const currentScrollY = window.scrollY;
+      setIsScrolled(currentScrollY > 10);
+      
+      // Show header when scrolling up, hide when scrolling down
+      if (currentScrollY > lastScrollY.current) {
+        setIsVisible(false); // Scrolling down
+      } else {
+        setIsVisible(true); // Scrolling up
+      }
+      
+      lastScrollY.current = currentScrollY;
     };
     
     window.addEventListener("scroll", handleScroll);
@@ -28,7 +40,7 @@ export default function Header() {
   }, [isMobile, isMobileMenuOpen]);
 
   return (
-    <header className="fixed w-full top-0 z-50 px-4 mt-5">
+    <header className={`fixed w-full top-0 z-50 px-4 mt-5 transition-transform duration-300 ${!isVisible ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className={`max-w-2xl mx-auto rounded-xl transition-all duration-300 ${
         isScrolled ? "bg-black/85 backdrop-blur-lg border border-gray-800/30" : "bg-transparent"
       }`}>
