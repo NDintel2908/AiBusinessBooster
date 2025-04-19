@@ -46,9 +46,9 @@ export default function Header() {
         <div className="px-4 py-2 flex items-center justify-between">
           {/* Logo section */}
           <div className="flex-shrink-0">
-          <div className="w-20 h-20 md:w-24 md:h-24 relative overflow-hidden mr-3 logo" style={{ marginTop: '-8px', marginBottom: '-8px' }}>
+          <Link href="/" className="w-20 h-20 md:w-24 md:h-24 relative overflow-hidden mr-3 logo" style={{ marginTop: '-8px', marginBottom: '-8px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
-          </div>
+          </Link>
           <h1 className="text-white font-heading text-xl md:text-2xl font-bold tracking-wider hero-title">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-electric-purple"></span>
           </h1>
@@ -69,9 +69,9 @@ export default function Header() {
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center justify-center flex-1 px-8">
           <div className="flex space-x-8 font-primary text-sm">
-            <a href="#service-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</a>
-            <a href="#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</a>
-            <a href="#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</a>
+            <Link href="/#service-section" className="text-gray-300 hover:text-neon-blue transition duration-300">Tính năng</Link>
+            <Link href="/#pricing" className="text-gray-300 hover:text-neon-blue transition duration-300">Bảng giá</Link>
+            <Link href="/#about" className="text-gray-300 hover:text-neon-blue transition duration-300">Về chúng tôi</Link>
           </div>
         </nav>
 
@@ -87,27 +87,27 @@ export default function Header() {
       {/* Mobile Menu */}
       <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-1 p-3 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <nav className="flex flex-col space-y-3 font-primary text-sm">
-          <a 
-            href="#features-section" 
+          <Link 
+            href="/#service-section" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Tính năng
-          </a>
-          <a 
-            href="#pricing" 
+          </Link>
+          <Link 
+            href="/#pricing" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Bảng giá
-          </a>
-          <a 
-            href="#about" 
+          </Link>
+          <Link 
+            href="/#about" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Về chúng tôi
-          </a>
+          </Link>
           <a 
             href="#contact" 
             className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-black font-medium text-center cta-button font-primary"
