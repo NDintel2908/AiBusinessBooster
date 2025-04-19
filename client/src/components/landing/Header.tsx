@@ -40,7 +40,7 @@ export default function Header() {
   }, [isMobile, isMobileMenuOpen]);
 
   return (
-    <header className={`fixed w-full top-0 z-50 px-4 mt-5 transition-transform duration-300 ${!isVisible ? '-translate-y-full' : 'translate-y-0'}`}>
+    <header className={`fixed w-full top-0 z-50 px-4 mt-5 transition-all duration-300 ${!isVisible ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
       <div className={`max-w-2xl mx-auto rounded-xl transition-all duration-300 ${
         isScrolled ? "bg-black/85 backdrop-blur-lg border border-gray-800/30" : "bg-transparent"
       }`}>
