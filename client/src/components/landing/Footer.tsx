@@ -12,9 +12,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div>
-              <Link href="/" className="w-40 h-40 relative overflow-hidden mb-2 logo block">
+              <div className="w-40 h-40 relative overflow-hidden mb-2 logo">
                 <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
-              </Link>
+              </div>
               <h1 className="text-white font-heading text-xl font-bold tracking-wider hero-title">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>
               </h1>
@@ -28,9 +28,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
             <ul className="space-y-4 font-primary">
-              <li><Link href="/#about" className="text-gray-400 hover:text-neon-blue transition duration-300">Về chúng tôi</Link></li>
-              <li><Link href="/#service-section" className="text-gray-400 hover:text-neon-blue transition duration-300">Tính năng</Link></li>
-              <li><Link href="/#pricing" className="text-gray-400 hover:text-neon-blue transition duration-300">Bảng giá</Link></li>
+              <li><a href="#about" className="text-gray-400 hover:text-neon-blue transition duration-300">Về chúng tôi</a></li>
+              <li><a href="#service-section" className="text-gray-400 hover:text-neon-blue transition duration-300" onClick={(e) => { e.preventDefault(); document.getElementById('service-section')?.scrollIntoView({ behavior: 'smooth' }); }}>Tính năng</a></li>
+              <li><a href="#pricing" className="text-gray-400 hover:text-neon-blue transition duration-300">Bảng giá</a></li>
             </ul>
           </div>
           
