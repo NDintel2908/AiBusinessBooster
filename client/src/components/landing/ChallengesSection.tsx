@@ -37,10 +37,12 @@ const ChallengeCard = ({ icon, title, description, delay }: ChallengeCardProps) 
       }}
     >
       <GlassCard className="rounded-xl p-6" hoverEffect>
-        <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-neon-blue to-electric-purple flex items-center justify-center mb-6">
-          {icon}
+        <div className="flex items-center mb-6">
+          <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-neon-blue to-electric-purple flex items-center justify-center">
+            {icon}
+          </div>
+          <h3 className="text-xl font-heading font-semibold ml-4 text-white">{title}</h3>
         </div>
-        <h3 className="text-xl font-heading font-semibold mb-3 text-white">{title}</h3>
         <p className="text-gray-400 font-primary">{description}</p>
       </GlassCard>
     </motion.div>
