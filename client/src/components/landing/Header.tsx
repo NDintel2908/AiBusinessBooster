@@ -88,7 +88,7 @@ export default function Header() {
       <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-1 p-3 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <nav className="flex flex-col space-y-3 font-primary text-sm">
           <a 
-            href="#features" 
+            href="#features-section" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >

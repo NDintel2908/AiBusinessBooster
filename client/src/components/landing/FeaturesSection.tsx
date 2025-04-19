@@ -48,7 +48,7 @@ const StatItem = ({ number, description, endValue }: StatItemProps) => {
 
 export default function FeaturesSection() {
   return (
-    <section className="relative py-16 md:py-20 px-8 overflow-hidden">
+    <section id="features-section" className="relative py-16 md:py-20 px-8 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#f0f8ff] to-[#ffffff] opacity-10"></div>
 
       <div className="absolute right-0 top-1/2 -translate-y-1/2 transform scale-75 md:scale-100 origin-center">
