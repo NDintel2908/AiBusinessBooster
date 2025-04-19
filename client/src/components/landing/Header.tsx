@@ -28,13 +28,13 @@ export default function Header() {
   }, [isMobile, isMobileMenuOpen]);
 
   return (
-    <header className="fixed w-full top-0 z-50 px-4 py-2">
+    <header className="fixed w-full top-0 z-50 px-4 py-1">
       <div className={`max-w-6xl mx-auto rounded-full transition-all duration-300 ${
         isScrolled ? "bg-black/85 backdrop-blur-lg border border-gray-800/30" : "bg-transparent"
       }`}>
-        <div className="container mx-auto px-6 py-2 flex justify-between items-center">
+        <div className="container mx-auto px-6 py-1.5 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 relative overflow-hidden mr-3 logo" style={{ marginTop: '-24px', marginBottom: '-24px' }}>
+          <div className="w-24 h-24 md:w-28 md:h-28 relative overflow-hidden mr-3 logo" style={{ marginTop: '-12px', marginBottom: '-12px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-white font-heading text-xl md:text-2xl font-bold tracking-wider hero-title">
@@ -74,8 +74,8 @@ export default function Header() {
       </div>
       
       {/* Mobile Menu */}
-      <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-2 p-4 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-        <nav className="flex flex-col space-y-4 font-primary text-sm">
+      <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-1 p-3 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+        <nav className="flex flex-col space-y-3 font-primary text-sm">
           <a 
             href="#features" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
