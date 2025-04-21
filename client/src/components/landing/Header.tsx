@@ -39,14 +39,14 @@ export default function Header() {
   }, [isMobile, isMobileMenuOpen]);
 
   return (
-    <header className={`fixed w-full top-0 z-50 px-4 mt-5 transition-all duration-300 ${!isVisible ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
+    <header className={`fixed w-full top-0 z-50 px-4 mt-2 transition-all duration-300 ${!isVisible ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
       <div className={`max-w-2xl mx-auto rounded-xl transition-all duration-300 ${
         isScrolled ? "bg-black/85 backdrop-blur-lg border border-gray-800/30" : "bg-transparent"
       }`}>
-        <div className="px-4 py-2 flex items-center justify-between">
+        <div className="px-4 py-1 flex items-center justify-between">
           {/* Logo section */}
           <div className="flex-shrink-0">
-          <div className="w-20 h-20 md:w-24 md:h-24 relative overflow-hidden mr-3 logo" style={{ marginTop: '-8px', marginBottom: '-8px' }}>
+          <div className="w-16 h-16 md:w-20 md:h-20 relative overflow-hidden mr-3 logo" style={{ marginTop: '-4px', marginBottom: '-4px' }}>
             <img src={BCPAILogo} alt="BCPAI Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-white font-heading text-xl md:text-2xl font-bold tracking-wider hero-title">
