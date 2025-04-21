@@ -77,8 +77,8 @@ export default function FeaturesSection() {
             viewport={{ once: true }}
           >
             <StatItem 
-              number="1"
-              description="Hạng Nhất vòng tiền ươm tạo AI Star"
+              number="#1"
+              description="Hạng 1 vòng tiền ươm tạo cuộc thi AI Star 2024"
               endValue={1}
             />
           </motion.div>

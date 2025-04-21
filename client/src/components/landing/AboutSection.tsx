@@ -67,7 +67,7 @@ export default function AboutSection() {
               BCP được thành lập vào năm 2018 từ một nhận định đơn giản: dù công nghệ số đã phát triển mạnh mẽ, việc tìm kiếm đối tác kinh doanh phù hợp vẫn còn quá kém hiệu quả – và phần lớn dựa vào may rủi hơn là dữ liệu.
             </p>
             <p className="text-gray-300 mb-6 font-primary">
-              Với đội ngũ chuyên gia AI, phân tích kinh doanh và đổi mới công nghệ, chúng tôi đã bắt đầu hành trình xây dựng một nền tảng kết nối B2B mới – nơi trí tuệ nhân tạo và khoa học dữ liệu trở thành động lực thay đổi cuộc chơi.
+              Với đội ngũ chuyên gia AI, phân tích kinh doanh và đổi mới công nghệ – trong đó có cả các thành viên đến từ Nhật Bản – chúng tôi đã bắt đầu hành trình xây dựng một nền tảng kết nối B2B mới, nơi trí tuệ nhân tạo và khoa học dữ liệu trở thành động lực thay đổi cuộc chơi.
             </p>
             
             <div className="my-8 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
