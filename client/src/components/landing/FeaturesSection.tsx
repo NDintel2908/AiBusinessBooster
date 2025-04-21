@@ -69,7 +69,19 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-[3rem]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-[3rem]">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0 }}
+            viewport={{ once: true }}
+          >
+            <StatItem 
+              number="1"
+              description="Hạng Nhất vòng tiền ươm tạo AI Star"
+              endValue={1}
+            />
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
