@@ -13,16 +13,16 @@ const ServiceAccordionItem = ({
   children: React.ReactNode;
 }) => (
   <Accordion.Item value={value} className="border-b border-gray-200/10">
-    <Accordion.Trigger className="flex w-full items-center justify-between py-4 text-left group" data-state="closed">
+    <Accordion.Trigger className="flex w-full items-center justify-between py-4 text-left group focus:outline-none" data-state="closed">
       <div className="flex items-center gap-3">
-        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gray-600 group-data-[state=open]:bg-blue-500">
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gray-600 group-hover:bg-[#00B7EB] group-focus:bg-[#00B7EB] group-data-[state=open]:bg-[#00B7EB] transition-colors">
           <Plus className="h-4 w-4 text-white transition-transform group-data-[state=open]:rotate-45" />
         </div>
-        <span className="text-lg text-white transition-colors group-data-[state=open]:text-blue-500">{title}</span>
+        <span className="text-lg text-white group-hover:text-[#00B7EB] group-focus:text-[#00B7EB] group-data-[state=open]:text-[#00B7EB] transition-colors">{title}</span>
       </div>
     </Accordion.Trigger>
     <Accordion.Content className="pb-4 pl-9">
-      <div className="border-l-2 border-blue-500 pl-4 text-gray-400">
+      <div className="border-l-2 border-[#00B7EB] pl-4 text-gray-400">
         {children}
       </div>
     </Accordion.Content>
@@ -51,7 +51,7 @@ export default function ServiceSection() {
           >
             <Accordion.Root type="single" defaultValue="career" className="space-y-2">
               <ServiceAccordionItem 
-                value="AI intelligence" 
+                value="proactive" 
                 title="Tăng sự chủ động"
               >
                 Dựa trên thông tin yêu cầu mà Doanh nghiệp mô tả, BCP AI học và gửi danh sách các Doanh nghiệp phù hợp rồi trao quyền lựa chọn kết nối chủ động cho Doanh nghiệp mà không tốn quá nhiều chi phí cũng như thời gian. 
@@ -59,7 +59,7 @@ export default function ServiceSection() {
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
-                value="cutoff" 
+                value="chat" 
                 title="Trò chuyện 1on1"
               >
                 BCP AI hỗ trợ tạo nhóm trò chuyện mới và Doanh nghiệp có thể trao đổi với đối tác trực tiếp mà không cần có điều phối viên.
