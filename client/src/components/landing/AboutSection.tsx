@@ -2,6 +2,9 @@ import { useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { GlassCard } from "@/components/ui/glass-card";
+import BP from './partner/BusinessPartner.png';
+import TP from './partner/TechPartner.png';
+
 
 export default function AboutSection() {
   const controls = useAnimation();
@@ -64,7 +67,7 @@ export default function AboutSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center justify-items-center mt-8">
                 <div className="flex flex-col items-center">
                   <img 
-                    src="/src/components/landing/partner/TechPartner.png"
+                    src={TP}
                     alt="Tech Partner"
                     className="h-[70px] object-contain filter brightness-100"
                   />
@@ -73,7 +76,7 @@ export default function AboutSection() {
                 
                 <div className="flex flex-col items-center">
                   <img 
-                    src="/src/components/landing/partner/BusinessPartner.png"
+                    src= {BP}
                     alt="Business Partner"
                     className="h-[70px] object-contain filter brightness-100"
                   />

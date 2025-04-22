@@ -106,12 +106,11 @@ export default function PricingSection() {
       price: "250.000 VND",
       description: "Cho doanh nghiệp đang phát triển cần kết nối chất lượng",
       features: [
-        { text: "Thuật toán kết nối AI nâng cao", included: true },
-        { text: "Kết nối không giới hạn", included: true },
-        { text: "Hồ sơ doanh nghiệp nâng cao", included: true },
-        { text: "Hỗ trợ ưu tiên (24/7)", included: true },
-        { text: "Bảng phân tích thời gian thực", included: true },
-        { text: "Nền tảng nhắn tin trực tiếp", included: true }
+        { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
+        { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
+        { text: "Thuật toán AI kết nối thông minh", included: true },
+        { text: "bảo mật - dễ dùng - đáng tin cậy", included: true },
+        { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
       ],
       isPopular: true
     }
