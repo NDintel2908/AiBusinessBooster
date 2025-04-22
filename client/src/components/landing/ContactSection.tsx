@@ -26,21 +26,34 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      await apiRequest("POST", "/api/contact", formData);
-      toast({
-        title: "Thành công!",
-        description: "Yêu cầu của bạn đã được gửi thành công.",
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        requirements: ""
-      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        toast({
+          title: "Thành công!",
+          description: "Yêu cầu của bạn đã được gửi thành công.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          requirements: ""
+        });
+      } else {
+        throw new Error(result.message);
+      }
     } catch (error) {
       toast({
         title: "Lỗi",
-        description: "Không thể gửi yêu cầu của bạn. Vui lòng thử lại.",
+        description: error instanceof Error ? error.message : "Không thể gửi yêu cầu của bạn. Vui lòng thử lại.",
         variant: "destructive"
       });
     } finally {
