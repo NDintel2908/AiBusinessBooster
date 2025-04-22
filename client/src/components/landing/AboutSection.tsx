@@ -64,7 +64,7 @@ export default function AboutSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center justify-items-center mt-8">
                 <div className="flex flex-col items-center">
                   <img 
-                    src="./partner/TechPartner.png"
+                    src="/src/components/landing/partner/TechPartner.png"
                     alt="Tech Partner"
                     className="h-[70px] object-contain filter brightness-100"
                   />
@@ -73,7 +73,7 @@ export default function AboutSection() {
                 
                 <div className="flex flex-col items-center">
                   <img 
-                    src="./partner/BusinessPartner.png"
+                    src="/src/components/landing/partner/BusinessPartner.png"
                     alt="Business Partner"
                     className="h-[70px] object-contain filter brightness-100"
                   />
