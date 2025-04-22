@@ -55,8 +55,10 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.6 } }
               }}
             >
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4 mx-auto">
-                <span className="text-sm font-medium text-neon-blue font-primary">Đối tác chiến lược</span>
+              <div className="flex justify-center mb-4">
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40">
+                  <span className="text-sm font-medium text-neon-blue font-primary">Đối tác chiến lược</span>
+                </div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center justify-items-center mt-8">
