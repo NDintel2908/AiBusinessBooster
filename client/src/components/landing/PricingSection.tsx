@@ -33,18 +33,14 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
         }`}
         gradientBorder={isPopular}
       >
-        {isPopular && (
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-neon-blue to-electric-purple text-white px-4 py-1 rounded-full text-sm font-medium font-primary">
-            (Chưa bao gồm 8% VAT)
-          </div>
-        )}
+        
         
         <div className="text-center mb-6 pt-2">
           <h3 className="text-xl font-heading font-semibold text-white mb-2">{name}</h3>
           <div className="flex justify-center items-baseline">
             <span className="text-gray-400 mr-2"></span>
             <span className="text-4xl font-bold text-white font-heading">{price}</span>
-            <span className="text-gray-400 ml-1 font-primary">{name === "B2B Connection 1on1" ? "/lượt kết nối" : "/tháng"}</span>
+            <span className="text-gray-400 ml-1 font-primary">{name === "B2B Connection 1on1" ? "/lượt kết nối" : "/kết nối"}</span>
           </div>
           <p className="text-gray-400 mt-2 font-primary">{description}</p>
         </div>
@@ -92,24 +88,24 @@ export default function PricingSection() {
   const pricingPlans = [
     {
       name: "Starter",
-      price: "0",
+      price: "FREE",
       description: "Phù hợp với startup đang tìm kiếm cơ hội",
       features: [
-        { text: "Thuật toán kết nối AI cơ bản", included: true },
+        { text: "Thuật toán AI kết nối cơ bản", included: true },
         { text: "Lên đến 30 kết nối mỗi tháng", included: true },
         { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
         { text: "Hỗ trợ qua email", included: true }
       ]
     },
     {
-      name: "B2B Connection 1on1",
+      name: "Connection",
       price: "250.000 VND",
-      description: "Cho doanh nghiệp đang phát triển cần kết nối chất lượng",
+      description: "(Chưa bao gồm 8% VAT)",
       features: [
         { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
         { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
         { text: "Thuật toán AI kết nối thông minh", included: true },
-        { text: "bảo mật - dễ dùng - đáng tin cậy", included: true },
+        { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
         { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
       ],
       isPopular: true
