@@ -64,7 +64,9 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
         
         <a href="#contact">
           {isPopular ? (
-            <GradientButton className="w-full font-primary" animate>Mua ngay</GradientButton>
+            <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
+              <GradientButton className="w-full font-primary text-black" animate>Mua ngay</GradientButton>
+            </a>
           ) : (
             <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
               <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
