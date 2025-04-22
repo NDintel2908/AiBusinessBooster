@@ -46,6 +46,37 @@ export default function AboutSection() {
             >
               
             </motion.div>
+
+            {/* Partner Section */}
+            <motion.div
+              className="mt-12"
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.6 } }
+              }}
+            >
+              <h3 className="text-xl font-heading font-semibold mb-8 text-[#00B7EB]">Đối tác chiến lược</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center justify-items-center">
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/src/components/landing/partner/TechPartner.png"
+                    alt="Tech Partner"
+                    className="h-[70px] object-contain filter brightness-100"
+                  />
+                  <p className="mt-4 text-gray-400 text-center font-primary">Đối tác công nghệ</p>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                  <img 
+                    src="/src/components/landing/partner/BusinessPartner.png"
+                    alt="Business Partner"
+                    className="h-[70px] object-contain filter brightness-100"
+                  />
+                  <p className="mt-4 text-gray-400 text-center font-primary">Đối tác kinh doanh</p>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
           
           <motion.div
