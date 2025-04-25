@@ -68,7 +68,7 @@ export default function ContactSection() {
                         type="text" 
                         id="name" 
                         name="name"
-                        className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                        className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
                         placeholder="Nguyễn Văn A"
                         required
                       />
@@ -81,7 +81,7 @@ export default function ContactSection() {
                         type="email" 
                         id="email" 
                         name="email"
-                        className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                        className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
                         placeholder="example@company.com"
                         required
                       />
@@ -95,7 +95,7 @@ export default function ContactSection() {
                       type="text" 
                       id="company" 
                       name="company"
-                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
                       placeholder="Công ty của bạn"
                       required
                     />
@@ -108,7 +108,7 @@ export default function ContactSection() {
                       id="requirements" 
                       name="requirements"
                       rows={4}
-                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-white focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
+                      className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
                       placeholder="Hãy cho chúng tôi biết về nhu cầu và cách chúng tôi có thể giúp đỡ..."
                     ></textarea>
                     <ValidationError prefix="Requirements" field="requirements" errors={state.errors}/>
