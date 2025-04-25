@@ -117,7 +117,7 @@ export default function ContactSection() {
                   <button
                     type="submit"
                     disabled={state.submitting}
-                    className="w-full py-4 px-6 bg-gradient-to-r from-neon-blue to-electric-purple text-white font-primary rounded-lg hover:opacity-90 transition duration-300 disabled:opacity-50"
+                    className="w-full py-4 px-6 bg-gradient-to-r from-neon-blue to-electric-purple text-white font-primary text-lg font-semibold rounded-lg hover:scale-[1.02] hover:shadow-lg hover:shadow-neon-blue/50 transform transition-all duration-300 disabled:opacity-50 disabled:hover:scale-100 disabled:hover:shadow-none animate-glow"
                   >
                     {state.submitting ? "Đang gửi..." : "Gửi yêu cầu"}
                   </button>
