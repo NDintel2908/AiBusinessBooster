@@ -170,7 +170,7 @@ export default function PricingSection() {
             />
           </div>
 
-          <div className="md:w-2/3 mx-auto">
+          <div className="mx-auto">
             <PricingPlan
               name="Premium"
               price="15tr VND"
