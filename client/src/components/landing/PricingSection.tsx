@@ -70,91 +70,7 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
   );
 }
 
-function ConnectionPackage() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-      className="w-full max-w-4xl mx-auto mt-20"
-    >
-      <div className="text-center mb-10">
-        <div className="inline-flex items-center px-3 py-1 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-4">
-          <span className="text-sm font-medium text-electric-purple font-primary">Gói cộng thêm</span>
-        </div>
-        <h3 className="text-2xl font-heading font-bold text-white mb-4">B2B Connection 1on1</h3>
-        <p className="text-gray-300 font-primary">Mở rộng cơ hội kết nối với các đối tác tiềm năng</p>
-      </div>
 
-      <GlassCard className="rounded-xl p-8 bg-gradient-to-br from-electric-purple/10 to-transparent border border-electric-purple/30">
-        <div className="flex flex-col items-center">
-          <div className="mb-6 text-center">
-            <div className="flex items-baseline justify-center">
-              <span className="text-4xl font-bold text-white font-heading">250.000 VND</span>
-              <span className="text-gray-400 ml-2 font-primary text-sm">/lượt kết nối</span>
-            </div>
-            <p className="text-gray-400 mt-2 font-primary">(Chưa bao gồm 8% VAT)</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mb-8">
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-300 font-primary">Kết nối MUA - BÁN - HỢP TÁC</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-300 font-primary">Chat TRỰC TIẾP với doanh nghiệp</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-300 font-primary">Thuật toán AI kết nối thông minh</span>
-              </li>
-            </ul>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-300 font-primary">Bảo mật - dễ dùng - đáng tin cậy</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-300 font-primary">Mở rộng ra Nhật Bản và quốc tế</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-300 font-primary">Hỗ trợ đa ngôn ngữ</span>
-              </li>
-            </ul>
-          </div>
-
-          <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer" className="w-full max-w-xs">
-            <GradientButton 
-              className="w-full px-8 py-3 font-primary"
-              variant="outline"
-              gradientFrom="electric-purple"
-              gradientTo="neon-blue"
-            >
-              Mua Credit ngay
-            </GradientButton>
-          </a>
-        </div>
-      </GlassCard>
-    </motion.div>
-  );
-}
 
 export default function PricingSection() {
   const controls = useAnimation();
@@ -221,21 +137,48 @@ export default function PricingSection() {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {pricingPlans.map((plan, index) => (
-            <PricingPlan
-              key={plan.name}
-              name={plan.name}
-              price={plan.price}
-              description={plan.description}
-              features={plan.features}
-              isPopular={plan.isPopular}
-              index={index}
-            />
-          ))}
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <PricingPlan
+            name="Starter"
+            price="FREE"
+            description="Phù hợp với startup đang tìm kiếm cơ hội"
+            features={[
+              { text: "Thuật toán AI kết nối cơ bản", included: true },
+              { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
+              { text: "Hỗ trợ qua email", included: true }
+            ]}
+            index={0}
+          />
+          
+          <PricingPlan
+            name="B2B Connection 1on1"
+            price="250.000 VND"
+            description="(Chưa bao gồm 8% VAT)/lượt kết nối"
+            features={[
+              { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
+              { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
+              { text: "Thuật toán AI kết nối thông minh", included: true },
+              { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
+              { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
+            ]}
+            index={1}
+          />
 
-        <ConnectionPackage />
+          <PricingPlan
+            name="Premium"
+            price="1.250.000 VND"
+            description="(Chưa bao gồm 8% VAT)"
+            features={[
+              { text: "Tài khoản xác thực cấp độ ", included: true },
+              { text: "Credit 0 đối tác - khách hàng/tháng", included: true },
+              { text: "Hiển thị top và active bởi AI", included: true },
+              { text: "Dữ liệu công ty được training riêng", included: true },
+              { text: "Hỗ trợ bởi AI và Human", included: true }
+            ]}
+            isPopular={true}
+            index={2}
+          />
+        </div>
       </div>
     </section>
   );
