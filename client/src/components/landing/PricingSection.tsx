@@ -116,6 +116,19 @@ function ConnectionPackage() {
                 </svg>
                 <span className="text-gray-300 font-primary">Thuật toán AI kết nối thông minh</span>
               </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-gray-300 font-primary">Bảo mật - dễ dùng - đáng tin cậy</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-gray-300 font-primary">Mở rộng ra Nhật Bản và quốc tế
+</span>
+              </li>
             </ul>
           </div>
           <div className="flex-1 flex flex-col items-center md:items-end">
