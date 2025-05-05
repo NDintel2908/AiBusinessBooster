@@ -90,48 +90,67 @@ export default function PricingComparison() {
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">4</td>
                 <td className="px-4 py-3 border border-gray-700">Hồ sơ doanh nghiệp</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">Cơ bản</td>
-                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>Đầy đủ + Xác thực</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">Theo gói đăng ký</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">Tiêu chuẩn</td>
+                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>Nâng cao</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">250,000 VND/lượt ~ 100 credits</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">5</td>
-                <td className="px-4 py-3 border border-gray-700">AI hỗ trợ tìm kiếm đối tác</td>
+                <td className="px-4 py-3 border border-gray-700">AI hỗ trợ cơ bản</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                   <span className="text-green-500">✓</span>
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
-                  <span className="text-green-500">✓</span> Ưu tiên
+                  <span className="text-green-500">✓</span>
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-green-500">✓</span>
+                  <span className="text-white-500">50,000 VND/lượt ~ 20 credits</span>
                 </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">6</td>
-                <td className="px-4 py-3 border border-gray-700">Trò chuyện 1on1 với đối tác</td>
+                <td className="px-4 py-3 border border-gray-700">Yêu cầu kết trò chuyện 1on1</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-red-500">✕</span>
+                  <p>Xác thực Level 1: <span className="text-red-500">✕</span></p>
+                  <p>Xác thực Level 2: <span>250.000 VND/lượt (≈100 credits = 10 USD)</span></p>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>Xác thực cấp 3</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">Xác thực cấp 2</td>
+                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}></td>
+                <td className="px-4 py-3 border border-gray-700 text-center">8%</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">7</td>
-                <td className="px-4 py-3 border border-gray-700">Tìm kiếm đối tác quốc tế</td>
+                <td className="px-4 py-3 border border-gray-700">Nhận yêu cầu trò chuyện 1on1</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-green-500">✓</span> Hạn chế
+                  <p>Xác thực Level 1: <span className="text-red-500">✕</span></p>
+                  <p>Xác thực Level 2: <span>50.000 VND/lượt (≈20 credits = 2 USD)</span></p>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
-                  <span className="text-green-500">✓</span> Đầy đủ
-                </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-green-500">✓</span>
-                </td>
+                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}></td>
+                <td className="px-4 py-3 border border-gray-700 text-center"></td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">8</td>
-                <td className="px-4 py-3 border border-gray-700">Hỗ trợ</td>
+                <td className="px-4 py-3 border border-gray-700">VAT</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">8%</td>
+                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}></td>
+                <td className="px-4 py-3 border border-gray-700 text-center">8%</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 border border-gray-700 text-center">9</td>
+                <td className="px-4 py-3 border border-gray-700">AI Matching Agent có bán</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">✓ (phải mua credits)</td>
+                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}><span className="text-green-500">✓</span></td>
+                <td className="px-4 py-3 border border-gray-700 text-center"></td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 border border-gray-700 text-center">10</td>
+                <td className="px-4 py-3 border border-gray-700">Thời gian hỗ trợ</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">24/7</td>
+                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>24/7</td>
+                <td className="px-4 py-3 border border-gray-700 text-center"></td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 border border-gray-700 text-center">11</td>
+                <td className="px-4 py-3 border border-gray-700">Phương tiện hỗ trợ</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                   <p>Email: <span className="text-green-500">✓</span></p>
                   <p>Zalo: <span className="text-green-500">✓</span></p>
