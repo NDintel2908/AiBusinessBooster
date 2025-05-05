@@ -153,6 +153,20 @@ export default function PricingSection() {
             ]}
             index={0}
           />
+          
+          <PricingPlan
+            name="B2B Connection 1on1"
+            price="250.000 VND"
+            description="(Chưa bao gồm 8% VAT)/lượt kết nối"
+            features={[
+              { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
+              { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
+              { text: "Thuật toán AI kết nối thông minh", included: true },
+              { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
+              { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
+            ]}
+            index={1}
+          />
 
           <PricingPlan
             name="Premium"
@@ -166,20 +180,6 @@ export default function PricingSection() {
               { text: "Hỗ trợ bởi AI và Human", included: true }
             ]}
             isPopular={true}
-            index={1}
-          />
-          
-          <PricingPlan
-            name="B2B Connection 1on1"
-            price="250.000 VND"
-            description="(Chưa bao gồm 8% VAT)/lượt kết nối"
-            features={[
-              { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
-              { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
-              { text: "Thuật toán AI kết nối thông minh", included: true },
-              { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
-              { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
-            ]}
             index={2}
           />
         </div>
