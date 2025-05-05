@@ -38,7 +38,7 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           <div className="flex justify-center items-baseline">
             <span className="text-gray-400 mr-2"></span>
             <span className="text-4xl font-bold text-white font-heading">{price}</span>
-            <span className="text-gray-400 ml-1 font-primary text-sm">/tháng</span>
+            <span className="text-gray-400 ml-1 font-primary text-sm">/năm</span>
           </div>
           <p className="text-gray-400 mt-2 font-primary">{description}</p>
         </div>
@@ -96,7 +96,7 @@ export default function PricingSection() {
     },
     {
       name: "Premium",
-      price: "1.250.000 VND",
+      price: "15.000.000 VND",
       description: "(Chưa bao gồm 8% VAT)",
       features: [
         { text: "Tài khoản xác thực cấp độ ", included: true },
@@ -166,7 +166,7 @@ export default function PricingSection() {
 
           <PricingPlan
             name="Premium"
-            price="1.250.000 VND"
+            price="15tr VND"
             description="(Chưa bao gồm 8% VAT)"
             features={[
               { text: "Tài khoản xác thực cấp độ ", included: true },
