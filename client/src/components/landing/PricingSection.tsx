@@ -33,14 +33,12 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
         }`}
         gradientBorder={isPopular}
       >
-        
-        
         <div className="text-center mb-6 pt-2">
           <h3 className="text-xl font-heading font-semibold text-white mb-2">{name}</h3>
           <div className="flex justify-center items-baseline">
             <span className="text-gray-400 mr-2"></span>
             <span className="text-4xl font-bold text-white font-heading">{price}</span>
-            <span className="text-gray-400 ml-1 font-primary text-sm">{name === "Connection" ? "/lượt kết nối" : ""}</span>
+            <span className="text-gray-400 ml-1 font-primary text-sm">/tháng</span>
           </div>
           <p className="text-gray-400 mt-2 font-primary">{description}</p>
         </div>
@@ -58,17 +56,88 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           ))}
         </ul>
         
-        <a href="#contact">
-          {isPopular ? (
-            <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
-              <GradientButton className="w-full font-primary text-black" animate>Kết nối mua bán ngay</GradientButton>
+        {isPopular ? (
+          <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
+            <GradientButton className="w-full font-primary text-black" animate>Đăng ký ngay</GradientButton>
+          </a>
+        ) : (
+          <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
+            <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
+          </a>
+        )}
+      </GlassCard>
+    </motion.div>
+  );
+}
+
+function ConnectionPackage() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="w-full max-w-4xl mx-auto mt-20"
+    >
+      <div className="text-center mb-10">
+        <div className="inline-flex items-center px-3 py-1 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-4">
+          <span className="text-sm font-medium text-electric-purple font-primary">Add-on Package</span>
+        </div>
+        <h3 className="text-2xl font-heading font-bold text-white mb-4">B2B Connection 1on1</h3>
+        <p className="text-gray-300 font-primary">Mở rộng cơ hội kết nối với các đối tác tiềm năng</p>
+      </div>
+
+      <GlassCard className="rounded-xl p-8 bg-gradient-to-br from-electric-purple/10 to-transparent border border-electric-purple/30">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="flex-1">
+            <div className="mb-6">
+              <div className="flex items-baseline justify-center md:justify-start">
+                <span className="text-4xl font-bold text-white font-heading">250.000 VND</span>
+                <span className="text-gray-400 ml-2 font-primary text-sm">/lượt kết nối</span>
+              </div>
+              <p className="text-gray-400 mt-2 font-primary text-center md:text-left">(Chưa bao gồm 8% VAT)</p>
+            </div>
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-gray-300 font-primary">Kết nối MUA - BÁN - HỢP TÁC</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-gray-300 font-primary">Chat TRỰC TIẾP với doanh nghiệp</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-gray-300 font-primary">Thuật toán AI kết nối thông minh</span>
+              </li>
+            </ul>
+          </div>
+          <div className="flex-1 flex flex-col items-center md:items-end">
+            <div className="mb-6 text-center md:text-right">
+              <h4 className="text-lg font-semibold text-white mb-2">Đặc quyền bổ sung</h4>
+              <ul className="space-y-2">
+                <li className="text-gray-300 font-primary">Bảo mật - dễ dùng - đáng tin cậy</li>
+                <li className="text-gray-300 font-primary">Mở rộng ra Nhật Bản và quốc tế</li>
+              </ul>
+            </div>
+            <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
+              <GradientButton 
+                className="w-full md:w-auto px-8 py-3 font-primary"
+                variant="outline"
+                gradientFrom="electric-purple"
+                gradientTo="neon-blue"
+              >
+                Mua Credit ngay
+              </GradientButton>
             </a>
-          ) : (
-            <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
-              <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
-            </a>
-          )}
-        </a>
+          </div>
+        </div>
       </GlassCard>
     </motion.div>
   );
@@ -108,19 +177,6 @@ export default function PricingSection() {
         { text: "Hỗ trợ bởi AI và Human", included: true }
       ],
       isPopular: true
-
-    },
-    {
-      name: "B2B Connection 1on1",
-      price: "250.000 VND",
-      description: "(Chưa bao gồm 8% VAT)",
-      features: [
-        { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
-        { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
-        { text: "Thuật toán AI kết nối thông minh", included: true },
-        { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
-        { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
-      ],
     }
   ];
   
@@ -145,7 +201,7 @@ export default function PricingSection() {
             <span className="text-sm font-medium text-bright-teal">Chính sách giá</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span> Chọn gói phù hợp với doanh nghiệp của bạn
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Chọn gói phù hợp với doanh nghiệp của bạn</span>
           </h2>
           <p className="text-gray-300 font-primary">
             Lựa chọn từ các tùy chọn giá linh hoạt của chúng tôi được thiết kế phù hợp với doanh nghiệp thuộc mọi quy mô, từ startup đến doanh nghiệp lớn.
@@ -165,6 +221,8 @@ export default function PricingSection() {
             />
           ))}
         </div>
+
+        <ConnectionPackage />
       </div>
     </section>
   );
