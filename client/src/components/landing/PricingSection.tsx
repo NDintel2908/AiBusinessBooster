@@ -81,7 +81,7 @@ function ConnectionPackage() {
     >
       <div className="text-center mb-10">
         <div className="inline-flex items-center px-3 py-1 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-4">
-          <span className="text-sm font-medium text-electric-purple font-primary">Add-on Package</span>
+          <span className="text-sm font-medium text-electric-purple font-primary">Gói cộng thêm</span>
         </div>
         <h3 className="text-2xl font-heading font-bold text-white mb-4">B2B Connection 1on1</h3>
         <p className="text-gray-300 font-primary">Mở rộng cơ hội kết nối với các đối tác tiềm năng</p>
