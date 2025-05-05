@@ -88,68 +88,68 @@ function ConnectionPackage() {
       </div>
 
       <GlassCard className="rounded-xl p-8 bg-gradient-to-br from-electric-purple/10 to-transparent border border-electric-purple/30">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="flex-1">
-            <div className="mb-6">
-              <div className="flex items-baseline justify-center md:justify-start">
-                <span className="text-4xl font-bold text-white font-heading">250.000 VND</span>
-                <span className="text-gray-400 ml-2 font-primary text-sm">/lượt kết nối</span>
-              </div>
-              <p className="text-gray-400 mt-2 font-primary text-center md:text-left">(Chưa bao gồm 8% VAT)</p>
+        <div className="flex flex-col items-center">
+          <div className="mb-6 text-center">
+            <div className="flex items-baseline justify-center">
+              <span className="text-4xl font-bold text-white font-heading">250.000 VND</span>
+              <span className="text-gray-400 ml-2 font-primary text-sm">/lượt kết nối</span>
             </div>
-            <ul className="space-y-4 mb-8">
+            <p className="text-gray-400 mt-2 font-primary">(Chưa bao gồm 8% VAT)</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mb-8">
+            <ul className="space-y-4">
               <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span className="text-gray-300 font-primary">Kết nối MUA - BÁN - HỢP TÁC</span>
               </li>
               <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span className="text-gray-300 font-primary">Chat TRỰC TIẾP với doanh nghiệp</span>
               </li>
               <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span className="text-gray-300 font-primary">Thuật toán AI kết nối thông minh</span>
               </li>
+            </ul>
+            <ul className="space-y-4">
               <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span className="text-gray-300 font-primary">Bảo mật - dễ dùng - đáng tin cậy</span>
               </li>
               <li className="flex items-start">
-                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span className="text-gray-300 font-primary">Mở rộng ra Nhật Bản và quốc tế
-</span>
+                <span className="text-gray-300 font-primary">Mở rộng ra Nhật Bản và quốc tế</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-electric-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-gray-300 font-primary">Hỗ trợ đa ngôn ngữ</span>
               </li>
             </ul>
           </div>
-          <div className="flex-1 flex flex-col items-center md:items-end">
-            <div className="mb-6 text-center md:text-right">
-              <h4 className="text-lg font-semibold text-white mb-2">Đặc quyền bổ sung</h4>
-              <ul className="space-y-2">
-                <li className="text-gray-300 font-primary">Bảo mật - dễ dùng - đáng tin cậy</li>
-                <li className="text-gray-300 font-primary">Mở rộng ra Nhật Bản và quốc tế</li>
-              </ul>
-            </div>
-            <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
-              <GradientButton 
-                className="w-full md:w-auto px-8 py-3 font-primary"
-                variant="outline"
-                gradientFrom="electric-purple"
-                gradientTo="neon-blue"
-              >
-                Mua Credit ngay
-              </GradientButton>
-            </a>
-          </div>
+
+          <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer" className="w-full max-w-xs">
+            <GradientButton 
+              className="w-full px-8 py-3 font-primary"
+              variant="outline"
+              gradientFrom="electric-purple"
+              gradientTo="neon-blue"
+            >
+              Mua Credit ngay
+            </GradientButton>
+          </a>
         </div>
       </GlassCard>
     </motion.div>
