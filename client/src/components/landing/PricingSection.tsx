@@ -173,18 +173,19 @@ export default function PricingSection() {
           <div className="md:w-2/3 mx-auto">
             <PricingPlan
               name="Premium"
-            price="15tr VND"
-            description="(Chưa bao gồm 8% VAT)"
-            features={[
-              { text: "Tài khoản xác thực cấp độ ", included: true },
-              { text: "Credit 0 đối tác - khách hàng/tháng", included: true },
-              { text: "Hiển thị top và active bởi AI", included: true },
-              { text: "Dữ liệu công ty được training riêng", included: true },
-              { text: "Hỗ trợ bởi AI và Human", included: true }
-            ]}
-            isPopular={true}
-            index={2}
-          />
+              price="15tr VND"
+              description="(Chưa bao gồm 8% VAT)"
+              features={[
+                { text: "Tài khoản xác thực cấp độ ", included: true },
+                { text: "Credit 0 đối tác - khách hàng/tháng", included: true },
+                { text: "Hiển thị top và active bởi AI", included: true },
+                { text: "Dữ liệu công ty được training riêng", included: true },
+                { text: "Hỗ trợ bởi AI và Human", included: true }
+              ]}
+              isPopular={true}
+              index={2}
+            />
+          </div>
         </div>
       </div>
     </section>
