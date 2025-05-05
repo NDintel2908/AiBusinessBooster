@@ -2,6 +2,14 @@ import { Link, useLocation } from 'wouter';
 import BCPAILogo from './BCPAI.png';
 
 export default function Footer() {
+  const [, setLocation] = useLocation();
+  
+  // Hàm xử lý chuyển trang sử dụng wouter
+  const navigateTo = (path: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    setLocation(path);
+  };
+  
   return (
     <footer className="py-12 border-t border-gray-800 relative">
       <div className="absolute inset-0 z-0 opacity-30 pointer-events-none">
@@ -71,9 +79,10 @@ export default function Footer() {
             <h4 className="text-white font-heading font-semibold mb-6">Tài nguyên</h4>
             <ul className="space-y-4 font-primary">
               
-              <li><Link href="/payment-policy" className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách thanh toán</Link></li>
-              <li><Link href="/privacy-policy" className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách Quyền Riêng Tư</Link></li>
-              <li><Link href="/terms-of-service" className="text-gray-400 hover:text-neon-blue transition duration-300">Điều khoản Dịch vụ</Link></li>
+              <li><a href="#" onClick={navigateTo('/payment-policy')} className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách thanh toán</a></li>
+              <li><a href="#" onClick={navigateTo('/privacy-policy')} className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách Quyền Riêng Tư</a></li>
+              <li><a href="#" onClick={navigateTo('/pricing-comparison')} className="text-gray-400 hover:text-neon-blue transition duration-300">So sánh gói dịch vụ</a></li>
+              <li><a href="#" onClick={navigateTo('/terms-of-service')} className="text-gray-400 hover:text-neon-blue transition duration-300">Điều khoản Dịch vụ</a></li>
             </ul>
           </div>
           

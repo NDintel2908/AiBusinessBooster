@@ -136,9 +136,19 @@ export default function PricingSection() {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Chọn gói phù hợp với doanh nghiệp của bạn</span>
           </h2>
-          <p className="text-gray-300 font-primary">
+          <p className="text-gray-300 font-primary mb-6">
             Lựa chọn từ các tùy chọn giá linh hoạt của chúng tôi được thiết kế phù hợp với doanh nghiệp thuộc mọi quy mô, từ startup đến doanh nghiệp lớn.
           </p>
+          <a 
+            href="/pricing-comparison"
+            onClick={(e) => { 
+              e.preventDefault(); 
+              window.location.href = '/pricing-comparison'; 
+            }}
+            className="text-neon-blue hover:text-electric-purple transition-colors duration-300 font-primary underline"
+          >
+            Xem bảng so sánh chi tiết các gói dịch vụ →
+          </a>
         </motion.div>
         
         <div className="flex flex-col gap-8 max-w-5xl mx-auto">
