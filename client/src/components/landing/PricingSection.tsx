@@ -61,7 +61,7 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
         <a href="#contact">
           {isPopular ? (
             <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
-              <GradientButton className="w-full font-primary text-black" animate>Mua ngay</GradientButton>
+              <GradientButton className="w-full font-primary text-black" animate>Kết nối mua bán ngay</GradientButton>
             </a>
           ) : (
             <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
@@ -92,13 +92,26 @@ export default function PricingSection() {
       description: "Phù hợp với startup đang tìm kiếm cơ hội",
       features: [
         { text: "Thuật toán AI kết nối cơ bản", included: true },
-        { text: "Lên đến 30 kết nối mỗi tháng", included: true },
         { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
         { text: "Hỗ trợ qua email", included: true }
       ]
     },
     {
-      name: "Connection",
+      name: "Premium",
+      price: "1.250.000 VND",
+      description: "(Chưa bao gồm 8% VAT)",
+      features: [
+        { text: "Tài khoản xác thực cấp độ ", included: true },
+        { text: "Credit 0 đối tác - khách hàng/tháng", included: true },
+        { text: "Hiển thị top và active bởi AI", included: true },
+        { text: "Dữ liệu công ty được training riêng", included: true },
+        { text: "Hỗ trợ bởi AI và Human", included: true }
+      ],
+      isPopular: true
+
+    },
+    {
+      name: "B2B Connection 1on1",
       price: "250.000 VND",
       description: "(Chưa bao gồm 8% VAT)",
       features: [
@@ -108,7 +121,6 @@ export default function PricingSection() {
         { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
         { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
       ],
-      isPopular: true
     }
   ];
   
