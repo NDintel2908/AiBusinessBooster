@@ -141,37 +141,34 @@ export default function PricingSection() {
           </p>
         </motion.div>
         
-        <div className="flex flex-col gap-8 max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <PricingPlan
-              name="Starter"
-              price="FREE"
-              description="Phù hợp với startup đang tìm kiếm cơ hội"
-              features={[
-                { text: "Thuật toán AI kết nối cơ bản", included: true },
-                { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
-                { text: "Hỗ trợ qua email", included: true }
-              ]}
-              index={0}
-            />
-            
-            <PricingPlan
-              name="B2B Connection 1on1"
-              price="250.000 VND"
-              description="(Chưa bao gồm 8% VAT)/lượt kết nối"
-              features={[
-                { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
-                { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
-                { text: "Thuật toán AI kết nối thông minh", included: true },
-                { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
-                { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
-              ]}
-              index={1}
-            />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <PricingPlan
+            name="Starter"
+            price="FREE"
+            description="Phù hợp với startup đang tìm kiếm cơ hội"
+            features={[
+              { text: "Thuật toán AI kết nối cơ bản", included: true },
+              { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
+              { text: "Hỗ trợ qua email", included: true }
+            ]}
+            index={0}
+          />
+          
+          <PricingPlan
+            name="B2B Connection 1on1"
+            price="250.000 VND"
+            description="(Chưa bao gồm 8% VAT)/lượt kết nối"
+            features={[
+              { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
+              { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
+              { text: "Thuật toán AI kết nối thông minh", included: true },
+              { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
+              { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
+            ]}
+            index={1}
+          />
 
-          <div className="md:w-2/3 mx-auto">
-            <PricingPlan
+          <PricingPlan
             name="Premium"
             price="15tr VND"
             description="(Chưa bao gồm 8% VAT)"
