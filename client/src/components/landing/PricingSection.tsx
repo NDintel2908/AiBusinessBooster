@@ -51,8 +51,8 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
         
         <ul className="space-y-4 mb-8">
           {features.map((feature, idx) => (
-            <li key={idx} className="flex items-start">
-              <svg className="w-5 h-5 text-bright-teal mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li key={idx} className="flex items-center justify-center text-center">
+              <svg className="w-5 h-5 text-bright-teal mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span className="text-gray-300 font-primary">{feature.text}</span>
@@ -141,8 +141,8 @@ export default function PricingSection() {
           </p>
         </motion.div>
         
-        <div className="flex flex-col gap-12 max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex flex-col gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <PricingPlan
               name="Starter"
               price="FREE"
