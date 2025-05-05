@@ -38,7 +38,11 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           <div className="flex justify-center items-baseline">
             <span className="text-gray-400 mr-2"></span>
             <span className="text-4xl font-bold text-white font-heading">{price}</span>
-            <span className="text-gray-400 ml-1 font-primary text-sm">/năm</span>
+            {name === "B2B Connection 1on1" ? (
+              <span className="text-gray-400 ml-1 font-primary text-sm">/lượt kết nối</span>
+            ) : name === "Premium" ? (
+              <span className="text-gray-400 ml-1 font-primary text-sm">/năm</span>
+            ) : null}
           </div>
           <p className="text-gray-400 mt-2 font-primary">{description}</p>
         </div>
@@ -56,13 +60,13 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           ))}
         </ul>
         
-        {isPopular ? (
-          <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
-            <GradientButton className="w-full font-primary text-black" animate>Đăng ký ngay</GradientButton>
-          </a>
-        ) : (
+        {name === "Starter" ? (
           <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
             <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
+          </a>
+        ) : (
+          <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
+            <GradientButton className="w-full font-primary text-black" animate>Kết nối mua bán ngay</GradientButton>
           </a>
         )}
       </GlassCard>
