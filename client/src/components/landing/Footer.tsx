@@ -4,19 +4,19 @@ import vnpay from './partner/vnpay.png';
 
 export default function Footer() {
   const [, setLocation] = useLocation();
-  
+
   // Hàm xử lý chuyển trang sử dụng wouter
   const navigateTo = (path: string) => (e: React.MouseEvent) => {
     e.preventDefault();
     setLocation(path);
   };
-  
+
   return (
     <footer className="py-12 border-t border-gray-800 relative">
       <div className="absolute inset-0 z-0 opacity-30 pointer-events-none">
         <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-electric-purple/10 to-transparent"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
           <div>
@@ -29,11 +29,11 @@ export default function Footer() {
               </h1>
             </div>
             <div className="text-gray-400 mt-2 mb-6 font-primary space-y-2">
-              
+
             </div>
-            
+
           </div>
-          
+
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
             <ul className="space-y-4 font-primary">
@@ -75,30 +75,30 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Tài nguyên</h4>
             <ul className="space-y-4 font-primary">
-              
+
               <li><a href="#" onClick={navigateTo('/payment-policy')} className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách thanh toán</a></li>
               <li><a href="#" onClick={navigateTo('/privacy-policy')} className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách Quyền Riêng Tư</a></li>
               <li><a href="#" onClick={navigateTo('/pricing-comparison')} className="text-gray-400 hover:text-neon-blue transition duration-300">So sánh gói dịch vụ</a></li>
               <li><a href="#" onClick={navigateTo('/terms-of-service')} className="text-gray-400 hover:text-neon-blue transition duration-300">Điều khoản Dịch vụ</a></li>
             </ul>
           </div>
-          
-          <div>
-            <h4 className="text-white font-heading font-semibold mb-6">Đối tác thanh toán</h4>
-            <div className="flex flex-col items-center">
+
+          <div className="flex flex-col items-center">
+            <h4 className="text-white font-heading font-semibold mb-6 text-center">Đối tác thanh toán</h4>
+            <div className="flex flex-col items-center justify-center">
               <img 
                 src={vnpay}
                 alt="VNPAY"
                 className="h-[50px] object-contain filter brightness-100"
               />
-            
+              <p className="mt-4 text-gray-400 text-center font-primary">VNPAY</p>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Thông tin công ty</h4>
             <ul className="space-y-4 font-primary">
@@ -124,7 +124,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm font-primary">
           © {new Date().getFullYear()} Business Connecting Platform (BCP). Bản quyền đã được đăng ký.
         </div>
