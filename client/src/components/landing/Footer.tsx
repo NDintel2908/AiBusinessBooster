@@ -95,7 +95,7 @@ export default function Footer() {
                 alt="VNPAY"
                 className="h-[50px] object-contain filter brightness-100"
               />
-              <p className="mt-4 text-gray-400 text-center font-primary">VNPAY</p>
+            
             </div>
           </div>
           
