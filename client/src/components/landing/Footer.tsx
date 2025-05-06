@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'wouter';
 import BCPAILogo from './BCPAI.png';
 import vnpay from './partner/vnpay.png';
+import paypal from './partner/paypal.png';
 
 export default function Footer() {
   const [, setLocation] = useLocation();
@@ -89,13 +90,17 @@ export default function Footer() {
 
           <div className="flex flex-col items-center">
             <h4 className="text-white font-heading font-semibold mb-6 text-center">Đối tác thanh toán</h4>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center space-y-4">
               <img 
                 src={vnpay}
                 alt="VNPAY"
                 className="h-[50px] object-contain filter brightness-100"
               />
-              
+              <img 
+                src={paypal}
+                alt="PayPal"
+                className="h-[50px] object-contain filter brightness-100"
+              />
             </div>
           </div>
 
