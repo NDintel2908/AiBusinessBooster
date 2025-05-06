@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'wouter';
 import BCPAILogo from './BCPAI.png';
-import vnpay from './partner/vnpay.png';rom './partner/vnpay.png';
+import vnpay from './partner/vnpay.png';
 
 export default function Footer() {
   const [, setLocation] = useLocation();
