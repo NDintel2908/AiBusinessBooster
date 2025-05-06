@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'wouter';
 import BCPAILogo from './BCPAI.png';
-import vnpay from './partner/vnpay.png';
+import vnpay from './partner/vnpay.png';rom './partner/vnpay.png';
 
 export default function Footer() {
   const [, setLocation] = useLocation();
@@ -87,6 +87,18 @@ export default function Footer() {
             </ul>
           </div>
           
+          <div>
+            <h4 className="text-white font-heading font-semibold mb-6">Đối tác thanh toán</h4>
+            <div className="flex flex-col items-center">
+              <img 
+                src={vnpay}
+                alt="VNPAY"
+                className="h-[50px] object-contain filter brightness-100"
+              />
+              <p className="mt-4 text-gray-400 text-center font-primary">VNPAY</p>
+            </div>
+          </div>
+
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Thông tin công ty</h4>
             <ul className="space-y-4 font-primary">
