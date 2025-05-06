@@ -18,7 +18,7 @@ export default function Footer() {
       </div>
       
       <div className="container mx-auto px-4 z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
           <div>
             <div>
               <div className="w-40 h-40 relative overflow-hidden mb-2 logo">
@@ -98,7 +98,7 @@ export default function Footer() {
               <p className="mt-4 text-gray-400 text-center font-primary">VNPAY</p>
             </div>
           </div>
-
+          
           <div>
             <h4 className="text-white font-heading font-semibold mb-6">Thông tin công ty</h4>
             <ul className="space-y-4 font-primary">
