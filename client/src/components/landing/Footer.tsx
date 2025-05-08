@@ -94,7 +94,7 @@ export default function Footer() {
               <img 
                 src={vnpay}
                 alt="VNPAY"
-                className="h-[50px] object-contain filter brightness-100"
+                className="h-[200px] object-contain filter brightness-100"
               />
               <img 
                 src={paypal}
