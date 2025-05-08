@@ -99,7 +99,7 @@ export default function Footer() {
               <img 
                 src={paypal}
                 alt="PayPal"
-                className="h-[80px] object-contain filter brightness-100"
+                className="h-[320px] object-contain filter brightness-100"
               />
             </div>
           </div>
