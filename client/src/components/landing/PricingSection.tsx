@@ -1,4 +1,3 @@
-
 import { useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -46,20 +45,22 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
           </div>
           <p className="text-gray-400 mt-2 font-primary">{description}</p>
         </div>
-        
+
         <div className="h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent mb-6"></div>
-        
+
         <ul className="space-y-4 mb-8">
           {features.map((feature, idx) => (
-            <li key={idx} className="flex items-center justify-center text-center">
-              <svg className="w-5 h-5 text-bright-teal mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
+            <li key={idx} className="flex items-start">
+              <div className="w-6 flex-shrink-0 flex justify-center">
+                <svg className="w-5 h-5 text-bright-teal mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
               <span className="text-gray-300 font-primary">{feature.text}</span>
             </li>
           ))}
         </ul>
-        
+
         {name === "Starter" ? (
           <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
             <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
@@ -80,13 +81,13 @@ export default function PricingSection() {
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
-  
+
   useEffect(() => {
     if (isInView) {
       controls.start("visible");
     }
   }, [controls, isInView]);
-  
+
   const pricingPlans = [
     {
       name: "Starter",
@@ -112,13 +113,13 @@ export default function PricingSection() {
       isPopular: true
     }
   ];
-  
+
   return (
     <section id="pricing" className="py-20 relative">
       <div className="absolute inset-0 z-0 opacity-30">
         <div className="absolute top-1/3 right-1/3 w-1/3 h-1/3 bg-neon-blue opacity-10 blur-[120px] rounded-full"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 z-10">
         <motion.div 
           ref={ref}
@@ -150,9 +151,10 @@ export default function PricingSection() {
             Xem bảng so sánh chi tiết các gói dịch vụ →
           </a>
         </motion.div>
-        
+
         <div className="flex flex-col gap-8 max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Grid với 3 cột ngang hàng nhau, cách đều */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <PricingPlan
               name="Starter"
               price="FREE"
@@ -164,7 +166,7 @@ export default function PricingSection() {
               ]}
               index={0}
             />
-            
+
             <PricingPlan
               name="B2B Connection 1on1"
               price="250.000 VND"
@@ -178,12 +180,10 @@ export default function PricingSection() {
               ]}
               index={1}
             />
-          </div>
 
-          <div className="mx-auto">
             <PricingPlan
               name="Premium"
-              price="15tr VND"
+              price="15 triệu VND"
               description="(Chưa bao gồm 8% VAT)"
               features={[
                 { text: "Tài khoản xác thực cấp độ ", included: true },
