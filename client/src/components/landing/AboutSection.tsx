@@ -80,7 +80,7 @@ export default function AboutSection() {
                     alt="Business Partner"
                     className="h-[70px] object-contain filter brightness-100"
                   />
-                  <p className="mt-4 text-gray-400 text-center font-primary">Đối tác kinh doanh</p>
+                  <p className="mt-4 text-gray-400 text-center font-primary">Đối tác thị trường</p>
                 </div>
               </div>
             </motion.div>

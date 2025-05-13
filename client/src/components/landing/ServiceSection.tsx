@@ -35,7 +35,7 @@ export default function ServiceSection() {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-[2.5rem] font-bold text-white mb-4 font-heading">
-            Cách BCP Global hỗ trợ bạn & Điều khiến BCP Global khác biệt
+            Sự khác biệt của BCP.Global
           </h2>
           <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto font-primary">
             Khám phá sự hỗ trợ đặc biệt và những lợi thế độc đáo giúp BCP nổi bật trong câu chuyện kinh doanh của bạn.
@@ -52,33 +52,37 @@ export default function ServiceSection() {
             <Accordion.Root type="single" defaultValue="career" className="space-y-2">
               <ServiceAccordionItem 
                 value="proactive" 
-                title="Tăng sự chủ động"
+                title="Dựa trên AI, chủ động trò chuyện kết nối mà không spam"
               >
-                Dựa trên thông tin yêu cầu mà Doanh nghiệp mô tả, BCP AI học và gửi danh sách các Doanh nghiệp phù hợp rồi trao quyền lựa chọn kết nối chủ động cho Doanh nghiệp mà không tốn quá nhiều chi phí cũng như thời gian. 
-                Song, Doanh nghiệp hoàn toàn chủ động dạy BCP AI hiểu về công ty và các dịch vụ/ sản phẩm mà Doanh nghiệp cung cấp.
+                Doanh nghiệp, bất kể thuộc lĩnh vực nào, đều có nhu cầu MUA & BÁN các sản phẩm hay dịch vụ từ thị trường trong và ngoài nước — BCP.Global trao ngay quyền CHỦ ĐỘNG:
+                + Quảng bá chính mình;
+                + Tìm kiếm đối tác phù hợp;
+                + Matching nhu cầu theo thời gian thực;
+                + Chọn thị trường mở rộng;
+                + Trò chuyện bất kể không gian & thời gian;
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
                 value="chat" 
-                title="Trò chuyện 1on1"
+                title="Không qua Trung gian"
               >
-                BCP AI hỗ trợ tạo nhóm trò chuyện mới và Doanh nghiệp có thể trao đổi với đối tác trực tiếp mà không cần có điều phối viên.
+                BCP AI hỗ trợ tạo nhóm trò chuyện mới 1on1 cho các Doanh nghiệp trao đổi với đối tác trực tiếp mà không cần có điều phối viên.
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
                 value="security" 
+                title="Kết nối không biên giới"
+              >
+                BCP không chỉ là "cầu nối", mà còn là "bàn đạp" cho các doanh nghiệp dám mơ lớn - vươn mình ra quốc tế. Từ nhịp sống năng động Việt Nam, vươn tới thị trường Nhật Bản tiên tiến, và lan tỏa khắp Đông Nam Á - chúng tôi là cầu nối chiến lược giúp doanh nghiệp bạn vượt ranh giới địa lý.
+              </ServiceAccordionItem>
+
+              <ServiceAccordionItem 
+                value="connection" 
                 title="Bảo mật là ưu tiên hàng đầu"
               >
                 Tại BCP, chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức nghiêm ngặt nhằm bảo vệ dữ liệu người dùng, tuân theo các thông lệ tốt nhất trong ngành về hạ tầng đám mây, kiểm soát truy cập và mã hóa dữ liệu.
 
                 BCP cam kết duy trì tính bảo mật (confidentiality), toàn vẹn (integrity) và sẵn sàng (availability) của thông tin, nhằm đảm bảo quyền riêng tư và an toàn cho toàn bộ người dùng và đối tác trên nền tảng.
-              </ServiceAccordionItem>
-
-              <ServiceAccordionItem 
-                value="connection" 
-                title="Kết nối không biên giới"
-              >
-                BCP không chỉ là "cầu nối", mà còn là "bàn đạp" cho các doanh nghiệp dám mơ lớn - vươn mình ra quốc tế. Từ nhịp sống năng động Việt Nam, vươn tới thị trường Nhật Bản tiên tiến, và lan tỏa khắp Đông Nam Á - chúng tôi là cầu nối chiến lược giúp doanh nghiệp bạn vượt ranh giới địa lý.
               </ServiceAccordionItem>
               
             </Accordion.Root>
