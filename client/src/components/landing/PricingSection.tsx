@@ -38,9 +38,9 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
             <span className="text-gray-400 mr-2"></span>
             <span className="text-4xl font-bold text-white font-heading">{price}</span>
             {name === "B2B Connection 1on1" ? (
-              <span className="text-gray-400 ml-1 font-primary text-sm">/lượt kết nối</span>
+              <span className="text-gray-400 ml-1 font-primary text-sm">/connection</span>
             ) : name === "Premium" ? (
-              <span className="text-gray-400 ml-1 font-primary text-sm">/năm</span>
+              <span className="text-gray-400 ml-1 font-primary text-sm">/year</span>
             ) : null}
           </div>
           <p className="text-gray-400 mt-2 font-primary">{description}</p>
@@ -63,11 +63,11 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
 
         {name === "Starter" ? (
           <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
-            <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
+            <GradientButton className="w-full font-primary" variant="outline">Experience</GradientButton>
           </a>
         ) : (
           <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
-            <GradientButton className="w-full font-primary text-black" animate>Kết nối mua bán ngay</GradientButton>
+            <GradientButton className="w-full font-primary text-black" animate>Join Now</GradientButton>
           </a>
         )}
       </GlassCard>
@@ -102,13 +102,13 @@ export default function PricingSection() {
     {
       name: "Premium",
       price: "15.000.000 VND",
-      description: "(Chưa bao gồm 8% VAT)",
+      description: "(Not include 8% VAT)",
       features: [
-        { text: "Tài khoản xác thực cấp độ ", included: true },
-        { text: "Credit 0 đối tác - khách hàng/tháng", included: true },
-        { text: "Hiển thị top và active bởi AI", included: true },
-        { text: "Dữ liệu công ty được training riêng", included: true },
-        { text: "Hỗ trợ bởi AI và Human", included: true }
+        { text: "Verified  ", included: true },
+        { text: "0 credits for partners - customers per month.", included: true },
+        { text: "Displayed as top and active by AI.", included: true },
+        { text: "Company data is privately trained.", included: true },
+        { text: "Supported by AI & Human", included: true }
       ],
       isPopular: true
     }
@@ -132,13 +132,13 @@ export default function PricingSection() {
           }}
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-bright-teal/20 border border-bright-teal/40 mb-4">
-            <span className="text-sm font-medium text-bright-teal">Chính sách giá</span>
+            <span className="text-sm font-medium text-bright-teal">Pricing</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Chọn gói phù hợp với doanh nghiệp của bạn</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Choose the plan that fits your business.</span>
           </h2>
           <p className="text-gray-300 font-primary mb-6">
-            Lựa chọn từ các tùy chọn giá linh hoạt của chúng tôi được thiết kế phù hợp với doanh nghiệp thuộc mọi quy mô, từ startup đến doanh nghiệp lớn.
+            Choose from our flexible pricing options designed to suit businesses of all sizes, from startups to large enterprises.
           </p>
           <a 
             href="/pricing-comparison"
@@ -148,7 +148,7 @@ export default function PricingSection() {
             }}
             className="text-neon-blue hover:text-electric-purple transition-colors duration-300 font-primary underline"
           >
-            Xem bảng so sánh chi tiết các gói dịch vụ →
+            Pricing comparison →
           </a>
         </motion.div>
 
@@ -158,11 +158,11 @@ export default function PricingSection() {
             <PricingPlan
               name="Starter"
               price="FREE"
-              description="Phù hợp với startup đang tìm kiếm cơ hội"
+              description="Suitable for startups seeking opportunities."
               features={[
-                { text: "Thuật toán AI kết nối cơ bản", included: true },
-                { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
-                { text: "Hỗ trợ qua email", included: true }
+                { text: "Basic AI connection algorithm.", included: true },
+                { text: "Standard business profile", included: true },
+                { text: "Customer service", included: true }
               ]}
               index={0}
             />
@@ -170,27 +170,27 @@ export default function PricingSection() {
             <PricingPlan
               name="B2B Connection 1on1"
               price="250.000 VND"
-              description="(Chưa bao gồm 8% VAT)/lượt kết nối"
+              description="(Not include 8% VAT)/connection"
               features={[
-                { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
-                { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
-                { text: "Thuật toán AI kết nối thông minh", included: true },
-                { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
-                { text: "Mở rộng ra Nhật Bản và quốc tế", included: true }
+                { text: "Connect for BUYING - SELLING - COLLABORATION", included: true },
+                { text: "DIRECT CHAT with Businesses", included: true },
+                { text: "Intelligent AI Connection Algorithm", included: true },
+                { text: "Secure - User-Friendly - Reliable", included: true },
+                { text: "Expand to Japan and Internationally", included: true }
               ]}
               index={1}
             />
 
             <PricingPlan
               name="Premium"
-              price="15 triệu VND"
-              description="(Chưa bao gồm 8% VAT)"
+              price="15000000 VND"
+              description="(Not include 8% VAT)"
               features={[
-                { text: "Tài khoản xác thực cấp độ ", included: true },
-                { text: "Credit 0 đối tác - khách hàng/tháng", included: true },
-                { text: "Hiển thị top và active bởi AI", included: true },
-                { text: "Dữ liệu công ty được training riêng", included: true },
-                { text: "Hỗ trợ bởi AI và Human", included: true }
+                { text: "Verified account ", included: true },
+                { text: "0 credits for partners - customers per month.", included: true },
+                { text: "Displayed as top and active by AI.", included: true },
+                { text: "Company data is privately trained.", included: true },
+                { text: "Supported by AI & Human", included: true }
               ]}
               isPopular={true}
               index={2}

@@ -51,21 +51,23 @@ export default function HeroSection() {
               className="inline-flex items-center px-3 py-1 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-bright-teal animate-pulse mr-2"></span>
-              <span className="text-sm font-medium text-bright-teal font-primary">Công cụ, thói quen và trợ lý phát triển kinh doanh mới với AI Matching Agent</span>
+              <span className="text-sm font-medium text-bright-teal font-primary">New Business Development Tools, Habits, and Assistants with AI Matching Agent</span>
             </motion.div>
             
             <motion.h1 
               variants={itemVariants}
               className="text-2xl md:text-3xl lg:text-3xl font-heading font-bold leading-tight text-white hero-title"
             >
-              MỞ RỘNG TỪNG ĐỐI TÁC, KHÁCH HÀNG B2B VỚI AI MATCHING AGENT
+              Expand Every Partner, B2B Customer with BCP AI Matching Agent
             </motion.h1>
             
             <motion.p 
               variants={itemVariants}
               className="text-lg md:text-xl text-gray-300 max-w-2xl font-primary"
             >
-              BCP - Business Connecting Platform là một nền tảng kết nối MUA BÁN HƠP TÁC hàng đầu ứng dụng AI, cho phép tìm kiếm - kết nối - giao dịch theo thời gian thực & tiết kiệm chi phí thông qua các kết nối thông minh.
+              BCP - Business Connecting Platform is a leading AI-powered B2B connecting platform for BUYING - SELLING - COLLABORATION, enabling real-time & cost-effective SEARCH - CONNECTION - TRANSACTION through intelligent connections.
+
+              
             </motion.p>
             
             <motion.div 
@@ -73,7 +75,7 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6"
             >
               <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
-                <GradientButton size="lg" animate className="cta-button">Bắt Đầu Ngay</GradientButton>
+                <GradientButton size="lg" animate className="cta-button">Start Now</GradientButton>
               </a>
               <GradientButton 
                 size="lg" 
@@ -87,7 +89,7 @@ export default function HeroSection() {
                 }}
               >
                 <span className="flex items-center justify-center">
-                  <span>Liên Hệ Ngay</span>
+                  <span>Contact us</span>
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
@@ -106,7 +108,7 @@ export default function HeroSection() {
                 <img src="https://freelogopng.com/images/all_img/1657952641google-logo-png-image.png" alt="Business Person 3" className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover" />
               </div>
               <div className="text-sm text-gray-400 font-primary">
-                <span className="font-semibold text-white">500+</span> doanh nghiệp mới đăng ký trong tháng
+                <span className="font-semibold text-white">500+</span> new members registered
               </div>
             </motion.div>
           </motion.div>
@@ -143,8 +145,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium font-primary">99% Tỷ lệ phù hợp</p>
-                    <p className="text-xs text-gray-400 font-primary">Vận hành bởi thuật toán AI</p>
+                    <p className="text-white font-medium font-primary">99% accuracy</p>
+                    <p className="text-xs text-gray-400 font-primary">AI-powered</p>
                   </div>
                 </div>
               </GlassCard>
@@ -164,8 +166,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium font-primary">Đối tác đã xác minh</p>
-                    <p className="text-xs text-gray-400 font-primary">Bảo mật cấp doanh nghiệp</p>
+                    <p className="text-white font-medium font-primary">Verified partners</p>
+                    <p className="text-xs text-gray-400 font-primary">Secured</p>
                   </div>
                 </div>
               </GlassCard>

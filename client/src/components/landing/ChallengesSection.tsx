@@ -56,8 +56,8 @@ const challenges = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
       </svg>
     ),
-    title: "Chi phí bỏ ra cao mà không ra",
-    description: "Các phương pháp truyền thống như thuê đội nghiên cứu thị trường, tham gia hội chợ, chạy quảng cáo tốn kém mà không hiệu quả."
+    title: "High costs do not always mean results.",
+    description: "Traditional methods like hiring market research teams, attending trade fairs, or running ads are costly and often ineffective."
   },
   {
     icon: (
@@ -65,8 +65,8 @@ const challenges = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
       </svg>
     ),
-    title: "Mất quá nhiều thời gian để xác lập một đối tác",
-    description: "Việc kết nối và phát triển đối tác thủ công có thể mất nhiều tháng, làm chậm cơ hội tăng trưởng và thâm nhập thị trường."
+    title: "Excessive time spent establishing a single partnership.",
+    description: "Manual partner onboarding and development can take months, slowing down growth opportunities and market penetration."
   },
   {
     icon: (
@@ -74,8 +74,8 @@ const challenges = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
       </svg>
     ),
-    title: "Có đối tác, khách hàng nhưng không tin cậy",
-    description: "Thiếu thông tin đáng tin cậy khiến việc xác minh độ tin cậy và khả năng tương thích của đối tác tiềm năng trở nên khó khăn."
+    title: "Existing partners and customers are associated with unverifiable contact information.",
+    description: "The lack of reliable information makes it difficult to verify the credibility and compatibility of potential partners."
   },
  
 ];
@@ -113,13 +113,13 @@ export default function ChallengesSection() {
           }}
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-            <span className="text-sm font-medium text-neon-blue font-primary">Thách thức của thị trường</span>
+            <span className="text-sm font-medium text-neon-blue font-primary">Market challenge</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
-            Vấn đề nan giải khi kết nối thị trường <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B</span>
+            The Challenges of the B2B market<span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>
           </h2>
           <p className="text-gray-300 font-primary">
-            B2B luôn gặp khó khi tiếp thị đến người mua - tìm kiếm người bán, đối tác kinh doanh
+            B2B consistently faces difficulties in marketing to buyers - finding sellers and business partners.
           </p>
         </motion.div>
         

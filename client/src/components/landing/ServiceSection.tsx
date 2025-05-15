@@ -35,10 +35,10 @@ export default function ServiceSection() {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-[2.5rem] font-bold text-white mb-4 font-heading">
-            Sự khác biệt của BCP.Global
+            The BCP.Global Difference
           </h2>
           <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto font-primary">
-            Khám phá sự hỗ trợ đặc biệt và những lợi thế độc đáo giúp BCP nổi bật trong câu chuyện kinh doanh của bạn.
+            Discover the special support and unique advantages that make BCP stand out in your business journey.
           </p>
         </div>
 
@@ -52,37 +52,38 @@ export default function ServiceSection() {
             <Accordion.Root type="single" defaultValue="career" className="space-y-2">
               <ServiceAccordionItem 
                 value="proactive" 
-                title="Dựa trên AI, chủ động trò chuyện kết nối mà không spam"
+                title="AI-driven, proactively initiates relevant conversations without spam."
               >
-                Doanh nghiệp, bất kể thuộc lĩnh vực nào, đều có nhu cầu MUA & BÁN các sản phẩm hay dịch vụ từ thị trường trong và ngoài nước — BCP.Global trao ngay quyền CHỦ ĐỘNG:
-                + Quảng bá chính mình;
-                + Tìm kiếm đối tác phù hợp;
-                + Matching nhu cầu theo thời gian thực;
-                + Chọn thị trường mở rộng;
-                + Trò chuyện bất kể không gian & thời gian;
+                Businesses, regardless of their sector, have a need to BUY & SELL products or services from domestic and international markets — BCP.Global immediately grants PROACTIVE CONTROL:
+                + Promote yourself;
+                + Find suitable partners;
+                + Real-time matching of needs;
+                + Select markets for expansion;
+                + Communicate regardless of space & time;
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
                 value="chat" 
-                title="Không qua Trung gian"
+                title="Direct Communication with Qualified Potential Leads"
               >
-                BCP AI hỗ trợ tạo nhóm trò chuyện mới 1on1 cho các Doanh nghiệp trao đổi với đối tác trực tiếp mà không cần có điều phối viên.
+                BCP.Global supports new 1-on-1 chat groups for Businesses to communicate directly with qualified Potential Leads without the need for coordinators.
               </ServiceAccordionItem>
               
               <ServiceAccordionItem 
                 value="security" 
-                title="Kết nối không biên giới"
+                title="Borderless Connections"
               >
-                BCP không chỉ là "cầu nối", mà còn là "bàn đạp" cho các doanh nghiệp dám mơ lớn - vươn mình ra quốc tế. Từ nhịp sống năng động Việt Nam, vươn tới thị trường Nhật Bản tiên tiến, và lan tỏa khắp Đông Nam Á - chúng tôi là cầu nối chiến lược giúp doanh nghiệp bạn vượt ranh giới địa lý.
+                BCP.Global is not just a ""bridge"" but also a ""springboard"" for businesses that dare to dream big — expanding internationally. From the dynamic pace of Vietnam, reaching the advanced Japanese market, and spreading throughout Southeast Asia — we are a strategic bridge helping businesses transcend geographical boundaries.
+                
               </ServiceAccordionItem>
 
               <ServiceAccordionItem 
                 value="connection" 
-                title="Bảo mật là ưu tiên hàng đầu"
+                title="Security is the Top Priority"
               >
-                Tại BCP, chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức nghiêm ngặt nhằm bảo vệ dữ liệu người dùng, tuân theo các thông lệ tốt nhất trong ngành về hạ tầng đám mây, kiểm soát truy cập và mã hóa dữ liệu.
+                At BCP.Global, we implement rigorous technical and organizational measures to protect user data, adhering to industry best practices in cloud infrastructure, access control, and data encryption.
 
-                BCP cam kết duy trì tính bảo mật (confidentiality), toàn vẹn (integrity) và sẵn sàng (availability) của thông tin, nhằm đảm bảo quyền riêng tư và an toàn cho toàn bộ người dùng và đối tác trên nền tảng.
+                BCP is committed to maintaining the confidentiality, integrity, and availability of information to ensure the privacy and security of all users and partners on the platform.
               </ServiceAccordionItem>
               
             </Accordion.Root>
