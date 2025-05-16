@@ -9,6 +9,7 @@ import PricingSection from "@/components/landing/PricingSection";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
 import FAQSection from "@/components/landing/FAQSection"; // Import the new component
+import BusinessSectorsSection from "@/components/landing/BusinessSectorsSection";
 
 export default function Home() {
   return (
@@ -24,8 +25,9 @@ export default function Home() {
       <main>
         <Suspense fallback={<div>Loading...</div>}>
           <HeroSection />
-          <ChallengesSection />
           <ServiceSection />
+          <BusinessSectorsSection />
+          <ChallengesSection />
           <FeaturesSection />
           <AboutSection />
           <PricingSection />

@@ -86,61 +86,7 @@ export default function ServiceSection() {
                 BCP is committed to maintaining the confidentiality, integrity, and availability of information to ensure the privacy and security of all users and partners on the platform.
               </ServiceAccordionItem>
 
-              <ServiceAccordionItem 
-                value="sectors" 
-                title="25 Popular Business Sectors on BCP Global"
-              >
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold mb-2">Group A - Professional B2B Service Providers:</h4>
-                    <ul className="list-disc pl-4 space-y-1">
-                      <li>IT, AI & IoT Software Development and Outsourcing</li>
-                      <li>Accounting, Finance, Legal & Insurance Consulting</li>
-                      <li>Human Resources, Recruitment & Training Services</li>
-                      <li>Advertising & Marketing Agencies</li>
-                      <li>Distribution & Domestic Trade Services</li>
-                      <li>Transportation, Logistics, Distribution & Warehousing Services</li>
-                      <li>Architectural & Office Interior Design</li>
-                      <li>Commercial, Retail, Industrial & Office Real Estate</li>
-                      <li>Export Services & Cross-Border Market Development</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-2">Group B - Raw Materials & Goods Suppliers:</h4>
-                    <ul className="list-disc pl-4 space-y-1">
-                      <li>Agriculture & Aquaculture</li>
-                      <li>Food & Beverage</li>
-                      <li>Textiles & Garments</li>
-                      <li>Pulp & Paper</li>
-                      <li>Chemicals</li>
-                      <li>Construction Materials</li>
-                      <li>Mining & Minerals</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-2">Group C - Manufacturers & Processors:</h4>
-                    <ul className="list-disc pl-4 space-y-1">
-                      <li>Food & Beverage Manufacturers</li>
-                      <li>Textile & Garment Manufacturers, Fashion Products</li>
-                      <li>Consumer Goods Manufacturers</li>
-                      <li>Electronics & Home Appliance Manufacturers</li>
-                      <li>Automotive & Parts Manufacturers</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-2">Group D - Industrial & Auxiliary Processing:</h4>
-                    <ul className="list-disc pl-4 space-y-1">
-                      <li>Industrial Component & Auxiliary Processing</li>
-                      <li>Semiconductor Component Processing</li>
-                      <li>Precision Engineering & Machining</li>
-                      <li>Specialized Equipment Manufacturing & Supply</li>
-                    </ul>
-                  </div>
-                </div>
-              </ServiceAccordionItem>
+              
               
             </Accordion.Root>
           </motion.div>
