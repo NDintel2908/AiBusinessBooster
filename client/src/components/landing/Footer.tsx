@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-heading font-semibold mb-6">Công ty</h4>
+            <h4 className="text-white font-heading font-semibold mb-6">Company</h4>
             <ul className="space-y-4 font-primary">
               <li>
                 <a 
@@ -47,7 +47,7 @@ export default function Footer() {
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
-                  Về chúng tôi
+                  About us
                 </a>
               </li>
               <li>
@@ -59,7 +59,7 @@ export default function Footer() {
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
-                  Tính năng
+                  Feature
                 </a>
               </li>
               <li>
@@ -71,25 +71,25 @@ export default function Footer() {
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
-                  Bảng giá
+                  Pricing
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-heading font-semibold mb-6">Tài nguyên</h4>
+            <h4 className="text-white font-heading font-semibold mb-6">Resource</h4>
             <ul className="space-y-4 font-primary">
 
-              <li><a href="#" onClick={navigateTo('/payment-policy')} className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách thanh toán</a></li>
-              <li><a href="#" onClick={navigateTo('/privacy-policy')} className="text-gray-400 hover:text-neon-blue transition duration-300">Chính sách Quyền Riêng Tư</a></li>
-              <li><a href="#" onClick={navigateTo('/pricing-comparison')} className="text-gray-400 hover:text-neon-blue transition duration-300">So sánh gói dịch vụ</a></li>
-              <li><a href="#" onClick={navigateTo('/terms-of-service')} className="text-gray-400 hover:text-neon-blue transition duration-300">Điều khoản Dịch vụ</a></li>
+              <li><a href="#" onClick={navigateTo('/payment-policy')} className="text-gray-400 hover:text-neon-blue transition duration-300">Payment policy</a></li>
+              <li><a href="#" onClick={navigateTo('/privacy-policy')} className="text-gray-400 hover:text-neon-blue transition duration-300">Privacy policy</a></li>
+              <li><a href="#" onClick={navigateTo('/pricing-comparison')} className="text-gray-400 hover:text-neon-blue transition duration-300">Pricing comparison</a></li>
+              <li><a href="#" onClick={navigateTo('/terms-of-service')} className="text-gray-400 hover:text-neon-blue transition duration-300">Terms & conditions</a></li>
             </ul>
           </div>
 
           <div className="flex flex-col items-center">
-            <h4 className="text-white font-heading font-semibold mb-6 text-center">Đối tác thanh toán</h4>
+            <h4 className="text-white font-heading font-semibold mb-6 text-center">Payment method</h4>
             <div className="flex flex-col items-center justify-center space-y-4">
               <img 
                 src={vnpay}
@@ -105,33 +105,33 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-heading font-semibold mb-6">Thông tin công ty</h4>
+            <h4 className="text-white font-heading font-semibold mb-6">Our company</h4>
             <ul className="space-y-4 font-primary">
               <li className="flex items-center gap-2 text-gray-400">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
-                Mã số thuế: 0317026053
+                Tax code: 0317026053
               </li>
               <li className="flex items-start gap-2 text-gray-400">
                 <svg className="w-5 h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Địa chỉ: Tầng 2, 81 Cách Mạng Tháng Tám, Phường Bến Thành, Quận 1, TPHCM
+               Address: 224A Dien Bien Phu, Vo Thi Sau ward, District 3, HCMC
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                Số điện thoại: 0767673182
+                Phone: (+84) 963254259
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm font-primary">
-          © {new Date().getFullYear()} Business Connecting Platform (BCP). Bản quyền đã được đăng ký.
+          © {new Date().getFullYear()} Business Connecting Platform (BCP). Copyright has been registered.
         </div>
       </div>
     </footer>

@@ -23,13 +23,13 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-              <span className="text-sm font-medium text-neon-blue">Liên hệ với chúng tôi</span>
+              <span className="text-sm font-medium text-neon-blue">Contact us</span>
             </div>
             <h2 className="text-3xl md:text-3xl font-heading font-bold mb-6 text-white">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>Trở thành đối tác được BCP giới thiệu
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>Become a partner recommended by BCP.
             </h2>
             <p className="text-gray-300 mb-8 font-primary">
-              Điền vào biểu mẫu và chuyên gia kinh doanh AI của chúng tôi sẽ liên hệ lại với bạn trong vòng 24 giờ để thảo luận về cách BCP có thể cách mạng hóa chiến lược đối tác của bạn.
+              Fill out the form and our AI business expert will get back to you within 24 hours to discuss how BCP can revolutionize your partnership strategy.
             </p>
 
             <div className="flex space-x-4">
@@ -53,17 +53,17 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <GlassCard className="rounded-xl p-6 border border-gray-700">
-              <h3 className="text-2xl font-heading font-semibold mb-6 text-white">Biểu mẫu liên hệ</h3>
+              <h3 className="text-2xl font-heading font-semibold mb-6 text-white">Contact form</h3>
 
               {state.succeeded ? (
                 <div className="text-center py-8">
-                  <p className="text-green-400 text-lg font-primary">Yêu cầu của bạn đã được gửi thành công!</p>
+                  <p className="text-green-400 text-lg font-primary">Your request has been sent!</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-gray-300 mb-2 font-primary">Họ tên</label>
+                      <label htmlFor="name" className="block text-gray-300 mb-2 font-primary">Your Name</label>
                       <input 
                         type="text" 
                         id="name" 
@@ -76,7 +76,7 @@ export default function ContactSection() {
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-gray-300 mb-2 font-primary">Địa chỉ email</label>
+                      <label htmlFor="email" className="block text-gray-300 mb-2 font-primary">Email</label>
                       <input 
                         type="email" 
                         id="email" 
@@ -90,26 +90,26 @@ export default function ContactSection() {
                   </div>
 
                   <div>
-                    <label htmlFor="company" className="block text-gray-300 mb-2 font-primary">Tên công ty</label>
+                    <label htmlFor="company" className="block text-gray-300 mb-2 font-primary">Your Company</label>
                     <input 
                       type="text" 
                       id="company" 
                       name="company"
                       className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
-                      placeholder="Công ty của bạn"
+                      placeholder="BCP JSC"
                       required
                     />
                     <ValidationError prefix="Company" field="company" errors={state.errors}/>
                   </div>
 
                   <div>
-                    <label htmlFor="requirements" className="block text-gray-300 mb-2 font-primary">Yêu cầu cụ thể</label>
+                    <label htmlFor="requirements" className="block text-gray-300 mb-2 font-primary">Your request</label>
                     <textarea 
                       id="requirements" 
                       name="requirements"
                       rows={4}
                       className="w-full px-4 py-3 rounded-lg bg-dark-purple/50 border border-gray-700 text-black focus:outline-none focus:border-neon-blue transition duration-300 font-primary"
-                      placeholder="Hãy cho chúng tôi biết về nhu cầu và cách chúng tôi có thể giúp đỡ..."
+                      placeholder="Let us know what you need..."
                     ></textarea>
                     <ValidationError prefix="Requirements" field="requirements" errors={state.errors}/>
                   </div>
@@ -119,7 +119,7 @@ export default function ContactSection() {
                     disabled={state.submitting}
                     className="w-full py-4 px-6 bg-gradient-to-r from-neon-blue to-electric-purple text-white font-primary text-lg font-semibold rounded-lg hover:scale-[1.02] hover:shadow-lg hover:shadow-neon-blue/50 transform transition-all duration-300 disabled:opacity-50 disabled:hover:scale-100 disabled:hover:shadow-none animate-glow"
                   >
-                    {state.submitting ? "Đang gửi..." : "Gửi yêu cầu"}
+                    {state.submitting ? "Đang gửi..." : "Submit"}
                   </button>
                 </form>
               )}
