@@ -102,10 +102,12 @@ export default function AboutSection() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Câu chuyện doanh nghiệp</span>
             </h2>
             <p className="text-gray-300 mb-6 font-primary">
-              BCP được thành lập vào năm 2018 từ một nhận định đơn giản: dù công nghệ số đã phát triển mạnh mẽ, việc tìm kiếm đối tác kinh doanh phù hợp vẫn còn quá kém hiệu quả – và phần lớn dựa vào may rủi hơn là dữ liệu.
+              BCP ra đời từ một phát hiện đơn giản: Dù công nghệ số đã phát triển vượt bậc, việc tìm kiếm đối tác kinh doanh vẫn còn phụ thuộc vào may rủi thay vì dữ liệu.
+              
+
             </p>
             <p className="text-gray-300 mb-6 font-primary">
-              Với đội ngũ chuyên gia AI, phân tích kinh doanh và đổi mới công nghệ – trong đó có cả các thành viên đến từ Nhật Bản – chúng tôi đã bắt đầu hành trình xây dựng một nền tảng kết nối B2B mới, nơi trí tuệ nhân tạo và khoa học dữ liệu trở thành động lực thay đổi cuộc chơi.
+              Với đội ngũ chuyên gia AI và phân tích kinh doanh đa quốc gia, chúng tôi xây dựng nền tảng kết nối MUA - BÁN - HỢP TÁC B2B thông minh, biến trí tuệ nhân tạo thành chìa khóa thay đổi cuộc chơi.
             </p>
             
             <div className="my-8 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
@@ -119,7 +121,8 @@ export default function AboutSection() {
             >
               <h3 className="text-xl font-heading font-semibold mb-4 text-white">Tầm nhìn</h3>
               <p className="text-gray-300 font-primary">
-                Chúng tôi hướng tới một thế giới nơi mọi doanh nghiệp đều tìm thấy đối tác lý tưởng của mình – từ đó thúc đẩy đổi mới và tăng trưởng cho toàn bộ nền kinh tế toàn cầu.
+                Chúng tôi tin vào một thế giới nơi mọi doanh nghiệp đều tìm được đối tác lý tưởng. 
+
               </p>
             </motion.div>
             
@@ -131,7 +134,7 @@ export default function AboutSection() {
             >
               <h3 className="text-xl font-heading font-semibold mb-4 text-white">Sứ mạng</h3>
               <p className="text-gray-300 font-primary">
-                Chúng tôi ứng dụng công nghệ AI tiên tiến nhằm xóa bỏ mọi rào cản khiến doanh nghiệp khó tìm thấy đối tác phù hợp – mở ra cơ hội hợp tác hiệu quả và bền vững cho mọi tổ chức, dù lớn hay nhỏ.
+                Bằng công nghệ AI tiên tiến, BCP phá bỏ mọi rào cản, mở ra cơ hội hợp tác hiệu quả cho mọi tổ chức, dù lớn hay nhỏ.
               </p>
             </motion.div>
           </motion.div>
