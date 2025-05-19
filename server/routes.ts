@@ -39,7 +39,8 @@ export async function registerRoutes(app: Express): Promise<http.Server> {
     const paymentUrl = req.query.paymentUrl as string;
     
     if (!paymentUrl) {
-      return res.status(400).send("Missing payment URL");
+      // Khi không có paymentUrl, chuyển hướng đến trang Go để hiển thị giao diện
+      return res.redirect('/go.html');
     }
     
     try {
