@@ -1,193 +1,23 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BCP Payment Gateway</title>
+  <meta http-equiv="refresh" content="0;url=/" />
+  <title>Redirecting...</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1a237e, #0d1b2a);
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-    }
-    
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    
-    .container {
-      background-color: rgba(15, 23, 42, 0.7);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
-                  0 0 20px rgba(30, 64, 175, 0.2);
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 2.5rem;
-      max-width: 500px;
-      width: 90%;
-    }
-    
-    h1 {
-      color: #fff;
-      margin-bottom: 0.5rem;
-      font-size: 28px;
-    }
-    
-    .divider {
-      height: 2px;
-      width: 80px;
-      background: linear-gradient(90deg, #3B82F6, #8B5CF6);
-      margin: 1.5rem auto;
-      border-radius: 2px;
-    }
-    
-    #message {
-      color: #e2e8f0;
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-    }
-    
-    .spinner {
-      border: 4px solid rgba(255, 255, 255, 0.2);
-      border-radius: 50%;
-      border-top: 4px solid #3B82F6;
-      border-left: 4px solid #8B5CF6;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-      margin: 1.5rem auto;
-    }
-    
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    .error {
-      color: #f0f0f0;
-      margin: 1.5rem 0;
-      line-height: 1.6;
-      font-size: 14px;
-      display: none;
-    }
-    
-    .info-box {
-      background-color: rgba(15, 23, 42, 0.5);
-      border: 1px solid rgba(59, 130, 246, 0.2);
-      border-radius: 8px;
-      padding: 1.2rem;
-      margin-top: 1.5rem;
-      text-align: left;
-      display: none;
-    }
-    
-    .info-title {
-      color: #60A5FA;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      font-size: 16px;
-    }
-    
-    .info-text {
-      color: #CBD5E1;
-      font-size: 14px;
-      margin: 0;
-      line-height: 1.6;
-    }
-    
-    .home-link {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      background: linear-gradient(90deg, #2563EB, #7C3AED);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      display: none;
-    }
-    
-    .home-link:hover {
-      background: linear-gradient(90deg, #1D4ED8, #6D28D9);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+      margin-top: 50px;
     }
   </style>
-  <!-- Prevent caching -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
 </head>
 <body>
-  <div class="container">
-    <h1>BCP Payment Gateway</h1>
-    <div class="divider"></div>
-    <div id="message">Đang chuyển hướng đến cổng thanh toán...</div>
-    <div class="spinner" id="spinner"></div>
-    <div id="error" class="error"></div>
-    <div id="info-box" class="info-box">
-      <div class="info-title">Hướng dẫn</div>
-      <p class="info-text">Để thực hiện thanh toán, bạn cần có đường dẫn hợp lệ từ hệ thống NexusMatch. Vui lòng liên hệ với chúng tôi qua email hoặc hotline để được hỗ trợ.</p>
-    </div>
-    <a href="/" class="home-link" id="home-link">Quay về trang chủ</a>
-  </div>
-
+  <p>Redirecting to Home Page...</p>
   <script>
-    // Execute immediately when possible
-    (function() {
-      function redirect() {
-        const params = new URLSearchParams(window.location.search);
-        const paymentUrl = params.get('paymentUrl');
-        
-        const message = document.getElementById('message');
-        const spinner = document.getElementById('spinner');
-        const error = document.getElementById('error');
-        const infoBox = document.getElementById('info-box');
-        const homeLink = document.getElementById('home-link');
-
-        if (!paymentUrl) {
-          // Nếu không có tham số paymentUrl, chuyển hướng về trang chủ
-          console.log('No payment URL found, redirecting to home page');
-          window.location.href = '/';
-          return;
-        }
-
-        try {
-          // Decode the URL
-          const decodedUrl = decodeURIComponent(paymentUrl);
-          console.log('Redirecting to:', decodedUrl);
-          
-          // Immediate redirect
-          window.location.href = decodedUrl;
-        } catch (err) {
-          console.error('Redirect error:', err);
-          message.style.display = 'none';
-          spinner.style.display = 'none';
-          error.style.display = 'block';
-          error.style.color = '#FF4D6D';
-          error.textContent = 'Lỗi: Không thể chuyển hướng đến cổng thanh toán.';
-          homeLink.style.display = 'inline-block';
-        }
-      }
-
-      // Try to redirect immediately
-      redirect();
-      
-      // Also add the DOMContentLoaded handler as a fallback
-      document.addEventListener('DOMContentLoaded', redirect);
-    })();
+    window.location.href = '/';
   </script>
 </body>
 </html>

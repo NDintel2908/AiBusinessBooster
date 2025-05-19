@@ -35,8 +35,25 @@ export async function registerRoutes(app: Express): Promise<http.Server> {
   });
 
   // Redirect route for VNPAY payment links
-  // Chúng ta sẽ xử lý chuyển hướng hoàn toàn ở client-side trong React component
-  // Bỏ qua server-side redirect để tránh xung đột
+  app.get('/go', (req: Request, res: Response) => {
+    const paymentUrl = req.query.paymentUrl as string;
+    
+    if (paymentUrl) {
+      try {
+        // Decode the payment URL
+        const decodedUrl = decodeURIComponent(paymentUrl);
+        
+        // Redirect to the payment gateway
+        return res.redirect(decodedUrl);
+      } catch (error) {
+        console.error("Error decoding payment URL:", error);
+        return res.status(400).send("Invalid payment URL");
+      }
+    } else {
+      // Nếu không có paymentUrl, chuyển hướng về trang chủ
+      return res.redirect('/');
+    }
+  });
 
   return http.createServer(app);
 }
