@@ -1,41 +1,58 @@
-import type { Express } from "express";
-import { createServer, type Server } from "http";
+import express, { Express, Request, Response } from "express";
+import http from "http";
 import { storage } from "./storage";
-import { z } from "zod";
 import { contactSchema } from "@shared/schema";
+import z from "zod";
 
-export async function registerRoutes(app: Express): Promise<Server> {
-  // Contact form submission API endpoint
-  app.post("/api/contact", async (req, res) => {
+export async function registerRoutes(app: Express): Promise<http.Server> {
+  // API routes
+  app.post("/api/contact", async (req: Request, res: Response) => {
     try {
-      // Validate the request body
+      // Validate contact form data
       const validatedData = contactSchema.parse(req.body);
       
-      // Store the contact form submission
+      // Save contact submission
       const contact = await storage.saveContactSubmission(validatedData);
       
-      res.status(200).json({ 
-        success: true, 
-        message: "Contact form submitted successfully",
-        contactId: contact.id
+      // Return success response
+      return res.status(200).json({
+        success: true,
+        data: contact
       });
     } catch (error) {
       if (error instanceof z.ZodError) {
-        res.status(400).json({ 
-          success: false, 
-          message: "Invalid form data", 
-          errors: error.errors 
-        });
-      } else {
-        console.error("Error submitting contact form:", error);
-        res.status(500).json({ 
-          success: false, 
-          message: "Failed to submit contact form" 
+        return res.status(400).json({
+          success: false,
+          error: error.errors
         });
       }
+      
+      return res.status(500).json({
+        success: false,
+        error: "An unexpected error occurred"
+      });
     }
   });
 
-  const httpServer = createServer(app);
-  return httpServer;
+  // Redirect route for VNPAY payment links
+  app.get("/go", (req: Request, res: Response) => {
+    const paymentUrl = req.query.paymentUrl as string;
+    
+    if (!paymentUrl) {
+      return res.status(400).send("Missing payment URL");
+    }
+    
+    try {
+      // Decode the payment URL
+      const decodedUrl = decodeURIComponent(paymentUrl);
+      
+      // Redirect to the payment gateway
+      return res.redirect(decodedUrl);
+    } catch (error) {
+      console.error("Error decoding payment URL:", error);
+      return res.status(400).send("Invalid payment URL");
+    }
+  });
+
+  return http.createServer(app);
 }
