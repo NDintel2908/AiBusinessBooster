@@ -47,12 +47,18 @@ export async function registerRoutes(app: Express): Promise<http.Server> {
         return res.redirect(decodedUrl);
       } catch (error) {
         console.error("Error decoding payment URL:", error);
-        return res.status(400).send("Invalid payment URL");
+        // Thay vì hiển thị "Invalid payment URL", chuyển hướng về trang chủ
+        return res.redirect('/');
       }
     } else {
       // Nếu không có paymentUrl, chuyển hướng về trang chủ
       return res.redirect('/');
     }
+  });
+  
+  // Backup route cho các URL liên quan đến thanh toán để tránh lỗi
+  app.use(['/go.html', '/go/*'], (req: Request, res: Response) => {
+    return res.redirect('/');
   });
 
   return http.createServer(app);
