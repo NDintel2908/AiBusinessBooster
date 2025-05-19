@@ -90,25 +90,25 @@ export default function PricingSection() {
 
   const pricingPlans = [
     {
-      name: "Starter",
+      name: "Starter Plan",
       price: "FREE",
       description: "Phù hợp với startup đang tìm kiếm cơ hội",
       features: [
-        { text: "Thuật toán AI kết nối cơ bản", included: true },
-        { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
-        { text: "Hỗ trợ qua email", included: true }
+        { text: "Không giới hạn lượt kết nối", included: true },
+        { text: "Thuật toán AI Matching thông minh", included: true },
+        { text: "Hỗ trợ 24/7", included: true }
       ]
     },
     {
-      name: "Premium",
+      name: "Premium Package",
       price: "15.000.000 VND",
-      description: "(Chưa bao gồm 8% VAT)",
+      description: "(BEST VALUE)",
       features: [
-        { text: "Tài khoản xác thực cấp độ ", included: true },
-        { text: "Credit 0 đối tác - khách hàng/tháng", included: true },
-        { text: "Hiển thị top và active bởi AI", included: true },
-        { text: "Dữ liệu công ty được training riêng", included: true },
-        { text: "Hỗ trợ bởi AI và Human", included: true }
+        { text: "Tài khoản Premium xác thực tick xanh uy tín", included: true },
+        { text: "10 lượt kết nối Đối tác - Khách hàng mới mỗi tháng", included: true },
+        { text: "Ưu tiên nhận - gửi kết nối Đối tác - Khách hàng mới", included: true },
+        { text: "Chuẩn hoá thông tin DN theo từng thị trường", included: true },
+        { text: "Ưu tiên sử dụng các AI Agent hỗ trợ", included: true }
       ],
       isPopular: true
     }
