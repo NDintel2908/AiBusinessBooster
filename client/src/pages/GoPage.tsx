@@ -18,8 +18,11 @@ export default function GoPage() {
         const paymentUrl = getPaymentUrl();
         
         if (!paymentUrl) {
-          setError('Không tìm thấy thông tin thanh toán');
-          setIsLoading(false);
+          // Nếu không có paymentUrl, chuyển hướng về trang chủ sau 2 giây
+          setIsLoading(true);
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 2000);
           return;
         }
         
@@ -77,7 +80,9 @@ export default function GoPage() {
             <div className="text-red-500 text-xl font-bold mb-4">{error}</div>
           ) : (
             <>
-              <h1 className="text-2xl text-white mb-6">Đang chuyển hướng đến cổng thanh toán...</h1>
+              <h1 className="text-2xl text-white mb-6">
+                {getPaymentUrl() ? "Đang chuyển hướng đến cổng thanh toán..." : "Đang chuyển hướng về trang chủ..."}
+              </h1>
               {isLoading && (
                 <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-neon-blue mx-auto"></div>
               )}

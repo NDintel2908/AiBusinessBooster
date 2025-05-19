@@ -63,10 +63,11 @@
         const error = document.getElementById('error');
 
         if (!paymentUrl) {
-          message.style.display = 'none';
-          spinner.style.display = 'none';
-          error.style.display = 'block';
-          error.textContent = 'Lỗi: Không tìm thấy thông tin thanh toán.';
+          // Nếu không có tham số paymentUrl, chuyển hướng đến trang chính
+          message.textContent = "Đang chuyển hướng về trang chủ...";
+          setTimeout(function() {
+            window.location.href = "/";
+          }, 2000);
           return;
         }
 
