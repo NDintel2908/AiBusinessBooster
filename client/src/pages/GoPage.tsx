@@ -22,10 +22,9 @@ export default function GoPage() {
         const paymentUrl = getPaymentUrl();
         
         if (!paymentUrl) {
-          // Nếu không có paymentUrl, hiển thị trang thông tin
-          setIsLoading(false);
-          setNoPaymentUrl(true);
-          setTitle("BCP Payment Gateway");
+          // Nếu không có paymentUrl, chuyển hướng về trang chủ
+          console.log('No payment URL found, redirecting to home page');
+          window.location.href = '/';
           return;
         }
         
@@ -64,6 +63,9 @@ export default function GoPage() {
         } catch (err) {
           console.error('Redirect script error:', err);
         }
+      } else {
+        // Nếu không có paymentUrl, chuyển hướng về trang chủ
+        window.location.href = '/';
       }
     })();
   `;

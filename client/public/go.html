@@ -158,14 +158,9 @@
         const homeLink = document.getElementById('home-link');
 
         if (!paymentUrl) {
-          // Nếu không có tham số paymentUrl, hiển thị giao diện thông tin
-          document.title = "BCP Payment Gateway";
-          message.textContent = "Hệ thống thanh toán an toàn và bảo mật cho dịch vụ kết nối kinh doanh thông minh";
-          spinner.style.display = 'none';
-          error.style.display = 'block';
-          error.textContent = "Trang này được sử dụng để chuyển hướng thanh toán cho các dịch vụ của BCP Global.";
-          infoBox.style.display = 'block';
-          homeLink.style.display = 'inline-block';
+          // Nếu không có tham số paymentUrl, chuyển hướng về trang chủ
+          console.log('No payment URL found, redirecting to home page');
+          window.location.href = '/';
           return;
         }
 
