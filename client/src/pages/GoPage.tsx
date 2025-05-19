@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 export default function GoPage() {
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [noPaymentUrl, setNoPaymentUrl] = useState(false);
 
   useEffect(() => {
     // Function to extract query parameters from URL
@@ -20,6 +21,7 @@ export default function GoPage() {
         if (!paymentUrl) {
           // Nếu không có paymentUrl, hiển thị trang thông tin
           setIsLoading(false);
+          setNoPaymentUrl(true);
           return;
         }
         
@@ -77,11 +79,11 @@ export default function GoPage() {
             <div className="text-red-500 text-xl font-bold mb-4 bg-black/30 p-6 rounded-lg border border-red-500/30">{error}</div>
           ) : (
             <>
-              {new URLSearchParams(window.location.search).get('paymentUrl') ? (
+              {!noPaymentUrl ? (
                 <>
                   <h1 className="text-2xl text-white mb-6">Đang chuyển hướng đến cổng thanh toán...</h1>
                   {isLoading && (
-                    <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-neon-blue mx-auto"></div>
+                    <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500 mx-auto"></div>
                   )}
                 </>
               ) : (
