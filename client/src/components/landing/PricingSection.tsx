@@ -168,7 +168,7 @@ export default function PricingSection() {
             />
 
             <PricingPlan
-              name="B2B Connection 1on1"
+              name="Lượt Tìm kiếm Đối tác - Khách hàng Mới Chất Lượng"
               price="250.000 VND"
               description="(Chưa bao gồm 8% VAT)/lượt kết nối"
               features={[
