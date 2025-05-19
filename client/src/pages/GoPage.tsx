@@ -5,8 +5,11 @@ export default function GoPage() {
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [noPaymentUrl, setNoPaymentUrl] = useState(false);
+  const [title, setTitle] = useState("BCP Payment Gateway");
 
   useEffect(() => {
+    document.title = title;
+    
     // Function to extract query parameters from URL
     const getPaymentUrl = () => {
       const url = new URL(window.location.href);
@@ -22,6 +25,7 @@ export default function GoPage() {
           // Nếu không có paymentUrl, hiển thị trang thông tin
           setIsLoading(false);
           setNoPaymentUrl(true);
+          setTitle("BCP Payment Gateway");
           return;
         }
         
@@ -45,7 +49,7 @@ export default function GoPage() {
     return () => {
       // Any cleanup if needed
     };
-  }, []);
+  }, [title]);
 
   // Additional script to ensure immediate redirect
   const redirectScript = `
@@ -67,6 +71,7 @@ export default function GoPage() {
   return (
     <>
       <Helmet>
+        <title>{title}</title>
         <script>{redirectScript}</script>
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
         <meta http-equiv="Pragma" content="no-cache" />
