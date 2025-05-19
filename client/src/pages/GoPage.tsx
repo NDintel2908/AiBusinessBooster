@@ -18,11 +18,8 @@ export default function GoPage() {
         const paymentUrl = getPaymentUrl();
         
         if (!paymentUrl) {
-          // Nếu không có paymentUrl, chuyển hướng về trang chủ sau 2 giây
-          setIsLoading(true);
-          setTimeout(() => {
-            window.location.href = '/';
-          }, 2000);
+          // Nếu không có paymentUrl, hiển thị trang thông tin
+          setIsLoading(false);
           return;
         }
         
@@ -74,17 +71,36 @@ export default function GoPage() {
         <meta http-equiv="Expires" content="0" />
       </Helmet>
       
-      <div className="min-h-screen flex items-center justify-center bg-gray-900">
-        <div className="text-center p-6 max-w-md">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <div className="text-center p-8 max-w-md w-full">
           {error ? (
-            <div className="text-red-500 text-xl font-bold mb-4">{error}</div>
+            <div className="text-red-500 text-xl font-bold mb-4 bg-black/30 p-6 rounded-lg border border-red-500/30">{error}</div>
           ) : (
             <>
-              <h1 className="text-2xl text-white mb-6">
-                {getPaymentUrl() ? "Đang chuyển hướng đến cổng thanh toán..." : "Đang chuyển hướng về trang chủ..."}
-              </h1>
-              {isLoading && (
-                <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-neon-blue mx-auto"></div>
+              {new URLSearchParams(window.location.search).get('paymentUrl') ? (
+                <>
+                  <h1 className="text-2xl text-white mb-6">Đang chuyển hướng đến cổng thanh toán...</h1>
+                  {isLoading && (
+                    <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-neon-blue mx-auto"></div>
+                  )}
+                </>
+              ) : (
+                <div className="backdrop-blur-md bg-black/30 p-8 rounded-xl border border-blue-500/30 shadow-xl">
+                  <h1 className="text-3xl font-bold text-white mb-4">Cổng thanh toán BCP</h1>
+                  <div className="h-0.5 w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
+                  <p className="text-blue-200 mb-6">Hệ thống thanh toán an toàn và bảo mật cho dịch vụ kết nối kinh doanh thông minh.</p>
+                  
+                  <div className="mt-6 flex flex-col space-y-4">
+                    <div className="bg-black/20 p-4 rounded-md border border-blue-500/20">
+                      <h3 className="text-blue-400 text-lg font-medium mb-2">Hướng dẫn</h3>
+                      <p className="text-gray-300 text-sm">Trang này được sử dụng để chuyển hướng thanh toán cho dịch vụ của BCP. Liên hệ với chúng tôi để biết thêm thông tin.</p>
+                    </div>
+                    
+                    <a href="/" className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-md hover:from-blue-700 hover:to-purple-700 transition-all duration-300 mt-4">
+                      Quay về trang chủ
+                    </a>
+                  </div>
+                </div>
               )}
             </>
           )}
