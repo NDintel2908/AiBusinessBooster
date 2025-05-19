@@ -55,10 +55,10 @@ export default function ServiceSection() {
                 title="Dựa trên AI, chủ động trò chuyện kết nối mà không spam"
               >
                 Doanh nghiệp, bất kể thuộc lĩnh vực nào, đều có nhu cầu MUA & BÁN các sản phẩm hay dịch vụ từ thị trường trong và ngoài nước — BCP.Global trao ngay quyền CHỦ ĐỘNG:
-                + Quảng bá chính mình;
-                + Tìm kiếm đối tác phù hợp;
-                + Matching nhu cầu theo thời gian thực;
-                + Chọn thị trường mở rộng;
+                + Quảng bá chính mình;<br/>
+                + Tìm kiếm đối tác phù hợp;<br/>
+                + Matching nhu cầu theo thời gian thực;<br/>
+                + Chọn thị trường mở rộng;<br/>
                 + Trò chuyện bất kể không gian & thời gian;
               </ServiceAccordionItem>
               
