@@ -156,13 +156,13 @@ export default function PricingSection() {
           {/* Grid với 3 cột ngang hàng nhau, cách đều */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <PricingPlan
-              name="Starter"
-              price="FREE"
+              name="Starter Plan"
+              price="Miễn phí"
               description="Phù hợp với startup đang tìm kiếm cơ hội"
               features={[
-                { text: "Thuật toán AI kết nối cơ bản", included: true },
-                { text: "Hồ sơ doanh nghiệp tiêu chuẩn", included: true },
-                { text: "Hỗ trợ qua email", included: true }
+                { text: "Không giới hạn lượt kết nối", included: true },
+                { text: "Thuật toán AI Matching thông minh", included: true },
+                { text: "Hỗ trợ 24/7", included: true }
               ]}
               index={0}
             />
@@ -182,15 +182,15 @@ export default function PricingSection() {
             />
 
             <PricingPlan
-              name="Premium"
-              price="15 triệu VND"
-              description="(Chưa bao gồm 8% VAT)"
+              name="Premium Package (BEST VALUE)"
+              price="15.000.000 VND"
+              description="/năm"
               features={[
-                { text: "Tài khoản xác thực cấp độ ", included: true },
-                { text: "Credit 0 đối tác - khách hàng/tháng", included: true },
-                { text: "Hiển thị top và active bởi AI", included: true },
-                { text: "Dữ liệu công ty được training riêng", included: true },
-                { text: "Hỗ trợ bởi AI và Human", included: true }
+                { text: "Tài khoản Premium xác thực tick xanh uy tín", included: true },
+                { text: "10 lượt kết nối Đối tác - Khách hàng mới mỗi tháng", included: true },
+                { text: "Ưu tiên nhận - gửi kết nối Đối tác - Khách hàng mới", included: true },
+                { text: "Chuẩn hoá thông tin DN theo từng thị trường", included: true },
+                { text: "Ưu tiên sử dụng các AI Agent hỗ trợ", included: true }
               ]}
               isPopular={true}
               index={2}
