@@ -62,10 +62,10 @@ export default function FeaturesSection() {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
           <h2 className="font-heading text-[3rem] font-semibold text-white mb-2">
-            Our Strengths
+            Năng lực BCP
           </h2>
           <p className="text-[1.2rem] text-gray-400 font-primary">
-            A data-driven perspective on the success of business connections since 2018.
+            Góc nhìn dựa trên dữ liệu về thành công các kết nối giao thương kể từ năm 2018
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export default function FeaturesSection() {
           >
             <StatItem 
               number="#1"
-              description="1st place in the pre-incubation round of the AI Star 2024 competition."
+              description="Hạng 1 vòng tiền ươm tạo cuộc thi AI Star 2024"
               endValue={1}
             />
           </motion.div>
@@ -90,7 +90,7 @@ export default function FeaturesSection() {
           >
             <StatItem 
               number="2200+"
-              description="Participant "
+              description="Doanh nghiệp tham gia"
               endValue={2200}
             />
           </motion.div>
@@ -103,7 +103,7 @@ export default function FeaturesSection() {
           >
             <StatItem 
               number="1600+"
-              description="Successful Connections"
+              description="Kết nối thành công"
               endValue={1600}
             />
           </motion.div>
@@ -116,7 +116,7 @@ export default function FeaturesSection() {
           >
             <StatItem 
               number="3+"
-              description="Member Countries"
+              description="Quốc gia thành viên"
               endValue={3}
             />
           </motion.div>

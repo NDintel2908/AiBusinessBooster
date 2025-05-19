@@ -60,7 +60,7 @@ export default function AboutSection() {
             >
               <div className="flex justify-center mb-4">
                 <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40">
-                  <span className="text-sm font-medium text-neon-blue font-primary">Strategic partner</span>
+                  <span className="text-sm font-medium text-neon-blue font-primary">Đối tác chiến lược</span>
                 </div>
               </div>
               
@@ -71,7 +71,7 @@ export default function AboutSection() {
                     alt="Tech Partner"
                     className="h-[70px] object-contain filter brightness-100"
                   />
-                  <p className="mt-4 text-gray-400 text-center font-primary">Technology partner</p>
+                  <p className="mt-4 text-gray-400 text-center font-primary">Đối tác công nghệ</p>
                 </div>
                 
                 <div className="flex flex-col items-center">
@@ -80,7 +80,7 @@ export default function AboutSection() {
                     alt="Business Partner"
                     className="h-[70px] object-contain filter brightness-100"
                   />
-                  <p className="mt-4 text-gray-400 text-center font-primary">Market partner</p>
+                  <p className="mt-4 text-gray-400 text-center font-primary">Đối tác thị trường</p>
                 </div>
               </div>
             </motion.div>
@@ -96,20 +96,16 @@ export default function AboutSection() {
             }}
           >
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-              <span className="text-sm font-medium text-neon-blue font-primary">Our story</span>
+              <span className="text-sm font-medium text-neon-blue font-primary">Câu chuyện của chúng tôi</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-2 text-white">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Business </span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Câu chuyện doanh nghiệp</span>
             </h2>
             <p className="text-gray-300 mb-6 font-primary">
-              BCP was born from a simple realization: Despite the remarkable advancements in digital technology, the process of finding business partners still relies on chance rather than data.
-
-              Leveraging our multinational team of AI and business analytics experts, we have built an intelligent B2B platform for BUYING - SELLING - COLLABORATION, transforming AI into the key to a game-changing experience.
-
+              BCP được thành lập vào năm 2018 từ một nhận định đơn giản: dù công nghệ số đã phát triển mạnh mẽ, việc tìm kiếm đối tác kinh doanh phù hợp vẫn còn quá kém hiệu quả – và phần lớn dựa vào may rủi hơn là dữ liệu.
             </p>
             <p className="text-gray-300 mb-6 font-primary">
-              
-
+              Với đội ngũ chuyên gia AI, phân tích kinh doanh và đổi mới công nghệ – trong đó có cả các thành viên đến từ Nhật Bản – chúng tôi đã bắt đầu hành trình xây dựng một nền tảng kết nối B2B mới, nơi trí tuệ nhân tạo và khoa học dữ liệu trở thành động lực thay đổi cuộc chơi.
             </p>
             
             <div className="my-8 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
@@ -121,9 +117,9 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2 } }
               }}
             >
-              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Vision</h3>
+              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Tầm nhìn</h3>
               <p className="text-gray-300 font-primary">
-                We envision a world where every business can discover its ideal partners.
+                Chúng tôi hướng tới một thế giới nơi mọi doanh nghiệp đều tìm thấy đối tác lý tưởng của mình – từ đó thúc đẩy đổi mới và tăng trưởng cho toàn bộ nền kinh tế toàn cầu.
               </p>
             </motion.div>
             
@@ -133,9 +129,9 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.4 } }
               }}
             >
-              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Mission</h3>
+              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Sứ mạng</h3>
               <p className="text-gray-300 font-primary">
-                Through cutting-edge AI technology, BCP breaks down all barriers, unlocking effective collaboration opportunities for every organization, regardless of size.
+                Chúng tôi ứng dụng công nghệ AI tiên tiến nhằm xóa bỏ mọi rào cản khiến doanh nghiệp khó tìm thấy đối tác phù hợp – mở ra cơ hội hợp tác hiệu quả và bền vững cho mọi tổ chức, dù lớn hay nhỏ.
               </p>
             </motion.div>
           </motion.div>

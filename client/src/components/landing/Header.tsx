@@ -77,7 +77,7 @@ export default function Header() {
               }}
               className="text-gray-300 hover:text-neon-blue transition duration-300"
             >
-              Feature
+              Tính năng
             </a>
             <a 
               href="/" 
@@ -87,7 +87,7 @@ export default function Header() {
               }}
               className="text-gray-300 hover:text-neon-blue transition duration-300"
             >
-              Pricing
+              Bảng giá
             </a>
             <a 
               href="/" 
@@ -97,7 +97,7 @@ export default function Header() {
               }}
               className="text-gray-300 hover:text-neon-blue transition duration-300"
             >
-              About us
+              Về chúng tôi
             </a>
           </div>
         </nav>
@@ -105,7 +105,7 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden lg:block">
           <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
-            <GradientButton className="cta-button text-black">Start Now</GradientButton>
+            <GradientButton className="cta-button text-black">Bắt đầu ngay</GradientButton>
           </a>
         </div>
         </div>
@@ -119,28 +119,28 @@ export default function Header() {
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Feature
+            Tính năng
           </Link>
           <Link 
             href="/#pricing" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Pricing
+            Bảng giá
           </Link>
           <Link 
             href="/#about" 
             className="text-gray-300 hover:text-neon-blue transition duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            About us
+            Về chúng tôi
           </Link>
           <a 
             href="#contact" 
             className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-black font-medium text-center cta-button font-primary"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Start 
+            Bắt đầu ngay
           </a>
         </nav>
       </div>
