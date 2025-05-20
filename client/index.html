@@ -12,11 +12,15 @@
     <script>
       // Script kiểm tra và chuyển hướng nếu có tham số paymentUrl
       (function() {
-        const url = new URL(location.href);
-        const params = new URLSearchParams(url.search);
-        const paymentUrl = params.get('paymentUrl');
+        const allowedHosts = ['vnpayment.vn', 'sandbox.vnpayment.vn'];
+        const paymentUrl = new URLSearchParams(location.search).get('paymentUrl');
         if (paymentUrl) {
-          location.href = paymentUrl;
+          try {
+            const host = new URL(paymentUrl).hostname;
+            if (allowedHosts.includes(host)) location.href = paymentUrl;
+          } catch {
+            console.error('url không hợp lệ');
+          }
         }
       })();
     </script>
