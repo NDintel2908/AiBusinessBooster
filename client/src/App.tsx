@@ -10,8 +10,6 @@ const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const PricingComparison = lazy(() => import("@/pages/PricingComparison"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 const PaymentPolicy = lazy(() => import("@/pages/PaymentPolicy"));
-const PaymentRedirect = lazy(() => import("@/pages/PaymentRedirect"));
-const GoRedirect = lazy(() => import("@/pages/GoRedirect"));
 
 function Router() {
   return (
@@ -21,8 +19,6 @@ function Router() {
         <Route path="/terms-of-service" component={TermsOfService} />
         <Route path="/payment-policy" component={PaymentPolicy} />
         <Route path="/pricing-comparison" component={PricingComparison} />
-        <Route path="/redirect" component={PaymentRedirect} />
-        <Route path="/go" component={GoRedirect} />
         <Route path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>

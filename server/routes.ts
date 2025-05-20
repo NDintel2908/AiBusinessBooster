@@ -1,76 +1,41 @@
-import express, { Express, Request, Response } from "express";
-import http from "http";
+import type { Express } from "express";
+import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import { z } from "zod";
 import { contactSchema } from "@shared/schema";
-import z from "zod";
 
-export async function registerRoutes(app: Express): Promise<http.Server> {
-  // API routes
-  app.post("/api/contact", async (req: Request, res: Response) => {
+export async function registerRoutes(app: Express): Promise<Server> {
+  // Contact form submission API endpoint
+  app.post("/api/contact", async (req, res) => {
     try {
-      // Validate contact form data
+      // Validate the request body
       const validatedData = contactSchema.parse(req.body);
       
-      // Save contact submission
+      // Store the contact form submission
       const contact = await storage.saveContactSubmission(validatedData);
       
-      // Return success response
-      return res.status(200).json({
-        success: true,
-        data: contact
+      res.status(200).json({ 
+        success: true, 
+        message: "Contact form submitted successfully",
+        contactId: contact.id
       });
     } catch (error) {
       if (error instanceof z.ZodError) {
-        return res.status(400).json({
-          success: false,
-          error: error.errors
+        res.status(400).json({ 
+          success: false, 
+          message: "Invalid form data", 
+          errors: error.errors 
+        });
+      } else {
+        console.error("Error submitting contact form:", error);
+        res.status(500).json({ 
+          success: false, 
+          message: "Failed to submit contact form" 
         });
       }
-      
-      return res.status(500).json({
-        success: false,
-        error: "An unexpected error occurred"
-      });
     }
   });
 
-  // Handle the /go route by serving the index.html with client-side route
-  app.get("/go", (req: Request, res: Response) => {
-    // Just send the index.html file and let client-side routing handle it
-    const indexPath = 'index.html';
-    res.sendFile(indexPath, { root: './public' });
-  });
-  
-  // API endpoint to get the decoded payment URL
-  app.get("/api/payment-redirect", (req: Request, res: Response) => {
-    try {
-      // Get the payment URL from the query string
-      const paymentUrl = req.query.paymentUrl as string;
-      
-      if (!paymentUrl) {
-        return res.status(400).json({
-          success: false,
-          error: "Missing payment URL"
-        });
-      }
-      
-      // Decode the URL
-      const decodedUrl = decodeURIComponent(paymentUrl);
-      console.log("Payment URL received:", decodedUrl);
-      
-      // Return the decoded URL to the client
-      return res.status(200).json({
-        success: true,
-        url: decodedUrl
-      });
-    } catch (error) {
-      console.error("Error processing payment URL:", error);
-      return res.status(400).json({
-        success: false,
-        error: "Invalid payment URL format"
-      });
-    }
-  });
-
-  return http.createServer(app);
+  const httpServer = createServer(app);
+  return httpServer;
 }
