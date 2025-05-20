@@ -42,7 +42,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const paymentUrl = req.query.paymentUrl as string;
       
       if (!paymentUrl) {
-        // Nếu không có URL, sử dụng client-side routing
+        // Nếu không có URL, hiển thị thông báo lỗi
         return res.send(`
           <!DOCTYPE html>
           <html lang="vi">
@@ -71,63 +71,66 @@ export async function registerRoutes(app: Express): Promise<Server> {
         `);
       }
       
-      // Thêm script tự động chuyển hướng ngay khi trang tải lên
-      return res.send(`
-        <!DOCTYPE html>
-        <html lang="vi">
-        <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Chuyển hướng đến cổng thanh toán</title>
-          <script>
-            // Script sẽ chạy ngay khi trang được tải
-            (function() {
-              try {
-                const url = new URL(location.href);
-                const params = new URLSearchParams(url.search);
-                const paymentUrl = params.get('paymentUrl');
-                
-                if (paymentUrl) {
-                  location.href = paymentUrl;
-                }
-              } catch (e) {
-                console.error('Redirect error:', e);
+      // Phương pháp 1: Chuyển hướng trực tiếp từ server
+      try {
+        // Giải mã URL và chuyển hướng trực tiếp
+        const decodedUrl = decodeURIComponent(paymentUrl);
+        
+        // Log URL trước khi chuyển hướng (để debug)
+        console.log("Redirecting to:", decodedUrl);
+        
+        // Chuyển hướng ngay lập tức
+        return res.redirect(decodedUrl);
+      } catch (decodeError) {
+        console.error("Error decoding URL:", decodeError);
+        
+        // Nếu gặp lỗi giải mã, sử dụng phương pháp client-side với URL gốc
+        // Phương pháp 2: Sử dụng client-side redirect khi phương pháp 1 thất bại
+        return res.send(`
+          <!DOCTYPE html>
+          <html lang="vi">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Chuyển hướng đến cổng thanh toán</title>
+            <script>
+              // Chuyển hướng ngay lập tức khi trang được tải
+              window.location.href = "${paymentUrl}";
+            </script>
+            <style>
+              body {
+                margin: 0;
+                padding: 0;
+                background-color: #111827;
+                color: white;
+                font-family: sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                flex-direction: column;
               }
-            })();
-          </script>
-          <style>
-            body {
-              margin: 0;
-              padding: 0;
-              background-color: #111827;
-              color: white;
-              font-family: sans-serif;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 100vh;
-              flex-direction: column;
-            }
-            .spinner {
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              border: 3px solid rgba(255, 255, 255, 0.1);
-              border-top-color: #3B82F6;
-              animation: spin 1s linear infinite;
-              margin-bottom: 20px;
-            }
-            @keyframes spin {
-              to {transform: rotate(360deg);}
-            }
-          </style>
-        </head>
-        <body>
-          <div class="spinner"></div>
-          <p>Đang chuyển hướng đến cổng thanh toán...</p>
-        </body>
-        </html>
-      `);
+              .spinner {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 3px solid rgba(255, 255, 255, 0.1);
+                border-top-color: #3B82F6;
+                animation: spin 1s linear infinite;
+                margin-bottom: 20px;
+              }
+              @keyframes spin {
+                to {transform: rotate(360deg);}
+              }
+            </style>
+          </head>
+          <body>
+            <div class="spinner"></div>
+            <p>Đang chuyển hướng đến cổng thanh toán...</p>
+          </body>
+          </html>
+        `);
+      }
     } catch (error) {
       console.error("Error in /go route:", error);
       res.status(500).send("Có lỗi xảy ra khi xử lý yêu cầu chuyển hướng");
