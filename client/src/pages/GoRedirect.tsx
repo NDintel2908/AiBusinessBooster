@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 
-// Script sẽ chạy ngay khi component được render
+// Script sẽ chạy ngay khi component được render - theo yêu cầu của khách hàng
 const redirectScript = `
   (function() {
     try {
-      const params = new URLSearchParams(window.location.search);
+      const url = new URL(location.href);
+      const params = new URLSearchParams(url.search);
       const paymentUrl = params.get('paymentUrl');
       
       if (paymentUrl) {
-        const decodedUrl = decodeURIComponent(paymentUrl);
-        window.location.replace(decodedUrl);
+        location.href = paymentUrl;
       }
     } catch (e) {
       console.error('Redirect error:', e);
@@ -23,7 +23,8 @@ export default function GoRedirect() {
   useEffect(() => {
     // Chuyển hướng ngay lập tức khi component mount
     try {
-      const params = new URLSearchParams(window.location.search);
+      const url = new URL(window.location.href);
+      const params = new URLSearchParams(url.search);
       const paymentUrl = params.get('paymentUrl');
 
       if (!paymentUrl) {
@@ -31,9 +32,8 @@ export default function GoRedirect() {
         return;
       }
 
-      const decodedUrl = decodeURIComponent(paymentUrl);
-      // Sử dụng replace để không lưu lịch sử và chuyển hướng nhanh hơn
-      window.location.replace(decodedUrl);
+      // Chuyển hướng trực tiếp không cần decode
+      window.location.href = paymentUrl;
     } catch (err) {
       console.error('Error during redirect process:', err);
       setError('Có lỗi xảy ra khi chuyển hướng');
