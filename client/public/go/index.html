@@ -2,144 +2,47 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NexusMatch - Chuyển hướng thanh toán</title>
+  <meta http-equiv="refresh" content="0;url=/" />
+  <title>Đang chuyển hướng</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1a237e, #0d1b2a);
-      color: white;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .container {
-      max-width: 600px;
-      width: 90%;
-      background-color: rgba(15, 23, 42, 0.7);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(30, 64, 175, 0.2);
-      padding: 2rem;
       text-align: center;
+      margin-top: 50px;
+      background-color: #0f172a;
+      color: white;
     }
-    
-    h1 {
-      color: #fff;
-      margin-bottom: 1rem;
-      font-size: 1.75rem;
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
     }
-    
-    .divider {
-      height: 2px;
-      width: 80px;
-      background: linear-gradient(90deg, #3B82F6, #8B5CF6);
-      margin: 1.5rem auto;
-      border-radius: 2px;
-    }
-    
-    p {
-      color: #e2e8f0;
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-    }
-    
     .spinner {
-      border: 4px solid rgba(255, 255, 255, 0.2);
+      border: 4px solid rgba(255, 255, 255, 0.3);
       border-radius: 50%;
       border-top: 4px solid #3B82F6;
-      border-left: 4px solid #8B5CF6;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       animation: spin 1s linear infinite;
-      margin: 1.5rem auto;
+      margin: 20px auto;
     }
-    
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
-    }
-    
-    .home-link {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      background: linear-gradient(90deg, #2563EB, #7C3AED);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-    
-    .home-link:hover {
-      background: linear-gradient(90deg, #1D4ED8, #6D28D9);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
-    }
-
-    #redirect-section {
-      display: none;
-    }
-
-    #home-section {
-      display: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div id="redirect-section">
-      <h1>Đang chuyển hướng thanh toán</h1>
-      <div class="divider"></div>
-      <p>Đang kết nối với cổng thanh toán VNPAY. Vui lòng đợi trong giây lát...</p>
-      <div class="spinner"></div>
-    </div>
-
-    <div id="home-section">
-      <h1>Hệ thống thanh toán NexusMatch</h1>
-      <div class="divider"></div>
-      <p>Để thực hiện thanh toán, bạn cần truy cập từ trang chính của NexusMatch và chọn gói dịch vụ phù hợp.</p>
-      <a href="/" class="home-link">Quay về trang chủ</a>
-    </div>
+    <h1>Đang chuyển hướng về trang chủ</h1>
+    <div class="spinner"></div>
+    <p>Vui lòng đợi trong giây lát...</p>
   </div>
-
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const params = new URLSearchParams(window.location.search);
-      const paymentUrl = params.get('paymentUrl');
-      
-      const redirectSection = document.getElementById('redirect-section');
-      const homeSection = document.getElementById('home-section');
-      
-      if (paymentUrl) {
-        // Hiển thị phần chuyển hướng
-        redirectSection.style.display = 'block';
-        
-        try {
-          // Double decode to ensure we get a clean URL
-          const decodedUrl = decodeURIComponent(paymentUrl);
-          console.log('Redirecting to payment URL:', decodedUrl);
-          
-          // Chuyển hướng đến trang thanh toán sau một khoảng thời gian ngắn
-          setTimeout(function() {
-            window.location.href = decodedUrl;
-          }, 1000);
-        } catch (err) {
-          console.error('Error decoding payment URL:', err);
-          // Nếu có lỗi, chuyển hướng về trang chủ
-          window.location.href = '/';
-        }
-      } else {
-        // Hiển thị phần trang chủ
-        homeSection.style.display = 'block';
-      }
-    });
+    // Chuyển hướng về trang chủ ngay lập tức
+    window.location.href = '/';
   </script>
 </body>
 </html>
