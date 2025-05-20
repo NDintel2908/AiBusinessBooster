@@ -1,4 +1,4 @@
-import express, { Express, Request, Response } from "express";
+import express, { Express, Request, Response, NextFunction } from "express";
 import http from "http";
 import { storage } from "./storage";
 import { contactSchema } from "@shared/schema";
@@ -35,23 +35,30 @@ export async function registerRoutes(app: Express): Promise<http.Server> {
   });
 
   // Redirect route for VNPAY payment links
-  app.get("/go", (req: Request, res: Response) => {
+  app.get('/go', (req: Request, res: Response) => {
     const paymentUrl = req.query.paymentUrl as string;
     
-    if (!paymentUrl) {
-      return res.status(400).send("Missing payment URL");
+    if (paymentUrl) {
+      try {
+        // Decode the payment URL
+        const decodedUrl = decodeURIComponent(paymentUrl);
+        
+        // Redirect to the payment gateway
+        return res.redirect(decodedUrl);
+      } catch (error) {
+        console.error("Error decoding payment URL:", error);
+        // Thay vì hiển thị "Invalid payment URL", chuyển hướng về trang chủ
+        return res.redirect('/');
+      }
+    } else {
+      // Nếu không có paymentUrl, chuyển hướng về trang chủ
+      return res.redirect('/');
     }
-    
-    try {
-      // Decode the payment URL
-      const decodedUrl = decodeURIComponent(paymentUrl);
-      
-      // Redirect to the payment gateway
-      return res.redirect(decodedUrl);
-    } catch (error) {
-      console.error("Error decoding payment URL:", error);
-      return res.status(400).send("Invalid payment URL");
-    }
+  });
+  
+  // Backup route cho các URL liên quan đến thanh toán để tránh lỗi
+  app.use(['/go.html', '/go/*'], (req: Request, res: Response) => {
+    return res.redirect('/');
   });
 
   return http.createServer(app);

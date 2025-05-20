@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'wouter';
 
 export default function GoRedirect() {
-  const [error, setError] = useState<string | null>(null);
+  const [, setLocation] = useLocation();
+  const [isRedirecting, setIsRedirecting] = useState(true);
 
   useEffect(() => {
     // Hàm chuyển hướng
@@ -12,7 +14,10 @@ export default function GoRedirect() {
         const paymentUrl = params.get('paymentUrl');
 
         if (!paymentUrl) {
-          setError('Không tìm thấy URL thanh toán');
+          // Nếu không có paymentUrl, chuyển hướng về trang chủ
+          console.log('No payment URL found, redirecting to home page');
+          setIsRedirecting(false);
+          setLocation('/');
           return;
         }
 
@@ -24,26 +29,28 @@ export default function GoRedirect() {
         window.location.href = decodedUrl;
       } catch (err) {
         console.error('Error during redirect:', err);
-        setError('Có lỗi xảy ra khi chuyển hướng');
+        // Nếu có lỗi, cũng chuyển hướng về trang chủ
+        setIsRedirecting(false);
+        setLocation('/');
       }
     };
 
     // Thực hiện chuyển hướng ngay khi component mount
     redirectToPayment();
-  }, []);
+  }, [setLocation]);
 
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
-      <div className="text-center p-6 max-w-md">
-        {error ? (
-          <div className="text-red-500 text-xl font-bold mb-4">{error}</div>
-        ) : (
-          <>
-            <h1 className="text-2xl text-white mb-6">Đang chuyển hướng đến cổng thanh toán...</h1>
-            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-neon-blue mx-auto"></div>
-          </>
-        )}
+  // Chỉ hiển thị spinner khi đang thực hiện chuyển hướng
+  if (isRedirecting) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-900">
+        <div className="text-center p-6 max-w-md">
+          <h1 className="text-2xl text-white mb-6">Đang chuyển hướng đến cổng thanh toán...</h1>
+          <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-neon-blue mx-auto"></div>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  
+  // Trả về null vì đã chuyển hướng hoặc sẽ chuyển hướng
+  return null;
 }

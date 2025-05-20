@@ -11,7 +11,7 @@ const PricingComparison = lazy(() => import("@/pages/PricingComparison"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 const PaymentPolicy = lazy(() => import("@/pages/PaymentPolicy"));
 const PaymentRedirect = lazy(() => import("@/pages/PaymentRedirect"));
-const GoRedirect = lazy(() => import("@/pages/GoRedirect"));
+// Removed GoPage from client-side routing since it's handled server-side
 
 function Router() {
   return (
@@ -22,7 +22,7 @@ function Router() {
         <Route path="/payment-policy" component={PaymentPolicy} />
         <Route path="/pricing-comparison" component={PricingComparison} />
         <Route path="/redirect" component={PaymentRedirect} />
-        <Route path="/go" component={GoRedirect} />
+        {/* Removed /go route since it's handled by server */}
         <Route path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
