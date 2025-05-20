@@ -34,8 +34,36 @@ export async function registerRoutes(app: Express): Promise<http.Server> {
     }
   });
 
-  // Không xử lý route "/go" ở server-side nữa vì đã có static file
-  // Để static file client/public/go/index.html xử lý
+  // Route chuyển hướng thanh toán VNPAY
+  app.get("/go", (req: Request, res: Response) => {
+    // Lấy tham số paymentUrl từ query string
+    const paymentUrl = req.query.paymentUrl as string;
+    
+    // Kiểm tra xem có paymentUrl không
+    if (!paymentUrl) {
+      return res.status(400).send("Missing payment URL");
+    }
+    
+    try {
+      // Giải mã URL
+      const decodedUrl = decodeURIComponent(paymentUrl);
+      
+      // Thiết lập headers để tránh cache trên trình duyệt
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+      res.setHeader('Pragma', 'no-cache');
+      res.setHeader('Expires', '0');
+      res.setHeader('Surrogate-Control', 'no-store');
+      
+      // Log URL để debug (sẽ xóa khi production)
+      console.log("Redirecting to:", decodedUrl);
+      
+      // Chuyển hướng ngay lập tức đến URL đã giải mã
+      return res.redirect(302, decodedUrl);
+    } catch (error) {
+      console.error("Error decoding payment URL:", error);
+      return res.status(400).send("Invalid payment URL format");
+    }
+  });
 
   return http.createServer(app);
 }
