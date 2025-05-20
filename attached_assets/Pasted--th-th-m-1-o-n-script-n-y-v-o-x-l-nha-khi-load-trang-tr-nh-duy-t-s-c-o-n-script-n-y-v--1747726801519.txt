@@ -1,0 +1,16 @@
+ thử thêm 1 đoạn script này vào để xử lý nha (khi load trang, trình duyệt sẽ đọc đoạn script này và quyết định có chuyển trang hay k)
+const url = new URL(location.href);
+const params = new URLSearchParams(url.search);
+const paymentUrl = params.get('paymentUrl');
+if (paymentUrl) {
+  location.href = paymentUrl;
+}
+Khi người dùng được điều hướng tới trang https://go.bcp.global/?paymentUrl=<encoded_url> thì trang go.bcp.global cần tự động đọc tham số paymentUrl trên URL, giải mã nó (decode URL) và ngay lập tức chuyển hướng (redirect) người dùng sang URL thật của VNPAY mà nằm trong paymentUrl.
+
+Tóm lại: go.bcp.global chỉ đóng vai trò là trang trung gian chuyển tiếp, không hiển thị gì cả, chỉ cần redirect sang link VNPAY càng nhanh càng tốt.
+
+Ví dụ:
+Người dùng truy cập: https://go.bcp.global/?paymentUrl=https%3A%2F%2Fsandbox.vnpayment.vn%2Fpaymentv2%2Fvpcpay.html%3Fvnp_Amount%3D54000000%26vnp_Command%3Dpay%26vnp_CreateDate%3D20250519184608%26vnp_CurrCode%3DVND%26vnp_ExpireDate%3D20250520184608%26vnp_IpAddr%3D127.0.0.1%26vnp_Locale%3Den%26vnp_OrderInfo%3DPayment%2Bfrom%2Bip%2B127.0.0.1%2Bfor%2Border%2B164778da_3431_4e42_81db_4cde59e70e21%26vnp_OrderType%3D250000%26vnp_ReturnUrl%3Dhttp%253A%252F%252Flocalhost%253A8000%252Fvnpay-return%26vnp_TmnCode%3DBCPVBFD4%26vnp_TxnRef%3D164778da_3431_4e42_81db_4cde59e70e21%26vnp_Version%3D2.1.0%26vnp_SecureHash%3D4b7563aef197f8f5ab6efd81bdd849f3712177e0942f606c40d29442e8fbabb613a68fd40143309ad1a9ce9cdb670a5708c8eed7dbee0cb89c709c91c4316644
+
+Trang sẽ tự động redirect sang:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=54000000&vnp_Command=pay&vnp_CreateDate=20250519184608&vnp_CurrCode=VND&vnp_ExpireDate=20250520184608&vnp_IpAddr=127.0.0.1&vnp_Locale=en&vnp_OrderInfo=Payment+from+ip+127.0.0.1+for+order+164778da_3431_4e42_81db_4cde59e70e21&vnp_OrderType=250000&vnp_ReturnUrl=http%3A%2F%2Flocalhost%3A8000%2Fvnpay-return&vnp_TmnCode=BCPVBFD4&vnp_TxnRef=164778da_3431_4e42_81db_4cde59e70e21&vnp_Version=2.1.0&vnp_SecureHash=4b7563aef197f8f5ab6efd81bdd849f3712177e0942f606c40d29442e8fbabb613a68fd40143309ad1a9ce9cdb670a5708c8eed7dbee0cb89c709c91c4316644
