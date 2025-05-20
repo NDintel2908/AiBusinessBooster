@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react';
 
 export default function GoRedirect() {
   const [error, setError] = useState<string | null>(null);
-  const [isRedirecting, setIsRedirecting] = useState(true);
 
   useEffect(() => {
-    // Function to redirect to payment
-    const redirectToPayment = async () => {
+    // Immediately try to redirect - execute in the next tick for browser compatibility
+    setTimeout(() => {
       try {
         // Get URL parameters
         const params = new URLSearchParams(window.location.search);
@@ -14,39 +13,27 @@ export default function GoRedirect() {
 
         if (!paymentUrl) {
           setError('Không tìm thấy URL thanh toán');
-          setIsRedirecting(false);
           return;
         }
 
-        // For debugging - log the received URL
-        console.log('Payment URL received:', paymentUrl);
-        
         try {
-          // Directly decode and redirect
+          // Directly decode and redirect with no delay
           const decodedUrl = decodeURIComponent(paymentUrl);
-          console.log('Redirecting to payment URL:', decodedUrl);
-          
-          // Set a small timeout to ensure the UI updates before redirect
-          setTimeout(() => {
-            // Redirect immediately
-            window.location.href = decodedUrl;
-          }, 500);
+          // Immediate redirect
+          window.location.replace(decodedUrl);
         } catch (decodeError) {
           console.error('Error decoding URL:', decodeError);
           setError('URL thanh toán không hợp lệ');
-          setIsRedirecting(false);
         }
       } catch (err) {
         console.error('Error during redirect process:', err);
         setError('Có lỗi xảy ra khi chuyển hướng');
-        setIsRedirecting(false);
       }
-    };
-
-    // Perform redirect when component mounts
-    redirectToPayment();
+    }, 0);
   }, []);
 
+  // This component will only briefly render before redirection
+  // or will show error state if redirection fails
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900">
       <div className="text-center p-6 max-w-md">
@@ -55,9 +42,7 @@ export default function GoRedirect() {
         ) : (
           <>
             <h1 className="text-2xl text-white mb-6">Đang chuyển hướng đến cổng thanh toán...</h1>
-            {isRedirecting && (
-              <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-neon-blue mx-auto"></div>
-            )}
+            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-neon-blue mx-auto"></div>
           </>
         )}
       </div>
