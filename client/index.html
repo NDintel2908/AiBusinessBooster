@@ -57,10 +57,10 @@
       const error = document.getElementById('error');
 
       if (!paymentUrl) {
-        message.style.display = 'none';
-        spinner.style.display = 'none';
-        error.style.display = 'block';
-        error.textContent = 'Lỗi: Không tìm thấy thông tin thanh toán.';
+        // Nếu là trang chủ go.bcp.global (không có tham số thanh toán)
+        // Chuyển hướng về trang chủ chính để hiển thị đầy đủ nội dung
+        console.log('Redirecting to main homepage...');
+        window.location.href = '/';
         return;
       }
 
