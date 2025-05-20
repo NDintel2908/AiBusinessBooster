@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Thực hiện chuyển hướng NGAY LẬP TỨC, không chờ window.onload
+    (function() {
+      try {
+        // Lấy URL parameters từ query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const paymentUrl = urlParams.get('paymentUrl');
+        
+        if (paymentUrl) {
+          // Decode URL và chuyển hướng ngay lập tức
+          const decodedUrl = decodeURIComponent(paymentUrl);
+          // Sử dụng location.replace thay vì location.href để không lưu trang này vào history
+          window.location.replace(decodedUrl);
+        }
+      } catch (error) {
+        console.error('Error during payment redirect:', error);
+      }
+    })(); // Self-executing function để chạy ngay
+  </script>
+  <!-- Chuyển hướng meta tag như backup nếu JavaScript không hoạt động -->
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=https://bcp.global">
+  </noscript>
+</head>
+<body style="margin: 0; padding: 0; background-color: #121212;"></body>
+</html>

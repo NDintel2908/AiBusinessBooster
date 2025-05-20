@@ -34,7 +34,7 @@ export async function registerRoutes(app: Express): Promise<http.Server> {
     }
   });
 
-  // Redirect route for VNPAY payment links
+  // Redirect route for VNPAY payment links - Server-side implementation
   app.get("/go", (req: Request, res: Response) => {
     const paymentUrl = req.query.paymentUrl as string;
     
@@ -43,14 +43,21 @@ export async function registerRoutes(app: Express): Promise<http.Server> {
     }
     
     try {
-      // Decode the payment URL
+      // Thử xử lý server-side redirect trước
       const decodedUrl = decodeURIComponent(paymentUrl);
       
-      // Redirect to the payment gateway
-      return res.redirect(decodedUrl);
+      // Set headers để không cache trang chuyển hướng
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+      res.setHeader('Pragma', 'no-cache');
+      res.setHeader('Expires', '0');
+      
+      // Chuyển hướng trực tiếp từ server
+      return res.redirect(302, decodedUrl);
     } catch (error) {
       console.error("Error decoding payment URL:", error);
-      return res.status(400).send("Invalid payment URL");
+      
+      // Fallback đến client-side redirect nếu có lỗi
+      return res.redirect(`/payment-redirect.html?paymentUrl=${encodeURIComponent(paymentUrl)}`);
     }
   });
 
