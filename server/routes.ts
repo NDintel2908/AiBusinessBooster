@@ -34,34 +34,41 @@ export async function registerRoutes(app: Express): Promise<http.Server> {
     }
   });
 
-  // Route chuyển hướng thanh toán VNPAY
+  // Handle the /go route by serving the index.html with client-side route
   app.get("/go", (req: Request, res: Response) => {
-    // Lấy tham số paymentUrl từ query string
-    const paymentUrl = req.query.paymentUrl as string;
-    
-    // Kiểm tra xem có paymentUrl không
-    if (!paymentUrl) {
-      return res.status(400).send("Missing payment URL");
-    }
-    
+    // Just send the index.html file and let client-side routing handle it
+    const indexPath = 'index.html';
+    res.sendFile(indexPath, { root: './public' });
+  });
+  
+  // API endpoint to get the decoded payment URL
+  app.get("/api/payment-redirect", (req: Request, res: Response) => {
     try {
-      // Giải mã URL
+      // Get the payment URL from the query string
+      const paymentUrl = req.query.paymentUrl as string;
+      
+      if (!paymentUrl) {
+        return res.status(400).json({
+          success: false,
+          error: "Missing payment URL"
+        });
+      }
+      
+      // Decode the URL
       const decodedUrl = decodeURIComponent(paymentUrl);
+      console.log("Payment URL received:", decodedUrl);
       
-      // Thiết lập headers để tránh cache trên trình duyệt
-      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-      res.setHeader('Pragma', 'no-cache');
-      res.setHeader('Expires', '0');
-      res.setHeader('Surrogate-Control', 'no-store');
-      
-      // Log URL để debug (sẽ xóa khi production)
-      console.log("Redirecting to:", decodedUrl);
-      
-      // Chuyển hướng ngay lập tức đến URL đã giải mã
-      return res.redirect(302, decodedUrl);
+      // Return the decoded URL to the client
+      return res.status(200).json({
+        success: true,
+        url: decodedUrl
+      });
     } catch (error) {
-      console.error("Error decoding payment URL:", error);
-      return res.status(400).send("Invalid payment URL format");
+      console.error("Error processing payment URL:", error);
+      return res.status(400).json({
+        success: false,
+        error: "Invalid payment URL format"
+      });
     }
   });
 
