@@ -14,7 +14,7 @@ export function HelpButton() {
     >
       <Button
         onClick={() => window.open('https://zalo.me/3297451762229454190', '_blank')}
-        className="h-14 w-14 rounded-full bg-gradient-to-r from-neon-blue to-electric-purple hover:from-electric-purple hover:to-neon-blue relative group transition-all duration-300 hover:shadow-lg hover:shadow-electric-purple/30"
+        className="relative h-14 w-14 rounded-full bg-gradient-to-r from-neon-blue/90 to-electric-purple/90 hover:from-electric-purple/90 hover:to-neon-blue/90 shadow-lg hover:shadow-electric-purple/30 transition-all duration-300 group"
         aria-label="Get Help"
       >
         <motion.div
@@ -30,8 +30,11 @@ export function HelpButton() {
         >
           <HelpCircle className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-200" />
         </motion.div>
-        <div className="absolute -top-10 right-0 bg-white text-gray-800 px-3 py-1 rounded-full text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap shadow-lg">
-          Cần hỗ trợ?
+        
+        {/* Tooltip */}
+        <div className="absolute -top-12 right-0 px-4 py-2 bg-white rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap">
+          <span className="text-gray-800 text-sm font-medium">Need Help?</span>
+          <div className="absolute bottom-[-6px] right-6 h-3 w-3 bg-white transform rotate-45"></div>
         </div>
       </Button>
     </motion.div>
