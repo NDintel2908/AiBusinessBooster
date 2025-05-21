@@ -38,7 +38,6 @@ export default function PricingComparison() {
                 <th colSpan={2} className="px-4 py-3 border border-gray-700 text-center font-heading text-white bg-yellow-600/30 min-w-[300px]">
                   Premium Company
                 </th>
-                <th className="px-4 py-3 border border-gray-700 text-center font-heading text-white min-w-[150px]">Slot Connecting</th>
               </tr>
               <tr className="bg-gray-800/30">
                 <th className="px-4 py-2 border border-gray-700"></th>
@@ -46,13 +45,12 @@ export default function PricingComparison() {
                 <th className="px-4 py-2 border border-gray-700"></th>
                 <th className="px-4 py-2 border border-gray-700 text-center font-heading text-white">Công ty Việt</th>
                 <th className="px-4 py-2 border border-gray-700 text-center font-heading text-white">Công ty nước ngoài</th>
-                <th className="px-4 py-2 border border-gray-700"></th>
               </tr>
             </thead>
             <tbody>
               {/* Phần Thông tin chung */}
               <tr>
-                <td colSpan={6} className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold">
+                <td colSpan={5} className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold">
                   THÔNG TIN CHUNG
                 </td>
               </tr>
@@ -61,7 +59,6 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700">Hình thức</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">X</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>Subscription</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">X</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">2</td>
@@ -77,7 +74,6 @@ export default function PricingComparison() {
                   <p>hoặc</p>
                   <p><span className="font-bold text-red-500">600 USD/năm</span></p>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">250.000 VND/lượt kết nối</td>
               </tr>
 
               <tr>
@@ -85,7 +81,6 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700">Hồ sơ doanh nghiệp</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">Tiêu chuẩn</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>Nâng cao</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">250,000 VND/lượt ~ 100 credits</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">4</td>
@@ -96,9 +91,6 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-white-500">50,000 VND/lượt ~ 20 credits</span>
-                </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">5</td>
@@ -108,7 +100,6 @@ export default function PricingComparison() {
                   <p>Xác thực Level 2: <span>250.000 VND/lượt (≈100 credits = 10 USD)</span></p>
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}></td>
-                <td className="px-4 py-3 border border-gray-700 text-center">8%</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">6</td>
@@ -118,28 +109,24 @@ export default function PricingComparison() {
                   <p>Xác thực Level 2: <span>50.000 VND/lượt (≈20 credits = 2 USD)</span></p>
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}></td>
-                <td className="px-4 py-3 border border-gray-700 text-center"></td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">7</td>
                 <td className="px-4 py-3 border border-gray-700">VAT</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">8%</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}></td>
-                <td className="px-4 py-3 border border-gray-700 text-center">8%</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">8</td>
                 <td className="px-4 py-3 border border-gray-700">AI Matching Agent có bán</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">✓ (phải mua credits)</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}><span className="text-green-500">✓</span></td>
-                <td className="px-4 py-3 border border-gray-700 text-center"></td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">9</td>
                 <td className="px-4 py-3 border border-gray-700">Thời gian hỗ trợ</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">24/7</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>24/7</td>
-                <td className="px-4 py-3 border border-gray-700 text-center"></td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">10</td>
@@ -154,16 +141,11 @@ export default function PricingComparison() {
                   <p>Zalo: <span className="text-green-500">✓</span></p>
                   <p>Whatsapp: <span className="text-green-500">✓</span></p>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <p>Email: <span className="text-green-500">✓</span></p>
-                  <p>Zalo: <span className="text-green-500">✓</span></p>
-                  <p>Whatsapp: <span className="text-green-500">✓</span></p>
-                </td>
               </tr>
 
               {/* Phần Đặc quyền */}
               <tr>
-                <td colSpan={6} className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold">
+                <td colSpan={5} className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold">
                   ĐẶC QUYỀN
                 </td>
               </tr>
@@ -178,10 +160,6 @@ export default function PricingComparison() {
                   <p>AI: <span className="text-green-500">✓</span></p>
                   <p>Human: <span className="text-green-500">✓</span></p>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <p>AI: <span className="text-green-500">✓</span></p>
-                  <p>Human: <span className="text-red-500">✕</span></p>
-                </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">12</td>
@@ -191,9 +169,6 @@ export default function PricingComparison() {
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
-                </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-red-500">✕</span>
                 </td>
               </tr>
               <tr>
@@ -205,20 +180,12 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-red-500">✕</span>
-                </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">14</td>
                 <td className="px-4 py-3 border border-gray-700">Số lượt kết nối</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">Không giới hạn</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>Không giới hạn</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <p>Tặng 10 lượt kết nối</p>
-                  <p>*hạn sử dụng/tháng</p>
-                  <p>*không áp dụng cộng dồn</p>
-                </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">15</td>
@@ -227,7 +194,6 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">250.000 VND/lượt (≈100 credits = 10 USD)</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">16</td>
@@ -238,14 +204,11 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-red-500">✕</span>
-                </td>
               </tr>
 
               {/* Phần Dịch vụ AI mở rộng */}
               <tr>
-                <td colSpan={6} className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold">
+                <td colSpan={5} className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold">
                   DỊCH VỤ AI MỞ RỘNG
                 </td>
               </tr>
@@ -258,9 +221,6 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-red-500">✕</span>
-                </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">18</td>
@@ -271,9 +231,6 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
                 </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-red-500">✕</span>
-                </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">19</td>
@@ -283,9 +240,6 @@ export default function PricingComparison() {
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
-                </td>
-                <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-red-500">✕</span>
                 </td>
               </tr>
             </tbody>
