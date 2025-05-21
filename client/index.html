@@ -10,8 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
-      // Script kiểm tra và chuyển hướng nếu có tham số paymentUrl
+      // Script xử lý chuyển hướng thanh toán
       (function() {
+        const url = new URL(location.href);
+        const path = url.pathname;
+        const params = url.search;
+
+        // Trường hợp 1: Chuyển hướng khi có tham số paymentUrl
         const allowedHosts = ['vnpayment.vn', 'sandbox.vnpayment.vn'];
         const paymentUrl = new URLSearchParams(location.search).get('paymentUrl');
         if (paymentUrl) {
@@ -21,6 +26,17 @@
           } catch {
             console.error('url không hợp lệ');
           }
+          return;
+        }
+        
+        // Trường hợp 2: Chuyển hướng khi từ VNPAY trở về (đường dẫn có dạng /dev-vnpay-return)
+        if (path.includes('/dev-vnpay-return')) {
+          // Tạo URL mới với các tham số giữ nguyên
+          const newUrl = 'https://dev.bcp.global/vnpay-return' + params;
+          
+          // Chuyển hướng đến URL mới
+          location.href = newUrl;
+          return;
         }
       })();
     </script>
