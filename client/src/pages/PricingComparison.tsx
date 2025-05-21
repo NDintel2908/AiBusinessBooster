@@ -226,6 +226,45 @@ export default function PricingComparison() {
             </tbody>
           </table>
 
+          {/* Slot Connecting Table */}
+          <div className="mt-12 mb-10 overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr>
+                  <th className="px-4 py-3 border border-gray-700 text-left font-heading text-white min-w-[200px]">Thông tin</th>
+                  <th className="px-4 py-3 border border-gray-700 text-center font-heading text-white min-w-[300px] bg-[#e9e5f7]/20">
+                    Slot Connecting
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="px-4 py-3 border border-gray-700">Hình thức</td>
+                  <td className="px-4 py-3 border border-gray-700">
+                    <span className="text-red-500">✕</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 border border-gray-700">Giá</td>
+                  <td className="px-4 py-3 border border-gray-700">
+                    <p><strong>Gửi</strong>: 10 USD = 250,000 VND/lượt ~ 100 credits</p>
+                    <p><strong>Nhận</strong>: 2 USD = 50,000 VND/lượt ~ 20 credits</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 border border-gray-700">VAT</td>
+                  <td className="px-4 py-3 border border-gray-700">8%</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 border border-gray-700">Số lượt kết nối</td>
+                  <td className="px-4 py-3 border border-gray-700 italic">
+                    Chỉ có thể sử dụng AI Matching khi đạt Verified level 2
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <div className="bg-gray-800/30 p-6 rounded-lg border border-gray-700 mb-10">
             <h3 className="text-xl font-heading font-semibold mb-4 text-white">Các lưu ý quan trọng:</h3>
             <ul className="list-disc pl-6 space-y-2 font-primary text-gray-300">
