@@ -13,7 +13,7 @@ export function HelpButton() {
     >
       <Button
         onClick={() => window.open('https://zalo.me/3297451762229454190', '_blank')}
-        className="h-10 px-4 rounded-full bg-[#8BB4FB]/90 hover:bg-[#8BB4FB] text-white transition-all duration-300 flex items-center gap-2 group shadow-lg hover:shadow-[#8BB4FB]/30"
+        className="h-10 px-4 rounded-full bg-[#8BB4FB]/70 hover:bg-[#8BB4FB]/90 text-white transition-all duration-300 flex items-center gap-2 group shadow-lg hover:shadow-[#8BB4FB]/30 backdrop-blur-sm"
         aria-label="Get Help"
       >
         <Headphones className="h-4 w-4" />
