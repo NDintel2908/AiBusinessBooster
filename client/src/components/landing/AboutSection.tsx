@@ -129,7 +129,7 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2 } }
               }}
             >
-              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Tầm nhìn</h3>
+              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Tầm Nhìn</h3>
               <p className="text-gray-300 font-primary">
                 Chúng tôi tin vào một thế giới nơi mọi doanh nghiệp đều tìm được đối tác lý tưởng. 
 
@@ -142,7 +142,7 @@ export default function AboutSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.4 } }
               }}
             >
-              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Sứ mạng</h3>
+              <h3 className="text-xl font-heading font-semibold mb-4 text-white">Sứ Mệnh</h3>
               <p className="text-gray-300 font-primary">
                 Bằng công nghệ AI tiên tiến, BCP phá bỏ mọi rào cản, mở ra cơ hội hợp tác hiệu quả cho mọi tổ chức, dù lớn hay nhỏ.
               </p>
