@@ -26,8 +26,20 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Tech background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0F0F2B] to-[#041124]">
+      {/* Video Background - Fullscreen */}
+      <video 
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        style={{ zIndex: 0 }}
+        src="/theme.mp4"
+      ></video>
+      
+      {/* Gradient overlay for better text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0F0F2B]/80 to-[#041124]/80" style={{ zIndex: 1 }}>
         {/* Animated grid lines */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute w-full h-full" 
@@ -48,6 +60,7 @@ export default function HeroSection() {
       {/* Noise texture */}
       <div className="absolute inset-0 opacity-5" style={{ 
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+        zIndex: 2
       }} />
 
       <div className="container mx-auto px-4 z-10">
