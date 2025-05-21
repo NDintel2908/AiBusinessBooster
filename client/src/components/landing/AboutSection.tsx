@@ -4,6 +4,7 @@ import { useInView } from "framer-motion";
 import { GlassCard } from "@/components/ui/glass-card";
 import BP from './partner/BusinessPartner.png';
 import TP from './partner/TechPartner.png';
+import DP from './partner/DevPartner.png';
 
 
 export default function AboutSection() {
@@ -64,7 +65,7 @@ export default function AboutSection() {
                 </div>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center justify-items-center mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 items-center justify-items-center mt-8">
                 <div className="flex flex-col items-center">
                   <img 
                     src={TP}
@@ -76,11 +77,20 @@ export default function AboutSection() {
                 
                 <div className="flex flex-col items-center">
                   <img 
-                    src= {BP}
+                    src={BP}
                     alt="Business Partner"
                     className="h-[70px] object-contain filter brightness-100"
                   />
                   <p className="mt-4 text-gray-400 text-center font-primary">Đối tác thị trường</p>
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <img 
+                    src={DP}
+                    alt="Development Partner"
+                    className="h-[70px] object-contain filter brightness-100"
+                  />
+                  <p className="mt-4 text-gray-400 text-center font-primary">Đối tác phát triển</p>
                 </div>
               </div>
             </motion.div>
