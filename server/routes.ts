@@ -39,7 +39,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Payment redirection route
   app.get("/go", (req, res) => {
     try {
-      // Trả về HTML với script chuyển hướng
+      // Trả về HTML với script chuyển hướng cải tiến
       return res.send(`
         <!DOCTYPE html>
         <html lang="vi">
@@ -48,12 +48,37 @@ export async function registerRoutes(app: Express): Promise<Server> {
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Đang chuyển hướng...</title>
           <script>
-            const url = new URL(location.href);
-            const params = new URLSearchParams(url.search);
-            const paymentUrl = params.get('paymentUrl');
-            if (paymentUrl) {
-              location.href = paymentUrl;
-            }
+            // Script xử lý chuyển hướng thanh toán
+            (function() {
+              const url = new URL(location.href);
+              const path = url.pathname;
+              const params = url.search;
+
+              // Trường hợp 1: Chuyển hướng khi có tham số paymentUrl
+              const allowedHosts = ['vnpayment.vn', 'sandbox.vnpayment.vn'];
+              const paymentUrl = new URLSearchParams(location.search).get('paymentUrl');
+              if (paymentUrl) {
+                try {
+                  const host = new URL(paymentUrl).hostname;
+                  if (allowedHosts.includes(host)) location.href = paymentUrl;
+                  else console.error('Domain không được phép');
+                } catch {
+                  console.error('URL không hợp lệ');
+                }
+                return;
+              }
+              
+              // Trường hợp 2: Chuyển hướng khi từ VNPAY trở về
+              if (path.includes('/dev-vnpay-return')) {
+                const newUrl = 'https://dev.bcp.global/vnpay-return' + params;
+                location.href = newUrl;
+                return;
+              } else if (path.includes('/vnpay-return')) {
+                const newUrl = 'https://bcp.global/vnpay-return' + params;
+                location.href = newUrl;
+                return;
+              }
+            })();
           </script>
           <style>
             body {
