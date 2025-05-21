@@ -151,29 +151,27 @@ export default function PricingComparison() {
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">11</td>
-                <td className="px-4 py-3 border border-gray-700">Nhân viên hỗ trợ</td>
+                <td className="px-4 py-3 border border-gray-700">Hồ sơ</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
-                  <p>AI: <span className="text-green-500">✓</span></p>
-                  <p>Human: <span className="text-red-500">✕</span></p>
+                  Tiêu chuẩn	
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
-                  <p>AI: <span className="text-green-500">✓</span></p>
-                  <p>Human: <span className="text-green-500">✓</span></p>
+                  Nâng cao
                 </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">12</td>
-                <td className="px-4 py-3 border border-gray-700">Xác thực cấp độ cao nhất<br/>(verified nhãn tích xanh)</td>
+                <td className="px-4 py-3 border border-gray-700">Hỗ trợ bởi AI & Human</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
-                  <span className="text-red-500">✕</span>
+                  Trong vòng 2 tiếng kể từ lúc nhận được request	
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
-                  <span className="text-green-500">✓</span>
+                  24/7
                 </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">13</td>
-                <td className="px-4 py-3 border border-gray-700">Hiển thị trên top qua keyword<br/>(được chọn lọc & hiển thị top bởi<br/>AI gần với các keywords)</td>
+                <td className="px-4 py-3 border border-gray-700">Xác thực cấp độ cao nhất<br/>(verified nhận tích xanh)</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                   <span className="text-red-500">✕</span>
                 </td>
@@ -183,20 +181,36 @@ export default function PricingComparison() {
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">14</td>
-                <td className="px-4 py-3 border border-gray-700">Số lượt kết nối</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">Không giới hạn</td>
-                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>Không giới hạn</td>
+                <td className="px-4 py-3 border border-gray-700">Hiển thị trên top qua keyword<br/>(được chọn lọc & hiển thị top bởi<br/>AI gần với các keywords)</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">
+                  <span className="text-red-500">✕</span>
+                </td>
+                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
+                  <span className="text-green-500">✓</span>
+                </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">15</td>
-                <td className="px-4 py-3 border border-gray-700">Chi phí cho 1 lượt trò chuyện cùng đối tác</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">250.000 VND/lượt (≈100 credits = 10 USD)</td>
+                <td className="px-4 py-3 border border-gray-700">Ưu tiên nhận demand & kết quả</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">
+                  <span className="text-red-500">✕</span>
+                </td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-green-500">✓</span>
                 </td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">16</td>
+                <td className="px-4 py-3 border border-gray-700">Chi phí cho 1 lượt trò chuyện cùng đối tác</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">250.000 VND/lượt (≈100 credits = 10 USD)</td>
+                <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
+                  <span className="text-green-500">Tặng 10 lượt kết nối
+                  <p>Hạn sử dụng/tháng</p>
+                  <p>Không áp dụng cộng dồn	</p></span>
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 border border-gray-700 text-center">17</td>
                 <td className="px-4 py-3 border border-gray-700">Dữ liệu DN được training riêng bởi human & AI</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                   <span className="text-red-500">✕</span>
@@ -213,7 +227,7 @@ export default function PricingComparison() {
                 </td>
               </tr>
               <tr>
-                <td className="px-4 py-3 border border-gray-700 text-center">17</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">18</td>
                 <td className="px-4 py-3 border border-gray-700">Được ưu tiên trải nghiệm các tính năng AI mới</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                   <span className="text-red-500">✕</span>
@@ -223,7 +237,7 @@ export default function PricingComparison() {
                 </td>
               </tr>
               <tr>
-                <td className="px-4 py-3 border border-gray-700 text-center">18</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">19</td>
                 <td className="px-4 py-3 border border-gray-700">Mời tham gia các sự kiện chương trình kết nối giao thương global của BCP</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                   <span className="text-red-500">✕</span>
@@ -233,7 +247,7 @@ export default function PricingComparison() {
                 </td>
               </tr>
               <tr>
-                <td className="px-4 py-3 border border-gray-700 text-center">19</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">20</td>
                 <td className="px-4 py-3 border border-gray-700">Được mời tham gia đào tạo AI và kết nối với hệ sinh thái AIPartners.asia</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                   <span className="text-red-500">✕</span>
