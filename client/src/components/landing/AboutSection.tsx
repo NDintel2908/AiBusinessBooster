@@ -106,7 +106,7 @@ export default function AboutSection() {
             }}
           >
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-              <span className="text-sm font-medium text-neon-blue font-primary">Câu chuyện của chúng tôi</span>
+              <span className="text-lg font-medium text-neon-blue font-primary">Câu chuyện của chúng tôi</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-2 text-white">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Câu chuyện doanh nghiệp</span>
