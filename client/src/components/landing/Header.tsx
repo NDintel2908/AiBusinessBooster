@@ -114,27 +114,39 @@ export default function Header() {
       {/* Mobile Menu */}
       <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-1 p-3 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <nav className="flex flex-col space-y-3 font-primary text-sm">
-          <Link 
-            href="/#service-section" 
+          <a 
+            href="/" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = '/#service-section';
+              setIsMobileMenuOpen(false);
+            }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"
-            onClick={() => setIsMobileMenuOpen(false)}
           >
             Tính năng
-          </Link>
-          <Link 
-            href="/#pricing" 
+          </a>
+          <a 
+            href="/" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = '/#pricing';
+              setIsMobileMenuOpen(false);
+            }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"
-            onClick={() => setIsMobileMenuOpen(false)}
           >
             Bảng giá
-          </Link>
-          <Link 
-            href="/#about" 
+          </a>
+          <a 
+            href="/" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = '/#about';
+              setIsMobileMenuOpen(false);
+            }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"
-            onClick={() => setIsMobileMenuOpen(false)}
           >
             Về chúng tôi
-          </Link>
+          </a>
           <a 
             href="#contact" 
             className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-black font-medium text-center cta-button font-primary"
