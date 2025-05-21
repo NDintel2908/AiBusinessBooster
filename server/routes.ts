@@ -48,15 +48,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Đang chuyển hướng...</title>
           <script>
-            const allowedHosts = ['vnpayment.vn', 'sandbox.vnpayment.vn'];
-            const paymentUrl = new URLSearchParams(location.search).get('paymentUrl');
+            const url = new URL(location.href);
+            const params = new URLSearchParams(url.search);
+            const paymentUrl = params.get('paymentUrl');
             if (paymentUrl) {
-              try {
-                const host = new URL(paymentUrl).hostname;
-                if (allowedHosts.includes(host)) location.href = paymentUrl;
-              } catch {
-                console.error('url không hợp lệ');
-              }
+              location.href = paymentUrl;
             }
           </script>
           <style>
