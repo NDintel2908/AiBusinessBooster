@@ -29,10 +29,10 @@
           return;
         }
         
-        // Trường hợp 2: Chuyển hướng khi từ VNPAY trở về (đường dẫn có dạng /dev-vnpay-return)
-        if (path.includes('/dev-vnpay-return')) {
+        // Trường hợp 2: Chuyển hướng khi từ VNPAY trở về (đường dẫn có dạng /vnpay-return)
+        if (path.includes('/vnpay-return')) {
           // Tạo URL mới với các tham số giữ nguyên
-          const newUrl = 'https://dev.bcp.global/vnpay-return' + params;
+          const newUrl = 'https://bcp.global/vnpay-return' + params;
           
           // Chuyển hướng đến URL mới
           location.href = newUrl;
