@@ -137,7 +137,7 @@ export default function PricingSection() {
       ]
     },
     {
-      name: "Premium Business",
+      name: "Premium Package",
       price: "15.000.000 VND",
       period: "/năm",
       description: "Giải pháp toàn diện cho doanh nghiệp",
@@ -155,16 +155,16 @@ export default function PricingSection() {
       ctaLink: "https://bcp.global/credit"
     },
     {
-      name: "Slot Connect",
+      name: "Lượt tìm kiếm Đối tác mới",
       price: "250.000 VND",
-      period: "/lượt",
-      description: "Linh hoạt theo nhu cầu",
+      period: "/lượt kết nối",
+      description: "Chưa bao gồm 8% VAT",
       features: [
-        { text: "Kết nối trực tiếp", included: true },
-        { text: "Chat với đối tác", included: true },
-        { text: "AI Matching thông minh", included: true },
-        { text: "Bảo mật thông tin", included: true },
-        { text: "Kết nối quốc tế", included: true },
+        { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
+        { text: "Chat TRỰC TIẾP với doanh nghiệp", included: true },
+        { text: "Thuật toán AI kết nối thông minh", included: true },
+        { text: "Bảo mật - dễ dùng - đáng tin cậy", included: true },
+        { text: "Mở rộng ra Nhật Bản và quốc tế", included: true },
         { text: "Hỗ trợ đa ngôn ngữ", included: true },
         { text: "Thanh toán linh hoạt", included: true }
       ],
