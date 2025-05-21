@@ -75,7 +75,7 @@ export default function HeroSection() {
             className="inline-flex items-center px-4 py-2 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-6 mx-auto"
           >
             <span className="w-2 h-2 rounded-full bg-bright-teal animate-pulse mr-2"></span>
-            <span className="text-sm md:text-base font-medium text-bright-teal font-primary">
+            <span className="text-base md:text-lg font-medium text-bright-teal font-primary">
               Công cụ, thói quen và trợ lý phát triển kinh doanh mới với AI Matching Agent
             </span>
           </motion.div>

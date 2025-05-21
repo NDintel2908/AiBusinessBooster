@@ -113,7 +113,7 @@ export default function ChallengesSection() {
           }}
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-            <span className="text-sm font-medium text-neon-blue font-primary">Thách thức của thị trường</span>
+            <span className="text-base md:text-lg font-medium text-neon-blue font-primary">Thách thức của thị trường</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
             Vấn đề nan giải khi kết nối thị trường <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B</span>

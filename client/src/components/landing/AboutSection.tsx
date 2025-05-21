@@ -11,20 +11,20 @@ export default function AboutSection() {
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
-  
+
   useEffect(() => {
     if (isInView) {
       controls.start("visible");
     }
   }, [controls, isInView]);
-  
+
   return (
     <>
       <section id="about" className="py-16 relative">
         <div className="absolute inset-0 z-0 opacity-30">
           <div className="absolute bottom-1/4 left-1/4 w-1/3 h-1/3 bg-electric-purple opacity-10 blur-[120px] rounded-full"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             {/* Hình ảnh công ty */}
@@ -43,7 +43,7 @@ export default function AboutSection() {
                 />
               </GlassCard>
             </motion.div>
-            
+
             {/* Nội dung về công ty */}
             <motion.div
               ref={ref}
@@ -67,9 +67,9 @@ export default function AboutSection() {
               <p className="text-gray-300 mb-4 font-primary text-base leading-relaxed">
                 Với đội ngũ chuyên gia AI và phân tích kinh doanh đa quốc gia, chúng tôi xây dựng nền tảng kết nối MUA - BÁN - HỢP TÁC B2B thông minh, biến trí tuệ nhân tạo thành chìa khóa thay đổi cuộc chơi.
               </p>
-              
+
               <div className="my-6 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
-              
+
               <motion.div 
                 className="mb-4"
                 variants={{
@@ -82,7 +82,7 @@ export default function AboutSection() {
                   Chúng tôi tin vào một thế giới nơi mọi doanh nghiệp đều tìm được đối tác lý tưởng.
                 </p>
               </motion.div>
-              
+
               <motion.div
                 variants={{
                   hidden: { opacity: 0, y: 20 },
@@ -98,7 +98,7 @@ export default function AboutSection() {
           </div>
         </div>
       </section>
-      
+
       {/* Tách phần đối tác chiến lược thành section riêng */}
       <section className="py-12 relative">
         <div className="container mx-auto px-4 z-10">
@@ -111,10 +111,10 @@ export default function AboutSection() {
           >
             <div className="flex justify-center mb-5">
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40">
-                <span className="text-sm font-medium text-neon-blue font-primary">Đối tác chiến lược</span>
+                <span className="text-base md:text-lg font-medium text-neon-blue font-primary">Đối tác chiến lược</span>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-items-center mt-6 max-w-4xl mx-auto">
               <div className="flex flex-col items-center">
                 <img 
@@ -124,7 +124,7 @@ export default function AboutSection() {
                 />
                 <p className="mt-3 text-gray-400 text-center font-primary text-sm">Đối tác công nghệ</p>
               </div>
-              
+
               <div className="flex flex-col items-center">
                 <img 
                   src={BP}

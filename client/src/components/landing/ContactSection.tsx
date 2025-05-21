@@ -23,7 +23,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-              <span className="text-sm font-medium text-neon-blue">Liên hệ với chúng tôi</span>
+              <span className="text-base md:text-lg font-medium text-neon-blue">Liên hệ với chúng tôi</span>
             </div>
             <h2 className="text-3xl md:text-3xl font-heading font-bold mb-6 text-white">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple"></span>Trở thành đối tác được BCP giới thiệu
