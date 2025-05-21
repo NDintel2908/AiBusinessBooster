@@ -29,14 +29,27 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-r from-[#0F0F2B] to-[#041124]">
+      {/* Video Background */}
+      <video 
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        autoPlay
+        loop
+        muted
+        playsInline
+        src="/theme.mp4"
+      ></video>
+      
+      {/* Overlay để làm tối video và tăng độ tương phản với text */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0F0F2B]/80 to-[#041124]/80 z-1"></div>
+      
       {/* Noise overlay */}
-      <div className="absolute inset-0 opacity-10" style={{ 
+      <div className="absolute inset-0 opacity-10 z-2" style={{ 
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
       }} />
       
       {/* Light flares */}
-      <div className="absolute top-1/4 -left-20 w-60 h-60 bg-blue-500/20 rounded-full blur-[100px]" />
-      <div className="absolute bottom-1/4 -right-20 w-60 h-60 bg-indigo-500/20 rounded-full blur-[100px]" />
+      <div className="absolute top-1/4 -left-20 w-60 h-60 bg-blue-500/20 rounded-full blur-[100px] z-2" />
+      <div className="absolute bottom-1/4 -right-20 w-60 h-60 bg-indigo-500/20 rounded-full blur-[100px] z-2" />
       
       <div className="container mx-auto px-4 z-10 py-12 lg:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">

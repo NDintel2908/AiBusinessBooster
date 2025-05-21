@@ -37,8 +37,8 @@ function HelpButton() {
     return () => clearTimeout(timer);
   }, []);
 
-  const buttonStyle = {
-    position: 'fixed' as 'fixed',
+  const buttonStyle: React.CSSProperties = {
+    position: 'fixed',
     bottom: '20px',
     right: '20px',
     backgroundColor: isHovered ? '#0056b3' : '#007bff',
@@ -65,8 +65,8 @@ function HelpButton() {
     animation: 'pulse 2s infinite',
   };
 
-  const tooltipStyle = {
-    position: 'fixed' as 'fixed',
+  const tooltipStyle: React.CSSProperties = {
+    position: 'fixed',
     bottom: '90px',
     right: '30px',
     backgroundColor: 'rgba(0, 0, 0, 0.8)',
