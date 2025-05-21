@@ -43,15 +43,15 @@ function PricingPlan({
       className="h-full"
     >
       <GlassCard 
-        className={`rounded-2xl p-6 relative transform transition duration-500 hover:-translate-y-2 flex flex-col h-full border ${
+        className={`rounded-2xl p-6 relative transform transition duration-500 hover:-translate-y-2 flex flex-col h-full ${
           isPopular 
-            ? 'border-electric-purple/40 bg-gradient-to-b from-[rgba(0,0,20,0.2)] to-[rgba(0,0,40,0.1)]' 
-            : 'border-gray-700'
+            ? 'border-2 border-electric-purple/60 bg-gradient-to-b from-[rgba(188,19,254,0.05)] to-[rgba(0,123,255,0.05)] shadow-lg shadow-electric-purple/10' 
+            : 'border border-gray-700'
         }`}
         gradientBorder={false}
       >
         {isPopular && (
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-neon-blue to-electric-purple text-white px-6 py-1.5 rounded-full text-sm font-medium">
+          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[rgba(188,19,254,0.2)] to-[rgba(0,123,255,0.2)] text-white px-6 py-1.5 rounded-full text-sm font-medium backdrop-blur-sm">
             Phổ biến nhất
           </div>
         )}
