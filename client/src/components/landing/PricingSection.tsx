@@ -25,30 +25,43 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
+      className="h-full" // Đảm bảo chiều cao đồng đều
     >
       <GlassCard 
-        className={`rounded-xl p-6 relative transform transition duration-500 hover:-translate-y-2 ${
-          isPopular ? '' : 'border border-gray-700'
+        className={`rounded-xl p-5 relative transform transition duration-500 hover:-translate-y-2 flex flex-col h-full ${
+          isPopular 
+            ? 'bg-gradient-to-b from-[rgba(0,123,255,0.05)] to-[rgba(188,19,254,0.05)] border border-electric-purple/30' 
+            : 'border border-gray-700'
         }`}
         gradientBorder={isPopular}
       >
-        <div className="text-center mb-6 pt-2">
-          <h3 className="text-xl font-heading font-semibold text-white mb-2">{name}</h3>
-          <div className="flex justify-center items-baseline">
-            <span className="text-gray-400 mr-2"></span>
-            <span className="text-4xl font-bold text-white font-heading">{price}</span>
-            {name === "B2B Connection 1on1" ? (
-              <span className="text-gray-400 ml-1 font-primary text-sm">/lượt kết nối</span>
-            ) : name === "Premium" ? (
-              <span className="text-gray-400 ml-1 font-primary text-sm">/năm</span>
-            ) : null}
+        {isPopular && (
+          <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-neon-blue to-electric-purple text-white px-4 py-1 rounded-full text-xs font-medium">
+            Phổ biến nhất
           </div>
-          <p className="text-gray-400 mt-2 font-primary">{description}</p>
+        )}
+        
+        <div className="text-center mb-5 pt-2">
+          <h3 className="text-xl font-heading font-semibold text-white mb-2 h-14 flex items-center justify-center">
+            {name}
+          </h3>
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex items-baseline flex-wrap justify-center">
+              <span className="text-3xl font-bold text-white font-heading">{price}</span>
+              {name.includes("Lượt Tìm kiếm") && (
+                <span className="text-white/80 ml-1 font-primary text-sm">/lượt kết nối</span>
+              )}
+            </div>
+            {name.includes("Premium") && (
+              <span className="text-white/80 font-primary text-sm mt-1">/năm</span>
+            )}
+          </div>
+          <p className="text-gray-300 mt-2 font-primary text-sm h-12 flex items-center justify-center">{description}</p>
         </div>
 
-        <div className="h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent mb-6"></div>
+        <div className="h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent mb-5"></div>
 
-        <ul className="space-y-4 mb-8">
+        <ul className="space-y-3 mb-6 flex-grow">
           {features.map((feature, idx) => (
             <li key={idx} className="flex items-start">
               <div className="w-6 flex-shrink-0 flex justify-center">
@@ -56,20 +69,22 @@ function PricingPlan({ name, price, description, features, isPopular = false, in
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
-              <span className="text-gray-300 font-primary">{feature.text}</span>
+              <span className="text-gray-300 font-primary text-sm">{feature.text}</span>
             </li>
           ))}
         </ul>
 
-        {name === "Starter" ? (
-          <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
-            <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
-          </a>
-        ) : (
-          <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
-            <GradientButton className="w-full font-primary text-black" animate>Kết nối mua bán ngay</GradientButton>
-          </a>
-        )}
+        <div className="mt-auto">
+          {name.includes("Starter") ? (
+            <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
+              <GradientButton className="w-full font-primary" variant="outline">Trải nghiệm</GradientButton>
+            </a>
+          ) : (
+            <a href="https://bcp.global/credit" target="_blank" rel="noopener noreferrer">
+              <GradientButton className="w-full font-primary text-black" animate>Kết nối mua bán ngay</GradientButton>
+            </a>
+          )}
+        </div>
       </GlassCard>
     </motion.div>
   );
