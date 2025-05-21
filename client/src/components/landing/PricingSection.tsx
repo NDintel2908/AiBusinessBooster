@@ -45,7 +45,7 @@ function PricingPlan({
       <GlassCard 
         className={`rounded-2xl p-6 relative transform transition duration-500 hover:-translate-y-2 flex flex-col h-full ${
           isPopular 
-            ? 'bg-gradient-to-b from-[rgba(0,123,255,0.1)] to-[rgba(188,19,254,0.1)] border-2 border-electric-purple/30' 
+            ? 'bg-gradient-to-b from-gray-800/50 to-gray-900/50 border-2 border-neon-blue/30 shadow-lg shadow-neon-blue/5' 
             : 'border border-gray-700'
         }`}
         gradientBorder={isPopular}
