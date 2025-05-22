@@ -55,20 +55,20 @@ export default function AboutSection() {
               }}
               className="lg:mt-0"
             >
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-3">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-2">
                 <span className="text-base font-medium text-neon-blue font-primary">Câu chuyện của chúng tôi</span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-white">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-2 text-white">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Câu chuyện doanh nghiệp</span>
               </h2>
-              <p className="text-gray-300 mb-4 font-primary text-base leading-relaxed">
+              <p className="text-gray-300 mb-2 font-primary text-base leading-relaxed">
                 BCP ra đời từ một phát hiện đơn giản: Dù công nghệ số đã phát triển vượt bậc, việc tìm kiếm đối tác kinh doanh vẫn còn phụ thuộc vào may rủi thay vì dữ liệu.
               </p>
-              <p className="text-gray-300 mb-4 font-primary text-base leading-relaxed">
+              <p className="text-gray-300 mb-3 font-primary text-base leading-relaxed">
                 Với đội ngũ chuyên gia AI và phân tích kinh doanh đa quốc gia, chúng tôi xây dựng nền tảng kết nối MUA - BÁN - HỢP TÁC B2B thông minh, biến trí tuệ nhân tạo thành chìa khóa thay đổi cuộc chơi.
               </p>
 
-              <div className="my-6 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
+              <div className="my-4 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
 
               <motion.div 
                 className="mb-4"
