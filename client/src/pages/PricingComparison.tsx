@@ -65,13 +65,11 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700">Giá cả</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">Miễn phí</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
-                  <p><span className="font-bold text-red-500">1.250.000 VND/tháng</span></p>
-                  <p>hoặc</p>
+                 
                   <p><span className="font-bold text-red-500">15.000.000 VND/năm</span></p>
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
-                  <p><span className="font-bold text-red-500">50 USD/tháng</span></p>
-                  <p>hoặc</p>
+                  
                   <p><span className="font-bold text-red-500">600 USD/năm</span></p>
                 </td>
               </tr>
@@ -171,8 +169,8 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700">Chi phí cho 1 lượt trò chuyện cùng đối tác</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">250.000 VND/lượt (≈100 credits = 10 USD)</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
-                  <span className="text-white-500">Tặng 10 lượt kết nối
-                  <p>Hạn sử dụng/tháng</p>
+                  <span className="text-white-500">Được 10 kết nối mới mỗi tháng
+                  
                   <p>Không áp dụng cộng dồn	</p></span>
                 </td>
               </tr>
