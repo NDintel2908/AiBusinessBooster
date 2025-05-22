@@ -102,7 +102,7 @@ export default function HeroSection() {
               <GradientButton 
                 size="lg" 
                 animate 
-                className="w-full sm:w-auto hover:shadow-[0_0_20px_rgba(0,239,255,0.5)] transition-shadow duration-300"
+                className="w-full sm:w-auto hover:shadow-[0_0_20px_rgba(0,239,255,0.5)] transition-shadow duration-300 text-black"
               >
                 Bắt Đầu Ngay
               </GradientButton>

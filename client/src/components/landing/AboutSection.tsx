@@ -120,27 +120,27 @@ export default function AboutSection() {
                 <img 
                   src={TP}
                   alt="Tech Partner"
-                  className="h-[70px] object-contain filter brightness-100"
+                  className="h-[90px] object-contain filter brightness-100"
                 />
-                <p className="mt-3 text-gray-400 text-center font-primary text-sm">Đối tác công nghệ</p>
+                <p className="mt-3 text-gray-400 text-center font-primary text-base">Đối tác công nghệ</p>
               </div>
 
               <div className="flex flex-col items-center">
                 <img 
                   src={BP}
                   alt="Business Partner"
-                  className="h-[70px] object-contain filter brightness-100"
+                  className="h-[90px] object-contain filter brightness-100"
                 />
-                <p className="mt-3 text-gray-400 text-center font-primary text-sm">Đối tác thị trường</p>
+                <p className="mt-3 text-gray-400 text-center font-primary text-base">Đối tác thị trường</p>
               </div>
 
               <div className="flex flex-col items-center">
                 <img 
                   src={DP}
                   alt="Development Partner"
-                  className="h-[70px] object-contain filter brightness-100"
+                  className="h-[90px] object-contain filter brightness-100"
                 />
-                <p className="mt-3 text-gray-400 text-center font-primary text-sm">Đối tác phát triển</p>
+                <p className="mt-3 text-gray-400 text-center font-primary text-base">Đối tác phát triển</p>
               </div>
             </div>
           </motion.div>
