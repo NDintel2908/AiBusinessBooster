@@ -32,7 +32,8 @@ function PricingPlan({
   isPopular = false, 
   index,
   ctaText = "Trải nghiệm",
-  ctaLink = "https://bcp.global/sign-up"
+  ctaLink = "https://bcp.global/sign-up",
+  buttonTextClassName = ""
 }: PricingPlanProps) {
   return (
     <motion.div
@@ -97,7 +98,7 @@ function PricingPlan({
         <div className="mt-auto pt-6">
           <a href={ctaLink} target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton 
-              className={`w-full font-primary ${isPopular ? 'text-white' : ''}`}
+              className={`w-full font-primary ${buttonTextClassName || (isPopular ? 'text-white' : '')}`}
               variant={isPopular ? "primary" : "outline"}
               animate={isPopular}
             >
@@ -152,7 +153,8 @@ export default function PricingSection() {
       ],
       isPopular: true,
       ctaText: "Nâng cấp ngay",
-      ctaLink: "https://bcp.global/credit"
+      ctaLink: "https://bcp.global/credit",
+      buttonTextClassName: "text-black"
     },
     {
       name: "Lượt tìm kiếm Đối tác mới",
@@ -191,7 +193,7 @@ export default function PricingSection() {
             visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
           }}
         >
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-bright-teal/20 border border-bright-teal/40 mb-6">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-bright-teal/20 border border-bright-teal/40 mb-3">
             <span className="text-base md:text-lg text-bright-teal font-medium">Chính sách giá</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
