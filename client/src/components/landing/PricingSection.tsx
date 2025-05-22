@@ -192,7 +192,7 @@ export default function PricingSection() {
           }}
         >
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-bright-teal/20 border border-bright-teal/40 mb-6">
-            <span className="text-base md:text-lg text-bright-teal font-medium">Pricing Plans</span>
+            <span className="text-base md:text-lg text-bright-teal font-medium">Chính sách giá</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">
