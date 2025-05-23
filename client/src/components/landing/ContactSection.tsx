@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useForm, ValidationError } from '@formspree/react';
 import { GlassCard } from "@/components/ui/glass-card";
 import { useToast } from "@/hooks/use-toast";
+import { GradientButton } from "@/components/ui/gradient-button";
 
 export default function ContactSection() {
   const { toast } = useToast();
@@ -114,13 +115,15 @@ export default function ContactSection() {
                     <ValidationError prefix="Requirements" field="requirements" errors={state.errors}/>
                   </div>
 
-                  <button
+                  <GradientButton
                     type="submit"
                     disabled={state.submitting}
-                    className="w-full py-4 px-6 bg-gradient-to-r from-neon-blue to-electric-purple text-white font-primary text-lg font-semibold rounded-lg hover:scale-[1.02] hover:shadow-lg hover:shadow-neon-blue/50 transform transition-all duration-300 disabled:opacity-50 disabled:hover:scale-100 disabled:hover:shadow-none animate-glow"
+                    className="w-full font-semibold"
+                    size="lg"
+                    animate={!state.submitting}
                   >
                     {state.submitting ? "Đang gửi..." : "Gửi yêu cầu"}
-                  </button>
+                  </GradientButton>
                 </form>
               )}
             </GlassCard>
