@@ -38,9 +38,7 @@ const ChallengeCard = ({ icon, title, description, delay }: ChallengeCardProps) 
     >
       <GlassCard className="rounded-xl p-6" hoverEffect>
         <div className="flex items-center mb-6">
-          <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-neon-blue to-electric-purple flex items-center justify-center">
-            {icon}
-          </div>
+          {icon}
           <h3 className="text-xl font-heading font-semibold ml-4 text-white">{title}</h3>
         </div>
         <p className="text-gray-400 font-primary">{description}</p>
@@ -52,27 +50,33 @@ const ChallengeCard = ({ icon, title, description, delay }: ChallengeCardProps) 
 const challenges = [
   {
     icon: (
-      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-      </svg>
+      <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-red-500/90 to-orange-500/90 flex items-center justify-center">
+        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
     ),
     title: "Chi phí bỏ ra cao mà không ra",
     description: "Các phương pháp truyền thống như thuê đội nghiên cứu thị trường, tham gia hội chợ, chạy quảng cáo tốn kém mà không hiệu quả."
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-      </svg>
+      <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-amber-500/90 to-yellow-500/90 flex items-center justify-center">
+        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
     ),
     title: "Mất quá nhiều thời gian để xác lập một đối tác",
     description: "Việc kết nối và phát triển đối tác thủ công có thể mất nhiều tháng, làm chậm cơ hội tăng trưởng và thâm nhập thị trường."
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-      </svg>
+      <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-blue-500/90 to-cyan-500/90 flex items-center justify-center">
+        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
     ),
     title: "Có đối tác, khách hàng nhưng không tin cậy",
     description: "Thiếu thông tin đáng tin cậy khiến việc xác minh độ tin cậy và khả năng tương thích của đối tác tiềm năng trở nên khó khăn."
