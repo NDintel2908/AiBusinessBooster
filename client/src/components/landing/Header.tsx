@@ -105,7 +105,7 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden lg:block">
           <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
-            <GradientButton className="cta-button text-black">Bắt đầu ngay</GradientButton>
+            <GradientButton size="md" className="font-semibold">Bắt đầu ngay</GradientButton>
           </a>
         </div>
         </div>
@@ -148,11 +148,15 @@ export default function Header() {
             Về chúng tôi
           </a>
           <a 
-            href="#contact" 
-            className="px-5 py-2 rounded-md bg-gradient-to-r from-neon-blue to-electric-purple text-black font-medium text-center cta-button font-primary"
+            href="https://bcp.global/sign-up" 
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="block"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Bắt đầu ngay
+            <GradientButton className="w-full font-semibold">
+              Bắt đầu ngay
+            </GradientButton>
           </a>
         </nav>
       </div>

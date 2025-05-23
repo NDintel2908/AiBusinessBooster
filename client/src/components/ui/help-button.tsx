@@ -1,6 +1,7 @@
 import { Button } from "./button";
 import { Headphones } from "lucide-react";
 import { motion } from "framer-motion";
+import { GradientButton } from "./gradient-button";
 
 export function HelpButton() {
   return (
@@ -11,14 +12,16 @@ export function HelpButton() {
       whileHover={{ scale: 1.05 }}
       className="fixed bottom-6 right-6 z-50"
     >
-      <Button
+      <GradientButton
         onClick={() => window.open('https://zalo.me/3297451762229454190', '_blank')}
-        className="h-10 px-4 rounded-full bg-[#8BB4FB]/70 hover:bg-[#8BB4FB]/90 text-white transition-all duration-300 flex items-center gap-2 group shadow-lg hover:shadow-[#8BB4FB]/30 backdrop-blur-sm"
+        className="rounded-full font-semibold px-4 py-2 flex items-center gap-2"
+        size="sm"
+        variant="primary"
         aria-label="Get Help"
       >
         <Headphones className="h-4 w-4" />
-        <span className="text-sm font-medium">Help</span>
-      </Button>
+        <span>Help</span>
+      </GradientButton>
     </motion.div>
   );
 }

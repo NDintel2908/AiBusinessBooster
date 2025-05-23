@@ -32,8 +32,7 @@ function PricingPlan({
   isPopular = false, 
   index,
   ctaText = "Trải nghiệm",
-  ctaLink = "https://bcp.global/sign-up",
-  buttonTextClassName = ""
+  ctaLink = "https://bcp.global/sign-up"
 }: PricingPlanProps) {
   return (
     <motion.div
@@ -98,7 +97,7 @@ function PricingPlan({
         <div className="mt-auto pt-6">
           <a href={ctaLink} target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton 
-              className={`w-full font-primary ${buttonTextClassName || (isPopular ? 'text-white' : '')}`}
+              className="w-full font-semibold"
               variant={isPopular ? "primary" : "outline"}
               animate={isPopular}
             >
