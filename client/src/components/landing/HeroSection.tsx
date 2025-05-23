@@ -82,7 +82,7 @@ export default function HeroSection() {
 
           <motion.h1 
             variants={itemVariants}
-            className="text-3xl md:text-5xl font-heading font-bold leading-relaxed text-white bg-clip-text"
+            className="text-3xl md:text-5xl font-heading font-bold leading-loose text-white bg-clip-text"
           >
             MỞ RỘNG TỪNG ĐỐI TÁC, KHÁCH HÀNG B2B VỚI AI MATCHING AGENT
           </motion.h1>
