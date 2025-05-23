@@ -101,8 +101,8 @@ export default function HeroSection() {
             <a href="https://bcp.global/sign-up" target="_blank" rel="noopener noreferrer">
               <GradientButton 
                 size="lg" 
-                animate 
-                className="w-full sm:w-auto hover:shadow-[0_0_20px_rgba(0,239,255,0.5)] transition-shadow duration-300 text-black"
+                animate
+                className="w-full sm:w-auto font-semibold"
               >
                 Bắt Đầu Ngay
               </GradientButton>
@@ -110,7 +110,7 @@ export default function HeroSection() {
             <GradientButton 
               size="lg" 
               variant="outline" 
-              className="w-full sm:w-auto hover:shadow-[0_0_20px_rgba(188,19,254,0.5)] transition-shadow duration-300"
+              className="w-full sm:w-auto font-semibold"
               onClick={() => {
                 document.getElementById('contact')?.scrollIntoView({ 
                   behavior: 'smooth',
