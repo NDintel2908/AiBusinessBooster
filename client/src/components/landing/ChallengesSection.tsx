@@ -20,32 +20,32 @@ export default function ChallengesSection() {
   const comparisonData = [
     {
       traditional: {
-        title: "Chi phí cao, hiệu quả thấp",
-        description: "Thuê đội nghiên cứu thị trường, tham gia hội chợ, chạy quảng cáo tốn kém mà không đảm bảo kết quả"
+        title: "Đầu tư cao - Hiệu quả thấp",
+        description: "Quy trình thủ công, sàng lọc mất thời gian, kéo dài chu kỳ hợp tác"
       },
       bcp: {
-        title: "Tiết kiệm chi phí đáng kể",
+        title: "Đầu tư thông minh - Lợi nhuận vượt trội",
         description: "AI Matching Agent giúp tối ưu hóa chi phí, chỉ trả tiền cho kết nối thành công"
       }
     },
     {
       traditional: {
         title: "Mất nhiều thời gian",
-        description: "Quá trình kết nối và phát triển đối tác thủ công có thể kéo dài nhiều tháng"
+        description: "Quy trình thủ công, sàng lọc mất thời gian, kéo dài chu kỳ hợp tác"
       },
       bcp: {
         title: "Kết nối tức thì",
-        description: "Thuật toán AI tìm kiếm và kết nối đối tác phù hợp trong thời gian thực"
+        description: "AI tìm kiếm, bạn chỉ việc lựa chọn và kết nối"
       }
     },
     {
       traditional: {
         title: "Thiếu độ tin cậy",
-        description: "Khó khăn trong việc xác minh độ tin cậy và khả năng tương thích của đối tác tiềm năng"
+        description: "Có đối tác - khách hàng nhưng không tin cậy"
       },
       bcp: {
         title: "Xác thực đa cấp độ",
-        description: "Hệ thống xác minh toàn diện đảm bảo độ tin cậy và minh bạch trong mọi giao dịch"
+        description: "AI sàng lọc kỹ lưỡng, đảm bảo uy tín từng mối quan hệ"
       }
     }
   ];
@@ -78,7 +78,7 @@ export default function ChallengesSection() {
             Phương pháp <span className="text-red-400 font-bold">truyền thống</span> vs <span className="text-blue-400 font-bold">BCP.Global</span>
           </h2>
           <p className="text-gray-300 font-primary">
-            So sánh rõ ràng giữa các thách thức của phương pháp truyền thống và giải pháp hiện đại từ BCP.Global
+            Việc kết nối cá nhân qua mạng xã hội ngày càng dễ dàng, NHƯNG việc kết nối giữa Doanh nghiệp với Doanh nghiệp (B2B) vẫn rất tốn kém, mất nhiều thời gian và thiếu tin cậy.	
           </p>
         </motion.div>
         
