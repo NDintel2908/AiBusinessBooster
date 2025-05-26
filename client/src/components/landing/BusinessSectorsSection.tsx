@@ -18,154 +18,154 @@ import { GlassCard } from "@/components/ui/glass-card";
 const businessData = [
   {
     groupId: "manufacturing",
-    groupTitle: "Sản xuất & Chế tạo",
+    groupTitle: "Nhóm A - cung cấp dịch vụ B2B chuyên nghiệp (Professional services):",
     groupColor: "from-blue-500 to-cyan-500",
     sectors: [
       { 
-        name: "Sản xuất thiết bị điện tử", 
-        description: "Sản xuất các thiết bị điện tử tiêu dùng, linh kiện và phụ tùng công nghiệp",
-        icon: "📱"
+        name: "Phát triển gia công phần mềm CNTT, AI và IOT", 
+        description: "Phát triển ứng dụng, hệ thống phần mềm, giải pháp AI và thiết bị IoT thông minh",
+        icon: "💻"
       },
       { 
-        name: "Công nghiệp ô tô", 
-        description: "Sản xuất và lắp ráp xe ô tô, xe máy và phụ tùng",
-        icon: "🚗"
+        name: "Tư vấn kế toán, tài chính, pháp lý, bảo hiểm", 
+        description: "Cung cấp dịch vụ tư vấn chuyên nghiệp về tài chính, kế toán, pháp lý và bảo hiểm",
+        icon: "📊"
       },
       { 
-        name: "Dệt may & Thời trang", 
-        description: "Sản xuất vải, may mặc và thiết kế thời trang",
-        icon: "👔"
+        name: "Dịch vụ nhân sự, tuyển dụng và đào tạo", 
+        description: "Tư vấn nhân sự, tuyển dụng nhân tài và phát triển chương trình đào tạo",
+        icon: "👥"
       },
       { 
-        name: "Thực phẩm & Đồ uống", 
-        description: "Chế biến thực phẩm, sản xuất đồ uống và nguyên liệu",
-        icon: "🍔"
+        name: "Agency quảng cáo, marketing", 
+        description: "Thiết kế chiến lược marketing, quảng cáo và xây dựng thương hiệu",
+        icon: "📢"
       },
       { 
-        name: "Dược phẩm", 
-        description: "Nghiên cứu, phát triển và sản xuất thuốc, vaccine",
-        icon: "💊"
+        name: "Dịch vụ Phân phối, thương mại nội địa", 
+        description: "Phân phối sản phẩm, kinh doanh bán lẻ và thương mại trong nước",
+        icon: "🏪"
       },
       { 
-        name: "Hóa chất & Vật liệu", 
-        description: "Sản xuất hóa chất công nghiệp, vật liệu xây dựng",
-        icon: "🧪"
+        name: "Dịch vụ vận chuyển, logistic, phân phối và lưu trữ hàng hoá", 
+        description: "Quản lý chuỗi cung ứng, vận chuyển và kho bãi logistics chuyên nghiệp",
+        icon: "🚛"
+      },
+      { 
+        name: "Thiết kế kiến trúc, nội thất văn phòng", 
+        description: "Thiết kế kiến trúc, quy hoạch không gian và nội thất chuyên nghiệp",
+        icon: "🏗️"
+      },
+      { 
+        name: "Kinh doanh bất động sản văn phòng, thương mại, bán lẻ, khu công nghiệp", 
+        description: "Đầu tư, phát triển và kinh doanh các dự án bất động sản thương mại và công nghiệp",
+        icon: "🏢"
+      },
+      { 
+        name: "Nhóm dịch vụ xuất khẩu, phát triển thị trường xuyên quốc gia", 
+        description: "Hỗ trợ xuất khẩu, mở rộng thị trường quốc tế và thương mại xuyên biên giới",
+        icon: "🌍"
       }
     ]
   },
   {
     groupId: "technology",
-    groupTitle: "Công nghệ & Dịch vụ số",
+    groupTitle: "Nhóm B - cung cấp nguyên vật liệu, hàng hóa cho doanh nghiệp sản xuất",
     groupColor: "from-purple-500 to-pink-500",
     sectors: [
       { 
-        name: "Phần mềm & CNTT", 
-        description: "Phát triển phần mềm, ứng dụng di động và giải pháp IT",
-        icon: "💻"
+        name: "Nông Nghiệp và Thủy Sản", 
+        description: "Cung cấp nguyên liệu thô như nông sản, thủy sản cho các doanh nghiệp chế biến thực phẩm",
+        icon: "🌾"
       },
       { 
-        name: "Thương mại điện tử", 
-        description: "Nền tảng bán hàng online, marketplace và logistics",
-        icon: "🛒"
+        name: "Thực Phẩm", 
+        description: "cung cấp nguyên liệu thực phẩm như dầu thực vật, gia vị cho các doanh nghiệp chế biến thực phẩm",
+        icon: "🍽️"
       },
       { 
-        name: "Fintech", 
-        description: "Công nghệ tài chính, thanh toán điện tử, blockchain",
-        icon: "💳"
+        name: "Dệt May", 
+        description: "Cung cấp nguyên liệu như sợi, vải cho các doanh nghiệp may mặc",
+        icon: "🧵"
       },
       { 
-        name: "Giáo dục trực tuyến", 
-        description: "Nền tảng học tập, khóa học online và edtech",
-        icon: "📚"
+        name: "Giấy", 
+        description: "Cung cấp nguyên liệu như bột giấy, giấy thô cho các doanh nghiệp sản xuất giấy và bao bì",
+        icon: "📄"
       },
       { 
-        name: "Gaming & Giải trí số", 
-        description: "Phát triển game, content digital và streaming",
-        icon: "🎮"
+        name: "Hóa Chất", 
+        description: "Cung cấp nguyên liệu hóa chất như nhựa nguyên sinh, hóa chất cơ bản cho các ngành công nghiệp khác",
+        icon: "🧪"
       },
       { 
-        name: "IoT & AI", 
-        description: "Internet of Things, trí tuệ nhân tạo và automation",
-        icon: "🤖"
+        name: "Vật Tư Xây Dựng", 
+        description: "Cung cấp nguyên liệu như xi măng, thép, gạch cho các công ty xây dựng",
+        icon: "🧱"
+      },
+      { 
+        name: "Khai Khoáng", 
+        description: "Cung cấp nguyên liệu thô như đá, cát, sỏi, quặng kim loại cho các ngành xây dựng và luyện kim",
+        icon: "⛏️"
       }
     ]
   },
   {
     groupId: "services",
-    groupTitle: "Dịch vụ & Thương mại",
+    groupTitle: "Nhóm C - Sản xuất, gia công cung cấp sản phẩm cho người dùng cuối",
     groupColor: "from-green-500 to-teal-500",
     sectors: [
       { 
-        name: "Bán lẻ & Phân phối", 
-        description: "Chuỗi cửa hàng, siêu thị và hệ thống phân phối",
-        icon: "🏪"
+        name: "Nhà Sản Xuất Thực Phẩm và Đồ Uống", 
+        description: "Chế biến và sản xuất các sản phẩm thực phẩm, đồ uống tiêu dùng phục vụ thị trường bán lẻ",
+        icon: "🥤"
       },
       { 
-        name: "Ngân hàng & Tài chính", 
-        description: "Dịch vụ ngân hàng, bảo hiểm và quản lý tài sản",
-        icon: "🏦"
+        name: "Nhà Sản Xuất Dệt May, sản phẩm thời trang", 
+        description: "Sản xuất quần áo, phụ kiện thời trang và các sản phẩm dệt may xuất khẩu",
+        icon: "👕"
       },
       { 
-        name: "Du lịch & Khách sạn", 
-        description: "Dịch vụ du lịch, khách sạn và nghỉ dưỡng",
-        icon: "🏨"
+        name: "Nhà Sản Xuất Hàng Tiêu Dùng", 
+        description: "Sản xuất các sản phẩm tiêu dùng thiết yếu như mỹ phẩm, đồ dùng gia đình, văn phòng phẩm",
+        icon: "🛍️"
       },
       { 
-        name: "Vận tải & Logistics", 
-        description: "Vận chuyển hàng hóa, logistics và supply chain",
-        icon: "🚛"
+        name: "Nhà Sản Xuất Điện tử, Thiết Bị Gia Dụng", 
+        description: "Sản xuất và lắp ráp các thiết bị điện tử, máy móc và đồ gia dụng hiện đại",
+        icon: "📱"
       },
       { 
-        name: "Y tế & Chăm sóc sức khỏe", 
-        description: "Bệnh viện, phòng khám và dịch vụ y tế",
-        icon: "🏥"
-      },
-      { 
-        name: "Tư vấn & Dịch vụ chuyên nghiệp", 
-        description: "Tư vấn quản lý, pháp lý và dịch vụ B2B",
-        icon: "💼"
+        name: "Nhà Sản Xuất Xe và Phụ Tùng", 
+        description: "Sản xuất và lắp ráp ô tô, xe máy cùng các linh kiện, phụ tùng thay thế",
+        icon: "🚗"
       }
     ]
   },
   {
     groupId: "infrastructure",
-    groupTitle: "Hạ tầng & Năng lượng",
+    groupTitle: "Nhóm D - Gia công linh Kiện - phụ Trợ công Nghiệp",
     groupColor: "from-orange-500 to-red-500",
     sectors: [
       { 
-        name: "Xây dựng & Bất động sản", 
-        description: "Phát triển dự án, xây dựng và quản lý bất động sản",
-        icon: "🏗️"
+        name: "Gia Công Linh Kiện Phụ Trợ Công Nghiệp", 
+        description: "Sản xuất các chi tiết, bộ phận được sử dụng trong các ngành công nghiệp khác nhau",
+        icon: "⚙️"
       },
       { 
-        name: "Năng lượng tái tạo", 
-        description: "Điện mặt trời, gió và các nguồn năng lượng xanh",
-        icon: "⚡"
+        name: "Gia Công Linh Kiện Ngành Bán Dẫn", 
+        description: "Sản xuất, gia công mạch tích hợp và transistor",
+        icon: "🔌"
       },
       { 
-        name: "Dầu khí & Khai thác", 
-        description: "Thăm dò, khai thác và chế biến dầu khí",
-        icon: "⛽"
+        name: "Gia Công Cơ Khí Chính Xác", 
+        description: "Tiện, phay CNC, gia công khuôn mẫu, phục vụ cho các ngành như ô tô, tự động hóa, và sản xuất máy móc.",
+        icon: "🔧"
       },
       { 
-        name: "Viễn thông", 
-        description: "Mạng di động, internet và hạ tầng viễn thông",
-        icon: "📡"
-      },
-      { 
-        name: "Nông nghiệp & Thủy sản", 
-        description: "Sản xuất nông sản, chăn nuôi và nuôi trồng thủy sản",
-        icon: "🌾"
-      },
-      { 
-        name: "Môi trường & Tái chế", 
-        description: "Xử lý chất thải, tái chế và bảo vệ môi trường",
-        icon: "♻️"
-      },
-      { 
-        name: "Hàng không & Vũ trụ", 
-        description: "Hàng không dân dụng, vận tải hàng không và công nghệ vũ trụ",
-        icon: "✈️"
+        name: "Sản Xuất và Cung Cấp Thiết Bị Chuyên Ngành", 
+        description: "Gia công, sản xuất và cung cấp thiết bị chuyên ngành cho các ngành thiết bị y tế, thiết bị tự động hóa, và các phụ tùng ô tô",
+        icon: "🏭"
       }
     ]
   }
@@ -270,66 +270,6 @@ export default function BusinessSectorsSection() {
           </Accordion>
         </motion.div>
 
-        {/* Icons Grid Section */}
-        <motion.div
-          className="max-w-6xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-        >
-          <h3 className="text-2xl font-heading font-bold text-white mb-8 text-center">
-            Biểu tượng ngành nghề
-          </h3>
-
-          <TooltipProvider>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
-              {allSectors.map((sector, index) => (
-                <motion.div
-                  key={sector.name}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                  onMouseEnter={() => setHoveredSector(sector.name)}
-                  onMouseLeave={() => setHoveredSector(null)}
-                >
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className={`
-                        flex flex-col items-center p-4 rounded-xl 
-                        bg-gray-800/30 border border-gray-700/50 
-                        hover:border-blue-400/50 hover:bg-gray-700/50
-                        transition-all duration-300 cursor-pointer
-                        ${hoveredSector === sector.name ? 'scale-105 shadow-lg shadow-blue-500/20' : ''}
-                      `}>
-                        <div className={`
-                          w-12 h-12 rounded-full bg-gradient-to-r ${sector.groupColor} 
-                          flex items-center justify-center mb-3
-                          text-2xl shadow-lg
-                        `}>
-                          {sector.icon}
-                        </div>
-                        <span className="text-xs font-medium text-gray-300 text-center leading-tight">
-                          {sector.name}
-                        </span>
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="max-w-xs p-3 bg-gray-900 border border-gray-700">
-                      <div className="space-y-2">
-                        <div className="font-semibold text-white">{sector.name}</div>
-                        <div className="text-sm text-gray-400">{sector.description}</div>
-                        <div className={`text-xs bg-gradient-to-r ${sector.groupColor} bg-clip-text text-transparent font-medium`}>
-                          {sector.groupTitle}
-                        </div>
-                      </div>
-                    </TooltipContent>
-                  </Tooltip>
-                </motion.div>
-              ))}
-            </div>
-          </TooltipProvider>
-        </motion.div>
 
         {/* Call to Action */}
         <motion.div
