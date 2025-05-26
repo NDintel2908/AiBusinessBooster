@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Header from "@/components/landing/Header";
 import HeroSection from "@/components/landing/HeroSection";
 import ChallengesSection from "@/components/landing/ChallengesSection";
+import BusinessSectorsSection from "@/components/landing/BusinessSectorsSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import ServiceSection from "@/components/landing/ServiceSection";
 import AboutSection from "@/components/landing/AboutSection";
@@ -24,11 +25,12 @@ export default function Home() {
       <main>
         <Suspense fallback={<div>Loading...</div>}>
           <HeroSection />
-          <ChallengesSection />
           <ServiceSection />
+          <ChallengesSection />
+          <BusinessSectorsSection />
           <FeaturesSection />
-          <AboutSection />
           <PricingSection />
+          <AboutSection />
           <FAQSection /> {/* Added FAQSection */}
           <ContactSection />
         </Suspense>
