@@ -75,7 +75,7 @@ export default function ChallengesSection() {
             <span className="text-base md:text-lg font-medium text-neon-blue font-primary">So sánh thị trường</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
-            Phương pháp <span className="text-red-400 font-bold">truyền thống</span> vs <span className="text-neon-blue font-bold">BCP.Global</span>
+            Phương pháp <span className="text-red-400 font-bold">truyền thống</span> vs <span className="text-blue-400 font-bold">BCP.Global</span>
           </h2>
           <p className="text-gray-300 font-primary">
             So sánh rõ ràng giữa các thách thức của phương pháp truyền thống và giải pháp hiện đại từ BCP.Global
