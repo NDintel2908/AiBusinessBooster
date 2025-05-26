@@ -61,6 +61,59 @@
   }
 }
 
+@keyframes pulse-glow {
+  0%, 100% { 
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes glow-intense {
+  0%, 100% { 
+    box-shadow: 0 0 15px currentColor, 0 0 30px currentColor;
+    opacity: 0.8;
+  }
+  50% { 
+    box-shadow: 0 0 25px currentColor, 0 0 50px currentColor;
+    opacity: 1;
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% { 
+    transform: translateY(0px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  50% { 
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes float-gentle-delayed {
+  0%, 100% { 
+    transform: translateY(0px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  50% { 
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes pulse-connection {
+  0%, 100% { 
+    opacity: 0.3;
+  }
+  50% { 
+    opacity: 0.8;
+  }
+}
+
 .animate-spin-slow {
   animation: spin-slow 8s linear infinite;
 }
@@ -73,8 +126,16 @@
   animation: pulse-slow 3s ease-in-out infinite;
 }
 
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
 .animate-glow {
   animation: glow 2s ease-in-out infinite;
+}
+
+.animate-glow-intense {
+  animation: glow-intense 2.5s ease-in-out infinite;
 }
 
 .animate-float {
@@ -83,6 +144,56 @@
 
 .animate-float-delayed {
   animation: float-delayed 3s ease-in-out infinite 1.5s;
+}
+
+.animate-float-gentle {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-float-gentle-delayed {
+  animation: float-gentle-delayed 4s ease-in-out infinite 2s;
+}
+
+.animate-pulse-connection {
+  animation: pulse-connection 3s ease-in-out infinite;
+}
+
+.ring-glow {
+  box-shadow: 
+    0 0 20px rgba(59, 130, 246, 0.4),
+    0 0 40px rgba(59, 130, 246, 0.3),
+    0 0 60px rgba(59, 130, 246, 0.2),
+    inset 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.pulse-outline {
+  animation: pulse-outline 2s ease-in-out infinite;
+}
+
+@keyframes pulse-outline {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(59, 130, 246, 0.4),
+      0 0 40px rgba(59, 130, 246, 0.3),
+      0 0 60px rgba(59, 130, 246, 0.2),
+      inset 0 0 20px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(59, 130, 246, 0.6),
+      0 0 60px rgba(59, 130, 246, 0.4),
+      0 0 90px rgba(59, 130, 246, 0.3),
+      inset 0 0 30px rgba(59, 130, 246, 0.2);
+  }
+}
+
+.icon-hover-effect {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.icon-hover-effect:hover {
+  filter: brightness(1.2) saturate(1.1);
 }
 
 @layer base {
@@ -195,6 +306,11 @@
     animation: accordionUp 200ms ease-out;
   }
   
+  /* Radial gradient utility */
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+
   /* Enhanced accordion item hover effect */
   .faq-accordion-item {
     position: relative;
