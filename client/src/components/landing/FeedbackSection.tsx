@@ -8,35 +8,51 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const feedbacks = [
   {
     id: 1,
-    quote: "BCP đã thay đổi hoàn toàn cách chúng tôi kết nối với đối tác. AI matching rất chính xác và tiết kiệm được 70% thời gian tìm kiếm.",
+    quote: "BCP đã thay đổi hoàn toàn cách chúng tôi kết nối với đối tác. AI matching rất chính xác.",
     author: "Nguyễn Văn A",
     position: "CEO",
     company: "TechViet Solutions",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
   },
   {
     id: 2,
-    quote: "Nền tảng này đã giúp chúng tôi mở rộng thị trường quốc tế một cách hiệu quả. Tính năng phân tích thị trường rất hữu ích.",
+    quote: "Nền tảng này đã giúp chúng tôi mở rộng thị trường quốc tế một cách hiệu quả.",
     author: "Trần Thị B",
     position: "Giám đốc Kinh doanh",
     company: "Global Trading Co.",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b1e0?w=150&h=150&fit=crop&crop=face"
+    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b1e0?w=80&h=80&fit=crop&crop=face"
   },
   {
     id: 3,
-    quote: "AI của BCP không chỉ tìm đối tác mà còn đánh giá độ tin cậy. Chúng tôi đã tìm được nhiều đối tác chất lượng cao.",
+    quote: "AI của BCP không chỉ tìm đối tác mà còn đánh giá độ tin cậy rất tốt.",
     author: "Lê Minh C",
     position: "Founder",
     company: "Innovation Hub",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
   },
   {
     id: 4,
-    quote: "Giao diện thân thiện, dễ sử dụng và hỗ trợ khách hàng tuyệt vời. BCP thực sự hiểu được nhu cầu của doanh nghiệp.",
+    quote: "Giao diện thân thiện, dễ sử dụng và hỗ trợ khách hàng tuyệt vời.",
     author: "Phạm Thị D",
     position: "Marketing Director",
     company: "Creative Agency",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
+  },
+  {
+    id: 5,
+    quote: "Tiết kiệm được 70% thời gian tìm kiếm đối tác so với phương pháp truyền thống.",
+    author: "Hoàng Văn E",
+    position: "CTO",
+    company: "StartupVN",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face"
+  },
+  {
+    id: 6,
+    quote: "Tính năng phân tích thị trường của BCP rất chi tiết và hữu ích.",
+    author: "Nguyễn Thị F",
+    position: "Business Analyst",
+    company: "ConsultingPro",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=face"
   }
 ];
 
@@ -44,8 +60,16 @@ export default function FeedbackSection() {
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentPage, setCurrentPage] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  const cardsPerPage = {
+    desktop: 3,
+    tablet: 2,
+    mobile: 1
+  };
+
+  const totalPages = Math.ceil(feedbacks.length / cardsPerPage.desktop);
 
   useEffect(() => {
     if (isInView) {
@@ -57,25 +81,30 @@ export default function FeedbackSection() {
   useEffect(() => {
     if (isAutoPlaying) {
       const interval = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % feedbacks.length);
-      }, 5000);
+        setCurrentPage((prev) => (prev + 1) % totalPages);
+      }, 4000);
       return () => clearInterval(interval);
     }
-  }, [isAutoPlaying]);
+  }, [isAutoPlaying, totalPages]);
 
-  const nextSlide = () => {
+  const nextPage = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prev) => (prev + 1) % feedbacks.length);
+    setCurrentPage((prev) => (prev + 1) % totalPages);
   };
 
-  const prevSlide = () => {
+  const prevPage = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prev) => (prev - 1 + feedbacks.length) % feedbacks.length);
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
   };
 
-  const goToSlide = (index: number) => {
+  const goToPage = (page: number) => {
     setIsAutoPlaying(false);
-    setCurrentIndex(index);
+    setCurrentPage(page);
+  };
+
+  const getCurrentCards = () => {
+    const startIndex = currentPage * cardsPerPage.desktop;
+    return feedbacks.slice(startIndex, startIndex + cardsPerPage.desktop);
   };
 
   return (
@@ -111,94 +140,102 @@ export default function FeedbackSection() {
           </p>
         </motion.div>
 
-        {/* Slider Container */}
+        {/* Cards Grid Container */}
         <motion.div
-          className="relative max-w-6xl mx-auto"
+          className="relative max-w-7xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          {/* Main Slider */}
-          <div className="relative overflow-hidden rounded-2xl">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {feedbacks.map((feedback, index) => (
-                <div key={feedback.id} className="w-full flex-shrink-0 px-4">
-                  <GlassCard className="p-8 md:p-12 bg-gradient-to-br from-gray-900/80 to-gray-800/60 border-gray-700/50">
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-                      {/* Quote Section */}
-                      <div className="lg:col-span-2">
-                        <div className="mb-6">
-                          <svg className="w-12 h-12 text-electric-purple mb-4" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-                          </svg>
-                        </div>
-                        <blockquote className="text-lg md:text-xl text-white leading-relaxed mb-6">
-                          "{feedback.quote}"
-                        </blockquote>
-                        <div className="flex items-center space-x-4">
-                          <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-electric-purple/30">
-                            <img 
-                              src={feedback.avatar} 
-                              alt={feedback.author}
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                          <div>
-                            <h4 className="text-white font-semibold">{feedback.author}</h4>
-                            <p className="text-electric-purple text-sm">{feedback.position}</p>
-                            <p className="text-gray-400 text-sm">{feedback.company}</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Company Logo/Visual Section */}
-                      <div className="lg:col-span-1 flex justify-center">
-                        <div className="w-32 h-32 rounded-full bg-gradient-to-br from-electric-purple/20 to-neon-blue/20 flex items-center justify-center border border-electric-purple/30">
-                          <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-electric-purple to-neon-blue">
-                            {feedback.company.split(' ').map(word => word[0]).join('')}
-                          </div>
-                        </div>
-                      </div>
+          {/* Grid Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {getCurrentCards().map((feedback, index) => (
+              <motion.div
+                key={feedback.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="h-full"
+              >
+                <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col group hover:scale-105">
+                  {/* Quote Icon */}
+                  <div className="flex justify-start mb-4">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-electric-purple to-neon-blue flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                      </svg>
                     </div>
-                  </GlassCard>
+                  </div>
+
+                  {/* Quote Content */}
+                  <blockquote className="text-gray-800 text-sm leading-relaxed mb-6 flex-1">
+                    "{feedback.quote}"
+                  </blockquote>
+
+                  {/* Author Info */}
+                  <div className="flex items-center space-x-3 mt-auto">
+                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-electric-purple/20">
+                      <img 
+                        src={feedback.avatar} 
+                        alt={feedback.author}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-gray-900 font-semibold text-sm">{feedback.author}</h4>
+                      <p className="text-electric-purple text-xs font-medium">{feedback.position}</p>
+                      <p className="text-gray-600 text-xs">{feedback.company}</p>
+                    </div>
+                  </div>
                 </div>
-              ))}
-            </div>
+              </motion.div>
+            ))}
           </div>
 
           {/* Navigation Arrows */}
           <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-gray-800/80 border border-gray-600/50 flex items-center justify-center text-white hover:bg-electric-purple/20 hover:border-electric-purple/50 transition-all duration-300 backdrop-blur-sm"
+            onClick={prevPage}
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/20 hover:border-electric-purple/50 transition-all duration-300 z-10"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-5 h-5" />
           </button>
           
           <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-gray-800/80 border border-gray-600/50 flex items-center justify-center text-white hover:bg-electric-purple/20 hover:border-electric-purple/50 transition-all duration-300 backdrop-blur-sm"
+            onClick={nextPage}
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/20 hover:border-electric-purple/50 transition-all duration-300 z-10"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-5 h-5" />
           </button>
 
           {/* Dots Indicator */}
           <div className="flex justify-center mt-8 space-x-2">
-            {feedbacks.map((_, index) => (
+            {Array.from({ length: totalPages }).map((_, index) => (
               <button
                 key={index}
-                onClick={() => goToSlide(index)}
+                onClick={() => goToPage(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'bg-electric-purple shadow-lg shadow-electric-purple/50' 
-                    : 'bg-gray-600 hover:bg-gray-500'
+                  index === currentPage 
+                    ? 'bg-electric-purple shadow-lg shadow-electric-purple/50 scale-110' 
+                    : 'bg-gray-400 hover:bg-gray-300'
                 }`}
               />
             ))}
           </div>
         </motion.div>
+
+        {/* Mobile-specific adjustments */}
+        <style jsx>{`
+          @media (max-width: 768px) {
+            .grid {
+              grid-template-columns: 1fr;
+            }
+          }
+          @media (min-width: 769px) and (max-width: 1024px) {
+            .grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+        `}</style>
       </div>
     </section>
   );
