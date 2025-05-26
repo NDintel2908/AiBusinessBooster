@@ -25,14 +25,13 @@ export default function ServiceSection() {
             className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              Đánh giá toàn diện
+              
+              Chủ động thông qua công nghệ AI
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              <li>• Đa dạng các bài đánh giá: trắc nghiệm, khả năng nói tròi, tố chất, phong cách lãnh đạo, mức độ phù hợp công việc, phổ họp vận hóc, phân hỏi 360, đội ngũ kế cận.</li>
-              <li>• Đánh giá trước khi tuyển dụng, onboarding, đào tạo, phát triển lãnh đạo, bổ nhiệm.</li>
+              <li>• Quảng cáo chính mình;</li>
+              <li>• Tìm & lựa chọn đối tác phù hợp;</li>
+              <li>• Chọn thị trường mở rộng.</li>
             </ul>
           </motion.div>
 
@@ -45,17 +44,12 @@ export default function ServiceSection() {
             className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
-              </svg>
-              Giám sát gian lận
+              
+              Kết nối với người ra quyết định cuối cùng
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              <li>• Xác thực không gian thi cử thỏa mãn đinh gió với sự giám sát thông qua màn hình và webcam.</li>
-              <li>• Ngăn chặn sao chép vần bản bằng cách vô hiệu hóa chức năng sao chép vần bản khi đang giá, ứng viên không thể sao chép về chia sẻ với người khác.</li>
-              <li>• Tính năng giám sát thi có theo dõi hoạt động của ứng viên khi thoát khỏi màn hình đánh giá.</li>
-              <li>• Cá nhân hóa bộ câu hỏi đánh giá giúp giảm thiểu khả năng sao chép giữa các ứng viên.</li>
+              <li>• Tiếp cận ĐÚNG NGƯỜI, ĐÚNG NHU CẦU – giúp rút ngắn thời gian đàm phán và nâng cao hiệu quả hợp tác.
+</li>
             </ul>
           </motion.div>
 
@@ -81,17 +75,13 @@ export default function ServiceSection() {
             className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/>
-              </svg>
-              Tùy biến linh hoạt
+              
+              Trợ lý AI kết nối đa năng
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              <li>• Tùy biến giao diện, thay đổi mẫu sắc theo nhận diện thương hiệu của công ty.</li>
-              <li>• Đa ngôn ngữ - đa thiết bị</li>
-              <li>• Truy cập mọi lúc, mọi nơi.</li>
-              <li>• Mở phòng tình huống, gamified như trong môi trường làm việc thật.</li>
-              <li>• Tham chiếu điểm chuẩn thị trường, ngành, vị trí công việc của hơn 24 tính vực ngành nghề.</li>
+              <li>• Thu thập đầy đủ thông tin chính xác & cung cấp thêm market size, cơ hội thị trường;</li>
+              <li>• AI đề xuất các dữ liệu về quy mô thị trường, phân tích cơ hội và cung cấp đầy đủ thông tin đối tác – hỗ trợ lãnh đạo ra quyết định nhanh chóng và chính xác.
+</li>
             </ul>
           </motion.div>
 
@@ -104,15 +94,11 @@ export default function ServiceSection() {
             className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-              </svg>
-              Tự động hóa, quy trình đánh giá
+             
+              Cam kết bảo mật
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              <li>• Tự động hóa quy trình đánh giá từ việc tạo đánh giá cho đến thư mời, lúc chọ kết quả.</li>
-              <li>• Đảm bảo tính bảo mật cho các bên tham gia đánh giá.</li>
-              <li>• Thực hiện đánh giá hàng chức nghìn lượt ứng viên, nhân viên cùng lúc.</li>
+              <li>• Toàn bộ dữ liệu và trao đổi đều được mã hóa, tuân thủ các tiêu chuẩn bảo mật quốc tế – bảo vệ quyền riêng tư và lợi ích kinh doanh của bạn.</li>
             </ul>
           </motion.div>
         </div>
@@ -129,14 +115,13 @@ export default function ServiceSection() {
               className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Đánh giá toàn diện
+               
+                Chủ động thông qua công nghệ AI
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                <li>• Đa dạng các bài đánh giá: trắc nghiệm, khả năng nói tròi, tố chất, phong cách lãnh đạo, mức độ phù hợp công việc, phổ họp vận hóc, phân hỏi 360, đội ngũ kế cận.</li>
-                <li>• Đánh giá trước khi tuyển dụng, onboarding, đào tạo, phát triển lãnh đạo, bổ nhiệm.</li>
+                <li>• Quảng cáo chính mình;</li>
+                <li>• Tìm & lựa chọn đối tác phù hợp;</li>
+                <li>• Chọn thị trường mở rộng.</li>
               </ul>
             </motion.div>
 
@@ -148,17 +133,13 @@ export default function ServiceSection() {
               className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/>
-                </svg>
-                Tùy biến linh hoạt
+                
+                Trợ lý AI kết nối đa năng
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                <li>• Tùy biến giao diện, thay đổi mẫu sắc theo nhận diện thương hiệu của công ty.</li>
-                <li>• Đa ngôn ngữ - đa thiết bị</li>
-                <li>• Truy cập mọi lúc, mọi nơi.</li>
-                <li>• Mở phòng tình huống, gamified như trong môi trường làm việc thật.</li>
-                <li>• Tham chiếu điểm chuẩn thị trường, ngành, vị trí công việc của hơn 24 tính vực ngành nghề.</li>
+                <li>• Thu thập đầy đủ thông tin chính xác & cung cấp thêm market size, cơ hội thị trường;</li>
+                <li>• AI đề xuất các dữ liệu về quy mô thị trường, phân tích cơ hội và cung cấp đầy đủ thông tin đối tác – hỗ trợ lãnh đạo ra quyết định nhanh chóng và chính xác.
+</li>
               </ul>
             </motion.div>
           </div>
@@ -290,17 +271,12 @@ export default function ServiceSection() {
               className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                  <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
-                </svg>
-                Giám sát gian lận
+                
+                Kết nối với người ra quyết định
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                <li>• Xác thực không gian thi cử thỏa mãn đinh gió với sự giám sát thông qua màn hình và webcam.</li>
-                <li>• Ngăn chặn sao chép vần bản bằng cách vô hiệu hóa chức năng sao chép vần bản khi đang giá, ứng viên không thể sao chép về chia sẻ với người khác.</li>
-                <li>• Tính năng giám sát thi có theo dõi hoạt động của ứng viên khi thoát khỏi màn hình đánh giá.</li>
-                <li>• Cá nhân hóa bộ câu hỏi đánh giá giúp giảm thiểu khả năng sao chép giữa các ứng viên.</li>
+                <li>• Tiếp cận ĐÚNG NGƯỜI, ĐÚNG NHU CẦU – giúp rút ngắn thời gian đàm phán và nâng cao hiệu quả hợp tác.
+</li>
               </ul>
             </motion.div>
 
@@ -312,15 +288,11 @@ export default function ServiceSection() {
               className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                </svg>
-                Tự động hóa, quy trình đánh giá
+                
+                Cam kết bảo mật
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                <li>• Tự động hóa quy trình đánh giá từ việc tạo đánh giá cho đến thư mời, lúc chọ kết quả.</li>
-                <li>• Đảm bảo tính bảo mật cho các bên tham gia đánh giá.</li>
-                <li>• Thực hiện đánh giá hàng chức nghìn lượt ứng viên, nhân viên cùng lúc.</li>
+                <li>• Toàn bộ dữ liệu và trao đổi đều được mã hóa, tuân thủ các tiêu chuẩn bảo mật quốc tế – bảo vệ quyền riêng tư và lợi ích kinh doanh của bạn.</li>
               </ul>
             </motion.div>
           </div>
