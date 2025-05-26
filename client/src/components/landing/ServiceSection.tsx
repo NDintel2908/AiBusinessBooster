@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import BCPAILogo from './BCPAI.png';
 
 export default function ServiceSection() {
   return (
@@ -56,10 +57,7 @@ export default function ServiceSection() {
           {/* Center Logo for Mobile */}
           <div className="flex flex-col items-center my-8">
             <div className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400 shadow-2xl shadow-blue-500/20 relative">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white mb-1">JobTest</div>
-                <div className="text-xs text-blue-200">POWERED BY AI</div>
-              </div>
+              <img src={BCPAILogo} alt="BCP AI Logo" className="w-32 h-32 object-contain" />
               {/* Orbital rings */}
               <div className="absolute inset-0 border-2 border-blue-400/30 rounded-full animate-pulse"></div>
               <div className="absolute -inset-4 border border-blue-400/20 rounded-full"></div>
@@ -159,10 +157,8 @@ export default function ServiceSection() {
 
               {/* Central Logo Circle */}
               <div className="relative w-60 h-60 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400/60 shadow-2xl shadow-blue-500/40 animate-spin-slow ring-glow pulse-outline z-10">
-                <div className="text-center relative z-20">
-                  <div className="text-3xl font-bold text-white mb-1 drop-shadow-lg">JobTest</div>
-                  <div className="text-sm text-blue-200 drop-shadow-md">POWERED BY AI</div>
-                  <div className="text-xs text-blue-300 drop-shadow-sm">GENERATIVE AI TALENT</div>
+                <div className="relative z-20">
+                  <img src={BCPAILogo} alt="BCP AI Logo" className="w-48 h-48 object-contain drop-shadow-lg" />
                 </div>
                 
                 {/* Rotating orbital light particles */}
