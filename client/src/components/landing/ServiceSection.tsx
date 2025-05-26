@@ -30,6 +30,7 @@ export default function ServiceSection() {
               Chủ động thông qua công nghệ AI
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
+              
               <li>• Quảng cáo chính mình;</li>
               <li>• Tìm & lựa chọn đối tác phù hợp;</li>
               <li>• Chọn thị trường mở rộng.</li>
@@ -117,6 +118,7 @@ export default function ServiceSection() {
                 Chủ động thông qua công nghệ AI
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
+                
                 <li>• Quảng cáo chính mình;</li>
                 <li>• Tìm & lựa chọn đối tác phù hợp;</li>
                 <li>• Chọn thị trường mở rộng.</li>
