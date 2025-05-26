@@ -91,7 +91,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-primary"
           >
-            BCP - Business Connecting Platform là một nền tảng kết nối MUA - BÁN - HỢP TÁC hàng đầu ứng dụng AI, cho phép tìm kiếm - kết nối - giao dịch theo thời gian thực & tiết kiệm chi phí thông qua các kết nối thông minh.
+            BCP - Business Connecting Platform là một nền tảng kết nối MUA - BÁN - HỢP TÁC toàn cầu ứng dụng công nghệ AI, cho phép TÌM KIẾM - KẾT NỐI - GIAO DỊCH theo thời gian thực & tiết kiệm chi phí thông qua các gợi ý kết nối thông minh.	
           </motion.p>
 
           <motion.div 

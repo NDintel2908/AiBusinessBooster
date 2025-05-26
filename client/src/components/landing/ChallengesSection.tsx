@@ -123,7 +123,7 @@ export default function ChallengesSection() {
             Vấn đề nan giải khi kết nối thị trường <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">B2B</span>
           </h2>
           <p className="text-gray-300 font-primary">
-            B2B luôn gặp khó khi tiếp thị đến người mua - tìm kiếm người bán, đối tác kinh doanh
+            Việc kết nối cá nhân qua mạng xã hội ngày càng dễ dàng, NHƯNG việc kết nối giữa Doanh nghiệp với Doanh nghiệp (B2B) vẫn rất tốn kém, mất nhiều thời gian và thiếu tin cậy.	
           </p>
         </motion.div>
         
