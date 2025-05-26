@@ -118,9 +118,9 @@ export default function ServiceSection() {
         </div>
 
         {/* Desktop Layout - 3 Column Grid */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8 items-start max-w-6xl mx-auto">
+        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Left Column */}
-          <div className="space-y-12">
+          <div className="grid grid-rows-2 gap-12 h-full">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -180,7 +180,7 @@ export default function ServiceSection() {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-12">
+          <div className="grid grid-rows-2 gap-12 h-full">
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
