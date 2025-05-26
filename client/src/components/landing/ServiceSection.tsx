@@ -163,19 +163,91 @@ export default function ServiceSection() {
             </motion.div>
           </div>
 
-          {/* Center Column - Logo */}
+          {/* Center Column - Logo with Feature Icons */}
           <div className="flex justify-center items-center h-full">
-            <div className="w-56 h-56 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400 shadow-2xl shadow-blue-500/20 relative">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">JobTest</div>
-                <div className="text-sm text-blue-200">POWERED BY AI</div>
-                <div className="text-xs text-blue-300">GENERATIVE AI TALENT</div>
+            <div className="relative w-80 h-80">
+              {/* Central Logo Circle */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400 shadow-2xl shadow-blue-500/20 relative animate-pulse-slow">
+                <div className="text-center relative z-10">
+                  <div className="text-3xl font-bold text-white mb-1">JobTest</div>
+                  <div className="text-sm text-blue-200">POWERED BY AI</div>
+                  <div className="text-xs text-blue-300">GENERATIVE AI TALENT</div>
+                </div>
+                
+                {/* Rotating glow effect */}
+                <div className="absolute inset-0 rounded-full animate-spin-slow">
+                  <div className="absolute top-0 left-1/2 w-4 h-4 bg-cyan-400 rounded-full blur-sm -translate-x-1/2 -translate-y-2 animate-glow"></div>
+                  <div className="absolute bottom-0 left-1/2 w-4 h-4 bg-electric-purple rounded-full blur-sm -translate-x-1/2 translate-y-2 animate-glow"></div>
+                </div>
+                
+                {/* Animated orbital rings */}
+                <div className="absolute inset-0 border-2 border-blue-400/30 rounded-full animate-pulse"></div>
+                <div className="absolute -inset-8 border border-blue-400/20 rounded-full animate-spin-reverse"></div>
+                <div className="absolute -inset-16 border border-blue-400/10 rounded-full"></div>
               </div>
-              
-              {/* Animated orbital rings */}
-              <div className="absolute inset-0 border-2 border-blue-400/30 rounded-full animate-pulse"></div>
-              <div className="absolute -inset-8 border border-blue-400/20 rounded-full"></div>
-              <div className="absolute -inset-16 border border-blue-400/10 rounded-full"></div>
+
+              {/* Feature Icons positioned around the circle */}
+              {/* Top Left - Comprehensive Assessment */}
+              <motion.div 
+                className="absolute top-4 left-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg animate-float"
+                initial={{ scale: 0, rotate: -90 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                whileHover={{ scale: 1.1, rotate: 5 }}
+              >
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </motion.div>
+
+              {/* Top Right - Fraud Detection */}
+              <motion.div 
+                className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg animate-float-delayed"
+                initial={{ scale: 0, rotate: 90 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                whileHover={{ scale: 1.1, rotate: -5 }}
+              >
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                </svg>
+              </motion.div>
+
+              {/* Bottom Left - Flexible Customization */}
+              <motion.div 
+                className="absolute bottom-4 left-4 w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg animate-float"
+                initial={{ scale: 0, rotate: -90 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                whileHover={{ scale: 1.1, rotate: 5 }}
+              >
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </motion.div>
+
+              {/* Bottom Right - Automation */}
+              <motion.div 
+                className="absolute bottom-4 right-4 w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-lg animate-float-delayed"
+                initial={{ scale: 0, rotate: 90 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                whileHover={{ scale: 1.1, rotate: -5 }}
+              >
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                </svg>
+              </motion.div>
+
+              {/* Connecting lines with glow effect */}
+              <div className="absolute inset-0 animate-pulse-slow">
+                <div className="absolute top-1/2 left-1/2 w-0.5 h-20 bg-gradient-to-t from-cyan-400/50 to-transparent transform -translate-x-1/2 -translate-y-full rotate-45"></div>
+                <div className="absolute top-1/2 left-1/2 w-0.5 h-20 bg-gradient-to-t from-purple-400/50 to-transparent transform -translate-x-1/2 -translate-y-full -rotate-45"></div>
+                <div className="absolute top-1/2 left-1/2 w-0.5 h-20 bg-gradient-to-b from-green-400/50 to-transparent transform -translate-x-1/2 rotate-45"></div>
+                <div className="absolute top-1/2 left-1/2 w-0.5 h-20 bg-gradient-to-b from-orange-400/50 to-transparent transform -translate-x-1/2 -rotate-45"></div>
+              </div>
             </div>
           </div>
 
