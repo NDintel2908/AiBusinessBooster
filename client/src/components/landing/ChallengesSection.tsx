@@ -74,8 +74,8 @@ export default function ChallengesSection() {
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
             <span className="text-base md:text-lg font-medium text-neon-blue font-primary">So sánh thị trường</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
-            Phương pháp <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">truyền thống</span> vs <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">BCP.Global</span>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white leading-tight">
+            <span className="text-red-400 font-bold">Phương pháp truyền thống</span> vs <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple font-bold">BCP.Global</span>
           </h2>
           <p className="text-gray-300 font-primary">
             So sánh rõ ràng giữa các thách thức của phương pháp truyền thống và giải pháp hiện đại từ BCP.Global
@@ -148,7 +148,7 @@ export default function ChallengesSection() {
               >
                 {/* Traditional Method Card */}
                 <GlassCard 
-                  className={`p-6 border-red-400/20 bg-red-500/5 h-full flex flex-col transition-all duration-300 ${
+                  className={`p-6 border-red-400/20 bg-red-500/5 h-full flex flex-col transition-all duration-300 relative ${
                     hoveredIndex === index ? 'border-red-400/40 bg-red-500/10 shadow-lg shadow-red-500/20' : ''
                   }`}
                 >
@@ -160,12 +160,13 @@ export default function ChallengesSection() {
                     {comparison.traditional.description}
                   </p>
                   {/* Connection Line */}
-                  <div className="absolute right-0 top-1/2 w-8 h-px bg-gradient-to-r from-red-400/50 to-blue-400/50 transform translate-x-4 -translate-y-1/2 opacity-50"></div>
+                  <div className="absolute right-0 top-1/2 w-8 h-0.5 bg-gradient-to-r from-red-400/60 to-blue-400/60 transform translate-x-4 -translate-y-1/2 z-10 shadow-sm"></div>
+                  <div className="absolute right-1 top-1/2 w-6 h-px bg-gradient-to-r from-red-400/30 to-blue-400/30 transform translate-x-4 -translate-y-1/2 animate-pulse"></div>
                 </GlassCard>
 
                 {/* BCP Solution Card */}
                 <GlassCard 
-                  className={`p-6 border-blue-400/20 bg-blue-500/5 h-full flex flex-col transition-all duration-300 ${
+                  className={`p-6 border-blue-400/20 bg-blue-500/5 h-full flex flex-col transition-all duration-300 relative ${
                     hoveredIndex === index ? 'border-blue-400/40 bg-blue-500/10 shadow-lg shadow-blue-500/20' : ''
                   }`}
                 >
