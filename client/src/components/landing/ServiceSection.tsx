@@ -15,14 +15,14 @@ export default function ServiceSection() {
         </div>
 
         {/* Mobile Layout - Stacked */}
-        <div className="grid grid-cols-1 md:hidden gap-8 max-w-lg mx-auto">
-          {/* Card 1 */}
+        <div className="md:hidden space-y-12 max-w-lg mx-auto">
+          {/* Feature 1 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-md"
+            className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,13 +36,13 @@ export default function ServiceSection() {
             </ul>
           </motion.div>
 
-          {/* Card 2 */}
+          {/* Feature 2 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-md"
+            className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,13 +72,13 @@ export default function ServiceSection() {
             </div>
           </div>
 
-          {/* Card 3 */}
+          {/* Feature 3 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-md"
+            className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -95,13 +95,13 @@ export default function ServiceSection() {
             </ul>
           </motion.div>
 
-          {/* Card 4 */}
+          {/* Feature 4 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-md"
+            className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,15 +118,15 @@ export default function ServiceSection() {
         </div>
 
         {/* Desktop Layout - 3 Column Grid */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
-          {/* Left Column - Two Cards */}
-          <div className="space-y-8">
+        <div className="hidden md:grid md:grid-cols-3 gap-8 items-start max-w-6xl mx-auto">
+          {/* Left Column */}
+          <div className="space-y-12">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-md transition-opacity duration-500"
+              className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -145,7 +145,7 @@ export default function ServiceSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-md transition-opacity duration-500"
+              className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -164,7 +164,7 @@ export default function ServiceSection() {
           </div>
 
           {/* Center Column - Logo */}
-          <div className="flex justify-center relative">
+          <div className="flex justify-center items-center h-full">
             <div className="w-56 h-56 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400 shadow-2xl shadow-blue-500/20 relative">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white mb-1">JobTest</div>
@@ -177,27 +177,16 @@ export default function ServiceSection() {
               <div className="absolute -inset-8 border border-blue-400/20 rounded-full"></div>
               <div className="absolute -inset-16 border border-blue-400/10 rounded-full"></div>
             </div>
-
-            {/* Connecting lines - radial effect */}
-            <div className="absolute inset-0 pointer-events-none">
-              {/* Left connections */}
-              <div className="absolute left-0 top-1/4 w-20 h-0.5 bg-gradient-to-r from-cyan-400/50 to-transparent"></div>
-              <div className="absolute left-0 top-3/4 w-20 h-0.5 bg-gradient-to-r from-cyan-400/50 to-transparent"></div>
-              
-              {/* Right connections */}
-              <div className="absolute right-0 top-1/4 w-20 h-0.5 bg-gradient-to-l from-cyan-400/50 to-transparent"></div>
-              <div className="absolute right-0 top-3/4 w-20 h-0.5 bg-gradient-to-l from-cyan-400/50 to-transparent"></div>
-            </div>
           </div>
 
-          {/* Right Column - Two Cards */}
-          <div className="space-y-8">
+          {/* Right Column */}
+          <div className="space-y-12">
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-md transition-opacity duration-500"
+              className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -219,7 +208,7 @@ export default function ServiceSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className="bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-md transition-opacity duration-500"
+              className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
