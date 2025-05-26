@@ -282,7 +282,15 @@ export default function BusinessSectorsSection() {
           <p className="text-gray-400 mb-6">
             Ngành của bạn chưa có trong danh sách? Chúng tôi luôn sẵn sàng mở rộng hỗ trợ
           </p>
-          <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300">
+          <button 
+            className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
+          >
             Liên hệ tư vấn
           </button>
         </motion.div>
