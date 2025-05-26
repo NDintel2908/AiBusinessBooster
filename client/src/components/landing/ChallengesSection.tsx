@@ -1,5 +1,5 @@
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -9,12 +9,46 @@ export default function ChallengesSection() {
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   
   useEffect(() => {
     if (isInView) {
       controls.start("visible");
     }
   }, [controls, isInView]);
+
+  const comparisonData = [
+    {
+      traditional: {
+        title: "Chi phí cao, hiệu quả thấp",
+        description: "Thuê đội nghiên cứu thị trường, tham gia hội chợ, chạy quảng cáo tốn kém mà không đảm bảo kết quả"
+      },
+      bcp: {
+        title: "Tiết kiệm chi phí đáng kể",
+        description: "AI Matching Agent giúp tối ưu hóa chi phí, chỉ trả tiền cho kết nối thành công"
+      }
+    },
+    {
+      traditional: {
+        title: "Mất nhiều thời gian",
+        description: "Quá trình kết nối và phát triển đối tác thủ công có thể kéo dài nhiều tháng"
+      },
+      bcp: {
+        title: "Kết nối tức thì",
+        description: "Thuật toán AI tìm kiếm và kết nối đối tác phù hợp trong thời gian thực"
+      }
+    },
+    {
+      traditional: {
+        title: "Thiếu độ tin cậy",
+        description: "Khó khăn trong việc xác minh độ tin cậy và khả năng tương thích của đối tác tiềm năng"
+      },
+      bcp: {
+        title: "Xác thực đa cấp độ",
+        description: "Hệ thống xác minh toàn diện đảm bảo độ tin cậy và minh bạch trong mọi giao dịch"
+      }
+    }
+  ];
   
   return (
     <section id="challenges" className="py-20 relative">
@@ -48,10 +82,11 @@ export default function ChallengesSection() {
           </p>
         </motion.div>
         
-        {/* Desktop Layout - 3 Column Comparison */}
-        <div className="hidden lg:block max-w-7xl mx-auto">
+        {/* Desktop Layout - 2 Column Grid with Headers */}
+        <div className="hidden lg:block max-w-6xl mx-auto">
+          {/* Column Headers */}
           <motion.div 
-            className="grid grid-cols-3 gap-8 items-start"
+            className="grid grid-cols-2 gap-8 mb-8"
             initial="hidden"
             animate={controls}
             variants={{
@@ -59,192 +94,144 @@ export default function ChallengesSection() {
               visible: { 
                 opacity: 1,
                 transition: { 
-                  staggerChildren: 0.1,
-                  delayChildren: 0.3
+                  duration: 0.6,
+                  delay: 0.2
                 }
               }
             }}
           >
-            {/* Left Column - Traditional Methods */}
-            <div className="space-y-8">
-              <motion.div 
-                className="text-center mb-8"
-                variants={{
-                  hidden: { opacity: 0, x: -30 },
-                  visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
-                }}
-              >
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center border-2 border-red-400/30">
-                  <svg className="w-10 h-10 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-heading font-bold text-red-400 mb-2">Phương pháp truyền thống</h3>
-                <p className="text-sm text-gray-400">Cách tiếp cận cũ với nhiều hạn chế</p>
-              </motion.div>
-
-              <motion.div variants={{ hidden: { opacity: 0, x: -30 }, visible: { opacity: 1, x: 0 } }}>
-                <GlassCard className="p-6 border-red-400/20 bg-red-500/5">
-                  <h4 className="font-semibold text-red-400 mb-3">Chi phí cao, hiệu quả thấp</h4>
-                  <p className="text-sm text-gray-400">Thuê đội nghiên cứu thị trường, tham gia hội chợ, chạy quảng cáo tốn kém mà không đảm bảo kết quả</p>
-                </GlassCard>
-              </motion.div>
-
-              <motion.div variants={{ hidden: { opacity: 0, x: -30 }, visible: { opacity: 1, x: 0 } }}>
-                <GlassCard className="p-6 border-red-400/20 bg-red-500/5">
-                  <h4 className="font-semibold text-red-400 mb-3">Mất nhiều thời gian</h4>
-                  <p className="text-sm text-gray-400">Quá trình kết nối và phát triển đối tác thủ công có thể kéo dài nhiều tháng</p>
-                </GlassCard>
-              </motion.div>
-
-              <motion.div variants={{ hidden: { opacity: 0, x: -30 }, visible: { opacity: 1, x: 0 } }}>
-                <GlassCard className="p-6 border-red-400/20 bg-red-500/5">
-                  <h4 className="font-semibold text-red-400 mb-3">Thiếu độ tin cậy</h4>
-                  <p className="text-sm text-gray-400">Khó khăn trong việc xác minh độ tin cậy và khả năng tương thích của đối tác tiềm năng</p>
-                </GlassCard>
-              </motion.div>
+            {/* Traditional Method Header */}
+            <div className="text-center">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center border-2 border-red-400/30">
+                <span className="text-3xl">❌</span>
+              </div>
+              <h3 className="text-2xl font-heading font-bold text-red-400 mb-2">Phương pháp truyền thống</h3>
+              <p className="text-sm text-gray-400">Cách tiếp cận cũ với nhiều hạn chế</p>
             </div>
 
-            {/* Center Column - Criteria */}
-            <div className="flex flex-col items-center space-y-12 pt-32">
-              <motion.div 
-                className="flex flex-col items-center space-y-8"
-                variants={{
-                  hidden: { opacity: 0, scale: 0.8 },
-                  visible: { 
-                    opacity: 1, 
-                    scale: 1,
-                    transition: { 
-                      duration: 0.8,
-                      delay: 0.2
-                    }
-                  }
-                }}
-              >
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">VS</span>
-                </div>
-
-                <div className="flex flex-col items-center space-y-6">
-                  <motion.div 
-                    className="px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/40"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <span className="text-blue-400 font-medium text-sm">CHI PHÍ</span>
-                  </motion.div>
-
-                  <motion.div 
-                    className="px-4 py-2 rounded-full bg-purple-500/20 border border-purple-400/40"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <span className="text-purple-400 font-medium text-sm">THỜI GIAN</span>
-                  </motion.div>
-
-                  <motion.div 
-                    className="px-4 py-2 rounded-full bg-cyan-500/20 border border-cyan-400/40"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <span className="text-cyan-400 font-medium text-sm">ĐỘ TIN CẬY</span>
-                  </motion.div>
-                </div>
-              </motion.div>
+            {/* BCP Solution Header */}
+            <div className="text-center">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center border-2 border-blue-400/30">
+                <span className="text-3xl">✅</span>
+              </div>
+              <h3 className="text-2xl font-heading font-bold text-blue-400 mb-2">BCP.Global Solution</h3>
+              <p className="text-sm text-gray-400">Giải pháp thông minh với AI</p>
             </div>
+          </motion.div>
 
-            {/* Right Column - BCP Solution */}
-            <div className="space-y-8">
-              <motion.div 
-                className="text-center mb-8"
+          {/* Comparison Rows */}
+          <motion.div 
+            className="space-y-6"
+            initial="hidden"
+            animate={controls}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { 
+                opacity: 1,
+                transition: { 
+                  staggerChildren: 0.15,
+                  delayChildren: 0.4
+                }
+              }
+            }}
+          >
+            {comparisonData.map((comparison, index) => (
+              <motion.div
+                key={index}
+                className="grid grid-cols-2 gap-8 items-stretch"
                 variants={{
-                  hidden: { opacity: 0, x: 30 },
-                  visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
                 }}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center border-2 border-blue-400/30">
-                  <svg className="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-heading font-bold text-blue-400 mb-2">BCP.Global Solution</h3>
-                <p className="text-sm text-gray-400">Giải pháp thông minh với AI</p>
-              </motion.div>
+                {/* Traditional Method Card */}
+                <GlassCard 
+                  className={`p-6 border-red-400/20 bg-red-500/5 h-full flex flex-col transition-all duration-300 ${
+                    hoveredIndex === index ? 'border-red-400/40 bg-red-500/10 shadow-lg shadow-red-500/20' : ''
+                  }`}
+                >
+                  <div className="flex items-start space-x-3 mb-4">
+                    <span className="text-2xl mt-1">❌</span>
+                    <h4 className="text-lg font-semibold text-red-400">{comparison.traditional.title}</h4>
+                  </div>
+                  <p className="text-sm text-slate-300 leading-relaxed flex-1">
+                    {comparison.traditional.description}
+                  </p>
+                  {/* Connection Line */}
+                  <div className="absolute right-0 top-1/2 w-8 h-px bg-gradient-to-r from-red-400/50 to-blue-400/50 transform translate-x-4 -translate-y-1/2 opacity-50"></div>
+                </GlassCard>
 
-              <motion.div variants={{ hidden: { opacity: 0, x: 30 }, visible: { opacity: 1, x: 0 } }}>
-                <GlassCard className="p-6 border-blue-400/20 bg-blue-500/5">
-                  <h4 className="font-semibold text-blue-400 mb-3">Tiết kiệm chi phí đáng kể</h4>
-                  <p className="text-sm text-gray-400">AI Matching Agent giúp tối ưu hóa chi phí, chỉ trả tiền cho kết nối thành công</p>
+                {/* BCP Solution Card */}
+                <GlassCard 
+                  className={`p-6 border-blue-400/20 bg-blue-500/5 h-full flex flex-col transition-all duration-300 ${
+                    hoveredIndex === index ? 'border-blue-400/40 bg-blue-500/10 shadow-lg shadow-blue-500/20' : ''
+                  }`}
+                >
+                  <div className="flex items-start space-x-3 mb-4">
+                    <span className="text-2xl mt-1">✅</span>
+                    <h4 className="text-lg font-semibold text-blue-400">{comparison.bcp.title}</h4>
+                  </div>
+                  <p className="text-sm text-slate-300 leading-relaxed flex-1">
+                    {comparison.bcp.description}
+                  </p>
                 </GlassCard>
               </motion.div>
-
-              <motion.div variants={{ hidden: { opacity: 0, x: 30 }, visible: { opacity: 1, x: 0 } }}>
-                <GlassCard className="p-6 border-blue-400/20 bg-blue-500/5">
-                  <h4 className="font-semibold text-blue-400 mb-3">Kết nối tức thì</h4>
-                  <p className="text-sm text-gray-400">Thuật toán AI tìm kiếm và kết nối đối tác phù hợp trong thời gian thực</p>
-                </GlassCard>
-              </motion.div>
-
-              <motion.div variants={{ hidden: { opacity: 0, x: 30 }, visible: { opacity: 1, x: 0 } }}>
-                <GlassCard className="p-6 border-blue-400/20 bg-blue-500/5">
-                  <h4 className="font-semibold text-blue-400 mb-3">Xác thực đa cấp độ</h4>
-                  <p className="text-sm text-gray-400">Hệ thống xác minh toàn diện đảm bảo độ tin cậy và minh bạch trong mọi giao dịch</p>
-                </GlassCard>
-              </motion.div>
-            </div>
+            ))}
           </motion.div>
         </div>
 
         {/* Mobile Layout - Stacked Cards */}
         <div className="lg:hidden space-y-8">
-          <motion.div 
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <GlassCard className="p-6 border-red-400/20 bg-red-500/5">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center border border-red-400/30 mr-4">
-                  <svg className="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
+          {comparisonData.map((comparison, index) => (
+            <motion.div 
+              key={index}
+              className="space-y-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
+            >
+              {/* Traditional Method Card */}
+              <GlassCard className="p-6 border-red-400/20 bg-red-500/5">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center border border-red-400/30 mr-4">
+                    <span className="text-xl">❌</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-red-400">{comparison.traditional.title}</h3>
+                    <p className="text-xs text-gray-500">Phương pháp truyền thống</p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-heading font-semibold text-red-400">Phương pháp truyền thống</h3>
-              </div>
-              <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Chi phí cao mà không đảm bảo hiệu quả</li>
-                <li>• Mất nhiều tháng để xây dựng đối tác</li>
-                <li>• Khó xác minh độ tin cậy của đối tác</li>
-              </ul>
-            </GlassCard>
-          </motion.div>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  {comparison.traditional.description}
+                </p>
+              </GlassCard>
 
-          <div className="flex justify-center">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-              <span className="text-white font-bold text-lg">VS</span>
-            </div>
-          </div>
-
-          <motion.div 
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <GlassCard className="p-6 border-blue-400/20 bg-blue-500/5">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center border border-blue-400/30 mr-4">
-                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+              {/* VS Divider for Mobile */}
+              <div className="flex justify-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-400 to-blue-400 flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">VS</span>
                 </div>
-                <h3 className="text-lg font-heading font-semibold text-blue-400">BCP.Global Solution</h3>
               </div>
-              <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Tiết kiệm chi phí với AI Matching Agent</li>
-                <li>• Kết nối đối tác trong thời gian thực</li>
-                <li>• Xác thực đa cấp độ đảm bảo tin cậy</li>
-              </ul>
-            </GlassCard>
-          </motion.div>
+
+              {/* BCP Solution Card */}
+              <GlassCard className="p-6 border-blue-400/20 bg-blue-500/5">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center border border-blue-400/30 mr-4">
+                    <span className="text-xl">✅</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-blue-400">{comparison.bcp.title}</h3>
+                    <p className="text-xs text-gray-500">BCP.Global Solution</p>
+                  </div>
+                </div>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  {comparison.bcp.description}
+                </p>
+              </GlassCard>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
