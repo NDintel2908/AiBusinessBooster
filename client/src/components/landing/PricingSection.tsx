@@ -136,25 +136,7 @@ export default function PricingSection() {
         { text: "Ưu tiên hiển thị", included: false }
       ]
     },
-    {
-      name: "Premium Package",
-      price: "15.000.000 VND",
-      period: "/năm",
-      description: "Giải pháp toàn diện cho doanh nghiệp",
-      features: [
-        { text: "Tất cả tính năng Starter", included: true },
-        { text: "Xác thực tick xanh uy tín", included: true, highlight: true },
-        { text: "10 lượt kết nối ưu tiên/tháng", included: true, highlight: true },
-        { text: "Hỗ trợ 24/7 ưu tiên", included: true },
-        { text: "AI Agent chuyên biệt", included: true },
-        { text: "Đào tạo AI và networking", included: true },
-        { text: "Ưu tiên tính năng mới", included: true }
-      ],
-      isPopular: true,
-      ctaText: "Nâng cấp ngay",
-      ctaLink: "https://bcp.global/credit",
-      buttonTextClassName: "text-black"
-    },
+    
     {
       name: "Lượt tìm kiếm Đối tác mới",
       price: "250.000 VND",
@@ -171,6 +153,25 @@ export default function PricingSection() {
       ],
       ctaText: "Mua ngay",
       ctaLink: "https://bcp.global/credit"
+    },
+    {
+      name: "Premium Package",
+      price: "15.000.000 VND",
+      period: "/năm",
+      description: "Giải pháp toàn diện cho doanh nghiệp",
+      features: [
+        { text: "Tất cả tính năng Starter", included: true },
+        { text: "Xác thực tick xanh uy tín", included: true },
+        { text: "10 lượt kết nối ưu tiên/tháng", included: true },
+        { text: "Hỗ trợ 24/7 ưu tiên", included: true },
+        { text: "AI Agent chuyên biệt", included: true },
+        { text: "Đào tạo AI và networking", included: true },
+        { text: "Ưu tiên tính năng mới", included: true }
+      ],
+      isPopular: true,
+      ctaText: "Mua ngay",
+      ctaLink: "https://bcp.global/credit",
+      buttonTextClassName: "text-black"
     }
   ];
 
