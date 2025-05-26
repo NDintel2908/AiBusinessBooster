@@ -6,6 +6,7 @@ import BusinessSectorsSection from "@/components/landing/BusinessSectorsSection"
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import ServiceSection from "@/components/landing/ServiceSection";
 import AboutSection from "@/components/landing/AboutSection";
+import FeedbackSection from "@/components/landing/FeedbackSection";
 import PricingSection from "@/components/landing/PricingSection";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
@@ -30,7 +31,7 @@ export default function Home() {
           <BusinessSectorsSection />
           <FeaturesSection />
           <PricingSection />
-          <AboutSection />
+          <FeedbackSection />
           <FAQSection /> {/* Added FAQSection */}
           <ContactSection />
         </Suspense>
