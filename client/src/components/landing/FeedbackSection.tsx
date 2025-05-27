@@ -197,12 +197,12 @@ export default function FeedbackSection() {
             <div className="flex gap-6 transition-transform duration-700 ease-out">
               {visibleCards.map((card, index) => (
                 <motion.div
-                  key={`${card.id}-${currentIndex}`}
+                  key={`${card.id}-${currentIndex}-${index}`}
                   className={`
                     flex-shrink-0
-                    ${index === 0 ? 'w-full md:w-[calc(50%-12px)]' : ''}
-                    ${index === 1 ? 'hidden md:block w-[calc(50%-12px)]' : ''}
-                    ${index === 2 ? 'w-1/3 md:w-1/4' : ''}
+                    ${index === 0 ? 'w-full md:w-[400px]' : ''}
+                    ${index === 1 ? 'hidden md:block w-[400px]' : ''}
+                    ${index === 2 ? 'w-80 md:w-80' : ''}
                   `}
                   initial={{ opacity: 0, x: 50 }}
                   animate={{ 
@@ -215,42 +215,43 @@ export default function FeedbackSection() {
                   style={{ cursor: card.isPeek ? 'pointer' : 'default' }}
                 >
                   <div className={`
-                    h-80 w-full bg-gradient-to-br from-white/95 via-gray-50/95 to-white/90 
-                    backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl 
+                    relative max-w-[450px] w-full bg-gradient-to-br from-white/95 via-gray-50/95 to-white/90 
+                    backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl 
                     transition-all duration-500 flex flex-col group border border-gray-200/50
+                    overflow-hidden min-h-[280px]
                     ${card.isPeek ? 'hover:scale-100 hover:opacity-80' : 'hover:scale-[1.02] hover:shadow-2xl hover:shadow-electric-purple/20'}
                   `}>
-                    {/* Quote Icon - Enhanced */}
-                    <div className="flex justify-center pt-8 pb-4">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-electric-purple to-neon-blue flex items-center justify-center shadow-lg">
-                        <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-                        </svg>
-                      </div>
+                    {/* Enhanced Quote Icon - Positioned top-left with overlap */}
+                    <div className="absolute top-4 left-4 z-10">
+                      <span className="text-4xl font-bold text-white/80 drop-shadow-md leading-none">"</span>
                     </div>
 
-                    {/* Quote Content - Fixed height with scrolling */}
-                    <div className="px-8 flex-1 flex flex-col justify-between">
-                      <blockquote className="text-gray-700 text-sm leading-relaxed text-center font-medium min-h-[60px] flex items-center justify-center">
-                        "{card.quote}"
+                    {/* Content Area */}
+                    <div className="p-6 pt-12 flex-1 flex flex-col justify-between">
+                      {/* Quote Content */}
+                      <blockquote className="text-gray-700 text-sm leading-relaxed font-medium mb-6">
+                        {card.quote}
                       </blockquote>
 
-                      {/* Author Info - Fixed position at bottom */}
-                      <div className="flex items-center space-x-4 pt-6 pb-8">
-                        <div className="w-14 h-14 rounded-full overflow-hidden border-3 border-gradient-to-r from-electric-purple to-neon-blue shadow-lg flex-shrink-0">
+                      {/* Author Info - Compact layout */}
+                      <div className="flex items-center space-x-3">
+                        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gradient-to-r from-electric-purple to-neon-blue shadow-md flex-shrink-0">
                           <img 
                             src={card.avatar} 
                             alt={card.author}
                             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                           />
                         </div>
-                        <div className="flex-1 text-left">
-                          <h4 className="text-gray-900 font-bold text-base leading-tight">{card.author}</h4>
-                          <p className="text-electric-purple font-semibold text-sm mt-1">{card.position}</p>
-                          <p className="text-gray-600 text-sm font-medium">{card.company}</p>
+                        <div className="flex-1 min-w-0">
+                          <h4 className="text-gray-900 font-bold text-sm leading-tight truncate">{card.author}</h4>
+                          <p className="text-electric-purple font-semibold text-xs mt-0.5">{card.position}</p>
+                          <p className="text-gray-600 text-xs font-medium truncate">{card.company}</p>
                         </div>
                       </div>
                     </div>
+
+                    {/* Soft gradient overlay for visual polish */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-gray-100/20 pointer-events-none rounded-2xl"></div>
                   </div>
                 </motion.div>
               ))}
