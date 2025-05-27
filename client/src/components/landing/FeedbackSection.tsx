@@ -6,53 +6,30 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const feedbacks = [
+  
   {
     id: 1,
     quote: "BCP đã thay đổi hoàn toàn cách chúng tôi kết nối với đối tác. AI matching rất chính xác.",
-    author: "Nguyễn Văn A",
-    position: "CEO",
-    company: "TechViet Solutions",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+      author: "Trịnh Hồng Khánh",
+      position: "CEO",
+      company: "Kế toán Ba Miền",
+      avatar: "https://webketoan.com.vn/storage/a-khanh-1.png"
   },
   {
     id: 2,
     quote: "Nền tảng này đã giúp chúng tôi mở rộng thị trường quốc tế một cách hiệu quả.",
-    author: "Trần Thị B",
+    author: "Nguyễn Hải Tâm",
     position: "Giám đốc Kinh doanh",
-    company: "Global Trading Co.",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b1e0?w=80&h=80&fit=crop&crop=face"
+    company: "Webketoan",
+    avatar: "https://th.bing.com/th/id/OIP.7gD_w3iBZiq4dFm7oermRwHaHa?rs=1&pid=ImgDetMain"
   },
   {
     id: 3,
     quote: "AI của BCP không chỉ tìm đối tác mà còn đánh giá độ tin cậy rất tốt.",
-    author: "Lê Minh C",
+    author: "Wichak Chongudomlert",
     position: "Founder",
-    company: "Innovation Hub",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
-  },
-  {
-    id: 4,
-    quote: "Giao diện thân thiện, dễ sử dụng và hỗ trợ khách hàng tuyệt vời.",
-    author: "Phạm Thị D",
-    position: "Marketing Director",
-    company: "Creative Agency",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
-  },
-  {
-    id: 5,
-    quote: "Tiết kiệm được 70% thời gian tìm kiếm đối tác so với phương pháp truyền thống.",
-    author: "Hoàng Văn E",
-    position: "CTO",
-    company: "StartupVN",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face"
-  },
-  {
-    id: 6,
-    quote: "Tính năng phân tích thị trường của BCP rất chi tiết và hữu ích.",
-    author: "Nguyễn Thị F",
-    position: "Business Analyst",
-    company: "ConsultingPro",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=face"
+    company: "Signify",
+    avatar: "https://media.licdn.com/dms/image/v2/D5603AQFk-068nzT0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686639741459?e=1753920000&v=beta&t=NsmWWxJQnvYXi5XDjAAwmm__Cu53pzsEtNaOV2bNYAU"
   }
 ];
 
@@ -185,7 +162,7 @@ export default function FeedbackSection() {
             <span className="text-base md:text-lg font-medium text-neon-blue font-primary">Phản hồi khách hàng</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
-            Những gì <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-purple to-neon-blue">lãnh đạo doanh nghiệp</span> nói về BCP.Global
+            Những gì lãnh đạo doanh nghiệp nói về BCP.Global
           </h2>
           <p className="text-gray-300 font-primary">
             BCP là nền tảng giúp kết nối các doanh nghiệp với đối tác phù hợp thông qua AI, 
