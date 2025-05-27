@@ -29,15 +29,8 @@ const feedbacks = [
     position: "Founder",
     company: "Signify",
     avatar: "https://media.licdn.com/dms/image/v2/D5603AQFk-068nzT0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686639741459?e=1753920000&v=beta&t=NsmWWxJQnvYXi5XDjAAwmm__Cu53pzsEtNaOV2bNYAU"
-  },
-  {
-    id: 4,
-    quote: "AI của BCP không chỉ tìm đối tác mà còn đánh giá độ tin cậy rất tốt.",
-    author: "Wichak Chongudomlert",
-    position: "Founder",
-    company: "Signify",
-    avatar: "https://th.bing.com/th/id/OIP.wu8Bk13xHLwgIlzostYXYAHaE8?rs=1&pid=ImgDetMain"
   }
+  
 ];
 
 export default function FeedbackSection() {
