@@ -197,7 +197,7 @@ export default function FeedbackSection() {
             <div className="flex gap-6 transition-transform duration-700 ease-out">
               {visibleCards.map((card, index) => (
                 <motion.div
-                  key={`${card.id}-${currentIndex}-${index}`}
+                  key={`card-${card.id}-${index}-${Date.now()}`}
                   className={`
                     flex-shrink-0
                     ${index === 0 ? 'w-full md:w-[400px]' : ''}
@@ -211,7 +211,13 @@ export default function FeedbackSection() {
                     x: 0 
                   }}
                   transition={{ duration: 0.7, delay: index * 0.1 }}
-                  onClick={() => card.isPeek && goToSlide((currentIndex + 2) % feedbacks.length)}
+                  onClick={(e) => {
+                    if (card.isPeek) {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      goToSlide((currentIndex + 2) % feedbacks.length);
+                    }
+                  }}
                   style={{ cursor: card.isPeek ? 'pointer' : 'default' }}
                 >
                   <div className={`
@@ -229,7 +235,7 @@ export default function FeedbackSection() {
                     {/* Content Area */}
                     <div className="p-6 pt-12 flex-1 flex flex-col justify-between">
                       {/* Quote Content */}
-                      <blockquote className="text-gray-700 text-sm leading-relaxed font-medium mb-6">
+                      <blockquote className="text-gray-700 text-lg leading-relaxed font-medium mb-6">
                         {card.quote}
                       </blockquote>
 
@@ -260,15 +266,27 @@ export default function FeedbackSection() {
 
           {/* Navigation Arrows - Enhanced */}
           <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/30 hover:border-electric-purple/60 hover:scale-110 transition-all duration-300 z-20 shadow-lg"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              prevSlide();
+            }}
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/40 hover:border-electric-purple/80 hover:scale-110 hover:shadow-xl hover:shadow-electric-purple/30 transition-all duration-300 z-20 shadow-lg cursor-pointer active:scale-95"
+            type="button"
+            aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           
           <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/30 hover:border-electric-purple/60 hover:scale-110 transition-all duration-300 z-20 shadow-lg"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              nextSlide();
+            }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/40 hover:border-electric-purple/80 hover:scale-110 hover:shadow-xl hover:shadow-electric-purple/30 transition-all duration-300 z-20 shadow-lg cursor-pointer active:scale-95"
+            type="button"
+            aria-label="Next testimonial"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
@@ -277,13 +295,19 @@ export default function FeedbackSection() {
           <div className="flex justify-center mt-10 space-x-3">
             {feedbacks.map((_, index) => (
               <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                key={`dot-${index}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  goToSlide(index);
+                }}
+                className={`w-4 h-4 rounded-full transition-all duration-300 cursor-pointer ${
                   index === currentIndex 
                     ? 'bg-electric-purple shadow-xl shadow-electric-purple/50 scale-125' 
                     : 'bg-gray-400 hover:bg-gray-300 hover:scale-110'
                 }`}
+                type="button"
+                aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
           </div>
