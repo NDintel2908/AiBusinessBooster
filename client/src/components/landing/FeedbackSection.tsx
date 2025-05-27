@@ -6,14 +6,13 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const feedbacks = [
-  
   {
     id: 1,
     quote: "BCP đã thay đổi hoàn toàn cách chúng tôi kết nối với đối tác. AI matching rất chính xác.",
-      author: "Trịnh Hồng Khánh",
-      position: "CEO",
-      company: "Kế toán Ba Miền",
-      avatar: "https://webketoan.com.vn/storage/a-khanh-1.png"
+    author: "Trịnh Hồng Khánh",
+    position: "CEO",
+    company: "Kế toán Ba Miền",
+    avatar: "https://webketoan.com.vn/storage/a-khanh-1.png"
   },
   {
     id: 2,
@@ -54,7 +53,7 @@ export default function FeedbackSection() {
     if (isAutoPlaying) {
       const interval = setInterval(() => {
         setCurrentIndex((prev) => (prev + 1) % feedbacks.length);
-      }, 3500);
+      }, 4000);
       return () => clearInterval(interval);
     }
   }, [isAutoPlaying]);
@@ -195,12 +194,12 @@ export default function FeedbackSection() {
             {/* Gradient fade-out on the right */}
             <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-gray-900 to-transparent z-10 pointer-events-none"></div>
             
-            <div className="flex gap-6 transition-transform duration-500 ease-out">
+            <div className="flex gap-6 transition-transform duration-700 ease-out">
               {visibleCards.map((card, index) => (
                 <motion.div
                   key={`${card.id}-${currentIndex}`}
                   className={`
-                    flex-shrink-0 h-full
+                    flex-shrink-0
                     ${index === 0 ? 'w-full md:w-[calc(50%-12px)]' : ''}
                     ${index === 1 ? 'hidden md:block w-[calc(50%-12px)]' : ''}
                     ${index === 2 ? 'w-1/3 md:w-1/4' : ''}
@@ -211,42 +210,45 @@ export default function FeedbackSection() {
                     scale: card.isPeek ? 0.95 : 1,
                     x: 0 
                   }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{ duration: 0.7, delay: index * 0.1 }}
                   onClick={() => card.isPeek && goToSlide((currentIndex + 2) % feedbacks.length)}
                   style={{ cursor: card.isPeek ? 'pointer' : 'default' }}
                 >
                   <div className={`
-                    bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl 
-                    transition-all duration-300 h-full flex flex-col group
-                    ${card.isPeek ? 'hover:scale-100 hover:opacity-80' : 'hover:scale-105'}
+                    h-80 w-full bg-gradient-to-br from-white/95 via-gray-50/95 to-white/90 
+                    backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl 
+                    transition-all duration-500 flex flex-col group border border-gray-200/50
+                    ${card.isPeek ? 'hover:scale-100 hover:opacity-80' : 'hover:scale-[1.02] hover:shadow-2xl hover:shadow-electric-purple/20'}
                   `}>
-                    {/* Quote Icon */}
-                    <div className="flex justify-start mb-4">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-electric-purple to-neon-blue flex items-center justify-center">
-                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    {/* Quote Icon - Enhanced */}
+                    <div className="flex justify-center pt-8 pb-4">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-electric-purple to-neon-blue flex items-center justify-center shadow-lg">
+                        <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                         </svg>
                       </div>
                     </div>
 
-                    {/* Quote Content */}
-                    <blockquote className="text-gray-800 text-sm leading-relaxed mb-6 flex-1">
-                      "{card.quote}"
-                    </blockquote>
+                    {/* Quote Content - Fixed height with scrolling */}
+                    <div className="px-8 flex-1 flex flex-col justify-between">
+                      <blockquote className="text-gray-700 text-sm leading-relaxed text-center font-medium min-h-[60px] flex items-center justify-center">
+                        "{card.quote}"
+                      </blockquote>
 
-                    {/* Author Info */}
-                    <div className="flex items-center space-x-3 mt-auto">
-                      <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-electric-purple/20">
-                        <img 
-                          src={card.avatar} 
-                          alt={card.author}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="text-gray-900 font-semibold text-sm">{card.author}</h4>
-                        <p className="text-electric-purple text-xs font-medium">{card.position}</p>
-                        <p className="text-gray-600 text-xs">{card.company}</p>
+                      {/* Author Info - Fixed position at bottom */}
+                      <div className="flex items-center space-x-4 pt-6 pb-8">
+                        <div className="w-14 h-14 rounded-full overflow-hidden border-3 border-gradient-to-r from-electric-purple to-neon-blue shadow-lg flex-shrink-0">
+                          <img 
+                            src={card.avatar} 
+                            alt={card.author}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          />
+                        </div>
+                        <div className="flex-1 text-left">
+                          <h4 className="text-gray-900 font-bold text-base leading-tight">{card.author}</h4>
+                          <p className="text-electric-purple font-semibold text-sm mt-1">{card.position}</p>
+                          <p className="text-gray-600 text-sm font-medium">{card.company}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -255,45 +257,45 @@ export default function FeedbackSection() {
             </div>
           </div>
 
-          {/* Navigation Arrows */}
+          {/* Navigation Arrows - Enhanced */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/20 hover:border-electric-purple/50 transition-all duration-300 z-20"
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/30 hover:border-electric-purple/60 hover:scale-110 transition-all duration-300 z-20 shadow-lg"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-6 h-6" />
           </button>
           
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/20 hover:border-electric-purple/50 transition-all duration-300 z-20"
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/30 hover:border-electric-purple/60 hover:scale-110 transition-all duration-300 z-20 shadow-lg"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-6 h-6" />
           </button>
 
-          {/* Dots Indicator */}
-          <div className="flex justify-center mt-8 space-x-2">
+          {/* Dots Indicator - Enhanced */}
+          <div className="flex justify-center mt-10 space-x-3">
             {feedbacks.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`w-4 h-4 rounded-full transition-all duration-300 ${
                   index === currentIndex 
-                    ? 'bg-electric-purple shadow-lg shadow-electric-purple/50 scale-110' 
-                    : 'bg-gray-400 hover:bg-gray-300'
+                    ? 'bg-electric-purple shadow-xl shadow-electric-purple/50 scale-125' 
+                    : 'bg-gray-400 hover:bg-gray-300 hover:scale-110'
                 }`}
               />
             ))}
           </div>
 
-          {/* Progress bar for auto-play */}
+          {/* Progress bar for auto-play - Enhanced */}
           {isAutoPlaying && (
-            <div className="flex justify-center mt-4">
-              <div className="w-32 h-1 bg-gray-700 rounded-full overflow-hidden">
+            <div className="flex justify-center mt-6">
+              <div className="w-40 h-2 bg-gray-700/50 rounded-full overflow-hidden backdrop-blur-sm">
                 <motion.div
-                  className="h-full bg-electric-purple"
+                  className="h-full bg-gradient-to-r from-electric-purple to-neon-blue shadow-lg"
                   initial={{ width: 0 }}
                   animate={{ width: '100%' }}
-                  transition={{ duration: 3.5, ease: 'linear' }}
+                  transition={{ duration: 4, ease: 'linear' }}
                   key={currentIndex}
                 />
               </div>
