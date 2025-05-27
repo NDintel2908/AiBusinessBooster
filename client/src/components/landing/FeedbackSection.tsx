@@ -125,8 +125,9 @@ export default function FeedbackSection() {
 
   return (
     <section id="feedback" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-gradient-to-br from-electric-purple to-neon-blue opacity-20 blur-[120px] rounded-full"></div>
+      <div className="absolute inset-0 z-0 opacity-40">
+        <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-gradient-to-br from-electric-purple to-neon-blue opacity-30 blur-[120px] rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-1/3 h-1/3 bg-gradient-to-br from-neon-blue to-bright-teal opacity-20 blur-[100px] rounded-full"></div>
       </div>
 
       <div className="container mx-auto px-4 z-10">
@@ -211,27 +212,32 @@ export default function FeedbackSection() {
                   style={{ cursor: card.isPeek ? 'pointer' : 'default' }}
                 >
                   <div className={`
-                    relative max-w-[450px] w-full bg-gradient-to-br from-white/95 via-gray-50/95 to-white/90 
-                    backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl 
-                    transition-all duration-500 flex flex-col group border border-gray-200/50
+                    relative max-w-[450px] w-full 
+                    bg-gradient-to-br from-gray-900/95 via-gray-800/90 to-gray-900/95
+                    backdrop-blur-lg rounded-2xl shadow-2xl
+                    transition-all duration-500 flex flex-col group 
+                    border border-electric-purple/20 hover:border-electric-purple/40
                     overflow-hidden min-h-[280px]
-                    ${card.isPeek ? 'hover:scale-100 hover:opacity-80' : 'hover:scale-[1.02] hover:shadow-2xl hover:shadow-electric-purple/20'}
+                    ${card.isPeek ? 'hover:scale-100 hover:opacity-80' : 'hover:scale-[1.02] hover:shadow-2xl hover:shadow-electric-purple/30'}
                   `}>
                     {/* Enhanced Quote Icon - Positioned top-left with overlap */}
                     <div className="absolute top-4 left-4 z-10">
-                      <span className="text-4xl font-bold text-white/80 drop-shadow-md leading-none">"</span>
+                      <span className="text-4xl font-bold text-electric-purple drop-shadow-md leading-none">"</span>
                     </div>
+                    
+                    {/* Glow effect overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-electric-purple/5 via-transparent to-neon-blue/5 pointer-events-none rounded-2xl group-hover:from-electric-purple/10 group-hover:to-neon-blue/10 transition-all duration-500"></div>
 
                     {/* Content Area */}
                     <div className="p-6 pt-12 flex-1 flex flex-col justify-between">
                       {/* Quote Content */}
-                      <blockquote className="text-gray-700 text-lg leading-relaxed font-medium mb-6">
+                      <blockquote className="text-gray-200 text-lg leading-relaxed font-medium mb-6 relative z-10">
                         {card.quote}
                       </blockquote>
 
                       {/* Author Info - Compact layout */}
-                      <div className="flex items-center space-x-3">
-                        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gradient-to-r from-electric-purple to-neon-blue shadow-md flex-shrink-0">
+                      <div className="flex items-center space-x-3 relative z-10">
+                        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-electric-purple/50 shadow-lg flex-shrink-0 group-hover:border-electric-purple transition-all duration-300">
                           <img 
                             src={card.avatar} 
                             alt={card.author}
@@ -239,15 +245,15 @@ export default function FeedbackSection() {
                           />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <h4 className="text-gray-900 font-bold text-sm leading-tight truncate">{card.author}</h4>
+                          <h4 className="text-white font-bold text-sm leading-tight truncate">{card.author}</h4>
                           <p className="text-electric-purple font-semibold text-xs mt-0.5">{card.position}</p>
-                          <p className="text-gray-600 text-xs font-medium truncate">{card.company}</p>
+                          <p className="text-gray-400 text-xs font-medium truncate">{card.company}</p>
                         </div>
                       </div>
                     </div>
 
-                    {/* Soft gradient overlay for visual polish */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-gray-100/20 pointer-events-none rounded-2xl"></div>
+                    {/* Enhanced gradient overlay for visual polish */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-electric-purple/5 pointer-events-none rounded-2xl group-hover:to-electric-purple/10 transition-all duration-500"></div>
                   </div>
                 </motion.div>
               ))}
