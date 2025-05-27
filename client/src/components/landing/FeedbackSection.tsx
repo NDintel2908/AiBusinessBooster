@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { GlassCard } from "@/components/ui/glass-card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+
 
 const feedbacks = [
   {
@@ -46,7 +46,6 @@ export default function FeedbackSection() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState(0);
 
@@ -56,43 +55,23 @@ export default function FeedbackSection() {
     }
   }, [controls, isInView]);
 
-  // Auto-play functionality
+  // Auto-play functionality with immediate start
   useEffect(() => {
-    if (isAutoPlaying) {
-      const interval = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % feedbacks.length);
-      }, 4000);
-      return () => clearInterval(interval);
-    }
-  }, [isAutoPlaying]);
-
-  const nextSlide = () => {
-    setIsAutoPlaying(false);
-    setCurrentIndex((prev) => (prev + 1) % feedbacks.length);
-  };
-
-  const prevSlide = () => {
-    setIsAutoPlaying(false);
-    setCurrentIndex((prev) => (prev - 1 + feedbacks.length) % feedbacks.length);
-  };
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % feedbacks.length);
+    }, 4500); // 4.5 seconds for smooth pacing
+    return () => clearInterval(interval);
+  }, []);
 
   const goToSlide = (index: number) => {
-    setIsAutoPlaying(false);
     setCurrentIndex(index);
   };
 
-  const handleMouseEnter = () => {
-    setIsAutoPlaying(false);
-  };
-
-  const handleMouseLeave = () => {
-    setIsAutoPlaying(true);
-  };
+  
 
   // Touch/Mouse drag handlers
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
     setIsDragging(true);
-    setIsAutoPlaying(false);
     const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
     setDragStart(clientX);
   };
@@ -111,9 +90,9 @@ export default function FeedbackSection() {
     const threshold = 100;
 
     if (dragDistance > threshold) {
-      nextSlide();
+      goToSlide((currentIndex + 1) % feedbacks.length);
     } else if (dragDistance < -threshold) {
-      prevSlide();
+      goToSlide((currentIndex - 1 + feedbacks.length) % feedbacks.length);
     }
   };
 
@@ -183,8 +162,7 @@ export default function FeedbackSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          
         >
           {/* Cards Container with Peek Effect */}
           <div 
@@ -202,7 +180,7 @@ export default function FeedbackSection() {
             {/* Gradient fade-out on the right */}
             <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-gray-900 to-transparent z-10 pointer-events-none"></div>
             
-            <div className="flex gap-6 transition-transform duration-700 ease-out">
+            <div className="flex gap-6 transition-all duration-1000 ease-in-out">
               {visibleCards.map((card, index) => (
                 <motion.div
                   key={`card-${card.id}-${index}-${Date.now()}`}
@@ -218,7 +196,11 @@ export default function FeedbackSection() {
                     scale: card.isPeek ? 0.95 : 1,
                     x: 0 
                   }}
-                  transition={{ duration: 0.7, delay: index * 0.1 }}
+                  transition={{ 
+                    duration: 0.8, 
+                    delay: index * 0.1,
+                    ease: "easeInOut"
+                  }}
                   onClick={(e) => {
                     if (card.isPeek) {
                       e.preventDefault();
@@ -272,32 +254,7 @@ export default function FeedbackSection() {
             </div>
           </div>
 
-          {/* Navigation Arrows - Enhanced */}
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              prevSlide();
-            }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/40 hover:border-electric-purple/80 hover:scale-110 hover:shadow-xl hover:shadow-electric-purple/30 transition-all duration-300 z-20 shadow-lg cursor-pointer active:scale-95"
-            type="button"
-            aria-label="Previous testimonial"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
           
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              nextSlide();
-            }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/40 hover:border-electric-purple/80 hover:scale-110 hover:shadow-xl hover:shadow-electric-purple/30 transition-all duration-300 z-20 shadow-lg cursor-pointer active:scale-95"
-            type="button"
-            aria-label="Next testimonial"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
 
           {/* Dots Indicator - Enhanced */}
           <div className="flex justify-center mt-10 space-x-3">
@@ -321,19 +278,17 @@ export default function FeedbackSection() {
           </div>
 
           {/* Progress bar for auto-play - Enhanced */}
-          {isAutoPlaying && (
-            <div className="flex justify-center mt-6">
-              <div className="w-40 h-2 bg-gray-700/50 rounded-full overflow-hidden backdrop-blur-sm">
-                <motion.div
-                  className="h-full bg-gradient-to-r from-electric-purple to-neon-blue shadow-lg"
-                  initial={{ width: 0 }}
-                  animate={{ width: '100%' }}
-                  transition={{ duration: 4, ease: 'linear' }}
-                  key={currentIndex}
-                />
-              </div>
+          <div className="flex justify-center mt-6">
+            <div className="w-40 h-2 bg-gray-700/50 rounded-full overflow-hidden backdrop-blur-sm">
+              <motion.div
+                className="h-full bg-gradient-to-r from-electric-purple to-neon-blue shadow-lg"
+                initial={{ width: 0 }}
+                animate={{ width: '100%' }}
+                transition={{ duration: 4.5, ease: 'linear' }}
+                key={currentIndex}
+              />
             </div>
-          )}
+          </div>
         </motion.div>
       </div>
     </section>
