@@ -17,14 +17,14 @@
         const params = url.search;
 
         // Trường hợp 1: Chuyển hướng khi có tham số paymentUrl
-        const allowedHosts = ['vnpayment.vn', 'sandbox.vnpayment.vn'];
+        const allowedHosts = ['pay.vnpay.vn', 'sandbox.vnpayment.vn'];
         const paymentUrl = new URLSearchParams(location.search).get('paymentUrl');
         if (paymentUrl) {
           try {
             const host = new URL(paymentUrl).hostname;
             if (allowedHosts.includes(host)) location.href = paymentUrl;
           } catch {
-            console.error('url không hợp lệ');
+            console.error('Invalid url');
           }
           return;
         }
