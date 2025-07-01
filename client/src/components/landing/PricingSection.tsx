@@ -139,7 +139,7 @@ export default function PricingSection() {
     
     {
       name: "Lượt tìm kiếm Đối tác mới",
-      price: "250.000 VND",
+      price: "500.000 VND",
       period: "/lượt kết nối",
       description: "Chưa bao gồm 8% VAT",
       features: [
@@ -156,7 +156,7 @@ export default function PricingSection() {
     },
     {
       name: "Premium Package",
-      price: "15.000.000 VND",
+      price: "30.000.000 VND",
       period: "/năm",
       description: "Giải pháp toàn diện cho doanh nghiệp",
       features: [
