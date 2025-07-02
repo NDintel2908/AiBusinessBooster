@@ -66,11 +66,11 @@ export default function PricingComparison() {
                 <td className="px-4 py-3 border border-gray-700 text-center">Miễn phí</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                  
-                  <p><span className="font-bold text-red-500">15.000.000 VND/năm</span></p>
+                  <p><span className="font-bold text-red-500">30.000.000 VND/năm</span></p>
                 </td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                   
-                  <p><span className="font-bold text-red-500">600 USD/năm</span></p>
+                  <p><span className="font-bold text-red-500">1200 USD/năm</span></p>
                 </td>
               </tr>
 
@@ -167,7 +167,7 @@ export default function PricingComparison() {
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">12</td>
                 <td className="px-4 py-3 border border-gray-700">Chi phí cho 1 lượt trò chuyện cùng đối tác</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">250.000 VND/lượt (≈100 credits = 10 USD)</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">500.000 VND/lượt</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>
                   <span className="text-white-500">Được 10 kết nối mới mỗi tháng
                   
@@ -245,8 +245,7 @@ export default function PricingComparison() {
                 <tr>
                   <td className="px-4 py-3 border border-gray-700">Giá</td>
                   <td className="px-4 py-3 border border-gray-700">
-                    <p><strong>Gửi</strong>: 10 USD = 250,000 VND/lượt ~ 100 credits</p>
-                    <p><strong>Nhận</strong>: 2 USD = 50,000 VND/lượt ~ 20 credits</p>
+                    <p><strong>Gửi</strong>: 20 USD = 500,000 VND/lượt ~ 100 credits</p>
                   </td>
                 </tr>
                 <tr>
