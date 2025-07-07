@@ -127,20 +127,19 @@ export default function PricingSection() {
       price: "Miễn phí",
       description: "Bắt đầu khám phá cơ hội kinh doanh",
       features: [
-        { text: "Không giới hạn lượt kết nối", included: true },
+        { text: "Kết nối B2B không giới hạn", included: true },
         { text: "AI Matching cơ bản", included: true },
-        { text: "Hỗ trợ trong giờ hành chính", included: true },
+        { text: "Hỗ trợ 24/7", included: true },
         { text: "Hồ sơ doanh nghiệp chuẩn", included: true },
-        { text: "Tham gia cộng đồng BCP", included: true },
-        { text: "Xác thực nâng cao", included: false },
-        { text: "Ưu tiên hiển thị", included: false }
+        { text: "Tham gia cộng đồng giao thương BCP Vietnam - APAC", included: true },
+        
       ]
     },
     
     {
-      name: "Lượt tìm kiếm Đối tác mới",
+      name: "One Connection",
       price: "500.000 VND",
-      period: "/lượt kết nối",
+      period: "/kết nối",
       description: "Chưa bao gồm 8% VAT",
       features: [
         { text: "Kết nối MUA - BÁN - HỢP TÁC", included: true },
@@ -160,13 +159,15 @@ export default function PricingSection() {
       period: "/năm",
       description: "Giải pháp toàn diện cho doanh nghiệp",
       features: [
-        { text: "Tất cả tính năng Starter", included: true },
-        { text: "Xác thực tick xanh uy tín", included: true },
-        { text: "10 lượt kết nối ưu tiên/tháng", included: true },
-        { text: "Hỗ trợ 24/7 ưu tiên", included: true },
-        { text: "AI Agent chuyên biệt", included: true },
-        { text: "Đào tạo AI và networking", included: true },
-        { text: "Ưu tiên tính năng mới", included: true }
+        { text: "Tích xanh xác thực Thành viên tin cậy", included: true },
+        { text: "Kết nối 10 Đối tác - Khách hàng mới mỗi tháng", included: true },
+        { text: "Thiết kế hồ sơ Doanh nghiệp theo thị trường mục tiêu", included: true },
+        { text: "Được ưu tiên nhận và gửi kết nối đến Đối tác - Khách hàng mới", included: true },
+        { text: "Được mời trải nghiệm sớm Multi AI Agent", included: true },
+        { text: "Hỗ trợ trong vòng 2 giờ khi nhận được yêu cầu", included: true },
+        { text: "Ưu tiên mời tham gia kết nối giao thương thuộc BCP và đối tác", included: true },
+        { text: "Tham gia truyền thông và kết nối cùng Hệ sinh thái AIPartners.asia", included: true }
+        
       ],
       isPopular: true,
       ctaText: "Mua ngay",
