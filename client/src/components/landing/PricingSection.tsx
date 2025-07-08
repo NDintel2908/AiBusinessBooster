@@ -176,7 +176,7 @@ export default function PricingSection() {
       ]
     },
     {
-      name: "Premium Package",
+      name: "Premium User",
       price: "30.000.000 VND",
       period: "/năm",
       description: "Giải pháp toàn diện cho doanh nghiệp",
