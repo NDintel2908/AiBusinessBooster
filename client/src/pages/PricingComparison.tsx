@@ -36,7 +36,7 @@ export default function PricingComparison() {
                 <th className="px-4 py-3 border border-gray-700 text-left font-heading text-white min-w-[200px]">Các điểm so sánh</th>
                 <th className="px-4 py-3 border border-gray-700 text-center font-heading text-white min-w-[150px]">Starter Plan</th>
                 <th colSpan={2} className="px-4 py-3 border border-gray-700 text-center font-heading text-white bg-yellow-600/30 min-w-[300px]">
-                  Premium Company
+                  Premium User
                 </th>
               </tr>
               <tr className="bg-gray-800/30">
@@ -57,12 +57,12 @@ export default function PricingComparison() {
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">1</td>
                 <td className="px-4 py-3 border border-gray-700">Hình thức</td>
-                <td className="px-4 py-3 border border-gray-700 text-center">X</td>
+                <td className="px-4 py-3 border border-gray-700 text-center">Trial</td>
                 <td className="px-4 py-3 border border-gray-700 text-center" colSpan={2}>Subscription</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 border border-gray-700 text-center">2</td>
-                <td className="px-4 py-3 border border-gray-700">Giá cả</td>
+                <td className="px-4 py-3 border border-gray-700">Giá</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">Miễn phí</td>
                 <td className="px-4 py-3 border border-gray-700 text-center">
                  
