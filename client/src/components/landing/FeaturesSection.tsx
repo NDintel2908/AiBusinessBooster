@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
@@ -13,24 +12,24 @@ const StatItem = ({ number, description, endValue }: StatItemProps) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  
+
   useEffect(() => {
     if (isInView) {
       const duration = 2000; // 2 seconds
       const steps = 60;
       const stepDuration = duration / steps;
       let currentStep = 0;
-      
+
       const timer = setInterval(() => {
         currentStep++;
         const progress = currentStep / steps;
         setCount(Math.floor(endValue * progress));
-        
+
         if (currentStep === steps) {
           clearInterval(timer);
         }
       }, stepDuration);
-      
+
       return () => clearInterval(timer);
     }
   }, [isInView, endValue]);
@@ -41,14 +40,19 @@ const StatItem = ({ number, description, endValue }: StatItemProps) => {
         {count}
         {number.includes("+") && "+"}
       </div>
-      <p className="text-[1.1rem] font-primary text-gray-400 max-w-sm mx-auto">{description}</p>
+      <p className="text-[1.1rem] font-primary text-gray-400 max-w-sm mx-auto">
+        {description}
+      </p>
     </div>
   );
 };
 
 export default function FeaturesSection() {
   return (
-    <section id="features-section" className="relative py-16 md:py-20 px-8 overflow-hidden">
+    <section
+      id="features-section"
+      className="relative py-16 md:py-20 px-8 overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-[#f0f8ff] to-[#ffffff] opacity-10"></div>
 
       <div className="absolute right-0 top-1/2 -translate-y-1/2 transform scale-75 md:scale-100 origin-center">
@@ -65,7 +69,8 @@ export default function FeaturesSection() {
             Năng lực BCP
           </h2>
           <p className="text-[1.2rem] text-gray-400 font-primary">
-            Góc nhìn dựa trên dữ liệu về thành công các kết nối giao thương kể từ năm 2018
+            Góc nhìn dựa trên dữ liệu về thành công các kết nối giao thương kể
+            từ năm 2018
           </p>
         </div>
 
@@ -76,9 +81,9 @@ export default function FeaturesSection() {
             transition={{ duration: 0.5, delay: 0 }}
             viewport={{ once: true }}
           >
-            <StatItem 
+            <StatItem
               number="#1"
-              description="Hạng 1 vòng tiền ươm tạo cuộc thi AI Star 2024"
+              description="Hạng 1 vòng tiền ươm tại cuộc thi AI Star 2024"
               endValue={1}
             />
           </motion.div>
@@ -88,7 +93,7 @@ export default function FeaturesSection() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <StatItem 
+            <StatItem
               number="2200+"
               description="Doanh nghiệp tham gia"
               endValue={2200}
@@ -101,7 +106,7 @@ export default function FeaturesSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <StatItem 
+            <StatItem
               number="1600+"
               description="Kết nối thành công"
               endValue={1600}
@@ -114,7 +119,7 @@ export default function FeaturesSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <StatItem 
+            <StatItem
               number="3+"
               description="Quốc gia thành viên"
               endValue={3}
