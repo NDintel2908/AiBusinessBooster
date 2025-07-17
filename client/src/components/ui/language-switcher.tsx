@@ -1,5 +1,6 @@
 import * as React from "react";
 import { ChevronDown, Globe } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -22,22 +23,16 @@ const languages: Language[] = [
 
 interface LanguageSwitcherProps {
   className?: string;
-  defaultLanguage?: string;
-  onLanguageChange?: (language: Language) => void;
 }
 
-export function LanguageSwitcher({
-  className,
-  defaultLanguage = "vi",
-  onLanguageChange,
-}: LanguageSwitcherProps) {
-  const [currentLanguage, setCurrentLanguage] = React.useState<Language>(
-    languages.find((lang) => lang.code === defaultLanguage) || languages[0],
-  );
+export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
+  const { i18n } = useTranslation();
+
+  const currentLanguage =
+    languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   const handleLanguageChange = (language: Language) => {
-    setCurrentLanguage(language);
-    onLanguageChange?.(language);
+    i18n.changeLanguage(language.code);
   };
 
   return (
