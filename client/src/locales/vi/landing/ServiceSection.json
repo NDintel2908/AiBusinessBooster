@@ -1,0 +1,35 @@
+{
+  "serviceSection": {
+    "title": "Sự khác biệt của BCP.Global",
+    "description": "Khám phá sự hỗ trợ đặc biệt và những lợi thế độc đáo giúp BCP nổi bật trong câu chuyện kinh doanh của bạn.",
+    "features": {
+      "proactiveAI": {
+        "title": "Chủ động thông qua công nghệ AI",
+        "items": [
+          "Quảng cáo chính mình;",
+          "Tìm & lựa chọn đối tác phù hợp;",
+          "Chọn thị trường mở rộng."
+        ]
+      },
+      "decisionMaker": {
+        "title": "Kết nối với người ra quyết định cuối cùng",
+        "items": [
+          "Tiếp cận ĐÚNG NGƯỜI, ĐÚNG NHU CẦU – giúp rút ngắn thời gian đàm phán và nâng cao hiệu quả hợp tác."
+        ]
+      },
+      "aiAssistant": {
+        "title": "Trợ lý AI kết nối đa năng",
+        "items": [
+          "Thu thập đầy đủ thông tin chính xác & cung cấp thêm market size, cơ hội thị trường;",
+          "AI đề xuất các dữ liệu về quy mô thị trường, phân tích cơ hội và cung cấp đầy đủ thông tin đối tác – hỗ trợ lãnh đạo ra quyết định nhanh chóng và chính xác."
+        ]
+      },
+      "security": {
+        "title": "Cam kết bảo mật",
+        "items": [
+          "Toàn bộ dữ liệu và trao đổi đều được mã hóa, tuân thủ các tiêu chuẩn bảo mật quốc tế – bảo vệ quyền riêng tư và lợi ích kinh doanh của bạn."
+        ]
+      }
+    }
+  }
+}

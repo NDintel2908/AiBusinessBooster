@@ -1,0 +1,139 @@
+{
+  "businessSectors": {
+    "sectionHeader": {
+      "badge": "Ngành nghề hỗ trợ",
+      "title": "25 Ngành kinh doanh được <1>BCP.Global</1> hỗ trợ",
+      "description": "Khám phá danh sách đầy đủ các ngành kinh doanh mà nền tảng AI của chúng tôi có thể hỗ trợ kết nối và phát triển"
+    },
+    "groupsList": {
+      "title": "Danh sách ngành theo nhóm",
+      "sectorsCount": "{{count}} ngành"
+    },
+    "businessGroups": {
+      "manufacturing": {
+        "title": "Nhóm A - Cung cấp dịch vụ B2B chuyên nghiệp (Professional services)",
+        "sectors": {
+          "itDevelopment": {
+            "name": "Phát triển gia công phần mềm CNTT, AI và IOT",
+            "description": "Phát triển ứng dụng, hệ thống phần mềm, giải pháp AI và thiết bị IoT thông minh"
+          },
+          "consulting": {
+            "name": "Tư vấn kế toán, tài chính, pháp lý, bảo hiểm",
+            "description": "Cung cấp dịch vụ tư vấn chuyên nghiệp về tài chính, kế toán, pháp lý và bảo hiểm"
+          },
+          "hr": {
+            "name": "Dịch vụ nhân sự, tuyển dụng và đào tạo",
+            "description": "Tư vấn nhân sự, tuyển dụng nhân tài và phát triển chương trình đào tạo"
+          },
+          "marketing": {
+            "name": "Agency quảng cáo, marketing",
+            "description": "Thiết kế chiến lược marketing, quảng cáo và xây dựng thương hiệu"
+          },
+          "distribution": {
+            "name": "Dịch vụ phân phối, thương mại nội địa",
+            "description": "Phân phối sản phẩm, kinh doanh bán lẻ và thương mại trong nước"
+          },
+          "logistics": {
+            "name": "Dịch vụ vận chuyển, logistic, phân phối và lưu trữ hàng hoá",
+            "description": "Quản lý chuỗi cung ứng, vận chuyển và kho bãi logistics chuyên nghiệp"
+          },
+          "architecture": {
+            "name": "Thiết kế kiến trúc, nội thất văn phòng",
+            "description": "Thiết kế kiến trúc, quy hoạch không gian và nội thất chuyên nghiệp"
+          },
+          "realEstate": {
+            "name": "Kinh doanh bất động sản văn phòng, thương mại, bán lẻ, khu công nghiệp",
+            "description": "Đầu tư, phát triển và kinh doanh các dự án bất động sản thương mại và công nghiệp"
+          },
+          "export": {
+            "name": "Nhóm dịch vụ xuất khẩu, phát triển thị trường xuyên quốc gia",
+            "description": "Hỗ trợ xuất khẩu, mở rộng thị trường quốc tế và thương mại xuyên biên giới"
+          }
+        }
+      },
+      "technology": {
+        "title": "Nhóm B - Cung cấp nguyên vật liệu, hàng hóa cho doanh nghiệp sản xuất",
+        "sectors": {
+          "agriculture": {
+            "name": "Nông Nghiệp và Thủy Sản",
+            "description": "Cung cấp nguyên liệu thô như nông sản, thủy sản cho các doanh nghiệp chế biến thực phẩm"
+          },
+          "food": {
+            "name": "Thực Phẩm",
+            "description": "Cung cấp nguyên liệu thực phẩm như dầu thực vật, gia vị cho các doanh nghiệp chế biến thực phẩm"
+          },
+          "textile": {
+            "name": "Dệt May",
+            "description": "Cung cấp nguyên liệu như sợi, vải cho các doanh nghiệp may mặc"
+          },
+          "paper": {
+            "name": "Giấy",
+            "description": "Cung cấp nguyên liệu như bột giấy, giấy thô cho các doanh nghiệp sản xuất giấy và bao bì"
+          },
+          "chemical": {
+            "name": "Hóa Chất",
+            "description": "Cung cấp nguyên liệu hóa chất như nhựa nguyên sinh, hóa chất cơ bản cho các ngành công nghiệp khác"
+          },
+          "construction": {
+            "name": "Vật Tư Xây Dựng",
+            "description": "Cung cấp nguyên liệu như xi măng, thép, gạch cho các công ty xây dựng"
+          },
+          "mining": {
+            "name": "Khai Khoáng",
+            "description": "Cung cấp nguyên liệu thô như đá, cát, sỏi, quặng kim loại cho các ngành xây dựng và luyện kim"
+          }
+        }
+      },
+      "services": {
+        "title": "Nhóm C - Sản xuất, gia công cung cấp sản phẩm cho người dùng cuối",
+        "sectors": {
+          "foodManufacturing": {
+            "name": "Nhà Sản Xuất Thực Phẩm và Đồ Uống",
+            "description": "Chế biến và sản xuất các sản phẩm thực phẩm, đồ uống tiêu dùng phục vụ thị trường bán lẻ"
+          },
+          "fashionManufacturing": {
+            "name": "Nhà Sản Xuất Dệt May, sản phẩm thời trang",
+            "description": "Sản xuất quần áo, phụ kiện thời trang và các sản phẩm dệt may xuất khẩu"
+          },
+          "consumerGoods": {
+            "name": "Nhà Sản Xuất Hàng Tiêu Dùng",
+            "description": "Sản xuất các sản phẩm tiêu dùng thiết yếu như mỹ phẩm, đồ dùng gia đình, văn phòng phẩm"
+          },
+          "electronics": {
+            "name": "Nhà Sản Xuất Điện tử, Thiết Bị Gia Dụng",
+            "description": "Sản xuất và lắp ráp các thiết bị điện tử, máy móc và đồ gia dụng hiện đại"
+          },
+          "automotive": {
+            "name": "Nhà Sản Xuất Xe và Phụ Tùng",
+            "description": "Sản xuất và lắp ráp ô tô, xe máy cùng các linh kiện, phụ tùng thay thế"
+          }
+        }
+      },
+      "infrastructure": {
+        "title": "Nhóm D - Gia công linh kiện & phụ trợ công nghiệp",
+        "sectors": {
+          "industrialComponents": {
+            "name": "Gia Công Linh Kiện Phụ Trợ Công Nghiệp",
+            "description": "Sản xuất các chi tiết, bộ phận được sử dụng trong các ngành công nghiệp khác nhau"
+          },
+          "semiconductor": {
+            "name": "Gia Công Linh Kiện Ngành Bán Dẫn",
+            "description": "Sản xuất, gia công mạch tích hợp và transistor"
+          },
+          "precision": {
+            "name": "Gia Công Cơ Khí Chính Xác",
+            "description": "Tiện, phay CNC, gia công khuôn mẫu, phục vụ cho các ngành như ô tô, tự động hóa, và sản xuất máy móc."
+          },
+          "specializedEquipment": {
+            "name": "Sản Xuất và Cung Cấp Thiết Bị Chuyên Ngành",
+            "description": "Gia công, sản xuất và cung cấp thiết bị chuyên ngành cho các ngành thiết bị y tế, thiết bị tự động hóa, và các phụ tùng ô tô"
+          }
+        }
+      }
+    },
+    "callToAction": {
+      "text": "Ngành của bạn chưa có trong danh sách? Chúng tôi luôn sẵn sàng mở rộng hỗ trợ",
+      "button": "Liên hệ tư vấn"
+    }
+  }
+}

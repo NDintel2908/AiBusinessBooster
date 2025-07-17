@@ -1,0 +1,15 @@
+{
+  "header": {
+    "navigation": {
+      "features": "Tính năng",
+      "pricing": "Bảng giá",
+      "aboutUs": "Về chúng tôi"
+    },
+    "cta": {
+      "getStarted": "Bắt đầu ngay"
+    },
+    "mobile": {
+      "toggleMenu": "Toggle mobile menu"
+    }
+  }
+}  

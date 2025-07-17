@@ -1,0 +1,27 @@
+{
+  "footer": {
+    "company": {
+      "title": "Công ty",
+      "aboutUs": "Về chúng tôi",
+      "features": "Tính năng",
+      "pricing": "Bảng giá"
+    },
+    "resources": {
+      "title": "Tài nguyên",
+      "paymentPolicy": "Chính sách thanh toán",
+      "privacyPolicy": "Chính sách Quyền Riêng Tư",
+      "pricingComparison": "So sánh gói dịch vụ",
+      "termsOfService": "Điều khoản Dịch vụ"
+    },
+    "paymentPartners": {
+      "title": "Đối tác thanh toán"
+    },
+    "companyInfo": {
+      "title": "Thông tin công ty",
+      "taxCode": "Mã số thuế: 0317026053",
+      "address": "Địa chỉ: 224A Điện Biên Phủ, Phường Xuân Hòa, TPHCM",
+      "phone": "Số điện thoại: 0963254259"
+    },
+    "copyright": "© {{year}} Business Connecting Platform (BCP). Bản quyền đã được đăng ký."
+  }
+}

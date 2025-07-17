@@ -1,0 +1,21 @@
+{
+  "contactSection": {
+    "badge": "Liên hệ với chúng tôi",
+    "title": "Trở thành đối tác được BCP giới thiệu",
+    "description": "Điền vào biểu mẫu và chuyên gia kinh doanh AI của chúng tôi sẽ liên hệ lại với bạn trong vòng 24 giờ để thảo luận về cách BCP có thể cách mạng hóa chiến lược đối tác của bạn.",
+    "form": {
+      "title": "Biểu mẫu liên hệ",
+      "name": "Họ tên",
+      "namePlaceholder": "Nguyễn Văn A",
+      "email": "Địa chỉ email",
+      "emailPlaceholder": "example@company.com",
+      "company": "Tên công ty",
+      "companyPlaceholder": "Công ty của bạn",
+      "requirements": "Yêu cầu cụ thể",
+      "requirementsPlaceholder": "Hãy cho chúng tôi biết về nhu cầu và cách chúng tôi có thể giúp đỡ...",
+      "submit": "Gửi yêu cầu",
+      "submitting": "Đang gửi...",
+      "success": "Yêu cầu của bạn đã được gửi thành công!"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "feedbackSection": {
+    "badge": "Phản hồi khách hàng",
+    "title": "Những gì lãnh đạo doanh nghiệp nói về BCP.Global",
+    "description": "BCP là nền tảng giúp kết nối các doanh nghiệp với đối tác phù hợp thông qua AI, tạo ra những mối quan hệ kinh doanh bền vững và hiệu quả.",
+    "feedbacks": [
+      {
+        "id": 1,
+        "quote": "BCP đã thay đổi hoàn toàn cách chúng tôi kết nối với đối tác. AI matching rất chính xác.",
+        "author": "Trịnh Hồng Khánh",
+        "position": "CEO",
+        "company": "Kế toán Ba Miền",
+        "avatar": "https://webketoan.com.vn/storage/a-khanh-1.png"
+      },
+      {
+        "id": 2,
+        "quote": "Nền tảng này đã giúp chúng tôi mở rộng thị trường quốc tế một cách hiệu quả.",
+        "author": "Nguyễn Hải Tâm",
+        "position": "Giám đốc Kinh doanh",
+        "company": "Webketoan",
+        "avatar": "https://th.bing.com/th/id/OIP.7gD_w3iBZiq4dFm7oermRwHaHa?rs=1&pid=ImgDetMain"
+      },
+      {
+        "id": 3,
+        "quote": "AI của BCP không chỉ tìm đối tác mà còn đánh giá độ tin cậy rất tốt.",
+        "author": "Wichak Chongudomlert",
+        "position": "Founder",
+        "company": "Signify",
+        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQFk-068nzT0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686639741459?e=1753920000&v=beta&t=NsmWWxJQnvYXi5XDjAAwmm__Cu53pzsEtNaOV2bNYAU"
+      }
+    ]
+  }
+}

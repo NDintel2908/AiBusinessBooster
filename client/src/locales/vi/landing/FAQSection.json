@@ -1,0 +1,28 @@
+{
+  "faqSection": {
+    "title": "Câu hỏi thường gặp",
+    "description": "Tìm hiểu câu trả lời cho các câu hỏi phổ biến về nền tảng kết nối doanh nghiệp AI của chúng tôi",
+    "faqItems": [
+      {
+        "question": "BCP là gì?",
+        "answer": "BCP - Business Connecting Platform được phát triển bởi Công ty Cổ phần BCP.\n\nNền tảng BCP là một hệ sinh thái kỹ thuật số tiên tiến, kết nối hàng nghìn doanh nghiệp trên khắp thế giới. Chúng tôi tạo ra cơ hội để các công ty:\n\n1. Tìm kiếm đối tác mua bán sản phẩm/dịch vụ\n2. Khám phá cơ hội hợp tác đầu tư\n3. Mở rộng mạng lưới kinh doanh quốc tế"
+      },
+      {
+        "question": "BCP phục vụ được bao nhiêu ngành nghề, lĩnh vực?",
+        "answer": "Cho đến nay chúng tôi không đặt ra bất kỳ giới hạn nào đối với các ngành nghề, lĩnh vực kinh doanh hợp pháp."
+      },
+      {
+        "question": "Dữ liệu của tôi và công ty có được bảo mật khi dùng nền tảng này không?",
+        "answer": "Dữ liệu của bạn và công ty được bảo mật nghiêm ngặt khi sử dụng nền tảng này. Chúng tôi sử dụng mã hóa TLS để bảo vệ đường truyền dữ liệu, dữ liệu được lưu trữ trong cơ sở dữ liệu mã hóa và máy chủ được đặt trong mạng riêng, đảm bảo an toàn. Ngoài ra, tường lửa chặn các IP độc hại và các nhu cầu tấn công phổ biến như SQL injection, giúp bảo vệ dữ liệu của bạn khỏi các mối đe dọa."
+      },
+      {
+        "question": "Thông tin doanh nghiệp của tôi có được giữ bí mật không?",
+        "answer": "Hoàn toàn có. Chúng tôi coi trọng quyền riêng tư dữ liệu một cách nghiêm túc. Bạn kiểm soát chính xác thông tin nào hiển thị cho các đối tác tiềm năng, và tất cả dữ liệu kinh doanh nhạy cảm đều được mã hóa và bảo vệ. Chúng tôi không bao giờ bán thông tin của bạn cho bên thứ ba, và bạn có thể yêu cầu xóa hoàn toàn dữ liệu của mình bất cứ lúc nào."
+      },
+      {
+        "question": "Điều gì khiến BCP khác biệt so với các nền tảng kết nối truyền thống?",
+        "answer": "Khác với các nền tảng truyền thống dựa vào tìm kiếm thủ công hoặc khớp từ khóa cơ bản, BCP sử dụng AI tiên tiến để chủ động xác định các đối tác kinh doanh tối ưu dựa trên phân tích tương thích sâu. Nền tảng của chúng tôi loại bỏ sự phỏng đoán và vô số giờ thường dành cho việc kết nối, làm tăng đáng kể cơ hội tìm kiếm mối quan hệ kinh doanh chuyển đổi."
+      }
+    ]
+  }
+}

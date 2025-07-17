@@ -1,0 +1,168 @@
+{
+  "pricingComparison": {
+    "title": "So sánh chi tiết các gói dịch vụ",
+    "description": "Lựa chọn gói dịch vụ phù hợp với nhu cầu kinh doanh của bạn. So sánh các tính năng và đặc quyền để có quyết định đúng đắn.",
+    "table": {
+      "headers": {
+        "number": "#",
+        "comparison": "Các điểm so sánh",
+        "starterPlan": "Starter Plan",
+        "premiumUser": "Premium User",
+        "vietnamCompany": "Công ty Việt",
+        "foreignCompany": "Công ty nước ngoài"
+      },
+      "sections": {
+        "general": {
+          "title": "THÔNG TIN CHUNG",
+          "rows": [
+            {
+              "id": 1,
+              "feature": "Hình thức",
+              "starterPlan": "Trial",
+              "premiumUser": "Subscription"
+            },
+            {
+              "id": 2,
+              "feature": "Giá",
+              "starterPlan": "Miễn phí",
+              "vietnamCompany": "30.000.000 VND/năm",
+              "foreignCompany": "1200 USD/năm"
+            },
+            {
+              "id": 3,
+              "feature": "VAT",
+              "starterPlan": "8%",
+              "premiumUser": "8%"
+            },
+            {
+              "id": 4,
+              "feature": "Số lượt kết nối",
+              "starterPlan": "Không giới hạn",
+              "premiumUser": "Không giới hạn"
+            },
+            {
+              "id": 5,
+              "feature": "AI hỗ trợ cơ bản",
+              "starterPlan": "✓",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 6,
+              "feature": "AI Matching Agent",
+              "starterPlan": "✓ (phải mua credits)",
+              "premiumUser": "✓"
+            }
+          ]
+        },
+        "privileges": {
+          "title": "ĐẶC QUYỀN",
+          "rows": [
+            {
+              "id": 7,
+              "feature": "Hồ sơ",
+              "starterPlan": "Tiêu chuẩn",
+              "premiumUser": "Nâng cao"
+            },
+            {
+              "id": 8,
+              "feature": "Hỗ trợ bởi AI & Human",
+              "starterPlan": "Trong vòng 2 tiếng kể từ lúc nhận được request",
+              "premiumUser": "24/7"
+            },
+            {
+              "id": 9,
+              "feature": "Xác thực cấp độ cao nhất\n(verified nhận tích xanh)",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 10,
+              "feature": "Hiển thị trên top qua keyword\n(được chọn lọc & hiển thị top bởi\nAI gần với các keywords)",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 11,
+              "feature": "Ưu tiên nhận demand & kết quả",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 12,
+              "feature": "Chi phí cho 1 lượt trò chuyện cùng đối tác",
+              "starterPlan": "500.000 VND/lượt",
+              "premiumUser": "Được 10 kết nối mới mỗi tháng\nKhông áp dụng cộng dồn"
+            },
+            {
+              "id": 13,
+              "feature": "Dữ liệu DN được training riêng bởi human & AI",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            }
+          ]
+        },
+        "expandedAI": {
+          "title": "DỊCH VỤ AI MỞ RỘNG",
+          "rows": [
+            {
+              "id": 14,
+              "feature": "Được ưu tiên trải nghiệm các tính năng AI mới",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 15,
+              "feature": "Mời tham gia các sự kiện chương trình kết nối giao thương global của BCP",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 16,
+              "feature": "Được mời tham gia đào tạo AI và kết nối với hệ sinh thái AIPartners.asia",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            }
+          ]
+        }
+      }
+    },
+    "slotConnecting": {
+      "title": "Slot Connecting",
+      "headers": {
+        "info": "Thông tin",
+        "slotConnecting": "Slot Connecting"
+      },
+      "rows": [
+        {
+          "feature": "Hình thức",
+          "value": "✕"
+        },
+        {
+          "feature": "Giá",
+          "value": "Gửi: 20 USD = 500,000 VND/lượt ~ 100 credits"
+        },
+        {
+          "feature": "VAT",
+          "value": "8%"
+        },
+        {
+          "feature": "Số lượt kết nối",
+          "value": "Chỉ có thể sử dụng AI Matching khi đạt Verified level 2"
+        }
+      ]
+    },
+    "importantNotes": {
+      "title": "Các lưu ý quan trọng:",
+      "notes": [
+        "Giá trên chưa bao gồm 8% VAT theo quy định của pháp luật.",
+        "Đăng ký gói Premium Company năm sẽ được ưu đãi 2 tháng miễn phí.",
+        "Xác thực cấp độ cao nhất giúp tăng độ tin cậy và tỷ lệ kết nối thành công.",
+        "Slot Connecting có thể được mua riêng lẻ hoặc kết hợp với các gói dịch vụ khác."
+      ]
+    },
+    "cta": {
+      "text": "Đăng ký ngay",
+      "link": "https://bcp.global/credit"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "heroSection": {
+    "badge": "Công cụ, thói quen và trợ lý phát triển kinh doanh mới với AI Matching Agent",
+    "title": "MỞ RỘNG TỪNG ĐỐI TÁC, KHÁCH HÀNG B2B VỚI AI MATCHING AGENT",
+    "description": "BCP - Business Connecting Platform là một nền tảng kết nối MUA - BÁN - HỢP TÁC toàn cầu ứng dụng công nghệ AI, cho phép TÌM KIẾM - KẾT NỐI - GIAO DỊCH theo thời gian thực & tiết kiệm chi phí thông qua các gợi ý kết nối thông minh.",
+    "cta": {
+      "primary": "Bắt Đầu Ngay",
+      "secondary": "Liên Hệ Ngay"
+    },
+    "stats": {
+      "text": "doanh nghiệp mới đăng ký trong tháng",
+      "number": "500+"
+    },
+    "businessPersons": [
+      {
+        "alt": "Business Person 1",
+        "src": "https://miro.medium.com/v2/resize:fit:2400/1*_sL-AjS_oCEvJO1DY51ULg.png"
+      },
+      {
+        "alt": "Business Person 2",
+        "src": "https://static.ybox.vn/2024/6/1/1718600454382-Vietlink-logo.jpg"
+      },
+      {
+        "alt": "Business Person 3",
+        "src": "https://freelogopng.com/images/all_img/1657952641google-logo-png-image.png"
+      }
+    ]
+  }
+}
