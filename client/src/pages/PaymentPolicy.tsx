@@ -1,18 +1,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+import "@/lib/i18n";
 
 export default function PaymentPolicy() {
+  const { t } = useTranslation('paymentPolicy');
   const [activeSection, setActiveSection] = useState(1);
 
-  const sections = [
-    { id: 1, title: "Phương thức thanh toán" },
-    { id: 2, title: "Điều khoản và điều kiện thanh toán" },
-    { id: 3, title: "Bảo mật thanh toán" },
-    { id: 4, title: "Quản lý đăng ký và nâng cấp" },
-    { id: 5, title: "Tuân thủ pháp lý" },
-  ];
+  const sections = t('paymentPolicy.sections', { returnObjects: true }) as Array<{ id: number; title: string }>;
 
   return (
     <div className="min-h-screen bg-deep-dark text-gray-200">
@@ -54,140 +51,93 @@ export default function PaymentPolicy() {
             className="lg:col-span-9"
           >
             <h1 className="text-4xl font-heading font-bold mb-4 text-white">
-              Chính sách Thanh toán
+              {t('paymentPolicy.title')}
             </h1>
-            <p className="text-gray-400 mb-8">Cập nhật: Tháng 3/2024</p>
+            <p className="text-gray-400 mb-8">{t('paymentPolicy.lastUpdated')}</p>
 
             <div className="prose prose-invert max-w-none space-y-6">
               <section id="section1">
                 <h2 className="text-2xl font-heading font-semibold mb-4">
-                  1. Phương thức thanh toán
+                  {t('paymentPolicy.content.section1.title')}
                 </h2>
                 <p>
-                  BCP cung cấp nhiều tuỳ chọn thanh toán để đáp ứng nhu cầu đa
-                  dạng của Doanh nghiệp:
+                  {t('paymentPolicy.content.section1.intro')}
                 </p>
                 <ul>
-                  <li>
-                    Thanh toán qua mã QR (VNPay): Quét mã VNPayQR để thanh toán
-                    dễ dàng
-                  </li>
-                  <li>
-                    Ví điện tử PayPal: Hỗ trợ thanh toán quốc tế qua thẻ Visa,
-                    Mastercard, Amex, Discover...
-                  </li>
-                  <li>
-                    Thanh toán định kỳ: Áp dụng cho các gói dịch vụ SaaS với
-                    hình thức thanh toán hàng tháng hoặc hàng năm.
-                  </li>
+                  {(t('paymentPolicy.content.section1.methods', { returnObjects: true }) as string[]).map((method, index) => (
+                    <li key={index}>{method}</li>
+                  ))}
                 </ul>
                 <p>
-                  Mọi giao dịch được thực hiện qua cổng thanh toán đối tác, đảm
-                  bảo an toàn và bảo mật theo chuẩn quốc tế.
+                  {t('paymentPolicy.content.section1.security')}
                 </p>
               </section>
 
               <section id="section2">
                 <h2 className="text-2xl font-heading font-semibold mb-4">
-                  2. Quy trình thanh toán
+                  {t('paymentPolicy.content.section2.title')}
                 </h2>
                 <div className="prose prose-invert max-w-none space-y-6">
                   <p>
-                    <strong>2.1. Thời hạn thanh toán</strong>
+                    <strong>{t('paymentPolicy.content.section2.subsections.paymentTerm.title')}</strong>
                   </p>
-                  <p>
-                    Thanh toán phải được thực hiện ngay khi đặt hàng hoặc trước
-                    khi kích hoạt dịch vụ.
-                  </p>
-                  <p>
-                    Đối với các gói định kỳ, Doanh nghiệp sẽ nhận được thông báo
-                    nhắc nhở trước 7 ngày về việc gia hạn.
-                  </p>
-                  <p>
-                    Trong trường hợp Doanh nghiệp thanh toán trễ hạn, BCP sẽ áp
-                    dụng phí phạt 5% trên tổng giá trị hoá đơn trong lần thanh
-                    toán tiếp theo (sau 30 ngày kể từ ngày đến hạn).
-                  </p>
+                  {(t('paymentPolicy.content.section2.subsections.paymentTerm.content', { returnObjects: true }) as string[]).map((content, index) => (
+                    <p key={index}>{content}</p>
+                  ))}
 
                   <p>
-                    <strong>2.2. Chính sách hoàn tiền</strong>
+                    <strong>{t('paymentPolicy.content.section2.subsections.refundPolicy.title')}</strong>
                   </p>
                   <p>
-                    Các Doanh nghiệp sẽ được hưởng chính sách hoàn tiền khi thoả
-                    mãn đủ các điều kiện sau:
+                    {t('paymentPolicy.content.section2.subsections.refundPolicy.intro')}
                   </p>
                   <ul>
-                    <li>
-                      Huỷ dịch vụ trong vòng 7 ngày kể từ ngày mua (không áp
-                      dụng cho gói Slot Connecting);
-                    </li>
-                    <li>
-                      Chưa sử dụng gói dịch vụ để kết nối, sử dụng đặc quyền của
-                      các gói dịch vụ định kỳ.
-                    </li>
-                    <li>
-                      Hoàn tiền đầy đủ nếu khách hàng hủy dịch vụ trong vòng 14
-                      ngày kể từ ngày mua (áp dụng cho gói dùng thử).
-                    </li>
+                    {(t('paymentPolicy.content.section2.subsections.refundPolicy.conditions', { returnObjects: true }) as string[]).map((condition, index) => (
+                      <li key={index}>{condition}</li>
+                    ))}
                   </ul>
                   <p>
-                    Trong trường hợp Doanh nghiệp đã sử dụng phần lớn thời gian
-                    hoặc tài nguyên dịch vụ do BCP cung cấp, các yêu cầu hoàn
-                    tiền sẽ không khả dụng.
+                    {t('paymentPolicy.content.section2.subsections.refundPolicy.note')}
                   </p>
                   <p>
-                    Doanh nghiệp có thể tìm hiểu thêm về Dịch vụ trả phí của BCP
-                    tại Điều khoản Dịch vụ.
+                    {t('paymentPolicy.content.section2.subsections.refundPolicy.reference')}
                   </p>
                 </div>
               </section>
 
               <section id="section3">
                 <h2 className="text-2xl font-heading font-semibold mb-4">
-                  3. Chính sách hoàn tiền
+                  {t('paymentPolicy.content.section3.title')}
                 </h2>
                 <div className="prose prose-invert max-w-none space-y-6">
-                  <p>BCP cam kết bảo vệ thông tin khách hàng bằng cách:</p>
+                  <p>{t('paymentPolicy.content.section3.intro')}</p>
                   <ul>
-                    <li>
-                      Mã hóa dữ liệu (SSL/TLS): Tất cả thông tin giao dịch sẽ
-                      được mã hóa để đảm bảo an toàn.
-                    </li>
-                    <li>
-                      Tuân thủ PCI DSS: Hệ thống thanh toán tuân thủ tiêu chuẩn
-                      bảo mật ngành thẻ để ngăn ngừa gian lận.
-                    </li>
+                    {(t('paymentPolicy.content.section3.measures', { returnObjects: true }) as string[]).map((measure, index) => (
+                      <li key={index}>{measure}</li>
+                    ))}
                   </ul>
                 </div>
               </section>
 
               <section id="section4">
                 <h2 className="text-2xl font-heading font-semibold mb-4">
-                  4. Bảo mật thông tin thanh toán
+                  {t('paymentPolicy.content.section4.title')}
                 </h2>
-                Doanh nghiệp có thể đăng ký nâng cấp các gói dịch vụ bất kỳ lúc
-                nào thông qua cổng quản lý dịch vụ. Trong trường hợp Doanh
-                nghiệp cần được hỗ trợ có thể liên hệ ngay với chúng tôi thông
-                qua chatbot AI hoặc email: connect@bcp.global
+                {t('paymentPolicy.content.section4.content')}
               </section>
 
               <section id="section5">
                 <h2 className="text-2xl font-heading font-semibold mb-4">
-                  5. Xử lý lỗi giao dịch
+                  {t('paymentPolicy.content.section5.title')}
                 </h2>
                 <div className="prose prose-invert max-w-none space-y-6">
                   <p>
-                    Chính sách thanh toán của BCP tuân thủ các quy định pháp
-                    luật Việt Nam và Quốc tế:
+                    {t('paymentPolicy.content.section5.intro')}
                   </p>
                   <ul>
-                    <li>
-                      Luật bảo vệ dữ liệu cá nhân (GDPR): Bảo vệ quyền riêng tư
-                      và dữ liệu của khách hàng;
-                    </li>
-                    <li>
-                      Đảm bảo minh bạch về phí và các điều khoản giao dịch.
-                    </li>
+                    {(t('paymentPolicy.content.section5.regulations', { returnObjects: true }) as string[]).map((regulation, index) => (
+                      <li key={index}>{regulation}</li>
+                    ))}
                   </ul>
                 </div>
               </section>
