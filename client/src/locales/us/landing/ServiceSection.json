@@ -1,0 +1,35 @@
+{
+  "serviceSection": {
+    "title": "What Makes BCP.Global Different?",
+    "description": "Discover the special support and unique advantages that make BCP stand out in your business story.",
+    "features": {
+      "proactiveAI": {
+        "title": "Gain Proactive Control with AI Technology",
+        "items": [
+          "Promote yourself effectively",
+          "Find & connect with the right partners",
+          "Build trusted partnerships",
+          "Choose your expansion markets"
+        ]
+      },
+      "decisionMaker": {
+        "title": "Connect directly with Final Decision-Makers",
+        "items": [
+          "Communicate directly with final decision-makers to ensure clear and efficient cooperation"
+        ]
+      },
+      "aiAssistant": {
+        "title": "AI-Powered Insight and Support",
+        "items": [
+          "BCP provides nontraditional market insights, analyzes broader opportunities, and delivers detailed information to and from potential partners to optimize potential business opportunities"
+        ]
+      },
+      "security": {
+        "title": "Commitment to Security",
+        "items": [
+          "All data and communications are protected by the law. All exchanges on BCP are encrypted and adhere to international security standards, safeguarding your privacy and business interests"
+        ]
+      }
+    }
+  }
+}

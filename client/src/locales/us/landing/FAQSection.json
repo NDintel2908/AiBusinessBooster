@@ -1,0 +1,28 @@
+{
+  "faqSection": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our AI business connection platform",
+    "faqItems": [
+      {
+        "question": "What is BCP?",
+        "answer": "BCP - Business Connecting Platform is developed by BCP Joint Stock Company.\n\nThe BCP platform is an advanced digital ecosystem that connects thousands of businesses worldwide. We create opportunities for companies to:\n\n1. Find partners to buy and sell products/services\n2. Discover investment cooperation opportunities\n3. Expand international business networks"
+      },
+      {
+        "question": "How many industries and fields can BCP serve?",
+        "answer": "So far we have not set any limits on legal business industries and fields."
+      },
+      {
+        "question": "Is my and my company's data secure when using this platform?",
+        "answer": "Your and your company's data is strictly secured when using this platform. We use TLS encryption to protect data transmission, data is stored in encrypted databases and servers are placed in private networks, ensuring security. In addition, firewalls block malicious IPs and common attack requirements like SQL injection, helping to protect your data from threats."
+      },
+      {
+        "question": "Is my business information kept confidential?",
+        "answer": "Absolutely. We take data privacy seriously. You control exactly what information is displayed to potential partners, and all sensitive business data is encrypted and protected. We never sell your information to third parties, and you can request complete deletion of your data at any time."
+      },
+      {
+        "question": "What makes BCP different from traditional connection platforms?",
+        "answer": "Unlike traditional platforms that rely on manual search or basic keyword matching, BCP uses advanced AI to proactively identify optimal business partners based on deep compatibility analysis. Our platform eliminates guesswork and countless hours typically spent on networking, significantly increasing the chances of finding business relationships that convert."
+      }
+    ]
+  }
+}

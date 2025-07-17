@@ -1,0 +1,27 @@
+{
+  "footer": {
+    "company": {
+      "title": "Company",
+      "aboutUs": "About us",
+      "features": "Features",
+      "pricing": "Pricing"
+    },
+    "resources": {
+      "title": "Resources",
+      "paymentPolicy": "Payment Policy",
+      "privacyPolicy": "Privacy Policy",
+      "pricingComparison": "Service Package Comparison",
+      "termsOfService": "Terms of Service"
+    },
+    "paymentPartners": {
+      "title": "Payment partners"
+    },
+    "companyInfo": {
+      "title": "Company information",
+      "taxCode": "Tax code: 0317026053",
+      "address": "Address: 224A Dien Bien Phu, Xuan Hoa Ward, HCMC",
+      "phone": "Phone: 0963254259"
+    },
+    "copyright": "© {{year}} Business Connecting Platform (BCP). All rights reserved."
+  }
+}

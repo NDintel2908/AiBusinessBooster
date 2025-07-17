@@ -1,0 +1,29 @@
+{
+  "heroSection": {
+    "badge": "AI Matching Agents: B2B Lead Generation with AI",
+    "title": "EXPAND YOUR GLOBAL B2B CONNECTIONS",
+    "description": "BCP - Business Connecting Platform is a global B2B platform for BUYING — SELLING — COOPERATION, powered by AI technology. The platform helps businesses SHARE DEMANDS — CONNECT — DEAL in real time through smart connection recommendations.",
+    "cta": {
+      "primary": "CONNECT NOW",
+      "secondary": "CONTACT US"
+    },
+    "stats": {
+      "text": "new businesses registered this month",
+      "number": "500+"
+    },
+    "businessPersons": [
+      {
+        "alt": "Business Person 1",
+        "src": "https://miro.medium.com/v2/resize:fit:2400/1*_sL-AjS_oCEvJO1DY51ULg.png"
+      },
+      {
+        "alt": "Business Person 2",
+        "src": "https://static.ybox.vn/2024/6/1/1718600454382-Vietlink-logo.jpg"
+      },
+      {
+        "alt": "Business Person 3",
+        "src": "https://freelogopng.com/images/all_img/1657952641google-logo-png-image.png"
+      }
+    ]
+  }
+}

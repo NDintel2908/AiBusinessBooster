@@ -1,0 +1,21 @@
+{
+  "contactSection": {
+    "badge": "Contact us",
+    "title": "Become a BCP recommended partner",
+    "description": "Fill out the form and our AI business expert will contact you within 24 hours to discuss how BCP can revolutionize your partnership strategy.",
+    "form": {
+      "title": "Contact form",
+      "name": "Full name",
+      "namePlaceholder": "John Smith",
+      "email": "Email address",
+      "emailPlaceholder": "example@company.com",
+      "company": "Company name",
+      "companyPlaceholder": "Your company",
+      "requirements": "Specific requirements",
+      "requirementsPlaceholder": "Tell us about your needs and how we can help...",
+      "submit": "Send request",
+      "submitting": "Sending...",
+      "success": "Your request has been sent successfully!"
+    }
+  }
+}

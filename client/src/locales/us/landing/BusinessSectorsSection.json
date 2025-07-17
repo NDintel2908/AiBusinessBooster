@@ -1,0 +1,139 @@
+{
+  "businessSectors": {
+    "sectionHeader": {
+      "badge": "Supported Industries",
+      "title": "25 Business Industries Supported by <1>BCP.Global</1>",
+      "description": "Explore the comprehensive list of business industries that our AI platform can support for connection and growth"
+    },
+    "groupsList": {
+      "title": "Industry List by Groups",
+      "sectorsCount": "{{count}} industries"
+    },
+    "businessGroups": {
+      "manufacturing": {
+        "title": "Group A - B2B Professional Services Provider",
+        "sectors": {
+          "itDevelopment": {
+            "name": "IT Software Development, AI and IoT Outsourcing",
+            "description": "Application development, software systems, AI solutions and smart IoT devices"
+          },
+          "consulting": {
+            "name": "Accounting, Financial, Legal, Insurance Consulting",
+            "description": "Providing professional consulting services in finance, accounting, legal and insurance"
+          },
+          "hr": {
+            "name": "Human Resources, Recruitment and Training Services",
+            "description": "HR consulting, talent recruitment and training program development"
+          },
+          "marketing": {
+            "name": "Advertising Agency, Marketing",
+            "description": "Marketing strategy design, advertising and brand building"
+          },
+          "distribution": {
+            "name": "Distribution Services, Domestic Trade",
+            "description": "Product distribution, retail business and domestic commerce"
+          },
+          "logistics": {
+            "name": "Transportation, Logistics, Distribution and Warehousing Services",
+            "description": "Supply chain management, transportation and professional logistics warehousing"
+          },
+          "architecture": {
+            "name": "Architecture Design, Office Interior",
+            "description": "Architectural design, space planning and professional interior design"
+          },
+          "realEstate": {
+            "name": "Office, Commercial, Retail, Industrial Real Estate Business",
+            "description": "Investment, development and business of commercial and industrial real estate projects"
+          },
+          "export": {
+            "name": "Export Services Group, Cross-border Market Development",
+            "description": "Export support, international market expansion and cross-border trade"
+          }
+        }
+      },
+      "technology": {
+        "title": "Group B - Materials and Goods Provider for Manufacturing Enterprises",
+        "sectors": {
+          "agriculture": {
+            "name": "Agriculture and Aquaculture",
+            "description": "Providing raw materials such as agricultural products and seafood for food processing enterprises"
+          },
+          "food": {
+            "name": "Food Materials",
+            "description": "Providing food ingredients such as vegetable oils and spices for food processing enterprises"
+          },
+          "textile": {
+            "name": "Textiles",
+            "description": "Providing raw materials such as yarn and fabric for garment enterprises"
+          },
+          "paper": {
+            "name": "Paper",
+            "description": "Providing raw materials such as pulp and raw paper for paper and packaging manufacturing enterprises"
+          },
+          "chemical": {
+            "name": "Chemicals",
+            "description": "Providing chemical raw materials such as virgin plastics and basic chemicals for other industries"
+          },
+          "construction": {
+            "name": "Construction Materials",
+            "description": "Providing raw materials such as cement, steel, and bricks for construction companies"
+          },
+          "mining": {
+            "name": "Mining",
+            "description": "Providing raw materials such as stone, sand, gravel, and metal ores for construction and metallurgy industries"
+          }
+        }
+      },
+      "services": {
+        "title": "Group C - Manufacturing and Processing for End-User Products",
+        "sectors": {
+          "foodManufacturing": {
+            "name": "Food and Beverage Manufacturers",
+            "description": "Processing and manufacturing consumer food and beverage products for the retail market"
+          },
+          "fashionManufacturing": {
+            "name": "Textile Manufacturing, Fashion Products",
+            "description": "Manufacturing clothing, fashion accessories and textile export products"
+          },
+          "consumerGoods": {
+            "name": "Consumer Goods Manufacturers",
+            "description": "Manufacturing essential consumer products such as cosmetics, household items, and office supplies"
+          },
+          "electronics": {
+            "name": "Electronics and Home Appliance Manufacturers",
+            "description": "Manufacturing and assembling electronic devices, machinery and modern home appliances"
+          },
+          "automotive": {
+            "name": "Vehicle and Parts Manufacturers",
+            "description": "Manufacturing and assembling automobiles, motorcycles and replacement parts and components"
+          }
+        }
+      },
+      "infrastructure": {
+        "title": "Group D - Industrial Components Processing & Support",
+        "sectors": {
+          "industrialComponents": {
+            "name": "Industrial Support Components Processing",
+            "description": "Manufacturing parts and components used in various industries"
+          },
+          "semiconductor": {
+            "name": "Semiconductor Industry Components Processing",
+            "description": "Manufacturing and processing integrated circuits and transistors"
+          },
+          "precision": {
+            "name": "Precision Mechanical Processing",
+            "description": "CNC turning and milling, mold processing, serving industries such as automotive, automation, and machinery manufacturing"
+          },
+          "specializedEquipment": {
+            "name": "Specialized Equipment Manufacturing and Supply",
+            "description": "Processing, manufacturing and supplying specialized equipment for medical devices, automation equipment, and automotive parts industries"
+          }
+        }
+      }
+    },
+    "callToAction": {
+      "text": "Don't see your industry in the list? We're always ready to expand our support",
+      "button": "Contact for consultation"
+    }
+  }
+}

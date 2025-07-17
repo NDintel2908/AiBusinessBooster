@@ -1,0 +1,15 @@
+{
+  "header": {
+    "navigation": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "aboutUs": "About Us"
+    },
+    "cta": {
+      "getStarted": "Get Started"
+    },
+    "mobile": {
+      "toggleMenu": "Toggle mobile menu"
+    }
+  }
+}

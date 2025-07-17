@@ -1,0 +1,91 @@
+{
+  "pricingSection": {
+    "badge": "Pricing Policy",
+    "title": "Choose the plan that's right for you",
+    "description": "Flexible solutions for every business scale",
+    "labels": {
+      "mostPopular": "Most Popular",
+      "singlePackage": "Single Package"
+    },
+    "plans": {
+      "oneConnection": {
+        "name": "One Connection",
+        "price": "$20",
+        "period": "/successful connection",
+        "description": "Excluding 8% VAT",
+        "ctaText": "Buy now",
+        "features": [
+          { "text": "BUY - SELL - COLLABORATE connections", "included": true },
+          {
+            "text": "Chat DIRECTLY with Final Decision-Makers",
+            "included": true
+          },
+          { "text": "AI Matching Agent", "included": true },
+          { "text": "Secure – User-friendly – Reliable", "included": true },
+          { "text": "Expand to Japan and Global Markets", "included": true },
+          { "text": "Multilingual Support", "included": true },
+          { "text": "Flexible Payment Options", "included": true }
+        ]
+      },
+      "starter": {
+        "name": "Starter Plan",
+        "price": "$0",
+        "period": "",
+        "description": "Start exploring business opportunities",
+        "ctaText": "Try it out",
+        "features": [
+          { "text": "Unlimited B2B Connections", "included": true },
+          { "text": "Basic AI Matching Agent", "included": true },
+          { "text": "24/7 Support", "included": true },
+          { "text": "Standard business profile", "included": true },
+          {
+            "text": "Join BCP Vietnam - APAC Business Community",
+            "included": true
+          }
+        ]
+      },
+      "premium": {
+        "name": "Premium User",
+        "price": "$1,200",
+        "period": "/year",
+        "description": "Comprehensive solution for businesses",
+        "ctaText": "Buy now",
+        "features": [
+          { "text": "Premium Verified badge", "included": true },
+          { "text": "10 monthly renewable B2B connections", "included": true },
+          {
+            "text": "Customized Company Profile per target market",
+            "included": true
+          },
+          {
+            "text": "Priority to receive and send connection requests",
+            "included": true
+          },
+          {
+            "text": "Exclusive Early Access to Multi AI Agent",
+            "included": true
+          },
+          { "text": "Support within 2 hours", "included": true },
+          {
+            "text": "Priority Invitation to BCP & Partner Business Matching Events",
+            "included": true
+          },
+          {
+            "text": "Be Part of the AIPartners.asia Ecosystem: Connect & Communicate",
+            "included": true
+          }
+        ]
+      }
+    },
+    "additionalInfo": {
+      "title": "Not sure which plan is right?",
+      "description": "Start with the free plan and upgrade when needed. All plans can be changed flexibly.",
+      "compareText": "Compare plan details"
+    },
+    "links": {
+      "signUp": "https://bcp.global/sign-up",
+      "buyCredit": "https://bcp.global/credit",
+      "comparison": "/pricing-comparison"
+    }
+  }
+}
