@@ -6,6 +6,8 @@ import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import React from 'react';
+import { useTranslation } from "react-i18next";
+import "./lib/i18n";
 
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const PricingComparison = lazy(() => import("@/pages/PricingComparison"));
@@ -14,6 +16,7 @@ const PaymentPolicy = lazy(() => import("@/pages/PaymentPolicy"));
 
 // HelpButton component
 function HelpButton() {
+  const { t } = useTranslation('app');
   const [isHovered, setIsHovered] = React.useState(false);
   const [showTooltip, setShowTooltip] = React.useState(false);
 
@@ -25,15 +28,15 @@ function HelpButton() {
   React.useEffect(() => {
     const timer = setTimeout(() => {
       setShowTooltip(true);
-      
+
       // Ẩn tooltip sau 5 giây
       const hideTimer = setTimeout(() => {
         setShowTooltip(false);
       }, 5000);
-      
+
       return () => clearTimeout(hideTimer);
     }, 3000);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -84,14 +87,14 @@ function HelpButton() {
   return (
     <>
       <div style={tooltipStyle}>
-        Cần hỗ trợ? Nhấn vào đây để liên hệ với chúng tôi qua Zalo
+        {t('helpButton.tooltip')}
       </div>
       <button 
         style={{...buttonStyle, ...(showTooltip && pulseAnimation)}}
         onClick={handleClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        aria-label="Hỗ trợ khách hàng"
+        aria-label={t('helpButton.ariaLabel')}
       >
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
@@ -128,8 +131,9 @@ function HelpButton() {
 
 
 function Router() {
+  const { t } = useTranslation('app');
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>{t('loading')}</div>}>
       <Switch>
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />

@@ -1,0 +1,7 @@
+{
+  "helpButton": {
+    "tooltip": "Need help? Click here to contact us via Zalo",
+    "ariaLabel": "Customer support"
+  },
+  "loading": "Loading..."
+}
