@@ -1,17 +1,23 @@
-
 import { motion } from "framer-motion";
-import BCPAILogo from './BCPAI.png';
+import { useTranslation } from "react-i18next";
+import BCPAILogo from "./BCPAI.png";
+import "../../lib/i18n";
 
 export default function ServiceSection() {
+  const { t } = useTranslation("service");
+
   return (
-    <section id="service-section" className="relative py-16 md:py-20 px-4 md:px-8">
+    <section
+      id="service-section"
+      className="relative py-16 md:py-20 px-4 md:px-8"
+    >
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-[2.5rem] font-bold text-white mb-4 font-heading">
-            Sự khác biệt của BCP.Global
+            {t("serviceSection.title")}
           </h2>
           <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto font-primary">
-            Khám phá sự hỗ trợ đặc biệt và những lợi thế độc đáo giúp BCP nổi bật trong câu chuyện kinh doanh của bạn.
+            {t("serviceSection.description")}
           </p>
         </div>
 
@@ -26,14 +32,16 @@ export default function ServiceSection() {
             className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              
-              Chủ động thông qua công nghệ AI
+              {t("serviceSection.features.proactiveAI.title")}
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              
-              <li>• Quảng cáo chính mình;</li>
-              <li>• Tìm & lựa chọn đối tác phù hợp;</li>
-              <li>• Chọn thị trường mở rộng.</li>
+              {(
+                t("serviceSection.features.proactiveAI.items", {
+                  returnObjects: true,
+                }) as string[]
+              ).map((item: string, index: number) => (
+                <li key={index}>• {item}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -46,19 +54,27 @@ export default function ServiceSection() {
             className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              
-              Kết nối với người ra quyết định cuối cùng
+              {t("serviceSection.features.decisionMaker.title")}
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              <li>• Tiếp cận ĐÚNG NGƯỜI, ĐÚNG NHU CẦU – giúp rút ngắn thời gian đàm phán và nâng cao hiệu quả hợp tác.
-</li>
+              {(
+                t("serviceSection.features.decisionMaker.items", {
+                  returnObjects: true,
+                }) as string[]
+              ).map((item: string, index: number) => (
+                <li key={index}>• {item}</li>
+              ))}
             </ul>
           </motion.div>
 
           {/* Center Logo for Mobile */}
           <div className="flex flex-col items-center my-8">
             <div className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400 shadow-2xl shadow-blue-500/20 relative">
-              <img src={BCPAILogo} alt="BCP AI Logo" className="w-32 h-32 object-contain" />
+              <img
+                src={BCPAILogo}
+                alt="BCP AI Logo"
+                className="w-32 h-32 object-contain"
+              />
               {/* Orbital rings */}
               <div className="absolute inset-0 border-2 border-blue-400/30 rounded-full animate-pulse"></div>
               <div className="absolute -inset-4 border border-blue-400/20 rounded-full"></div>
@@ -74,13 +90,16 @@ export default function ServiceSection() {
             className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              
-              Trợ lý AI kết nối đa năng
+              {t("serviceSection.features.aiAssistant.title")}
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              <li>• Thu thập đầy đủ thông tin chính xác & cung cấp thêm market size, cơ hội thị trường;</li>
-              <li>• AI đề xuất các dữ liệu về quy mô thị trường, phân tích cơ hội và cung cấp đầy đủ thông tin đối tác – hỗ trợ lãnh đạo ra quyết định nhanh chóng và chính xác.
-</li>
+              {(
+                t("serviceSection.features.aiAssistant.items", {
+                  returnObjects: true,
+                }) as string[]
+              ).map((item: string, index: number) => (
+                <li key={index}>• {item}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -93,11 +112,16 @@ export default function ServiceSection() {
             className="text-left"
           >
             <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-             
-              Cam kết bảo mật
+              {t("serviceSection.features.security.title")}
             </h3>
             <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              <li>• Toàn bộ dữ liệu và trao đổi đều được mã hóa, tuân thủ các tiêu chuẩn bảo mật quốc tế – bảo vệ quyền riêng tư và lợi ích kinh doanh của bạn.</li>
+              {(
+                t("serviceSection.features.security.items", {
+                  returnObjects: true,
+                }) as string[]
+              ).map((item: string, index: number) => (
+                <li key={index}>• {item}</li>
+              ))}
             </ul>
           </motion.div>
         </div>
@@ -114,14 +138,16 @@ export default function ServiceSection() {
               className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-               
-                Chủ động thông qua công nghệ AI
+                {t("serviceSection.features.proactiveAI.title")}
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                
-                <li>• Quảng cáo chính mình;</li>
-                <li>• Tìm & lựa chọn đối tác phù hợp;</li>
-                <li>• Chọn thị trường mở rộng.</li>
+                {(
+                  t("serviceSection.features.proactiveAI.items", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item: string, index: number) => (
+                  <li key={index}>• {item}</li>
+                ))}
               </ul>
             </motion.div>
 
@@ -133,13 +159,16 @@ export default function ServiceSection() {
               className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                
-                Trợ lý AI kết nối đa năng
+                {t("serviceSection.features.aiAssistant.title")}
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                <li>• Thu thập đầy đủ thông tin chính xác & cung cấp thêm market size, cơ hội thị trường;</li>
-                <li>• AI đề xuất các dữ liệu về quy mô thị trường, phân tích cơ hội và cung cấp đầy đủ thông tin đối tác – hỗ trợ lãnh đạo ra quyết định nhanh chóng và chính xác.
-</li>
+                {(
+                  t("serviceSection.features.aiAssistant.items", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item: string, index: number) => (
+                  <li key={index}>• {item}</li>
+                ))}
               </ul>
             </motion.div>
           </div>
@@ -160,9 +189,13 @@ export default function ServiceSection() {
               {/* Central Logo Circle */}
               <div className="relative w-60 h-60 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400/60 shadow-2xl shadow-blue-500/40 animate-spin-slow ring-glow pulse-outline z-10">
                 <div className="relative z-20">
-                  <img src={BCPAILogo} alt="BCP AI Logo" className="w-48 h-48 object-contain drop-shadow-lg" />
+                  <img
+                    src={BCPAILogo}
+                    alt="BCP AI Logo"
+                    className="w-48 h-48 object-contain drop-shadow-lg"
+                  />
                 </div>
-                
+
                 {/* Rotating orbital light particles */}
                 <div className="absolute inset-0 rounded-full animate-spin-slow">
                   <div className="absolute top-2 left-1/2 w-3 h-3 bg-cyan-400 rounded-full blur-sm -translate-x-1/2 animate-glow-intense shadow-lg shadow-cyan-400/80"></div>
@@ -170,7 +203,7 @@ export default function ServiceSection() {
                   <div className="absolute left-2 top-1/2 w-3 h-3 bg-bright-teal rounded-full blur-sm -translate-y-1/2 animate-glow-intense shadow-lg shadow-teal-400/80"></div>
                   <div className="absolute right-2 top-1/2 w-3 h-3 bg-neon-blue rounded-full blur-sm -translate-y-1/2 animate-glow-intense shadow-lg shadow-blue-400/80"></div>
                 </div>
-                
+
                 {/* Multiple animated orbital rings */}
                 <div className="absolute inset-0 border-2 border-blue-400/40 rounded-full animate-pulse"></div>
                 <div className="absolute -inset-4 border border-cyan-400/30 rounded-full animate-spin-reverse"></div>
@@ -180,72 +213,122 @@ export default function ServiceSection() {
 
               {/* Feature Icons positioned precisely on circle edge */}
               {/* Top Left - Comprehensive Assessment */}
-              <motion.div 
+              <motion.div
                 className="absolute w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-xl shadow-cyan-500/40 animate-float-gentle icon-hover-effect"
-                style={{ 
-                  top: 'calc(50% - 170px * 0.707 - 28px)', 
-                  left: 'calc(50% - 170px * 0.707 - 28px)' 
+                style={{
+                  top: "calc(50% - 170px * 0.707 - 28px)",
+                  left: "calc(50% - 170px * 0.707 - 28px)",
                 }}
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 whileHover={{ scale: 1.15, rotate: 10 }}
               >
-                <svg className="w-7 h-7 text-white drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <svg
+                  className="w-7 h-7 text-white drop-shadow-md"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
               </motion.div>
 
               {/* Top Right - Fraud Detection */}
-              <motion.div 
+              <motion.div
                 className="absolute w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-xl shadow-purple-500/40 animate-float-gentle-delayed icon-hover-effect"
-                style={{ 
-                  top: 'calc(50% - 170px * 0.707 - 28px)', 
-                  right: 'calc(50% - 170px * 0.707 - 28px)' 
+                style={{
+                  top: "calc(50% - 170px * 0.707 - 28px)",
+                  right: "calc(50% - 170px * 0.707 - 28px)",
                 }}
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 whileHover={{ scale: 1.15, rotate: -10 }}
               >
-                <svg className="w-7 h-7 text-white drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                <svg
+                  className="w-7 h-7 text-white drop-shadow-md"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
                 </svg>
               </motion.div>
 
               {/* Bottom Left - Flexible Customization */}
-              <motion.div 
+              <motion.div
                 className="absolute w-14 h-14 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center shadow-xl shadow-green-500/40 animate-float-gentle icon-hover-effect"
-                style={{ 
-                  bottom: 'calc(50% - 170px * 0.707 - 28px)', 
-                  left: 'calc(50% - 170px * 0.707 - 28px)' 
+                style={{
+                  bottom: "calc(50% - 170px * 0.707 - 28px)",
+                  left: "calc(50% - 170px * 0.707 - 28px)",
                 }}
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 whileHover={{ scale: 1.15, rotate: 10 }}
               >
-                <svg className="w-7 h-7 text-white drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <svg
+                  className="w-7 h-7 text-white drop-shadow-md"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
                 </svg>
               </motion.div>
 
               {/* Bottom Right - Automation */}
-              <motion.div 
+              <motion.div
                 className="absolute w-14 h-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-xl shadow-orange-500/40 animate-float-gentle-delayed icon-hover-effect"
-                style={{ 
-                  bottom: 'calc(50% - 170px * 0.707 - 28px)', 
-                  right: 'calc(50% - 170px * 0.707 - 28px)' 
+                style={{
+                  bottom: "calc(50% - 170px * 0.707 - 28px)",
+                  right: "calc(50% - 170px * 0.707 - 28px)",
                 }}
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 whileHover={{ scale: 1.15, rotate: -10 }}
               >
-                <svg className="w-7 h-7 text-white drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                <svg
+                  className="w-7 h-7 text-white drop-shadow-md"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                  />
                 </svg>
               </motion.div>
 
@@ -269,12 +352,16 @@ export default function ServiceSection() {
               className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                
-                Kết nối với người ra quyết định
+                {t("serviceSection.features.decisionMaker.title")}
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                <li>• Tiếp cận ĐÚNG NGƯỜI, ĐÚNG NHU CẦU – giúp rút ngắn thời gian đàm phán và nâng cao hiệu quả hợp tác.
-</li>
+                {(
+                  t("serviceSection.features.decisionMaker.items", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item: string, index: number) => (
+                  <li key={index}>• {item}</li>
+                ))}
               </ul>
             </motion.div>
 
@@ -286,11 +373,16 @@ export default function ServiceSection() {
               className="text-left"
             >
               <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                
-                Cam kết bảo mật
+                {t("serviceSection.features.security.title")}
               </h3>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                <li>• Toàn bộ dữ liệu và trao đổi đều được mã hóa, tuân thủ các tiêu chuẩn bảo mật quốc tế – bảo vệ quyền riêng tư và lợi ích kinh doanh của bạn.</li>
+                {(
+                  t("serviceSection.features.security.items", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item: string, index: number) => (
+                  <li key={index}>• {item}</li>
+                ))}
               </ul>
             </motion.div>
           </div>

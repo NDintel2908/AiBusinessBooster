@@ -2,17 +2,17 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 // Vietnamese translations
-// import viBusinessSectors from '../../src/locales/vi/landing/BusinessSectorsSection.json';
-// import viChallenges from '../../src/locales/vi/landing/ChallengesSection.json';
-// import viContact from '../../src/locales/vi/landing/ContactSection.json';
-// import viFAQ from '../../src/locales/vi/landing/FAQSection.json';
-// import viFeatures from '../../src/locales/vi/landing/FeaturesSection.json';
-// import viFeedback from '../../src/locales/vi/landing/FeedbackSection.json';
-// import viFooter from '../../src/locales/vi/landing/Footer.json';
-// import viHeader from '../../src/locales/vi/landing/Header.json';
-// import viHero from '../../src/locales/vi/landing/HeroSection.json';
-// import viPricing from '../../src/locales/vi/landing/PricingSection.json';
-// import viService from '../../src/locales/vi/landing/ServiceSection.json';
+import viBusinessSectors from '../../src/locales/vi/landing/BusinessSectorsSection.json';
+import viChallenges from '../../src/locales/vi/landing/ChallengesSection.json';
+import viContact from '../../src/locales/vi/landing/ContactSection.json';
+import viFAQ from '../../src/locales/vi/landing/FAQSection.json';
+import viFeatures from '../../src/locales/vi/landing/FeaturesSection.json';
+import viFeedback from '../../src/locales/vi/landing/FeedbackSection.json';
+import viFooter from '../../src/locales/vi/landing/Footer.json';
+import viHeader from '../../src/locales/vi/landing/Header.json';
+import viHero from '../../src/locales/vi/landing/HeroSection.json';
+import viPricing from '../../src/locales/vi/landing/PricingSection.json';
+import viService from '../../src/locales/vi/landing/ServiceSection.json';
 import viPaymentPolicy from "../../src/locales/vi/pages/PaymentPolicy.json";
 import viPricingComparison from "../../src/locales/vi/pages/PricingComparison.json";
 import viPrivacyPolicy from "../../src/locales/vi/pages/PrivacyPolicy.json";
@@ -35,17 +35,17 @@ import viPrivacyPolicy from "../../src/locales/vi/pages/PrivacyPolicy.json";
 
 const resources = {
   vi: {
-    // businessSectors: viBusinessSectors,
-    // challenges: viChallenges,
-    // contact: viContact,
-    // faq: viFAQ,
-    // features: viFeatures,
-    // feedback: viFeedback,
-    // footer: viFooter,
-    // header: viHeader,
-    // hero: viHero,
-    // pricing: viPricing,
-    // service: viService,
+    businessSectors: viBusinessSectors,
+    challenges: viChallenges,
+    contact: viContact,
+    faq: viFAQ,
+    features: viFeatures,
+    feedback: viFeedback,
+    footer: viFooter,
+    header: viHeader,
+    hero: viHero,
+    pricing: viPricing,
+    service: viService,
     paymentPolicy: viPaymentPolicy,
     pricingComparison: viPricingComparison,
     privacyPolicy: viPrivacyPolicy,

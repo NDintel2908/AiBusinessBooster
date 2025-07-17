@@ -3,9 +3,12 @@ import { Link } from "wouter";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useTranslation } from "react-i18next";
 import BCPAILogo from "./BCPAI.png";
+import "../../lib/i18n";
 
 export default function Header() {
+  const { t } = useTranslation("header");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -73,7 +76,7 @@ export default function Header() {
             <button
               className="text-gray-200 hover:text-white focus:outline-none"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle mobile menu"
+              aria-label={t("header.mobile.toggleMenu")}
             >
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 <path
@@ -97,7 +100,7 @@ export default function Header() {
                 }}
                 className="text-gray-300 hover:text-neon-blue transition duration-300"
               >
-                Tính năng
+                {t("header.navigation.features")}
               </a>
               <a
                 href="/"
@@ -107,7 +110,7 @@ export default function Header() {
                 }}
                 className="text-gray-300 hover:text-neon-blue transition duration-300"
               >
-                Bảng giá
+                {t("header.navigation.pricing")}
               </a>
               <a
                 href="/"
@@ -117,7 +120,7 @@ export default function Header() {
                 }}
                 className="text-gray-300 hover:text-neon-blue transition duration-300"
               >
-                Về chúng tôi
+                {t("header.navigation.aboutUs")}
               </a>
             </div>
           </nav>
@@ -130,7 +133,7 @@ export default function Header() {
               rel="noopener noreferrer"
             >
               <GradientButton size="md" className="font-semibold">
-                Bắt đầu ngay
+                {t("header.cta.getStarted")}
               </GradientButton>
             </a>
           </div>
@@ -151,7 +154,7 @@ export default function Header() {
             }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"
           >
-            Tính năng
+            {t("header.navigation.features")}
           </a>
           <a
             href="/"
@@ -162,7 +165,7 @@ export default function Header() {
             }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"
           >
-            Bảng giá
+            {t("header.navigation.pricing")}
           </a>
           <a
             href="/"
@@ -173,7 +176,7 @@ export default function Header() {
             }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"
           >
-            Về chúng tôi
+            {t("header.navigation.aboutUs")}
           </a>
           <a
             href="https://bcp.global/sign-up"
@@ -184,7 +187,7 @@ export default function Header() {
           >
             <LanguageSwitcher />
             <GradientButton className="w-full font-semibold">
-              Bắt đầu ngay
+              {t("header.cta.getStarted")}
             </GradientButton>
           </a>
         </nav>

@@ -1,8 +1,12 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { GradientButton } from "@/components/ui/gradient-button";
+import { useTranslation } from "react-i18next";
+import "../../lib/i18n";
 
 export default function HeroSection() {
+  const { t } = useTranslation("hero");
+
   // Staggered animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -23,6 +27,14 @@ export default function HeroSection() {
       transition: { duration: 0.5 },
     },
   };
+
+  // Get business persons from translation
+  const businessPersons = t("heroSection.businessPersons", {
+    returnObjects: true,
+  }) as Array<{
+    alt: string;
+    src: string;
+  }>;
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -84,8 +96,7 @@ export default function HeroSection() {
           >
             <span className="w-2 h-2 rounded-full bg-bright-teal animate-pulse mr-2"></span>
             <span className="text-base md:text-lg font-medium text-bright-teal font-primary">
-              Công cụ, thói quen và trợ lý phát triển kinh doanh mới với AI
-              Matching Agent
+              {t("heroSection.badge")}
             </span>
           </motion.div>
 
@@ -94,17 +105,14 @@ export default function HeroSection() {
             className="text-3xl md:text-5xl font-heading font-bold leading-loose text-white bg-clip-text"
             style={{ lineHeight: "1.3", letterSpacing: "0.5px" }}
           >
-            MỞ RỘNG TỪNG ĐỐI TÁC, KHÁCH HÀNG B2B VỚI AI MATCHING AGENT
+            {t("heroSection.title")}
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-primary"
           >
-            BCP - Business Connecting Platform là một nền tảng kết nối MUA - BÁN
-            - HỢP TÁC toàn cầu ứng dụng công nghệ AI, cho phép TÌM KIẾM - KẾT
-            NỐI - GIAO DỊCH theo thời gian thực & tiết kiệm chi phí thông qua
-            các gợi ý kết nối thông minh.
+            {t("heroSection.description")}
           </motion.p>
 
           <motion.div
@@ -121,7 +129,7 @@ export default function HeroSection() {
                 animate
                 className="w-full sm:w-auto font-semibold"
               >
-                Bắt Đầu Ngay
+                {t("heroSection.cta.primary")}
               </GradientButton>
             </a>
             <GradientButton
@@ -136,7 +144,7 @@ export default function HeroSection() {
               }}
             >
               <span className="flex items-center justify-center">
-                <span>Liên Hệ Ngay</span>
+                <span>{t("heroSection.cta.secondary")}</span>
                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"
@@ -159,25 +167,20 @@ export default function HeroSection() {
             className="flex items-center justify-center gap-4 pt-8"
           >
             <div className="flex -space-x-2">
-              <img
-                src="https://miro.medium.com/v2/resize:fit:2400/1*_sL-AjS_oCEvJO1DY51ULg.png"
-                alt="Business Person 1"
-                className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover"
-              />
-              <img
-                src="https://static.ybox.vn/2024/6/1/1718600454382-Vietlink-logo.jpg"
-                alt="Business Person 2"
-                className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover"
-              />
-              <img
-                src="https://freelogopng.com/images/all_img/1657952641google-logo-png-image.png"
-                alt="Business Person 3"
-                className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover"
-              />
+              {businessPersons.map((person, index) => (
+                <img
+                  key={index}
+                  src={person.src}
+                  alt={person.alt}
+                  className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover"
+                />
+              ))}
             </div>
             <div className="text-sm text-gray-400 font-primary">
-              <span className="font-semibold text-white">500+</span> doanh
-              nghiệp mới đăng ký trong tháng
+              <span className="font-semibold text-white">
+                {t("heroSection.stats.number")}
+              </span>{" "}
+              {t("heroSection.stats.text")}
             </div>
           </motion.div>
         </motion.div>

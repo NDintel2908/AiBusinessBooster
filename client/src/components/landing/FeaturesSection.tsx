@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import "../../lib/i18n";
 
 interface StatItemProps {
   number: string;
@@ -48,6 +50,8 @@ const StatItem = ({ number, description, endValue }: StatItemProps) => {
 };
 
 export default function FeaturesSection() {
+  const { t } = useTranslation("features");
+
   return (
     <section
       id="features-section"
@@ -66,65 +70,35 @@ export default function FeaturesSection() {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
           <h2 className="font-heading text-[3rem] font-semibold text-white mb-2">
-            Năng lực BCP
+            {t("featuresSection.title")}
           </h2>
           <p className="text-[1.2rem] text-gray-400 font-primary">
-            Góc nhìn dựa trên dữ liệu về thành công các kết nối giao thương kể
-            từ năm 2018
+            {t("featuresSection.description")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-[3rem]">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0 }}
-            viewport={{ once: true }}
-          >
-            <StatItem
-              number="#1"
-              description="Hạng 1 vòng tiền ươm tại cuộc thi AI Star 2024"
-              endValue={1}
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <StatItem
-              number="2200+"
-              description="Doanh nghiệp tham gia"
-              endValue={2200}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <StatItem
-              number="1600+"
-              description="Kết nối thành công"
-              endValue={1600}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <StatItem
-              number="3+"
-              description="Quốc gia thành viên"
-              endValue={3}
-            />
-          </motion.div>
+          {(
+            t("featuresSection.stats", { returnObjects: true }) as Array<{
+              number: string;
+              description: string;
+              endValue: number;
+            }>
+          ).map((stat, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <StatItem
+                number={stat.number}
+                description={stat.description}
+                endValue={stat.endValue}
+              />
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

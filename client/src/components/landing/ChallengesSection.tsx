@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation, Trans } from "react-i18next";
 import { GlassCard } from "@/components/ui/glass-card";
+import "../../lib/i18n";
 
 export default function ChallengesSection() {
+  const { t } = useTranslation("challenges");
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
@@ -16,41 +19,18 @@ export default function ChallengesSection() {
     }
   }, [controls, isInView]);
 
-  const comparisonData = [
-    {
-      traditional: {
-        title: "Đầu tư cao - Hiệu quả thấp",
-        description:
-          "Chi phí vận hành lớn, khó đo lường hiệu quả, tốn nguồn lực duy trì",
-      },
-      bcp: {
-        title: "Đầu tư thông minh - Lợi nhuận vượt trội",
-        description:
-          "AI Matching Agent giúp tối ưu hóa chi phí, chỉ trả tiền cho kết nối thành công",
-      },
-    },
-    {
-      traditional: {
-        title: "Mất nhiều thời gian",
-        description:
-          "Quy trình thủ công, sàng lọc mất thời gian, kéo dài chu kỳ hợp tác",
-      },
-      bcp: {
-        title: "Kết nối tức thì",
-        description: "AI tìm kiếm, bạn chỉ việc lựa chọn và kết nối",
-      },
-    },
-    {
-      traditional: {
-        title: "Thiếu độ tin cậy",
-        description: "Có đối tác - khách hàng nhưng không tin cậy",
-      },
-      bcp: {
-        title: "Xác thực đa cấp độ",
-        description: "AI sàng lọc kỹ lưỡng, đảm bảo uy tín từng mối quan hệ",
-      },
-    },
-  ];
+  // Get comparison data from translation
+  const comparisonData = t("challengesSection.comparisons", {
+    returnObjects: true,
+  }) as Array<{
+    traditional: { title: string; description: string };
+    bcp: { title: string; description: string };
+  }>;
+
+  // Ensure comparisonData is an array
+  const safeComparisonData = Array.isArray(comparisonData)
+    ? comparisonData
+    : [];
 
   return (
     <section id="challenges" className="py-20 relative">
@@ -75,18 +55,21 @@ export default function ChallengesSection() {
         >
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
             <span className="text-base md:text-lg font-medium text-neon-blue font-primary">
-              So sánh thị trường
+              {t("challengesSection.sectionHeader.badge")}
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
-            Phương pháp{" "}
-            <span className="text-red-400 font-bold">truyền thống</span> vs{" "}
-            <span className="text-blue-400 font-bold">BCP.Global</span>
+            <Trans
+              i18nKey="challengesSection.sectionHeader.title"
+              ns="challenges"
+              components={[
+                <span className="text-red-400 font-bold" />,
+                <span className="text-blue-400 font-bold" />,
+              ]}
+            />
           </h2>
           <p className="text-gray-300 font-primary">
-            Việc kết nối cá nhân qua mạng xã hội ngày càng dễ dàng, NHƯNG việc
-            kết nối giữa Doanh nghiệp với Doanh nghiệp (B2B) vẫn rất tốn kém,
-            mất nhiều thời gian và thiếu tin cậy.
+            {t("challengesSection.sectionHeader.description")}
           </p>
         </motion.div>
 
@@ -114,10 +97,10 @@ export default function ChallengesSection() {
                 <span className="text-3xl">❌</span>
               </div>
               <h3 className="text-2xl font-heading font-bold text-red-400 mb-2">
-                Phương pháp truyền thống
+                {t("challengesSection.headers.traditional.title")}
               </h3>
               <p className="text-sm text-gray-400">
-                Cách tiếp cận cũ với nhiều hạn chế
+                {t("challengesSection.headers.traditional.subtitle")}
               </p>
             </div>
 
@@ -127,10 +110,10 @@ export default function ChallengesSection() {
                 <span className="text-3xl">✅</span>
               </div>
               <h3 className="text-2xl font-heading font-bold text-blue-400 mb-2">
-                BCP.Global Solution
+                {t("challengesSection.headers.bcp.title")}
               </h3>
               <p className="text-sm text-gray-400">
-                Giải pháp thông minh với AI
+                {t("challengesSection.headers.bcp.subtitle")}
               </p>
             </div>
           </motion.div>
@@ -151,7 +134,7 @@ export default function ChallengesSection() {
               },
             }}
           >
-            {comparisonData.map((comparison, index) => (
+            {safeComparisonData.map((comparison, index) => (
               <motion.div
                 key={index}
                 className="grid grid-cols-2 gap-8 items-stretch"
@@ -208,7 +191,7 @@ export default function ChallengesSection() {
 
         {/* Mobile Layout - Stacked Cards */}
         <div className="lg:hidden space-y-8">
-          {comparisonData.map((comparison, index) => (
+          {safeComparisonData.map((comparison, index) => (
             <motion.div
               key={index}
               className="space-y-4"
@@ -227,7 +210,7 @@ export default function ChallengesSection() {
                       {comparison.traditional.title}
                     </h3>
                     <p className="text-xs text-gray-500">
-                      Phương pháp truyền thống
+                      {t("challengesSection.labels.traditional")}
                     </p>
                   </div>
                 </div>
@@ -239,7 +222,9 @@ export default function ChallengesSection() {
               {/* VS Divider for Mobile */}
               <div className="flex justify-center">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-400 to-blue-400 flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">VS</span>
+                  <span className="text-white font-bold text-sm">
+                    {t("challengesSection.labels.vs")}
+                  </span>
                 </div>
               </div>
 
@@ -253,7 +238,9 @@ export default function ChallengesSection() {
                     <h3 className="text-lg font-semibold text-blue-400">
                       {comparison.bcp.title}
                     </h3>
-                    <p className="text-xs text-gray-500">BCP.Global Solution</p>
+                    <p className="text-xs text-gray-500">
+                      {t("challengesSection.labels.bcpSolution")}
+                    </p>
                   </div>
                 </div>
                 <p className="text-sm text-slate-300 leading-relaxed">
