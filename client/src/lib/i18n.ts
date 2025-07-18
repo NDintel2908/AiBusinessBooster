@@ -67,7 +67,7 @@ const resources = {
     header: enHeader,
     hero: enHero,
     pricing: enPricing,
-    // service: enService,
+    service: enService,
     // paymentPolicy: enPaymentPolicy,
     // pricingComparison: enPricingComparison,
     // privacyPolicy: enPrivacyPolicy,

@@ -1,56 +1,56 @@
 {
     "challengesSection": {
         "sectionHeader": {
-            "badge": "So sánh thị trường",
-            "title": "Phương pháp <0>truyền thống</0> vs <1>BCP.Global</1>",
-            "description": "Việc kết nối cá nhân qua mạng xã hội ngày càng dễ dàng, NHƯNG việc kết nối giữa Doanh nghiệp với Doanh nghiệp (B2B) vẫn rất tốn kém, mất nhiều thời gian và thiếu tin cậy."
+        "badge": "So sánh thị trường",
+        "title": "Phương pháp <0>truyền thống</0> vs <1>BCP.Global</1>",
+        "description": "Việc kết nối cá nhân qua mạng xã hội ngày càng dễ dàng, NHƯNG việc kết nối giữa Doanh nghiệp với Doanh nghiệp (B2B) vẫn rất tốn kém, mất nhiều thời gian và thiếu tin cậy."
+    },
+    "headers": {
+        "traditional": {
+        "title": "Phương pháp truyền thống",
+        "subtitle": "Cách tiếp cận cũ với nhiều hạn chế"
         },
-        "headers": {
-            "traditional": {
-                "title": "Phương pháp truyền thống",
-                "subtitle": "Cách tiếp cận cũ với nhiều hạn chế"
-            },
-            "bcp": {
-                "title": "BCP.Global Solution",
-                "subtitle": "Giải pháp thông minh với AI"
-            }
-        },
-        "comparisons": [
-            {
-                "traditional": {
-                    "title": "Đầu tư cao - Hiệu quả thấp",
-                    "description": "Chi phí vận hành lớn, khó đo lường hiệu quả, tốn nguồn lực duy trì"
-                },
-                "bcp": {
-                    "title": "Đầu tư thông minh - Lợi nhuận vượt trội",
-                    "description": "AI Matching Agent giúp tối ưu hóa chi phí, chỉ trả tiền cho kết nối thành công"
-                }
-            },
-            {
-                "traditional": {
-                    "title": "Mất nhiều thời gian",
-                    "description": "Quy trình thủ công, sàng lọc mất thời gian, kéo dài chu kỳ hợp tác"
-                },
-                "bcp": {
-                    "title": "Kết nối tức thì",
-                    "description": "AI tìm kiếm, bạn chỉ việc lựa chọn và kết nối"
-                }
-            },
-            {
-                "traditional": {
-                    "title": "Thiếu độ tin cậy",
-                    "description": "Có đối tác - khách hàng nhưng không tin cậy"
-                },
-                "bcp": {
-                    "title": "Xác thực đa cấp độ",
-                    "description": "AI sàng lọc kỹ lưỡng, đảm bảo uy tín từng mối quan hệ"
-                }
-            }
-        ],
-        "labels": {
-            "traditional": "Phương pháp truyền thống",
-            "bcpSolution": "BCP.Global Solution",
-            "vs": "VS"
+        "bcp": {
+        "title": "BCP.Global Solution",
+        "subtitle": "Giải pháp thông minh với AI"
         }
+    },
+    "comparisons": [
+        {
+        "traditional": {
+            "title": "Đầu tư cao - Hiệu quả thấp",
+            "description": "Chi phí vận hành lớn, khó đo lường hiệu quả, tốn nguồn lực duy trì"
+        },
+        "bcp": {
+            "title": "Đầu tư thông minh - Lợi nhuận vượt trội",
+            "description": "AI Matching Agent giúp tối ưu hóa chi phí, chỉ trả tiền cho kết nối thành công"
+        }
+        },
+        {
+        "traditional": {
+            "title": "Mất nhiều thời gian",
+            "description": "Quy trình thủ công, sàng lọc mất thời gian, kéo dài chu kỳ hợp tác"
+        },
+        "bcp": {
+            "title": "Kết nối tức thì",
+            "description": "AI tìm kiếm, bạn chỉ việc lựa chọn và kết nối"
+        }
+        },
+        {
+        "traditional": {
+            "title": "Thiếu độ tin cậy",
+            "description": "Có đối tác - khách hàng nhưng không tin cậy"
+        },
+        "bcp": {
+            "title": "Xác thực đa cấp độ",
+            "description": "AI sàng lọc kỹ lưỡng, đảm bảo uy tín từng mối quan hệ"
+        }
+        }
+    ],
+    "labels": {
+        "traditional": "Phương pháp truyền thống",
+        "bcpSolution": "BCP.Global Solution",
+        "vs": "VS"
+    }
     }
 }

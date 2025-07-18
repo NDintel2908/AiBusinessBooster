@@ -1,0 +1,259 @@
+{
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Updated: March 2024",
+    "sections": [
+      { "id": 1, "title": "Information provided by users" },
+      { "id": 2, "title": "How BCP uses user information" },
+      { "id": 3, "title": "How BCP shares user information" },
+      { "id": 4, "title": "How BCP stores user information" },
+      { "id": 5, "title": "User rights and choices" },
+      { "id": 6, "title": "Information security" },
+      { "id": 7, "title": "Information retention period" },
+      { "id": 8, "title": "Additional terms" },
+      { "id": 9, "title": "Contact" }
+    ],
+    "introduction": {
+      "welcome": "Welcome to Business Connecting Platform (\"BCP\" or \"Platform\").",
+      "description": "This Privacy Policy applies to BCP services, including websites, applications, products, software, content and other related services, accessed through any platform or device linked to this Policy. The Platform is provided and operated by BCP Joint Stock Company (\"we\").",
+      "commitment": "We are committed to protecting and respecting your privacy. This Policy explains how we collect, use, share and process business information of users as well as other businesses related to our Platform. If you do not agree with this Policy, please do not use the Platform.",
+      "changePolicy": "BCP reserves the right to change this Policy at any time, and updates will be communicated to you through appropriate means, such as messages within the Platform. We recommend that you regularly review this Policy along with the Terms and Conditions of Use (\"Terms\") to understand how we collect and use your information (\"business data\", \"user data\" or \"business information\").",
+      "consent": "By installing, using, registering or accessing the service in any form, you agree to this Privacy Policy and acknowledge that you have provided clear, full consent to the processing of your business data under the terms of this Policy.",
+      "tableOfContents": "This Policy includes the following main contents:",
+      "contentsList": [
+        "1. Information provided by users",
+        "2. How BCP uses user information",
+        "3. How BCP shares user information",
+        "4. How BCP stores user information",
+        "5. User rights and choices",
+        "6. Information security",
+        "7. Information retention period",
+        "8. Additional terms",
+        "9. Contact"
+      ]
+    },
+    "content": {
+      "section1": {
+        "title": "1. Information provided by users",
+        "intro": "We may collect the following information from users.",
+        "subsections": {
+          "profileInfo": {
+            "title": "1.1. Profile information",
+            "content": "Users provide us with information when registering on the Platform, including username, password, company email address, Business License/Company Registration Certificate, phone number, information users disclose in their profile, photos, and other data information shared during use."
+          },
+          "userContent": {
+            "title": "1.2. User content",
+            "content": "Our artificial intelligence system will collect and process content that users upload or create on the Platform, including but not limited to chat history, transaction history, contact logs, business activity-related data, platform usage patterns, business profile information, images, and videos (\"User Content\"). Even if you are not a user, your information may appear in User Content created or published by users on the Platform."
+          },
+          "messages": {
+            "title": "1.3. Messages",
+            "content": [
+              "We collect information users provide while using the Platform when composing, sending or receiving messages through the Platform's messaging functions. This includes messages you send or receive through the chat feature when communicating with partners connected by BCP. Information includes message content and information about messages, such as when messages were sent, received or read and message participants.",
+              "Please note that messages you choose to send to other Platform users may be accessed by those users and BCP disclaims all responsibility regarding how those users use or share messages.",
+              "We may access content, including text, images and videos, found in your device's cache, with your permission.",
+              "For example: if a user chooses to start sharing content with a third-party platform or chooses to paste content from cache into the Platform, we have the right to access information stored in cache to fulfill your request."
+            ]
+          },
+          "purchaseInfo": {
+            "title": "1.4. Purchase information",
+            "content": "In case users purchase or make payments on or through the Platform, including when you purchase Credits through payment gateways provided by third parties, we collect information about purchase history, payment information, invoices, region, country and contact information."
+          },
+          "identityProof": {
+            "title": "1.5. Proof of identity",
+            "content": "Please note, we will require account owners to provide proof of identity to serve the process of reconciling legal information on Business License/Company Registration Certificate or other cases requiring identity verification according to the direction of the law of the host country and where BCP is headquartered."
+          },
+          "technicalInfo": {
+            "title": "1.6. Technical information",
+            "content": [
+              "We collect some technical data related to the device you use to access the Platform, including but not limited to IP address, browser identification string, network service provider, time zone settings, advertising identification code, device type and model, operating system, network type, device ID, screen resolution, application name and type and files, style or keystroke rhythm, battery status, audio settings and connected audio devices.",
+              "In case you log in from multiple devices, we may use your profile information to identify and synchronize your activities across these devices. In addition, we may link your data with information collected from other devices not directly used to access the Platform, to ensure the integrity of user experience and security purposes."
+            ]
+          },
+          "locationInfo": {
+            "title": "1.7. Location information",
+            "content": [
+              "We collect information about your approximate location, including location data determined based on SIM card and/or IP address. In case you grant access, we may also collect precise location data (e.g., GPS information).",
+              "In addition, we may collect and process data related to specific locations you are interested in (such as landmarks, stores) if you voluntarily provide location information in your User Content."
+            ]
+          },
+          "otherSources": {
+            "title": "1.8. Information collected from other sources",
+            "items": [
+              "<strong>1.8.1.</strong> Information through surveys, research, promotions, contests, competitions or events we conduct or sponsor that you participate in.",
+              "<strong>1.8.2.</strong> Information collected through advertising partners, measurement and other partners who share with us information about you and your activities outside the Platform, such as your behavior on other websites, applications or at stores, including products or services you have purchased, online or directly. These partners also share with us information such as mobile advertising identifiers, encrypted email addresses and phone numbers, as well as cookie identifiers. We use this data to match your information and your actions outside the Platform with your BCP account. Some advertising partners and other partners allow us to collect similar information directly from their website or application through the integration of BCP Advertising Tools (such as BCP Pixel).",
+              "<strong>1.8.3.</strong> We may receive information about you from affiliates within our business ecosystem, including information about your activities on their platforms.",
+              "<strong>1.8.4.</strong> We may receive information about you from others, including when you are mentioned in User Content, direct messages, complaints, appeals, requests or feedback sent to us, or when your contact information is provided to us.",
+              "<strong>1.8.5.</strong> We may also collect or receive information about you from organizations, businesses, individuals and other sources, including public information sources, government agencies, professional organizations and charitable organizations."
+            ],
+            "disclaimer": [
+              "We are not responsible for the data security practices of our service providers and business partners. The information collection and processing activities of these service providers and partners are not within the scope of this Privacy Policy.",
+              "We may aggregate or anonymize the information described above. Aggregated or anonymized data will not be subject to this Privacy Policy."
+            ]
+          }
+        }
+      },
+      "section2": {
+        "title": "2. How BCP uses user information",
+        "intro": "BCP uses user information to improve, support and manage the Platform, enable users to use Platform functions, while implementing and enforcing our Terms of Service. We may also use your information to serve Platform inspection and reconciliation processes and upgrade user experience, along with other purposes.",
+        "usageDescription": "We typically use the information we collect in the following ways:",
+        "usageList": [
+          "a. To meet product, service, Platform function, support and information requirements for internal operations, including troubleshooting, data analysis, testing, research, statistics and surveys and collecting user feedback;",
+          "b. To provide our connectivity features and facilitate finding suitable partners, including sharing user information with parties with buying/selling/cooperation needs, service providers, payment management and other related services;",
+          "c. To personalize content when using the Platform. For example: we may provide users with services based on country settings you have selected or show you content similar to content you have requested or interacted with;",
+          "d. To send promotional materials from us or on behalf of our affiliates and trusted third parties, including through instant messaging or email;",
+          "e. To improve and develop our Platform and conduct product development;",
+          "f. To use User Content in our advertising and marketing campaigns to promote the Platform, invite you to participate in events and promote popular topics, hashtags and campaigns on the Platform;",
+          "g. To identify additional information about users, such as business industries of interest;",
+          "h. To help us detect and combat abuse, harmful activities, fraud, spam, and illegal activities on the Platform;",
+          "i. To ensure content is presented in the most effective way for you and your device;",
+          "j. To enhance Platform safety and security, including by screening, analyzing and reviewing User Content, messages and related metadata to detect violations of our Terms of Service, Community Principles or other terms and policies;",
+          "k. To facilitate research conducted by independent researchers who meet certain criteria;",
+          "l. To verify user identity;",
+          "m. To communicate with you, including notifying you of changes to our services;",
+          "n. To notify you that you are a winner in our contests or promotions if permitted under promotion rules and send you related prizes;",
+          "o. To enforce our Terms of Service, Community Principles and other terms and policies;",
+          "p. To train and improve our technology, such as our artificial intelligence models and algorithms."
+        ],
+        "segmentation": "Segmentation: We do not perform segmentation that leads to legal impacts or similar significant effects, as regulated by current law.",
+        "legalBasis": "We process user data based on one or more of the following legal bases:",
+        "legalBasisList": [
+          "- Users have clearly consented to data processing (e.g., when registering an account or granting information access);",
+          "- Processing is necessary to perform a contract or provide services on the platform;",
+          "- Processing is necessary to comply with legal obligations (e.g., verifying legal entity information according to Vietnamese law);",
+          "- Processing is necessary to serve BCP's legitimate interests, such as improving products, ensuring system security or preventing fraud."
+        ]
+      },
+      "section3": {
+        "title": "3. How BCP shares user information",
+        "intro": "We share your information with the following parties:",
+        "subsections": {
+          "businessPartners": {
+            "title": "3.1. Business Partners",
+            "content": [
+              "Users participating in BCP are responsible for ensuring transparency in business operations and providing complete information necessary for verification and reconciliation processes, including but not limited to Business License/Company Registration Certificate, legal information, professional certificates and other related data.",
+              "BCP may collect, aggregate and analyze this information to assess your business credibility and suggest connections with partners with corresponding credibility levels to support the connection process and optimize user experience.",
+              "In case you allow a third party to access your account, we may share certain information with that third party. The scope of information shared will depend on the permissions you grant and may include your account information as well as other data you actively provide.",
+              "<strong>Disclaimer:</strong> BCP is not responsible for any loss, damage or risk arising from third parties' use, storage or disclosure of your information, including but not limited to security breaches, data abuse or unauthorized disclosure by third parties. You should review and evaluate the privacy policy as well as security measures of third parties before granting access to your account or personal information."
+            ]
+          },
+          "serviceProviders": {
+            "title": "3.2. Service Providers",
+            "intro": "We provide information and content to service providers who support our business operations, such as cloud service providers, content moderation service providers to ensure the Platform is a safe place, and providers of other related services.",
+            "paymentProviders": {
+              "title": "3.2.1. Payment Service Providers",
+              "content": "In case users make Credit purchase transactions, we will share data with payment service providers to facilitate this transaction by sharing transaction ID to allow identification and crediting to your account with a value exactly equal to the amount of Credits you have paid for."
+            },
+            "analyticsProviders": {
+              "title": "3.2.2. Analytics Service Providers",
+              "content": "We use analytics service providers to help us optimize and improve the Platform. Our third-party analytics service providers also help us distribute targeted advertisements."
+            }
+          },
+          "advertisers": {
+            "title": "3.3. Advertisers, Advertising Networks and Measurement Partners",
+            "content": [
+              "We share information with advertisers and third-party measurement companies to let them know how many users and what type of Platform users have viewed or clicked on advertisements.",
+              "We are not responsible for the privacy activities of these third parties, and the activities of these third parties related to information are not covered by this Privacy Policy."
+            ]
+          },
+          "researchers": {
+            "title": "3.4. Independent Researchers",
+            "content": "We share your information with independent researchers to facilitate research that meets certain criteria."
+          },
+          "ourCompanies": {
+            "title": "3.5. Our Companies",
+            "content": "We may also share your information with other members, subsidiaries, or affiliates in our group, including to provide the Platform, improve and optimize the Platform, prevent illegal use and support users."
+          },
+          "legalReasons": {
+            "title": "3.6. Legal Reasons",
+            "intro": "We will share user information with law enforcement agencies, public authorities or other organizations if required by law to do so, or if it is reasonably necessary to:",
+            "reasons": [
+              "a. comply with legal obligations, procedures or requirements;",
+              "b. enforce our Terms of Service and other agreements, policies, and standards, including investigating any possible violations of our Terms of Service and those agreements, policies and standards;",
+              "c. detect, prevent or address security, fraud or technical issues; or",
+              "d. protect the rights, property or safety of us, our users, third parties or the public when required or permitted by law (including exchanging information with other companies and organizations for fraud prevention and credit risk reduction purposes)."
+            ]
+          },
+          "businessTransactions": {
+            "title": "3.7. Sale, Merger, or Other Business Transactions",
+            "intro": "We may disclose user information to third parties, in the following cases:",
+            "scenarios": [
+              "<strong>3.7.1.</strong> BCP sells or buys any business or assets (whether as a result of liquidation, bankruptcy, or otherwise), in which case we will disclose your data to the potential seller or buyer of that business or assets;",
+              "<strong>3.7.2.</strong> BCP sells, buys, merges, is acquired by or partners with other companies or businesses, or sells some or all of our assets. In such transactions, user information may be among the assets transferred."
+            ]
+          }
+        }
+      },
+      "section4": {
+        "title": "4. How BCP stores user information",
+        "content": [
+          "User information may be stored on servers outside the country where you live, such as in Singapore to ensure access speed, powerful performance and protection capability in case servers are not operating.",
+          "Partners, suppliers and contractors with whom we share data as described in this Privacy Policy are headquartered and transmit personal data to multiple jurisdictions worldwide."
+        ]
+      },
+      "section5": {
+        "title": "5. User rights and choices",
+        "content": [
+          "Users have rights and choices related to their business information. Users may be granted certain rights under current law, these rights may include the right to access, delete, update or edit your data, you will be notified about the processing of your data, file complaints with competent authorities, and other rights. Users can submit requests to exercise their rights under current law.",
+          "Users can object to any decision we have made about your request by following the instructions in the communication you receive from us notifying you of our decision.",
+          "Please see the Additional Terms below to see if your country has a local representative or local contact."
+        ]
+      },
+      "section6": {
+        "title": "6. Information security",
+        "content": [
+          "BCP is committed to protecting your data with industry-standard security measures, including encryption, access controls and secure storage protocols. However, users acknowledge that no system is completely immune to risk, and although we strive and apply reasonable measures to protect your data, for example, by encryption, we cannot absolutely guarantee against unauthorized access or security breaches.",
+          "We have appropriate technical and organizational measures to ensure a level of security appropriate to the various potential risks and severity to your rights and freedoms and those of other users. We maintain these organizational and technical measures and will modify these measures from time to time to improve the overall security of our systems.",
+          "We will, from time to time, include links to and from websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we accept no responsibility or liability for these policies. Please check these policies before you submit any information to these websites.",
+          "When there is a personal data breach, BCP will notify users within XX hours, while reporting to competent authorities if required by law."
+        ]
+      },
+      "section7": {
+        "title": "7. Information retention period",
+        "content": [
+          "We retain information for the period necessary to provide the Platform and for other purposes set out in this Privacy Policy. We also retain information when necessary to comply with contractual and legal obligations, when we have a legitimate business interest in such retention (such as improving and developing the Platform, and enhancing Platform safety, security and stability), and to enforce or defend legal claims.",
+          "Retention periods vary depending on different criteria, such as the type of information and the purpose for which we use the information. For example: when we process user information, such as Business License/Company Registration Certificate information to provide the Platform to you, we will retain this information until you no longer have a valid account on BCP.",
+          "If users violate our Terms of Service, Community Principles or other terms or policies, we may immediately disable the account and close the profile as well as your User Content, but all information is retained to handle violations."
+        ]
+      },
+      "section8": {
+        "title": "8. Additional terms",
+        "general": "In case of conflict between the provisions of Additional Terms – Specific Legal Area related to the user's legal area where the user accesses or uses the service, and the remaining provisions of the policy, then the Additional Terms – Specific Legal Area of the relevant legal area will replace and take effect.",
+        "vietnam": {
+          "title": "Vietnam",
+          "intro": "If you are using our services in Vietnam, then the following additional terms will apply. In case of any conflict between the following additional terms and the provisions in the main part of this policy, then the following terms will be given priority.",
+          "dataProcessing": "<strong>Data processing methods</strong> - We may process user data manually or automatically.",
+          "rightsAndObligations": "<strong>Rights and obligations of data subjects.</strong> Except for certain exceptions, users have rights and obligations under current law. Specifically, users have the following legal rights:",
+          "rights": [
+            "Right to know;",
+            "Right to consent and withdraw consent;",
+            "Right to access;",
+            "Right to delete data;",
+            "Right to restrict data processing;",
+            "Right to data provision;",
+            "Right to object to data processing;",
+            "Right to complain, report or sue;",
+            "Right to request compensation for damages; and",
+            "Right to self-protection."
+          ],
+          "exerciseRights": "Users can exercise these rights by contacting us according to details in the \"Contact\" section and we will respond to user requests regardless of user data storage location.",
+          "obligations": "Users have the following legal obligations:",
+          "obligationsList": [
+            "Protect their own data;",
+            "Require other related organizations and individuals to protect their data;",
+            "Respect and protect others' data;",
+            "Provide complete, accurate data when users agree to allow processing of their data; and",
+            "Other obligations under current law."
+          ]
+        }
+      },
+      "section9": {
+        "title": "9. Contact",
+        "content": [
+          "Any questions, comments, complaints and requests related to this Privacy Policy can be sent to email: connect@bcp.global",
+          "Please see the additional terms below to see if your country has a local representative or local contact.",
+          "We will strive to resolve your request as soon as possible. This does not affect your right to complain to the appropriate data protection authority, if applicable."
+        ]
+      }
+    }
+  }
+}

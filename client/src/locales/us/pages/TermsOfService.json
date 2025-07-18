@@ -1,0 +1,438 @@
+{
+    "termsOfService": {
+        "title": "Terms of Service",
+        "lastUpdated": "Updated: March 2024",
+        "sections": [
+            { "id": 1, "title": "Applicability of the Agreement" },
+            { "id": 2, "title": "Our Products and Services" },
+            {
+                "id": 3,
+                "title": "Registration, Use and Cancellation of BCP Account"
+            },
+            { "id": 4, "title": "User Code of Conduct" },
+            { "id": 5, "title": "Data Security" },
+            { "id": 6, "title": "Paid Services" },
+            { "id": 7, "title": "Intellectual Property and Credit Ownership" },
+            { "id": 8, "title": "Disclaimer and Limitation of Liability" },
+            { "id": 9, "title": "Jurisdiction" },
+            { "id": 10, "title": "Others" }
+        ],
+        "content": {
+            "section1": {
+                "title": "1. Applicability of the Agreement",
+                "subsections": {
+                    "clause11": {
+                        "number": "1.1.",
+                        "content": "The Privacy Policy, Platform/User Guidelines, Terms of Service, and all protocol specifications, both currently released and those to be released in the future by BCP, are hereby incorporated into and form an integral part of this agreement, collectively constituting the complete agreement. These updates shall take effect immediately upon notification of their issuance. We strongly advise you to check for updates to these documents in a timely manner."
+                    },
+                    "clause12": {
+                        "number": "1.2.",
+                        "content": "This Agreement is signed by BCP and the members of Platform-related services. If you use the Platform and its corresponding services, we have the right to regard that you have fully understood this Agreement and agree to abide by it. If you disagree with any content of this Agreement, it will result in us being unable to provide you with products and services, so please stop using it immediately. Otherwise, any use or operation of yours will be deemed to have been bound by this Agreement."
+                    },
+                    "clause13": {
+                        "number": "1.3.",
+                        "content": "This agreement may be updated from time to time. The updated agreement will be brought to your attention by appropriate means such as in-platform messages. If you do not agree to the modified agreement, please stop using the Platform immediately. If you continue to use it, it will be deemed that you have understood and accepted the modified agreement."
+                    },
+                    "clause14": {
+                        "number": "1.4.",
+                        "content": [
+                            "BCP functions as an intermediary platform for B2B connections. BCP explicitly disclaims any responsibility and declines to provide support for any disputes or issues arising from transactions between users, including but not limited to, currency transactions, mutual agreements, and transactions or activities not conducted or documented on the BCP platform.",
+                            "In the event of a dispute, BCP reserves the right to require users to provide all relevant documentation and may implement temporary account suspensions or activity restrictions during the dispute resolution procedure. Upon the identification of fraudulent activity during platform utilization, BCP is entitled to seek compensation from the violating user, who shall be held fully responsible for all related legal repercussions."
+                        ]
+                    },
+                    "clause15": {
+                        "number": "1.5.",
+                        "content": [
+                            "BCP retains the exclusive right to review, grant, or withhold user account access based on established eligibility criteria and adherence to stipulated terms, without prior notice.",
+                            "Furthermore, BCP reserves the right to demand explanations from users and to seek indemnification for any damages incurred upon the detection or suspicion of fraudulent activities during platform utilization."
+                        ]
+                    },
+                    "clause16": {
+                        "number": "1.6.",
+                        "content": "In the event of any conflict or inconsistency between the Terms of Service and the Privacy Policy, the provisions outlined in the Terms of Service shall take precedence. While BCP is committed to safeguarding user privacy, all users acknowledge and agree that the enforcement of contractual terms, dispute resolution, and compliance matters will be governed primarily by the Terms of Service. The Privacy Policy shall be applied in a manner that does not override or contradict the obligations and conditions stipulated within the Terms of Service."
+                    }
+                }
+            },
+            "section2": {
+                "title": "2. Our Products and Services",
+                "subsections": {
+                    "productProposal": {
+                        "title": "2.1. Our product proposition",
+                        "content": "BCP, an AI-powered B2B networking platform, offers its members comprehensive technical support services, including but not limited to, business connections, the enablement of selling, purchasing, product/service exchanges, and partner matching. The provision of these services aims to accelerate connection processes, cultivate relationships with reliable partners, and maximize time and cost efficiencies."
+                    },
+                    "ownership": {
+                        "title": "2.2. Acquisition of BCP",
+                        "content": [
+                            "2.2.1. BCP may be obtained by visiting the official BCP website or by downloading and installing BCP from authorized application marketplaces. BCP develops distinct application versions tailored to various terminal devices. Users shall acquire, download, and install the official BCP version compatible with their respective terminal device specifications.",
+                            "2.2.2. In the event that you encounter access issues with the BCP website version or experience difficulties downloading the BCP application version, please contact us immediately via our official website or support email for timely assistance.",
+                            "BCP shall not be held liable for any risks or losses incurred by users who download the application or access the website from unauthorized sources. We strongly recommend that you download and use BCP only from official distribution channels to ensure security and data protection."
+                        ]
+                    },
+                    "userResponsibility": {
+                        "title": "2.3. User Responsibility for Data Charges",
+                        "content": [
+                            "To access BCP, users must possess a mobile phone or other requisite terminal devices. BCP advises users to utilize devices compatible with the designated platform version and to maintain a reliable Internet connection to facilitate optimal platform performance.",
+                            "Users are exclusively responsible for all expenses related to Internet connectivity, data usage, terminal device connectivity, and any other ancillary costs."
+                        ]
+                    },
+                    "legalScope": {
+                        "title": "2.4. Legal Use Scope",
+                        "content": [
+                            "Users are encouraged to acquire and utilize BCP products and services legally and appropriately only within jurisdictions where the Platform is officially made available, in compliance with all pertinent local laws.",
+                            "If users access or utilize the Services from a jurisdiction that has separate supplemental terms, they hereby accept the supplemental terms applicable to users in such jurisdiction, as set forth below. In the event of any inconsistency between the Jurisdiction-Specific Supplemental Terms applicable to the user's jurisdiction of access or utilization and the remainder of these Terms, the relevant Jurisdiction-Specific Supplemental Terms will supersede and control. Users who do not accept these Terms must not access or utilize our Services.",
+                            "BCP maintains the right to restrict access to the Services in specified countries, as deemed necessary."
+                        ]
+                    },
+                    "serviceUpdates": {
+                        "title": "2.5. Updates",
+                        "content": [
+                            "We reserve the right to update BCP's services over time, including but not limited to modifications, upgrades, temporary suspensions, terminations of certain services, the introduction of new services, or the replacement of software packages.",
+                            "You have full discretion to decide whether to implement such updates. However, if you choose not to update, you acknowledge and accept full responsibility for any limitations or disruptions in BCP's functionalities that may arise as a result.",
+                            "BCP may, at its sole discretion, issue update notifications to ensure a seamless user experience."
+                        ]
+                    }
+                }
+            },
+            "section3": {
+                "title": "3. Registration, Use and Cancellation of BCP Account",
+                "subsections": {
+                    "registration": {
+                        "title": "3.1. Registration",
+                        "content": "A registration channel for BCP accounts is provided. You are required to register by a company email address and phone number. Furthermore, all mandatory fields, including company name, location, tax identification number, legal representative, and comprehensive company details, must be accurately provided to finalize account registration."
+                    },
+                    "informationSetup": {
+                        "title": "3.2. Information Settings",
+                        "subsections": {
+                            "userProfile": {
+                                "title": "3.2.1. User Profile",
+                                "content": [
+                                    "When you complete the account registration, you may need to actively provide us with some personal information to verify, such as your avatar, gender, and department. This information is provided by you. You guarantee that the information you provide to us is your own true and valid (latest) information and does not contain any false information. If the information you provide leads to our misjudgment or causes us losses, you will bear the losses caused by this, and we reserve the right to claim compensation from you.",
+                                    "Additionally, the user information can be modified and you guarantee that these modifications and additions respect and comply with all applicable local laws, regulations, and customs. If the information you submit is inaccurate, untrue, illegal, or does not comply with this Agreement, we have the right to require you to correct, supplement, or refuse to provide you with related services. However, you understand and agree that for security reasons, you may not be able to modify some of the initial registration information and other verification information."
+                                ]
+                            },
+                            "companyProfile": {
+                                "title": "3.2.2. Company Profile",
+                                "content": [
+                                    "Upon account registration, you are obligated to furnish supplementary information, including your business sector, principal products or services, and a valid Business (Registration) License/ Certificate of Incorporation for verification purposes. You warrant that all information provided is accurate, valid, and devoid of any false or misleading particulars.",
+                                    "BCP reserves the right to request users to promptly update their business legal status upon any modifications. Users are required to diligently notify and provide comprehensive and accurate updates regarding their business legal status. Additionally, users shall ensure strict adherence to all lawful business conditions, including but not limited to the statutory provisions of both their operational jurisdiction and BCP's domicile.",
+                                    "BCP maintains the unilateral right to conduct due diligence, verify, and evaluate the veracity and transparency of user-provided information. Should any discrepancies, fraudulent activities, or indications of non-compliance with lawful business conditions be identified, BCP may undertake remedial actions without prior notification. These actions include, but are not limited to, temporary suspension, access restriction, service termination, or account deactivation. BCP also reserves the right to initiate appropriate legal proceedings to safeguard its legal rights and those of relevant parties.",
+                                    "In the event that the information you provide results in errors or causes damages to us, you will be held liable for all resulting damages, and we reserve the right to suspend your account, revoke access, and/or pursue legal action or compensation as deemed necessary."
+                                ]
+                            }
+                        }
+                    },
+                    "usageAndSecurity": {
+                        "title": "3.3. Usage and Safety",
+                        "subsections": {
+                            "accountUsage": {
+                                "title": "3.3.1. Account Usage Regulations",
+                                "content": "You recognize and consent that your BCP account is for your exclusive business use only. You are prohibited from gifting, borrowing, leasing, transferring, selling, or otherwise authorizing any other person to use the account in any manner. If we have reasonable cause to believe that the account user is not the registered account holder, we reserve the right to suspend or terminate service to the account for security purposes."
+                            },
+                            "businessLicense": {
+                                "title": "3.3.2. Business License Regulations",
+                                "content": [
+                                    "Only one valid Business (Registration) License/ Certificate of Incorporation shall be permitted for account registration. Any subsequent accounts created utilizing the same Business (Registration) License/ Certificate of Incorporation previously registered with BCP will be rejected or canceled without refund, and the associated accounts may be blacklisted.",
+                                    "In the event that BCP detects any suspicious activity pertaining to account registration or an invalid Business (Registration) License/ Certificate of Incorporation, including, but not limited to, fraudulent documents or businesses no longer operating within their registered field as authorized by relevant licensing authorities, the account will be suspended and may be subject to claims for damages by BCP."
+                                ]
+                            },
+                            "accountSecurity": {
+                                "title": "3.3.3. Account Security",
+                                "content": [
+                                    "You are responsible for the security and confidentiality of your business's BCP account and login credentials. It is recommended that you augment account security by associating your telephone number and activating authentication to receive a One-Time Password (OTP) upon login or password change.",
+                                    "In the event of account access loss or password modification, you may utilize the provided recovery instructions or seek assistance from our AI support. You understand and acknowledge that our verification is restricted to matching claimant-provided information with system records, and we cannot establish definitive account ownership. In cases of account compromise or password loss due to personal negligence, such as inadequate storage, you will be held liable for all consequential losses.",
+                                    "Should you become aware of any unauthorized use of your BCP account or discover any security weaknesses, you are required to promptly inform us to maintain account security. BCP shall not be liable for any loss, damage, or unauthorized activity resulting from access breaches caused by third-party platforms, negligence in device protection, or failure to follow BCP's recommended security practices."
+                                ]
+                            },
+                            "legalResponsibility": {
+                                "title": "3.3.4. Legal Responsibility",
+                                "content": "You must bear all legal responsibilities for all actions under your BCP account. This includes any legal liability arising from the content you post, services you use, and transactions you initiate on the platform."
+                            }
+                        }
+                    },
+                    "verification": {
+                        "title": "3.4. Verification and Account Rejection",
+                        "content": "BCP reserves the discretionary authority to review, authenticate, and reject registrations, as well as to restrict account access, should the business-provided information be adjudged invalid. Businesses are obligated to comply with BCP's requests and furnish all requested information for verification purposes."
+                    },
+                    "suspension": {
+                        "title": "3.5. Account Restriction and Suspension",
+                        "content": "BCP reserves the absolute right to suspend or temporarily restrict account access for verification purposes if a business modifies its information repeatedly or exhibits suspicious activity indicative of potential unauthorized access or account compromise. Users may submit a support inquiry to connect@bcp.global to initiate an appeal regarding a restricted account."
+                    },
+                    "cancellation": {
+                        "title": "3.6. Account Cancellation",
+                        "content": [
+                            "In the event you wish to terminate your BCP account, you must submit a support request to connect@bcp.global for assistance with the prescribed account cancellation process. Please note that BCP will conduct a pre-cancellation review of the account, and the account shall be officially cancelled only upon receipt of a formal confirmation email from BCP.",
+                            "Any assumption of cancellation absent such confirmation shall be deemed ineffective, and BCP disclaims any responsibility for any impact on the company account.",
+                            "Upon discontinuation of BCP usage, any remaining Credits shall not be subject to refund or conversion into cash or alternative services. Only the individual who provided the Business (Registration) License/ Certificate of Incorporation is authorized to request account cancellation.",
+                            "Subsequent to account cancellation, the business shall be restricted from creating a new account for a designated period, to be communicated. BCP disclaims all liability for any consequences related to account cancellation."
+                        ]
+                    },
+                    "violations": {
+                        "title": "3.7. Account Disposal",
+                        "content": "If you may have violated this Agreement and local laws, or any other behavior/content that BCP deems to be dangerous. BCP has the right to take emergency measures against your account without notifying you in advance. Measures include but are not limited to banning, freezing, and restrictions. If this causes you to be unable to use your account normally, you will bear the risks caused by your dangerous behavior."
+                    }
+                }
+            },
+            "section4": {
+                "title": "4. User Code of Conduct",
+                "subsections": {
+                    "contentRegulations": {
+                        "title": "4.1. Content Release Specifications",
+                        "intro": "This clause pertains to all user-generated content, including but not limited to uploads, reproductions, publications, and distributions made in connection with the services. This encompasses registration data such as company name, business registration license, service offerings, sales and purchase registrations, and any textual, audio, or other content associated with your account.",
+                        "prohibitedContentTitle": "Users agree that they shall not post content that:",
+                        "prohibitedContent": [
+                            "(1) Uses profane or offensive language that may be construed as harassing, disturbing, embarrassing, alarming, or annoying to any person;",
+                            "(2) Is abusive, insulting, or threatening, or promotes or encourages racism, hatred, or bigotry;",
+                            "(3) Encourages illegal activity, including but not limited to terrorism, incitement to racial hatred, and hate speech;",
+                            "(4) Contains defamatory statements;",
+                            "(5) Relates to suggesting, introducing, or soliciting exchanges outside the BCP platform;",
+                            "(6) Concerns the dissemination of spam, impersonation, or fraudulent schemes;",
+                            "(7) Contains spyware, viruses, corrupted files, worms, or other malicious code designed to interrupt, damage, limit, or destroy the functionality of any software, hardware, telecommunications, network, server, or other equipment, Trojan horses, or any material designed to damage, interfere with, misappropriate, or expropriate data or personal information, whether from BCP or otherwise;",
+                            "(8) Relates to political policy;",
+                            "(9) Is deemed detrimental by BCP under any applicable laws."
+                        ]
+                    },
+                    "prohibitedActions": {
+                        "title": "4.2. Prohibited Conduct",
+                        "intro": "Members are strictly prohibited from engaging in the following conduct while using BCP:",
+                        "actions": [
+                            "(1) Unauthorized intrusion into the network, disruption of normal network operations, unauthorized access to network data, and any other conduct that compromises network security;",
+                            "(2) Deliberately disrupting or interfering with the normal operation of the system or website, disseminating malicious software or viruses, and any other destructive conduct that affects network information services;",
+                            "(3) Fraudulent account registration, including but not limited to the deliberate registration of a large number of accounts or the provision of false registration information;",
+                            "(4) Deliberate impersonation, fraud, and the dissemination of electronic spam."
+                        ]
+                    },
+                    "userResponsibility": {
+                        "title": "4.3. User Responsibility and Enforcement Measures",
+                        "intro": "You acknowledge and agree that you are solely responsible for your conduct. BCP reserves the absolute right to implement remedial measures against any conduct that violates applicable laws or the terms of this Agreement, including but not limited to:",
+                        "measures": [
+                            "(1) Removing, blocking, or deleting content and links posted by you without prior notice;",
+                            "(2) Implementing immediate sanctions against your account, such as account suspension, forfeiture of all Credits, and demand for compensation;",
+                            "(3) Terminating part or all of BCP's services to you and initiating legal proceedings in accordance with applicable laws."
+                        ],
+                        "additional": "Furthermore, if your conduct is determined to constitute a criminal offense, we reserve the right to report the matter and disclose relevant information to the competent authorities for prosecution in accordance with regulations."
+                    },
+                    "compensation": {
+                        "title": "4.4. Indemnification for User Misconduct",
+                        "content": "It is agreed and understood that if your wrongful conduct, including but not limited to any breach of applicable laws, regulations, or the provisions of this Agreement, causes BCP to incur claims, legal proceedings, the threat of platform removal, or administrative penalties, you shall be liable to indemnify BCP for all consequential damages."
+                    },
+                    "disclosure": {
+                        "title": "4.5. User Responsibility and Disclosure of Information",
+                        "content": "You acknowledge and agree that you are solely responsible for your conduct. In certain circumstances, we reserve the right to provide your identifying information to third parties who possess lawful grounds to allege that content posted by you on BCP infringes upon their legitimate rights. We reserve the right to disclose information when necessary to protect the legitimate interests of BCP."
+                    }
+                }
+            },
+            "section5": {
+                "title": "5. Data Security & Privacy",
+                "paragraphs": [
+                    "During your engagement with BCP, our artificial intelligence system will collect, process, and analyze data related to your business activities to enhance user experience and provide optimized services. Data collected may include, but is not limited to, transaction history, communication logs, platform usage patterns, and business profile information.",
+                    "BCP is committed to protecting your data through industry-standard security measures, including encryption, access controls, and secure storage protocols. Users acknowledge that no system is entirely free from risks, and while BCP strives to ensure data security, it cannot guarantee absolute protection against unauthorized access or breaches.",
+                    "Users have the right to request access, modification, or deletion of their data in accordance with applicable privacy regulations. BCP may retain certain data as required by law or for compliance, fraud prevention, and security purposes.",
+                    "Data may be shared with trusted third-party service providers under strict confidentiality agreements for payment processing, security monitoring, and analytics. BCP does not sell or rent user data to third parties for marketing purposes.",
+                    "For a comprehensive understanding of data collection, retention, and protection policies, please refer to the BCP Privacy Policy."
+                ]
+            },
+            "section6": {
+                "title": "6. Paid Services",
+                "intro": [
+                    "You represent and warrant that you are legally competent to enter into financial obligations pursuant to the laws of your location. BCP utilizes Credit as an intermediary payment mechanism for the acquisition of paid features, including but not limited to messaging, matching agent services, and services provided by BCP or third-party partners.",
+                    "It is expressly understood and agreed that Credit is solely a unit of account for platform-internal transactions and does not represent currency nor is it redeemable for monetary value."
+                ],
+                "subsections": {
+                    "purchasePaidServices": {
+                        "title": "6.1. Purchase of Paid Services",
+                        "content": "While using BCP products and services, you may opt to purchase BCP's paid services, including, without limitation, matching slots."
+                    },
+                    "payment": {
+                        "title": "6.2. Payment",
+                        "subsections": {
+                            "creditIntroduction": {
+                                "title": "6.2.1. Introduction to Credits",
+                                "content": "Credits are an internal transactional unit utilized exclusively on the BCP platform. Credits do not possess monetary nature or value, and are not susceptible to gifting, conversion into currency, or transfer to other users. Any conduct involving the intentional misuse of Credits or contravention of BCP's regulations shall render the user fully liable for all legal responsibilities, damages incurred, and indemnification of BCP and any relevant third parties."
+                            },
+                            "thirdPartyPayment": {
+                                "title": "6.2.2. Third-Party Payment Mechanisms",
+                                "content": [
+                                    "Payment for paid services shall be processed through third-party payment gateways integrated within the official BCP platform. Users are required to adhere to the service terms and conditions of the third-party provider and to complete all online transactions using a currency supported by the system.",
+                                    "In the event of system disruptions arising from the payment gateway, users must proactively submit a support request to BCP via the AI Chatbot or electronic mail at connect@bcp.global within 24 hours, and provide all necessary evidence and information for assistance.",
+                                    "Users acknowledge and agree that BCP disclaims all warranties, express or implied, with respect to the security, accuracy, efficiency, or timeliness of these payment mechanisms. BCP shall not be responsible for any disputes or losses incurred through the use of such mechanisms."
+                                ]
+                            },
+                            "systemErrorHandling": {
+                                "title": "6.2.3. System Error Protocols",
+                                "intro": "In the event of system errors, the following protocols shall apply:",
+                                "actions": [
+                                    "(1) If a top-up process is incomplete, users shall pause and resume the process upon platform restart.",
+                                    "(2) If a QR code scan fails to display information, users shall immediately halt the transaction and restart the platform.",
+                                    "(3) In the event of a successful payment followed by a transaction failure notification, users shall contact their respective banking institution directly.",
+                                    "(4) In the event of a successful payment without corresponding Credit receipt, users shall contact the designated support department or AI chatbot within twenty-four (24) hours for assistance.",
+                                    "(5) In the event of lost Credits, users shall contact the designated support department or AI chatbot within twenty-four (24) hours for assistance."
+                                ],
+                                "note": "BCP reserves the right to request the provision of relevant supporting documentation for verification and authentication purposes. The verification process may extend up to one (1) business day."
+                            },
+                            "refundPolicy": {
+                                "title": "6.2.4. Credit Reimbursement Procedures",
+                                "intro": "Users are eligible for Credit reimbursement under the following conditions:",
+                                "cases": [
+                                    {
+                                        "case": "(1) Instances of double charging for a single service utilization.",
+                                        "example": "For example, if a single message is charged as two (2) Credits instead of one (1), it constitutes a double charging error.",
+                                        "note": "Users are hereby notified that intentional submission of duplicate requests will result in normal system charges, without entitlement to Credit reimbursement or liability on BCP's part for related complaints. Users are therefore advised to exercise due diligence when utilizing the service."
+                                    },
+                                    {
+                                        "case": "(2) Loss of Credits attributable to system errors."
+                                    }
+                                ],
+                                "conclusion": "BCP shall reimburse Credits to users upon the provision of all requested supporting documentation."
+                            },
+                            "creditLimitations": {
+                                "title": "6.2.5. Credit Restriction and Revocation",
+                                "intro": "BCP reserves the absolute right to restrict, cancel, or revoke part or all of a user's Credits based on the severity of violations, including but not limited to:",
+                                "violations": [
+                                    {
+                                        "type": "(1) Refund Actions:",
+                                        "consequence": "BCP shall immediately restrict the refunded Credit amount and device upon the first instance of a refund violation. BCP further reserves the right to seek compensation for any direct or indirect losses resulting from user-initiated refunds."
+                                    },
+                                    {
+                                        "type": "(2) Exploitation of Promotional Programs:",
+                                        "consequence": "BCP retains the absolute right to revoke all Credits and restrict accounts and devices without prior notice upon detection of violations such as creating multiple accounts or registering fraudulent or invalid Business (Registration) License/ Certificate of Incorporation. Users are encouraged to report and provide authentication evidence of violations within the BCP community. BCP reserves the right to seek indemnification for any direct or indirect losses occasioned by user breaches of the foregoing provisions."
+                                    },
+                                    {
+                                        "type": "(3) Dissemination of False Information:",
+                                        "consequence": "BCP shall restrict all Credits of users who disseminate false information that disrupts the BCP community's exchange process and pursue legal remedies to protect users and BCP."
+                                    }
+                                ],
+                                "additional": "Users acknowledge and agree to adhere to BCP's policies. Any violation during service utilization shall render users fully liable for compensating BCP and related parties for all resulting damages."
+                            }
+                        }
+                    },
+                    "clause63": {
+                        "title": "6.3.",
+                        "content": "In the course of payment, these third-party payment tools may necessitate the provision of specific personal data to enable transactions via their financial institutions and to adhere to applicable international, national, federal, state, and local statutory and regulatory requirements."
+                    },
+                    "clause64": {
+                        "title": "6.4.",
+                        "content": "You understand and confirm that, due to the inherent nature of Internet-based products, purchases of BCP paid services, including but not limited to message, matching slot and membership services, the payment is non-revocable, non-refundable, and non-reversible upon transaction completion."
+                    },
+                    "clause65": {
+                        "title": "6.5.",
+                        "content": "Your purchase of BCP services and products grants you a limited license for use solely within the BCP platform, subject to strict adherence to all applicable legal provisions. By way of example, virtual props are not tradeable, convertible into legal currency of any jurisdiction, usable as credit or security, nor available for any investment or transfer."
+                    },
+                    "clause66": {
+                        "title": "6.6.",
+                        "content": "When acquiring BCP paid services, you are obligated to review the applicable consumption guidelines for the respective services in a timely manner to prevent undue losses. BCP maintains the right to alter the sales methodologies and regulations of paid services at its discretion."
+                    },
+                    "legalFunds": {
+                        "title": "6.7. Legal Source of Funds",
+                        "content": [
+                            "You represent and assure that the source of funds utilized for the procurement of paid services is legitimate and conforms to all applicable legal requirements. You further assure that your consumption behavior and intended purpose are in conformity with all relevant legal documents and this Agreement and will not jeopardize BCP's compliance operations.",
+                            "BCP reserves the right to revoke, adjust, or reclaim any Credits granted in cases of suspected abuse, violation of terms, system errors, or for any other reason deemed necessary.",
+                            "In the event that the source of your funds is unclear or fraudulent activities are detected, BCP reserves the right to request clarification and impose a temporary suspension of your account until the funds are verified as legitimate. You shall bear full legal responsibility for all damages arising before, during, or after the verification process and shall compensate BCP and other relevant parties for any losses incurred, as applicable."
+                        ]
+                    }
+                }
+            },
+            "section7": {
+                "title": "7. Intellectual Property and Credit Ownership",
+                "subsections": {
+                    "intellectualProperty": {
+                        "title": "7.1. BCP Intellectual Property Rights",
+                        "content": [
+                            "BCP is the sole proprietor of all intellectual property rights pertaining to its products and services, including but not limited to software, technology, programs, websites, text, images, audio, and video.",
+                            "BCP owns the copyright, patent rights, and all other intellectual property rights in the software utilized to provide BCP products and services."
+                        ]
+                    },
+                    "creditOwnership": {
+                        "title": "7.2. Credit Ownership and Management",
+                        "content": [
+                            "Credit is an asset of BCP and functions as an intermediary unit of exchange within the application. Credit does not possess monetary value and cannot be bought, sold, transferred, converted into cash, or exchanged for any other assets. BCP retains the absolute right to operate and adjust the Credit exchange ratio; therefore, users are advised to regularly review and update information from BCP to safeguard their interests.",
+                            "In the event of detecting fraudulent or deceptive activities or misappropriation of BCP's assets, BCP reserves the absolute right to revoke the Credit amount issued to the accounts involved in the violation, demand compensation from the user, and implement appropriate remedial measures in accordance with regulations."
+                        ]
+                    },
+                    "trademarkRegulations": {
+                        "title": "7.3. Trademark and Brand Name Regulations",
+                        "content": [
+                            "You are strictly forbidden from using \"BCP\" or any trademark, service mark, trade name, domain name, website name, or other brand logo (collectively, \"Logos\") related to the BCP brand without explicit authorization.",
+                            "Without our prior written permission, you are not permitted to display, utilize, or seek registration of trademarks, registered domain names, or other intellectual property incorporating the aforementioned Logos, whether alone or in combination.",
+                            "Any breach of this provision resulting in damages to BCP or others shall subject you to all legal liabilities."
+                        ]
+                    },
+                    "userContentOwnership": {
+                        "title": "7.4. User Content Ownership",
+                        "content": [
+                            "You represent and warrant that all content you publish when using BCP, including, without limitation, text, images, videos, audio, and other content formats, is either original or legally licensed.",
+                            "You hereby assign to BCP a worldwide, royalty-free, non-exclusive, multi-level, sublicensable right to all content uploaded and published by you via BCP.",
+                            "To ensure the protection of your rights, you authorize BCP, either directly or through a third-party designee, to protect your uploaded and published content with intellectual property rights, pursuant to the rights granted in the preceding paragraph."
+                        ]
+                    }
+                }
+            },
+            "section8": {
+                "title": "8. Disclaimer and Limitation of Liability",
+                "subsections": {
+                    "asIsService": {
+                        "title": "8.1. Service Provision on an \"As Is\" and \"As Available\" Basis",
+                        "intro": "Our services are provided on an \"as is\" and \"as available\" basis. While we endeavor to ensure the continuity and security of our services, we do not warrant or guarantee that:",
+                        "guarantees": [
+                            "(1) The services will be uninterrupted, error-free, or timely;",
+                            "(2) The services will function normally and will not be affected by delays or interruptions due to maintenance or system errors;",
+                            "(3) Any content or information received on BCP will be accurate or timely;",
+                            "(4) The services will meet all your requirements."
+                        ]
+                    },
+                    "nonLiability": {
+                        "title": "8.2. Exclusion of Liability",
+                        "intro": "We shall not be liable for any losses or damages arising from:",
+                        "exclusions": [
+                            "(1) Force majeure events and factors beyond our reasonable control;",
+                            "(2) Our platform being subjected to hacking or cyberattacks;",
+                            "(3) Any changes we make to BCP or its features, or any temporary or permanent suspension or termination of such features;",
+                            "(4) Errors originating from third parties (such as payment gateways, API providers);",
+                            "(5) The deletion, corruption, or loss of any content you upload, post, or transmit on BCP;",
+                            "(6) User-generated content posted on BCP;",
+                            "(7) Your failure to provide accurate account information, misuse of our services, or violation of these Terms;",
+                            "(8) Risks incurred by you when interacting with other users;",
+                            "(9) Our performance of due diligence obligations;",
+                            "(10) Technological limitations preventing us from fulfilling certain responsibilities;",
+                            "(11) Circumstances in which BCP is exempted from liability to the fullest extent permitted by law."
+                        ]
+                    },
+                    "damageExclusion": {
+                        "title": "8.3. Limitation of Damages",
+                        "content": "In no event shall we be liable for any indirect, consequential, punitive, incidental, special, or exemplary damages, including lost profits, arising from your use of BCP (even if we have been advised of the possibility of such losses). Our total liability to you, regardless of the basis or form of claim, shall not exceed the fees paid by you within the twelve (12) months preceding the claim for your use of our services."
+                    },
+                    "businessPurpose": {
+                        "title": "8.4. Business Use Limitation",
+                        "content": "Our services are provided solely for the purpose of facilitating business connections. You agree not to use BCP for any commercial or business purposes, and we shall not be liable for any commercial or business losses."
+                    },
+                    "timeLimit": {
+                        "title": "8.5. Limitation of Actions",
+                        "content": "You agree that, notwithstanding any contrary statutory provisions, any claim or cause of action arising from or related to your use of BCP or these Terms must be filed within one (1) year after such claim or cause of action arose; otherwise, it shall be permanently barred."
+                    }
+                }
+            },
+            "section9": {
+                "title": "9. Jurisdiction",
+                "paragraphs": [
+                    "All disputes arising out of or in connection with the terms of this Agreement, including but not limited to any question regarding its existence, validity, interpretation, implementation, or termination, shall be submitted to and finally resolved by binding arbitration in accordance with the arbitration rules of the Vietnam International Arbitration Center then in effect at the time of the dispute. The language of the arbitration shall be English."
+                ]
+            },
+            "section10": {
+                "title": "10. Others",
+                "subsections": {
+                    "contact": {
+                        "title": "10.1. Communication",
+                        "content": "BCP values user satisfaction. For questions regarding our products and services, this Agreement, or related matters, users may contact our online AI chatbot or communicate with us via electronic mail at connect@bcp.global. BCP will endeavor to respond to user communications in a timely manner."
+                    },
+                    "severability": {
+                        "title": "10.2. Independent Clauses",
+                        "content": "Each clause of this Agreement is deemed to be a distinct and severable part. If any specific clause in this Agreement is determined to be invalid, illegal, or unenforceable for any reason, including but not limited to, violation of local laws and regulations, ambiguity, or unenforceability, such invalidity, illegality, or unenforceability shall not prejudice or diminish the legality, validity, and enforceability of the remaining clauses of this Agreement."
+                    },
+                    "languagePrecedence": {
+                        "title": "10.3. Language Supremacy",
+                        "content": "This Agreement is drafted in the English language and may be provided in multiple languages. Users acknowledge and agree that in the event of any inconsistency between the English version and any other language version, the English version shall be controlled."
+                    }
+                }
+            }
+        }
+    }
+}

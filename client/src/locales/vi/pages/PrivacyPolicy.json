@@ -1,6 +1,6 @@
 {
   "privacyPolicy": {
-    "title": "Điều Khoản Dịch Vụ",
+    "title": "Chính sách quyền riêng tư",
     "lastUpdated": "Cập nhật: Tháng 3/2024",
     "sections": [
       { "id": 1, "title": "Thông tin người dùng cung cấp" },
@@ -79,11 +79,11 @@
           "otherSources": {
             "title": "1.8. Các thông tin thu thập từ các nguồn khác",
             "items": [
-              "1.8.1. Thông tin thông qua các cuộc khảo sát, nghiên cứu, quảng bá, cuộc thi, thi đấu hoặc sự kiện do chúng tôi tiến hành hoặc tài trợ mà bạn tham gia.",
-              "1.8.2. Thông tin thu thập qua các đối tác quảng cáo, đo lường và các đối tác khác chia sẻ với chúng tôi thông tin về bạn và các hoạt động của bạn bên ngoài Nền tảng, chẳng hạn như hành vi của bạn trên các trang web, ứng dụng khác hoặc tại cửa hàng, bao gồm các sản phẩm hoặc dịch vụ bạn đã mua, trực tuyến hoặc trực tiếp. Các đối tác này cũng chia sẻ với chúng tôi các thông tin như mã định danh di động phục vụ quảng cáo, địa chỉ email và số điện thoại được mã hóa, cũng như mã định danh cookie. Chúng tôi sử dụng những dữ liệu này để đối chiếu thông tin của bạn và các hành động của bạn bên ngoài Nền tảng với tài khoản BCP của bạn. Một số đối tác quảng cáo và đối tác khác cho phép chúng tôi thu thập thông tin tương tự trực tiếp từ trang web hoặc ứng dụng của họ thông qua việc tích hợp Công cụ Quảng Cáo của BCP (chẳng hạn như BCP Pixel).",
-              "1.8.3. Chúng tôi có thể nhận được thông tin về bạn từ các đơn vị liên kết trong cùng hệ sinh thái doanh nghiệp của chúng tôi, bao gồm thông tin về các hoạt động của bạn trên nền tảng của họ.",
-              "1.8.4. Chúng tôi có thể nhận được thông tin về bạn từ người khác, bao gồm khi bạn được đề cập trong Nội dung người dùng, tin nhắn trực tiếp, khiếu nại, đơn kháng nghị, yêu cầu hoặc phản hồi gửi đến chúng tôi, hoặc khi thông tin liên hệ của bạn được cung cấp cho chúng tôi.",
-              "1.8.5. Chúng tôi cũng có thể thu thập hoặc nhận thông tin về bạn từ các tổ chức, doanh nghiệp, cá nhân và các nguồn khác, bao gồm các nguồn thông tin công khai, cơ quan chính phủ, tổ chức chuyên môn và tổ chức từ thiện."
+              "<strong>1.8.1.</strong> Thông tin thông qua các cuộc khảo sát, nghiên cứu, quảng bá, cuộc thi, thi đấu hoặc sự kiện do chúng tôi tiến hành hoặc tài trợ mà bạn tham gia.",
+              "<strong>1.8.2.</strong> Thông tin thu thập qua các đối tác quảng cáo, đo lường và các đối tác khác chia sẻ với chúng tôi thông tin về bạn và các hoạt động của bạn bên ngoài Nền tảng, chẳng hạn như hành vi của bạn trên các trang web, ứng dụng khác hoặc tại cửa hàng, bao gồm các sản phẩm hoặc dịch vụ bạn đã mua, trực tuyến hoặc trực tiếp. Các đối tác này cũng chia sẻ với chúng tôi các thông tin như mã định danh di động phục vụ quảng cáo, địa chỉ email và số điện thoại được mã hóa, cũng như mã định danh cookie. Chúng tôi sử dụng những dữ liệu này để đối chiếu thông tin của bạn và các hành động của bạn bên ngoài Nền tảng với tài khoản BCP của bạn. Một số đối tác quảng cáo và đối tác khác cho phép chúng tôi thu thập thông tin tương tự trực tiếp từ trang web hoặc ứng dụng của họ thông qua việc tích hợp Công cụ Quảng Cáo của BCP (chẳng hạn như BCP Pixel).",
+              "<strong>1.8.3.</strong> Chúng tôi có thể nhận được thông tin về bạn từ các đơn vị liên kết trong cùng hệ sinh thái doanh nghiệp của chúng tôi, bao gồm thông tin về các hoạt động của bạn trên nền tảng của họ.",
+              "<strong>1.8.4.</strong> Chúng tôi có thể nhận được thông tin về bạn từ người khác, bao gồm khi bạn được đề cập trong Nội dung người dùng, tin nhắn trực tiếp, khiếu nại, đơn kháng nghị, yêu cầu hoặc phản hồi gửi đến chúng tôi, hoặc khi thông tin liên hệ của bạn được cung cấp cho chúng tôi.",
+              "<strong>1.8.5.</strong> Chúng tôi cũng có thể thu thập hoặc nhận thông tin về bạn từ các tổ chức, doanh nghiệp, cá nhân và các nguồn khác, bao gồm các nguồn thông tin công khai, cơ quan chính phủ, tổ chức chuyên môn và tổ chức từ thiện."
             ],
             "disclaimer": [
               "Chúng tôi không chịu trách nhiệm đối với các thực tiễn bảo mật dữ liệu của các nhà cung cấp dịch vụ và đối tác kinh doanh của mình. Các hoạt động thu thập và xử lý thông tin của những nhà cung cấp dịch vụ và đối tác này không thuộc phạm vi điều chỉnh của Chính sách Bảo mật này.",
@@ -133,7 +133,7 @@
               "Người dùng tham gia vào BCP có trách nhiệm đảm bảo tính minh bạch trong hoạt động kinh doanh và cung cấp đầy đủ thông tin cần thiết cho các quy trình xác minh và đối soát, bao gồm nhưng không giới hạn ở Giấy phép Kinh doanh/Chứng nhận Đăng ký Công ty, thông tin pháp lý, chứng chỉ chuyên môn và các dữ liệu liên quan khác.",
               "BCP có thể thu thập, tổng hợp và phân tích các thông tin này để đánh giá mức độ tín nhiệm của doanh nghiệp bạn và đề xuất kết nối với các đối tác có mức tín nhiệm tương ứng nhằm hỗ trợ quá trình kết nối và tối ưu hóa trải nghiệm người dùng.",
               "Trong trường hợp bạn cho phép bên thứ ba truy cập vào tài khoản của mình, chúng tôi có thể chia sẻ một số thông tin nhất định với bên thứ ba đó. Phạm vi thông tin được chia sẻ sẽ phụ thuộc vào các quyền mà bạn cấp và có thể bao gồm thông tin tài khoản của bạn cũng như các dữ liệu khác mà bạn chủ động cung cấp.",
-              "Miễn trừ trách nhiệm: BCP không chịu trách nhiệm đối với bất kỳ tổn thất, thiệt hại hoặc rủi ro nào phát sinh từ việc bên thứ ba sử dụng, lưu trữ hoặc tiết lộ thông tin của bạn, bao gồm nhưng không giới hạn ở các hành vi vi phạm bảo mật, lạm dụng dữ liệu hoặc tiết lộ thông tin trái phép do bên thứ ba thực hiện. Bạn nên xem xét và đánh giá chính sách quyền riêng tư cũng như các biện pháp bảo mật của bên thứ ba trước khi cấp quyền truy cập vào tài khoản hoặc thông tin cá nhân của mình."
+              "<strong>Miễn trừ trách nhiệm:</strong> BCP không chịu trách nhiệm đối với bất kỳ tổn thất, thiệt hại hoặc rủi ro nào phát sinh từ việc bên thứ ba sử dụng, lưu trữ hoặc tiết lộ thông tin của bạn, bao gồm nhưng không giới hạn ở các hành vi vi phạm bảo mật, lạm dụng dữ liệu hoặc tiết lộ thông tin trái phép do bên thứ ba thực hiện. Bạn nên xem xét và đánh giá chính sách quyền riêng tư cũng như các biện pháp bảo mật của bên thứ ba trước khi cấp quyền truy cập vào tài khoản hoặc thông tin cá nhân của mình."
             ]
           },
           "serviceProviders": {
@@ -177,8 +177,8 @@
             "title": "3.7. Bán, Sáp nhập, hoặc Giao dịch Kinh doanh khác",
             "intro": "Chúng tôi có thể tiết lộ thông tin của người dùng cho các bên thứ ba, trong trường hợp sau:",
             "scenarios": [
-              "3.7.1. BCP bán hoặc mua bất kỳ cơ sở kinh doanh hoặc tài sản nào (cho dù đó là kết quả của việc thanh lý, phá sản, hoặc theo cách khác), trong trường hợp này chúng tôi sẽ tiết lộ dữ liệu của bạn cho bên bán hoặc bên mua tiềm năng của cơ sở kinh doanh hoặc tài sản đó;",
-              "3.7.2. BCP bán, mua, sáp nhập, được mua lại bởi hoặc liên danh với các công ty hoặc doanh nghiệp khác, hoặc bán một số hoặc tất cả tài sản của chúng tôi. Trong các giao dịch đó, thông tin người dùng có thể nằm trong số các tài sản được chuyển nhượng."
+              "<strong>3.7.1.</strong> BCP bán hoặc mua bất kỳ cơ sở kinh doanh hoặc tài sản nào (cho dù đó là kết quả của việc thanh lý, phá sản, hoặc theo cách khác), trong trường hợp này chúng tôi sẽ tiết lộ dữ liệu của bạn cho bên bán hoặc bên mua tiềm năng của cơ sở kinh doanh hoặc tài sản đó;",
+              "<strong>3.7.2.</strong> BCP bán, mua, sáp nhập, được mua lại bởi hoặc liên danh với các công ty hoặc doanh nghiệp khác, hoặc bán một số hoặc tất cả tài sản của chúng tôi. Trong các giao dịch đó, thông tin người dùng có thể nằm trong số các tài sản được chuyển nhượng."
             ]
           }
         }
@@ -221,8 +221,8 @@
         "vietnam": {
           "title": "Việt Nam",
           "intro": "Nếu bạn đang sử dụng dịch vụ của chúng tôi ở Việt Nam, thì các điều khoản bổ sung sau đây sẽ được áp dụng. Trong trường hợp có bất kỳ mâu thuẫn nào giữa các điều khoản bổ sung sau đây và các quy định trong phần chính của chính sách này, thì các điều khoản sau đây sẽ được ưu tiên áp dụng.",
-          "dataProcessing": "Cách thức xử lý dữ liệu doanh nghiệp - Chúng tôi có thể xử lý dữ liệu của người dùng bằng các cách thức thủ công hoặc tự động.",
-          "rightsAndObligations": "Quyền và nghĩa vụ của chủ thể dữ liệu. Ngoại trừ một số ngoại lệ nhất định, người dùng có quyền lợi và nghĩa vụ theo pháp luật hiện hành. Cụ thể, người dùng có các quyền theo luật như sau:",
+          "dataProcessing": "<strong>Cách thức xử lý dữ liệu doanh nghiệp</strong> - Chúng tôi có thể xử lý dữ liệu của người dùng bằng các cách thức thủ công hoặc tự động.",
+          "rightsAndObligations": "<strong>Quyền và nghĩa vụ của chủ thể dữ liệu.</strong> Ngoại trừ một số ngoại lệ nhất định, người dùng có quyền lợi và nghĩa vụ theo pháp luật hiện hành. Cụ thể, người dùng có các quyền theo luật như sau:",
           "rights": [
             "Quyền được biết;",
             "Quyền đồng ý và rút lại sự đồng ý;",

@@ -1,0 +1,168 @@
+{
+  "pricingComparison": {
+    "title": "Detailed Service Package Comparison",
+    "description": "Choose the service package that suits your business needs. Compare features and privileges to make the right decision.",
+    "table": {
+      "headers": {
+        "number": "#",
+        "comparison": "Comparison Points",
+        "starterPlan": "Starter Plan",
+        "premiumUser": "Premium User",
+        "vietnamCompany": "Vietnam Company",
+        "foreignCompany": "Foreign Company"
+      },
+      "sections": {
+        "general": {
+          "title": "GENERAL INFORMATION",
+          "rows": [
+            {
+              "id": 1,
+              "feature": "Type",
+              "starterPlan": "Trial",
+              "premiumUser": "Subscription"
+            },
+            {
+              "id": 2,
+              "feature": "Price",
+              "starterPlan": "Free",
+              "vietnamCompany": "30,000,000 VND/year",
+              "foreignCompany": "1200 USD/year"
+            },
+            {
+              "id": 3,
+              "feature": "VAT",
+              "starterPlan": "8%",
+              "premiumUser": "8%"
+            },
+            {
+              "id": 4,
+              "feature": "Number of connections",
+              "starterPlan": "Unlimited",
+              "premiumUser": "Unlimited"
+            },
+            {
+              "id": 5,
+              "feature": "Basic AI support",
+              "starterPlan": "✓",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 6,
+              "feature": "AI Matching Agent",
+              "starterPlan": "✓ (must buy credits)",
+              "premiumUser": "✓"
+            }
+          ]
+        },
+        "privileges": {
+          "title": "PRIVILEGES",
+          "rows": [
+            {
+              "id": 7,
+              "feature": "Profile",
+              "starterPlan": "Standard",
+              "premiumUser": "Advanced"
+            },
+            {
+              "id": 8,
+              "feature": "AI & Human support",
+              "starterPlan": "Within 2 hours from request",
+              "premiumUser": "24/7"
+            },
+            {
+              "id": 9,
+              "feature": "Highest level verification\n(verified with blue checkmark)",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 10,
+              "feature": "Top display via keywords\n(selected & displayed at top by\nAI close to keywords)",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 11,
+              "feature": "Priority demand & results",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 12,
+              "feature": "Cost per conversation with partner",
+              "starterPlan": "500,000 VND/time",
+              "premiumUser": "Get 10 new connections per month\nNon-cumulative"
+            },
+            {
+              "id": 13,
+              "feature": "Company data specially trained by human & AI",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            }
+          ]
+        },
+        "expandedAI": {
+          "title": "EXPANDED AI SERVICES",
+          "rows": [
+            {
+              "id": 14,
+              "feature": "Priority access to new AI features",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 15,
+              "feature": "Invited to BCP's global trade connection events and programs",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            },
+            {
+              "id": 16,
+              "feature": "Invited to AI training and connection with AIPartners.asia ecosystem",
+              "starterPlan": "✕",
+              "premiumUser": "✓"
+            }
+          ]
+        }
+      }
+    },
+    "slotConnecting": {
+      "title": "Slot Connecting",
+      "headers": {
+        "info": "Information",
+        "slotConnecting": "Slot Connecting"
+      },
+      "rows": [
+        {
+          "feature": "Type",
+          "value": "✕"
+        },
+        {
+          "feature": "Price",
+          "value": "Send: 20 USD = 500,000 VND/time ~ 100 credits"
+        },
+        {
+          "feature": "VAT",
+          "value": "8%"
+        },
+        {
+          "feature": "Number of connections",
+          "value": "Can only use AI Matching when reaching Verified level 2"
+        }
+      ]
+    },
+    "importantNotes": {
+      "title": "Important Notes:",
+      "notes": [
+        "Prices above do not include 8% VAT as required by law.",
+        "Annual Premium Company package registration gets 2 months free bonus.",
+        "Highest level verification helps increase trust and successful connection rates.",
+        "Slot Connecting can be purchased separately or combined with other service packages."
+      ]
+    },
+    "cta": {
+      "text": "Register Now",
+      "link": "https://bcp.global/credit"
+    }
+  }
+}

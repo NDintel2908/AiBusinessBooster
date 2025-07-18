@@ -1,56 +1,56 @@
 {
     "challengesSection": {
         "sectionHeader": {
-            "badge": "Market comparison",
-            "title": "<0>Traditional</0> methods vs <1>BCP.Global</1>",
-            "description": "Traditional business - to - business (B2B) connections remain costly and time-consuming despite the increasing ease of B2C practices through social media."
+        "badge": "Market comparison",
+        "title": "<0>Traditional</0> methods vs <1>BCP.Global</1>",
+        "description": "Traditional business - to - business (B2B) connections remain costly and time-consuming despite the increasing ease of B2C practices through social media."
+    },
+    "headers": {
+        "traditional": {
+        "title": "Traditional methods",
+        "subtitle": "Old approach with many limitations"
         },
-        "headers": {
-            "traditional": {
-                "title": "Traditional methods",
-                "subtitle": "Old approach with many limitations"
-            },
-            "bcp": {
-                "title": "BCP.Global Solution",
-                "subtitle": "Smart solution with AI"
-            }
-        },
-        "comparisons": [
-            {
-                "traditional": {
-                    "title": "High Investment - Low ROI",
-                    "description": "Manual screening processes prolong collaboration timelines"
-                },
-                "bcp": {
-                    "title": "Strategic Investment - Outstanding ROI",
-                    "description": "AI suggests the matches, you review and connect"
-                }
-            },
-            {
-                "traditional": {
-                    "title": "Time consuming",
-                    "description": "Manual process, time-consuming screening, prolonged cooperation cycle"
-                },
-                "bcp": {
-                    "title": "Instant connection",
-                    "description": "AI searches, you just choose and connect"
-                }
-            },
-            {
-                "traditional": {
-                    "title": "Lack of trust",
-                    "description": "Connections secured, but reliability remains a concern"
-                },
-                "bcp": {
-                    "title": "Multi-level verification",
-                    "description": "AI intentionally filters each connection, ensuring credibility in every partner"
-                }
-            }
-        ],
-        "labels": {
-            "traditional": "Traditional methods",
-            "bcpSolution": "BCP.Global Solution",
-            "vs": "VS"
+        "bcp": {
+        "title": "BCP.Global Solution",
+        "subtitle": "Smart solution with AI"
         }
+    },
+    "comparisons": [
+        {
+        "traditional": {
+            "title": "High Investment - Low ROI",
+            "description": "Manual screening processes prolong collaboration timelines"
+        },
+        "bcp": {
+            "title": "Strategic Investment - Outstanding ROI",
+            "description": "AI suggests the matches, you review and connect"
+        }
+        },
+        {
+        "traditional": {
+            "title": "Time consuming",
+            "description": "Manual process, time-consuming screening, prolonged cooperation cycle"
+        },
+        "bcp": {
+            "title": "Instant connection",
+            "description": "AI searches, you just choose and connect"
+        }
+        },
+        {
+        "traditional": {
+            "title": "Lack of trust",
+            "description": "Connections secured, but reliability remains a concern"
+        },
+        "bcp": {
+            "title": "Multi-level verification",
+            "description": "AI intentionally filters each connection, ensuring credibility in every partner"
+        }
+        }
+    ],
+    "labels": {
+        "traditional": "Traditional methods",
+        "bcpSolution": "BCP.Global Solution",
+        "vs": "VS"
+    }
     }
 }

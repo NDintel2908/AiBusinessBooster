@@ -1,0 +1,53 @@
+{
+  "paymentPolicy": {
+    "title": "Payment Policy",
+    "lastUpdated": "Updated: March 2024",
+    "sections": [
+      { "id": 1, "title": "Payment Methods" },
+      { "id": 2, "title": "Payment Terms and Conditions" },
+      { "id": 3, "title": "Payment Security" },
+      { "id": 4, "title": "Subscription Management and Upgrades" },
+      { "id": 5, "title": "Legal Compliance" }
+    ],
+    "content": {
+      "section1": {
+        "title": "1. Payment Methods",
+        "intro": "BCP offers the following payment methods to its business clients:",
+        "methods": [
+          "QR Code Payment (VNPay): Payment via scanning of the VNPayQR code is supported.",
+          "PayPal E-wallet: Accepts payment through international credit and debit cards, including Visa, Mastercard, American Express (Amex), and Discover.",
+          "Subscription-Based Recurring Payments: Applicable to monthly or annually billed Software as a Service (SaaS) service packages."
+        ],
+        "security": "All transactions are processed through secure payment gateways operated by trusted partners, ensuring the safety and security thereof in compliance with relevant international standards."
+      },
+      "section2": {
+        "title": "2. Payment Terms and Conditions",
+        "content": [
+          "Payment shall be rendered either upon placement of the order or prior to the activation of the services.",
+          "For subscription-based packages with recurring billing, the Enterprise shall receive a reminder notification seven (7) calendar days in advance of the scheduled renewal date.",
+          "In the event of a payment default, BCP reserves the right to impose a late payment penalty equivalent to five percent (5%) of the total invoiced amount, which shall be applied to the subsequent billing cycle (thirty (30) calendar days following the original due date)."
+        ]
+      },
+      "section3": {
+        "title": "3. Payment Security",
+        "intro": "BCP is dedicated to safeguarding customer information through the implementation of robust security measures, including but not limited to:",
+        "measures": [
+          "Data Encryption (SSL/TLS): All transaction data is encrypted utilizing Secure Sockets Layer (SSL) and/or Transport Layer Security (TLS) protocols to ensure its confidentiality and integrity during transmission.",
+          "PCI DSS Compliance: The payment processing system adheres to the Payment Card Industry Data Security Standard (PCI DSS) to mitigate the risk of fraudulent activities and maintain a secure environment for payment card information."
+        ]
+      },
+      "section4": {
+        "title": "4. Subscription Management and Upgrades",
+        "content": "Businesses can upgrade their service packages at any point in time via the service management portal. Support requests may be submitted through the AI chatbot or by email to connect@bcp.global"
+      },
+      "section5": {
+        "title": "5. Legal Compliance",
+        "intro": "BCP's payment policy adheres to pertinent Vietnamese and international legal requirements, including:",
+        "regulations": [
+          "General Data Protection Regulation (GDPR): Protecting customer privacy and data in accordance with its legal framework.",
+          "Transparency: Ensuring clear and comprehensive disclosure of all fees and transaction terms."
+        ]
+      }
+    }
+  }
+}

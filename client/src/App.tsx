@@ -5,7 +5,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
-import React from 'react';
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./lib/i18n";
 
@@ -16,7 +16,7 @@ const PaymentPolicy = lazy(() => import("@/pages/PaymentPolicy"));
 
 // HelpButton component
 function HelpButton() {
-  const { t } = useTranslation('app');
+  const { t } = useTranslation("app");
   const [isHovered, setIsHovered] = React.useState(false);
   const [showTooltip, setShowTooltip] = React.useState(false);
 
@@ -41,70 +41,68 @@ function HelpButton() {
   }, []);
 
   const buttonStyle: React.CSSProperties = {
-    position: 'fixed',
-    bottom: '20px',
-    right: '20px',
-    backgroundColor: isHovered ? '#0056b3' : '#007bff',
-    color: 'white',
-    borderRadius: '50%',
-    width: '60px',
-    height: '60px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '24px',
-    cursor: 'pointer',
-    boxShadow: isHovered 
-      ? '0px 4px 15px rgba(0, 123, 255, 0.5), 0px 0px 20px rgba(0, 123, 255, 0.3)' 
-      : '0px 2px 5px rgba(0, 0, 0, 0.3)',
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    backgroundColor: isHovered ? "#0056b3" : "#007bff",
+    color: "white",
+    borderRadius: "50%",
+    width: "60px",
+    height: "60px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: "24px",
+    cursor: "pointer",
+    boxShadow: isHovered
+      ? "0px 4px 15px rgba(0, 123, 255, 0.5), 0px 0px 20px rgba(0, 123, 255, 0.3)"
+      : "0px 2px 5px rgba(0, 0, 0, 0.3)",
     zIndex: 1000,
-    border: 'none',
-    outline: 'none',
-    transition: 'all 0.3s ease',
-    transform: isHovered ? 'scale(1.1)' : 'scale(1)',
+    border: "none",
+    outline: "none",
+    transition: "all 0.3s ease",
+    transform: isHovered ? "scale(1.1)" : "scale(1)",
   };
 
   const pulseAnimation = {
-    animation: 'pulse 2s infinite',
+    animation: "pulse 2s infinite",
   };
 
   const tooltipStyle: React.CSSProperties = {
-    position: 'fixed',
-    bottom: '90px',
-    right: '30px',
-    backgroundColor: 'rgba(0, 0, 0, 0.8)',
-    color: 'white',
-    padding: '10px 15px',
-    borderRadius: '6px',
-    fontSize: '14px',
-    maxWidth: '200px',
+    position: "fixed",
+    bottom: "90px",
+    right: "30px",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
+    color: "white",
+    padding: "10px 15px",
+    borderRadius: "6px",
+    fontSize: "14px",
+    maxWidth: "200px",
     zIndex: 1001,
-    visibility: showTooltip ? 'visible' : 'hidden',
+    visibility: showTooltip ? "visible" : "hidden",
     opacity: showTooltip ? 1 : 0,
-    transition: 'opacity 0.3s ease, visibility 0.3s ease',
+    transition: "opacity 0.3s ease, visibility 0.3s ease",
   };
 
   return (
     <>
-      <div style={tooltipStyle}>
-        {t('helpButton.tooltip')}
-      </div>
-      <button 
-        style={{...buttonStyle, ...(showTooltip && pulseAnimation)}}
+      <div style={tooltipStyle}>{t("helpButton.tooltip")}</div>
+      <button
+        style={{ ...buttonStyle, ...(showTooltip && pulseAnimation) }}
         onClick={handleClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        aria-label={t('helpButton.ariaLabel')}
+        aria-label={t("helpButton.ariaLabel")}
       >
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          width="28" 
-          height="28" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          strokeWidth="2" 
-          strokeLinecap="round" 
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
           strokeLinejoin="round"
         >
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
@@ -129,11 +127,10 @@ function HelpButton() {
   );
 }
 
-
 function Router() {
-  const { t } = useTranslation('app');
+  const { t } = useTranslation("app");
   return (
-    <Suspense fallback={<div>{t('loading')}</div>}>
+    <Suspense fallback={<div>{t("loading")}</div>}>
       <Switch>
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />

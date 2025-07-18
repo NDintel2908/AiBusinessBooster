@@ -21,31 +21,15 @@
         "security": "Mọi giao dịch được thực hiện qua cổng thanh toán đối tác, đảm bảo an toàn và bảo mật theo chuẩn quốc tế."
       },
       "section2": {
-        "title": "2. Quy trình thanh toán",
-        "subsections": {
-          "paymentTerm": {
-            "title": "2.1. Thời hạn thanh toán",
-            "content": [
-              "Thanh toán phải được thực hiện ngay khi đặt hàng hoặc trước khi kích hoạt dịch vụ.",
-              "Đối với các gói định kỳ, Doanh nghiệp sẽ nhận được thông báo nhắc nhở trước 7 ngày về việc gia hạn.",
-              "Trong trường hợp Doanh nghiệp thanh toán trễ hạn, BCP sẽ áp dụng phí phạt 5% trên tổng giá trị hoá đơn trong lần thanh toán tiếp theo (sau 30 ngày kể từ ngày đến hạn)."
-            ]
-          },
-          "refundPolicy": {
-            "title": "2.2. Chính sách hoàn tiền",
-            "intro": "Các Doanh nghiệp sẽ được hưởng chính sách hoàn tiền khi thoả mãn đủ các điều kiện sau:",
-            "conditions": [
-              "Huỷ dịch vụ trong vòng 7 ngày kể từ ngày mua (không áp dụng cho gói Slot Connecting);",
-              "Chưa sử dụng gói dịch vụ để kết nối, sử dụng đặc quyền của các gói dịch vụ định kỳ.",
-              "Hoàn tiền đầy đủ nếu khách hàng hủy dịch vụ trong vòng 14 ngày kể từ ngày mua (áp dụng cho gói dùng thử)."
-            ],
-            "note": "Trong trường hợp Doanh nghiệp đã sử dụng phần lớn thời gian hoặc tài nguyên dịch vụ do BCP cung cấp, các yêu cầu hoàn tiền sẽ không khả dụng.",
-            "reference": "Doanh nghiệp có thể tìm hiểu thêm về Dịch vụ trả phí của BCP tại Điều khoản Dịch vụ."
-          }
-        }
+        "title": "2. Điều khoản và điều kiện thanh toán",
+        "content": [
+          "Thanh toán phải được thực hiện ngay khi đặt hàng hoặc trước khi kích hoạt dịch vụ.",
+          "Đối với các gói định kỳ, Doanh nghiệp sẽ nhận được thông báo nhắc nhở trước 7 ngày về việc gia hạn.",
+          "Trong trường hợp Doanh nghiệp thanh toán trễ hạn, BCP sẽ áp dụng phí phạt 5% trên tổng giá trị hoá đơn trong lần thanh toán tiếp theo (sau 30 ngày kể từ ngày đến hạn)."
+        ]
       },
       "section3": {
-        "title": "3. Chính sách hoàn tiền",
+        "title": "3. Bảo mật thanh toán",
         "intro": "BCP cam kết bảo vệ thông tin khách hàng bằng cách:",
         "measures": [
           "Mã hóa dữ liệu (SSL/TLS): Tất cả thông tin giao dịch sẽ được mã hóa để đảm bảo an toàn.",
@@ -53,11 +37,11 @@
         ]
       },
       "section4": {
-        "title": "4. Bảo mật thông tin thanh toán",
+        "title": "4. Quản lý đăng ký và nâng cấp",
         "content": "Doanh nghiệp có thể đăng ký nâng cấp các gói dịch vụ bất kỳ lúc nào thông qua cổng quản lý dịch vụ. Trong trường hợp Doanh nghiệp cần được hỗ trợ có thể liên hệ ngay với chúng tôi thông qua chatbot AI hoặc email: connect@bcp.global"
       },
       "section5": {
-        "title": "5. Xử lý lỗi giao dịch",
+        "title": "5. Tuân thủ pháp lý",
         "intro": "Chính sách thanh toán của BCP tuân thủ các quy định pháp luật Việt Nam và Quốc tế:",
         "regulations": [
           "Luật bảo vệ dữ liệu cá nhân (GDPR): Bảo vệ quyền riêng tư và dữ liệu của khách hàng;",

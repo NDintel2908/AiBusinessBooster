@@ -16,10 +16,7 @@
         "ctaText": "Buy now",
         "features": [
           { "text": "BUY - SELL - COLLABORATE connections", "included": true },
-          {
-            "text": "Chat DIRECTLY with Final Decision-Makers",
-            "included": true
-          },
+          { "text": "Chat DIRECTLY with Final Decision-Makers", "included": true },
           { "text": "AI Matching Agent", "included": true },
           { "text": "Secure – User-friendly – Reliable", "included": true },
           { "text": "Expand to Japan and Global Markets", "included": true },
@@ -38,10 +35,7 @@
           { "text": "Basic AI Matching Agent", "included": true },
           { "text": "24/7 Support", "included": true },
           { "text": "Standard business profile", "included": true },
-          {
-            "text": "Join BCP Vietnam - APAC Business Community",
-            "included": true
-          }
+          { "text": "Join BCP Vietnam - APAC Business Community", "included": true }
         ]
       },
       "premium": {
@@ -53,27 +47,12 @@
         "features": [
           { "text": "Premium Verified badge", "included": true },
           { "text": "10 monthly renewable B2B connections", "included": true },
-          {
-            "text": "Customized Company Profile per target market",
-            "included": true
-          },
-          {
-            "text": "Priority to receive and send connection requests",
-            "included": true
-          },
-          {
-            "text": "Exclusive Early Access to Multi AI Agent",
-            "included": true
-          },
+          { "text": "Customized Company Profile per target market", "included": true },
+          { "text": "Priority to receive and send connection requests", "included": true },
+          { "text": "Exclusive Early Access to Multi AI Agent", "included": true },
           { "text": "Support within 2 hours", "included": true },
-          {
-            "text": "Priority Invitation to BCP & Partner Business Matching Events",
-            "included": true
-          },
-          {
-            "text": "Be Part of the AIPartners.asia Ecosystem: Connect & Communicate",
-            "included": true
-          }
+          { "text": "Priority Invitation to BCP & Partner Business Matching Events", "included": true },
+          { "text": "Be Part of the AIPartners.asia Ecosystem: Connect & Communicate", "included": true }
         ]
       }
     },
