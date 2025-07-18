@@ -16,7 +16,7 @@ import viService from "../../src/locales/vi/landing/ServiceSection.json";
 import viPaymentPolicy from "../../src/locales/vi/pages/PaymentPolicy.json";
 import viPricingComparison from "../../src/locales/vi/pages/PricingComparison.json";
 import viPrivacyPolicy from "../../src/locales/vi/pages/PrivacyPolicy.json";
-// import viTermsOfService from "../../src/locales/vi/pages/TermsOfService.json";
+import viTermsOfService from "../../src/locales/vi/pages/TermsOfService.json";
 import viApp from "../../src/locales/vi/App.json";
 
 // English translations
@@ -34,7 +34,7 @@ import enService from "../../src/locales/us/landing/ServiceSection.json";
 import enPaymentPolicy from "../../src/locales/us/pages/PaymentPolicy.json";
 import enPricingComparison from "../../src/locales/us/pages/PricingComparison.json";
 import enPrivacyPolicy from "../../src/locales/us/pages/PrivacyPolicy.json";
-// import enTermsOfService from "../../src/locales/us/pages/TermsOfService.json";
+import enTermsOfService from "../../src/locales/us/pages/TermsOfService.json";
 import enApp from "../../src/locales/us/App.json";
 
 const resources = {
@@ -53,7 +53,7 @@ const resources = {
     paymentPolicy: viPaymentPolicy,
     pricingComparison: viPricingComparison,
     privacyPolicy: viPrivacyPolicy,
-    // termsOfService: viTermsOfService,
+    termsOfService: viTermsOfService,
     app: viApp,
   },
   en: {
@@ -68,10 +68,10 @@ const resources = {
     hero: enHero,
     pricing: enPricing,
     service: enService,
-    // paymentPolicy: enPaymentPolicy,
-    // pricingComparison: enPricingComparison,
-    // privacyPolicy: enPrivacyPolicy,
-    // termsOfService: enTermsOfService,
+    paymentPolicy: enPaymentPolicy,
+    pricingComparison: enPricingComparison,
+    privacyPolicy: enPrivacyPolicy,
+    termsOfService: enTermsOfService,
     app: enApp,
   },
 };
