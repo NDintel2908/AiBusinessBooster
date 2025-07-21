@@ -271,21 +271,33 @@ function Router() {
   );
 }
 
+// function App() {
+//   const [showGlitch, setShowGlitch] = React.useState(() => {
+//     // Check if user has visited before
+//     return !localStorage.getItem("bcp-visited");
+//   });
+
+//   const handleGlitchComplete = () => {
+//     // Mark as visited
+//     localStorage.setItem("bcp-visited", "true");
+//     setShowGlitch(false);
+//   };
+
+//   return (
+//     <QueryClientProvider client={queryClient}>
+//       {showGlitch && <GlitchWelcome onComplete={handleGlitchComplete} />}
+//       <LanguageProvider>
+//         <Router />
+//         <HelpButton /> {/* Add HelpButton here */}
+//         <Toaster />
+//       </LanguageProvider>
+//     </QueryClientProvider>
+//   );
+// }
+
 function App() {
-  const [showGlitch, setShowGlitch] = React.useState(() => {
-    // Check if user has visited before
-    return !localStorage.getItem("bcp-visited");
-  });
-
-  const handleGlitchComplete = () => {
-    // Mark as visited
-    localStorage.setItem("bcp-visited", "true");
-    setShowGlitch(false);
-  };
-
   return (
     <QueryClientProvider client={queryClient}>
-      {showGlitch && <GlitchWelcome onComplete={handleGlitchComplete} />}
       <LanguageProvider>
         <Router />
         <HelpButton /> {/* Add HelpButton here */}
