@@ -78,11 +78,25 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  fallbackLng: "vi",
+  lng: "en", // Default language is English
+  fallbackLng: "en",
 
   interpolation: {
     escapeValue: false,
   },
+
+  // Thêm cấu hình để đảm bảo language change được xử lý đồng bộ
+  react: {
+    useSuspense: false,
+    bindI18n: "languageChanged loaded",
+    bindI18nStore: "added removed",
+    transEmptyNodeValue: "",
+    transSupportBasicHtmlNodes: true,
+    transKeepBasicHtmlNodesFor: ["br", "strong", "i"],
+  },
+
+  // Thêm debug để kiểm tra issues
+  debug: process.env.NODE_ENV === "development",
 });
 
 export default i18n;

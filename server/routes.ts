@@ -10,10 +10,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       // Validate the request body
       const validatedData = contactSchema.parse(req.body);
-      
+
       // Store the contact form submission
       const contact = await storage.saveContactSubmission(validatedData);
-      
+
       res.status(200).json({ 
         success: true, 
         message: "Contact form submitted successfully",
@@ -67,7 +67,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
                 }
                 return;
               }
-              
+
               // Trường hợp 2: Chuyển hướng khi từ VNPAY trở về
               if (path.includes('/dev-vnpay-return')) {
                 const newUrl = 'https://dev.bcp.global/vnpay-return' + params;

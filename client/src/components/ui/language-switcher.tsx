@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ChevronDown, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -27,12 +28,26 @@ interface LanguageSwitcherProps {
 
 export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const { i18n } = useTranslation();
+  const [location, setLocation] = useLocation();
 
+  // Get current language from URL
+  const currentLangFromUrl = location.match(/^\/(en|vi)/)?.[1] || "en";
   const currentLanguage =
-    languages.find((lang) => lang.code === i18n.language) || languages[0];
+    languages.find((lang) => lang.code === currentLangFromUrl) || languages[1]; // Default to English
 
   const handleLanguageChange = (language: Language) => {
-    i18n.changeLanguage(language.code);
+    // Update URL to match selected language
+    let newPath;
+    if (location.match(/^\/(en|vi)/)) {
+      // Replace existing language in URL
+      newPath = location.replace(/^\/(en|vi)/, `/${language.code}`);
+    } else {
+      // Add language prefix to URL
+      newPath = `/${language.code}${location}`;
+    }
+
+    // Change URL first, then language (GlobalLanguageSync will handle i18n)
+    setLocation(newPath);
   };
 
   return (

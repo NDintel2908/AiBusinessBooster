@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, useLocation } from "wouter";
 import { useTranslation } from "react-i18next";
 import BCPAILogo from "./BCPAI.png";
@@ -7,7 +8,37 @@ import "../../lib/i18n";
 
 export default function Footer() {
   const [, setLocation] = useLocation();
-  const { t } = useTranslation("footer");
+  const { t, i18n } = useTranslation("footer");
+  const lang = i18n.language || "en";
+  // Xử lý scroll đến section nếu có chỉ thị trong sessionStorage
+  React.useEffect(() => {
+    if (window.location.pathname === `/${lang}`) {
+      const scrollToSection = sessionStorage.getItem("scrollToSection");
+      if (scrollToSection) {
+        const section = document.getElementById(scrollToSection);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+        window.history.replaceState(null, "", `/${lang}`);
+        sessionStorage.removeItem("scrollToSection");
+      }
+    }
+  }, [lang]);
+
+  // Xử lý scroll đến section nếu có chỉ thị trong sessionStorage
+  React.useEffect(() => {
+    if (window.location.pathname === `/${lang}`) {
+      const scrollToSection = sessionStorage.getItem("scrollToSection");
+      if (scrollToSection) {
+        const section = document.getElementById(scrollToSection);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+        window.history.replaceState(null, "", `/${lang}`);
+        sessionStorage.removeItem("scrollToSection");
+      }
+    }
+  }, [lang]);
 
   // Hàm xử lý chuyển trang sử dụng wouter
   const navigateTo = (path: string) => (e: React.MouseEvent) => {
@@ -46,10 +77,19 @@ export default function Footer() {
             <ul className="space-y-4 font-primary">
               <li>
                 <a
-                  href="/"
+                  href={`/${lang}/#about`}
                   onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = "/#about";
+                    if (window.location.pathname !== `/${lang}`) {
+                      sessionStorage.setItem("scrollToSection", "about");
+                      window.location.href = `/${lang}`;
+                    } else {
+                      const section = document.getElementById("about");
+                      if (section) {
+                        section.scrollIntoView({ behavior: "smooth" });
+                        window.history.replaceState(null, "", `/${lang}`);
+                      }
+                    }
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
@@ -58,10 +98,23 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href={`/${lang}/#service-section`}
                   onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = "/#service-section";
+                    if (window.location.pathname !== `/${lang}`) {
+                      sessionStorage.setItem(
+                        "scrollToSection",
+                        "service-section",
+                      );
+                      window.location.href = `/${lang}`;
+                    } else {
+                      const section =
+                        document.getElementById("service-section");
+                      if (section) {
+                        section.scrollIntoView({ behavior: "smooth" });
+                        window.history.replaceState(null, "", `/${lang}`);
+                      }
+                    }
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
@@ -70,10 +123,19 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href={`/${lang}/#pricing`}
                   onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = "/#pricing";
+                    if (window.location.pathname !== `/${lang}`) {
+                      sessionStorage.setItem("scrollToSection", "pricing");
+                      window.location.href = `/${lang}`;
+                    } else {
+                      const section = document.getElementById("pricing");
+                      if (section) {
+                        section.scrollIntoView({ behavior: "smooth" });
+                        window.history.replaceState(null, "", `/${lang}`);
+                      }
+                    }
                   }}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
@@ -91,7 +153,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  onClick={navigateTo("/payment-policy")}
+                  onClick={navigateTo(`/${lang}/payment-policy`)}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
                   {t("footer.resources.paymentPolicy")}
@@ -100,7 +162,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  onClick={navigateTo("/privacy-policy")}
+                  onClick={navigateTo(`/${lang}/privacy-policy`)}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
                   {t("footer.resources.privacyPolicy")}
@@ -109,7 +171,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  onClick={navigateTo("/pricing-comparison")}
+                  onClick={navigateTo(`/${lang}/pricing-comparison`)}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
                   {t("footer.resources.pricingComparison")}
@@ -118,7 +180,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  onClick={navigateTo("/terms-of-service")}
+                  onClick={navigateTo(`/${lang}/terms-of-service`)}
                   className="text-gray-400 hover:text-neon-blue transition duration-300"
                 >
                   {t("footer.resources.termsOfService")}

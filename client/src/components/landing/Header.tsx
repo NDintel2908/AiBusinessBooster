@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -8,7 +8,19 @@ import BCPAILogo from "./BCPAI.png";
 import "../../lib/i18n";
 
 export default function Header() {
-  const { t } = useTranslation('header');
+  const { t, i18n } = useTranslation('header');
+  const [location] = useLocation();
+
+  // Extract language from URL
+  const lang = location.match(/^\/(en|vi)/)?.[1] || 'en';
+
+  // Sync i18n language with URL
+  useEffect(() => {
+    if (i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, i18n]);
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,10 +63,10 @@ export default function Header() {
         {/* Logo section */}
         <div className="flex-shrink-0">
           <a 
-            href="/" 
+            href={`/${lang}`}
             onClick={(e) => {
               e.preventDefault();
-              window.location.href = '/';
+              window.location.href = `/${lang}`;
             }}
             className="flex items-center cursor-pointer group"
           >
@@ -84,30 +96,54 @@ export default function Header() {
         <nav className="hidden lg:flex items-center justify-center flex-1 px-8">
           <div className="flex space-x-8 font-primary text-sm">
             <a 
-              href="/" 
-              onClick={(e) => {
+              href={`/${lang}/#service-section`}
+              onClick={e => {
                 e.preventDefault();
-                window.location.href = '/#service-section';
+                if (window.location.pathname !== `/${lang}`) {
+                  window.location.href = `/${lang}/#service-section`;
+                } else {
+                  const section = document.getElementById("service-section");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    window.history.replaceState(null, "", `/${lang}`);
+                  }
+                }
               }}
               className="text-gray-300 hover:text-neon-blue transition duration-300"
             >
               {t('header.navigation.features')}
             </a>
             <a 
-              href="/" 
-              onClick={(e) => {
+              href={`/${lang}/#pricing`}
+              onClick={e => {
                 e.preventDefault();
-                window.location.href = '/#pricing';
+                if (window.location.pathname !== `/${lang}`) {
+                  window.location.href = `/${lang}/#pricing`;
+                } else {
+                  const section = document.getElementById("pricing");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    window.history.replaceState(null, "", `/${lang}`);
+                  }
+                }
               }}
               className="text-gray-300 hover:text-neon-blue transition duration-300"
             >
               {t('header.navigation.pricing')}
             </a>
             <a 
-              href="/" 
-              onClick={(e) => {
+              href={`/${lang}/#about`}
+              onClick={e => {
                 e.preventDefault();
-                window.location.href = '/#about';
+                if (window.location.pathname !== `/${lang}`) {
+                  window.location.href = `/${lang}/#about`;
+                } else {
+                  const section = document.getElementById("about");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    window.history.replaceState(null, "", `/${lang}`);
+                  }
+                }
               }}
               className="text-gray-300 hover:text-neon-blue transition duration-300"
             >
@@ -129,10 +165,18 @@ export default function Header() {
       <div className={`lg:hidden bg-deep-dark border border-gray-800 rounded-xl mt-1 p-3 max-w-6xl mx-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <nav className="flex flex-col space-y-3 font-primary text-sm">
           <a 
-            href="/" 
-            onClick={(e) => {
+            href={`/${lang}/#service-section`}
+            onClick={e => {
               e.preventDefault();
-              window.location.href = '/#service-section';
+              if (window.location.pathname !== `/${lang}`) {
+                window.location.href = `/${lang}/#service-section`;
+              } else {
+                const section = document.getElementById("service-section");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", `/${lang}`);
+                }
+              }
               setIsMobileMenuOpen(false);
             }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"
@@ -140,10 +184,18 @@ export default function Header() {
             {t('header.navigation.features')}
           </a>
           <a 
-            href="/" 
-            onClick={(e) => {
+            href={`/${lang}/#pricing`}
+            onClick={e => {
               e.preventDefault();
-              window.location.href = '/#pricing';
+              if (window.location.pathname !== `/${lang}`) {
+                window.location.href = `/${lang}/#pricing`;
+              } else {
+                const section = document.getElementById("pricing");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", `/${lang}`);
+                }
+              }
               setIsMobileMenuOpen(false);
             }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"
@@ -151,10 +203,18 @@ export default function Header() {
             {t('header.navigation.pricing')}
           </a>
           <a 
-            href="/" 
-            onClick={(e) => {
+            href={`/${lang}/#about`}
+            onClick={e => {
               e.preventDefault();
-              window.location.href = '/#about';
+              if (window.location.pathname !== `/${lang}`) {
+                window.location.href = `/${lang}/#about`;
+              } else {
+                const section = document.getElementById("about");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", `/${lang}`);
+                }
+              }
               setIsMobileMenuOpen(false);
             }}
             className="text-gray-300 hover:text-neon-blue transition duration-300"

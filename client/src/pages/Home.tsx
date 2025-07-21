@@ -25,6 +25,7 @@ export default function Home() {
 
       <main>
         <Suspense fallback={<div>Loading...</div>}>
+          {/* <AboutSection /> */}
           <HeroSection />
           <ServiceSection />
           <ChallengesSection />
