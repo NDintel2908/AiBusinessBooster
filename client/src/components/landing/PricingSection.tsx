@@ -187,10 +187,13 @@ function PricingPlan({
 }
 
 export default function PricingSection() {
-  const { t } = useTranslation("pricing");
+  const { t, i18n } = useTranslation("pricing");
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
+
+  // Extract language from i18n
+  const lang = i18n.language || "en";
 
   useEffect(() => {
     if (isInView) {
@@ -297,9 +300,12 @@ export default function PricingSection() {
                 {t("pricingSection.additionalInfo.description")}
               </p>
               <div className="flex justify-center">
-                <a
-                  href={t("pricingSection.links.comparison")}
-                  className="text-blue-400 hover:text-purple-500 transition-colors duration-300 inline-flex items-center justify-center px-6 py-3 rounded-lg border border-blue-400/30 hover:border-purple-500/50"
+                <button
+                  onClick={() => {
+                    // Navigate to pricing comparison page with correct language
+                    window.location.href = `/${lang}/pricing-comparison`;
+                  }}
+                  className="text-blue-400 hover:text-purple-500 transition-colors duration-300 inline-flex items-center justify-center px-6 py-3 rounded-lg border border-blue-400/30 hover:border-purple-500/50 bg-transparent cursor-pointer"
                 >
                   {t("pricingSection.additionalInfo.compareText")}
                   <svg
@@ -315,7 +321,7 @@ export default function PricingSection() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
           </div>

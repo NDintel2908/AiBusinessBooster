@@ -63,8 +63,11 @@ const businessData = [
 ];
 
 export default function BusinessSectorsSection() {
-  const { t } = useTranslation("businessSectors");
+  const { t, i18n } = useTranslation("businessSectors");
   const [hoveredSector, setHoveredSector] = useState<string | null>(null);
+
+  // Extract language from i18n
+  const lang = i18n.language || "en";
 
   // Flatten all sectors for icon grid
   const allSectors = businessData.flatMap((group) =>
@@ -202,10 +205,17 @@ export default function BusinessSectorsSection() {
           <button
             className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
             onClick={() => {
-              document.getElementById("contact")?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
+              // Sử dụng cùng logic như các component khác
+              if (window.location.pathname !== `/${lang}`) {
+                sessionStorage.setItem("scrollToSection", "contact");
+                window.location.href = `/${lang}`;
+              } else {
+                const section = document.getElementById("contact");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", `/${lang}`);
+                }
+              }
             }}
           >
             {t("businessSectors.callToAction.button")}
