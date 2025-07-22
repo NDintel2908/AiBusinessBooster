@@ -88,7 +88,6 @@ function LanguageSync() {
 
     // Force language change if different
     if (i18n.language !== urlLang && !isChangingLanguage) {
-      console.log(`Changing language from ${i18n.language} to ${urlLang}`); // Debug log
       setIsChangingLanguage(true);
 
       i18n
@@ -147,16 +146,15 @@ function Router() {
   );
 }
 
-// uncomment this for glitch effect
 function App() {
   const [showGlitch, setShowGlitch] = React.useState(() => {
-    // Check if user has visited before
-    return !localStorage.getItem("bcp-visited");
+    // Check if user has seen glitch in this session
+    return !sessionStorage.getItem("bcp-glitch-shown");
   });
 
   const handleGlitchComplete = () => {
-    // Mark as visited
-    localStorage.setItem("bcp-visited", "true");
+    // Mark as shown in this session
+    sessionStorage.setItem("bcp-glitch-shown", "true");
     setShowGlitch(false);
   };
 
@@ -172,7 +170,6 @@ function App() {
   );
 }
 
-// uncomment this for normal effect
 // function App() {
 //   return (
 //     <QueryClientProvider client={queryClient}>
