@@ -173,7 +173,7 @@ export function HelpButton() {
     },
     {
       name: t("helpButton.options.whatsapp"),
-      url: "https://google.com",
+      url: "https://wa.me/84963254259",
       icon: "/images/whatsapp.png",
       color: "#25d366",
     },
