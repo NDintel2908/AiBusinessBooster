@@ -14,13 +14,14 @@
       "termsOfService": "Terms of Service"
     },
     "paymentPartners": {
-      "title": "Payment partners"
+      "title": "Payment providers"
     },
     "companyInfo": {
       "title": "Company information",
       "taxCode": "Tax code: 0317026053",
       "address": "Address: 224A Dien Bien Phu, Xuan Hoa Ward, HCMC",
-      "phone": "Phone: 0963254259"
+      "phone": "Hotline: 0963254259",
+      "mail": "connect@bcp.global"
     },
     "copyright": "© {{year}} Business Connecting Platform (BCP). All rights reserved."
   }
