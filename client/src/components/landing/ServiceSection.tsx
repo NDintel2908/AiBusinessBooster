@@ -13,9 +13,10 @@ export default function ServiceSection() {
     >
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-[2.5rem] font-bold text-white mb-4 font-heading">
-            {t("serviceSection.title")}
-          </h2>
+          <h2
+            className="text-3xl md:text-4xl font-bold text-white mb-4"
+            dangerouslySetInnerHTML={{ __html: t("serviceSection.title") }}
+          />
           <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto font-primary">
             {t("serviceSection.description")}
           </p>
