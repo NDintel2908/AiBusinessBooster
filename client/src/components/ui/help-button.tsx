@@ -167,7 +167,7 @@ export function HelpButton() {
     },
     {
       name: t("helpButton.options.messenger"),
-      url: "https://google.com",
+      url: "https://m.me/business.connect.platform",
       icon: "/images/messenger.png",
       color: "#0084ff",
     },
