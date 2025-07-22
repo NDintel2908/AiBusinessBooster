@@ -1,6 +1,4 @@
-import { useRef, useEffect, useState, useMemo } from "react";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { GlassCard } from "@/components/ui/glass-card";
 
@@ -13,31 +11,22 @@ const lazyLoadImage = (src: string) => {
   });
 };
 
-// Memoized variants
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-};
-
-const slideInLeft = {
-  hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0 },
-};
+// Memoized variants - REMOVED (không cần animation)
 
 // Partner data
 const PARTNERS = [
-  { key: "tech", image: () => import("./partner/TechPartner.webp") },
-  { key: "business", image: () => import("./partner/BusinessPartner.webp") },
-  { key: "development", image: () => import("./partner/DevPartner.webp") },
+  { key: 'tech', image: () => import('./partner/TechPartner.webp') },
+  { key: 'business', image: () => import('./partner/BusinessPartner.webp') },
+  { key: 'development', image: () => import('./partner/DevPartner.webp') }
 ];
 
 // Memoized Partner Component
-const PartnerCard = ({ partner, t }) => {
+const PartnerCard = ({ partner, t }: { partner: any, t: any }) => {
   const [imageSrc, setImageSrc] = useState(null);
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    partner.image().then((module) => {
+    partner.image().then((module: any) => {
       setImageSrc(module.default);
     });
   }, [partner]);
@@ -46,11 +35,11 @@ const PartnerCard = ({ partner, t }) => {
     <div className="flex flex-col items-center">
       <div className="h-[90px] w-[120px] flex items-center justify-center">
         {imageSrc ? (
-          <img
+          <img 
             src={imageSrc}
             alt={t(`imageAlt.${partner.key}Partner`)}
             className={`h-[90px] object-contain filter brightness-100 transition-opacity duration-300 ${
-              imageLoaded ? "opacity-100" : "opacity-0"
+              imageLoaded ? 'opacity-100' : 'opacity-0'
             }`}
             onLoad={() => setImageLoaded(true)}
             loading="lazy"
@@ -70,19 +59,7 @@ const PartnerCard = ({ partner, t }) => {
 export default function AboutSection() {
   const { t } = useTranslation("about");
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
   const [mainImageLoaded, setMainImageLoaded] = useState(false);
-
-  // Memoize animation props
-  const animationProps = useMemo(
-    () => ({
-      initial: "hidden",
-      animate: isInView ? "visible" : "hidden",
-      variants: fadeInUp,
-      transition: { duration: 0.6 },
-    }),
-    [isInView],
-  );
 
   // Preload main image
   useEffect(() => {
@@ -98,13 +75,9 @@ export default function AboutSection() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
             {/* Optimized Company Image */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              variants={slideInLeft}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+            <div 
               className="relative"
             >
               <GlassCard className="rounded-2xl p-3 relative overflow-hidden">
@@ -112,11 +85,11 @@ export default function AboutSection() {
                   {!mainImageLoaded && (
                     <div className="w-full h-64 bg-gray-800/50 animate-pulse rounded-xl"></div>
                   )}
-                  <img
-                    src="/images/startupVoetNhat.webp"
+                  <img 
+                    src="/images/startupVoetNhat.webp" 
                     alt={t("imageAlt.ourTeam")}
                     className={`w-full h-auto rounded-xl transition-opacity duration-500 ${
-                      mainImageLoaded ? "opacity-100" : "opacity-0"
+                      mainImageLoaded ? 'opacity-100' : 'opacity-0'
                     }`}
                     onLoad={() => setMainImageLoaded(true)}
                     loading="lazy"
@@ -125,10 +98,11 @@ export default function AboutSection() {
                   />
                 </div>
               </GlassCard>
-            </motion.div>
+            </div>
 
             {/* Optimized Content */}
             <div ref={ref} className="lg:mt-0">
+
               {/* Badge */}
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-2">
                 <span className="text-base font-medium text-neon-blue font-primary">
@@ -137,19 +111,16 @@ export default function AboutSection() {
               </div>
 
               {/* Title */}
-              <motion.h2
-                {...animationProps}
+              <h2 
                 className="text-2xl md:text-3xl font-heading font-bold mb-2 text-white"
               >
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">
                   {t("title")}
                 </span>
-              </motion.h2>
+              </h2>
 
               {/* Descriptions */}
-              <motion.div
-                {...animationProps}
-                transition={{ duration: 0.6, delay: 0.1 }}
+              <div
               >
                 <p className="text-gray-300 mb-2 font-primary text-base leading-relaxed">
                   {t("description1")}
@@ -179,7 +150,7 @@ export default function AboutSection() {
                     {t("missionDescription")}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -188,12 +159,7 @@ export default function AboutSection() {
       {/* Optimized Partners Section */}
       <section className="py-12 relative">
         <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeInUp}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          <div
             className="text-center"
           >
             {/* Partners Title */}
@@ -208,10 +174,14 @@ export default function AboutSection() {
             {/* Partners Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-items-center mt-6 max-w-4xl mx-auto">
               {PARTNERS.map((partner) => (
-                <PartnerCard key={partner.key} partner={partner} t={t} />
+                <PartnerCard 
+                  key={partner.key}
+                  partner={partner}
+                  t={t}
+                />
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

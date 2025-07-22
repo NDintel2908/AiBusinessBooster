@@ -270,11 +270,11 @@ export default function FeedbackSection() {
                     e.stopPropagation();
                     goToSlide(index);
                   }}
-                  className={`w-4 h-4 rounded-full transition-all duration-300 cursor-pointer ${
-                    index === currentIndex
-                      ? "bg-electric-purple shadow-xl shadow-electric-purple/50 scale-125"
-                      : "bg-gray-400 hover:bg-gray-300 hover:scale-110"
-                  }`}
+                  // className={`w-4 h-4 rounded-full transition-all duration-300 cursor-pointer ${
+                  //   index === currentIndex
+                  //     ? "bg-electric-purple shadow-xl shadow-electric-purple/50 scale-125"
+                  //     : "bg-gray-400 hover:bg-gray-300 hover:scale-110"
+                  // }`}
                   type="button"
                   aria-label={`Go to testimonial ${index + 1}`}
                 />

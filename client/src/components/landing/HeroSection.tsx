@@ -92,7 +92,7 @@ export default function HeroSection() {
         >
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center px-4 py-2 rounded-full bg-electric-purple/20 border border-electric-purple/40 mb-6 mx-auto"
+            className="inline-flex items-center px-4 py-2 rounded-full bg-transparent border-transparent mb-6 mx-auto opacity-0"
           >
             <span className="w-2 h-2 rounded-full bg-bright-teal animate-pulse mr-2"></span>
             <span className="text-base md:text-lg font-medium text-bright-teal font-primary">
