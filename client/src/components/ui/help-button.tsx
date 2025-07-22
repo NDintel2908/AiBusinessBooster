@@ -1,11 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export function HelpButton() {
+  const { t } = useTranslation("app");
   const [isHovered, setIsHovered] = React.useState(false);
   const [showTooltip, setShowTooltip] = React.useState(false);
+  const [showMenu, setShowMenu] = React.useState(false);
 
   const handleClick = () => {
-    window.open("https://zalo.me/3297451762229454190", "_blank");
+    setShowMenu(!showMenu);
+  };
+
+  const handleOptionClick = (url: string) => {
+    window.open(url, "_blank");
+    setShowMenu(false);
   };
 
   // Hiển thị tooltip sau một khoảng thời gian
@@ -23,6 +31,24 @@ export function HelpButton() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  // Click outside to close menu
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (!target.closest(".help-button-container")) {
+        setShowMenu(false);
+      }
+    };
+
+    if (showMenu) {
+      document.addEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [showMenu]);
 
   const buttonStyle: React.CSSProperties = {
     position: "fixed",
@@ -63,22 +89,100 @@ export function HelpButton() {
     fontSize: "14px",
     maxWidth: "200px",
     zIndex: 1001,
-    visibility: showTooltip ? "visible" : "hidden",
-    opacity: showTooltip ? 1 : 0,
+    visibility: showTooltip && !showMenu ? "visible" : "hidden",
+    opacity: showTooltip && !showMenu ? 1 : 0,
     transition: "opacity 0.3s ease, visibility 0.3s ease",
   };
 
+  const menuStyle: React.CSSProperties = {
+    position: "fixed",
+    bottom: "90px",
+    right: "20px",
+    backgroundColor: "white",
+    borderRadius: "12px",
+    boxShadow: "0px 8px 25px rgba(0, 0, 0, 0.15)",
+    zIndex: 1002,
+    overflow: "hidden",
+    visibility: showMenu ? "visible" : "hidden",
+    opacity: showMenu ? 1 : 0,
+    transform: showMenu ? "translateY(0)" : "translateY(10px)",
+    transition: "all 0.3s ease",
+    minWidth: "180px",
+  };
+
+  const menuOptions = [
+    {
+      name: t("helpButton.options.zalo"),
+      url: "https://zalo.me/3297451762229454190",
+      icon: "/images/zalo.webp",
+      color: "#0084ff",
+    },
+    {
+      name: t("helpButton.options.messenger"),
+      url: "https://google.com",
+      icon: "/images/messenger.png",
+      color: "#0084ff",
+    },
+    {
+      name: t("helpButton.options.whatsapp"),
+      url: "https://google.com",
+      icon: "/images/whatsapp.png",
+      color: "#25d366",
+    },
+  ];
+
   return (
-    <>
-      <div style={tooltipStyle}>
-        Cần hỗ trợ? Nhấn vào đây để liên hệ với chúng tôi qua Zalo
+    <div className="help-button-container">
+      <div style={tooltipStyle}>{t("helpButton.tooltip")}</div>
+
+      <div style={menuStyle}>
+        {menuOptions.map((option, index) => (
+          <button
+            key={option.name}
+            onClick={() => handleOptionClick(option.url)}
+            style={{
+              width: "100%",
+              padding: "12px 16px",
+              border: "none",
+              backgroundColor: "transparent",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+              fontSize: "14px",
+              color: "#333",
+              transition: "background-color 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = "#f5f5f5";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = "transparent";
+            }}
+          >
+            <img
+              src={option.icon}
+              alt={option.name}
+              style={{
+                width: "20px",
+                height: "20px",
+                objectFit: "contain",
+              }}
+            />
+            <span style={{ fontWeight: "500" }}>{option.name}</span>
+          </button>
+        ))}
       </div>
+
       <button
-        style={{ ...buttonStyle, ...(showTooltip && pulseAnimation) }}
+        style={{
+          ...buttonStyle,
+          ...(showTooltip && !showMenu && pulseAnimation),
+        }}
         onClick={handleClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        aria-label="Hỗ trợ khách hàng"
+        aria-label={t("helpButton.ariaLabel")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -90,10 +194,15 @@ export function HelpButton() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          style={{
+            transform: showMenu ? "rotate(45deg)" : "rotate(0deg)",
+            transition: "transform 0.3s ease",
+          }}
         >
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
         </svg>
       </button>
+
       <style>
         {`
           @keyframes pulse {
@@ -109,6 +218,6 @@ export function HelpButton() {
           }
         `}
       </style>
-    </>
+    </div>
   );
 }

@@ -1,7 +1,12 @@
 {
   "helpButton": {
-    "tooltip": "Cần hỗ trợ? Nhấn vào đây để liên hệ với chúng tôi qua Zalo",
-    "ariaLabel": "Hỗ trợ khách hàng"
+    "tooltip": "Cần hỗ trợ? Chọn phương thức liên hệ",
+    "ariaLabel": "Hỗ trợ khách hàng",
+    "options": {
+      "zalo": "Zalo",
+      "messenger": "Messenger",
+      "whatsapp": "WhatsApp"
+    }
   },
   "loading": "Đang tải..."
 }
