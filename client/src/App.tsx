@@ -147,33 +147,22 @@ function Router() {
   );
 }
 
-// function App() {
-//   const [showGlitch, setShowGlitch] = React.useState(() => {
-//     // Check if user has visited before
-//     return !localStorage.getItem("bcp-visited");
-//   });
-
-//   const handleGlitchComplete = () => {
-//     // Mark as visited
-//     localStorage.setItem("bcp-visited", "true");
-//     setShowGlitch(false);
-//   };
-
-//   return (
-//     <QueryClientProvider client={queryClient}>
-//       {showGlitch && <GlitchWelcome onComplete={handleGlitchComplete} />}
-//       <LanguageProvider>
-//         <Router />
-//         <HelpButton /> {/* Add HelpButton here */}
-//         <Toaster />
-//       </LanguageProvider>
-//     </QueryClientProvider>
-//   );
-// }
-
+// uncomment this for glitch effect
 function App() {
+  const [showGlitch, setShowGlitch] = React.useState(() => {
+    // Check if user has visited before
+    return !localStorage.getItem("bcp-visited");
+  });
+
+  const handleGlitchComplete = () => {
+    // Mark as visited
+    localStorage.setItem("bcp-visited", "true");
+    setShowGlitch(false);
+  };
+
   return (
     <QueryClientProvider client={queryClient}>
+      {showGlitch && <GlitchWelcome onComplete={handleGlitchComplete} />}
       <LanguageProvider>
         <Router />
         <HelpButton /> {/* Add HelpButton here */}
@@ -182,5 +171,18 @@ function App() {
     </QueryClientProvider>
   );
 }
+
+// uncomment this for normal effect
+// function App() {
+//   return (
+//     <QueryClientProvider client={queryClient}>
+//       <LanguageProvider>
+//         <Router />
+//         <HelpButton /> {/* Add HelpButton here */}
+//         <Toaster />
+//       </LanguageProvider>
+//     </QueryClientProvider>
+//   );
+// }
 
 export default App;
