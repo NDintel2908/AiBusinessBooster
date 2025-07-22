@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "wouter";
 import { useTranslation } from "react-i18next";
-import BCPAILogo from "./BCPAI.png";
-import vnpay from "./partner/vnpay.png";
-import paypal from "./partner/paypal.png";
+import BCPAILogo from "./BCPAI.webp";
+import vnpay from "./partner/vnpay.webp";
+import paypal from "./partner/paypal.webp";
 import "../../lib/i18n";
 
 export default function Footer() {

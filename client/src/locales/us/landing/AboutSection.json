@@ -1,0 +1,22 @@
+{
+  "storyBadge": "Our Story",
+  "title": "Business Story",
+  "description1": "BCP was born from a simple discovery: Despite the remarkable advancement of digital technology, finding business partners still relies on chance rather than data.",
+  "description2": "With a multinational team of AI experts and business analysts, we build an intelligent B2B BUY - SELL - COOPERATE connection platform, turning artificial intelligence into the game-changing key.",
+  "visionTitle": "Vision",
+  "visionDescription": "We believe in a world where every business finds their ideal partner.",
+  "missionTitle": "Mission",
+  "missionDescription": "Through advanced AI technology, BCP breaks down all barriers, opening up effective collaboration opportunities for all organizations, large and small.",
+  "partnersTitle": "Strategic Partners",
+  "partners": {
+    "tech": "Technology Partner",
+    "business": "Market Partner",
+    "development": "Development Partner"
+  },
+  "imageAlt": {
+    "ourTeam": "Our Team",
+    "techPartner": "Tech Partner",
+    "businessPartner": "Business Partner",
+    "developmentPartner": "Development Partner"
+  }
+}

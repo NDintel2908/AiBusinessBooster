@@ -1,0 +1,22 @@
+{
+  "storyBadge": "Câu chuyện của chúng tôi",
+  "title": "Câu chuyện doanh nghiệp",
+  "description1": "BCP ra đời từ một phát hiện đơn giản: Dù công nghệ số đã phát triển vượt bậc, việc tìm kiếm đối tác kinh doanh vẫn còn phụ thuộc vào may rủi thay vì dữ liệu.",
+  "description2": "Với đội ngũ chuyên gia AI và phân tích kinh doanh đa quốc gia, chúng tôi xây dựng nền tảng kết nối MUA - BÁN - HỢP TÁC B2B thông minh, biến trí tuệ nhân tạo thành chìa khóa thay đổi cuộc chơi.",
+  "visionTitle": "Tầm Nhìn",
+  "visionDescription": "Chúng tôi tin vào một thế giới nơi mọi doanh nghiệp đều tìm được đối tác lý tưởng.",
+  "missionTitle": "Sứ Mệnh",
+  "missionDescription": "Bằng công nghệ AI tiên tiến, BCP phá bỏ mọi rào cản, mở ra cơ hội hợp tác hiệu quả cho mọi tổ chức, dù lớn hay nhỏ.",
+  "partnersTitle": "Đối tác chiến lược",
+  "partners": {
+    "tech": "Đối tác công nghệ",
+    "business": "Đối tác thị trường",
+    "development": "Đối tác phát triển"
+  },
+  "imageAlt": {
+    "ourTeam": "Our Team",
+    "techPartner": "Tech Partner",
+    "businessPartner": "Business Partner",
+    "developmentPartner": "Development Partner"
+  }
+}

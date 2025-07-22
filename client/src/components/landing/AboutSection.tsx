@@ -1,147 +1,215 @@
-import { useRef, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { useRef, useEffect, useState, useMemo } from "react";
+import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { GlassCard } from "@/components/ui/glass-card";
-import BP from './partner/BusinessPartner.png';
-import TP from './partner/TechPartner.png';
-import DP from './partner/DevPartner.png';
 
+// Lazy load images
+const lazyLoadImage = (src: string) => {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(src);
+    img.src = src;
+  });
+};
 
-export default function AboutSection() {
-  const controls = useAnimation();
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
+// Memoized variants
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const slideInLeft = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0 },
+};
+
+// Partner data
+const PARTNERS = [
+  { key: "tech", image: () => import("./partner/TechPartner.webp") },
+  { key: "business", image: () => import("./partner/BusinessPartner.webp") },
+  { key: "development", image: () => import("./partner/DevPartner.webp") },
+];
+
+// Memoized Partner Component
+const PartnerCard = ({ partner, t }) => {
+  const [imageSrc, setImageSrc] = useState(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    }
-  }, [controls, isInView]);
+    partner.image().then((module) => {
+      setImageSrc(module.default);
+    });
+  }, [partner]);
+
+  return (
+    <div className="flex flex-col items-center">
+      <div className="h-[90px] w-[120px] flex items-center justify-center">
+        {imageSrc ? (
+          <img
+            src={imageSrc}
+            alt={t(`imageAlt.${partner.key}Partner`)}
+            className={`h-[90px] object-contain filter brightness-100 transition-opacity duration-300 ${
+              imageLoaded ? "opacity-100" : "opacity-0"
+            }`}
+            onLoad={() => setImageLoaded(true)}
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <div className="h-[90px] w-[90px] bg-gray-800/50 animate-pulse rounded"></div>
+        )}
+      </div>
+      <p className="mt-3 text-gray-400 text-center font-primary text-base">
+        {t(`partners.${partner.key}`)}
+      </p>
+    </div>
+  );
+};
+
+export default function AboutSection() {
+  const { t } = useTranslation("about");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const [mainImageLoaded, setMainImageLoaded] = useState(false);
+
+  // Memoize animation props
+  const animationProps = useMemo(
+    () => ({
+      initial: "hidden",
+      animate: isInView ? "visible" : "hidden",
+      variants: fadeInUp,
+      transition: { duration: 0.6 },
+    }),
+    [isInView],
+  );
+
+  // Preload main image
+  useEffect(() => {
+    const imageUrl = "/images/startupVoetNhat.webp";
+    lazyLoadImage(imageUrl).then(() => setMainImageLoaded(true));
+  }, []);
 
   return (
     <>
       <section id="about" className="py-16 relative">
-        <div className="absolute inset-0 z-0 opacity-30">
-          <div className="absolute bottom-1/4 left-1/4 w-1/3 h-1/3 bg-electric-purple opacity-10 blur-[120px] rounded-full"></div>
-        </div>
+        {/* Simplified background */}
+        <div className="absolute bottom-1/4 left-1/4 w-1/3 h-1/3 bg-electric-purple/10 blur-[120px] rounded-full opacity-30"></div>
 
-        <div className="container mx-auto px-4 z-10">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            {/* Hình ảnh công ty */}
-            <motion.div 
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+            {/* Optimized Company Image */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={slideInLeft}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
               className="relative"
             >
-              <GlassCard className="rounded-2xl p-3 relative">
-                <img 
-                  src="https://cdnmedia.baotintuc.vn/Upload/r2ZmuVn2vsFEWUzMUAXAg/files/2024/12/startupVoetNhat.jpg" 
-                  alt="Our Team" 
-                  className="w-full h-auto rounded-xl"
-                />
+              <GlassCard className="rounded-2xl p-3 relative overflow-hidden">
+                <div className="relative">
+                  {!mainImageLoaded && (
+                    <div className="w-full h-64 bg-gray-800/50 animate-pulse rounded-xl"></div>
+                  )}
+                  <img
+                    src="/images/startupVoetNhat.webp"
+                    alt={t("imageAlt.ourTeam")}
+                    className={`w-full h-auto rounded-xl transition-opacity duration-500 ${
+                      mainImageLoaded ? "opacity-100" : "opacity-0"
+                    }`}
+                    onLoad={() => setMainImageLoaded(true)}
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
               </GlassCard>
             </motion.div>
 
-            {/* Nội dung về công ty */}
-            <motion.div
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-              }}
-              className="lg:mt-0"
-            >
+            {/* Optimized Content */}
+            <div ref={ref} className="lg:mt-0">
+              {/* Badge */}
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-2">
-                <span className="text-base font-medium text-neon-blue font-primary">Câu chuyện của chúng tôi</span>
+                <span className="text-base font-medium text-neon-blue font-primary">
+                  {t("storyBadge")}
+                </span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-2 text-white">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">Câu chuyện doanh nghiệp</span>
-              </h2>
-              <p className="text-gray-300 mb-2 font-primary text-base leading-relaxed">
-                BCP ra đời từ một phát hiện đơn giản: Dù công nghệ số đã phát triển vượt bậc, việc tìm kiếm đối tác kinh doanh vẫn còn phụ thuộc vào may rủi thay vì dữ liệu.
-              </p>
-              <p className="text-gray-300 mb-3 font-primary text-base leading-relaxed">
-                Với đội ngũ chuyên gia AI và phân tích kinh doanh đa quốc gia, chúng tôi xây dựng nền tảng kết nối MUA - BÁN - HỢP TÁC B2B thông minh, biến trí tuệ nhân tạo thành chìa khóa thay đổi cuộc chơi.
-              </p>
 
-              <div className="my-4 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
-
-              <motion.div 
-                className="mb-4"
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2 } }
-                }}
+              {/* Title */}
+              <motion.h2
+                {...animationProps}
+                className="text-2xl md:text-3xl font-heading font-bold mb-2 text-white"
               >
-                <h3 className="text-lg font-heading font-semibold mb-2 text-white">Tầm Nhìn</h3>
-                <p className="text-gray-300 font-primary text-base leading-relaxed">
-                  Chúng tôi tin vào một thế giới nơi mọi doanh nghiệp đều tìm được đối tác lý tưởng.
-                </p>
-              </motion.div>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">
+                  {t("title")}
+                </span>
+              </motion.h2>
 
+              {/* Descriptions */}
               <motion.div
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.4 } }
-                }}
+                {...animationProps}
+                transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <h3 className="text-lg font-heading font-semibold mb-2 text-white">Sứ Mệnh</h3>
-                <p className="text-gray-300 font-primary text-base leading-relaxed">
-                  Bằng công nghệ AI tiên tiến, BCP phá bỏ mọi rào cản, mở ra cơ hội hợp tác hiệu quả cho mọi tổ chức, dù lớn hay nhỏ.
+                <p className="text-gray-300 mb-2 font-primary text-base leading-relaxed">
+                  {t("description1")}
                 </p>
+                <p className="text-gray-300 mb-3 font-primary text-base leading-relaxed">
+                  {t("description2")}
+                </p>
+
+                <div className="my-4 h-[2px] bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
+
+                {/* Vision */}
+                <div className="mb-4">
+                  <h3 className="text-lg font-heading font-semibold mb-2 text-white">
+                    {t("visionTitle")}
+                  </h3>
+                  <p className="text-gray-300 font-primary text-base leading-relaxed">
+                    {t("visionDescription")}
+                  </p>
+                </div>
+
+                {/* Mission */}
+                <div>
+                  <h3 className="text-lg font-heading font-semibold mb-2 text-white">
+                    {t("missionTitle")}
+                  </h3>
+                  <p className="text-gray-300 font-primary text-base leading-relaxed">
+                    {t("missionDescription")}
+                  </p>
+                </div>
               </motion.div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Tách phần đối tác chiến lược thành section riêng */}
+      {/* Optimized Partners Section */}
       <section className="py-12 relative">
-        <div className="container mx-auto px-4 z-10">
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeInUp}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
             className="text-center"
           >
+            {/* Partners Title */}
             <div className="flex justify-center mb-5">
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40">
-                <span className="text-base md:text-lg font-medium text-neon-blue font-primary">Đối tác chiến lược</span>
+                <span className="text-base md:text-lg font-medium text-neon-blue font-primary">
+                  {t("partnersTitle")}
+                </span>
               </div>
             </div>
 
+            {/* Partners Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-items-center mt-6 max-w-4xl mx-auto">
-              <div className="flex flex-col items-center">
-                <img 
-                  src={TP}
-                  alt="Tech Partner"
-                  className="h-[90px] object-contain filter brightness-100"
-                />
-                <p className="mt-3 text-gray-400 text-center font-primary text-base">Đối tác công nghệ</p>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <img 
-                  src={BP}
-                  alt="Business Partner"
-                  className="h-[90px] object-contain filter brightness-100"
-                />
-                <p className="mt-3 text-gray-400 text-center font-primary text-base">Đối tác thị trường</p>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <img 
-                  src={DP}
-                  alt="Development Partner"
-                  className="h-[90px] object-contain filter brightness-100"
-                />
-                <p className="mt-3 text-gray-400 text-center font-primary text-base">Đối tác phát triển</p>
-              </div>
+              {PARTNERS.map((partner) => (
+                <PartnerCard key={partner.key} partner={partner} t={t} />
+              ))}
             </div>
           </motion.div>
         </div>

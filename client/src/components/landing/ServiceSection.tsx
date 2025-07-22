@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import BCPAILogo from "./BCPAI.png";
+import BCPAILogo from "./BCPAI.webp";
 import "../../lib/i18n";
 
 export default function ServiceSection() {

@@ -10,7 +10,7 @@
         "author": "Trinh Hong Khanh",
         "position": "CEO",
         "company": "Ba Mien Accounting",
-        "avatar": "https://webketoan.com.vn/storage/a-khanh-1.png"
+        "avatar": "/images/TrinhHongKhanh.webp"
       },
       {
         "id": 2,
@@ -18,7 +18,7 @@
         "author": "Nguyen Hai Tam",
         "position": "Business Director",
         "company": "Webketoan",
-        "avatar": "https://th.bing.com/th/id/OIP.7gD_w3iBZiq4dFm7oermRwHaHa?rs=1&pid=ImgDetMain"
+        "avatar": "/images/NguyenHaiTam.webp"
       },
       {
         "id": 3,
@@ -26,7 +26,7 @@
         "author": "Wichak Chongudomlert",
         "position": "Founder",
         "company": "Signify",
-        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQFk-068nzT0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686639741459?e=1753920000&v=beta&t=NsmWWxJQnvYXi5XDjAAwmm__Cu53pzsEtNaOV2bNYAU"
+        "avatar": "/images/Wichark.webp"
       }
     ]
   }
