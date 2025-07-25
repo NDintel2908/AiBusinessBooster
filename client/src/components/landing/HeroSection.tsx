@@ -117,17 +117,18 @@ export default function HeroSection() {
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row justify-center gap-6 pt-4"
+            className="flex flex-row justify-center gap-3 md:gap-6 pt-2 md:pt-4 px-4"
           >
             <a
               href="https://bcp.global/sign-up"
               target="_blank"
               rel="noopener noreferrer"
+              className="flex-1 max-w-[160px] md:max-w-none md:flex-none"
             >
               <GradientButton
                 size="lg"
                 animate
-                className="w-full sm:w-auto font-semibold"
+                className="w-full font-semibold text-sm md:text-base"
               >
                 {t("heroSection.cta.primary")}
               </GradientButton>
@@ -135,7 +136,7 @@ export default function HeroSection() {
             <GradientButton
               size="lg"
               variant="outline"
-              className="w-full sm:w-auto font-semibold"
+              className="flex-1 max-w-[160px] md:max-w-none md:flex-none font-semibold text-sm md:text-base"
               onClick={() => {
                 document.getElementById("contact")?.scrollIntoView({
                   behavior: "smooth",
@@ -146,7 +147,7 @@ export default function HeroSection() {
               <span className="flex items-center justify-center">
                 <span>{t("heroSection.cta.secondary")}</span>
                 <svg
-                  className="w-5 h-5 ml-2"
+                  className="w-4 h-4 md:w-5 md:h-5 ml-1 md:ml-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
