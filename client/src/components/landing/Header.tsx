@@ -254,7 +254,7 @@ export default function Header() {
             className="block"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
             <GradientButton className="w-full font-semibold">
               {t("header.cta.getStarted")}
             </GradientButton>
