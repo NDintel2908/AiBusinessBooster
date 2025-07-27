@@ -44,7 +44,6 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const [hasError, setHasError] = useState(false);
 
   // When video is ready to be implemented, uncomment this section:
-  /*
   if (src) {
     return (
       <video
@@ -57,12 +56,11 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         onError={() => setHasError(true)}
       >
         <source src={src} type="video/mp4" />
-        <source src={src.replace('.mp4', '.webm')} type="video/webm" />
+        <source src={src.replace(".mp4", ".webm")} type="video/webm" />
         Your browser does not support the video tag.
       </video>
     );
   }
-  */
 
   // Placeholder while no video is set
   return (
@@ -88,7 +86,7 @@ export default function FeaturesSection() {
 
   // Video configuration - Easy to update later
   const videoConfig = {
-    src: undefined, // Add video path here later: "/videos/demo.mp4"
+    src: "/MVP.mp4", // Video is located in public/MVP.mp4
     poster: undefined, // Add poster image here later: "/images/video-poster.jpg"
     title: "BCP.Global Demo",
   };
@@ -168,11 +166,9 @@ export default function FeaturesSection() {
           </h2>
         </motion.div>
 
-        {/* 
-        === VIDEO VERSION (Uncomment when video is ready) ===
-
+        {/* VIDEO VERSION (Now Active) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-
+          {/* Video Player Section */}
           <motion.div
             className="flex justify-center items-center"
             initial={{ opacity: 0, x: -30 }}
@@ -180,7 +176,7 @@ export default function FeaturesSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-full">
               <div className="relative bg-gray-800 rounded-t-lg p-3 shadow-xl">
                 <div className="bg-black rounded-md p-3 relative overflow-hidden">
                   <div className="aspect-video bg-gray-900 rounded-sm flex items-center justify-center relative group">
@@ -199,6 +195,7 @@ export default function FeaturesSection() {
             </div>
           </motion.div>
 
+          {/* Features Grid Section */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -216,50 +213,50 @@ export default function FeaturesSection() {
                   onMouseEnter={() => setHoveredFeature(index)}
                   onMouseLeave={() => setHoveredFeature(null)}
                 >
-                  <GlassCard 
+                  <GlassCard
                     className={`p-4 h-full transition-all duration-500 group ${
-                      hoveredFeature === index 
-                        ? `${feature.hoverBorder} bg-gradient-to-br ${feature.hoverBg} shadow-lg shadow-current/20` 
-                        : 'hover:border-brand-accent/40'
+                      hoveredFeature === index
+                        ? `${feature.hoverBorder} bg-gradient-to-br ${feature.hoverBg} shadow-lg shadow-current/20`
+                        : "hover:border-brand-accent/40"
                     }`}
                   >
-                   <div className="text-center space-y-3">
-                     <div
-                       className={`w-10 h-10 mx-auto rounded-full bg-gradient-to-r ${feature.gradient} flex items-center justify-center text-lg shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                     >
-                       {feature.icon}
-                     </div>
+                    <div className="text-center space-y-3">
+                      <div
+                        className={`w-10 h-10 mx-auto rounded-full bg-gradient-to-r ${feature.gradient} flex items-center justify-center text-lg shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                      >
+                        {feature.icon}
+                      </div>
 
-                     <h4 className={`text-base font-heading font-semibold transition-colors duration-300 ${
-                       hoveredFeature === index 
-                         ? getHoverTextColor(index)
-                         : 'text-white group-hover:text-brand-accent'
-                     }`}>
-                       {feature.title}
-                     </h4>
+                      <h4
+                        className={`text-base font-heading font-semibold transition-colors duration-300 ${
+                          hoveredFeature === index
+                            ? getHoverTextColor(index)
+                            : "text-white group-hover:text-brand-accent"
+                        }`}
+                      >
+                        {feature.title}
+                      </h4>
 
-                    <p className="text-gray-300 font-primary text-xs leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
-                </GlassCard>
+                      <p className="text-gray-300 font-primary text-xs leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </GlassCard>
                 </motion.div>
               ))}
             </div>
           </motion.div>
         </div>
 
-        === END VIDEO VERSION ===
-        */}
+        {/* 
+        === HORIZONTAL FEATURES VERSION (Commented Out) ===
 
-        {/* HORIZONTAL FEATURES VERSION (Current Active) */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          {/* Features displayed in horizontal row */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <motion.div
@@ -271,42 +268,40 @@ export default function FeaturesSection() {
                 onMouseEnter={() => setHoveredFeature(index)}
                 onMouseLeave={() => setHoveredFeature(null)}
               >
-                <GlassCard
+                <GlassCard 
                   className={`p-6 h-full transition-all duration-500 group hover:scale-105 ${
-                    hoveredFeature === index
-                      ? `${feature.hoverBorder} bg-gradient-to-br ${feature.hoverBg} shadow-lg shadow-current/20 transform scale-105`
-                      : "hover:border-brand-accent/40"
+                    hoveredFeature === index 
+                      ? `${feature.hoverBorder} bg-gradient-to-br ${feature.hoverBg} shadow-lg shadow-current/20 transform scale-105` 
+                      : 'hover:border-brand-accent/40'
                   }`}
                 >
                   <div className="text-center space-y-4">
-                    {/* Icon with gradient background */}
                     <div
                       className={`w-12 h-12 mx-auto rounded-full bg-gradient-to-r ${feature.gradient} flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}
                     >
                       {feature.icon}
                     </div>
 
-                    {/* Title */}
-                    <h4
-                      className={`text-lg font-heading font-semibold transition-colors duration-300 ${
-                        hoveredFeature === index
-                          ? getHoverTextColor(index)
-                          : "text-white group-hover:text-brand-accent"
-                      }`}
-                    >
+                    <h4 className={`text-lg font-heading font-semibold transition-colors duration-300 ${
+                      hoveredFeature === index 
+                        ? getHoverTextColor(index)
+                        : 'text-white group-hover:text-brand-accent'
+                    }`}>
                       {feature.title}
                     </h4>
 
-                    {/* Description */}
-                    <p className="text-gray-300 font-primary text-sm leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
-                </GlassCard>
+                   <p className="text-gray-300 font-primary text-sm leading-relaxed">
+                     {feature.description}
+                   </p>
+                 </div>
+               </GlassCard>
               </motion.div>
             ))}
           </div>
         </motion.div>
+
+        === END HORIZONTAL FEATURES VERSION ===
+        */}
       </div>
     </section>
   );
