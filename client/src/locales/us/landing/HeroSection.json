@@ -1,28 +1,45 @@
 {
   "heroSection": {
-    "badge": "AI Matching Agents: B2B Lead Generation with AI",
-    "title": "EXPAND YOUR GLOBAL B2B CONNECTIONS",
-    "description": "BCP - Business Connecting Platform is a global B2B platform for BUYING — SELLING — COOPERATION, powered by AI technology. The platform helps businesses SHARE DEMANDS — CONNECT — DEAL in real time through smart connection recommendations.",
+    "badge": "",
+    "title": "EXPAND YOUR LOCAL B2B CONNECTIONS",
+    "subtitle": "BUYING - SELLING - COOPERATION",
+    "description": "BCP enables businesses to efficiently SHARE DEMANDS - CONNECT - DEAL<br/>Real smart connection recommendations in real time. Powered by AI Technology.",
     "cta": {
-      "primary": "CONNECT NOW",
+      "primary": "TRY IT FREE",
       "secondary": "CONTACT US"
     },
     "stats": {
       "text": "new businesses registered this month",
       "number": "500+"
     },
+    "trustedBy": {
+      "title": "Trusted by our users",
+      "andMore": "and more..."
+    },
     "businessPersons": [
       {
-        "alt": "Business Person 1",
-        "src": "https://miro.medium.com/v2/resize:fit:2400/1*_sL-AjS_oCEvJO1DY51ULg.png"
+        "alt": "MDS Technology",
+        "src": "/images/icon/MDS_transBG.svg"
       },
       {
-        "alt": "Business Person 2", 
-        "src": "https://static.ybox.vn/2024/6/1/1718600454382-Vietlink-logo.jpg"
+        "alt": "IVS",
+        "src": "/images/icon/IVS-1.svg"
       },
       {
-        "alt": "Business Person 3",
-        "src": "https://freelogopng.com/images/all_img/1657952641google-logo-png-image.png"
+        "alt": "VFA",
+        "src": "/images/icon/VFA.svg"
+      },
+      {
+        "alt": "Vietlink",
+        "src": "/images/icon/Vietlink.svg"
+      },
+      {
+        "alt": "ACC Company",
+        "src": "/images/icon/ACC_dark-removebg-preview.png"
+      },
+      {
+        "alt": "iGOT",
+        "src": "/images/icon/iGOT-removebg-preview.png"
       }
     ]
   }

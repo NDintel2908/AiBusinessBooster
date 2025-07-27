@@ -13,10 +13,13 @@ interface StatItemProps {
 const StatItem = ({ number, description, endValue }: StatItemProps) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false, amount: 0.3 });
 
   useEffect(() => {
     if (isInView) {
+      // Reset count to 0 and start animation
+      setCount(0);
+
       const duration = 2000; // 2 seconds
       const steps = 60;
       const stepDuration = duration / steps;
@@ -33,13 +36,19 @@ const StatItem = ({ number, description, endValue }: StatItemProps) => {
       }, stepDuration);
 
       return () => clearInterval(timer);
+    } else {
+      // Reset count when out of view
+      setCount(0);
     }
   }, [isInView, endValue]);
+
+  // Check if number is a special text like "1st" or "Thứ 1"
+  const isSpecialText = !number.includes("+") && number.includes("st");
 
   return (
     <div className="text-center" ref={ref}>
       <div className="text-[5rem] font-heading font-bold text-[#60A5FA]">
-        {count}
+        {isSpecialText ? number : count}
         {number.includes("+") && "+"}
       </div>
       <p className="text-[1.1rem] font-primary text-gray-400 max-w-sm mx-auto">
@@ -57,14 +66,25 @@ export default function FeaturesSection() {
       id="features-section"
       className="relative py-16 md:py-20 px-8 overflow-hidden"
     >
+      {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#f0f8ff] to-[#ffffff] opacity-10"></div>
 
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 transform scale-75 md:scale-100 origin-center">
-        <div className="relative w-[10rem] h-[7rem]">
-          <div className="absolute w-[10rem] h-[7rem] bg-[#4a90e2] rounded-lg transform -rotate-10"></div>
-          <div className="absolute w-[8rem] h-[7rem] bg-[#ffde59] rounded-lg transform rotate-10 -right-4 -top-4"></div>
-          <div className="absolute w-[6rem] h-[2rem] bg-[#ffb6c1] rounded-md transform -left-2 bottom 0"></div>
-        </div>
+      {/* World Map Background */}
+      <div
+        className="absolute inset-0 opacity-5 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/icon/world.png')",
+          filter: "brightness(1.2) contrast(0.8)",
+        }}
+      ></div>
+
+      {/* Animated dots overlay for global connection effect */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse delay-300"></div>
+        <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-teal-400 rounded-full animate-pulse delay-700"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 bg-blue-300 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute top-2/3 left-1/2 w-1 h-1 bg-cyan-300 rounded-full animate-pulse delay-500"></div>
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -77,7 +97,7 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-[3rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-[3rem] justify-items-center">
           {(
             t("featuresSection.stats", { returnObjects: true }) as Array<{
               number: string;

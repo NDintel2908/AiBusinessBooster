@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Header from "@/components/landing/Header";
@@ -11,8 +11,54 @@ export default function PrivacyPolicy() {
 
   const sections = t("privacyPolicy.sections", { returnObjects: true }) as Array<{id: number, title: string}>;
 
+  // Function to scroll to section
+  const scrollToSection = (sectionId: number) => {
+    const element = document.getElementById(`section${sectionId}`);
+    if (element) {
+      const headerOffset = 150; // Account for sticky header
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+      setActiveSection(sectionId);
+    }
+  };
+
+  // Intersection Observer to detect which section is in view
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "-20% 0px -70% 0px",
+      threshold: 0
+    };
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionId = parseInt(entry.target.id.replace('section', ''));
+          setActiveSection(sectionId);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observe all sections
+    sections.forEach((section) => {
+      const element = document.getElementById(`section${section.id}`);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, [sections]);
+
   return (
-    <div className="min-h-screen bg-deep-dark text-gray-200">
+    <div className="min-h-screen bg-gray-900 text-gray-200">
       <Header />
       <div className="container mx-auto px-4 pt-32 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -28,10 +74,10 @@ export default function PrivacyPolicy() {
                 {sections.map((section) => (
                   <li key={section.id}>
                     <button
-                      onClick={() => setActiveSection(section.id)}
+                      onClick={() => scrollToSection(section.id)}
                       className={`block w-full text-left pl-4 py-2 transition-colors duration-200 ${
                         activeSection === section.id
-                          ? "border-l-2 border-electric-purple text-electric-purple font-semibold -ml-[1px]"
+                          ? "border-l-2 border-brand-primary text-brand-primary font-semibold -ml-[1px]"
                           : "text-gray-400 hover:text-gray-200"
                       }`}
                     >

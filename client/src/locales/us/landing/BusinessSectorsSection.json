@@ -11,7 +11,7 @@
     },
     "businessGroups": {
       "manufacturing": {
-        "title": "Group A - B2B Professional Services Provider",
+        "title": "Professional Service Providers",
         "sectors": {
           "itDevelopment": {
             "name": "IT Software Development, AI and IoT Outsourcing",
@@ -52,7 +52,7 @@
         }
       },
       "technology": {
-        "title": "Group B - Materials and Goods Provider for Manufacturing Enterprises",
+        "title": "Materials and Goods Provider for Manufacturing Enterprises",
         "sectors": {
           "agriculture": {
             "name": "Agriculture and Aquaculture",
@@ -85,7 +85,7 @@
         }
       },
       "services": {
-        "title": "Group C - Manufacturing and Processing for End-User Products",
+        "title": "Manufacturing and Processing for End-User Products",
         "sectors": {
           "foodManufacturing": {
             "name": "Food and Beverage Manufacturers",
@@ -110,7 +110,7 @@
         }
       },
       "infrastructure": {
-        "title": "Group D - Industrial Components Processing & Support",
+        "title": "Industrial Components Processing & Support",
         "sectors": {
           "industrialComponents": {
             "name": "Industrial Support Components Processing",

@@ -1,0 +1,59 @@
+{
+  "bcpOverview": {
+    "badge": "MỚI",
+    "title": {
+      "prefix": "",
+      "highlight": "BCP.Global",
+      "suffix": " là gì?"
+    },
+    "subtitle": {
+      "text": "Nền tảng B2B đầu tiên trên thế giới được hỗ trợ bởi AI, cách mạng hóa cách các doanh nghiệp mua bán và hợp tác.",
+      "actions": {
+        "buy": "MUA",
+        "sell": "BÁN",
+        "cooperate": "HỢP TÁC",
+        "and": "và"
+      }
+    },
+    "description": "BCP biến đối tác kinh doanh từ những cuộc gặp gỡ tình cờ thành kết nối dựa trên dữ liệu. Công nghệ AI tiên tiến của chúng tôi phân tích cơ hội thị trường và cung cấp việc ghép đối tác chính xác, phá vỡ rào cản giữa các tổ chức trên toàn thế giới.",
+    "introduction": {
+      "title": {
+        "prefix": "Về",
+        "highlight": "BCP.Global"
+      },
+      "story": {
+        "title": "Câu Chuyện Của Chúng Tôi",
+        "description": "BCP ra đời từ một khám phá đơn giản: việc tìm kiếm đối tác kinh doanh vẫn dựa vào may mắn thay vì dữ liệu. Với đội ngũ đa quốc gia gồm các chuyên gia AI, chúng tôi xây dựng nền tảng kết nối B2B thông minh biến trí tuệ nhân tạo thành chìa khóa thay đổi cuộc chơi."
+      },
+      "vision": {
+        "title": "Tầm Nhìn",
+        "description": "Chúng tôi tin vào một thế giới nơi mọi doanh nghiệp đều tìm được đối tác lý tưởng."
+      },
+      "mission": {
+        "title": "Sứ Mệnh",
+        "description": "Thông qua công nghệ AI tiên tiến, BCP phá vỡ mọi rào cản, mở ra cơ hội hợp tác hiệu quả cho tất cả các tổ chức, lớn và nhỏ."
+      }
+    },
+    "features": {
+      "title": "Tính Năng Cốt Lõi",
+      "list": {
+        "realTimeMatching": {
+          "title": "Ghép Đối Kinh Doanh Thời Gian Thực",
+          "description": "TÌM KIẾM & KẾT NỐI với ĐỐI TÁC PHÙ HỢP • QUẢNG BÁ BẢN THÂN hiệu quả • Tiếp cận thị trường toàn cầu • Hỗ trợ 24/7"
+        },
+        "directConnection": {
+          "title": "Kết nối trực tiếp với người ra quyết định cuối cùng",
+          "description": "Không trung gian. Đi thẳng vào việc lập kế hoạch với những người ra quyết định cuối cùng để đảm bảo hiệu quả và hợp tác hiệu quả."
+        },
+        "aiInsight": {
+          "title": "Thông Tin Chi Tiết và Hỗ Trợ từ AI",
+          "description": "BCP cung cấp phân tích cơ hội và cung cấp thông tin chi tiết cho các đối tác tiềm năng."
+        },
+        "security": {
+          "title": "Cam Kết Bảo Mật",
+          "description": "Dữ liệu và giao tiếp trong BCP luôn được bảo vệ. Tất cả trao đổi đều được mã hóa và tuân thủ các tiêu chuẩn bảo mật quốc tế."
+        }
+      }
+    }
+  }
+}

@@ -5,8 +5,8 @@ export default {
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      sans: ['var(--font-primary)'],
-      heading: ['var(--font-heading)'],
+      sans: ["var(--font-primary)"],
+      heading: ["var(--font-heading)"],
     },
     extend: {
       borderRadius: {
@@ -15,6 +15,17 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        // New Blue Palette - Professional & Modern
+        "brand-navy": "#0A2647", // Dark Navy - Primary dark
+        "brand-deep": "#144272", // Deep Blue - Secondary dark
+        "brand-primary": "#205295", // Medium Blue - Main brand color
+        "brand-accent": "#2C74B3", // Light Blue - Accents & highlights
+
+        // Semantic aliases for the new palette
+        "neon-blue": "#2C74B3", // Replace old neon-blue with light blue
+        "electric-purple": "#205295", // Replace purple with medium blue
+
+        // Theme system colors
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

@@ -6,6 +6,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll padding for better section anchoring */
+section {
+  scroll-margin-top: 150px;
+}
+
 /* Custom animations for ServiceSection center circle */
 @keyframes spin-slow {
   from {
@@ -236,6 +246,194 @@
   filter: brightness(1.2) saturate(1.1);
 }
 
+/* Language Switcher - Remove hover effects */
+.language-switcher-no-hover button {
+  transition: none !important;
+}
+
+.language-switcher-no-hover button:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  opacity: 1 !important;
+}
+
+/* Flag Wave Animation */
+.flag-container {
+  display: inline-block;
+  position: relative;
+}
+
+.flag-wave {
+  transform-origin: left center;
+  animation: flagWave 4s ease-in-out infinite;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
+  transition: all 0.3s ease;
+}
+
+.flag-wave:hover {
+  animation-duration: 2s;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 12px rgba(0, 0, 0, 0.15));
+  transform: scale(1.05);
+}
+
+@keyframes flagWave {
+
+  0%,
+  100% {
+    transform: perspective(200px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  20% {
+    transform: perspective(200px) rotateX(1deg) rotateY(2deg) rotateZ(0.5deg);
+  }
+
+  40% {
+    transform: perspective(200px) rotateX(0deg) rotateY(-1deg) rotateZ(-0.3deg);
+  }
+
+  60% {
+    transform: perspective(200px) rotateX(-0.5deg) rotateY(1.5deg) rotateZ(0.2deg);
+  }
+
+  80% {
+    transform: perspective(200px) rotateX(0.3deg) rotateY(-0.8deg) rotateZ(-0.1deg);
+  }
+}
+
+/* Subtle glow effect on hover for better interaction feedback */
+.flag-container:hover .flag-wave {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 15px rgba(59, 130, 246, 0.1));
+}
+
+/* Scroll Snapping Styles */
+.scroll-snap-container {
+  @apply min-h-screen bg-background text-foreground;
+}
+
+.scroll-snap-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* Webkit scrollbar styling for better UX */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(44, 116, 179, 0.3) transparent;
+}
+
+.scroll-snap-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-snap-wrapper::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.scroll-snap-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(44, 116, 179, 0.3);
+  border-radius: 4px;
+}
+
+.scroll-snap-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(44, 116, 179, 0.5);
+}
+
+.scroll-snap-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* Special handling for hero section with video */
+.scroll-snap-section:first-child {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+
+
+/* Section cuối cùng có Contact + Footer */
+.scroll-snap-section-with-footer {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  height: 100vh;
+  justify-content: flex-start;
+  padding: 0;
+  scroll-margin-top: 0;
+}
+
+/* Internal scroll container cho Contact + Footer */
+.scroll-snap-internal-scroll {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* Custom scrollbar for internal scroll */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(44, 116, 179, 0.5) rgba(0, 0, 0, 0.1);
+}
+
+.scroll-snap-internal-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-snap-internal-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.scroll-snap-internal-scroll::-webkit-scrollbar-thumb {
+  background: rgba(44, 116, 179, 0.5);
+  border-radius: 3px;
+}
+
+.scroll-snap-internal-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(44, 116, 179, 0.7);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .scroll-snap-wrapper {
+    /* Disable snap on mobile for better touch scrolling */
+    scroll-snap-type: none;
+  }
+
+  .scroll-snap-section {
+    min-height: auto;
+    scroll-snap-align: none;
+  }
+
+  .scroll-snap-section-with-footer {
+    scroll-snap-align: none;
+    height: auto;
+    min-height: auto;
+  }
+
+  .scroll-snap-internal-scroll {
+    height: auto;
+    overflow-y: visible;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .scroll-snap-section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+  }
+
+  .scroll-snap-section-with-footer {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+  }
+}
+
 @layer base {
   :root {
     /* Font definitions */
@@ -443,63 +641,4 @@
   .faq-accordion-item:hover::before {
     opacity: 1;
   }
-}
-
-/* Language Switcher - Remove hover effects */
-.language-switcher-no-hover button {
-  transition: none !important;
-}
-
-.language-switcher-no-hover button:hover {
-  background-color: transparent !important;
-  color: inherit !important;
-  opacity: 1 !important;
-}
-
-/* Flag Wave Animation */
-.flag-container {
-  display: inline-block;
-  position: relative;
-}
-
-.flag-wave {
-  transform-origin: left center;
-  animation: flagWave 4s ease-in-out infinite;
-  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
-  transition: all 0.3s ease;
-}
-
-.flag-wave:hover {
-  animation-duration: 2s;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 12px rgba(0, 0, 0, 0.15));
-  transform: scale(1.05);
-}
-
-@keyframes flagWave {
-
-  0%,
-  100% {
-    transform: perspective(200px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-
-  20% {
-    transform: perspective(200px) rotateX(1deg) rotateY(2deg) rotateZ(0.5deg);
-  }
-
-  40% {
-    transform: perspective(200px) rotateX(0deg) rotateY(-1deg) rotateZ(-0.3deg);
-  }
-
-  60% {
-    transform: perspective(200px) rotateX(-0.5deg) rotateY(1.5deg) rotateZ(0.2deg);
-  }
-
-  80% {
-    transform: perspective(200px) rotateX(0.3deg) rotateY(-0.8deg) rotateZ(-0.1deg);
-  }
-}
-
-/* Subtle glow effect on hover for better interaction feedback */
-.flag-container:hover .flag-wave {
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 15px rgba(59, 130, 246, 0.1));
 }

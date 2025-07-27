@@ -53,18 +53,18 @@ export default function ChallengesSection() {
             },
           }}
         >
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
-            <span className="text-base md:text-lg font-medium text-neon-blue font-primary">
+          {/* <div className="inline-flex items-center px-3 py-1 rounded-full bg-neon-blue/20 border border-neon-blue/40 mb-4">
+          <span className="text-base md:text-lg font-medium text-blue-400 font-primary">
               {t("challengesSection.sectionHeader.badge")}
             </span>
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
             <Trans
               i18nKey="challengesSection.sectionHeader.title"
               ns="challenges"
               components={[
                 <span className="text-red-400 font-bold" />,
-                <span className="text-blue-400 font-bold" />,
+                <span className="text-brand-accent font-bold" />,
               ]}
             />
           </h2>
@@ -93,7 +93,7 @@ export default function ChallengesSection() {
           >
             {/* Traditional Method Header */}
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center border-2 border-red-400/30">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-red-500/20 to-red-500/20 flex items-center justify-center border-2 border-red-500/30">
                 <span className="text-3xl">❌</span>
               </div>
               <h3 className="text-2xl font-heading font-bold text-red-400 mb-2">
@@ -106,10 +106,10 @@ export default function ChallengesSection() {
 
             {/* BCP Solution Header */}
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center border-2 border-blue-400/30">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-accent/20 flex items-center justify-center border-2 border-brand-accent/30">
                 <span className="text-3xl">✅</span>
               </div>
-              <h3 className="text-2xl font-heading font-bold text-blue-400 mb-2">
+              <h3 className="text-2xl font-heading font-bold text-brand-accent mb-2">
                 {t("challengesSection.headers.bcp.title")}
               </h3>
               <p className="text-sm text-gray-400">
@@ -168,15 +168,15 @@ export default function ChallengesSection() {
 
                 {/* BCP Solution Card */}
                 <GlassCard
-                  className={`p-6 border-blue-400/20 bg-blue-500/5 h-full flex flex-col transition-all duration-300 ${
+                  className={`p-6 border-brand-accent/20 bg-brand-primary/5 h-full flex flex-col transition-all duration-300 ${
                     hoveredIndex === index
-                      ? "border-blue-400/40 bg-blue-500/10 shadow-lg shadow-blue-500/20"
+                      ? "border-brand-accent/40 bg-brand-primary/10 shadow-lg shadow-brand-accent/20"
                       : ""
                   }`}
                 >
                   <div className="flex items-start space-x-3 mb-4">
                     <span className="text-2xl mt-1">✅</span>
-                    <h4 className="text-lg font-semibold text-blue-400">
+                    <h4 className="text-lg font-semibold text-brand-accent">
                       {comparison.bcp.title}
                     </h4>
                   </div>
@@ -229,13 +229,13 @@ export default function ChallengesSection() {
               </div>
 
               {/* BCP Solution Card */}
-              <GlassCard className="p-6 border-blue-400/20 bg-blue-500/5">
+              <GlassCard className="p-6 border-brand-accent/20 bg-brand-primary/5">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center border border-blue-400/30 mr-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-accent/20 flex items-center justify-center border border-brand-accent/30 mr-4">
                     <span className="text-xl">✅</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-blue-400">
+                    <h3 className="text-lg font-semibold text-brand-accent">
                       {comparison.bcp.title}
                     </h3>
                     <p className="text-xs text-gray-500">

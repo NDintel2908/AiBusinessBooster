@@ -1,12 +1,14 @@
 {
   "header": {
     "navigation": {
+      "home": "Home",
+      "about": "About",
       "features": "Features",
       "pricing": "Pricing",
-      "aboutUs": "About Us"
+      "contact": "Contact"
     },
     "cta": {
-      "getStarted": "Try For Free"
+      "getStarted": "Try It Free"
     },
     "mobile": {
       "toggleMenu": "Toggle mobile menu"

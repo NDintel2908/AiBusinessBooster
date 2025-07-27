@@ -11,7 +11,7 @@
     },
     "businessGroups": {
       "manufacturing": {
-        "title": "Nhóm A - Cung cấp dịch vụ B2B chuyên nghiệp (Professional services)",
+        "title": "Cung cấp dịch vụ B2B chuyên nghiệp (Professional services)",
         "sectors": {
           "itDevelopment": {
             "name": "Phát triển gia công phần mềm CNTT, AI và IOT",
@@ -52,7 +52,7 @@
         }
       },
       "technology": {
-        "title": "Nhóm B - Cung cấp nguyên vật liệu, hàng hóa cho doanh nghiệp sản xuất",
+        "title": "Cung cấp nguyên vật liệu, hàng hóa cho doanh nghiệp sản xuất",
         "sectors": {
           "agriculture": {
             "name": "Nông Nghiệp và Thủy Sản",
@@ -85,7 +85,7 @@
         }
       },
       "services": {
-        "title": "Nhóm C - Sản xuất, gia công cung cấp sản phẩm cho người dùng cuối",
+        "title": "Sản xuất, gia công cung cấp sản phẩm cho người dùng cuối",
         "sectors": {
           "foodManufacturing": {
             "name": "Nhà Sản Xuất Thực Phẩm và Đồ Uống",
@@ -110,7 +110,7 @@
         }
       },
       "infrastructure": {
-        "title": "Nhóm D - Gia công linh kiện & phụ trợ công nghiệp",
+        "title": "Gia công linh kiện & phụ trợ công nghiệp",
         "sectors": {
           "industrialComponents": {
             "name": "Gia Công Linh Kiện Phụ Trợ Công Nghiệp",

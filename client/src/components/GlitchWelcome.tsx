@@ -23,12 +23,12 @@ const GlitchWelcome: React.FC<GlitchWelcomeProps> = ({ onComplete }) => {
 
     const fadeOutTimer = setTimeout(() => {
       setFadeOut(true);
-    }, 3500);
+    }, 4000); // Extended fade out time
 
     const hideTimer = setTimeout(() => {
       setIsVisible(false);
       onComplete?.();
-    }, 6000);
+    }, 5500); // Extended total time to 5.5 seconds
 
     return () => {
       clearTimeout(showTextTimer);
@@ -50,17 +50,18 @@ const GlitchWelcome: React.FC<GlitchWelcomeProps> = ({ onComplete }) => {
         width: "100vw",
         height: "100vh",
         background: fadeOut ? "rgba(0,0,0,0.15)" : "rgba(0,0,0,0.1)",
-        backdropFilter: "blur(10px)", // Giảm từ 20px xuống 10px
+        backdropFilter: "blur(10px)",
         WebkitBackdropFilter: "blur(10px)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         zIndex: 9999,
         opacity: fadeOut ? 0 : 1,
-        transition: "opacity 0.6s ease-out", // Chỉ animate opacity, không animate blur
-        willChange: "opacity", // Optimize GPU
+        transition: "opacity 0.8s ease-out",
+        willChange: "opacity",
       }}
     >
+      {/* Welcome Text */}
       {showText && (
         <div style={{ textAlign: "center" }}>
           <h1
@@ -73,7 +74,7 @@ const GlitchWelcome: React.FC<GlitchWelcomeProps> = ({ onComplete }) => {
               letterSpacing: "3px",
               margin: 0,
               padding: 0,
-              fontFamily: "system-ui, -apple-system, sans-serif", // Dùng system font nhanh hơn
+              fontFamily: "system-ui, -apple-system, sans-serif",
               opacity: fadeOut ? 0 : fadeIn ? 1 : 0,
               transform: fadeIn ? "scale(1)" : "scale(0.95)",
               transition: "opacity 0.5s ease-out, transform 0.5s ease-out",
@@ -85,6 +86,7 @@ const GlitchWelcome: React.FC<GlitchWelcomeProps> = ({ onComplete }) => {
           </h1>
         </div>
       )}
+
       <style
         dangerouslySetInnerHTML={{
           __html: `

@@ -1,393 +1,312 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import BCPAILogo from "./BCPAI.webp";
+import { useState } from "react";
+import { GlassCard } from "@/components/ui/glass-card";
 import "../../lib/i18n";
 
-export default function ServiceSection() {
-  const { t } = useTranslation("service");
+/**
+ * FeaturesSection with Video Integration
+ *
+ * HOW TO ADD VIDEO LATER:
+ * 1. Place your video file in public/videos/ (e.g., public/videos/demo.mp4)
+ * 2. Update the videoConfig object:
+ *    - src: "/videos/demo.mp4"
+ *    - poster: "/images/video-poster.jpg" (optional thumbnail)
+ *    - title: "Your Video Title"
+ *
+ * 3. Uncomment the video implementation code in VideoPlayer component
+ *
+ * SUPPORTED FORMATS:
+ * - MP4 (recommended)
+ * - WebM (fallback)
+ *
+ * EXAMPLE CONFIGURATION:
+ * const videoConfig = {
+ *   src: "/videos/bcp-demo.mp4",
+ *   poster: "/images/bcp-demo-poster.jpg",
+ *   title: "BCP Platform Demo"
+ * };
+ */
+
+// Video Player Component - Ready for implementation
+interface VideoPlayerProps {
+  src?: string;
+  poster?: string;
+  title?: string;
+}
+
+const VideoPlayer: React.FC<VideoPlayerProps> = ({
+  src,
+  poster,
+  title = "Demo Video",
+}) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
+
+  // When video is ready to be implemented, uncomment this section:
+  /*
+  if (src) {
+    return (
+      <video
+        className="w-full h-full object-cover rounded-md"
+        controls
+        poster={poster}
+        preload="metadata"
+        onLoadStart={() => setIsLoading(true)}
+        onCanPlay={() => setIsLoading(false)}
+        onError={() => setHasError(true)}
+      >
+        <source src={src} type="video/mp4" />
+        <source src={src.replace('.mp4', '.webm')} type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+    );
+  }
+  */
+
+  // Placeholder while no video is set
+  return (
+    <div className="text-center text-gray-400">
+      <div className="w-12 h-12 mx-auto mb-3 bg-gradient-to-r from-brand-primary to-brand-accent rounded-full flex items-center justify-center">
+        <svg
+          className="w-6 h-6 text-white"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+      <p className="text-xs font-primary">{title}</p>
+      <p className="text-xs opacity-60">Coming Soon</p>
+    </div>
+  );
+};
+
+export default function FeaturesSection() {
+  const { t } = useTranslation("bcpOverview");
+  const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
+
+  // Video configuration - Easy to update later
+  const videoConfig = {
+    src: undefined, // Add video path here later: "/videos/demo.mp4"
+    poster: undefined, // Add poster image here later: "/images/video-poster.jpg"
+    title: "BCP.Global Demo",
+  };
+
+  // Function to get hover text color based on feature index
+  const getHoverTextColor = (index: number) => {
+    switch (index) {
+      case 0:
+        return "text-cyan-400"; // Real-time matching
+      case 1:
+        return "text-purple-400"; // Direct connection
+      case 2:
+        return "text-teal-400"; // AI insights
+      case 3:
+        return "text-orange-400"; // Security
+      default:
+        return "text-brand-accent";
+    }
+  };
+
+  const features = [
+    {
+      icon: "🚀",
+      title: t("bcpOverview.features.list.realTimeMatching.title"),
+      description: t("bcpOverview.features.list.realTimeMatching.description"),
+      gradient: "from-blue-400 to-cyan-400",
+      hoverBg: "from-blue-400/10 to-cyan-400/10",
+      hoverBorder: "border-cyan-400/60",
+    },
+    {
+      icon: "🤝",
+      title: t("bcpOverview.features.list.directConnection.title"),
+      description: t("bcpOverview.features.list.directConnection.description"),
+      gradient: "from-purple-400 to-pink-400",
+      hoverBg: "from-purple-400/10 to-pink-400/10",
+      hoverBorder: "border-purple-400/60",
+    },
+    {
+      icon: "🤖",
+      title: t("bcpOverview.features.list.aiInsight.title"),
+      description: t("bcpOverview.features.list.aiInsight.description"),
+      gradient: "from-green-400 to-teal-400",
+      hoverBg: "from-green-400/10 to-teal-400/10",
+      hoverBorder: "border-teal-400/60",
+    },
+    {
+      icon: "🔒",
+      title: t("bcpOverview.features.list.security.title"),
+      description: t("bcpOverview.features.list.security.description"),
+      gradient: "from-orange-400 to-red-400",
+      hoverBg: "from-orange-400/10 to-red-400/10",
+      hoverBorder: "border-orange-400/60",
+    },
+  ];
 
   return (
-    <section
-      id="service-section"
-      className="relative py-16 md:py-20 px-4 md:px-8"
-    >
-      <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-12">
-          <h2
-            className="text-3xl md:text-4xl font-bold text-white mb-4"
-            dangerouslySetInnerHTML={{ __html: t("serviceSection.title") }}
-          />
-          <p className="text-[1.1rem] text-gray-400 max-w-3xl mx-auto font-primary">
-            {t("serviceSection.description")}
-          </p>
-        </div>
+    <section id="features" className="relative py-12 px-4 overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 z-0 opacity-30">
+        <div className="absolute top-1/4 right-1/4 w-1/2 h-1/2 bg-gradient-to-br from-neon-blue to-electric-purple opacity-20 blur-[120px] rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-1/3 h-1/3 bg-gradient-to-br from-bright-teal to-neon-blue opacity-15 blur-[100px] rounded-full"></div>
+      </div>
 
-        {/* Mobile Layout - Stacked */}
-        <div className="md:hidden space-y-12 max-w-lg mx-auto">
-          {/* Feature 1 */}
+      <div className="container mx-auto max-w-6xl relative z-10">
+        {/* Section Title */}
+        <motion.div
+          className="text-center max-w-4xl mx-auto mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-accent">
+              {t("bcpOverview.features.title")}
+            </span>
+          </h2>
+        </motion.div>
+
+        {/* 
+        === VIDEO VERSION (Uncomment when video is ready) ===
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            className="flex justify-center items-center"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-left"
           >
-            <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              {t("serviceSection.features.proactiveAI.title")}
-            </h3>
-            <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              {(
-                t("serviceSection.features.proactiveAI.items", {
-                  returnObjects: true,
-                }) as string[]
-              ).map((item: string, index: number) => (
-                <li key={index}>• {item}</li>
-              ))}
-            </ul>
+            <div className="relative w-full max-w-md">
+              <div className="relative bg-gray-800 rounded-t-lg p-3 shadow-xl">
+                <div className="bg-black rounded-md p-3 relative overflow-hidden">
+                  <div className="aspect-video bg-gray-900 rounded-sm flex items-center justify-center relative group">
+                    <VideoPlayer {...videoConfig} />
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none rounded-sm"></div>
+                  </div>
+                </div>
+
+                <div className="h-3 bg-gradient-to-b from-gray-700 to-gray-800 rounded-b-lg"></div>
+              </div>
+
+              <div className="mx-auto w-20 h-1.5 bg-gray-600 rounded-full mt-1.5"></div>
+
+              <div className="absolute -inset-3 bg-gradient-to-r from-brand-primary/20 to-brand-accent/20 blur-lg rounded-lg -z-10"></div>
+            </div>
           </motion.div>
 
-          {/* Feature 2 */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-left"
           >
-            <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              {t("serviceSection.features.decisionMaker.title")}
-            </h3>
-            <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              {(
-                t("serviceSection.features.decisionMaker.items", {
-                  returnObjects: true,
-                }) as string[]
-              ).map((item: string, index: number) => (
-                <li key={index}>• {item}</li>
-              ))}
-            </ul>
-          </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  onMouseEnter={() => setHoveredFeature(index)}
+                  onMouseLeave={() => setHoveredFeature(null)}
+                >
+                  <GlassCard 
+                    className={`p-4 h-full transition-all duration-500 group ${
+                      hoveredFeature === index 
+                        ? `${feature.hoverBorder} bg-gradient-to-br ${feature.hoverBg} shadow-lg shadow-current/20` 
+                        : 'hover:border-brand-accent/40'
+                    }`}
+                  >
+                   <div className="text-center space-y-3">
+                     <div
+                       className={`w-10 h-10 mx-auto rounded-full bg-gradient-to-r ${feature.gradient} flex items-center justify-center text-lg shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                     >
+                       {feature.icon}
+                     </div>
 
-          {/* Center Logo for Mobile */}
-          <div className="flex flex-col items-center my-8">
-            <div className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400 shadow-2xl shadow-blue-500/20 relative">
-              <img
-                src={BCPAILogo}
-                alt="BCP AI Logo"
-                className="w-32 h-32 object-contain"
-              />
-              {/* Orbital rings */}
-              <div className="absolute inset-0 border-2 border-blue-400/30 rounded-full animate-pulse"></div>
-              <div className="absolute -inset-4 border border-blue-400/20 rounded-full"></div>
+                     <h4 className={`text-base font-heading font-semibold transition-colors duration-300 ${
+                       hoveredFeature === index 
+                         ? getHoverTextColor(index)
+                         : 'text-white group-hover:text-brand-accent'
+                     }`}>
+                       {feature.title}
+                     </h4>
+
+                    <p className="text-gray-300 font-primary text-xs leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
+                </GlassCard>
+                </motion.div>
+              ))}
             </div>
-          </div>
-
-          {/* Feature 3 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="text-left"
-          >
-            <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              {t("serviceSection.features.aiAssistant.title")}
-            </h3>
-            <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              {(
-                t("serviceSection.features.aiAssistant.items", {
-                  returnObjects: true,
-                }) as string[]
-              ).map((item: string, index: number) => (
-                <li key={index}>• {item}</li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* Feature 4 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="text-left"
-          >
-            <h3 className="text-lg font-semibold text-cyan-400 mb-4 flex items-center">
-              {t("serviceSection.features.security.title")}
-            </h3>
-            <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-              {(
-                t("serviceSection.features.security.items", {
-                  returnObjects: true,
-                }) as string[]
-              ).map((item: string, index: number) => (
-                <li key={index}>• {item}</li>
-              ))}
-            </ul>
           </motion.div>
         </div>
 
-        {/* Desktop Layout - 3 Column Grid */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Left Column */}
-          <div className="grid grid-rows-2 gap-12 h-full">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="text-left"
-            >
-              <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                {t("serviceSection.features.proactiveAI.title")}
-              </h3>
-              <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                {(
-                  t("serviceSection.features.proactiveAI.items", {
-                    returnObjects: true,
-                  }) as string[]
-                ).map((item: string, index: number) => (
-                  <li key={index}>• {item}</li>
-                ))}
-              </ul>
-            </motion.div>
+        === END VIDEO VERSION ===
+        */}
 
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-left"
-            >
-              <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                {t("serviceSection.features.aiAssistant.title")}
-              </h3>
-              <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                {(
-                  t("serviceSection.features.aiAssistant.items", {
-                    returnObjects: true,
-                  }) as string[]
-                ).map((item: string, index: number) => (
-                  <li key={index}>• {item}</li>
-                ))}
-              </ul>
-            </motion.div>
+        {/* HORIZONTAL FEATURES VERSION (Current Active) */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          {/* Features displayed in horizontal row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
+                viewport={{ once: true }}
+                onMouseEnter={() => setHoveredFeature(index)}
+                onMouseLeave={() => setHoveredFeature(null)}
+              >
+                <GlassCard
+                  className={`p-6 h-full transition-all duration-500 group hover:scale-105 ${
+                    hoveredFeature === index
+                      ? `${feature.hoverBorder} bg-gradient-to-br ${feature.hoverBg} shadow-lg shadow-current/20 transform scale-105`
+                      : "hover:border-brand-accent/40"
+                  }`}
+                >
+                  <div className="text-center space-y-4">
+                    {/* Icon with gradient background */}
+                    <div
+                      className={`w-12 h-12 mx-auto rounded-full bg-gradient-to-r ${feature.gradient} flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                    >
+                      {feature.icon}
+                    </div>
+
+                    {/* Title */}
+                    <h4
+                      className={`text-lg font-heading font-semibold transition-colors duration-300 ${
+                        hoveredFeature === index
+                          ? getHoverTextColor(index)
+                          : "text-white group-hover:text-brand-accent"
+                      }`}
+                    >
+                      {feature.title}
+                    </h4>
+
+                    {/* Description */}
+                    <p className="text-gray-300 font-primary text-sm leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
+                </GlassCard>
+              </motion.div>
+            ))}
           </div>
-
-          {/* Center Column - Logo with Feature Icons */}
-          <div className="flex justify-center items-center h-full">
-            <div className="relative w-96 h-96 grid place-items-center">
-              {/* Multi-layered Glowing Background */}
-              <div className="absolute inset-0 rounded-full animate-pulse-glow">
-                {/* Outermost glow layer */}
-                <div className="absolute inset-0 rounded-full bg-gradient-radial from-blue-500/10 via-cyan-400/5 to-transparent blur-3xl"></div>
-                {/* Middle glow layer */}
-                <div className="absolute inset-4 rounded-full bg-gradient-radial from-blue-400/20 via-cyan-400/10 to-transparent blur-2xl"></div>
-                {/* Inner glow layer */}
-                <div className="absolute inset-8 rounded-full bg-gradient-radial from-blue-300/30 via-cyan-400/15 to-transparent blur-xl"></div>
-              </div>
-
-              {/* Central Logo Circle */}
-              <div className="relative w-60 h-60 rounded-full bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 flex items-center justify-center border-4 border-blue-400/60 shadow-2xl shadow-blue-500/40 animate-spin-slow ring-glow pulse-outline z-10">
-                <div className="relative z-20">
-                  <img
-                    src={BCPAILogo}
-                    alt="BCP AI Logo"
-                    className="w-48 h-48 object-contain drop-shadow-lg"
-                  />
-                </div>
-
-                {/* Rotating orbital light particles */}
-                <div className="absolute inset-0 rounded-full animate-spin-slow">
-                  <div className="absolute top-2 left-1/2 w-3 h-3 bg-cyan-400 rounded-full blur-sm -translate-x-1/2 animate-glow-intense shadow-lg shadow-cyan-400/80"></div>
-                  <div className="absolute bottom-2 left-1/2 w-3 h-3 bg-electric-purple rounded-full blur-sm -translate-x-1/2 animate-glow-intense shadow-lg shadow-purple-400/80"></div>
-                  <div className="absolute left-2 top-1/2 w-3 h-3 bg-bright-teal rounded-full blur-sm -translate-y-1/2 animate-glow-intense shadow-lg shadow-teal-400/80"></div>
-                  <div className="absolute right-2 top-1/2 w-3 h-3 bg-neon-blue rounded-full blur-sm -translate-y-1/2 animate-glow-intense shadow-lg shadow-blue-400/80"></div>
-                </div>
-
-                {/* Multiple animated orbital rings */}
-                <div className="absolute inset-0 border-2 border-blue-400/40 rounded-full animate-pulse"></div>
-                <div className="absolute -inset-4 border border-cyan-400/30 rounded-full animate-spin-reverse"></div>
-                <div className="absolute -inset-8 border border-blue-400/20 rounded-full animate-pulse-slow"></div>
-                <div className="absolute -inset-12 border border-blue-300/10 rounded-full"></div>
-              </div>
-
-              {/* Feature Icons positioned precisely on circle edge */}
-              {/* Top Left - Comprehensive Assessment */}
-              <motion.div
-                className="absolute w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-xl shadow-cyan-500/40 animate-float-gentle icon-hover-effect"
-                style={{
-                  top: "calc(50% - 170px * 0.707 - 28px)",
-                  left: "calc(50% - 170px * 0.707 - 28px)",
-                }}
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                whileHover={{ scale: 1.15, rotate: 10 }}
-              >
-                <svg
-                  className="w-7 h-7 text-white drop-shadow-md"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </motion.div>
-
-              {/* Top Right - Fraud Detection */}
-              <motion.div
-                className="absolute w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-xl shadow-purple-500/40 animate-float-gentle-delayed icon-hover-effect"
-                style={{
-                  top: "calc(50% - 170px * 0.707 - 28px)",
-                  right: "calc(50% - 170px * 0.707 - 28px)",
-                }}
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                whileHover={{ scale: 1.15, rotate: -10 }}
-              >
-                <svg
-                  className="w-7 h-7 text-white drop-shadow-md"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                  />
-                </svg>
-              </motion.div>
-
-              {/* Bottom Left - Flexible Customization */}
-              <motion.div
-                className="absolute w-14 h-14 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center shadow-xl shadow-green-500/40 animate-float-gentle icon-hover-effect"
-                style={{
-                  bottom: "calc(50% - 170px * 0.707 - 28px)",
-                  left: "calc(50% - 170px * 0.707 - 28px)",
-                }}
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                whileHover={{ scale: 1.15, rotate: 10 }}
-              >
-                <svg
-                  className="w-7 h-7 text-white drop-shadow-md"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-              </motion.div>
-
-              {/* Bottom Right - Automation */}
-              <motion.div
-                className="absolute w-14 h-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-xl shadow-orange-500/40 animate-float-gentle-delayed icon-hover-effect"
-                style={{
-                  bottom: "calc(50% - 170px * 0.707 - 28px)",
-                  right: "calc(50% - 170px * 0.707 - 28px)",
-                }}
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                whileHover={{ scale: 1.15, rotate: -10 }}
-              >
-                <svg
-                  className="w-7 h-7 text-white drop-shadow-md"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                  />
-                </svg>
-              </motion.div>
-
-              {/* Radial connecting energy lines */}
-              <div className="absolute inset-0 animate-pulse-connection pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 w-px h-32 bg-gradient-to-t from-cyan-400/60 via-cyan-400/30 to-transparent transform -translate-x-1/2 -translate-y-full rotate-45 blur-sm"></div>
-                <div className="absolute top-1/2 left-1/2 w-px h-32 bg-gradient-to-t from-purple-400/60 via-purple-400/30 to-transparent transform -translate-x-1/2 -translate-y-full -rotate-45 blur-sm"></div>
-                <div className="absolute top-1/2 left-1/2 w-px h-32 bg-gradient-to-b from-green-400/60 via-green-400/30 to-transparent transform -translate-x-1/2 rotate-45 blur-sm"></div>
-                <div className="absolute top-1/2 left-1/2 w-px h-32 bg-gradient-to-b from-orange-400/60 via-orange-400/30 to-transparent transform -translate-x-1/2 -rotate-45 blur-sm"></div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div className="grid grid-rows-2 gap-12 h-full">
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-left"
-            >
-              <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                {t("serviceSection.features.decisionMaker.title")}
-              </h3>
-              <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                {(
-                  t("serviceSection.features.decisionMaker.items", {
-                    returnObjects: true,
-                  }) as string[]
-                ).map((item: string, index: number) => (
-                  <li key={index}>• {item}</li>
-                ))}
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="text-left"
-            >
-              <h3 className="text-lg md:text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                {t("serviceSection.features.security.title")}
-              </h3>
-              <ul className="text-sm text-slate-300 leading-relaxed space-y-2">
-                {(
-                  t("serviceSection.features.security.items", {
-                    returnObjects: true,
-                  }) as string[]
-                ).map((item: string, index: number) => (
-                  <li key={index}>• {item}</li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

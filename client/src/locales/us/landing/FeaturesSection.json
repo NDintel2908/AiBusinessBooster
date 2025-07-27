@@ -1,27 +1,22 @@
 {
   "featuresSection": {
-    "title": "BCP Capabilities",
-    "description": "Data-driven perspective on business connection success since 2018",
+    "title": "Since 2018...",
+    "description": "",
     "stats": [
       {
-        "number": "#1",
-        "description": "1st place in seed round at AI Star 2024 competition",
+        "number": "1st",
+        "description": "Ranked Top 1 in the pre-incubation (start up) stage at the AI.Star 2024 Competition",
         "endValue": 1
       },
       {
         "number": "2200+",
-        "description": "Participating businesses",
+        "description": "BCP business members",
         "endValue": 2200
       },
       {
         "number": "1600+",
         "description": "Successful connections",
         "endValue": 1600
-      },
-      {
-        "number": "3+",
-        "description": "Member countries",
-        "endValue": 3
       }
     ]
   }

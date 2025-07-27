@@ -1,0 +1,59 @@
+{
+  "bcpOverview": {
+    "badge": "NEW",
+    "title": {
+      "prefix": "What is",
+      "highlight": "BCP.Global",
+      "suffix": "?"
+    },
+    "subtitle": {
+      "text": "The AI-driven B2B platform redefining global partnerships through intelligent connections.",
+      "actions": {
+        "buy": "BUY",
+        "sell": "SELL",
+        "cooperate": "COOPERATE",
+        "and": "and"
+      }
+    },
+    "description": "BCP transforms business partnerships from chance encounters to data-driven connections. Our advanced AI technology analyzes market opportunities and delivers precise partner matching, breaking down barriers between organizations worldwide.",
+    "introduction": {
+      "title": {
+        "prefix": "About",
+        "highlight": "BCP.Global"
+      },
+      "story": {
+        "title": "Our Story",
+        "description": "Based in Ho Chi Minh City, Vietnam, BCP was created to ease the journey in finding a compatible business partner. The difficulty of a successful business connection starts at the search. Finding a business partner requires trust, compatibility, and compromise. With our multinational team of AI experts, we build an intelligent B2B connection platform that turns advanced artificial intelligence into an efficient partnership tool."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To address the hardships in finding a successful business partnership."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "BCP aims to eliminate barriers and intermediaries in the business world for all organizations, large and small."
+      }
+    },
+    "features": {
+      "title": "Core Features",
+      "list": {
+        "realTimeMatching": {
+          "title": "Real-time Business Matching",
+          "description": "BCP’s advanced AI technology provides insight and connection opportunities without delay. Find real partners in real time."
+        },
+        "directConnection": {
+          "title": "Connect directly with final decision-makers",
+          "description": "No intermediaries. Get straight to planning with final decision-makers to ensure efficiency and effective cooperation."
+        },
+        "aiInsight": {
+          "title": "AI-Powered Insight and Support",
+          "description": "BCP provides analyzes opportunities and delivers detailed information to potential partners."
+        },
+        "security": {
+          "title": "Commitment to Security",
+          "description": "Data and communications within BCP are always protected. All exchanges are encrypted and adhere to international security standards."
+        }
+      }
+    }
+  }
+}

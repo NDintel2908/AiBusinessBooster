@@ -2,6 +2,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 // Vietnamese translations
+import viAbout from "../../src/locales/vi/landing/AboutSection.json";
+import viBCPOverview from "../../src/locales/vi/landing/BCPOverviewSection.json";
 import viBusinessSectors from "../../src/locales/vi/landing/BusinessSectorsSection.json";
 import viChallenges from "../../src/locales/vi/landing/ChallengesSection.json";
 import viContact from "../../src/locales/vi/landing/ContactSection.json";
@@ -20,6 +22,8 @@ import viTermsOfService from "../../src/locales/vi/pages/TermsOfService.json";
 import viApp from "../../src/locales/vi/App.json";
 
 // English translations
+import enAbout from "../../src/locales/us/landing/AboutSection.json";
+import enBCPOverview from "../../src/locales/us/landing/BCPOverviewSection.json";
 import enBusinessSectors from "../../src/locales/us/landing/BusinessSectorsSection.json";
 import enChallenges from "../../src/locales/us/landing/ChallengesSection.json";
 import enContact from "../../src/locales/us/landing/ContactSection.json";
@@ -39,6 +43,8 @@ import enApp from "../../src/locales/us/App.json";
 
 const resources = {
   vi: {
+    about: viAbout,
+    bcpOverview: viBCPOverview,
     businessSectors: viBusinessSectors,
     challenges: viChallenges,
     contact: viContact,
@@ -57,6 +63,8 @@ const resources = {
     app: viApp,
   },
   en: {
+    about: enAbout,
+    bcpOverview: enBCPOverview,
     businessSectors: enBusinessSectors,
     challenges: enChallenges,
     contact: enContact,

@@ -1,7 +1,7 @@
 {
   "feedbackSection": {
-    "badge": "Customer feedback",
-    "title": "What business leaders say about BCP.Global",
+    "badge": "Testimonials",
+    "title": "What business leaders say about <span class=\"text-brand-accent\">BCP.Global</span>",
     "description": "BCP is a platform that helps connect businesses with suitable partners through AI, creating sustainable and effective business relationships.",
     "feedbacks": [
       {
@@ -22,10 +22,10 @@
       },
       {
         "id": 3,
-        "quote": "BCP's AI not only finds partners but also assesses reliability very well.",
+        "quote": "Thanks to BCP, we now have a trusted partner in Vietnam, which positions our company strongly for future growth in the region. We highly recommend bcp to any organization seeking expert business matching services, local market insights, and a genuinely supportive partner.",
         "author": "Wichak Chongudomlert",
         "position": "Founder",
-        "company": "Signify",
+        "company": "Signify and ICX Technologies",
         "avatar": "/images/Wichark.webp"
       }
     ]

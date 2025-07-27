@@ -28,7 +28,7 @@ export default function HeroSection() {
     },
   };
 
-  // Get business persons from translation
+  // Get business persons from translation (now used as company data)
   const businessPersons = t("heroSection.businessPersons", {
     returnObjects: true,
   }) as Array<{
@@ -37,7 +37,7 @@ export default function HeroSection() {
   }>;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden pt-16 md:pt-0">
       {/* Video Background - Fullscreen */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -61,7 +61,7 @@ export default function HeroSection() {
             className="absolute w-full h-full"
             style={{
               backgroundImage: `linear-gradient(#00f2fe 1px, transparent 1px),
-                                 linear-gradient(90deg, #00f2fe 1px, transparent 1px)`,
+                                linear-gradient(90deg, #00f2fe 1px, transparent 1px)`,
               backgroundSize: "40px 40px",
               transform: "perspective(500px) rotateX(60deg)",
               transformOrigin: "top",
@@ -83,37 +83,48 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="container mx-auto px-4 z-10">
+      {/* Main Content Container - Centered */}
+      <div className="container mx-auto px-4 z-10 w-full flex-1 flex items-center justify-center mt-[70px]">
         <motion.div
-          className="max-w-4xl mx-auto text-center space-y-8"
+          className="max-w-4xl mx-auto text-center space-y-3 md:space-y-4"
           initial="hidden"
           animate="visible"
           variants={containerVariants}
         >
-          <motion.div
-            variants={itemVariants}
-            className="inline-flex items-center px-4 py-2 rounded-full bg-transparent border-transparent mb-6 mx-auto opacity-0"
-          >
-            <span className="w-2 h-2 rounded-full bg-bright-teal animate-pulse mr-2"></span>
-            <span className="text-base md:text-lg font-medium text-bright-teal font-primary">
-              {t("heroSection.badge")}
-            </span>
-          </motion.div>
+          {/* Hide badge when empty */}
+          {t("heroSection.badge") && (
+            <motion.div
+              variants={itemVariants}
+              className="inline-flex items-center px-4 py-2 rounded-full bg-transparent border-transparent mb-2 md:mb-3 mx-auto opacity-0"
+            >
+              <span className="w-2 h-2 rounded-full bg-brand-accent animate-pulse mr-2"></span>
+              <span className="text-sm md:text-base lg:text-lg font-medium text-brand-accent font-primary">
+                {t("heroSection.badge")}
+              </span>
+            </motion.div>
+          )}
 
           <motion.h1
             variants={itemVariants}
-            className="text-3xl md:text-5xl font-heading font-bold leading-loose text-white bg-clip-text"
-            style={{ lineHeight: "1.3", letterSpacing: "0.5px" }}
+            className="text-3xl md:text-4xl lg:text-6xl font-heading font-bold leading-tight text-white bg-clip-text"
+            style={{ lineHeight: "1.2", letterSpacing: "0.5px" }}
           >
             {t("heroSection.title")}
           </motion.h1>
 
-          <motion.p
+          <motion.h2
             variants={itemVariants}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-primary"
+            className="text-lg md:text-xl lg:text-2xl font-heading font-semibold text-center text-white mb-2"
+            style={{ letterSpacing: "2px" }}
           >
-            {t("heroSection.description")}
-          </motion.p>
+            {t("heroSection.subtitle")}
+          </motion.h2>
+
+          <motion.div
+            variants={itemVariants}
+            className="text-sm md:text-base lg:text-lg text-gray-300 max-w-3xl mx-auto font-primary px-4"
+            dangerouslySetInnerHTML={{ __html: t("heroSection.description") }}
+          />
 
           <motion.div
             variants={itemVariants}
@@ -136,7 +147,7 @@ export default function HeroSection() {
             <GradientButton
               size="lg"
               variant="outline"
-              className="flex-1 max-w-[160px] md:max-w-none md:flex-none font-semibold text-sm md:text-base"
+              className="flex-1 max-w-[160px] md:max-w-none md:flex-none font-semibold text-sm md:text-base border-2 border-white text-white shadow-lg shadow-white/30 hover:bg-white/10 hover:text-white hover:border-white transition-all duration-300"
               onClick={() => {
                 document.getElementById("contact")?.scrollIntoView({
                   behavior: "smooth",
@@ -162,26 +173,44 @@ export default function HeroSection() {
               </span>
             </GradientButton>
           </motion.div>
+        </motion.div>
+      </div>
 
+      {/* Trusted by section - Moved to bottom */}
+      <div className="container mx-auto px-4 z-10 w-full pb-8 md:pb-12">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="text-center"
+        >
           <motion.div
             variants={itemVariants}
-            className="flex items-center justify-center gap-4 pt-8"
+            className="max-w-4xl mx-auto"
           >
-            <div className="flex -space-x-2">
-              {businessPersons.map((person, index) => (
-                <img
+            <p className="text-xs md:text-sm text-gray-400 font-primary mb-3 md:mb-4">
+              {t("heroSection.trustedBy.title")}
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8">
+              {businessPersons.slice(0, 5).map((company, index) => (
+                <div
                   key={index}
-                  src={person.src}
-                  alt={person.alt}
-                  className="w-10 h-10 rounded-full border-2 border-deep-dark object-cover"
-                />
+                  className="flex items-center justify-center w-16 h-8 md:w-20 md:h-10 lg:w-24 lg:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <img
+                    src={company.src}
+                    alt={company.alt}
+                    className="max-w-full max-h-full object-contain filter brightness-0 invert"
+                  />
+                </div>
               ))}
-            </div>
-            <div className="text-sm text-gray-400 font-primary">
-              <span className="font-semibold text-white">
-                {t("heroSection.stats.number")}
-              </span>{" "}
-              {t("heroSection.stats.text")}
+              {businessPersons.length > 5 && (
+                <div className="flex items-center justify-center opacity-60">
+                  <span className="text-xs md:text-sm text-gray-400 font-primary px-2">
+                    {t("heroSection.trustedBy.andMore")}
+                  </span>
+                </div>
+              )}
             </div>
           </motion.div>
         </motion.div>

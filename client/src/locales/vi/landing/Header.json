@@ -1,9 +1,11 @@
 {
   "header": {
     "navigation": {
+      "home": "Trang chủ",
+      "about": "Về chúng tôi", 
       "features": "Tính năng",
       "pricing": "Bảng giá",
-      "aboutUs": "Về chúng tôi"
+      "contact": "Liên hệ"
     },
     "cta": {
       "getStarted": "Thử Miễn Phí"

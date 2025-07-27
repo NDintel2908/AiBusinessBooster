@@ -1,10 +1,10 @@
 {
   "featuresSection": {
-    "title": "Năng lực BCP",
-    "description": "Góc nhìn dựa trên dữ liệu về thành công các kết nối giao thương kể từ năm 2018",
+    "title": "Kể từ 2018",
+    "description": "",
     "stats": [
       {
-        "number": "#1",
+        "number": "1st",
         "description": "Hạng 1 vòng tiền ươm tại cuộc thi AI Star 2024",
         "endValue": 1
       },
@@ -17,11 +17,6 @@
         "number": "1600+",
         "description": "Kết nối thành công",
         "endValue": 1600
-      },
-      {
-        "number": "3+",
-        "description": "Quốc gia thành viên",
-        "endValue": 3
       }
     ]
   }

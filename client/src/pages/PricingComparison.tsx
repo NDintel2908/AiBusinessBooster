@@ -8,7 +8,7 @@ export default function PricingComparison() {
   const { t } = useTranslation('pricingComparison');
 
   return (
-    <div className="min-h-screen bg-deep-dark text-gray-200">
+    <div className="min-h-screen bg-gray-900 text-gray-200">
       <Header />
       <div className="container mx-auto px-4 pt-32 pb-16">
         <motion.div
@@ -18,7 +18,7 @@ export default function PricingComparison() {
           className="mb-10"
         >
           <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-electric-purple">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-accent">
               {t('pricingComparison.title')}
             </span>
           </h1>
@@ -47,7 +47,7 @@ export default function PricingComparison() {
                 </th>
                 <th
                   colSpan={2}
-                  className="px-4 py-3 border border-gray-700 text-center font-heading text-white bg-yellow-600/30 min-w-[300px]"
+                  className="px-4 py-3 border border-gray-700 text-center font-heading text-white bg-brand-accent/20 min-w-[300px]"
                 >
                   {t('pricingComparison.table.headers.premiumUser')}
                 </th>
@@ -69,7 +69,7 @@ export default function PricingComparison() {
               <tr>
                 <td
                   colSpan={5}
-                  className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold"
+                  className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-brand-accent font-semibold"
                 >
                   {t('pricingComparison.table.sections.general.title')}
                 </td>
@@ -88,7 +88,7 @@ export default function PricingComparison() {
                       <td className="px-4 py-3 border border-gray-700 text-center">
                         {row.id === 2 ? (
                           <p>
-                            <span className="font-bold text-red-500">
+                            <span className="font-bold text-brand-accent">
                               {row.vietnamCompany}
                             </span>
                           </p>
@@ -99,7 +99,7 @@ export default function PricingComparison() {
                       <td className="px-4 py-3 border border-gray-700 text-center">
                         {row.id === 2 ? (
                           <p>
-                            <span className="font-bold text-red-500">{row.foreignCompany}</span>
+                            <span className="font-bold text-brand-accent">{row.foreignCompany}</span>
                           </p>
                         ) : (
                           <span className="text-white-500">{row.foreignCompany}</span>
@@ -125,7 +125,7 @@ export default function PricingComparison() {
               <tr>
                 <td
                   colSpan={5}
-                  className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold"
+                  className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-brand-accent font-semibold"
                 >
                   {t('pricingComparison.table.sections.privileges.title')}
                 </td>
@@ -176,7 +176,7 @@ export default function PricingComparison() {
               <tr>
                 <td
                   colSpan={5}
-                  className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-red-500 font-semibold"
+                  className="px-4 py-3 border border-gray-700 bg-gray-800/50 font-heading text-brand-accent font-semibold"
                 >
                   {t('pricingComparison.table.sections.expandedAI.title')}
                 </td>
@@ -211,7 +211,7 @@ export default function PricingComparison() {
                   <th className="px-4 py-3 border border-gray-700 text-left font-heading text-white min-w-[200px]">
                     {t('pricingComparison.slotConnecting.headers.info')}
                   </th>
-                  <th className="px-4 py-3 border border-gray-700 text-center font-heading text-white min-w-[300px] bg-[#e9e5f7]/20">
+                  <th className="px-4 py-3 border border-gray-700 text-center font-heading text-white min-w-[300px] bg-brand-accent/20">
                     {t('pricingComparison.slotConnecting.headers.slotConnecting')}
                   </th>
                 </tr>
@@ -257,7 +257,7 @@ export default function PricingComparison() {
               href={t('pricingComparison.cta.link')}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-neon-blue to-electric-purple py-3 px-8 rounded-full text-white font-primary font-semibold transition-all duration-300 hover:shadow-glow"
+              className="bg-gradient-to-r from-brand-primary to-brand-accent py-3 px-8 rounded-full text-white font-primary font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-brand-primary/30"
             >
               {t('pricingComparison.cta.text')}
             </a>

@@ -12,23 +12,46 @@ export interface GradientButtonProps extends ButtonHTMLAttributes<HTMLButtonElem
 const GradientButton = forwardRef<HTMLButtonElement, GradientButtonProps>(
   ({ className, variant = "primary", size = "md", animate = false, children, ...props }, ref) => {
     return (
-      <Button
-        className={cn(
-          "font-medium transition-all duration-300 rounded-lg font-primary",
-          variant === "primary" 
-            ? "bg-gradient-to-r from-neon-blue to-electric-purple text-black hover:shadow-lg hover:shadow-electric-purple/20 border-0" 
-            : "border border-neon-blue bg-transparent text-neon-blue hover:bg-neon-blue/10 hover:shadow-md hover:shadow-neon-blue/10",
-          size === "sm" && "px-4 py-2 text-sm",
-          size === "md" && "px-6 py-3 text-base",
-          size === "lg" && "px-8 py-4 text-base",
-          animate && "animate-pulse",
-          className
+      <>
+        {animate && (
+          <style jsx>{`
+            @keyframes slow-jiggle {
+              0%, 100% {
+                transform: scale(1);
+              }
+              25% {
+                transform: scale(1.02);
+              }
+              50% {
+                transform: scale(1.05);
+              }
+              75% {
+                transform: scale(1.02);
+              }
+            }
+            .animate-slow-jiggle {
+              animation: slow-jiggle 3s ease-in-out infinite;
+            }
+          `}</style>
         )}
-        ref={ref}
-        {...props}
-      >
-        {children}
-      </Button>
+        <Button
+          className={cn(
+            "font-medium transition-all duration-300 rounded-lg font-primary",
+            variant === "primary" 
+              ? "bg-gradient-to-r from-brand-primary to-brand-accent text-white hover:shadow-lg hover:shadow-brand-accent/20 border-0" 
+              : "border border-brand-accent bg-transparent text-brand-accent hover:bg-brand-accent/10 hover:shadow-md hover:shadow-brand-accent/10",
+            size === "sm" && "px-4 py-2 text-sm",
+            size === "md" && "px-6 py-3 text-base",
+            size === "lg" && "px-8 py-4 text-base",
+            animate && "animate-slow-jiggle",
+            className
+          )}
+          ref={ref}
+          {...props}
+        >
+          {children}
+        </Button>
+      </>
     );
   }
 );
