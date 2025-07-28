@@ -53,7 +53,7 @@
         "price": "$1,200",
         "period": "/year",
         "description": "Comprehensive solution for businesses",
-        "ctaText": "Connect now",
+        "ctaText": "Upgrade now",
         "features": [
           { "text": "Premium Verified badge", "included": true },
           { "text": "10 monthly renewable B2B connections", "included": true },

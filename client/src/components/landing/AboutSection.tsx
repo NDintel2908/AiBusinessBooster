@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import BCPAILogo from "./BCPAI.webp";
 import "../../lib/i18n";
 
 export default function AboutSection() {
@@ -48,35 +47,15 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="relative w-96 h-96 grid place-items-center">
-              {/* Multi-layered Glowing Background */}
-              <div className="absolute inset-0 rounded-full animate-pulse-glow">
-                <div className="absolute inset-0 rounded-full bg-gradient-radial from-blue-500/15 via-purple-400/10 to-transparent blur-3xl"></div>
-                <div className="absolute inset-4 rounded-full bg-gradient-radial from-blue-400/25 via-cyan-400/15 to-transparent blur-2xl"></div>
-                <div className="absolute inset-8 rounded-full bg-gradient-radial from-blue-300/35 via-cyan-400/20 to-transparent blur-xl"></div>
-              </div>
-
-              {/* Central Logo */}
-              <div className="relative z-20">
+            <div className="relative w-full h-auto grid place-items-center">
+              {/* BCP Image */}
+              <div className="relative z-20 w-full">
                 <img
-                  src={BCPAILogo}
-                  alt="BCP AI Logo"
-                  className="w-48 h-48 object-contain drop-shadow-2xl"
+                  src="/images/BCP.jpg"
+                  alt="BCP"
+                  className="w-full h-96 md:h-[28rem] lg:h-[32rem] object-contain rounded-lg shadow-2xl"
                 />
               </div>
-
-              {/* Rotating orbital elements */}
-              <div className="absolute inset-0 rounded-full animate-spin-slow">
-                <div className="absolute top-4 left-1/2 w-4 h-4 bg-cyan-400 rounded-full blur-sm -translate-x-1/2 animate-glow-intense shadow-lg shadow-cyan-400/80"></div>
-                <div className="absolute bottom-4 left-1/2 w-4 h-4 bg-electric-purple rounded-full blur-sm -translate-x-1/2 animate-glow-intense shadow-lg shadow-purple-400/80"></div>
-                <div className="absolute left-4 top-1/2 w-4 h-4 bg-bright-teal rounded-full blur-sm -translate-y-1/2 animate-glow-intense shadow-lg shadow-teal-400/80"></div>
-                <div className="absolute right-4 top-1/2 w-4 h-4 bg-neon-blue rounded-full blur-sm -translate-y-1/2 animate-glow-intense shadow-lg shadow-blue-400/80"></div>
-              </div>
-
-              {/* Animated rings */}
-              <div className="absolute inset-0 border-2 border-blue-400/50 rounded-full animate-pulse"></div>
-              <div className="absolute -inset-4 border border-cyan-400/40 rounded-full animate-spin-reverse"></div>
-              <div className="absolute -inset-8 border border-blue-400/30 rounded-full animate-pulse-slow"></div>
             </div>
           </motion.div>
 

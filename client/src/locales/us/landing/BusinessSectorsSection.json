@@ -3,7 +3,7 @@
     "sectionHeader": {
       "badge": "Supported Industries",
       "title": "25 Business Industries Supported by <1>BCP.Global</1>",
-      "description": "Explore the comprehensive list of business industries that our AI platform can support for connection and growth"
+      "description": "Explore the comprehensive list of business industries that our AI platform can support for connection and growth."
     },
     "groupsList": {
       "title": "Industry List by Groups",
@@ -132,7 +132,7 @@
       }
     },
     "callToAction": {
-      "text": "Don't see your industry in the list? We're always ready to expand our support",
+      "text": "Don’t see your industry on the list? We’re always ready to expand our support.",
       "button": "Contact for consultation"
     }
   }

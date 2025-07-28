@@ -575,13 +575,12 @@ export default function PricingSection() {
             </div>
           </div>
 
-          {/* Additional Info Section */}
+          {/* Additional Info Section - HIDDEN */}
+          {/* 
           <div className="mt-16 text-center">
             <div className="backdrop-blur-sm bg-white/5 border border-gray-700 rounded-2xl p-8 mx-auto relative overflow-hidden">
-              {/* Background gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-brand-accent/5 via-brand-primary/5 to-brand-accent/5 rounded-2xl"></div>
 
-              {/* Content */}
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {t("pricingSection.additionalInfo.title")}
@@ -592,7 +591,6 @@ export default function PricingSection() {
                 <div className="flex justify-center">
                   <GradientButton
                     onClick={() => {
-                      // Navigate to pricing comparison page with correct language
                       window.location.href = `/${lang}/pricing-comparison`;
                     }}
                     size="md"
@@ -617,11 +615,11 @@ export default function PricingSection() {
                 </div>
               </div>
 
-              {/* Decorative elements */}
               <div className="absolute top-4 right-4 w-20 h-20 bg-brand-accent/10 rounded-full blur-xl"></div>
               <div className="absolute bottom-4 left-4 w-16 h-16 bg-brand-primary/10 rounded-full blur-xl"></div>
             </div>
           </div>
+          */}
         </div>
       </section>
     </div>
