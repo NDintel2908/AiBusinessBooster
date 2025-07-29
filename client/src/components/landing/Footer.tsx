@@ -38,8 +38,9 @@ export default function Footer() {
       </div>
 
       <div className="container mx-auto px-4 z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mb-12">
+          {/* Logo Column */}
+          <div className="pr-0 md:pr-8 lg:pr-12">
             <div>
               <div className="w-40 h-40 relative overflow-hidden mb-2 logo">
                 <img
@@ -95,7 +96,8 @@ export default function Footer() {
             </div> */}
           </div>
 
-          <div>
+          {/* Company Links Column */}
+          <div className="pr-0 md:pr-6 lg:pr-8">
             <h4 className="text-white font-heading font-semibold mb-6">
               {t("footer.company.title")}
             </h4>
@@ -123,18 +125,18 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href={`/${lang}/#service-section`}
+                  href={`/${lang}/#features`}
                   onClick={(e) => {
                     e.preventDefault();
                     if (window.location.pathname !== `/${lang}`) {
                       sessionStorage.setItem(
                         "scrollToSection",
-                        "service-section",
+                        "features-section",
                       );
                       window.location.href = `/${lang}`;
                     } else {
                       const section =
-                        document.getElementById("service-section");
+                        document.getElementById("features-section");
                       if (section) {
                         section.scrollIntoView({ behavior: "smooth" });
                         window.history.replaceState(null, "", `/${lang}`);
@@ -170,7 +172,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* Resources Column */}
+          <div className="pr-0 md:pr-6 lg:pr-8">
             <h4 className="text-white font-heading font-semibold mb-6">
               {t("footer.resources.title")}
             </h4>
@@ -217,7 +220,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center">
+          {/* Payment Partners Column */}
+          <div className="flex flex-col items-center pr-0 md:pr-6 lg:pr-8">
             <h4 className="text-white font-heading font-semibold mb-6 text-center">
               {t("footer.paymentPartners.title")}
             </h4>
@@ -235,7 +239,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          {/* Company Info Column */}
+          <div className="pr-0">
             <h4 className="text-white font-heading font-semibold mb-6">
               {t("footer.companyInfo.title")}
             </h4>
@@ -300,7 +305,11 @@ export default function Footer() {
                     className="w-5 h-5 hover:opacity-80 transition-opacity duration-200"
                     title="Contact via WhatsApp"
                   >
-                    <img src="/images/icon/whatsapp-svgrepo-com.svg" alt="WhatsApp" className="w-5 h-5" />
+                    <img
+                      src="/images/icon/whatsapp-svgrepo-com.svg"
+                      alt="WhatsApp"
+                      className="w-5 h-5"
+                    />
                   </a>
 
                   <a
@@ -310,11 +319,15 @@ export default function Footer() {
                     className="w-5 h-5 hover:opacity-80 transition-opacity duration-200"
                     title="Contact via Zalo"
                   >
-                    <img src="/images/icon/Icon_of_Zalo.svg" alt="Zalo" className="w-5 h-5" />
+                    <img
+                      src="/images/icon/Icon_of_Zalo.svg"
+                      alt="Zalo"
+                      className="w-5 h-5"
+                    />
                   </a>
                 </div>
                 <span>{t("footer.companyInfo.phone")}</span>
-              </li> 
+              </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <svg
                   className="w-5 h-5"
@@ -329,7 +342,7 @@ export default function Footer() {
                     d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <a 
+                <a
                   href={`mailto:${t("footer.companyInfo.mail")}`}
                   className="text-blue-400 hover:text-blue-300 transition duration-300 hover:underline"
                 >
