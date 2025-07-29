@@ -10,6 +10,11 @@ interface StatItemProps {
   endValue: number;
 }
 
+// Function to format numbers with dots as thousand separators
+const formatNumberWithDots = (num: number): string => {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+};
+
 const StatItem = ({ number, description, endValue }: StatItemProps) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
@@ -48,7 +53,7 @@ const StatItem = ({ number, description, endValue }: StatItemProps) => {
   return (
     <div className="text-center" ref={ref}>
       <div className="text-[5rem] font-heading font-bold text-[#60A5FA]">
-        {isSpecialText ? number : count}
+        {isSpecialText ? number : formatNumberWithDots(count)}
         {number.includes("+") && "+"}
       </div>
       <p className="text-[1.1rem] font-primary text-gray-400 max-w-sm mx-auto">
@@ -73,8 +78,8 @@ export default function FeaturesSection() {
       <div
         className="absolute inset-0 opacity-5 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/icon/world.png')",
-          filter: "brightness(1.2) contrast(0.8)",
+          backgroundImage: "url('/images/icon/data.png')",
+          filter: "brightness(2.0) contrast(0.8) ",
         }}
       ></div>
 
