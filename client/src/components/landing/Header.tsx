@@ -4,8 +4,8 @@ import { GradientButton } from "@/components/ui/gradient-button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useTranslation } from "react-i18next";
-import BCPAILogo from "./BCPAI.webp";
-// import BCPAILogo from "./BCPAI1.png";
+// import BCPAILogo from "./BCPAI.webp";
+import BCPAILogo from "./BCPAI1.png";
 import "../../lib/i18n";
 
 export default function Header() {
@@ -68,8 +68,8 @@ export default function Header() {
       <div
         className={`w-full transition-all duration-300 ${
           isScrolled
-            ? "bg-gray-900/70 backdrop-blur-xl border-b border-gray-800/30 shadow-lg"
-            : "bg-gray-900/40 backdrop-blur-md"
+            ? "bg-white/95 backdrop-blur-xl border-b border-white-200/50 shadow-lg"
+            : "bg-white/90 backdrop-blur-md"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,7 +85,7 @@ export default function Header() {
                 }}
                 className="flex items-center cursor-pointer group"
               >
-                <div className="w-12 h-12 relative overflow-hidden transition-transform duration-200 group-hover:scale-105">
+                <div className="w-40 h-16 relative overflow-hidden transition-transform duration-200 group-hover:scale-105">
                   <img
                     src={BCPAILogo}
                     alt="BCPAI Logo"
@@ -100,7 +100,7 @@ export default function Header() {
               <div className="flex items-center space-x-16">
                 <a
                   href={`/${lang}`}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-800 hover:text-brand-primary font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.home")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -129,7 +129,7 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-800 hover:text-brand-primary font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.about")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -158,7 +158,7 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-800 hover:text-brand-primary font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.features")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -177,7 +177,7 @@ export default function Header() {
                       const sections = document.querySelectorAll(
                         ".scroll-snap-section",
                       );
-                      const pricingSection = sections[6]; // PricingSection is now at index 6
+                      const pricingSection = sections[5]; // PricingSection is now at index 5
                       if (scrollContainer && pricingSection) {
                         scrollContainer.scrollTo({
                           top: (pricingSection as HTMLElement).offsetTop,
@@ -187,7 +187,7 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-800 hover:text-brand-primary font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.pricing")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -206,7 +206,7 @@ export default function Header() {
                       const sections = document.querySelectorAll(
                         ".scroll-snap-section",
                       );
-                      const contactSection = sections[9]; // ContactSection is now at index 9
+                      const contactSection = sections[8]; // ContactSection is now at index 8
                       if (scrollContainer && contactSection) {
                         scrollContainer.scrollTo({
                           top: (contactSection as HTMLElement).offsetTop,
@@ -216,7 +216,7 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-800 hover:text-brand-primary font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.contact")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -256,7 +256,7 @@ export default function Header() {
                 }}
                 className="flex items-center cursor-pointer group"
               >
-                <div className="w-10 h-10 relative overflow-hidden transition-transform duration-200 group-hover:scale-105">
+                <div className="w-32 h-16 relative overflow-hidden transition-transform duration-200 group-hover:scale-105">
                   <img
                     src={BCPAILogo}
                     alt="BCPAI Logo"
@@ -272,7 +272,7 @@ export default function Header() {
                 <LanguageSwitcher />
               </div>
               <button
-                className="text-gray-200 hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2 focus:ring-offset-brand-navy rounded-lg p-2 transition-colors"
+                className="text-gray-800 hover:text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-white rounded-lg p-2 transition-colors"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-label={t("header.mobile.toggleMenu")}
               >
@@ -312,7 +312,7 @@ export default function Header() {
             : "opacity-0 max-h-0 invisible"
         }`}
       >
-        <div className="bg-brand-deep/70 backdrop-blur-xl border-b border-brand-primary/20">
+        <div className="bg-white/95 backdrop-blur-xl border-b border-gray-200/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
             <nav className="flex flex-col space-y-4">
               <a
@@ -322,7 +322,7 @@ export default function Header() {
                   window.location.href = `/${lang}`;
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-800 hover:text-brand-primary font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.home")}
               </a>
@@ -351,7 +351,7 @@ export default function Header() {
                   }
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-800 hover:text-brand-primary font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.about")}
               </a>
@@ -380,7 +380,7 @@ export default function Header() {
                   }
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-800 hover:text-brand-primary font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.features")}
               </a>
@@ -409,7 +409,7 @@ export default function Header() {
                   }
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-800 hover:text-brand-primary font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.pricing")}
               </a>
@@ -438,12 +438,12 @@ export default function Header() {
                   }
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-800 hover:text-brand-primary font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.contact")}
               </a>
 
-              <div className="pt-4 border-t border-brand-primary/30">
+              <div className="pt-4 border-t border-gray-200/50">
                 <a
                   href="https://bcp.global/sign-up"
                   target="_blank"

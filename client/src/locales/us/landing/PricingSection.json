@@ -36,7 +36,7 @@
         "price": "$0",
         "period": "",
         "description": "Start exploring business opportunities",
-        "ctaText": "Try It Free",
+        "ctaText": "Verify now",
         "features": [
           { "text": "Unlimited B2B Connections", "included": true },
           { "text": "Basic AI Matching Agent", "included": true },

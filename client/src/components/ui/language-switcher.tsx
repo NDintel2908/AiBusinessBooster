@@ -20,7 +20,7 @@ interface Language {
 const languages: Language[] = [
   {
     code: "vi",
-    name: "VI",
+    name: "Vi",
     flag: (
       <div className="flag-container">
         <svg
@@ -36,7 +36,7 @@ const languages: Language[] = [
   },
   {
     code: "en",
-    name: "EN",
+    name: "En",
     flag: (
       <div className="flag-container">
         <svg
@@ -94,26 +94,29 @@ export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
           variant="ghost"
           size="sm"
           className={cn(
-            "h-7 px-1.5 text-sm font-normal hover:bg-accent hover:text-accent-foreground",
+            "h-7 px-1.5 text-sm font-normal text-gray-800 hover:bg-gray-100 hover:text-gray-900",
             className,
           )}
         >
           <div className="mr-0.5 flex items-center">{currentLanguage.flag}</div>
-          <ChevronDown className="h-2.5 w-2.5" />
+          <ChevronDown className="h-2.5 w-2.5 text-gray-800" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[70px] min-w-[70px]">
+      <DropdownMenuContent
+        align="end"
+        className="w-[70px] min-w-[70px] bg-white border border-gray-200 shadow-lg"
+      >
         {languages.map((language) => (
           <DropdownMenuItem
             key={language.code}
             onClick={() => handleLanguageChange(language)}
             className={cn(
-              "flex items-center gap-2 cursor-pointer",
-              currentLanguage.code === language.code,
+              "flex items-center gap-2 cursor-pointer text-gray-800 hover:bg-gray-100 hover:text-gray-900",
+              currentLanguage.code === language.code && "bg-gray-50",
             )}
           >
             <div className="flex items-center">{language.flag}</div>
-            <span className="text-sm">{language.name}</span>
+            <span className="text-sm text-gray-800">{language.name}</span>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
