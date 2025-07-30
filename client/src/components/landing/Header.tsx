@@ -4,7 +4,7 @@ import { GradientButton } from "@/components/ui/gradient-button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useTranslation } from "react-i18next";
-import BCPAILogo from "./BCPAI.webp";
+import BCPAILogo from "./BCPAI1.png";
 import "../../lib/i18n";
 
 export default function Header() {
