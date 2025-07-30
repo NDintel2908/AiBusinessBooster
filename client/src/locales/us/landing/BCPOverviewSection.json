@@ -3,7 +3,7 @@
     "badge": "NEW",
     "title": {
       "prefix": "What is",
-      "highlight": "BCP.Global",
+      "highlight": "BCP.Global?",
       "suffix": "?"
     },
     "subtitle": {
