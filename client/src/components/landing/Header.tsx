@@ -100,7 +100,7 @@ export default function Header() {
               <div className="flex items-center space-x-16">
                 <a
                   href={`/${lang}`}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-700 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.home")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -129,7 +129,7 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-700 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.about")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -158,7 +158,7 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-700 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.features")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -187,7 +187,7 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-700 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.pricing")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -216,7 +216,7 @@ export default function Header() {
                       }
                     }
                   }}
-                  className="text-gray-200 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
+                  className="text-gray-700 hover:text-brand-accent font-medium text-sm transition-colors duration-200 relative group whitespace-nowrap"
                 >
                   {t("header.navigation.contact")}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent group-hover:w-full transition-all duration-200"></span>
@@ -322,7 +322,7 @@ export default function Header() {
                   window.location.href = `/${lang}`;
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-700 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.home")}
               </a>
@@ -351,7 +351,7 @@ export default function Header() {
                   }
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-700 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.about")}
               </a>
@@ -380,7 +380,7 @@ export default function Header() {
                   }
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-700 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.features")}
               </a>
@@ -409,7 +409,7 @@ export default function Header() {
                   }
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-700 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.pricing")}
               </a>
@@ -438,7 +438,7 @@ export default function Header() {
                   }
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-gray-200 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
+                className="text-gray-700 hover:text-brand-accent font-medium text-base py-2 px-3 rounded-lg hover:bg-brand-primary/10 transition-all duration-200"
               >
                 {t("header.navigation.contact")}
               </a>
