@@ -14,7 +14,7 @@ const GradientButton = forwardRef<HTMLButtonElement, GradientButtonProps>(
     return (
       <>
         {animate && (
-          <style jsx>{`
+          <style>{`
             @keyframes slow-jiggle {
               0%, 100% {
                 transform: scale(1);
