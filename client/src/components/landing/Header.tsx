@@ -67,8 +67,8 @@ export default function Header() {
       <div
         className={`w-full transition-all duration-300 ${
           isScrolled
-            ? "bg-white/70 backdrop-blur-xl border-b border-gray-800/30 shadow-lg"
-            : "bg-white/40 backdrop-blur-md"
+            ? "bg-white border-b border-gray-200/50 shadow-lg"
+            : "bg-white"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
