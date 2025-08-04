@@ -314,7 +314,7 @@ function PricingPlan({
                 )}
               </div>
             </div>
-            <p className="text-gray-300 text-sm md:text-base px-2">
+            <p className="text-gray-300 text-sm md:text-base px-2 whitespace-pre-line">
               {description}
             </p>
           </div>
