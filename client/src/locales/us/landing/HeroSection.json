@@ -1,11 +1,11 @@
 {
   "heroSection": {
     "badge": "",
-    "title": "UNLOCK GLOBAL B2B CONNECTIONS",
+    "title": "EXPAND YOUR LOCAL B2B CONNECTIONS",
     "subtitle": "BUYING - SELLING - COOPERATION",
     "description": "BCP enables businesses to efficiently SHARE DEMANDS - CONNECT - DEAL<br/>Real smart connection recommendations in real time. Powered by AI Technology.",
     "cta": {
-      "primary": "CONNECT NOW",
+      "primary": "TRY IT FREE",
       "secondary": "CONTACT US"
     },
     "stats": {
@@ -13,13 +13,33 @@
       "number": "500+"
     },
     "trustedBy": {
-      "title": "Trusted by top partners",
+      "title": "Trusted by top teams",
       "andMore": "and more..."
     },
     "businessPersons": [
       {
         "alt": "MDS Technology",
         "src": "/images/icon/MDS_transBG.svg"
+      },
+      {
+        "alt": "AIFA",
+        "src": "/images/icon/AIFA.png"
+      },
+      {
+        "alt": "AIP",
+        "src": "/images/icon/AIP.png"
+      },
+      {
+        "alt": "FI",
+        "src": "/images/icon/FI.png"
+      },
+      {
+        "alt": "HCA",
+        "src": "/images/icon/HCA.png"
+      },
+      {
+        "alt": "ICX",
+        "src": "/images/icon/ICX.png"
       },
       {
         "alt": "IVS",

@@ -188,11 +188,11 @@ export default function HeroSection() {
             <p className="text-xs md:text-sm text-gray-400 font-primary mb-3 md:mb-4">
               {t("heroSection.trustedBy.title")}
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8">
-              {businessPersons.slice(0, 5).map((company, index) => (
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-4 lg:gap-6">
+              {businessPersons.slice(0, 10).map((company, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center w-18 h-10 md:w-28 md:h-14 lg:w-32 lg:h-16 opacity-60 hover:opacity-100 transition-opacity duration-300"
+                  className="flex items-center justify-center w-14 h-10 md:w-26 md:h-12 lg:w-30 lg:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300"
                 >
                   <img
                     src={company.src}
