@@ -7,7 +7,7 @@
       "suffix": "?"
     },
     "subtitle": {
-      "text": "The AI-driven B2B platform redefining global partnerships through intelligent connections.",
+      "text": "The AI-driven B2B (business-to-business) platform redefining global connections through intelligent connections.",
       "actions": {
         "buy": "BUY",
         "sell": "SELL",
@@ -23,15 +23,21 @@
       },
       "story": {
         "title": "Our Story",
-        "description": "Based in Ho Chi Minh City, Vietnam, BCP was created to ease the journey in finding a compatible business partner. The difficulty of a successful business connection starts at the search. Finding a business partner requires trust, compatibility, and compromise. With our multinational team of AI experts, we build an intelligent B2B connection platform that turns advanced artificial intelligence into an efficient partnership tool. With various key members across the globe, our team brings diverse perspectives and localized insights to ensure our AI-driven solutions are both globally relevant and deeply human-centered."
+        "description": [
+          "In global business, the right connection unlocks markets and drives strategic growth — but getting there is inherently complex.",
+          "Endless outreach, gatekeepers, mismatched leads, and costly trade shows drain time, budget, and momentum.",
+          "That's why we built BCP – Business Connecting Platform – An AI-powered B2B Matching Agent that helps you share business needs, connect with verified partners, and close cross-border deals — faster and smarter.",
+          "Unlike static directories, BCP works proactively on your behalf — match your real-time needs with trusted companies.",
+          "<strong>Share your needs — and get matched today!</strong>"
+        ]
       },
       "vision": {
         "title": "Our Vision",
-        "description": "To address the hardships in finding a successful business partnership."
+        "description": "Empowering global B2B connections & growth through an intelligent Super Connecting Agent and multiple specialized AI agents, all within a trusted, all-in-one platform."
       },
       "mission": {
         "title": "Our Mission",
-        "description": "BCP aims to introduce the positive, practical uses of AI and help destigmatize it by showing how it can eliminate barriers in the business world for all organizations."
+        "description": "Removing friction from global B2B connections by matching real business needs with trusted partners — at speed and scale."
       }
     },
     "features": {
@@ -39,15 +45,15 @@
       "list": {
         "realTimeMatching": {
           "title": "Real-time Business Matching",
-          "description": "BCP’s advanced AI technology provides insight and connection opportunities without delay. Find real partners in real time."
+          "description": "BCP’s advanced AI technology provides insight and connection opportunities without delay. <strong>Find real partners in real time.</strong>"
         },
         "directConnection": {
           "title": "Connect directly with final decision-makers",
-          "description": "No intermediaries. Get straight to planning with final decision-makers to ensure efficiency and effective cooperation."
+          "description": "No gatekeepers! Get straight to planning with final decision-makers to ensure efficiency and effective cooperation."
         },
         "aiInsight": {
-          "title": "AI-Powered Insight and Support",
-          "description": "BCP provides analyzes opportunities and delivers detailed information to potential partners."
+          "title": "Flexible Support & Insight",
+          "description": "BCP provides analyzes opportunities and delivers detailed information to potential partners. Yet, an online - offline support to secure a faster B2B connection."
         },
         "security": {
           "title": "Commitment to Security",

@@ -96,9 +96,18 @@ export default function AboutSection() {
                   </svg>
                   {t("bcpOverview.introduction.story.title")}
                 </h4>
-                <p className="text-gray-300 text-base font-primary leading-relaxed">
-                  {t("bcpOverview.introduction.story.description")}
-                </p>
+                <div className="text-gray-300 leading-relaxed space-y-4">
+                  {t("bcpOverview.introduction.story.description", {
+                    returnObjects: true,
+                  }).map((paragraph, index) => (
+                    <p
+                      key={index}
+                      dangerouslySetInnerHTML={{
+                        __html: paragraph,
+                      }}
+                    />
+                  ))}
+                </div>
               </div>
 
               {/* Vision & Mission */}

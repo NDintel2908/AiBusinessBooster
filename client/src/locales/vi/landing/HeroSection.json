@@ -18,12 +18,8 @@
     },
     "businessPersons": [
       {
-        "alt": "MDS Technology",
-        "src": "/images/icon/MDS_transBG.svg"
-      },
-      {
-        "alt": "AIFA",
-        "src": "/images/icon/AIFA.png"
+        "alt": "HCA",
+        "src": "/images/icon/HCA.png"
       },
       {
         "alt": "AIP",
@@ -34,8 +30,20 @@
         "src": "/images/icon/FI.png"
       },
       {
-        "alt": "HCA",
-        "src": "/images/icon/HCA.png"
+        "alt": "VFA",
+        "src": "/images/icon/VFA.svg"
+      },
+      {
+        "alt": "MDS Technology",
+        "src": "/images/icon/MDS_transBG.svg"
+      },
+      {
+        "alt": "Vietlink",
+        "src": "/images/icon/Vietlink.svg"
+      },
+      {
+        "alt": "AIFA",
+        "src": "/images/icon/AIFA.png"
       },
       {
         "alt": "ICX",
@@ -44,14 +52,6 @@
       {
         "alt": "IVS",
         "src": "/images/icon/IVS-1.svg"
-      },
-      {
-        "alt": "VFA",
-        "src": "/images/icon/VFA.svg"
-      },
-      {
-        "alt": "Vietlink",
-        "src": "/images/icon/Vietlink.svg"
       },
       {
         "alt": "ACC Company",

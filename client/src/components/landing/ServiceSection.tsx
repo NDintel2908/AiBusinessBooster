@@ -166,9 +166,8 @@ export default function FeaturesSection() {
           </h2>
         </motion.div>
 
-        {/* VIDEO VERSION (Now Active) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Video Player Section */}
+        {/* VIDEO VERSION */}
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <motion.div
             className="flex justify-center items-center"
             initial={{ opacity: 0, x: -30 }}
@@ -193,10 +192,38 @@ export default function FeaturesSection() {
 
               <div className="absolute -inset-3 bg-gradient-to-r from-brand-primary/20 to-brand-accent/20 blur-lg rounded-lg -z-10"></div>
             </div>
+          </motion.div> */}
+
+        {/* HORIZONTAL VIDEO VERSION (Video Centered) */}
+        <div className="space-y-12">
+          <motion.div
+            className="flex justify-center items-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="relative w-full max-w-4xl">
+              <div className="relative bg-gray-800 rounded-t-lg p-4 shadow-xl">
+                <div className="bg-black rounded-md p-4 relative overflow-hidden">
+                  <div className="aspect-video bg-gray-900 rounded-sm flex items-center justify-center relative group">
+                    <VideoPlayer {...videoConfig} />
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none rounded-sm"></div>
+                  </div>
+                </div>
+
+                <div className="h-3 bg-gradient-to-b from-gray-700 to-gray-800 rounded-b-lg"></div>
+              </div>
+
+              <div className="mx-auto w-24 h-2 bg-gray-600 rounded-full mt-2"></div>
+
+              <div className="absolute -inset-4 bg-gradient-to-r from-brand-primary/20 to-brand-accent/20 blur-xl rounded-lg -z-10"></div>
+            </div>
           </motion.div>
 
           {/* Features Grid Section */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -237,19 +264,22 @@ export default function FeaturesSection() {
                         {feature.title}
                       </h4>
 
-                      <p className="text-gray-300 font-primary text-xs leading-relaxed">
-                        {feature.description}
-                      </p>
+                      <p
+                        className="text-gray-300 font-primary text-xs leading-relaxed"
+                        dangerouslySetInnerHTML={{
+                          __html: feature.description,
+                        }}
+                      />
                     </div>
                   </GlassCard>
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
 
-        {/* 
-        === HORIZONTAL FEATURES VERSION (Commented Out) ===
+        {/* {/* 
+        === HORIZONTAL FEATURES VERSION (Commented Out) === */}
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -268,11 +298,11 @@ export default function FeaturesSection() {
                 onMouseEnter={() => setHoveredFeature(index)}
                 onMouseLeave={() => setHoveredFeature(null)}
               >
-                <GlassCard 
+                <GlassCard
                   className={`p-6 h-full transition-all duration-500 group hover:scale-105 ${
-                    hoveredFeature === index 
-                      ? `${feature.hoverBorder} bg-gradient-to-br ${feature.hoverBg} shadow-lg shadow-current/20 transform scale-105` 
-                      : 'hover:border-brand-accent/40'
+                    hoveredFeature === index
+                      ? `${feature.hoverBorder} bg-gradient-to-br ${feature.hoverBg} shadow-lg shadow-current/20 transform scale-105`
+                      : "hover:border-brand-accent/40"
                   }`}
                 >
                   <div className="text-center space-y-4">
@@ -282,26 +312,28 @@ export default function FeaturesSection() {
                       {feature.icon}
                     </div>
 
-                    <h4 className={`text-lg font-heading font-semibold transition-colors duration-300 ${
-                      hoveredFeature === index 
-                        ? getHoverTextColor(index)
-                        : 'text-white group-hover:text-brand-accent'
-                    }`}>
+                    <h4
+                      className={`text-lg font-heading font-semibold transition-colors duration-300 ${
+                        hoveredFeature === index
+                          ? getHoverTextColor(index)
+                          : "text-white group-hover:text-brand-accent"
+                      }`}
+                    >
                       {feature.title}
                     </h4>
 
-                   <p className="text-gray-300 font-primary text-sm leading-relaxed">
-                     {feature.description}
-                   </p>
-                 </div>
-               </GlassCard>
+                    <p
+                      className="text-gray-300 font-primary text-xs leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: feature.description }}
+                    />
+                  </div>
+                </GlassCard>
               </motion.div>
             ))}
           </div>
         </motion.div>
 
-        === END HORIZONTAL FEATURES VERSION ===
-        */}
+        {/* === END HORIZONTAL FEATURES VERSION === */}
       </div>
     </section>
   );

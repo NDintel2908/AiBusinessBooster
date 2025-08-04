@@ -8,8 +8,8 @@
       "singlePackage": "Single Package"
     },
     "tabs": {
-      "buyPerUse": "Pay Per Use",
-      "subscriptionPlans": "Subscription Plans"
+      "buyPerUse": "Pay per Connect",
+      "subscriptionPlans": "Subcription Plans"
     },
     "plans": {
       "oneConnection": {
@@ -17,7 +17,7 @@
         "price": "$20",
         "period": "/successful connection",
         "description": "Excluding 8% VAT",
-        "ctaText": "Connect now",
+        "ctaText": "CONNECT NOW",
         "features": [
           { "text": "BUY - SELL - COLLABORATE connections", "included": true },
           {
@@ -33,12 +33,12 @@
       },
       "starter": {
         "name": "Starter Plan",
-        "price": "$0",
+        "price": "Free ($0)",
         "period": "",
         "description": "Start exploring business opportunities",
-        "ctaText": "Verify now",
+        "ctaText": "JOIN & VERIFY",
         "features": [
-          { "text": "Unlimited B2B Connections", "included": true },
+          { "text": "Find & Connect B2B", "included": true },
           { "text": "Basic AI Matching Agent", "included": true },
           { "text": "24/7 Support", "included": true },
           { "text": "Standard business profile", "included": true },
@@ -52,30 +52,32 @@
         "name": "Premium User",
         "price": "$1,200",
         "period": "/year",
-        "description": "Comprehensive solution for businesses",
-        "ctaText": "Upgrade now",
+        "description": "Comprehensive solution for businesses. Excluding 8% VAT",
+        "ctaText": "UPGRADE NOW",
         "features": [
           { "text": "Premium Verified badge", "included": true },
-          { "text": "10 monthly renewable B2B connections", "included": true },
           {
-            "text": "Customized Company Profile per target market",
+            "text": "Connect with up to 120 new partners - clients annually",
             "included": true
           },
           {
-            "text": "Priority to receive and send connection requests",
+            "text": "Company Profile Customized for 5 key markets (Japan - Thailand - UK - Vietnam - South Korea)",
             "included": true
           },
           {
-            "text": "Exclusive Early Access to Multi AI Agent",
-            "included": true
-          },
-          { "text": "Support within 2 hours", "included": true },
-          {
-            "text": "Priority Invitation to BCP & Partner Business Matching Events",
+            "text": "Priority connections via both online and offline channels",
             "included": true
           },
           {
-            "text": "Be Part of the AIPartners.asia Ecosystem: Connect & Communicate",
+            "text": "Early access to multiple specialized AI Agents",
+            "included": true
+          },
+          {
+            "text": "Direct support from a dedicated Coordinator",
+            "included": true
+          },
+          {
+            "text": "Priority participation in trade promotion and business matching programs organized by BCP & Partner Networks",
             "included": true
           }
         ]
