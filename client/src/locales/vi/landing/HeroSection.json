@@ -3,7 +3,10 @@
     "badge": "",
     "title": "MỞ KHÓA KẾT NỐI GIAO THƯƠNG TOÀN CẦU",
     "subtitle": "MUA - BÁN - HỢP TÁC",
-    "description": "BCP giúp doanh nghiệp dễ dàng CHIA SẺ NHU CẦU – KẾT NỐI – GIAO DỊCH Gợi ý kết nối thông minh với đối tác phù hợp theo thời gian thực. Vận hành bằng công nghệ AI.",
+    "description": [
+      "BCP giúp doanh nghiệp dễ dàng CHIA SẺ NHU CẦU – KẾT NỐI – GIAO DỊCH",
+      "Gợi ý kết nối thông minh với đối tác phù hợp theo thời gian thực. Vận hành bằng công nghệ AI."
+    ],
     "cta": {
       "primary": "THAM GIA & XÁC THỰC",
       "secondary": "LIÊN HỆ NGAY"

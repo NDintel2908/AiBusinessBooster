@@ -122,9 +122,14 @@ export default function HeroSection() {
 
           <motion.div
             variants={itemVariants}
-            className="text-sm md:text-base lg:text-lg text-gray-300 max-w-3xl mx-auto font-primary px-4"
-            dangerouslySetInnerHTML={{ __html: t("heroSection.description") }}
-          />
+            className="text-sm md:text-base lg:text-lg text-gray-300 max-w-3xl mx-auto font-primary px-4 space-y-2"
+          >
+            {(
+              t("heroSection.description", { returnObjects: true }) as string[]
+            ).map((line, idx) => (
+              <div key={idx} dangerouslySetInnerHTML={{ __html: line }} />
+            ))}
+          </motion.div>
 
           <motion.div
             variants={itemVariants}

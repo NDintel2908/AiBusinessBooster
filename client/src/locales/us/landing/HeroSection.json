@@ -3,7 +3,10 @@
     "badge": "",
     "title": "UNLOCK GLOBAL B2B CONNECTIONS",
     "subtitle": "BUYING - SELLING - COOPERATION",
-    "description": "BCP enables businesses to efficiently SHARE DEMANDS - CONNECT - DEAL. Real smart connection recommendations in real time. Powered by AI Technology.",
+    "description": [
+      "BCP enables businesses to efficiently SHARE DEMANDS - CONNECT - DEAL.",
+      "Real smart connection recommendations in real time. Powered by AI Technology."
+    ],
     "cta": {
       "primary": "JOIN & VERIFY",
       "secondary": "CONTACT US"

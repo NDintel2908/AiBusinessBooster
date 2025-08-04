@@ -32,7 +32,7 @@ export default function AboutSection() {
           </h2>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-primary leading-relaxed mb-8">
+          <p className="text-gray-300 font-primary">
             {t("bcpOverview.subtitle.text")}
           </p>
         </motion.div>
@@ -68,7 +68,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <div className="space-y-4">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-6">
+              {/* <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-6">
                 <span className="text-white">
                   {t("bcpOverview.introduction.title.prefix")}
                 </span>
@@ -76,7 +76,7 @@ export default function AboutSection() {
                   {" "}
                   {t("bcpOverview.introduction.title.highlight")}
                 </span>
-              </h3>
+              </h3> */}
 
               {/* Our Story */}
               <div className="bg-gradient-to-r from-gray-800/40 to-gray-700/40 backdrop-blur-sm rounded-2xl p-6 border border-gray-600/30">
