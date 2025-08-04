@@ -19,7 +19,7 @@
         "description": "Excluding 8% VAT",
         "ctaText": "CONNECT NOW",
         "features": [
-          { "text": "BUY - SELL - COLLABORATE connections", "included": true },
+          { "text": "BUY - SELL - COOPERATE connections", "included": true },
           {
             "text": "Chat DIRECTLY with Final Decision-Makers",
             "included": true
@@ -41,18 +41,14 @@
           { "text": "Find & Connect B2B", "included": true },
           { "text": "Basic AI Matching Agent", "included": true },
           { "text": "24/7 Support", "included": true },
-          { "text": "Standard business profile", "included": true },
-          {
-            "text": "Join BCP Vietnam - APAC Business Community",
-            "included": true
-          }
+          { "text": "Standard business profile", "included": true }
         ]
       },
       "premium": {
         "name": "Premium User",
         "price": "$1,200",
         "period": "/year",
-        "description": "Comprehensive solution for businesses (Excluding 8% VAT)",
+        "description": "Comprehensive solution for businesses\n (Excluding 8% VAT)",
         "ctaText": "UPGRADE NOW",
         "features": [
           { "text": "Premium Verified badge", "included": true },
