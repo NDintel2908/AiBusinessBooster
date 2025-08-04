@@ -52,7 +52,7 @@
         "name": "Premium User",
         "price": "$1,200",
         "period": "/year",
-        "description": "Comprehensive solution for businesses. Excluding 8% VAT",
+        "description": "Comprehensive solution for businesses (Excluding 8% VAT)",
         "ctaText": "UPGRADE NOW",
         "features": [
           { "text": "Premium Verified badge", "included": true },

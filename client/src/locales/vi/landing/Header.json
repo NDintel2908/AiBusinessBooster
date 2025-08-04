@@ -2,13 +2,13 @@
   "header": {
     "navigation": {
       "home": "Trang chủ",
-      "about": "Về chúng tôi", 
+      "about": "Về chúng tôi",
       "features": "Tính năng",
-      "pricing": "Bảng giá",
+      "pricing": "Giá",
       "contact": "Liên hệ"
     },
     "cta": {
-      "getStarted": "THAM GIA & XÁC THỰC"
+      "getStarted": "XÁC MINH NGAY"
     },
     "mobile": {
       "toggleMenu": "Toggle mobile menu"

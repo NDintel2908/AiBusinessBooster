@@ -7,7 +7,7 @@
       "suffix": " là gì?"
     },
     "subtitle": {
-      "text": "Nền tảng B2B đầu tiên trên thế giới được hỗ trợ bởi AI, cách mạng hóa cách các doanh nghiệp mua bán và hợp tác.",
+      "text": "Nền tảng kết nối giao thương B2B, ứng dụng AI giúp tái định nghĩa việc kết nối - làm ăn (mua - bán - hợp tác) toàn cầu.",
       "actions": {
         "buy": "MUA",
         "sell": "BÁN",
@@ -23,35 +23,41 @@
       },
       "story": {
         "title": "Câu Chuyện Của Chúng Tôi",
-        "description": "BCP ra đời từ một khám phá đơn giản: việc tìm kiếm đối tác kinh doanh vẫn dựa vào may mắn thay vì dữ liệu. Với đội ngũ đa quốc gia gồm các chuyên gia AI, chúng tôi xây dựng nền tảng kết nối B2B thông minh biến trí tuệ nhân tạo thành chìa khóa thay đổi cuộc chơi."
+        "description": [
+          "Trong kinh doanh toàn cầu, kết nối đúng đối tác là chìa khóa mở ra thị trường và thúc đẩy tăng trưởng chiến lược — nhưng quá trình đó vốn dĩ vô cùng phức tạp.",
+          "Những chuỗi liên hệ bất tận, rào cản trung gian, đối tượng không phù hợp và các hội chợ tốn kém đang tiêu tốn thời gian, ngân sách và cơ hội của doanh nghiệp.",
+          "Đó là lý do chúng tôi phát triển BCP – Business Connecting Platform – Một nền tảng kết nối giao thương B2B ứng dụng AI, giúp doanh nghiệp chia sẻ nhu cầu, kết nối với đối tác đã được xác thực và thúc đẩy giao dịch xuyên biên giới — nhanh hơn, thông minh hơn.",
+          "Khác với kết nối truyền thống, BCP chủ động tìm kiếm giúp bạn — kết nối nhu cầu thực tế với các doanh nghiệp uy tín, theo thời gian thực.",
+          "<strong>Hãy chia sẻ nhu cầu của bạn – để được kết nối ngay hôm nay!</strong>"
+        ]
       },
       "vision": {
         "title": "Tầm Nhìn",
-        "description": "Chúng tôi tin vào một thế giới nơi mọi doanh nghiệp đều tìm được đối tác lý tưởng."
+        "description": "Kết nối & tăng trưởng giao thương B2B toàn cầu với hệ thống AI — thông minh, chuyên biệt, tất cả tích hợp trong một nền tảng."
       },
       "mission": {
         "title": "Sứ Mệnh",
-        "description": "Thông qua công nghệ AI tiên tiến, BCP phá vỡ mọi rào cản, mở ra cơ hội hợp tác hiệu quả cho tất cả các tổ chức, lớn và nhỏ."
+        "description": "Kết nối giao thương B2B toàn cầu hiệu quả hơn – đúng nhu cầu, đúng đối tác, đúng thời điểm."
       }
     },
     "features": {
-      "title": "Tính Năng Cốt Lõi",
+      "title": "Tính Năng Chính",
       "list": {
         "realTimeMatching": {
-          "title": "Ghép Đối Kinh Doanh Thời Gian Thực",
-          "description": "TÌM KIẾM & KẾT NỐI với ĐỐI TÁC PHÙ HỢP • QUẢNG BÁ BẢN THÂN hiệu quả • Tiếp cận thị trường toàn cầu • Hỗ trợ 24/7"
+          "title": "Kết Nối Kinh Doanh Theo Thời Gian Thực",
+          "description": "Công nghệ AI tiên tiến của BCP phân tích thông tin và cung cấp gợi ý kết nối với doanh nghiệp tương ứng phù hợp tức thì. Tìm đúng đối tác — đúng thời điểm."
         },
         "directConnection": {
-          "title": "Kết nối trực tiếp với người ra quyết định cuối cùng",
-          "description": "Không trung gian. Đi thẳng vào việc lập kế hoạch với những người ra quyết định cuối cùng để đảm bảo hiệu quả và hợp tác hiệu quả."
+          "title": "Kết Nối Trực Tiếp Với Người Ra Quyết Định Cuối Cùng",
+          "description": "Không đợi chờ! Trò chuyện trực tiếp với người có quyền quyết định để tối ưu hiệu quả và thúc đẩy hợp tác nhanh chóng."
         },
         "aiInsight": {
-          "title": "Thông Tin Chi Tiết và Hỗ Trợ từ AI",
-          "description": "BCP cung cấp phân tích cơ hội và cung cấp thông tin chi tiết cho các đối tác tiềm năng."
+          "title": "Hỗ Trợ Linh Hoạt & Thông Tin Chuyên Sâu",
+          "description": "BCP phân tích cơ hội và cung cấp thông tin chi tiết đến đối tác tiềm năng. Kết hợp hỗ trợ online – offline giúp đẩy nhanh quá trình kết nối giao thương B2B."
         },
         "security": {
           "title": "Cam Kết Bảo Mật",
-          "description": "Dữ liệu và giao tiếp trong BCP luôn được bảo vệ. Tất cả trao đổi đều được mã hóa và tuân thủ các tiêu chuẩn bảo mật quốc tế."
+          "description": "Mọi dữ liệu và trao đổi trên BCP đều được mã hóa và bảo vệ theo tiêu chuẩn bảo mật quốc tế."
         }
       }
     }

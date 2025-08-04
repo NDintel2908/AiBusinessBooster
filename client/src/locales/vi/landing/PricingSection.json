@@ -1,84 +1,82 @@
 {
   "pricingSection": {
     "badge": "Chính sách giá",
-    "title": "Chọn gói phù hợp với bạn",
-    "description": "Giải pháp linh hoạt cho mọi quy mô doanh nghiệp",
+    "title": "Hãy chọn gói dịch vụ phù hợp với doanh nghiệp bạn",
+    "description": "Giải pháp linh hoạt dành riêng cho bạn",
     "labels": {
       "mostPopular": "Phổ biến nhất",
       "singlePackage": "Gói lẻ"
     },
     "tabs": {
-      "buyPerUse": "Trả theo lượt",
+      "buyPerUse": "Thanh toán khi kết nối",
       "subscriptionPlans": "Gói đăng ký"
     },
     "plans": {
       "oneConnection": {
         "name": "One Connection",
         "price": "500.000 VND",
-        "period": "/kết nối",
+        "period": "/kết nối thành công",
         "description": "Chưa bao gồm 8% VAT",
-        "ctaText": "Mua ngay",
+        "ctaText": "KẾT NỐI NGAY",
         "features": [
-          { "text": "Kết nối MUA - BÁN - HỢP TÁC", "included": true },
-          { "text": "Chat TRỰC TIẾP với doanh nghiệp", "included": true },
-          { "text": "Thuật toán AI kết nối thông minh", "included": true },
-          { "text": "Bảo mật - dễ dùng - đáng tin cậy", "included": true },
-          { "text": "Mở rộng ra Nhật Bản và quốc tế", "included": true },
+          { "text": "Kết nối MUA – BÁN – HỢP TÁC", "included": true },
+          {
+            "text": "Trò chuyện TRỰC TIẾP với người ra quyết định cuối cùng",
+            "included": true
+          },
+          { "text": "AI Matching Agent", "included": true },
+          { "text": "Bảo mật – Thân thiện – Đáng tin cậy", "included": true },
+          {
+            "text": "Mở rộng thị trường sang Nhật Bản & toàn cầu",
+            "included": true
+          },
           { "text": "Hỗ trợ đa ngôn ngữ", "included": true },
-          { "text": "Thanh toán linh hoạt", "included": true }
+          { "text": "Phương thức thanh toán linh hoạt", "included": true }
         ]
       },
       "starter": {
         "name": "Starter Plan",
-        "price": "Miễn phí",
+        "price": "Miễn phí (0 VND)",
         "period": "",
-        "description": "Bắt đầu khám phá cơ hội kinh doanh",
-        "ctaText": "Trải nghiệm",
+        "description": "Khởi đầu hành trình khám phá cơ hội kinh doanh",
+        "ctaText": " THAM GIA & XÁC THỰC",
         "features": [
-          { "text": "Kết nối B2B không giới hạn", "included": true },
-          { "text": "AI Matching cơ bản", "included": true },
+          { "text": "Tìm kiếm & kết nối giao thương B2B", "included": true },
+          { "text": "AI Matching Agent cơ bản", "included": true },
           { "text": "Hỗ trợ 24/7", "included": true },
-          { "text": "Hồ sơ doanh nghiệp chuẩn", "included": true },
-          {
-            "text": "Tham gia cộng đồng giao thương BCP Vietnam - APAC",
-            "included": true
-          }
+          { "text": "Hồ sơ doanh nghiệp tiêu chuẩn", "included": true }
         ]
       },
       "premium": {
         "name": "Premium User",
         "price": "30.000.000 VND",
         "period": "/năm",
-        "description": "Giải pháp toàn diện cho doanh nghiệp",
-        "ctaText": "Mua ngay",
+        "description": "Giải pháp toàn diện dành cho doanh nghiệp (Chưa bao gồm VAT 8%)",
+        "ctaText": "NÂNG CẤP NGAY",
         "features": [
-          { "text": "Tích xanh xác thực Thành viên tin cậy", "included": true },
           {
-            "text": "Kết nối 10 Đối tác - Khách hàng mới mỗi tháng",
+            "text": "Tích xác thực Premium User (Thành viên Tin cậy)",
             "included": true
           },
           {
-            "text": "Thiết kế hồ sơ Doanh nghiệp theo thị trường mục tiêu",
+            "text": "Kết nối đến 120 Đối tác - Khách hàng mới hàng năm",
             "included": true
           },
           {
-            "text": "Được ưu tiên nhận và gửi kết nối đến Đối tác - Khách hàng mới",
+            "text": "Thiết kế Hồ Sơ Doanh nghiệp theo 5 thị trường chính (Nhật, Thái, Anh, Việt, Hàn)",
             "included": true
           },
           {
-            "text": "Được mời trải nghiệm sớm Multi AI Agent",
+            "text": "Kết nối ưu tiên qua các kênh online và offline",
             "included": true
           },
           {
-            "text": "Hỗ trợ trong vòng 2 giờ khi nhận được yêu cầu",
+            "text": "Trải nghiệm sớm các AI Agent chuyên môn",
             "included": true
           },
+          { "text": "Hỗ trợ trực tiếp bởi Điều phối viên", "included": true },
           {
-            "text": "Ưu tiên mời tham gia kết nối giao thương thuộc BCP và đối tác",
-            "included": true
-          },
-          {
-            "text": "Tham gia truyền thông và kết nối cùng Hệ sinh thái AIPartners.asia",
+            "text": "Ưu tiên tham gia các chương trình giao thương - xúc tiến thương mại do BCP & mạng lưới Đối tác tổ chức",
             "included": true
           }
         ]

@@ -1,56 +1,56 @@
 {
     "challengesSection": {
         "sectionHeader": {
-        "badge": "So sánh thị trường",
-        "title": "Phương pháp <0>truyền thống</0> vs <1>BCP.Global</1>",
-        "description": "Việc kết nối cá nhân qua mạng xã hội ngày càng dễ dàng, NHƯNG việc kết nối giữa Doanh nghiệp với Doanh nghiệp (B2B) vẫn rất tốn kém, mất nhiều thời gian và thiếu tin cậy."
-    },
-    "headers": {
-        "traditional": {
-        "title": "Phương pháp truyền thống",
-        "subtitle": "Cách tiếp cận cũ với nhiều hạn chế"
+            "badge": "So sánh thị trường",
+            "title": "Phương pháp <0>truyền thống</0> vs <1>BCP.Global</1>",
+            "description": "Kết nối giao thương B2B vẫn vô cùng đắt đỏ mặc cho sự phát triển của mạng xã hội."
         },
-        "bcp": {
-        "title": "BCP.Global Solution",
-        "subtitle": "Giải pháp thông minh với AI"
+        "headers": {
+            "traditional": {
+                "title": "Phương pháp truyền thống",
+                "subtitle": "Cách tiếp cận cũ với nhiều hạn chế"
+            },
+            "bcp": {
+                "title": "BCP.Global Solution",
+                "subtitle": "Giải pháp thông minh với AI"
+            }
+        },
+        "comparisons": [
+            {
+                "traditional": {
+                    "title": "Đầu tư lớn – Hiệu quả thấp",
+                    "description": "Chi phí vận hành lớn, khó đo lường hiệu quả, tốn nguồn lực duy trì"
+                },
+                "bcp": {
+                    "title": "Đầu tư chiến lược – Hiệu quả vượt trội",
+                    "description": "AI Matching Agent giúp tối ưu hóa chi phí, chỉ trả tiền mỗi kết nối thành công"
+                }
+            },
+            {
+                "traditional": {
+                    "title": "Tốn thời gian",
+                    "description": "Quy trình sàng lọc thủ công kéo dài thời gian hợp tác"
+                },
+                "bcp": {
+                    "title": "Kết nối tức thì",
+                    "description": "AI đề xuất đối tác phù hợp, bạn chỉ việc đánh giá và kết nối"
+                }
+            },
+            {
+                "traditional": {
+                    "title": "Thiếu tin cậy",
+                    "description": "Kết nối thành công nhưng vẫn lo lắng về độ uy tín của đối tác"
+                },
+                "bcp": {
+                    "title": "Xác thực nhiều lớp",
+                    "description": "AI chủ động phân tích và lọc kỹ từng kết nối, đảm bảo độ uy tín cho mỗi đối tác"
+                }
+            }
+        ],
+        "labels": {
+            "traditional": "Phương pháp truyền thống",
+            "bcpSolution": "BCP.Global Solution",
+            "vs": "VS"
         }
-    },
-    "comparisons": [
-        {
-        "traditional": {
-            "title": "Đầu tư cao - Hiệu quả thấp",
-            "description": "Chi phí vận hành lớn, khó đo lường hiệu quả, tốn nguồn lực duy trì"
-        },
-        "bcp": {
-            "title": "Đầu tư thông minh - Lợi nhuận vượt trội",
-            "description": "AI Matching Agent giúp tối ưu hóa chi phí, chỉ trả tiền cho kết nối thành công"
-        }
-        },
-        {
-        "traditional": {
-            "title": "Mất nhiều thời gian",
-            "description": "Quy trình thủ công, sàng lọc mất thời gian, kéo dài chu kỳ hợp tác"
-        },
-        "bcp": {
-            "title": "Kết nối tức thì",
-            "description": "AI tìm kiếm, bạn chỉ việc lựa chọn và kết nối"
-        }
-        },
-        {
-        "traditional": {
-            "title": "Thiếu độ tin cậy",
-            "description": "Có đối tác - khách hàng nhưng không tin cậy"
-        },
-        "bcp": {
-            "title": "Xác thực đa cấp độ",
-            "description": "AI sàng lọc kỹ lưỡng, đảm bảo uy tín từng mối quan hệ"
-        }
-        }
-    ],
-    "labels": {
-        "traditional": "Phương pháp truyền thống",
-        "bcpSolution": "BCP.Global Solution",
-        "vs": "VS"
-    }
     }
 }
