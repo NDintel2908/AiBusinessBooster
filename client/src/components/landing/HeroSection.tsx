@@ -197,7 +197,7 @@ export default function HeroSection() {
               {businessPersons.slice(0, 8).map((company, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center w-14 h-10 md:w-26 md:h-12 lg:w-30 lg:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300"
+                  className="flex items-center justify-center w-16 h-16 md:w-26 md:h-12 lg:w-30 lg:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300"
                 >
                   <img
                     src={company.src}
