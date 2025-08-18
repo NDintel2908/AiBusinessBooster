@@ -16,19 +16,30 @@
         "name": "One Connection",
         "price": "$20",
         "period": "/successful connection",
-        "description": "Excluding 8% VAT",
+        "description": "(VAT 8% not included)",
         "ctaText": "CONNECT NOW",
         "features": [
-          { "text": "BUY - SELL - COOPERATE connections", "included": true },
           {
-            "text": "Chat DIRECTLY with Final Decision-Makers",
+            "text": "The AI Connecting Agent empowers BUY – SELL – COOPERATE activities + 5 key features:",
             "included": true
           },
-          { "text": "AI Matching Agent", "included": true },
-          { "text": "Secure – User-friendly – Reliable", "included": true },
-          { "text": "Expand to Japan and Global Markets", "included": true },
-          { "text": "Multilingual Support", "included": true },
-          { "text": "Flexible Payment Options", "included": true }
+          {
+            "text": "1. Direct chat with the final decision-maker",
+            "included": true
+          },
+          {
+            "text": "2. Secure – Easy to use – Reliable",
+            "included": true
+          },
+          {
+            "text": "3. Expand your market to Japan and globally",
+            "included": true
+          },
+          {
+            "text": "4. Multi-language support",
+            "included": true
+          },
+          { "text": "5. Flexible payment methods", "included": true }
         ]
       },
       "starter": {
@@ -38,42 +49,67 @@
         "description": "Start exploring business opportunities",
         "ctaText": "JOIN & VERIFY",
         "features": [
-          { "text": "Find & Connect B2B", "included": true },
-          { "text": "Basic AI Matching Agent", "included": true },
-          { "text": "24/7 Support", "included": true },
-          { "text": "Standard business profile", "included": true }
+          {
+            "text": "AI Connecting Agent + 3 features to explore new business opportunities:",
+            "included": true
+          },
+          { "text": "1. Search & connect for B2B trade", "included": true },
+          { "text": "2. 24/7 support", "included": true },
+          { "text": "3. Standard business profile", "included": true }
         ]
       },
       "premium": {
-        "name": "Premium User",
+        "name": "Global Premium User",
         "price": "$1,200",
         "period": "/year",
-        "description": "Comprehensive solution for businesses\n (Excluding 8% VAT)",
+        "description": "(VAT 8% not included)",
         "ctaText": "UPGRADE NOW",
         "features": [
-          { "text": "Premium Verified badge", "included": true },
           {
-            "text": "Connect with up to 120 new partners - clients annually",
+            "text": "1 PRIVATE AGENT + 5 PREMIUM PRIVILEGES to accelerate BUY – SELL – COOPERATE activities worldwide",
             "included": true
           },
           {
-            "text": "Company Profile Customized for 5 key markets (Japan - Thailand - UK - Vietnam - South Korea)",
+            "text": "1 PRIVATE AGENT with 4 key features. Coordinated by an AI Agent preloaded with tokens to connect with up to 120 clients and partners within 12 months (*easily expandable by purchasing more tokens if you wish to broaden your network)"
+          },
+          {
+            "text": "- Dedicated AI trained with your company’s data",
             "included": true
           },
           {
-            "text": "Priority connections via both online and offline channels",
+            "text": "- Continuous data storage and updates",
             "included": true
           },
           {
-            "text": "Early access to multiple specialized AI Agents",
+            "text": "- Priority access to specialized AI Agents",
             "included": true
           },
           {
-            "text": "Direct support from a dedicated Coordinator",
+            "text": "- Direct engagement with the right person in charge",
             "included": true
           },
           {
-            "text": "Priority participation in trade promotion and business matching programs organized by BCP & Partner Networks",
+            "text": "5 PREMIUM PRIVILEGES:",
+            "included": true
+          },
+          {
+            "text": "1. Global Premium User identification badge (Verified & Trusted Member)",
+            "included": true
+          },
+          {
+            "text": "2. Business Profile development for APAC market outreach on bcp.vn (in international English and for Vietnam, Japan, Thailand, Korea, and China markets)",
+            "included": true
+          },
+          {
+            "text": "3. Supported by AI combined with a Human Coordinator.",
+            "included": true
+          },
+          {
+            "text": "4. Connections facilitated by AI and offline business-connecting experts (depending on region)",
+            "included": true
+          },
+          {
+            "text": "5. Access to industry insights and multiple privileges to participate in trade and business promotion activities organized by the BCP ecosystem, AI Partners, and B2B partners within the network",
             "included": true
           }
         ]

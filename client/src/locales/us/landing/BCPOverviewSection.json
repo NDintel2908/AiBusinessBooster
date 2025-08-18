@@ -4,7 +4,7 @@
     "title": {
       "prefix": "What is",
       "highlight": "BCP.Global?",
-      "suffix": "?"
+      "suffix": ""
     },
     "subtitle": {
       "text": "The AI-driven B2B (business-to-business) platform redefining global connections through intelligent connections.",
@@ -24,40 +24,42 @@
       "story": {
         "title": "Our Story",
         "description": [
-          "In global business, the right connection unlocks markets and drives strategic growth — but getting there is inherently complex.",
-          "Endless outreach, gatekeepers, mismatched leads, and costly trade shows drain time, budget, and momentum.",
-          "That's why we built BCP – Business Connecting Platform – An AI-powered B2B Matching Agent that helps you share business needs, connect with verified partners, and close cross-border deals — faster and smarter.",
-          "Unlike static directories, BCP works proactively on your behalf — match your real-time needs with trusted companies.",
-          "<strong>Share your needs — and get matched today!</strong>"
+          "Connecting with the right partners — fast — and at optimized costs is the key to unlocking markets and driving strategic growth. Yet before 2025, this remained a major challenge for both domestic and international businesses, reflected in:",
+          "- Endless trade fairs",
+          "- Layers of obstructive intermediaries",
+          "- Drained resources and budgets",
+          "- Missed business opportunities",
+          "Having experienced these “pain points” firsthand, leverages real-world expertise, deep knowledge of Asian markets, and advanced Generative AI capabilities to develop the Business Connecting Platform – a global B2B connecting platform integrated with a suite of specialized AI Agents that simplify and accelerate business activities. This transforms B2B connection opportunities into real transactions, in real time.",
+          "<strong>Share your needs and get connected today!</strong>"
         ]
       },
       "vision": {
         "title": "Our Vision",
-        "description": "Empowering global B2B connections & growth through an intelligent Super Connecting Agent and multiple specialized AI agents, all within a trusted, all-in-one platform."
+        "description": "Unlock global business connections through the power of AI."
       },
       "mission": {
         "title": "Our Mission",
-        "description": "Removing friction from global B2B connections by matching real business needs with trusted partners — at speed and scale."
+        "description": "UY – SELL – COOPERATE locally & globally through A NETWORK OF SPECIALIZED AI Agents."
       }
     },
     "features": {
       "title": "Core Features",
       "list": {
         "realTimeMatching": {
-          "title": "Real-time Business Matching",
-          "description": "BCP’s advanced AI technology provides insight and connection opportunities without delay. <strong>Find real partners in real time.</strong>"
+          "title": "Real-Time Business Connections",
+          "description": "Powered by BCP’s advanced AI, we analyze data and instantly recommend the most relevant business partners. <strong> Find the right partner — at the right time.</strong>"
         },
         "directConnection": {
-          "title": "Connect directly with final decision-makers",
-          "description": "No gatekeepers! Get straight to planning with final decision-makers to ensure efficiency and effective cooperation."
+          "title": "Direct Access To Key Decision-makers",
+          "description": "No delays! Direct conversations with key decision-makers — for optimized results and faster partnerships."
         },
         "aiInsight": {
-          "title": "Flexible Support & Insight",
-          "description": "BCP provides analyzes opportunities and delivers detailed information to potential partners. Yet, an online - offline support to secure a faster B2B connection."
+          "title": "Flexible Support & In-depth Insights",
+          "description": "BCP analyzes opportunities and delivers actionable insights to potential partners — bridging online & offline support to speed up B2B connections."
         },
         "security": {
-          "title": "Commitment to Security",
-          "description": "Data and communications within BCP are always protected. All exchanges are encrypted and adhere to international security standards."
+          "title": "Security Commitment",
+          "description": "All data and communications on BCP are encrypted and protected in accordance with international security standards."
         }
       }
     }

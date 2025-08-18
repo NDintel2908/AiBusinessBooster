@@ -8,7 +8,7 @@
       "singlePackage": "Gói lẻ"
     },
     "tabs": {
-      "buyPerUse": "Thanh toán khi kết nối",
+      "buyPerUse": "Kết nối ngay",
       "subscriptionPlans": "Gói đăng ký"
     },
     "plans": {
@@ -16,67 +16,101 @@
         "name": "One Connection",
         "price": "500.000 VND",
         "period": "/kết nối thành công",
-        "description": "Chưa bao gồm 8% VAT",
+        "description": "(Chưa bao gồm VAT 8%)",
         "ctaText": "KẾT NỐI NGAY",
         "features": [
-          { "text": "Kết nối MUA – BÁN – HỢP TÁC", "included": true },
           {
-            "text": "Trò chuyện TRỰC TIẾP với người ra quyết định cuối cùng",
+            "text": "AI Connecting Agent giúp kết nối MUA - BÁN - HỢP TÁC + 5 tính năng chính:",
             "included": true
           },
-          { "text": "AI Matching Agent", "included": true },
-          { "text": "Bảo mật – Thân thiện – Đáng tin cậy", "included": true },
           {
-            "text": "Mở rộng thị trường sang Nhật Bản & toàn cầu",
+            "text": "1. Trò chuyện TRỰC TIẾP với người ra quyết định cuối cùng",
             "included": true
           },
-          { "text": "Hỗ trợ đa ngôn ngữ", "included": true },
-          { "text": "Phương thức thanh toán linh hoạt", "included": true }
+          {
+            "text": "2. Bảo mật - Dễ sử dụng - Đáng tin cậy",
+            "included": true
+          },
+          {
+            "text": "3. Mở rộng thị trường sang Nhật Bản và toàn cầu",
+            "included": true
+          },
+          {
+            "text": "4. Hỗ trợ đa ngôn ngữ",
+            "included": true
+          },
+          { "text": "5. Phương thức thanh toán linh hoạt", "included": true }
         ]
       },
       "starter": {
-        "name": "Starter Plan",
+        "name": "Starter User",
         "price": "Miễn phí (0 VND)",
         "period": "",
         "description": "Khởi đầu hành trình khám phá cơ hội kinh doanh",
         "ctaText": " THAM GIA & XÁC THỰC",
         "features": [
-          { "text": "Tìm kiếm & kết nối giao thương B2B", "included": true },
-          { "text": "AI Matching Agent cơ bản", "included": true },
-          { "text": "Hỗ trợ 24/7", "included": true },
-          { "text": "Hồ sơ doanh nghiệp tiêu chuẩn", "included": true }
+          {
+            "text": "AI Connecting Agent + 03 tính năng khám phá cơ hội kinh doanh mới",
+            "included": true
+          },
+          { "text": "1. Tìm kiếm & kết nối giao thương B2B", "included": true },
+          { "text": "2. Hỗ trợ 24/7", "included": true },
+          { "text": "3. Hồ sơ doanh nghiệp tiêu chuẩn", "included": true }
         ]
       },
       "premium": {
-        "name": "Premium User",
+        "name": "Global Premium User",
         "price": "30.000.000 VND",
         "period": "/năm",
-        "description": "Giải pháp toàn diện dành cho doanh nghiệp\n (Chưa bao gồm VAT 8%)",
+        "description": "(Chưa bao gồm VAT 8%)",
         "ctaText": "NÂNG CẤP NGAY",
         "features": [
           {
-            "text": "Tích xác thực Premium User (Thành viên Tin cậy)",
+            "text": "01 PRIVATE AGENT + 05 ĐẶC QUYỀN PREMIUM thúc đẩy MUA - BÁN - HỢP TÁC TOÀN CẦU",
             "included": true
           },
           {
-            "text": "Kết nối đến 120 Đối tác - Khách hàng mới hàng năm",
+            "text": "01 PRIVATE AGENT cùng 04 tính năng chính. Điều phối bởi AI agent được cấp sẵn token để kết nối đến 120 khách hàng, đối tác trong 12 tháng  (*dễ dàng mua thêm nếu muốn mở rộng đối tác).",
             "included": true
           },
           {
-            "text": "Thiết kế Hồ Sơ Doanh nghiệp theo 5 thị trường chính (Nhật, Thái, Anh, Việt, Hàn)",
+            "text": "- Dữ liệu DN được train AI riêng",
             "included": true
           },
           {
-            "text": "Kết nối ưu tiên qua các kênh online và offline",
+            "text": "- Lưu trữ và cập nhật thông tin liên tục",
             "included": true
           },
           {
-            "text": "Trải nghiệm sớm các AI Agent chuyên môn",
+            "text": "- Ưu tiên sử dụng các AI Agent nghiệp vụ",
             "included": true
           },
-          { "text": "Hỗ trợ trực tiếp bởi Điều phối viên", "included": true },
           {
-            "text": "Ưu tiên tham gia các chương trình giao thương - xúc tiến thương mại do BCP & mạng lưới Đối tác tổ chức",
+            "text": "- Làm việc đúng người phụ trách",
+            "included": true
+          },
+          {
+            "text": "05 ĐẶC QUYỀN PREMIUM:",
+            "included": true
+          },
+          {
+            "text": "1. Huy hiệu định danh Global Premium User (Thành viên xác thực - Tin cậy)",
+            "included": true
+          },
+          {
+            "text": "2. Xây dựng Hồ sơ Doanh nghiệp đánh thị trường APAC tại bcp.vn (Ngôn ngữ quốc tế tiếng Anh và thị trường Việt - Nhật - Thái - Hàn - Trung)",
+            "included": true
+          },
+          {
+            "text": "3. Được hỗ trợ bởi AI kết hợp với Điều phối viên - Human.",
+            "included": true
+          },
+          {
+            "text": "4. Kết nối bởi AI và chuyên gia kết nối offline (tuỳ theo khu vực)",
+            "included": true
+          },
+          {
+            "text": "5. Nhận Thông tin chuyên môn và nhiều ưu đãi khác để tham gia các hoạt động giao thương - xúc tiến thương mại do hệ sinh thái BCP, AIPartners và các đối tác B2B trong network tổ chức.",
             "included": true
           }
         ]

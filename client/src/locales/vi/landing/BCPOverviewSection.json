@@ -7,7 +7,7 @@
       "suffix": " là gì?"
     },
     "subtitle": {
-      "text": "Nền tảng kết nối giao thương B2B, ứng dụng AI giúp tái định nghĩa việc kết nối - làm ăn (mua - bán - hợp tác) toàn cầu.",
+      "text": "Nền tảng kết nối B2B toàn cầu với các AI chuyên dụng hỗ trợ kết nối - làm ăn (Mua-Bán-Hợp tác). Tái định nghĩa kinh doanh và phát triển thị trường trong kỷ nguyên AI cùng những biến động của chuỗi cung ứng, với 4 tiêu chí: Giao dịch dễ dàng – Đối tác tin cậy – Kết nối nhanh chóng – Cắt gọn chi phí.",
       "actions": {
         "buy": "MUA",
         "sell": "BÁN",
@@ -24,20 +24,22 @@
       "story": {
         "title": "Câu Chuyện Của Chúng Tôi",
         "description": [
-          "Trong kinh doanh toàn cầu, kết nối đúng đối tác là chìa khóa mở ra thị trường và thúc đẩy tăng trưởng chiến lược — nhưng quá trình đó vốn dĩ vô cùng phức tạp.",
-          "Những chuỗi liên hệ bất tận, rào cản trung gian, đối tượng không phù hợp và các hội chợ tốn kém đang tiêu tốn thời gian, ngân sách và cơ hội của doanh nghiệp.",
-          "Đó là lý do chúng tôi phát triển BCP – Business Connecting Platform – Một nền tảng kết nối giao thương B2B ứng dụng AI, giúp doanh nghiệp chia sẻ nhu cầu, kết nối với đối tác đã được xác thực và thúc đẩy giao dịch xuyên biên giới — nhanh hơn, thông minh hơn.",
-          "Khác với kết nối truyền thống, BCP chủ động tìm kiếm giúp bạn — kết nối nhu cầu thực tế với các doanh nghiệp uy tín, theo thời gian thực.",
-          "<strong>Hãy chia sẻ nhu cầu của bạn – để được kết nối ngay hôm nay!</strong>"
+          "Kết nối đúng đối tác – nhanh – chi phí tinh gọn là chìa khóa mở thị trường và thúc đẩy tăng trưởng chiến lược. Nhưng trước 2025, đây luôn là trở ngại lớn của doanh nghiệp nội địa lẫn quốc tế, thể hiện qua:",
+          "- Chuỗi hội chợ thương mại bất tận",
+          "- Nhiều lớp trung gian cản trở",
+          "- Nguồn lực và ngân sách bị bào mòn",
+          "- Cơ hội kinh doanh bị bỏ lỡ",
+          "Từng trải qua những “nỗi đau” này, BCP kết hợp kinh nghiệm thực chiến, am hiểu thị trường châu Á, và năng lực Generative AI tiên tiến để phát triển Business Connecting Platform – nền tảng kết nối giao thương B2B toàn cầu, tích hợp loạt AI Agent chuyên dụng hỗ trợ kết nối - làm ăn, biến cơ hội kết nối B2B thành giao dịch thực, theo thời gian thực.",
+          "<strong>Hãy chia sẻ nhu cầu của bạn để được kết nối ngay hôm nay!</strong>"
         ]
       },
       "vision": {
         "title": "Tầm Nhìn",
-        "description": "Kết nối & tăng trưởng giao thương B2B toàn cầu với hệ thống AI — thông minh, chuyên biệt, tất cả tích hợp trong một nền tảng."
+        "description": "Mở khoá kết nối giao thương toàn cầu bằng năng lực AI."
       },
       "mission": {
         "title": "Sứ Mệnh",
-        "description": "Kết nối giao thương B2B toàn cầu hiệu quả hơn – đúng nhu cầu, đúng đối tác, đúng thời điểm."
+        "description": "MUA - BÁN - HỢP TÁC nội địa & xuyên quốc gia với MẠNG LƯỚI AI AGENT chuyên dụng."
       }
     },
     "features": {
@@ -45,7 +47,7 @@
       "list": {
         "realTimeMatching": {
           "title": "Kết Nối Kinh Doanh Theo Thời Gian Thực",
-          "description": "Công nghệ AI tiên tiến của BCP phân tích thông tin và cung cấp gợi ý kết nối với doanh nghiệp tương ứng phù hợp tức thì. Tìm đúng đối tác — đúng thời điểm."
+          "description": "Công nghệ AI tiên tiến của BCP phân tích thông tin và cung cấp gợi ý kết nối với doanh nghiệp tương ứng phù hợp tức thì. <strong>Tìm đúng đối tác — đúng thời điểm.</strong>"
         },
         "directConnection": {
           "title": "Kết Nối Trực Tiếp Với Người Ra Quyết Định Cuối Cùng",
