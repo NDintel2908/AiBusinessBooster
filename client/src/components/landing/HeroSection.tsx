@@ -202,7 +202,7 @@ export default function HeroSection() {
                   <img
                     src={company.src}
                     alt={company.alt}
-                    className="max-w-full max-h-full object-contain filter brightness-0 invert"
+                    className="max-w-full max-h-full object-contain filter grayscale invert contrast-80 brightness-130"
                   />
                 </div>
               ))}
