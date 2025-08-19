@@ -1,21 +1,21 @@
 {
   "contactSection": {
-    "badge": "Contact us",
-    "title": "Become a BCP recommended partner",
-    "description": "Fill out the form and our AI business expert will contact you within 24 hours to discuss how BCP can revolutionize your partnership strategy.",
+    "badge": "お問い合わせ",
+    "title": "BCP推薦パートナーになる",
+    "description": "フォームを入力すると、AIビジネス専門家が24時間以内にご連絡いたします。BCPがパートナーシップ戦略をどのように変革できるかについてご相談ください。",
     "form": {
-      "title": "Contact form",
-      "name": "Full name",
-      "namePlaceholder": "John Smith",
-      "email": "Email address",
+      "title": "お問い合わせフォーム",
+      "name": "氏名",
+      "namePlaceholder": "山田太郎",
+      "email": "メールアドレス",
       "emailPlaceholder": "example@company.com",
-      "company": "Company name",
-      "companyPlaceholder": "Your company",
-      "requirements": "Specific requirements",
-      "requirementsPlaceholder": "Tell us about your needs and how we can help...",
-      "submit": "Send request",
-      "submitting": "Sending...",
-      "success": "Your request has been sent successfully!"
+      "company": "会社名",
+      "companyPlaceholder": "あなたの会社",
+      "requirements": "具体的な要望",
+      "requirementsPlaceholder": "ご要望をお知らせください。どのようにお手伝いできるかをご説明します。",
+      "submit": "送信",
+      "submitting": "送信中...",
+      "success": "お問い合わせが送信されました！"
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "helpButton": {
-    "tooltip": "Need help? Choose contact method",
-    "ariaLabel": "Customer support",
+    "tooltip": "お手伝いが必要ですか？ 連絡方法を選択してください",
+    "ariaLabel": "顧客サポート",
     "options": {
       "zalo": "Zalo",
       "messenger": "Messenger",
       "whatsapp": "WhatsApp"
     }
   },
-  "loading": "Loading..."
+  "loading": "読み込み中..."
 }

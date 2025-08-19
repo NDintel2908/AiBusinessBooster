@@ -17,6 +17,10 @@ interface Language {
   flag: React.ReactNode;
 }
 
+interface LanguageSwitcherProps {
+  className?: string;
+}
+
 const languages: Language[] = [
   {
     code: "vi",
@@ -102,19 +106,25 @@ export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const currentLanguage =
     languages.find((lang) => lang.code === currentLangFromUrl) || languages[1]; // Default to English
 
-  const handleLanguageChange = (language: Language) => {
-    // Update URL to match selected language
-    let newPath;
-    if (location.match(/^\/(en|vi|jp|th)/)) {
-      // Replace existing language in URL
-      newPath = location.replace(/^\/(en|vi|jp|th)/, `/${language.code}`);
-    } else {
-      // Add language prefix to URL
-      newPath = `/${language.code}${location}`;
-    }
+  const handleLanguageChange = async (language: Language) => {
+    try {
+      console.log(`Language switcher: Switching to ${language.code}`);
 
-    // Change URL first, then language (GlobalLanguageSync will handle i18n)
-    setLocation(newPath);
+      // Calculate new path
+      let newPath;
+      if (location.match(/^\/(en|vi|jp|th)/)) {
+        newPath = location.replace(/^\/(en|vi|jp|th)/, `/${language.code}`);
+      } else {
+        newPath = `/${language.code}${location}`;
+      }
+
+      console.log(`Language switcher: Navigating to ${newPath}`);
+
+      // Update URL first (this will trigger LanguageSync)
+      setLocation(newPath, { replace: true });
+    } catch (error) {
+      console.error("Language switcher error:", error);
+    }
   };
 
   return (

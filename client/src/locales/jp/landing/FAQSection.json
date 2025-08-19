@@ -1,27 +1,27 @@
 {
   "faqSection": {
-    "title": "Frequently Asked Questions",
-    "description": "Find answers to common questions about our AI business connection platform.",
+    "title": "よくある質問",
+    "description": "BCPのAIビジネス接続プラットフォームに関するよくある質問についてご説明します。",
     "faqItems": [
       {
-        "question": "What is BCP?",
-        "answer": "BCP - Business Connecting Platform is developed by BCP Joint Stock Company.\n\nThe BCP platform is an advanced digital ecosystem that connects thousands of businesses worldwide. We create opportunities for companies to:\n\n1. Find partners to buy and sell products/services\n2. Discover investment cooperation opportunities\n3. Expand international business networks"
+        "question": "BCPとは？",
+        "answer": "BCP - Business Connecting Platformは、BCP株式会社によって開発されたプラットフォームです。\n\nBCPプラットフォームは、世界中の数千社の企業をつなぐ高度なデジタルエコシステムです。私たちは、企業に対して以下の機会を提供します：\n\n1. 買い手と売り手を見つける\n2. 投資・協業の機会を発見する\n3. 国際的なビジネスネットワークを拡大する"
       },
       {
-        "question": "How many industries and fields can BCP serve?",
-        "answer": "So far we have not set any limits on legal business industries and fields."
+        "question": "BCPはどのような業種や分野に対応していますか？",
+        "answer": "現在、BCPは法的に許可されたビジネス業種や分野に制限を設けていません。"
       },
       {
-        "question": "Is my and my company's data secure when using this platform?",
-        "answer": "Your and your company's data is strictly secured when using this platform. We use TLS encryption to protect data transmission, data is stored in encrypted databases and servers are placed in private networks, ensuring security. In addition, firewalls block malicious IPs and common attack requirements like SQL injection, helping to protect your data from threats."
+        "question": "このプラットフォームを使用すると、私と私の会社のデータは安全ですか？",
+        "answer": "このプラットフォームを使用すると、あなたとあなたの会社のデータは厳密に保護されます。私たちはTLS暗号化を使用してデータ送信を保護し、データは暗号化されたデータベースとサーバーに保存され、セキュリティを確保します。さらに、ファイアウォールは悪意のあるIPをブロックし、SQLインジェクションなどの一般的な攻撃要件を防ぎ、データを脅威から保護します。"
       },
       {
-        "question": "Is my business information kept confidential?",
-        "answer": "Absolutely. We take data privacy seriously. You control exactly what information is displayed to potential partners, and all sensitive business data is encrypted and protected. We never sell your information to third parties, and you can request complete deletion of your data at any time."
+        "question": "私のビジネス情報は秘密に保たれますか？",
+        "answer": "絶対にそうです。私たちはデータのプライバシーを真剣に受け止めています。あなたは、パートナーに表示される情報を正確に制御できます。また、すべての機密ビジネスデータは暗号化され、保護されています。私たちはあなたの情報を第三者に売却しません。また、いつでもあなたのデータを完全に削除することができます。"
       },
       {
-        "question": "What makes BCP different from traditional connection platforms?",
-        "answer": "Unlike traditional platforms that rely on manual search or basic keyword matching, BCP uses advanced AI to proactively identify optimal business partners based on deep compatibility analysis. Our platform eliminates guesswork and countless hours typically spent on networking, significantly increasing the chances of finding business relationships that convert."
+        "question": "BCPは従来の接続プラットフォームとどう違いますか？",
+        "answer": "従来のプラットフォームが手動検索や基本的なキーワードマッチングに依存するのに対し、BCPは高度なAIを使用して、深い互換性分析に基づいて最適なビジネスパートナーを積極的に特定します。私たちのプラットフォームは、推測や無数の時間を費やしてネットワークを構築することを排除し、ビジネス関係を見つける可能性を大幅に高めます。"
       }
     ]
   }

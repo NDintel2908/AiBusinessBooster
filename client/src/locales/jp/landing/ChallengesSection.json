@@ -2,48 +2,48 @@
     "challengesSection": {
         "sectionHeader": {
             "badge": "",
-            "title": "<0>Traditional</0> methods vs <1>BCP.Global</1>",
-            "description": "B2B connections often remain costly despite the ease and increased use of social media."
+            "title": "<0>従来型アプローチ</0> と <1>BCP.Globalの比較</1>",
+            "description": "B2Bのつながりは、SNSの普及にもかかわらず、依然として高コストで非効率的なことが多いです。"
         },
         "headers": {
             "traditional": {
-                "title": "Traditional methods",
-                "subtitle": "Old approach with many limitations"
+                "title": "従来型アプローチ",
+                "subtitle": "多くの制約がある古いアプローチ"
             },
             "bcp": {
-                "title": "BCP.Global Solution",
-                "subtitle": "Smart solution with AI"
+                "title": "BCP.Globalソリューション",
+                "subtitle": "AIによるスマートなソリューション"
             }
         },
         "comparisons": [
             {
                 "traditional": {
-                    "title": "High Investment — Low ROI",
-                    "description": "High operational costs, unclear performance metrics, and significant resources required to maintain manual connection processes"
+                    "title": "高コスト — 低いROI",
+                    "description": "高い運用コスト、不明確なパフォーマンス指標、そして手作業による接続プロセスの維持に必要となる多大なリソース。"
                 },
                 "bcp": {
-                    "title": "Strategic Investment — Outstanding ROI",
-                    "description": "The AI Connecting Agent optimizes cost by charging only for successful connections — saving resources and maximizing efficiency"
+                    "title": "戦略的な投資 — 優れたROI",
+                    "description": "AIコネクティングエージェントは、成功した接続に対してのみ課金することでコストを最適化し、リソースを節約して効率を最大化します。"
                 }
             },
             {
                 "traditional": {
-                    "title": "Time consuming",
-                    "description": "Slow, manual screening processes prolonging collaboration timelines"
+                    "title": "時間がかかる",
+                    "description": "Sつながりはできても、信頼性に課題あり"
                 },
                 "bcp": {
-                    "title": "Instant connection",
-                    "description": "AI suggests the matches, you review and connect"
+                    "title": "即時接続",
+                    "description": "AIが厳格に審査し、すべての接続先の信頼性を確保"
                 }
             },
             {
                 "traditional": {
-                    "title": "Lack of trust",
-                    "description": "Connections secured, but reliability remains a concern"
+                    "title": "信頼性の欠如",
+                    "description": "つながっても、相手が本当に信頼できるかは不透明"
                 },
                 "bcp": {
-                    "title": "Multi-level verification",
-                    "description": "AI intentionally filters each connection, ensuring credibility in every partner"
+                    "title": "多層的な認証システム",
+                    "description": "AIがすべての候補をフィルタリングし、信頼性のある相手のみをご紹介"
                 }
             }
         ],

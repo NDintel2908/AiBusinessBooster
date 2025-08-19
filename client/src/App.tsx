@@ -12,67 +12,18 @@ import "./lib/i18n";
 import GlitchWelcome from "@/components/GlitchWelcome";
 import { HelpButton } from "@/components/ui/help-button";
 
-// Language Context để đảm bảo sync
-const LanguageContext = React.createContext<{
-  currentLanguage: string;
-  isChanging: boolean;
-}>({
-  currentLanguage: "en",
-  isChanging: false,
-});
-
-// Language Provider để wrap toàn bộ app
-function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [location] = useLocation();
-  const { i18n } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = React.useState(i18n.language);
-  const [isChanging, setIsChanging] = React.useState(false);
-
-  useEffect(() => {
-    const match = location.match(/^\/(en|vi|jp|th)/);
-    const urlLang = match ? match[1] : "en";
-
-    if (currentLanguage !== urlLang && !isChanging) {
-      setIsChanging(true);
-      console.log(
-        `Language provider changing from ${currentLanguage} to ${urlLang}`,
-      );
-
-      i18n
-        .changeLanguage(urlLang)
-        .then(() => {
-          setCurrentLanguage(urlLang);
-          setIsChanging(false);
-          console.log(`Language provider changed successfully to ${urlLang}`);
-        })
-        .catch((error) => {
-          console.error("Language provider error:", error);
-          setIsChanging(false);
-        });
-    }
-  }, [location, currentLanguage, isChanging, i18n]);
-
-  const contextValue = React.useMemo(
-    () => ({
-      currentLanguage,
-      isChanging,
-    }),
-    [currentLanguage, isChanging],
-  );
-
-  return (
-    <LanguageContext.Provider value={contextValue}>
-      {children}
-    </LanguageContext.Provider>
-  );
-}
-// AutoRedirect component: redirect / to /en (default language)
+// AutoRedirect component: redirect / to /en (default language) ONLY if no language path
 function AutoRedirect() {
-  const [, setLocation] = useLocation();
+  const [location, setLocation] = useLocation();
+
   useEffect(() => {
-    // Always redirect to English as default
-    setLocation("/en", { replace: true });
-  }, [setLocation]);
+    // Only redirect if we're at root path and no language is detected
+    if (location === "/" || !location.match(/^\/(en|vi|jp|th)/)) {
+      console.log(`AutoRedirect: Redirecting from ${location} to /en`);
+      setLocation("/en", { replace: true });
+    }
+  }, [location, setLocation]);
+
   return null;
 }
 
@@ -86,28 +37,19 @@ function LanguageSync() {
     const match = location.match(/^\/(en|vi|jp|th)/);
     const urlLang = match ? match[1] : "en";
 
-    // Force language change if different
+    // Only change if language is different and not currently changing
     if (i18n.language !== urlLang && !isChangingLanguage) {
       setIsChangingLanguage(true);
+      console.log(`LanguageSync: changing from ${i18n.language} to ${urlLang}`);
 
       i18n
         .changeLanguage(urlLang)
         .then(() => {
-          console.log(`Language changed successfully to ${urlLang}`);
+          console.log(`LanguageSync: Successfully changed to ${urlLang}`);
           setIsChangingLanguage(false);
-
-          // Force a small delay to ensure all components receive the update
-          setTimeout(() => {
-            // Trigger a custom event to notify components
-            window.dispatchEvent(
-              new CustomEvent("languageChanged", {
-                detail: { language: urlLang },
-              }),
-            );
-          }, 50);
         })
         .catch((error) => {
-          console.error("Error changing language:", error);
+          console.error("LanguageSync error:", error);
           setIsChangingLanguage(false);
         });
     }
@@ -123,6 +65,14 @@ const PaymentPolicy = lazy(() => import("@/pages/PaymentPolicy"));
 
 function Router() {
   const { t, i18n } = useTranslation("app");
+  const [location] = useLocation();
+
+  // Log current location for debugging
+  React.useEffect(() => {
+    console.log(
+      `Router: Current location is ${location}, i18n language is ${i18n.language}`,
+    );
+  }, [location, i18n.language]);
 
   // Use language as key to force re-render when language changes
   return (
@@ -161,11 +111,9 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       {showGlitch && <GlitchWelcome onComplete={handleGlitchComplete} />}
-      <LanguageProvider>
-        <Router />
-        <HelpButton /> {/* Add HelpButton here */}
-        <Toaster />
-      </LanguageProvider>
+      <Router />
+      <HelpButton />
+      <Toaster />
     </QueryClientProvider>
   );
 }

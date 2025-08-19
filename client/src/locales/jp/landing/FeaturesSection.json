@@ -1,21 +1,21 @@
 {
   "featuresSection": {
-    "title": "Since 2018...",
-    "description": "",
+    "title": "2018年から...",
+    "description": "BCPは、AIビジネス接続プラットフォームとして、世界中のビジネスをつなぎ、ビジネス機会を創出するために、2018年から活動を開始しました。",
     "stats": [
       {
         "number": "1st",
-        "description": "Ranked Top 1 in the pre-incubation stage at the AI.Star 2024 Competition",
+        "description": "AI.Star 2024競技会のプレインキューブフェーズで1位にランクイン",
         "endValue": 1
       },
       {
         "number": "2200+",
-        "description": "BCP business members",
+        "description": "BCPビジネスメンバー",
         "endValue": 2200
       },
       {
         "number": "1600+",
-        "description": "Successful connections",
+        "description": "成功した接続",
         "endValue": 1600
       }
     ]

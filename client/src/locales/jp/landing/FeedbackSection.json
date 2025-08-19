@@ -1,31 +1,31 @@
 {
   "feedbackSection": {
-    "badge": "Testimonials",
-    "title": "What business leaders say about <span class=\"text-brand-accent\">BCP.Global</span>",
-    "description": "BCP is a platform that helps connect businesses with suitable partners through AI, creating sustainable and effective business relationships.",
+    "badge": "テストモニタリング",
+    "title": "ビジネスリーダーがBCP.Globalについてどう言っていますか？",
+    "description": "BCPは、AIを使用して適切なパートナーを接続し、持続可能で効果的なビジネス関係を作成するプラットフォームです。",
     "feedbacks": [
       {
         "id": 1,
-        "quote": "BCP has completely changed the way we connect with partners. The AI matching is very accurate.",
+        "quote": "BCPは、パートナーとの接続方法を完全に変えました。AIマッチングは非常に正確です。",
         "author": "Trinh Hong Khanh",
         "position": "CEO",
-        "company": "Ba Mien Accounting",
+        "company": "Ba Mien Accounting会計",
         "avatar": "/images/TrinhHongKhanh.webp"
       },
       {
         "id": 2,
-        "quote": "This platform has helped us expand internationally effectively.",
+        "quote": "このプラットフォームは、国際的な拡大を効果的に支援しました。",
         "author": "Nguyen Hai Tam",
         "position": "Business Director",
-        "company": "Webketoan",
+        "company": "Webketoan会計",
         "avatar": "/images/NguyenHaiTam.webp"
       },
       {
         "id": 3,
-        "quote": "Thanks to BCP, we now have a trusted partner in Vietnam, which positions our company strongly for future growth in the region. We highly recommend BCP to any organization seeking expert business matching services, local market insights, and a genuinely supportive partner.",
+        "quote": "BCPのおかげで、私たちはベトナムに信頼できるパートナーを持つようになりました。これにより、私たちの会社は地域内の将来の成長に強く位置付けられました。私たちは、専門的なビジネスマッチングサービス、地域市場の洞察、そして本当にサポートするパートナーを探しているすべての組織にBCPを強くお勧めします。",
         "author": "Wichak Chongudomlert",
         "position": "Founder",
-        "company": "Signify and ICX Technologies",
+        "company": "Signify and ICX TechnologiesシグニフィーとICXテクノロジーズ",
         "avatar": "/images/Wichark.webp"
       }
     ]

@@ -183,8 +183,21 @@ i18n.use(initReactI18next).init({
     transKeepBasicHtmlNodesFor: ["br", "strong", "i"],
   },
 
-  // Thêm debug để kiểm tra issues
+  // Enable debug để track language changes
   debug: process.env.NODE_ENV === "development",
 });
+
+// Add event listener to track language changes
+i18n.on("languageChanged", (lng) => {
+  console.log(`i18n: Language changed event fired: ${lng}`);
+});
+
+// Add event listener to track when language change fails
+i18n.on("failedLoading", (lng, ns, msg) => {
+  console.error(`i18n: Failed loading ${lng}/${ns}: ${msg}`);
+});
+
+// Log available resources
+console.log("i18n: Available resources:", Object.keys(resources));
 
 export default i18n;

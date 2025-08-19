@@ -1,22 +1,22 @@
 {
   "heroSection": {
     "badge": "",
-    "title": "UNLOCK GLOBAL B2B CONNECTIONS POWERED BY AI",
-    "subtitle": "BUYING - SELLING - COOPERATION",
+    "title": "グローバルB2Bの新たなつながりを切り拓く",
+    "subtitle": "購買・販売・協業",
     "description": [
-      "BCP AI Agents continuously update information on BUY–SELL–COOPERATE demands and connect businesses with thousands of verified partners, creating REAL BUSINESS DEALS at the RIGHT TIME."
+      "BCP AIエージェントは、BUY・SELL・COOPERATEの最新ニーズを常にアップデートし、数千社の信頼できるパートナーと企業をつなぎ、最適なタイミングでリアルなビジネスを実現します。"
     ],
     "cta": {
-      "primary": "JOIN & VERIFY",
-      "secondary": "CONTACT US"
+      "primary": "登録・認証",
+      "secondary": "お問い合わせ"
     },
     "stats": {
       "text": "new businesses registered this month",
       "number": "500+"
     },
     "trustedBy": {
-      "title": "Trusted by top partners",
-      "andMore": "and more..."
+      "title": "主要パートナーからの信頼",
+      "andMore": "..."
     },
     "businessPersons": [
       {

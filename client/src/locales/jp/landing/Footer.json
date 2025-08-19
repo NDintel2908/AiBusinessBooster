@@ -1,28 +1,28 @@
 {
   "footer": {
     "company": {
-      "title": "Company",
-      "aboutUs": "About us",
-      "features": "Features",
-      "pricing": "Pricing"
+      "title": "会社",
+      "aboutUs": "会社概要",
+      "features": "機能",
+      "pricing": "価格"
     },
     "resources": {
-      "title": "Resources",
-      "paymentPolicy": "Payment Policy",
-      "privacyPolicy": "Privacy Policy",
-      "pricingComparison": "Service Package Comparison",
-      "termsOfService": "Terms of Service"
+      "title": "リソース",
+      "paymentPolicy": "支払いポリシー",
+      "privacyPolicy": "プライバシーポリシー",
+      "pricingComparison": "サービスパッケージ比較",
+      "termsOfService": "サービス利用規約"
     },
     "paymentPartners": {
-      "title": "Payment providers"
+      "title": "支払いプロバイダー"
     },
     "companyInfo": {
-      "title": "Company information",
-      "taxCode": "Tax code: 0317026053",
-      "address": "Address: 224A Dien Bien Phu, Xuan Hoa Ward, HCMC",
+      "title": "会社情報",
+      "taxCode": "税コード: 0317026053",
+      "address": "住所: 224A Dien Bien Phu, Xuan Hoa Ward, HCMC",
       "phone": "0963254259",
       "mail": "info@bcp.global"
     },
-    "copyright": "© {{year}} Business Connecting Platform (BCP). All rights reserved."
+    "copyright": "© {{year}} Business Connecting Platform (BCP). すべての権利は予約されています。"
   }
 }

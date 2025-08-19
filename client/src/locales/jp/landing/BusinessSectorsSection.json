@@ -1,139 +1,139 @@
 {
   "businessSectors": {
     "sectionHeader": {
-      "badge": "Supported Industries",
-      "title": "25 Business Industries Supported by <1>BCP.Global</1>",
-      "description": "Explore the comprehensive list of business industries that our AI platform can support for connection and growth."
+      "badge": "サポートされる産業",
+      "title": "<1>BCP.Global</1>が対応する25の業種",
+      "description": "当社のAIプラットフォームが接続と成長を支援できる、包括的な業種リストをご覧ください。"
     },
     "groupsList": {
-      "title": "Industry List by Groups",
-      "sectorsCount": "{{count}} industries"
+      "title": "業種別の産業リスト",
+      "sectorsCount": "{{count}} 業種"
     },
     "businessGroups": {
       "manufacturing": {
-        "title": "Professional Service Providers",
+        "title": "専門サービスプロバイダー",    
         "sectors": {
           "itDevelopment": {
-            "name": "IT Software Development, AI and IoT Outsourcing",
-            "description": "Application development, software systems, AI solutions and smart IoT devices"
+            "name": "ITソフトウェア開発、AIとIoTのアウトソーシング",
+            "description": "アプリケーション開発、ソフトウェアシステム、AIソリューション、スマートIoTデバイス"
           },
           "consulting": {
-            "name": "Accounting, Financial, Legal, Insurance Consulting",
-            "description": "Providing professional consulting services in finance, accounting, legal and insurance"
+            "name": "会計、金融、法律、保険コンサルティング",
+            "description": "財務、会計、法律、保険の専門コンサルティングサービス"
           },
           "hr": {
-            "name": "Human Resources, Recruitment and Training Services",
-            "description": "HR consulting, talent recruitment and training program development"
+            "name": "人事、採用、トレーニングサービス",
+            "description": "HRコンサルティング、人材採用、トレーニングプログラム開発"
           },
           "marketing": {
-            "name": "Advertising Agency, Marketing",
-            "description": "Marketing strategy design, advertising and brand building"
+            "name": "広告代理店、マーケティング",
+            "description": "マーケティング戦略設計、広告、ブランド構築"
           },
           "distribution": {
-            "name": "Distribution Services, Domestic Trade",
-            "description": "Product distribution, retail business and domestic commerce"
+            "name": "流通サービス、国内貿易",
+            "description": "製品の流通、小売業、国内商業"
           },
           "logistics": {
-            "name": "Transportation, Logistics, Distribution and Warehousing Services",
-            "description": "Supply chain management, transportation and professional logistics warehousing"
+            "name": "運輸、物流、流通、倉庫管理サービス",
+            "description": "サプライチェーン管理、運輸、専門物流倉庫"
           },
           "architecture": {
-            "name": "Architecture Design, Office Interior",
-            "description": "Architectural design, space planning and professional interior design"
+            "name": "建築設計、オフィスインテリア",
+            "description": "建築設計、スペースプランニング、専門インテリアデザイン"
           },
           "realEstate": {
-            "name": "Office, Commercial, Retail, Industrial Real Estate Business",
-            "description": "Investment, development and business of commercial and industrial real estate projects"
+            "name": "オフィス、商業、小売、工業地産ビジネス",
+            "description": "投資、開発、商業および工業地産プロジェクトのビジネス"
           },
           "export": {
-            "name": "Export Services Group, Cross-border Market Development",
-            "description": "Export support, international market expansion and cross-border trade"
+            "name": "輸出サービスグループ、クロスボーダーマーケット開発",
+            "description": "輸出サポート、国際市場の拡大、クロスボーダー貿易"
           }
         }
       },
       "technology": {
-        "title": "Materials and Goods Provider for Manufacturing Enterprises",
+        "title": "製造業の原材料と商品提供",
         "sectors": {
           "agriculture": {
-            "name": "Agriculture and Aquaculture",
-            "description": "Providing raw materials such as agricultural products and seafood for food processing enterprises"
+            "name": "農業と水産業",
+            "description": "食品加工企業のための原材料、農業製品、海産品の提供"
           },
           "food": {
-            "name": "Food Materials",
-            "description": "Providing food ingredients such as vegetable oils and spices for food processing enterprises"
+            "name": "食品原材料",
+            "description": "食品加工企業のための食品原料、野菜油、香辛料の提供"
           },
           "textile": {
-            "name": "Textiles",
-            "description": "Providing raw materials such as yarn and fabric for garment enterprises"
+            "name": "繊維",
+            "description": "衣料品企業のための原材料、糸、布の提供"
           },
           "paper": {
-            "name": "Paper",
-            "description": "Providing raw materials such as pulp and raw paper for paper and packaging manufacturing enterprises"
+            "name": "紙",
+            "description": "紙と包装製造企業のための原材料、パルプ、生紙の提供"
           },
           "chemical": {
-            "name": "Chemicals",
-            "description": "Providing chemical raw materials such as virgin plastics and basic chemicals for other industries"
+            "name": "化学",
+            "description": "他の業界のための原材料、未加工のプラスチック、基本化学品の提供"
           },
           "construction": {
-            "name": "Construction Materials",
-            "description": "Providing raw materials such as cement, steel, and bricks for construction companies"
+            "name": "建設材料",
+            "description": "建設企業のための原材料、セメント、鋼、レンガの提供"
           },
           "mining": {
-            "name": "Mining",
-            "description": "Providing raw materials such as stone, sand, gravel, and metal ores for construction and metallurgy industries"
+            "name": "採掘",
+            "description": "建設と冶金業のための原材料、石、砂、砂利、金属鉱石の提供"
           }
         }
       },
       "services": {
-        "title": "Manufacturing and Processing for End-User Products",
+        "title": "エンドユーザー製品の製造と加工",
         "sectors": {
           "foodManufacturing": {
-            "name": "Food and Beverage Manufacturers",
-            "description": "Processing and manufacturing consumer food and beverage products for the retail market"
+            "name": "食品と飲料の製造",
+            "description": "小売市場のための消費者向け食品と飲料製品の加工と製造"
           },
           "fashionManufacturing": {
-            "name": "Textile Manufacturing, Fashion Products",
-            "description": "Manufacturing clothing, fashion accessories and textile export products"
+            "name": "繊維製造、ファッション製品",
+            "description": "衣料品、ファッションアクセサリー、繊維製品の輸出製品の製造"
           },
           "consumerGoods": {
-            "name": "Consumer Goods Manufacturers",
-            "description": "Manufacturing essential consumer products such as cosmetics, household items, and office supplies"
+            "name": "消費者向け製品の製造",
+            "description": "化粧品、家庭用品、オフィス用品などの基本的な消費者向け製品の製造"
           },
           "electronics": {
-            "name": "Electronics and Home Appliance Manufacturers",
-            "description": "Manufacturing and assembling electronic devices, machinery and modern home appliances"
+            "name": "電子機器と家庭用機器の製造",
+            "description": "電子機器、機械、最新の家庭用機器の製造と組立"
           },
           "automotive": {
-            "name": "Vehicle and Parts Manufacturers",
-            "description": "Manufacturing and assembling automobiles, motorcycles and replacement parts and components"
+            "name": "車両と部品の製造",
+            "description": "自動車、二輪車、交換部品、コンポーネントの製造と組立"
           }
         }
       },
       "infrastructure": {
-        "title": "Industrial Components Processing & Support",
+        "title": "産業部品の加工とサポート",
         "sectors": {
           "industrialComponents": {
-            "name": "Industrial Support Components Processing",
-            "description": "Manufacturing parts and components used in various industries"
+            "name": "産業部品の加工",
+            "description": "さまざまな業界で使用される部品とコンポーネントの製造"
           },
           "semiconductor": {
-            "name": "Semiconductor Industry Components Processing",
-            "description": "Manufacturing and processing integrated circuits and transistors"
+            "name": "半導体業界の部品加工",
+            "description": "集積回路とトランジスタの製造と加工"
           },
           "precision": {
-            "name": "Precision Mechanical Processing",
-            "description": "CNC turning and milling, mold processing, serving industries such as automotive, automation, and machinery manufacturing"
+            "name": "精密機械加工",
+            "description": "CNC旋盤加工、金型加工、自動車、自動化、機械製造業などの業界へのサービス"
           },
           "specializedEquipment": {
-            "name": "Specialized Equipment Manufacturing and Supply",
-            "description": "Processing, manufacturing and supplying specialized equipment for medical devices, automation equipment, and automotive parts industries"
+            "name": "専門機器の製造と供給",
+            "description": "医療機器、自動化機器、自動車部品業界のための専門機器の加工、製造、供給"
           }
         }
       }
     },
     "callToAction": {
-      "text": "Don’t see your industry on the list? We’re always ready to expand our support.",
-      "button": "Contact for consultation"
+      "text": "リストにない業種がありますか？ 私たちは常にサポートを拡大しています。",
+      "button": "お問い合わせ"
     }
   }
 }

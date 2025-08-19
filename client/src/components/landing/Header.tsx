@@ -11,12 +11,13 @@ export default function Header() {
   const { t, i18n } = useTranslation("header");
   const [location] = useLocation();
 
-  // Extract language from URL
-  const lang = location.match(/^\/(en|vi)/)?.[1] || "en";
+  // Extract language from URL - support all languages
+  const lang = location.match(/^\/(en|vi|jp|th)/)?.[1] || "en";
 
   // Sync i18n language with URL
   useEffect(() => {
     if (i18n.language !== lang) {
+      console.log(`Header: Syncing language from ${i18n.language} to ${lang}`);
       i18n.changeLanguage(lang);
     }
   }, [lang, i18n]);

@@ -1,14 +1,14 @@
 {
   "header": {
     "navigation": {
-      "home": "Home",
-      "about": "About",
-      "features": "Features",
-      "pricing": "Pricing",
-      "contact": "Contact"
+      "home": "ホーム",
+      "about": "会社概要",
+      "features": "特徴",
+      "pricing": "料金プラン",
+      "contact": "お問い合わせ"
     },
     "cta": {
-      "getStarted": "JOIN & VERIFY"
+      "getStarted": "参加と認証"
     },
     "mobile": {
       "toggleMenu": "Toggle mobile menu"

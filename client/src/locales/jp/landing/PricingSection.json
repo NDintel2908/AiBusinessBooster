@@ -1,71 +1,71 @@
 {
   "pricingSection": {
-    "badge": "Pricing Policy",
-    "title": "Choose the plan that's right for you",
-    "description": "Flexible solutions for every business scale.",
+    "badge": "価格政策",
+    "title": "あなたに最適なプランをお選びください",
+    "description": "あらゆるビジネス規模に対応する柔軟なソリューション",
     "labels": {
-      "mostPopular": "Most Popular",
-      "singlePackage": "Single Package"
+      "mostPopular": "最も人気",
+      "singlePackage": "シングルパッケージ"
     },
     "tabs": {
-      "buyPerUse": "Pay per Connect",
-      "subscriptionPlans": "Subcription Plans"
+      "buyPerUse": "接続ごとの従量課金",
+      "subscriptionPlans": "料金プラン"
     },
     "plans": {
       "oneConnection": {
-        "name": "One Connection",
-        "price": "$20",
-        "period": "/successful connection",
-        "description": "(VAT 8% not included)",
-        "ctaText": "CONNECT NOW",
+        "name": "1コネクション (One Connection)",
+        "price": "成功した接続ごとに 20米ドル",
+        "period": "",
+        "description": "（VAT 8% 別途）",
+        "ctaText": "今すぐ接続",
         "features": [
-          "The AI Connecting Agent empowers <strong>BUY – SELL – COOPERATE</strong> activities + 5 key features:",
-          "1. Direct chat with the final decision-maker",
-          "2. Secure – Easy to use – Reliable",
-          "3. Expand your market to Japan and globally",
-          "4. Multi-language support",
-          "5. Flexible payment methods"
+          "AIコネクティングエージェントは、購買・販売・協業活動を支援します + 5つの主要機能:",
+          "1. 最終意思決定者とのダイレクトチャット",
+          "2. 安全・使いやすい・信頼性",
+          "3. 日本およびグローバル市場への拡大",
+          "4. 多言語サポート",
+          "5. 柔軟な支払い方法"
         ]
       },
       "starter": {
         "name": "Starter User",
-        "price": "Free ($0)",
+        "price": "無料（$0）",
         "period": "",
-        "description": "Start exploring business opportunities",
-        "ctaText": "JOIN & VERIFY",
+        "description": "ビジネス機会を探る",
+        "ctaText": "登録・認証",
         "features": [
-          "AI Connecting Agent + 3 features to explore new business opportunities:",
-          "1. Search & connect for B2B trade",
-          "2. 24/7 support",
-          "3. Standard business profile"
+          "AIコネクティングエージェント + 新しいビジネス機会を探るための3つの機能:",
+          "1. B2B取引の検索と接続",
+          "2. 24時間365日のサポート",
+          "3. 標準的なビジネスプロフィール"
         ]
       },
       "premium": {
-        "name": "Global Premium User",
-        "price": "$1,200",
-        "period": "/year",
-        "description": "(VAT 8% not included)",
-        "ctaText": "UPGRADE NOW",
+        "name": "グローバルプレミアムユーザー",
+        "price": "年額 1,200米ドル",
+        "period": "",
+        "description": "（VAT 8% 別途）",
+        "ctaText": "今すぐアップグレード",
         "features": [
-          "<strong>1 PRIVATE AGENT + 5 PREMIUM PRIVILEGES</strong> to accelerate BUY – SELL – COOPERATE activities worldwide",
-          "<strong>1 PRIVATE AGENT with 4 key features</strong> \nCoordinated by an AI Agent preloaded with tokens to connect with up to 120 clients and partners within 12 months (*easily expandable by purchasing more tokens if you wish to broaden your network)",
-          "- Dedicated AI trained with your company's data",
-          "- Continuous data storage and updates",
-          "- Priority access to specialized AI Agents",
-          "- Direct engagement with the right person in charge",
-          "<strong>5 PREMIUM PRIVILEGES:</strong> ",
-          "1. Global Premium User identification badge (Verified & Trusted Member)",
-          "2. Business Profile development for APAC market outreach on bcp.vn (in international English and for Vietnam, Japan, Thailand, Korea, and China markets)",
-          "3. Supported by AI combined with a Human Coordinator.",
-          "4. Connections facilitated by AI and offline business-connecting experts (depending on region)",
-          "5. Access to industry insights and multiple privileges to participate in trade and business promotion activities organized by the BCP ecosystem, AI Partners, and B2B partners within the network"
+          "1名のプライベートエージェント + 5つのプレミアム特典 グローバルに「購買・販売・協業」活動を加速",
+          "<strong>1名のプライベートエージェント（4つの主要機能）</strong> \nAIエージェントが事前にトークンを搭載し、12か月間で最大120社のクライアントやパートナーとの接続をコーディネート（ネットワーク拡大を希望する場合は、追加トークン購入により容易に拡張可能）",
+          "- 自社データでトレーニングされた専用AI",
+          "- 継続的なデータ保存と更新",
+          "- 専門AIエージェントへの優先アクセス",
+          "- 担当責任者との直接エンゲージメント",
+          "<strong>5つのプレミアム特典</strong> ",
+          "1. グローバルプレミアムユーザー認定バッジ（認証済み・信頼できるメンバー）",
+          "2. bcp.vn上でのAPAC市場向けビジネスプロフィール作成 （国際英語版およびベトナム・日本・タイ・韓国・中国市場向け）",
+          "3. AIと人間コーディネーターによるサポート",
+          "4. AIおよび地域ごとのオフライン・ビジネスコネクティング専門家による接続支援",
+          "5. BCPエコシステム、AIパートナーズ、B2Bパートナーが主催する商談・ビジネス促進活動への参加特典および業界インサイトの提供"
         ]
       }
     },
     "additionalInfo": {
-      "title": "Not sure which plan is right?",
-      "description": "Start with the free plan and upgrade when needed. All plans can be changed flexibly.",
-      "compareText": "Compare plan details"
+      "title": "どのプランが適切かわかりませんか？",
+      "description": "無料プランから始めて、必要に応じてアップグレードしてください。すべてのプランは柔軟に変更可能です。",
+      "compareText": "プランの詳細を比較"
     },
     "links": {
       "signUp": "https://bcp.global/sign-up",
