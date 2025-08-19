@@ -19,43 +19,25 @@
         "description": "(VAT 8% not included)",
         "ctaText": "CONNECT NOW",
         "features": [
-          {
-            "text": "The AI Connecting Agent empowers BUY – SELL – COOPERATE activities + 5 key features:",
-            "included": true
-          },
-          {
-            "text": "1. Direct chat with the final decision-maker",
-            "included": true
-          },
-          {
-            "text": "2. Secure – Easy to use – Reliable",
-            "included": true
-          },
-          {
-            "text": "3. Expand your market to Japan and globally",
-            "included": true
-          },
-          {
-            "text": "4. Multi-language support",
-            "included": true
-          },
-          { "text": "5. Flexible payment methods", "included": true }
+          "The AI Connecting Agent empowers <strong>BUY – SELL – COOPERATE</strong> activities + 5 key features:",
+          "1. Direct chat with the final decision-maker",
+          "2. Secure – Easy to use – Reliable",
+          "3. Expand your market to Japan and globally",
+          "4. Multi-language support",
+          "5. Flexible payment methods"
         ]
       },
       "starter": {
-        "name": "Starter Plan",
+        "name": "Starter User",
         "price": "Free ($0)",
         "period": "",
         "description": "Start exploring business opportunities",
         "ctaText": "JOIN & VERIFY",
         "features": [
-          {
-            "text": "AI Connecting Agent + 3 features to explore new business opportunities:",
-            "included": true
-          },
-          { "text": "1. Search & connect for B2B trade", "included": true },
-          { "text": "2. 24/7 support", "included": true },
-          { "text": "3. Standard business profile", "included": true }
+          "AI Connecting Agent + 3 features to explore new business opportunities:",
+          "1. Search & connect for B2B trade",
+          "2. 24/7 support",
+          "3. Standard business profile"
         ]
       },
       "premium": {
@@ -65,54 +47,18 @@
         "description": "(VAT 8% not included)",
         "ctaText": "UPGRADE NOW",
         "features": [
-          {
-            "text": "1 PRIVATE AGENT + 5 PREMIUM PRIVILEGES to accelerate BUY – SELL – COOPERATE activities worldwide",
-            "included": true
-          },
-          {
-            "text": "1 PRIVATE AGENT with 4 key features. Coordinated by an AI Agent preloaded with tokens to connect with up to 120 clients and partners within 12 months (*easily expandable by purchasing more tokens if you wish to broaden your network)",
-            "included": true
-          },
-          {
-            "text": "- Dedicated AI trained with your company’s data",
-            "included": true
-          },
-          {
-            "text": "- Continuous data storage and updates",
-            "included": true
-          },
-          {
-            "text": "- Priority access to specialized AI Agents",
-            "included": true
-          },
-          {
-            "text": "- Direct engagement with the right person in charge",
-            "included": true
-          },
-          {
-            "text": "5 PREMIUM PRIVILEGES:",
-            "included": true
-          },
-          {
-            "text": "1. Global Premium User identification badge (Verified & Trusted Member)",
-            "included": true
-          },
-          {
-            "text": "2. Business Profile development for APAC market outreach on bcp.vn (in international English and for Vietnam, Japan, Thailand, Korea, and China markets)",
-            "included": true
-          },
-          {
-            "text": "3. Supported by AI combined with a Human Coordinator.",
-            "included": true
-          },
-          {
-            "text": "4. Connections facilitated by AI and offline business-connecting experts (depending on region)",
-            "included": true
-          },
-          {
-            "text": "5. Access to industry insights and multiple privileges to participate in trade and business promotion activities organized by the BCP ecosystem, AI Partners, and B2B partners within the network",
-            "included": true
-          }
+          "<strong>1 PRIVATE AGENT + 5 PREMIUM PRIVILEGES</strong> to accelerate BUY – SELL – COOPERATE activities worldwide",
+          "<strong>1 PRIVATE AGENT with 4 key features</strong> \nCoordinated by an AI Agent preloaded with tokens to connect with up to 120 clients and partners within 12 months (*easily expandable by purchasing more tokens if you wish to broaden your network)",
+          "- Dedicated AI trained with your company's data",
+          "- Continuous data storage and updates",
+          "- Priority access to specialized AI Agents",
+          "- Direct engagement with the right person in charge",
+          "<strong>5 PREMIUM PRIVILEGES:</strong> ",
+          "1. Global Premium User identification badge (Verified & Trusted Member)",
+          "2. Business Profile development for APAC market outreach on bcp.vn (in international English and for Vietnam, Japan, Thailand, Korea, and China markets)",
+          "3. Supported by AI combined with a Human Coordinator.",
+          "4. Connections facilitated by AI and offline business-connecting experts (depending on region)",
+          "5. Access to industry insights and multiple privileges to participate in trade and business promotion activities organized by the BCP ecosystem, AI Partners, and B2B partners within the network"
         ]
       }
     },

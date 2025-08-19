@@ -19,27 +19,12 @@
         "description": "(Chưa bao gồm VAT 8%)",
         "ctaText": "KẾT NỐI NGAY",
         "features": [
-          {
-            "text": "AI Connecting Agent giúp kết nối MUA - BÁN - HỢP TÁC + 5 tính năng chính:",
-            "included": true
-          },
-          {
-            "text": "1. Trò chuyện TRỰC TIẾP với người ra quyết định cuối cùng",
-            "included": true
-          },
-          {
-            "text": "2. Bảo mật - Dễ sử dụng - Đáng tin cậy",
-            "included": true
-          },
-          {
-            "text": "3. Mở rộng thị trường sang Nhật Bản và toàn cầu",
-            "included": true
-          },
-          {
-            "text": "4. Hỗ trợ đa ngôn ngữ",
-            "included": true
-          },
-          { "text": "5. Phương thức thanh toán linh hoạt", "included": true }
+          "AI Connecting Agent giúp kết nối <strong>MUA - BÁN - HỢP TÁC</strong> + 5 tính năng chính:",
+          "1. Trò chuyện TRỰC TIẾP với người ra quyết định cuối cùng",
+          "2. Bảo mật - Dễ sử dụng - Đáng tin cậy",
+          "3. Mở rộng thị trường sang Nhật Bản và toàn cầu",
+          "4. Hỗ trợ đa ngôn ngữ",
+          "5. Phương thức thanh toán linh hoạt"
         ]
       },
       "starter": {
@@ -49,13 +34,10 @@
         "description": "Khởi đầu hành trình khám phá cơ hội kinh doanh",
         "ctaText": " THAM GIA & XÁC THỰC",
         "features": [
-          {
-            "text": "AI Connecting Agent + 03 tính năng khám phá cơ hội kinh doanh mới",
-            "included": true
-          },
-          { "text": "1. Tìm kiếm & kết nối giao thương B2B", "included": true },
-          { "text": "2. Hỗ trợ 24/7", "included": true },
-          { "text": "3. Hồ sơ doanh nghiệp tiêu chuẩn", "included": true }
+          "AI Connecting Agent + 03 tính năng khám phá cơ hội kinh doanh mới",
+          "1. Tìm kiếm & kết nối giao thương B2B",
+          "2. Hỗ trợ 24/7",
+          "3. Hồ sơ doanh nghiệp tiêu chuẩn"
         ]
       },
       "premium": {
@@ -65,54 +47,18 @@
         "description": "(Chưa bao gồm VAT 8%)",
         "ctaText": "NÂNG CẤP NGAY",
         "features": [
-          {
-            "text": "01 PRIVATE AGENT + 05 ĐẶC QUYỀN PREMIUM thúc đẩy MUA - BÁN - HỢP TÁC TOÀN CẦU",
-            "included": true
-          },
-          {
-            "text": "01 PRIVATE AGENT cùng 04 tính năng chính. Điều phối bởi AI agent được cấp sẵn token để kết nối đến 120 khách hàng, đối tác trong 12 tháng  (*dễ dàng mua thêm nếu muốn mở rộng đối tác).",
-            "included": true
-          },
-          {
-            "text": "- Dữ liệu DN được train AI riêng",
-            "included": true
-          },
-          {
-            "text": "- Lưu trữ và cập nhật thông tin liên tục",
-            "included": true
-          },
-          {
-            "text": "- Ưu tiên sử dụng các AI Agent nghiệp vụ",
-            "included": true
-          },
-          {
-            "text": "- Làm việc đúng người phụ trách",
-            "included": true
-          },
-          {
-            "text": "05 ĐẶC QUYỀN PREMIUM:",
-            "included": true
-          },
-          {
-            "text": "1. Huy hiệu định danh Global Premium User (Thành viên xác thực - Tin cậy)",
-            "included": true
-          },
-          {
-            "text": "2. Xây dựng Hồ sơ Doanh nghiệp đánh thị trường APAC tại bcp.vn (Ngôn ngữ quốc tế tiếng Anh và thị trường Việt - Nhật - Thái - Hàn - Trung)",
-            "included": true
-          },
-          {
-            "text": "3. Được hỗ trợ bởi AI kết hợp với Điều phối viên - Human.",
-            "included": true
-          },
-          {
-            "text": "4. Kết nối bởi AI và chuyên gia kết nối offline (tuỳ theo khu vực)",
-            "included": true
-          },
-          {
-            "text": "5. Nhận Thông tin chuyên môn và nhiều ưu đãi khác để tham gia các hoạt động giao thương - xúc tiến thương mại do hệ sinh thái BCP, AIPartners và các đối tác B2B trong network tổ chức.",
-            "included": true
-          }
+          "<strong>01 PRIVATE AGENT + 05 ĐẶC QUYỀN PREMIUM</strong> thúc đẩy MUA - BÁN - HỢP TÁC TOÀN CẦU",
+          "<strong>01 PRIVATE AGENT cùng 04 tính năng chính</strong>\nĐiều phối bởi AI agent được cấp sẵn token để kết nối đến 120 khách hàng, đối tác trong 12 tháng  (*dễ dàng mua thêm nếu muốn mở rộng đối tác).",
+          "- Dữ liệu DN được train AI riêng",
+          "- Lưu trữ và cập nhật thông tin liên tục",
+          "- Ưu tiên sử dụng các AI Agent nghiệp vụ",
+          "- Làm việc đúng người phụ trách",
+          "<strong>05 ĐẶC QUYỀN PREMIUM:</strong>",
+          "1. Huy hiệu định danh Global Premium User (Thành viên xác thực - Tin cậy)",
+          "2. Xây dựng Hồ sơ Doanh nghiệp đánh thị trường APAC tại bcp.vn (Ngôn ngữ quốc tế tiếng Anh và thị trường Việt - Nhật - Thái - Hàn - Trung)",
+          "3. Được hỗ trợ bởi AI kết hợp với Điều phối viên - Human.",
+          "4. Kết nối bởi AI và chuyên gia kết nối offline (tuỳ theo khu vực)",
+          "5. Nhận Thông tin chuyên môn và nhiều ưu đãi khác để tham gia các hoạt động giao thương - xúc tiến thương mại do hệ sinh thái BCP, AIPartners và các đối tác B2B trong network tổ chức"
         ]
       }
     },

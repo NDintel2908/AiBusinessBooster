@@ -29,7 +29,7 @@ interface PricingPlanProps {
   price: string;
   period?: string;
   description: string;
-  features: PricingFeature[];
+  features: (PricingFeature | string)[];
   isPopular?: boolean;
   index: number;
   ctaText: string;
@@ -322,52 +322,26 @@ function PricingPlan({
           <div className="h-[2px] bg-gradient-to-r from-transparent via-brand-accent/30 to-transparent mb-4 md:mb-6"></div>
 
           <div className="space-y-3 mb-6 md:mb-8 flex-grow px-2">
-            {features.map((feature, idx) => (
-              <div key={idx} className="flex items-start">
-                <div className="w-5 flex-shrink-0 flex justify-center mt-0.5">
-                  {feature.included ? (
-                    <svg
-                      className={`w-4 h-4 md:w-5 md:h-5 ${
-                        feature.highlight
-                          ? "text-brand-primary"
-                          : "text-brand-accent"
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
-                  ) : (
-                    <svg
-                      className="w-4 h-4 md:w-5 md:h-5 text-gray-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      ></path>
-                    </svg>
-                  )}
+            {features.map((feature, idx) => {
+              // Handle both old format (object) and new format (string)
+              const featureText =
+                typeof feature === "string" ? feature : feature.text;
+              const isHighlight =
+                typeof feature === "string"
+                  ? false
+                  : feature.highlight || false;
+
+              return (
+                <div key={idx} className="flex items-start">
+                  <span
+                    className={`text-gray-300 text-sm md:text-base leading-tight whitespace-pre-line ${
+                      isHighlight ? "font-semibold" : ""
+                    }`}
+                    dangerouslySetInnerHTML={{ __html: featureText }}
+                  />
                 </div>
-                <span
-                  className={`text-gray-300 text-sm md:text-base leading-tight ml-2 ${
-                    feature.highlight ? "font-semibold" : ""
-                  }`}
-                >
-                  {feature.text}
-                </span>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="mt-auto pt-4 md:pt-6 px-2">
@@ -380,7 +354,7 @@ function PricingPlan({
               <GradientButton
                 size="md"
                 className={`w-full font-semibold text-sm md:text-base transition-all duration-200 ${
-                  name === "Starter Plan"
+                  name === "Starter User"
                     ? "border-2 border-white text-white shadow-lg shadow-white/30 hover:bg-white/10 hover:text-white hover:border-white"
                     : "shadow-lg shadow-brand-primary/20 hover:shadow-xl hover:shadow-brand-accent/30"
                 }`}
