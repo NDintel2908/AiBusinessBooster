@@ -1,64 +1,65 @@
 {
   "pricingSection": {
-    "badge": "Pricing Policy",
-    "title": "Choose the plan that's right for you",
-    "description": "Flexible solutions for every business scale.",
+    "badge": "นโยบายราคา",
+    "title": "เลือกแผนที่เหมาะกับคุณ",
+    "description": "โซลูชันที่ยืดหยุ่นสำหรับทุกขนาดธุรกิจ",
     "labels": {
-      "mostPopular": "Most Popular",
-      "singlePackage": "Single Package"
+      "mostPopular": "ที่นิยมมากที่สุด",
+      "singlePackage": "แพ็กเกจเดียว"
     },
     "tabs": {
-      "buyPerUse": "Pay per Connect",
-      "subscriptionPlans": "Subcription Plans"
+      "buyPerUse": "จ่ายตามการเชื่อมต่อ",
+      "subscriptionPlans": "แพ็กเกจแบบสมัครสมาชิก"
     },
     "plans": {
       "oneConnection": {
-        "name": "One Connection",
+        "name": "การเชื่อมต่อหนึ่งครั้ง",
         "price": "$20",
-        "period": "/successful connection",
-        "description": "(VAT 8% not included)",
-        "ctaText": "CONNECT NOW",
+        "period": "/การเชื่อมต่อที่สำเร็จ",
+        "description": "(ไม่รวม VAT 8%)",
+        "ctaText": "เชื่อมต่อเลย",
         "features": [
-          "The AI Connecting Agent empowers <strong>BUY – SELL – COOPERATE</strong> activities + 5 key features:",
-          "1. Direct chat with the final decision-maker",
-          "2. Secure – Easy to use – Reliable",
-          "3. Expand your market to Japan and globally",
-          "4. Multi-language support",
-          "5. Flexible payment methods"
+          "AI Connecting Agent ขับเคลื่อนกิจกรรม ซื้อ – ขาย – ร่วมมือ พร้อมคุณสมบัติหลัก + 5 ประการ:",
+          "1. แชทโดยตรงกับผู้มีอำนาจตัดสินใจขั้นสุดท้าย",
+          "2. ปลอดภัย – ใช้งานง่าย – เชื่อถือได้",
+          "3. ขยายตลาดของคุณสู่ญี่ปุ่นและระดับโลก",
+          "4. รองรับหลายภาษา",
+          "5. วิธีการชำระเงินที่ยืดหยุ่น"
         ]
       },
       "starter": {
         "name": "Starter User",
-        "price": "Free ($0)",
+        "price": "ฟรี ($0)",
         "period": "",
-        "description": "Start exploring business opportunities",
-        "ctaText": "JOIN & VERIFY",
+        "description": "เริ่มสำรวจโอกาสทางธุรกิจ",
+        "ctaText": "สมัครและยืนยันตัวตน",
         "features": [
-          "AI Connecting Agent + 3 features to explore new business opportunities:",
-          "1. Search & connect for B2B trade",
-          "2. 24/7 support",
-          "3. Standard business profile"
+          "AI Connecting Agent + 3 ฟีเจอร์ เพื่อสำรวจโอกาสทางธุรกิจใหม่:",
+          "1. ค้นหาและเชื่อมต่อสำหรับการค้าระหว่างธุรกิจ (B2B trade)",
+          "2. การสนับสนุนตลอด 24 ชั่วโมง 7 วัน",
+          "3. โปรไฟล์ธุรกิจมาตรฐาน"
         ]
       },
       "premium": {
         "name": "Global Premium User",
         "price": "$1,200",
-        "period": "/year",
-        "description": "(VAT 8% not included)",
-        "ctaText": "UPGRADE NOW",
+        "period": "/ปี",
+        "description": "(ไม่รวม VAT 8%)",
+        "ctaText": "อัปเกรดตอนนี้",
         "features": [
-          "<strong>1 PRIVATE AGENT + 5 PREMIUM PRIVILEGES</strong> to accelerate BUY – SELL – COOPERATE activities worldwide",
-          "<strong>1 PRIVATE AGENT with 4 key features</strong> \nCoordinated by an AI Agent preloaded with tokens to connect with up to 120 clients and partners within 12 months (*easily expandable by purchasing more tokens if you wish to broaden your network)",
-          "- Dedicated AI trained with your company's data",
-          "- Continuous data storage and updates",
-          "- Priority access to specialized AI Agents",
-          "- Direct engagement with the right person in charge",
-          "<strong>5 PREMIUM PRIVILEGES:</strong> ",
-          "1. Global Premium User identification badge (Verified & Trusted Member)",
-          "2. Business Profile development for APAC market outreach on bcp.vn (in international English and for Vietnam, Japan, Thailand, Korea, and China markets)",
-          "3. Supported by AI combined with a Human Coordinator.",
-          "4. Connections facilitated by AI and offline business-connecting experts (depending on region)",
-          "5. Access to industry insights and multiple privileges to participate in trade and business promotion activities organized by the BCP ecosystem, AI Partners, and B2B partners within the network"
+          "<strong>1 Private Agent + 5 สิทธิพิเศษระดับพรีเมียม</strong> เพื่อเร่งกิจกรรม ซื้อ – ขาย – ร่วมมือ ทั่วโลก",
+          "<strong>1 Private Agent พร้อม 4 ฟีเจอร์หลัก:</strong>",
+          "ประสานงานโดย AI Agent ที่มาพร้อมโทเค็น เพื่อเชื่อมต่อกับลูกค้าและพันธมิตรสูงสุด 120 รายภายใน 12 เดือน (สามารถขยายเพิ่มเติมได้โดยการซื้อโทเค็นเพิ่ม หากต้องการขยายเครือข่าย)",
+          "- AI เฉพาะที่ได้รับการฝึกด้วยข้อมูลของบริษัทคุณ",
+          "- การจัดเก็บและอัปเดตข้อมูลอย่างต่อเนื่อง",
+          "- สิทธิ์เข้าถึง AI Agents เฉพาะด้านก่อนใคร",
+          "- การสื่อสารโดยตรงกับผู้มีอำนาจตัดสินใจ",
+          "<strong>5 สิทธิพิเศษระดับพรีเมียม:</strong>",
+          "1. ตราสัญลักษณ์ Global Premium User (สมาชิกที่ได้รับการยืนยันและไว้วางใจ)",
+          "2. การพัฒนาโปรไฟล์ธุรกิจเพื่อเข้าถึงตลาด APAC บน bcp.vn (ทั้งภาษาอังกฤษสากล และตลาดเวียดนาม ญี่ปุ่น ไทย เกาหลี และจีน)",
+          "3. ได้รับการสนับสนุนจาก AI ควบคู่กับผู้ประสานงานมนุษย์",
+          "4. การเชื่อมต่ออำนวยความสะดวกโดย AI และผู้เชี่ยวชาญด้านการเชื่อมต่อทางธุรกิจในพื้นที่ (ขึ้นอยู่กับภูมิภาค)",
+          "5. เข้าถึงข้อมูลเชิงลึกด้านอุตสาหกรรม และสิทธิพิเศษมากมายในการเข้าร่วมกิจกรรมส่งเสริมการค้าและธุรกิจที่จัดโดยระบบนิเวศของ BCP, AI Partners และพันธมิตร B2B ภายในเครือข่าย"
         ]
       }
     },

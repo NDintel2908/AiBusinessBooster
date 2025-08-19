@@ -1,27 +1,27 @@
 {
   "faqSection": {
-    "title": "Frequently Asked Questions",
-    "description": "Find answers to common questions about our AI business connection platform.",
+    "title": "คำถามที่พบบ่อย",
+    "description": "ค้นหาคำตอบสำหรับคำถามทั่วไปเกี่ยวกับแพลตฟอร์มเชื่อมต่อธุรกิจ AI ของเรา",
     "faqItems": [
       {
-        "question": "What is BCP?",
-        "answer": "BCP - Business Connecting Platform is developed by BCP Joint Stock Company.\n\nThe BCP platform is an advanced digital ecosystem that connects thousands of businesses worldwide. We create opportunities for companies to:\n\n1. Find partners to buy and sell products/services\n2. Discover investment cooperation opportunities\n3. Expand international business networks"
+        "question": "BCP คืออะไร?",
+        "answer": "BCP - Business Connecting Platform พัฒนาโดยบริษัท BCP จำกัด (มหาชน)\n\nแพลตฟอร์ม BCP เป็นระบบนิเวศดิจิทัลขั้นสูงที่เชื่อมต่อธุรกิจหลายพันแห่งทั่วโลก เราสร้างโอกาสให้กับบริษัทต่าง ๆ ใน:\n\n1. การหาพันธมิตรเพื่อซื้อขายผลิตภัณฑ์/บริการ\n2. การค้นพบโอกาสความร่วมมือด้านการลงทุน\n3. การขยายเครือข่ายธุรกิจระดับนานาชาติ"
       },
       {
-        "question": "How many industries and fields can BCP serve?",
-        "answer": "So far we have not set any limits on legal business industries and fields."
+        "question": "BCP สามารถให้บริการได้กี่อุตสาหกรรมและสาขา?",
+        "answer": "จนถึงขณะนี้เรายังไม่ได้กำหนดข้อจำกัดใด ๆ สำหรับอุตสาหกรรมและสาขาธุรกิจที่ถูกกฎหมาย"
       },
       {
-        "question": "Is my and my company's data secure when using this platform?",
-        "answer": "Your and your company's data is strictly secured when using this platform. We use TLS encryption to protect data transmission, data is stored in encrypted databases and servers are placed in private networks, ensuring security. In addition, firewalls block malicious IPs and common attack requirements like SQL injection, helping to protect your data from threats."
+        "question": "ข้อมูลของฉันและบริษัทของฉันปลอดภัยหรือไม่เมื่อใช้แพลตฟอร์มนี้?",
+        "answer": "ข้อมูลของคุณและบริษัทของคุณได้รับการรักษาความปลอดภัยอย่างเข้มงวดเมื่อใช้แพลตฟอร์มนี้ เราใช้การเข้ารหัส TLS เพื่อปกป้องการส่งข้อมูล ข้อมูลถูกจัดเก็บในฐานข้อมูลที่เข้ารหัสและเซิร์ฟเวอร์ตั้งอยู่ในเครือข่ายส่วนตัว เพื่อให้มั่นใจในความปลอดภัย นอกจากนี้ ไฟร์วอลล์ยังปิดกั้น IP ที่เป็นอันตรายและความต้องการโจมตีทั่วไปเช่น SQL injection ช่วยปกป้องข้อมูลของคุณจากภัยคุกคาม"
       },
       {
-        "question": "Is my business information kept confidential?",
-        "answer": "Absolutely. We take data privacy seriously. You control exactly what information is displayed to potential partners, and all sensitive business data is encrypted and protected. We never sell your information to third parties, and you can request complete deletion of your data at any time."
+        "question": "ข้อมูลธุรกิจของฉันถูกเก็บเป็นความลับหรือไม่?",
+        "answer": "แน่นอน เราให้ความสำคัญกับความเป็นส่วนตัวของข้อมูลอย่างจริงจัง คุณสามารถควบคุมได้ว่าข้อมูลใดที่จะแสดงให้กับพันธมิตรที่มีศักยภาพ และข้อมูลธุรกิจที่ละเอียดอ่อนทั้งหมดจะถูกเข้ารหัสและปกป้อง เราไม่เคยขายข้อมูลของคุณให้กับบุคคลที่สาม และคุณสามารถขอให้ลบข้อมูลของคุณทั้งหมดได้ตลอดเวลา"
       },
       {
-        "question": "What makes BCP different from traditional connection platforms?",
-        "answer": "Unlike traditional platforms that rely on manual search or basic keyword matching, BCP uses advanced AI to proactively identify optimal business partners based on deep compatibility analysis. Our platform eliminates guesswork and countless hours typically spent on networking, significantly increasing the chances of finding business relationships that convert."
+        "question": "อะไรทำให้ BCP แตกต่างจากแพลตฟอร์มเชื่อมต่อแบบดั้งเดิม?",
+        "answer": "ซึ่งแตกต่างจากแพลตฟอร์มดั้งเดิมที่พึ่งพาการค้นหาด้วยตนเองหรือการจับคู่คำหลักพื้นฐาน BCP ใช้ AI ขั้นสูงเพื่อระบุพันธมิตรธุรกิจที่เหมาะสมที่สุดโดยอาศัยการวิเคราะห์ความเข้ากันได้อย่างลึกซึ้ง แพลตฟอร์มของเราช่วยขจัดการเดาและเวลานับไม่ถ้วนที่มักใช้ไปกับการสร้างเครือข่าย เพิ่มโอกاสในการค้นหาความสัมพันธ์ทางธุรกิจที่ประสบความสำเร็จอย่างมีนัยสำคัญ"
       }
     ]
   }

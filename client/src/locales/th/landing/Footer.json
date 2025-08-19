@@ -1,28 +1,28 @@
 {
   "footer": {
     "company": {
-      "title": "Company",
-      "aboutUs": "About us",
-      "features": "Features",
-      "pricing": "Pricing"
+      "title": "บริษัท",
+      "aboutUs": "เกี่ยวกับเรา",
+      "features": "คุณสมบัติ",
+      "pricing": "ราคา"
     },
     "resources": {
-      "title": "Resources",
-      "paymentPolicy": "Payment Policy",
-      "privacyPolicy": "Privacy Policy",
-      "pricingComparison": "Service Package Comparison",
-      "termsOfService": "Terms of Service"
+      "title": "ทรัพยากร",
+      "paymentPolicy": "นโยบายการชำระเงิน",
+      "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+      "pricingComparison": "เปรียบเทียบแพ็กเกจบริการ",
+      "termsOfService": "เงื่อนไขการให้บริการ"
     },
     "paymentPartners": {
-      "title": "Payment providers"
+      "title": "ผู้ให้บริการชำระเงิน"
     },
     "companyInfo": {
-      "title": "Company information",
-      "taxCode": "Tax code: 0317026053",
-      "address": "Address: 224A Dien Bien Phu, Xuan Hoa Ward, HCMC",
+      "title": "ข้อมูลบริษัท",
+      "taxCode": "รหัสภาษี: 0317026053",
+      "address": "ที่อยู่: 224A เดียนเบียนฟู เขตเซวนโฮอา กรุงเทพมหานคร",
       "phone": "0963254259",
       "mail": "info@bcp.global"
     },
-    "copyright": "© {{year}} Business Connecting Platform (BCP). All rights reserved."
+    "copyright": "© {{year}} Business Connecting Platform (BCP). สงวนลิขสิทธิ์ทุกประการ"
   }
 }

@@ -1,12 +1,12 @@
 {
   "helpButton": {
-    "tooltip": "Need help? Choose contact method",
-    "ariaLabel": "Customer support",
+    "tooltip": "ต้องการความช่วยเหลือ? เลือกวิธีการติดต่อ",
+    "ariaLabel": "การสนับสนุนลูกค้า",
     "options": {
       "zalo": "Zalo",
       "messenger": "Messenger",
       "whatsapp": "WhatsApp"
     }
   },
-  "loading": "Loading..."
+  "loading": "กำลังโหลด..."
 }

@@ -1,21 +1,21 @@
 {
   "featuresSection": {
-    "title": "Since 2018...",
+    "title": "ตั้งแต่ปี 2018...",
     "description": "",
     "stats": [
       {
-        "number": "1st",
-        "description": "Ranked Top 1 in the pre-incubation stage at the AI.Star 2024 Competition",
+        "number": "อันดับ 1",
+        "description": "ได้รับการจัดอันดับอันดับ 1 ในขั้นตอนก่อนการบ่มเพาะที่การแข่งขัน AI.Star 2024",
         "endValue": 1
       },
       {
         "number": "2200+",
-        "description": "BCP business members",
+        "description": "สมาชิกธุรกิจ BCP",
         "endValue": 2200
       },
       {
         "number": "1600+",
-        "description": "Successful connections",
+        "description": "การเชื่อมต่อที่ประสบความสำเร็จ",
         "endValue": 1600
       }
     ]

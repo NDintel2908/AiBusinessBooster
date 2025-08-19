@@ -1,12 +1,12 @@
 {
   "feedbackSection": {
-    "badge": "Testimonials",
-    "title": "What business leaders say about <span class=\"text-brand-accent\">BCP.Global</span>",
-    "description": "BCP is a platform that helps connect businesses with suitable partners through AI, creating sustainable and effective business relationships.",
+    "badge": "คำรับรอง",
+    "title": "สิ่งที่ผู้นำทางธุรกิจพูดเกี่ยวกับ <span class=\"text-brand-accent\">BCP.Global</span>",
+    "description": "BCP เป็นแพลตฟอร์มที่ช่วยเชื่อมต่อธุรกิจกับพันธมิตรที่เหมาะสมผ่าน AI สร้างความสัมพันธ์ทางธุรกิจที่ยั่งยืนและมีประสิทธิภาพ",
     "feedbacks": [
       {
         "id": 1,
-        "quote": "BCP has completely changed the way we connect with partners. The AI matching is very accurate.",
+        "quote": "BCP ได้เปลี่ยนแปลงวิธีการเชื่อมต่อกับพันธมิตรของเราโดยสิ้นเชิง การจับคู่โดย AI มีความแม่นยำมาก",
         "author": "Trinh Hong Khanh",
         "position": "CEO",
         "company": "Ba Mien Accounting",
@@ -14,17 +14,17 @@
       },
       {
         "id": 2,
-        "quote": "This platform has helped us expand internationally effectively.",
+        "quote": "แพลตฟอร์มนี้ได้ช่วยให้เราขยายธุรกิจระดับนานาชาติได้อย่างมีประสิทธิภาพ",
         "author": "Nguyen Hai Tam",
-        "position": "Business Director",
+        "position": "ผู้อำนวยการธุรกิจ",
         "company": "Webketoan",
         "avatar": "/images/NguyenHaiTam.webp"
       },
       {
         "id": 3,
-        "quote": "Thanks to BCP, we now have a trusted partner in Vietnam, which positions our company strongly for future growth in the region. We highly recommend BCP to any organization seeking expert business matching services, local market insights, and a genuinely supportive partner.",
+        "quote": "ขอบคุณ BCP ที่ทำให้เรามีพันธมิตรที่น่าเชื่อถือในเวียดนาม ซึ่งทำให้บริษัทของเรามีตำแหน่งที่แข็งแกร่งสำหรับการเติบโตในอนาคตในภูมิภาคนี้ เราขอแนะนำ BCP อย่างยิ่งสำหรับองค์กรใดที่กำลังมองหาบริการจับคู่ธุรกิจระดับผู้เชี่ยวชาญ ข้อมูลเชิงลึกของตลาดท้องถิ่น และพันธมิตรที่ให้การสนับสนุนอย่างแท้จริง",
         "author": "Wichak Chongudomlert",
-        "position": "Founder",
+        "position": "ผู้ก่อตั้ง",
         "company": "Signify and ICX Technologies",
         "avatar": "/images/Wichark.webp"
       }

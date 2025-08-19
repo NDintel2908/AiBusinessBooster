@@ -1,22 +1,22 @@
 {
-  "storyBadge": "Our Story",
-  "title": "Business Story",
-  "description1": "Based in Ho Chi Minh City, Vietnam, BCP was created to ease the journey in finding a compatible business partner. The difficulty of a successful business connection starts at the search. Finding a business partner requires trust, compatibility, and compromise.",
-  "description2": "With our multinational team of AI experts, we build an intelligent B2B connection platform that turns advanced artificial intelligence into an efficient partnership tool.",
-  "visionTitle": "Vision",
-  "visionDescription": "We believe in a world where every business finds their ideal partner.",
-  "missionTitle": "Mission",
-  "missionDescription": "Through advanced AI technology, BCP breaks down all barriers, opening up effective collaboration opportunities for all organizations, large and small.",
-  "partnersTitle": "Strategic Partners",
+  "storyBadge": "เรื่องราวของเรา",
+  "title": "เรื่องราวทางธุรกิจ",
+  "description1": "ตั้งอยู่ในนครโฮจิมินห์ ประเทศเวียดนาม BCP ถูกสร้างขึ้นเพื่อทำให้การค้นหาพันธมิตรทางธุรกิจที่เข้ากันได้เป็นเรื่องง่าย ความยากลำบากของการเชื่อมต่อทางธุรกิจที่ประสบความสำเร็จเริ่มต้นจากการค้นหา การหาพันธมิตรทางธุรกิจต้องอาศัยความไว้วางใจ ความเข้ากัน และการประนีประนอม",
+  "description2": "ด้วยทีมผู้เชี่ยวชาญ AI หลากหลายสัญชาติของเรา เราสร้างแพลตฟอร์มเชื่อมต่อ B2B อัจฉริยะที่เปลี่ยนปัญญาประดิษฐ์ขั้นสูงให้เป็นเครื่องมือพันธมิตรที่มีประสิทธิภาพ",
+  "visionTitle": "วิสัยทัศน์",
+  "visionDescription": "เราเชื่อในโลกที่ทุกธุรกิจจะได้พบกับพันธมิตรที่เหมาะสมที่สุด",
+  "missionTitle": "ภารกิจ",
+  "missionDescription": "ผ่านเทคโนโลยี AI ขั้นสูง BCP ทำลายอุปสรรคทุกด้าน เปิดโอกาสความร่วมมือที่มีประสิทธิภาพสำหรับทุกองค์กร ไม่ว่าจะใหญ่หรือเล็ก",
+  "partnersTitle": "พันธมิตรเชิงกลยุทธ์",
   "partners": {
-    "tech": "Technology Partner",
-    "business": "Market Partner",
-    "development": "Development Partner"
+    "tech": "พันธมิตรด้านเทคโนโลยี",
+    "business": "พันธมิตรด้านการตลาด",
+    "development": "พันธมิตรด้านการพัฒนา"
   },
   "imageAlt": {
-    "ourTeam": "Our Team",
-    "techPartner": "Tech Partner",
-    "businessPartner": "Business Partner",
-    "developmentPartner": "Development Partner"
+    "ourTeam": "ทีมงานของเรา",
+    "techPartner": "พันธมิตรด้านเทคโนโลยี",
+    "businessPartner": "พันธมิตรทางธุรกิจ",
+    "developmentPartner": "พันธมิตรด้านการพัฒนา"
   }
 }

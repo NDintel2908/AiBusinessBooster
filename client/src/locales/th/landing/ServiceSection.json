@@ -1,30 +1,30 @@
 {
   "serviceSection": {
-    "title": "What is <span class=\"text-blue-400\">BCP.Global</span> platform?",
+    "title": "แพลตฟอร์ม <span class=\"text-blue-400\">BCP.Global</span> คืออะไร?",
     "description": "",
     "features": {
       "proactiveAI": {
-        "title": "Real-time Business Matching",
+        "title": "การจับคู่ธุรกิจแบบเรียลไทม์",
         "items": [
-          "BCP’s advanced AI technology provides insight and connection opportunities without delay. <strong>Find real partners in real time.</strong>"
+          "เทคโนโลยี AI ขั้นสูงของ BCP ให้ข้อมูลเชิงลึกและโอกาสเชื่อมต่อโดยไม่มีความล่าช้า <strong>ค้นหาพันธมิตรที่แท้จริงแบบเรียลไทม์</strong>"
         ]
       },
       "decisionMaker": {
-        "title": "Connect directly with final decision-makers",
+        "title": "เชื่อมต่อโดยตรงกับผู้มีอำนาจตัดสินใจสุดท้าย",
         "items": [
-          "No intermediaries. Get straight to planning with final decision-makers to ensure efficiency and effective cooperation."
+          "ไม่มีตัวกลาง เข้าสู่การวางแผนโดยตรงกับผู้มีอำนาจตัดสินใจสุดท้ายเพื่อให้เกิดประสิทธิภาพและความร่วมมือที่มีผลสำเร็จ"
         ]
       },
       "aiAssistant": {
-        "title": "AI-Powered Insight and Support",
+        "title": "ข้อมูลเชิงลึกและการสนับสนุนโดย AI",
         "items": [
-          "BCP provides analyzes opportunities and delivers detailed information to potential partners."
+          "BCP วิเคราะห์โอกาสและส่งมอบข้อมูลรายละเอียดให้กับพันธมิตรที่มีศักยภาพ"
         ]
       },
       "security": {
-        "title": "Commitment to Security",
+        "title": "ความมุ่งมั่นในความปลอดภัย",
         "items": [
-          "Data and communications within BCP are always protected. All exchanges are encrypted and adhereto international security standards."
+          "ข้อมูลและการสื่อสารภายใน BCP ได้รับการป้องกันอยู่เสมอ การแลกเปลี่ยนทุกครั้งถูกเข้ารหัสและปฏิบัติตามมาตรฐานความปลอดภัยระดับนานาชาติ"
         ]
       }
     }

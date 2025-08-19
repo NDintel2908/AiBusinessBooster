@@ -2,12 +2,12 @@
   "bcpOverview": {
     "badge": "NEW",
     "title": {
-      "prefix": "What is",
-      "highlight": "BCP.Global?",
+      "prefix": "",
+      "highlight": "BCP.Global คืออะไร?",
       "suffix": ""
     },
     "subtitle": {
-      "text": "The AI-driven B2B (business-to-business) platform redefining global connections through intelligent connections.",
+      "text": "แพลตฟอร์มการเชื่อมต่อ B2B ระดับโลก ขับเคลื่อนด้วย AI Agents เฉพาะด้าน เพื่ออำนวยความสะดวกในกิจกรรมทางธุรกิจ — การซื้อ การขาย และความร่วมมือ BCP.Global กำลัง กำหนดนิยามใหม่ของการทำธุรกิจและการขยายตลาด ในยุค AI ท่ามกลางความปั่นป่วนของซัพพลายเชน ภายใต้หลักการสำคัญ 4 ประการ: ธุรกรรมไร้รอยต่อ - พันธมิตรที่เชื่อถือได้ - การเชื่อมต่อที่รวดเร็ว - ความคุ้มค่าด้านต้นทุน",
       "actions": {
         "buy": "BUY",
         "sell": "SELL",
@@ -18,48 +18,48 @@
     "description": "BCP transforms business partnerships from chance encounters to data-driven connections. Our advanced AI technology analyzes market opportunities and delivers precise partner matching, breaking down barriers between organizations worldwide.",
     "introduction": {
       "title": {
-        "prefix": "About",
+        "prefix": "เกี่ยวกับ",
         "highlight": "BCP.Global"
       },
       "story": {
-        "title": "Our Story",
+        "title": "เรื่องราวของเรา",
         "description": [
-          "Connecting with the right partners — fast — and at optimized costs is the key to unlocking markets and driving strategic growth. Yet before 2025, this remained a major challenge for both domestic and international businesses, reflected in:",
-          "- Endless trade fairs",
-          "- Layers of obstructive intermediaries",
-          "- Drained resources and budgets",
-          "- Missed business opportunities",
-          "Having experienced these “pain points” firsthand, leverages real-world expertise, deep knowledge of Asian markets, and advanced Generative AI capabilities to develop the Business Connecting Platform – a global B2B connecting platform integrated with a suite of specialized AI Agents that simplify and accelerate business activities. This transforms B2B connection opportunities into real transactions, in real time.",
+          "“การเชื่อมต่อกับพันธมิตรที่ใช่ — อย่างรวดเร็ว — และด้วยต้นทุนที่เหมาะสม คือกุญแจสำคัญในการเปิดตลาดและขับเคลื่อนการเติบโตเชิงกลยุทธ์” อย่างไรก็ตาม ก่อนปี 2025 นี่คือความท้าทายครั้งใหญ่ของทั้งธุรกิจในประเทศและต่างประเทศ ซึ่งสะท้อนให้เห็นใน:",
+          "- งานแสดงสินค้าที่ไม่รู้จบ",
+          "- ชั้นกลางที่ซับซ้อนและเป็นอุปสรรค",
+          "- ทรัพยากรและงบประมาณที่ถูกใช้ไปอย่างสิ้นเปลือง",
+          "- โอกาสทางธุรกิจที่สูญเสียไป",
+          "BCP.Global เองก็เคยเผชิญกับ “Pain Points” เหล่านี้โดยตรง จึงได้ผสาน ประสบการณ์จริง ความเข้าใจเชิงลึกเกี่ยวกับตลาดเอเชีย และศักยภาพของ Generative AI ขั้นสูง เพื่อพัฒนา Business Connecting Platform — แพลตฟอร์มการเชื่อมต่อ B2B ระดับโลก ที่บูรณาการด้วย AI Agents เฉพาะด้าน ซึ่งช่วยทำให้กิจกรรมทางธุรกิจง่ายขึ้น เร็วขึ้น และมีประสิทธิภาพมากขึ้น BCP.Global เปลี่ยนโอกาสในการเชื่อมต่อ B2B ให้กลายเป็น ธุรกรรมจริง ในเวลาจริง",
           "<strong>Share your needs and get connected today!</strong>"
         ]
       },
       "vision": {
-        "title": "Our Vision",
-        "description": "Unlock global business connections through the power of AI."
+        "title": "วิสัยทัศน์",
+        "description": "ปลดล็อกการเชื่อมต่อทางธุรกิจระดับโลกด้วยพลังของ AI"
       },
       "mission": {
-        "title": "Our Mission",
-        "description": "BUY – SELL – COOPERATE locally & globally through A NETWORK OF SPECIALIZED AI Agents."
+        "title": "พันธกิจ",
+        "description": "ซื้อ – ขาย – ร่วมมือ ทั้งในประเทศและระดับโลก ผ่านเครือข่าย AI Agents เฉพาะด้าน"
       }
     },
     "features": {
-      "title": "Core Features",
+      "title": "คุณสมบัติหลัก",
       "list": {
         "realTimeMatching": {
-          "title": "Real-Time Business Connections",
-          "description": "Powered by BCP’s advanced AI, we analyze data and instantly recommend the most relevant business partners. <strong> Find the right partner — at the right time.</strong>"
+          "title": "การเชื่อมต่อทางธุรกิจแบบเรียลไทม์ ",
+          "description": "ขับเคลื่อนด้วย AI ขั้นสูงของ BCP ที่สามารถวิเคราะห์ข้อมูลและแนะนำพันธมิตรทางธุรกิจที่เกี่ยวข้องที่สุดได้ทันที ค้นหาพันธมิตรที่ใช่ — ในเวลาที่ใช่"
         },
         "directConnection": {
-          "title": "Direct Access To Key Decision-makers",
-          "description": "No delays! Direct conversations with key decision-makers — for optimized results and faster partnerships."
+          "title": "เข้าถึงผู้มีอำนาจตัดสินใจโดยตรง",
+          "description": "ไม่มีความล่าช้า! สนทนาโดยตรงกับผู้มีอำนาจตัดสินใจ เพื่อให้ได้ผลลัพธ์ที่ดีที่สุดและสร้างความร่วมมือได้รวดเร็วยิ่งขึ้น"
         },
         "aiInsight": {
-          "title": "Flexible Support & In-depth Insights",
-          "description": "BCP analyzes opportunities and delivers actionable insights to potential partners — bridging online & offline support to speed up B2B connections."
+          "title": "การสนับสนุนที่ยืดหยุ่นและข้อมูลเชิงลึก",
+          "description": "BCP วิเคราะห์โอกาสทางธุรกิจและส่งมอบข้อมูลเชิงลึกที่นำไปปฏิบัติได้จริงให้แก่พันธมิตรที่มีศักยภาพ พร้อมทั้งเชื่อมโยงการสนับสนุนทั้งออนไลน์และออฟไลน์ เพื่อเร่งการเชื่อมต่อ B2B"
         },
         "security": {
-          "title": "Security Commitment",
-          "description": "All data and communications on BCP are encrypted and protected in accordance with international security standards."
+          "title": "ความปลอดภัยของข้อมูล",
+          "description": "ข้อมูลและการสื่อสารทั้งหมดบน BCP ถูกเข้ารหัสและป้องกันตามมาตรฐานความปลอดภัยระดับสากล"
         }
       }
     }

@@ -1,139 +1,139 @@
 {
   "businessSectors": {
     "sectionHeader": {
-      "badge": "Supported Industries",
-      "title": "25 Business Industries Supported by <1>BCP.Global</1>",
-      "description": "Explore the comprehensive list of business industries that our AI platform can support for connection and growth."
+      "badge": "อุตสาหกรรมที่รองรับ",  
+      "title": "25 อุตสาหกรรมธุรกิจที่ <1>BCP.Global</1> รองรับ",
+      "description": "สำรวจรายชื่ออุตสาหกรรมธุรกิจที่ครอบคลุมซึ่งแพลตฟอร์ม AI ของเราสามารถสนับสนุนเพื่อการเชื่อมต่อและการเติบโต"
     },
     "groupsList": {
-      "title": "Industry List by Groups",
-      "sectorsCount": "{{count}} industries"
+      "title": "รายการอุตสาหกรรมตามกลุ่ม",
+      "sectorsCount": "{{count}} อุตสาหกรรม"
     },
     "businessGroups": {
       "manufacturing": {
-        "title": "Professional Service Providers",
+        "title": "ผู้ให้บริการด้านมืออาชีพ",
         "sectors": {
           "itDevelopment": {
-            "name": "IT Software Development, AI and IoT Outsourcing",
-            "description": "Application development, software systems, AI solutions and smart IoT devices"
+            "name": "การพัฒนาซอฟต์แวร์ไอที AI และการจ้างงานภายนอก IoT",
+            "description": "การพัฒนาแอปพลิเคชัน ระบบซอฟต์แวร์ โซลูชัน AI และอุปกรณ์ IoT อัจฉริยะ"
           },
           "consulting": {
-            "name": "Accounting, Financial, Legal, Insurance Consulting",
-            "description": "Providing professional consulting services in finance, accounting, legal and insurance"
+            "name": "ที่ปรึกษาบัญชี การเงิน กฎหมาย ประกันภัย",
+            "description": "ให้บริการปรึกษาระดับมืออาชีพด้านการเงิน บัญชี กฎหมาย และประกันภัย"
           },
           "hr": {
-            "name": "Human Resources, Recruitment and Training Services",
-            "description": "HR consulting, talent recruitment and training program development"
+            "name": "ทรัพยากรมนุษย์ การสรรหาและบริการฝึกอบรม",
+            "description": "ที่ปรึกษา HR การสรรหาบุคลากรและการพัฒนาโปรแกรมฝึกอบรม"
           },
           "marketing": {
-            "name": "Advertising Agency, Marketing",
-            "description": "Marketing strategy design, advertising and brand building"
+            "name": "เอเจนซี่โฆษณา การตลาด",
+            "description": "ออกแบบกลยุทธ์การตลาด โฆษณา และการสร้างแบรนด์"
           },
           "distribution": {
-            "name": "Distribution Services, Domestic Trade",
-            "description": "Product distribution, retail business and domestic commerce"
+            "name": "บริการจำหน่าย การค้าภายใน",
+            "description": "การจำหน่ายสินค้า ธุรกิจค้าปลีก และการค้าภายใน"
           },
           "logistics": {
-            "name": "Transportation, Logistics, Distribution and Warehousing Services",
-            "description": "Supply chain management, transportation and professional logistics warehousing"
+            "name": "บริการขนส่ง โลจิสติกส์ การจำหน่าย และคลังสินค้า",
+            "description": "การจัดการห่วงโซ่อุปทาน การขนส่ง และคลังสินค้าโลจิสติกส์ระดับมืออาชีพ"
           },
           "architecture": {
-            "name": "Architecture Design, Office Interior",
-            "description": "Architectural design, space planning and professional interior design"
+            "name": "การออกแบบสถาปัตยกรรม การตกแต่งภายในสำนักงาน",
+            "description": "การออกแบบสถาปัตยกรรม การวางแผนพื้นที่ และการออกแบบตกแต่งภายในระดับมืออาชีพ"
           },
           "realEstate": {
-            "name": "Office, Commercial, Retail, Industrial Real Estate Business",
-            "description": "Investment, development and business of commercial and industrial real estate projects"
+            "name": "ธุรกิจอสังหาริมทรัพย์สำนักงาน พาณิชย์ ค้าปลีก อุตสาหกรรม",
+            "description": "การลงทุน พัฒนา และธุรกิจโครงการอสังหาริมทรัพย์พาณิชย์และอุตสาหกรรม"
           },
           "export": {
-            "name": "Export Services Group, Cross-border Market Development",
-            "description": "Export support, international market expansion and cross-border trade"
+            "name": "กลุ่มบริการส่งออก การพัฒนาตลาดข้ามแดน",
+            "description": "การสนับสนุนการส่งออก การขยายตลาดต่างประเทศ และการค้าข้ามแดน"
           }
         }
       },
       "technology": {
-        "title": "Materials and Goods Provider for Manufacturing Enterprises",
+        "title": "ผู้ให้วัสดุและสินค้าสำหรับวิสาหกิจการผลิต",
         "sectors": {
           "agriculture": {
-            "name": "Agriculture and Aquaculture",
-            "description": "Providing raw materials such as agricultural products and seafood for food processing enterprises"
+            "name": "เกษตรกรรมและการเพาะเลี้ยงสัตว์น้ำ",
+            "description": "ให้วัตถุดิบเช่นผลิตภัณฑ์เกษตรและอาหารทะเลสำหรับโรงงานแปรรูปอาหาร"
           },
           "food": {
-            "name": "Food Materials",
-            "description": "Providing food ingredients such as vegetable oils and spices for food processing enterprises"
+            "name": "วัสดุอาหาร",
+            "description": "ให้ส่วนผสมอาหารเช่นน้ำมันพืชและเครื่องเทศสำหรับโรงงานแปรรูปอาหาร"
           },
           "textile": {
-            "name": "Textiles",
-            "description": "Providing raw materials such as yarn and fabric for garment enterprises"
+            "name": "สิ่งทอ",
+            "description": "ให้วัตถุดิบเช่นด้ายและผ้าสำหรับโรงงานเสื้อผ้า"
           },
           "paper": {
-            "name": "Paper",
-            "description": "Providing raw materials such as pulp and raw paper for paper and packaging manufacturing enterprises"
+            "name": "กระดาษ",
+            "description": "ให้วัตถุดิบเช่นเยื่อกระดาษและกระดาษดิบสำหรับโรงงานผลิตกระดาษและบรรจุภัณฑ์"
           },
           "chemical": {
-            "name": "Chemicals",
-            "description": "Providing chemical raw materials such as virgin plastics and basic chemicals for other industries"
+            "name": "สารเคมี",
+            "description": "ให้วัตถุดิบเคมีเช่นพลาสติกดิบและสารเคมีพื้นฐานสำหรับอุตสาหกรรมอื่น"
           },
           "construction": {
-            "name": "Construction Materials",
-            "description": "Providing raw materials such as cement, steel, and bricks for construction companies"
+            "name": "วัสดุก่อสร้าง",
+            "description": "ให้วัตถุดิบเช่นปูนซีเมนต์ เหล็ก และอิฐสำหรับบริษัทก่อสร้าง"
           },
           "mining": {
-            "name": "Mining",
-            "description": "Providing raw materials such as stone, sand, gravel, and metal ores for construction and metallurgy industries"
+            "name": "การขุดเหมือง",
+            "description": "ให้วัตถุดิบเช่นหิน ทราย กรวด และแร่โลหะสำหรับอุตสาหกรรมก่อสร้างและโลหะวิทยา"
           }
         }
       },
       "services": {
-        "title": "Manufacturing and Processing for End-User Products",
+        "title": "การผลิตและแปรรูปสำหรับผลิตภัณฑ์ผู้บริโฟคสุดท้าย",
         "sectors": {
           "foodManufacturing": {
-            "name": "Food and Beverage Manufacturers",
-            "description": "Processing and manufacturing consumer food and beverage products for the retail market"
+            "name": "ผู้ผลิตอาหารและเครื่องดื่ม",
+            "description": "แปรรูปและผลิตผลิตภัณฑ์อาหารและเครื่องดื่มสำหรับผู้บริโฟคในตลาดค้าปลีก"
           },
           "fashionManufacturing": {
-            "name": "Textile Manufacturing, Fashion Products",
-            "description": "Manufacturing clothing, fashion accessories and textile export products"
+            "name": "การผลิตสิ่งทอ ผลิตภัณฑ์แฟชั่น",
+            "description": "ผลิตเสื้อผ้า เครื่องประดับแฟชั่น และผลิตภัณฑ์สิ่งทอเพื่อการส่งออก"
           },
           "consumerGoods": {
-            "name": "Consumer Goods Manufacturers",
-            "description": "Manufacturing essential consumer products such as cosmetics, household items, and office supplies"
+            "name": "ผู้ผลิตสินค้าอุปโภคบริโฟค",
+            "description": "ผลิตสินค้าอุปโภคบริโฟคที่จำเป็นเช่นเครื่องสำอาง สิ่งของใช้ในบ้าน และเครื่องใช้สำนักงาน"
           },
           "electronics": {
-            "name": "Electronics and Home Appliance Manufacturers",
-            "description": "Manufacturing and assembling electronic devices, machinery and modern home appliances"
+            "name": "ผู้ผลิตอิเล็กทรอนิกส์และเครื่องใช้ไฟฟ้าในบ้าน",
+            "description": "ผลิตและประกอบอุปกรณ์อิเล็กทรอนิกส์ เครื่องจักร และเครื่องใช้ไฟฟ้าในบ้านสมัยใหม่"
           },
           "automotive": {
-            "name": "Vehicle and Parts Manufacturers",
-            "description": "Manufacturing and assembling automobiles, motorcycles and replacement parts and components"
+            "name": "ผู้ผลิตยานพาหนะและชิ้นส่วน",
+            "description": "ผลิตและประกอบรถยนต์ จักรยานยนต์ และชิ้นส่วนอะไหล่"
           }
         }
       },
       "infrastructure": {
-        "title": "Industrial Components Processing & Support",
+        "title": "การแปรรูปชิ้นส่วนอุตสาหกรรมและการสนับสนุน",
         "sectors": {
           "industrialComponents": {
-            "name": "Industrial Support Components Processing",
-            "description": "Manufacturing parts and components used in various industries"
+            "name": "การแปรรูปชิ้นส่วนสนับสนุนอุตสาหกรรม",
+            "description": "ผลิตชิ้นส่วนและคอมโพเนนต์ที่ใช้ในอุตสาหกรรมต่าง ๆ"
           },
           "semiconductor": {
-            "name": "Semiconductor Industry Components Processing",
-            "description": "Manufacturing and processing integrated circuits and transistors"
+            "name": "การแปรรูปชิ้นส่วนอุตสาหกรรมเซมิคอนดักเตอร์",
+            "description": "ผลิตและแปรรูปวงจรรวมและทรานซิสเตอร์"
           },
           "precision": {
-            "name": "Precision Mechanical Processing",
-            "description": "CNC turning and milling, mold processing, serving industries such as automotive, automation, and machinery manufacturing"
+            "name": "การแปรรูปกลไกความแม่นยำ",
+            "description": "การกลึง มิลลิ่ง CNC การแปรรูปแม่พิมพ์ ให้บริการอุตสาหกรรมเช่นยานยนต์ ระบบอัตโนมัติ และการผลิตเครื่องจักร"
           },
           "specializedEquipment": {
-            "name": "Specialized Equipment Manufacturing and Supply",
-            "description": "Processing, manufacturing and supplying specialized equipment for medical devices, automation equipment, and automotive parts industries"
+            "name": "การผลิตและจัดหาอุปกรณ์เฉพาะทาง",
+            "description": "แปรรูป ผลิต และจัดหาอุปกรณ์เฉพาะทางสำหรับอุตสาหกรรมอุปกรณ์การแพทย์ อุปกรณ์อัตโนมัติ และชิ้นส่วนยานยนต์"
           }
         }
       }
     },
     "callToAction": {
-      "text": "Don’t see your industry on the list? We’re always ready to expand our support.",
-      "button": "Contact for consultation"
+      "text": "ไม่เห็นอุตสาหกรรมของคุณในรายการ? เราพร้อมที่จะขยายการสนับสนุนเสมอ",
+      "button": "ติดต่อเพื่อปรึกษา"
     }
   }
 }

@@ -1,21 +1,21 @@
 {
   "contactSection": {
-    "badge": "Contact us",
-    "title": "Become a BCP recommended partner",
-    "description": "Fill out the form and our AI business expert will contact you within 24 hours to discuss how BCP can revolutionize your partnership strategy.",
+    "badge": "ติดต่อเรา",
+    "title": "เป็นพันธมิตรที่ BCP แนะนำ",
+    "description": "กรอกแบบฟอร์มและผู้เชี่ยวชาญด้านธุรกิจ AI ของเราจะติดต่อคุณภายใน 24 ชั่วโมงเพื่อหารือเกี่ยวกับว่า BCP สามารถปฏิวัติกลยุทธ์พันธมิตรของคุณได้อย่างไร",
     "form": {
-      "title": "Contact form",
-      "name": "Full name",
-      "namePlaceholder": "John Smith",
-      "email": "Email address",
+      "title": "แบบฟอร์มติดต่อ",
+      "name": "ชื่อเต็ม",
+      "namePlaceholder": "นายสมชาย ใจดี",
+      "email": "ที่อยู่อีเมล",
       "emailPlaceholder": "example@company.com",
-      "company": "Company name",
-      "companyPlaceholder": "Your company",
-      "requirements": "Specific requirements",
-      "requirementsPlaceholder": "Tell us about your needs and how we can help...",
-      "submit": "Send request",
-      "submitting": "Sending...",
-      "success": "Your request has been sent successfully!"
+      "company": "ชื่อบริษัท",
+      "companyPlaceholder": "บริษัทของคุณ",
+      "requirements": "ความต้องการเฉพาะ",
+      "requirementsPlaceholder": "บอกเราเกี่ยวกับความต้องการของคุณและวิธีที่เราสามารถช่วยได้...",
+      "submit": "ส่งคำขอ",
+      "submitting": "กำลังส่ง...",
+      "success": "คำขอของคุณถูกส่งเรียบร้อยแล้ว!"
     }
   }
 }

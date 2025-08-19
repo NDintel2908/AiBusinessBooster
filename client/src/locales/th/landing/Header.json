@@ -1,14 +1,14 @@
 {
   "header": {
     "navigation": {
-      "home": "Home",
-      "about": "About",
-      "features": "Features",
-      "pricing": "Pricing",
-      "contact": "Contact"
+      "home": "หน้าหลัก",
+      "about": "ข้อมูลบริษัท",
+      "features": "ฟังก์ชันการใช้งาน",
+      "pricing": "แผนราคา",
+      "contact": "ช่องทางการติดต่อ"
     },
     "cta": {
-      "getStarted": "JOIN & VERIFY"
+      "getStarted": "สมัครและยืนยันสถานะ"
     },
     "mobile": {
       "toggleMenu": "Toggle mobile menu"

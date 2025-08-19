@@ -2,54 +2,54 @@
     "challengesSection": {
         "sectionHeader": {
             "badge": "",
-            "title": "<0>Traditional</0> methods vs <1>BCP.Global</1>",
-            "description": "B2B connections often remain costly despite the ease and increased use of social media."
+            "title": "<0>วิธีการแบบดั้งเดิม</0> vs <1>BCP.Global</1>",
+            "description": "แม้ว่าสื่อสังคมออนไลน์จะช่วยเพิ่มความสะดวกและการใช้งานมากขึ้น แต่การเชื่อมต่อ B2B ยังคงมีต้นทุนสูง"
         },
         "headers": {
             "traditional": {
-                "title": "Traditional methods",
-                "subtitle": "Old approach with many limitations"
+                "title": "วิธีการแบบดั้งเดิม",
+                "subtitle": "วิธีการเก่า มีข้อจำกัดมาก"
             },
             "bcp": {
-                "title": "BCP.Global Solution",
-                "subtitle": "Smart solution with AI"
+                "title": "วิธีการ BCP.Global",
+                "subtitle": "วิธีการที่ฉลาด ด้วย AI"
             }
         },
         "comparisons": [
             {
                 "traditional": {
-                    "title": "High Investment — Low ROI",
-                    "description": "High operational costs, unclear performance metrics, and significant resources required to maintain manual connection processes"
+                    "title": "การลงทุนสูง — ผลตอบแทนต่ำ",
+                    "description": "ต้นทุนการดำเนินงานสูง ตัวชี้วัดประสิทธิภาพไม่ชัดเจน และต้องใช้ทรัพยากรมากในการดูแลการเชื่อมต่อแบบแมนนวล"
                 },
                 "bcp": {
-                    "title": "Strategic Investment — Outstanding ROI",
-                    "description": "The AI Connecting Agent optimizes cost by charging only for successful connections — saving resources and maximizing efficiency"
+                    "title": "การลงทุนเชิงกลยุทธ์ — ผลตอบแทนโดดเด่น",
+                    "description": "AI Connecting Agent ปรับต้นทุนให้เหมาะสม โดยคิดค่าบริการเฉพาะการเชื่อมต่อที่สำเร็จจริง — ช่วยประหยัดทรัพยากรและเพิ่มประสิทธิภาพสูงสุด"
                 }
             },
             {
                 "traditional": {
-                    "title": "Time consuming",
-                    "description": "Slow, manual screening processes prolonging collaboration timelines"
+                    "title": "ใช้เวลานาน",
+                    "description": "กระบวนการคัดกรองแบบแมนนวลทำให้การสร้างความร่วมมือยืดเยื้อ"
                 },
                 "bcp": {
-                    "title": "Instant connection",
-                    "description": "AI suggests the matches, you review and connect"
+                    "title": "การเชื่อมต่อทันที",
+                    "description": "AI แนะนำการจับคู่ที่เหมาะสม — คุณเพียงตรวจสอบและเชื่อมต่อ"
                 }
             },
             {
                 "traditional": {
-                    "title": "Lack of trust",
-                    "description": "Connections secured, but reliability remains a concern"
+                    "title": "ขาดความน่าเชื่อถือ",
+                    "description": "แม้จะมีการเชื่อมต่อ แต่ความน่าเชื่อถือยังคงเป็นข้อกังวล"
                 },
                 "bcp": {
-                    "title": "Multi-level verification",
-                    "description": "AI intentionally filters each connection, ensuring credibility in every partner"
+                    "title": " การตรวจสอบหลายระดับ",
+                    "description": "AI กรองการเชื่อมต่ออย่างตั้งใจ เพื่อให้มั่นใจในความน่าเชื่อถือของพันธมิตรทุกคน"
                 }
             }
         ],
         "labels": {
-            "traditional": "Traditional methods",
-            "bcpSolution": "BCP.Global Solution",
+            "traditional": "วิธีการแบบดั้งเดิม",
+            "bcpSolution": "วิธีการ BCP.Global",
             "vs": "VS"
         }
     }

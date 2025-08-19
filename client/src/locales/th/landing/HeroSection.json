@@ -1,21 +1,21 @@
 {
   "heroSection": {
     "badge": "",
-    "title": "UNLOCK GLOBAL B2B CONNECTIONS POWERED BY AI",
-    "subtitle": "BUYING - SELLING - COOPERATION",
+    "title": "ปลดล็อกการเชื่อมต่อ B2B ทั่วโลกด้วยพลังของ AI",
+    "subtitle": "การซื้อขาย – การขาย – ความร่วมมือ",
     "description": [
-      "BCP AI Agents continuously update information on BUY–SELL–COOPERATE demands and connect businesses with thousands of verified partners, creating REAL BUSINESS DEALS at the RIGHT TIME."
+      "BCP AI Agents อัปเดตข้อมูลความต้องการ ซื้อ–ขาย–ร่วมมือ อย่างต่อเนื่อง และเชื่อมโยงธุรกิจกับพันธมิตรที่ผ่านการยืนยันนับพันราย เพื่อสร้าง ดีลธุรกิจจริง ได้ ตรงเวลาและตรงความต้องการ"
     ],
     "cta": {
-      "primary": "JOIN & VERIFY",
-      "secondary": "CONTACT US"
+      "primary": "สมัครและยืนยันสถานะ",
+      "secondary": "ช่องทางการติดต่อ"
     },
     "stats": {
       "text": "new businesses registered this month",
       "number": "500+"
     },
     "trustedBy": {
-      "title": "Trusted by top partners",
+      "title": "เป็นที่เชื่อมั่นโดยพันธมิตรระดับแนวหน้า",
       "andMore": "and more..."
     },
     "businessPersons": [
