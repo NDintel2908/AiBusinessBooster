@@ -29,7 +29,7 @@ function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [isChanging, setIsChanging] = React.useState(false);
 
   useEffect(() => {
-    const match = location.match(/^\/(en|vi)/);
+    const match = location.match(/^\/(en|vi|jp|th)/);
     const urlLang = match ? match[1] : "en";
 
     if (currentLanguage !== urlLang && !isChanging) {
@@ -83,7 +83,7 @@ function LanguageSync() {
   const [isChangingLanguage, setIsChangingLanguage] = React.useState(false);
 
   useEffect(() => {
-    const match = location.match(/^\/(en|vi)/);
+    const match = location.match(/^\/(en|vi|jp|th)/);
     const urlLang = match ? match[1] : "en";
 
     // Force language change if different

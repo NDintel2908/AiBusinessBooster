@@ -57,27 +57,57 @@ const languages: Language[] = [
       </div>
     ),
   },
+  {
+    code: "jp",
+    name: "Jp",
+    flag: (
+      <div className="flag-container">
+        <svg
+          className="w-4 h-3 flag-wave"
+          viewBox="0 0 20 15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="20" height="15" fill="white" rx="1" />
+          <circle cx="10" cy="7.5" r="3" fill="#bc002d" />
+        </svg>
+      </div>
+    ),
+  },
+  {
+    code: "th",
+    name: "Th",
+    flag: (
+      <div className="flag-container">
+        <svg
+          className="w-4 h-3 flag-wave"
+          viewBox="0 0 20 15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="20" height="15" fill="#ed1c24" rx="1" />
+          <rect y="2" width="20" height="11" fill="white" />
+          <rect y="4" width="20" height="7" fill="#241d4f" />
+          <rect y="6" width="20" height="3" fill="white" />
+        </svg>
+      </div>
+    ),
+  },
 ];
-
-interface LanguageSwitcherProps {
-  className?: string;
-}
 
 export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const { i18n } = useTranslation();
   const [location, setLocation] = useLocation();
 
   // Get current language from URL
-  const currentLangFromUrl = location.match(/^\/(en|vi)/)?.[1] || "en";
+  const currentLangFromUrl = location.match(/^\/(en|vi|jp|th)/)?.[1] || "en";
   const currentLanguage =
     languages.find((lang) => lang.code === currentLangFromUrl) || languages[1]; // Default to English
 
   const handleLanguageChange = (language: Language) => {
     // Update URL to match selected language
     let newPath;
-    if (location.match(/^\/(en|vi)/)) {
+    if (location.match(/^\/(en|vi|jp|th)/)) {
       // Replace existing language in URL
-      newPath = location.replace(/^\/(en|vi)/, `/${language.code}`);
+      newPath = location.replace(/^\/(en|vi|jp|th)/, `/${language.code}`);
     } else {
       // Add language prefix to URL
       newPath = `/${language.code}${location}`;

@@ -41,6 +41,46 @@ import enPrivacyPolicy from "../../src/locales/us/pages/PrivacyPolicy.json";
 import enTermsOfService from "../../src/locales/us/pages/TermsOfService.json";
 import enApp from "../../src/locales/us/App.json";
 
+// Japanese translations
+import jpAbout from "../../src/locales/jp/landing/AboutSection.json";
+import jpBCPOverview from "../../src/locales/jp/landing/BCPOverviewSection.json";
+import jpBusinessSectors from "../../src/locales/jp/landing/BusinessSectorsSection.json";
+import jpChallenges from "../../src/locales/jp/landing/ChallengesSection.json";
+import jpContact from "../../src/locales/jp/landing/ContactSection.json";
+import jpFAQ from "../../src/locales/jp/landing/FAQSection.json";
+import jpFeatures from "../../src/locales/jp/landing/FeaturesSection.json";
+import jpFeedback from "../../src/locales/jp/landing/FeedbackSection.json";
+import jpFooter from "../../src/locales/jp/landing/Footer.json";
+import jpHeader from "../../src/locales/jp/landing/Header.json";
+import jpHero from "../../src/locales/jp/landing/HeroSection.json";
+import jpPricing from "../../src/locales/jp/landing/PricingSection.json";
+import jpService from "../../src/locales/jp/landing/ServiceSection.json";
+import jpPaymentPolicy from "../../src/locales/jp/pages/PaymentPolicy.json";
+import jpPricingComparison from "../../src/locales/jp/pages/PricingComparison.json";
+import jpPrivacyPolicy from "../../src/locales/jp/pages/PrivacyPolicy.json";
+import jpTermsOfService from "../../src/locales/jp/pages/TermsOfService.json";
+import jpApp from "../../src/locales/jp/App.json";
+
+// Thai translations
+import thAbout from "../../src/locales/th/landing/AboutSection.json";
+import thBCPOverview from "../../src/locales/th/landing/BCPOverviewSection.json";
+import thBusinessSectors from "../../src/locales/th/landing/BusinessSectorsSection.json";
+import thChallenges from "../../src/locales/th/landing/ChallengesSection.json";
+import thContact from "../../src/locales/th/landing/ContactSection.json";
+import thFAQ from "../../src/locales/th/landing/FAQSection.json";
+import thFeatures from "../../src/locales/th/landing/FeaturesSection.json";
+import thFeedback from "../../src/locales/th/landing/FeedbackSection.json";
+import thFooter from "../../src/locales/th/landing/Footer.json";
+import thHeader from "../../src/locales/th/landing/Header.json";
+import thHero from "../../src/locales/th/landing/HeroSection.json";
+import thPricing from "../../src/locales/th/landing/PricingSection.json";
+import thService from "../../src/locales/th/landing/ServiceSection.json";
+import thPaymentPolicy from "../../src/locales/th/pages/PaymentPolicy.json";
+import thPricingComparison from "../../src/locales/th/pages/PricingComparison.json";
+import thPrivacyPolicy from "../../src/locales/th/pages/PrivacyPolicy.json";
+import thTermsOfService from "../../src/locales/th/pages/TermsOfService.json";
+import thApp from "../../src/locales/th/App.json";
+
 const resources = {
   vi: {
     about: viAbout,
@@ -81,6 +121,46 @@ const resources = {
     privacyPolicy: enPrivacyPolicy,
     termsOfService: enTermsOfService,
     app: enApp,
+  },
+  jp: {
+    about: jpAbout,
+    bcpOverview: jpBCPOverview,
+    businessSectors: jpBusinessSectors,
+    challenges: jpChallenges,
+    contact: jpContact,
+    faq: jpFAQ,
+    features: jpFeatures,
+    feedback: jpFeedback,
+    footer: jpFooter,
+    header: jpHeader,
+    hero: jpHero,
+    pricing: jpPricing,
+    service: jpService,
+    paymentPolicy: jpPaymentPolicy,
+    pricingComparison: jpPricingComparison,
+    privacyPolicy: jpPrivacyPolicy,
+    termsOfService: jpTermsOfService,
+    app: jpApp,
+  },
+  th: {
+    about: thAbout,
+    bcpOverview: thBCPOverview,
+    businessSectors: thBusinessSectors,
+    challenges: thChallenges,
+    contact: thContact,
+    faq: thFAQ,
+    features: thFeatures,
+    feedback: thFeedback,
+    footer: thFooter,
+    header: thHeader,
+    hero: thHero,
+    pricing: thPricing,
+    service: thService,
+    paymentPolicy: thPaymentPolicy,
+    pricingComparison: thPricingComparison,
+    privacyPolicy: thPrivacyPolicy,
+    termsOfService: thTermsOfService,
+    app: thApp,
   },
 };
 

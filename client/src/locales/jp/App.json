@@ -1,0 +1,12 @@
+{
+  "helpButton": {
+    "tooltip": "Need help? Choose contact method",
+    "ariaLabel": "Customer support",
+    "options": {
+      "zalo": "Zalo",
+      "messenger": "Messenger",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "loading": "Loading..."
+}
