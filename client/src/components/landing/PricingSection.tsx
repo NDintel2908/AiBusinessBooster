@@ -446,7 +446,7 @@ export default function PricingSection() {
         <div className="container mx-auto px-4 z-10">
           <motion.div
             ref={ref}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-none mx-auto mb-16 px-4"
             initial="hidden"
             animate={controls}
             variants={{
@@ -459,7 +459,7 @@ export default function PricingSection() {
                 {t("pricingSection.badge")}
               </span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-3 whitespace-nowrap">
+            <h2 className="text-3xl md:text-5xl font-bold mb-3 max-w-full mx-auto text-center leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-accent">
                 {t("pricingSection.title")}
               </span>

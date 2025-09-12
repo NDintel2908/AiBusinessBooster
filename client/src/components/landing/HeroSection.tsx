@@ -86,7 +86,7 @@ export default function HeroSection() {
       {/* Main Content Container - Centered */}
       <div className="container mx-auto px-4 z-10 w-full flex-1 flex items-center justify-center mt-[70px]">
         <motion.div
-          className="max-w-4xl mx-auto text-center space-y-3 md:space-y-4"
+          className="max-w-7xl mx-auto text-center space-y-3 md:space-y-4"
           initial="hidden"
           animate="visible"
           variants={containerVariants}
@@ -106,7 +106,7 @@ export default function HeroSection() {
 
           <motion.h1
             variants={itemVariants}
-            className="text-3xl md:text-4xl lg:text-6xl font-heading font-bold leading-tight text-white bg-clip-text"
+            className="text-3xl md:text-4xl lg:text-6xl font-heading font-bold leading-tight text-white bg-clip-text max-w-7xl mx-auto"
             style={{ lineHeight: "1.2", letterSpacing: "0.5px" }}
           >
             {t("heroSection.title")}
@@ -202,7 +202,7 @@ export default function HeroSection() {
                   <img
                     src={company.src}
                     alt={company.alt}
-                    className="max-w-full max-h-full object-contain filter grayscale invert contrast-80 brightness-130"
+                    className="max-w-full max-h-full object-contain filter grayscale invert contrast-80 brightness-110"
                   />
                 </div>
               ))}
