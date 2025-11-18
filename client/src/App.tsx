@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect } from "react";
-import { Switch, Route, useLocation, useRouter } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -12,13 +12,23 @@ import "./lib/i18n";
 import GlitchWelcome from "@/components/GlitchWelcome";
 import { HelpButton } from "@/components/ui/help-button";
 
-// AutoRedirect component: redirect / to /en (default language) ONLY if no language path
+// AutoRedirect component: redirect / to /en ONLY if valid path not found
 function AutoRedirect() {
   const [location, setLocation] = useLocation();
 
   useEffect(() => {
-    // Only redirect if we're at root path and no language is detected
-    if (location === "/" || !location.match(/^\/(en|vi|jp|th)/)) {
+    // 1. Kiểm tra xem có phải trang chủ không
+    const isRoot = location === "/";
+
+    // 2. Kiểm tra xem đường dẫn có bắt đầu bằng ngôn ngữ hợp lệ không
+    const hasLang = /^\/(en|vi|jp|th)/.test(location);
+
+    // 3. Kiểm tra xem đường dẫn có bắt đầu bằng /wise không (Chấp nhận cả /wise/ hay /wise?...)
+    // UPDATE QUAN TRỌNG: Dùng Regex để bắt dính mọi trường hợp của wise
+    const isWise = /^\/wise/.test(location);
+
+    // LOGIC: Nếu là trang chủ HOẶC (Không có ngôn ngữ VÀ Không phải wise) -> Thì Redirect về /en
+    if (isRoot || (!hasLang && !isWise)) {
       console.log(`AutoRedirect: Redirecting from ${location} to /en`);
       setLocation("/en", { replace: true });
     }
@@ -62,6 +72,8 @@ const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const PricingComparison = lazy(() => import("@/pages/PricingComparison"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 const PaymentPolicy = lazy(() => import("@/pages/PaymentPolicy"));
+// Import component Wise
+const Wise = lazy(() => import("@/pages/Wise"));
 
 function Router() {
   const { t, i18n } = useTranslation("app");
@@ -81,6 +93,11 @@ function Router() {
         <LanguageSync />
         <Switch>
           <Route path="/" component={AutoRedirect} />
+
+          {/* Route /wise đặt trước để ưu tiên xử lý */}
+          {/* UPDATE: Thêm Nesting để wouter bắt được cả /wise/ có gạch chéo */}
+          <Route path="/wise" component={Wise} />
+
           <Route path="/:lang/privacy-policy" component={PrivacyPolicy} />
           <Route path="/:lang/terms-of-service" component={TermsOfService} />
           <Route path="/:lang/payment-policy" component={PaymentPolicy} />
@@ -117,17 +134,5 @@ function App() {
     </QueryClientProvider>
   );
 }
-
-// function App() {
-//   return (
-//     <QueryClientProvider client={queryClient}>
-//       <LanguageProvider>
-//         <Router />
-//         <HelpButton /> {/* Add HelpButton here */}
-//         <Toaster />
-//       </LanguageProvider>
-//     </QueryClientProvider>
-//   );
-// }
 
 export default App;
