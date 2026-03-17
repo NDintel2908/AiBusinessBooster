@@ -30,13 +30,13 @@ export default function PricingSection() {
         {/* Left: Selectors */}
         <div className="flex flex-col gap-[10px] w-full md:w-[340px] shrink-0">
           {/* Starter Plan Row */}
-          <div 
+          <div
             className={`bg-[#132040] rounded-[14px] p-[18px_20px] cursor-pointer transition-all duration-200 flex items-center gap-[14px] select-none border-[1.5px] ${activePlan === 'starter' ? 'border-[#2563eb] bg-[#0f1e38] border-[2px]' : 'border-[#3882f626] hover:border-[#2563eb] hover:bg-[#0f1e38]'}`}
             onMouseEnter={() => setActivePlan('starter')}
             onClick={() => setActivePlan('starter')}
           >
             <div className={`w-[20px] h-[20px] rounded-full border-[2px] shrink-0 flex items-center justify-center ${activePlan === 'starter' ? 'border-[#2563eb] bg-[#2563eb]' : 'border-[#3882f659]'}`}>
-               <div className={`w-[8px] h-[8px] rounded-full bg-white transition-opacity duration-150 ${activePlan === 'starter' ? 'opacity-100' : 'opacity-0'}`}></div>
+              <div className={`w-[8px] h-[8px] rounded-full bg-white transition-opacity duration-150 ${activePlan === 'starter' ? 'opacity-100' : 'opacity-0'}`}></div>
             </div>
             <div className="flex-1">
               <div className="text-[15px] font-[700] text-[#e2eaf5]">Starter User</div>
@@ -46,13 +46,13 @@ export default function PricingSection() {
           </div>
 
           {/* Premium Plan Row */}
-          <div 
+          <div
             className={`bg-[#132040] rounded-[14px] p-[18px_20px] cursor-pointer transition-all duration-200 flex items-center gap-[14px] select-none border-[1.5px] ${activePlan === 'premium' ? 'border-[#2563eb] bg-[#0f1e38] border-[2px]' : 'border-[#3882f626] hover:border-[#2563eb] hover:bg-[#0f1e38]'}`}
             onMouseEnter={() => setActivePlan('premium')}
             onClick={() => setActivePlan('premium')}
           >
             <div className={`w-[20px] h-[20px] rounded-full border-[2px] shrink-0 flex items-center justify-center ${activePlan === 'premium' ? 'border-[#2563eb] bg-[#2563eb]' : 'border-[#3882f659]'}`}>
-               <div className={`w-[8px] h-[8px] rounded-full bg-white transition-opacity duration-150 ${activePlan === 'premium' ? 'opacity-100' : 'opacity-0'}`}></div>
+              <div className={`w-[8px] h-[8px] rounded-full bg-white transition-opacity duration-150 ${activePlan === 'premium' ? 'opacity-100' : 'opacity-0'}`}></div>
             </div>
             <div className="flex-1">
               <div className="text-[15px] font-[700] text-[#e2eaf5]">Premium User</div>
@@ -76,7 +76,10 @@ export default function PricingSection() {
           <div className="p-[18px_20px]">
             {activePlan === 'starter' && (
               <div className="animate-in fade-in duration-300">
-                <div className="text-[10px] font-[700] tracking-[0.07em] uppercase text-[#4ea6ff] mb-[6px]">
+                <div className="flex items-center gap-[6px] text-[10px] font-[700] tracking-[0.07em] uppercase text-[#4ea6ff] mb-[6px]">
+                  <span className="shrink-0 w-[15px] h-[15px] rounded-full bg-[#22c55e2e] flex items-center justify-center">
+                    <svg className="w-[8px] h-[8px] text-[#4ade80]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  </span>
                   Connecting Agent
                 </div>
                 <ul className="list-disc pl-[18px] flex flex-col gap-[4px] text-left mb-[8px]">
@@ -89,7 +92,7 @@ export default function PricingSection() {
                   <span className="shrink-0 w-[15px] h-[15px] rounded-full bg-[#22c55e2e] flex items-center justify-center mt-[1px]">
                     <svg className="w-[8px] h-[8px] text-[#4ade80]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   </span>
-                  <span>Max 30 direct conversations / month</span>
+                  <span>Max 30 direct B2B conversations / month</span>
                 </div>
                 <div className="flex items-start gap-[8px] text-[12.5px] text-[#b0c4de] leading-[1.4] mb-[7px]">
                   <span className="shrink-0 w-[15px] h-[15px] rounded-full bg-[#22c55e2e] flex items-center justify-center mt-[1px]">
@@ -116,7 +119,7 @@ export default function PricingSection() {
                   <span>Multi-languages (EN / VN / JP / TH / KR)</span>
                 </div>
 
-                <button 
+                <button
                   onClick={() => window.open('https://bcp.global', '_blank')}
                   className="block w-full p-[12px] rounded-[10px] text-[13px] font-[600] cursor-pointer mt-[18px] transition-all hover:-translate-y-[1px] hover:opacity-90 bg-transparent border-[1.5px] border-[#3882f666] text-[#60a5fa]"
                 >
@@ -186,7 +189,7 @@ export default function PricingSection() {
                   <span>Be invited & guided to join activities & events in the <strong className="text-[#e2eaf5]">BCP Global</strong> and <strong className="text-[#e2eaf5]">AIPartners Asia</strong> ecosystem</span>
                 </div>
 
-                <button 
+                <button
                   onClick={() => window.open('https://bcp.global', '_blank')}
                   className="block w-full p-[12px] rounded-[10px] text-[13px] font-[600] cursor-pointer mt-[18px] transition-all hover:-translate-y-[1px] hover:opacity-90 bg-[#2563eb] text-white border-none shrink-0"
                 >
