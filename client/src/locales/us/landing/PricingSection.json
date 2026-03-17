@@ -3,74 +3,53 @@
     "badge": "Pricing Policy",
     "title": "Choose the plan that's right for you",
     "description": "Flexible solutions for every business scale.",
-    "labels": {
-      "mostPopular": "Most Popular",
-      "singlePackage": "Single Package"
-    },
-    "tabs": {
-      "buyPerUse": "Pay per Connect",
-      "subscriptionPlans": "Subcription Plans"
-    },
+    "details": "Details",
+    "tooltip": "<strong class=\"text-[#4ea6ff] font-[600]\">Direct B2B conversation:</strong> A dedicated direct discussion / meeting between business decision-makers.",
     "plans": {
-      "oneConnection": {
-        "name": "One Connection",
-        "price": "$20",
-        "period": "/successful connection",
-        "description": "(VAT not included)",
-        "ctaText": "CONNECT NOW",
-        "features": [
-          "The AI Connecting Agent empowers <strong>BUY – SELL – COOPERATE</strong> activities + 5 key features:",
-          "1. Direct chat with the final decision-maker",
-          "2. Secure – Easy to use – Reliable",
-          "3. Expand your market to Japan and globally",
-          "4. Multi-language support",
-          "5. Flexible payment methods"
-        ]
-      },
       "starter": {
         "name": "Starter User",
-        "price": "Free ($0)",
-        "period": "",
-        "description": "Start exploring business opportunities",
-        "ctaText": "JOIN & VERIFY",
+        "price": "Free",
+        "subPrice": "Starts matching at $20 USD / direct B2B conversation{tooltip}",
+        "connectingAgent": {
+          "title": "Connecting Agent",
+          "items": [
+            "BCPbot (personal AI agent)",
+            "Recommended by AI",
+            "1:1 direct B2B conversation{tooltip}"
+          ]
+        },
         "features": [
-          "AI Connecting Agent + 3 features to explore new business opportunities:",
-          "1. Search & connect for B2B trade",
-          "2. 24/7 support",
-          "3. Standard business profile"
-        ]
+          "Max 30 direct B2B conversations / month",
+          "Standard Business Profile",
+          "Multi-Device Login",
+          "24/7 Support",
+          "Multi-languages (EN / VN / JP / TH / KR)"
+        ],
+        "ctaText": "Join & Verify"
       },
       "premium": {
-        "name": "Global Premium User",
+        "name": "Premium User",
         "price": "$1,200",
-        "period": "/year",
-        "description": "(VAT not included)",
-        "ctaText": "UPGRADE NOW",
-        "features": [
-          "<strong>1 PRIVATE AGENT + 5 PREMIUM PRIVILEGES</strong> to accelerate BUY – SELL – COOPERATE activities worldwide",
-          "<strong>1 PRIVATE AGENT with 4 key features</strong> \nCoordinated by an AI Agent preloaded with tokens to connect with up to 120 clients and partners within 12 months (*easily expandable by purchasing more tokens if you wish to broaden your network)",
-          "- Dedicated AI trained with your company's data",
-          "- Continuous data storage and updates",
-          "- Priority access to specialized AI Agents",
-          "- Direct engagement with the right person in charge",
-          "<strong>5 PREMIUM PRIVILEGES:</strong> ",
-          "1. Global Premium User identification badge (Verified & Trusted Member)",
-          "2. Business Profile development for APAC market outreach on bcp.vn (in international English and for Vietnam, Japan, Thailand, Korea, and China markets)",
-          "3. Supported by AI combined with a Human Coordinator.",
-          "4. Connections facilitated by AI and offline business-connecting experts (depending on region)",
-          "5. Access to industry insights and multiple privileges to participate in trade and business promotion activities organized by the BCP ecosystem, AI Partners, and B2B partners within the network"
-        ]
+        "period": "USD / Year",
+        "saveBadge": "Save 50%",
+        "subPrice": "matching cost",
+        "note": "Everything in Free, plus:",
+        "section1Title": "05 values only for Premium User",
+        "features1": [
+          "Matching up to <strong class=\"text-[#e2eaf5]\">120 direct B2B conversations{tooltip}</strong> / year (save 50% matching cost)",
+          "<strong class=\"text-[#e2eaf5]\">Trust Verified</strong> member with a blue tick — shown on BCP AI",
+          "<strong class=\"text-[#e2eaf5]\">Priority connects</strong> in AI Matching system (Online & Offline)",
+          "<strong class=\"text-[#e2eaf5]\">Dedicated Human Coordinator</strong> support 24/7",
+          "<strong class=\"text-[#e2eaf5]\">Global Business Profile</strong> in 6 languages — bcp.vn"
+        ],
+        "section2Title": "03 exclusive support functions",
+        "features2": [
+          "A designed <strong class=\"text-[#e2eaf5]\">B2B Connecting Map</strong>",
+          "Be nominated into the <strong class=\"text-[#e2eaf5]\">\"Recommended Suppliers\"</strong> group",
+          "Be invited & guided to join activities & events in the <strong class=\"text-[#e2eaf5]\">BCP Global</strong> and <strong class=\"text-[#e2eaf5]\">AIPartners Asia</strong> ecosystem"
+        ],
+        "ctaText": "Connect Now"
       }
-    },
-    "additionalInfo": {
-      "title": "Not sure which plan is right?",
-      "description": "Start with the free plan and upgrade when needed. All plans can be changed flexibly.",
-      "compareText": "Compare plan details"
-    },
-    "links": {
-      "signUp": "https://bcp.global/sign-up",
-      "buyCredit": "https://bcp.global/credit",
-      "comparison": "/pricing-comparison"
     }
   }
 }

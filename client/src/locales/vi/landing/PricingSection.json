@@ -2,75 +2,54 @@
   "pricingSection": {
     "badge": "Chính sách giá",
     "title": "Hãy chọn gói dịch vụ phù hợp với doanh nghiệp bạn",
-    "description": "Giải pháp linh hoạt dành riêng cho bạn",
-    "labels": {
-      "mostPopular": "Phổ biến nhất",
-      "singlePackage": "Gói lẻ"
-    },
-    "tabs": {
-      "buyPerUse": "Kết nối ngay",
-      "subscriptionPlans": "Gói đăng ký"
-    },
+    "description": "Giải pháp linh hoạt dành riêng cho bạn.",
+    "details": "Chi tiết",
+    "tooltip": "<strong class=\"text-[#4ea6ff] font-[600]\">Cuộc trò chuyện B2B trực tiếp:</strong> Một cuộc thảo luận/cuộc họp trực tiếp chuyên biệt giữa các cấp ra quyết định trong doanh nghiệp.",
     "plans": {
-      "oneConnection": {
-        "name": "One Connection",
-        "price": "500.000 VND",
-        "period": "/kết nối thành công",
-        "description": "(Chưa bao gồm VAT)",
-        "ctaText": "KẾT NỐI NGAY",
-        "features": [
-          "AI Connecting Agent giúp kết nối <strong>MUA - BÁN - HỢP TÁC</strong> + 5 tính năng chính:",
-          "1. Trò chuyện TRỰC TIẾP với người ra quyết định cuối cùng",
-          "2. Bảo mật - Dễ sử dụng - Đáng tin cậy",
-          "3. Mở rộng thị trường sang Nhật Bản và toàn cầu",
-          "4. Hỗ trợ đa ngôn ngữ",
-          "5. Phương thức thanh toán linh hoạt"
-        ]
-      },
       "starter": {
         "name": "Starter User",
-        "price": "Miễn phí (0 VND)",
-        "period": "",
-        "description": "Khởi đầu hành trình khám phá cơ hội kinh doanh",
-        "ctaText": " THAM GIA & XÁC THỰC",
+        "price": "Miễn phí",
+        "subPrice": "Bắt đầu kết nối từ 20 USD / cuộc trò chuyện B2B trực tiếp{tooltip}",
+        "connectingAgent": {
+          "title": "Connecting Agent",
+          "items": [
+            "BCPbot (AI agent cá nhân)",
+            "Được đề xuất bởi AI",
+            "Trợ lý 1:1 B2B trực tiếp{tooltip}"
+          ]
+        },
         "features": [
-          "AI Connecting Agent + 03 tính năng khám phá cơ hội kinh doanh mới",
-          "1. Tìm kiếm & kết nối giao thương B2B",
-          "2. Hỗ trợ 24/7",
-          "3. Hồ sơ doanh nghiệp tiêu chuẩn"
-        ]
+          "Tối đa 30 cuộc hội thoại B2B trực tiếp / tháng",
+          "Hồ sơ doanh nghiệp tiêu chuẩn",
+          "Đăng nhập đa thiết bị",
+          "Hỗ trợ 24/7",
+          "Đa ngôn ngữ (Anh / Việt / Nhật / Thái / Hàn)"
+        ],
+        "ctaText": "Tham gia & Xác thực"
       },
       "premium": {
         "name": "Global Premium User",
-        "price": "30.000.000 VND",
-        "period": "/năm",
-        "description": "(Chưa bao gồm VAT)",
-        "ctaText": "NÂNG CẤP NGAY",
-        "features": [
-          "<strong>01 PRIVATE AGENT + 05 ĐẶC QUYỀN PREMIUM</strong> thúc đẩy MUA - BÁN - HỢP TÁC TOÀN CẦU",
-          "<strong>01 PRIVATE AGENT cùng 04 tính năng chính</strong>\nĐiều phối bởi AI agent được cấp sẵn token để kết nối đến 120 khách hàng, đối tác trong 12 tháng  (*dễ dàng mua thêm nếu muốn mở rộng đối tác).",
-          "- Dữ liệu DN được train AI riêng",
-          "- Lưu trữ và cập nhật thông tin liên tục",
-          "- Ưu tiên sử dụng các AI Agent nghiệp vụ",
-          "- Làm việc đúng người phụ trách",
-          "<strong>05 ĐẶC QUYỀN PREMIUM:</strong>",
-          "1. Huy hiệu định danh Global Premium User (Thành viên xác thực - Tin cậy)",
-          "2. Xây dựng Hồ sơ Doanh nghiệp đánh thị trường APAC tại bcp.vn (Ngôn ngữ quốc tế tiếng Anh và thị trường Việt - Nhật - Thái - Hàn - Trung)",
-          "3. Được hỗ trợ bởi AI kết hợp với Điều phối viên - Human.",
-          "4. Kết nối bởi AI và chuyên gia kết nối offline (tuỳ theo khu vực)",
-          "5. Nhận Thông tin chuyên môn và nhiều ưu đãi khác để tham gia các hoạt động giao thương - xúc tiến thương mại do hệ sinh thái BCP, AIPartners và các đối tác B2B trong network tổ chức"
-        ]
+        "price": "30.000.000đ",
+        "period": "VNĐ / Năm",
+        "saveBadge": "Tiết kiệm 50%",
+        "subPrice": "chi phí kết nối",
+        "note": "Bao gồm tất cả tính năng gói Miễn phí, cộng thêm:",
+        "section1Title": "05 giá trị đặc quyền của Global Premium User",
+        "features1": [
+          "Kết nối lên đến <strong class=\"text-[#e2eaf5]\">120 cuộc trao đổi B2B trực tiếp{tooltip}</strong> / năm (tiết kiệm 50% phí kết nối)",
+          "Thành viên <strong class=\"text-[#e2eaf5]\">Trust Verified</strong> được cấp tích xanh — hiển thị trên BCP AI",
+          "<strong class=\"text-[#e2eaf5]\">Ưu tiên kết nối</strong> trong hệ thống AI Matching (Online & Offline)",
+          "Hỗ trợ <strong class=\"text-[#e2eaf5]\">Điều phối viên chuyên trách</strong> đồng hành 24/7",
+          "<strong class=\"text-[#e2eaf5]\">Hồ sơ doanh nghiệp toàn cầu</strong> với 6 ngôn ngữ — trên nền tảng bcp.vn"
+        ],
+        "section2Title": "03 tính năng hỗ trợ chuyên sâu",
+        "features2": [
+          "Nghiên cứu & thiết kế <strong class=\"text-[#e2eaf5]\">Bản đồ kết nối B2B</strong> đo ni đóng giày",
+          "Được đề cử vào nhóm <strong class=\"text-[#e2eaf5]\">\"Nhà cung cấp đề xuất\"</strong> của BCP",
+          "Được mời và dẫn dắt tham gia chuỗi sự kiện xúc tiến thương mại trong hệ sinh thái <strong class=\"text-[#e2eaf5]\">BCP Global</strong> và <strong class=\"text-[#e2eaf5]\">AIPartners Asia</strong>"
+        ],
+        "ctaText": "Kết nối ngay"
       }
-    },
-    "additionalInfo": {
-      "title": "Không chắc chắn gói nào phù hợp?",
-      "description": "Hãy bắt đầu với gói miễn phí và nâng cấp khi cần thiết. Tất cả gói đều có thể thay đổi linh hoạt.",
-      "compareText": "So sánh chi tiết các gói"
-    },
-    "links": {
-      "signUp": "https://bcp.global/sign-up",
-      "buyCredit": "https://bcp.global/credit",
-      "comparison": "/pricing-comparison"
     }
   }
 }

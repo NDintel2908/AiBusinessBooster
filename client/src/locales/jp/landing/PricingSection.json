@@ -2,75 +2,54 @@
   "pricingSection": {
     "badge": "価格政策",
     "title": "あなたに最適なプランをお選びください",
-    "description": "あらゆるビジネス規模に対応する柔軟なソリューション",
-    "labels": {
-      "mostPopular": "最も人気",
-      "singlePackage": "シングルパッケージ"
-    },
-    "tabs": {
-      "buyPerUse": "接続ごとの従量課金",
-      "subscriptionPlans": "料金プラン"
-    },
+    "description": "あらゆるビジネス規模に対応する柔軟なソリューション。",
+    "details": "詳細",
+    "tooltip": "<strong class=\"text-[#4ea6ff] font-[600]\">ダイレクトB2B会話:</strong> ビジネスの意思決定者間の専用のダイレクトな議論・会議。",
     "plans": {
-      "oneConnection": {
-        "name": "1コネクション (One Connection)",
-        "price": "成功した接続ごとに 20米ドル",
-        "period": "",
-        "description": "（VAT 別途）",
-        "ctaText": "今すぐ接続",
-        "features": [
-          "AIコネクティングエージェントは、購買・販売・協業活動を支援します + 5つの主要機能:",
-          "1. 最終意思決定者とのダイレクトチャット",
-          "2. 安全・使いやすい・信頼性",
-          "3. 日本およびグローバル市場への拡大",
-          "4. 多言語サポート",
-          "5. 柔軟な支払い方法"
-        ]
-      },
       "starter": {
         "name": "Starter User",
-        "price": "無料（$0）",
-        "period": "",
-        "description": "ビジネス機会を探る",
-        "ctaText": "登録・認証",
+        "price": "無料",
+        "subPrice": "1回の直接B2B会話あたり20米ドルからマッチング開始{tooltip}",
+        "connectingAgent": {
+          "title": "Connecting Agent",
+          "items": [
+            "BCPbot（パーソナルAIエージェント）",
+            "AIによる推奨",
+            "1対1のダイレクトB2B会話{tooltip}"
+          ]
+        },
         "features": [
-          "AIコネクティングエージェント + 新しいビジネス機会を探るための3つの機能:",
-          "1. B2B取引の検索と接続",
-          "2. 24時間365日のサポート",
-          "3. 標準的なビジネスプロフィール"
-        ]
+          "最大30回のダイレクトB2B会話/月",
+          "標準ビジネスプロフィール",
+          "マルチデバイスログイン",
+          "24時間365日のサポート",
+          "多言語（英/越/日/タイ/韓）"
+        ],
+        "ctaText": "参加して認証"
       },
       "premium": {
-        "name": "グローバルプレミアムユーザー",
-        "price": "年額 1,200米ドル",
-        "period": "",
-        "description": "（VAT 別途）",
-        "ctaText": "今すぐアップグレード",
-        "features": [
-          "1名のプライベートエージェント + 5つのプレミアム特典 グローバルに「購買・販売・協業」活動を加速",
-          "<strong>1名のプライベートエージェント（4つの主要機能）</strong> \nAIエージェントが事前にトークンを搭載し、12か月間で最大120社のクライアントやパートナーとの接続をコーディネート（ネットワーク拡大を希望する場合は、追加トークン購入により容易に拡張可能）",
-          "- 自社データでトレーニングされた専用AI",
-          "- 継続的なデータ保存と更新",
-          "- 専門AIエージェントへの優先アクセス",
-          "- 担当責任者との直接エンゲージメント",
-          "<strong>5つのプレミアム特典</strong> ",
-          "1. グローバルプレミアムユーザー認定バッジ（認証済み・信頼できるメンバー）",
-          "2. bcp.vn上でのAPAC市場向けビジネスプロフィール作成 （国際英語版およびベトナム・日本・タイ・韓国・中国市場向け）",
-          "3. AIと人間コーディネーターによるサポート",
-          "4. AIおよび地域ごとのオフライン・ビジネスコネクティング専門家による接続支援",
-          "5. BCPエコシステム、AIパートナーズ、B2Bパートナーが主催する商談・ビジネス促進活動への参加特典および業界インサイトの提供"
-        ]
+        "name": "Premium User",
+        "price": "$1,200",
+        "period": "USD / 年",
+        "saveBadge": "50%節約",
+        "subPrice": "マッチング費用",
+        "note": "無料版の全機能に加え、以下を提供します：",
+        "section1Title": "Premium Userだけの5つの価値",
+        "features1": [
+          "年間最大<strong class=\"text-[#e2eaf5]\">120回のダイレクトB2B会話{tooltip}</strong>をマッチング（マッチング費用を50%節約）",
+          "BCP AIに表示されるブルーマーク付きの<strong class=\"text-[#e2eaf5]\">Trust Verified</strong>メンバー",
+          "AIマッチングシステムでの<strong class=\"text-[#e2eaf5]\">優先コネクト</strong>（オンライン＆オフライン）",
+          "24時間365日の<strong class=\"text-[#e2eaf5]\">専任ヒューマンコーディネーター</strong>サポート",
+          "6言語での<strong class=\"text-[#e2eaf5]\">グローバルビジネスプロフィール</strong> — bcp.vn"
+        ],
+        "section2Title": "3つの独占サポート機能",
+        "features2": [
+          "デザインされた<strong class=\"text-[#e2eaf5]\">B2Bコネクティングマップ</strong>",
+          "<strong class=\"text-[#e2eaf5]\">「推奨サプライヤー」</strong>グループへのノミネート",
+          "<strong class=\"text-[#e2eaf5]\">BCP Global</strong>および<strong class=\"text-[#e2eaf5]\">AIPartners Asia</strong>エコシステム内の活動やイベントへの招待・案内"
+        ],
+        "ctaText": "今すぐ接続"
       }
-    },
-    "additionalInfo": {
-      "title": "どのプランが適切かわかりませんか？",
-      "description": "無料プランから始めて、必要に応じてアップグレードしてください。すべてのプランは柔軟に変更可能です。",
-      "compareText": "プランの詳細を比較"
-    },
-    "links": {
-      "signUp": "https://bcp.global/sign-up",
-      "buyCredit": "https://bcp.global/credit",
-      "comparison": "/pricing-comparison"
     }
   }
 }
