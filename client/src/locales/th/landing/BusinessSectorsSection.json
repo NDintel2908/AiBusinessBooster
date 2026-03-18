@@ -13,120 +13,200 @@
       "manufacturing": {
         "title": "ผู้ให้บริการด้านมืออาชีพ",
         "sectors": {
-          "itDevelopment": {
-            "name": "การพัฒนาซอฟต์แวร์ไอที AI และการจ้างงานภายนอก IoT",
-            "description": "การพัฒนาแอปพลิเคชัน ระบบซอฟต์แวร์ โซลูชัน AI และอุปกรณ์ IoT อัจฉริยะ"
+          "softwareAndComputer": {
+            "name": "บริการซอฟต์แวร์และคอมพิวเตอร์",
+            "description": ""
           },
-          "consulting": {
-            "name": "ที่ปรึกษาบัญชี การเงิน กฎหมาย ประกันภัย",
-            "description": "ให้บริการปรึกษาระดับมืออาชีพด้านการเงิน บัญชี กฎหมาย และประกันภัย"
+          "telecommunicationsProviders": {
+            "name": "ผู้ให้บริการโทรคมนาคม",
+            "description": ""
           },
-          "hr": {
-            "name": "ทรัพยากรมนุษย์ การสรรหาและบริการฝึกอบรม",
-            "description": "ที่ปรึกษา HR การสรรหาบุคลากรและการพัฒนาโปรแกรมฝึกอบรม"
+          "healthCare": {
+            "name": "ผู้ให้บริการดูแลสุขภาพ",
+            "description": ""
           },
-          "marketing": {
-            "name": "เอเจนซี่โฆษณา การตลาด",
-            "description": "ออกแบบกลยุทธ์การตลาด โฆษณา และการสร้างแบรนด์"
+          "banks": {
+            "name": "ธนาคาร",
+            "description": ""
           },
-          "distribution": {
-            "name": "บริการจำหน่าย การค้าภายใน",
-            "description": "การจำหน่ายสินค้า ธุรกิจค้าปลีก และการค้าภายใน"
+          "financeAndCredit": {
+            "name": "บริการทางการเงินและสินเชื่อ",
+            "description": ""
           },
-          "logistics": {
-            "name": "บริการขนส่ง โลจิสติกส์ การจำหน่าย และคลังสินค้า",
-            "description": "การจัดการห่วงโซ่อุปทาน การขนส่ง และคลังสินค้าโลจิสติกส์ระดับมืออาชีพ"
+          "investmentBanking": {
+            "name": "วาณิชธนกิจและบริการนายหน้าซื้อขายหลักทรัพย์",
+            "description": ""
           },
-          "architecture": {
-            "name": "การออกแบบสถาปัตยกรรม การตกแต่งภายในสำนักงาน",
-            "description": "การออกแบบสถาปัตยกรรม การวางแผนพื้นที่ และการออกแบบตกแต่งภายในระดับมืออาชีพ"
+          "mortgageRealEstate": {
+            "name": "กองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์และสิทธิการเช่า",
+            "description": ""
           },
-          "realEstate": {
-            "name": "ธุรกิจอสังหาริมทรัพย์สำนักงาน พาณิชย์ ค้าปลีก อุตสาหกรรม",
-            "description": "การลงทุน พัฒนา และธุรกิจโครงการอสังหาริมทรัพย์พาณิชย์และอุตสาหกรรม"
+          "closedEndInvestments": {
+            "name": "การลงทุนประเภทกองทุนปิด",
+            "description": ""
           },
-          "export": {
-            "name": "กลุ่มบริการส่งออก การพัฒนาตลาดข้ามแดน",
-            "description": "การสนับสนุนการส่งออก การขยายตลาดต่างประเทศ และการค้าข้ามแดน"
+          "openEndInvestments": {
+            "name": "กองทุนเปิดและช่องทางการลงทุนอื่นๆ",
+            "description": ""
+          },
+          "lifeInsurance": {
+            "name": "ประกันชีวิต",
+            "description": ""
+          },
+          "nonlifeInsurance": {
+            "name": "ประกันวินาศภัย",
+            "description": ""
+          },
+          "realEstateDev": {
+            "name": "การลงทุนและพัฒนาบริการอสังหาริมทรัพย์",
+            "description": ""
+          },
+          "realEstateTrusts": {
+            "name": "ทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์",
+            "description": ""
+          },
+          "consumerServices": {
+            "name": "บริการเพื่อผู้บริโภค",
+            "description": ""
+          },
+          "media": {
+            "name": "สื่อ",
+            "description": ""
+          },
+          "retailers": {
+            "name": "ร้านค้าปลีก",
+            "description": ""
+          },
+          "travelAndLeisure": {
+            "name": "ท่องเที่ยวและสันทนาการ",
+            "description": ""
+          },
+          "personalCare": {
+            "name": "ผลิตภัณฑ์ดูแลส่วนบุคคล ร้านขายยา และซูเปอร์มาร์เก็ต",
+            "description": ""
+          },
+          "industrialSupport": {
+            "name": "บริการสนับสนุนภาคอุตสาหกรรม",
+            "description": ""
+          },
+          "industrialTransportation": {
+            "name": "การขนส่งเชิงอุตสาหกรรม",
+            "description": ""
+          },
+          "alternativeEnergy": {
+            "name": "พลังงานทางเลือก",
+            "description": ""
+          },
+          "electricity": {
+            "name": "ไฟฟ้า",
+            "description": ""
+          },
+          "gasWater": {
+            "name": "ก๊าซ น้ำ และสาธารณูปโภคครบวงจร",
+            "description": ""
+          },
+          "wasteAndDisposal": {
+            "name": "บริการจัดการของเสีย",
+            "description": ""
           }
         }
       },
       "technology": {
         "title": "ผู้ให้วัสดุและสินค้าสำหรับวิสาหกิจการผลิต",
         "sectors": {
-          "agriculture": {
-            "name": "เกษตรกรรมและการเพาะเลี้ยงสัตว์น้ำ",
-            "description": "ให้วัตถุดิบเช่นผลิตภัณฑ์เกษตรและอาหารทะเลสำหรับโรงงานแปรรูปอาหาร"
+          "beverages": {
+            "name": "เครื่องดื่ม",
+            "description": ""
           },
-          "food": {
-            "name": "วัสดุอาหาร",
-            "description": "ให้ส่วนผสมอาหารเช่นน้ำมันพืชและเครื่องเทศสำหรับโรงงานแปรรูปอาหาร"
+          "foodProducers": {
+            "name": "ผู้ผลิตอาหาร",
+            "description": ""
           },
-          "textile": {
-            "name": "สิ่งทอ",
-            "description": "ให้วัตถุดิบเช่นด้ายและผ้าสำหรับโรงงานเสื้อผ้า"
+          "tobacco": {
+            "name": "ยาสูบ",
+            "description": ""
           },
-          "paper": {
-            "name": "กระดาษ",
-            "description": "ให้วัตถุดิบเช่นเยื่อกระดาษและกระดาษดิบสำหรับโรงงานผลิตกระดาษและบรรจุภัณฑ์"
+          "constructionMaterials": {
+            "name": "การก่อสร้างและวัสดุ",
+            "description": ""
           },
-          "chemical": {
+          "industrialMaterials": {
+            "name": "วัสดุอุตสาหกรรม",
+            "description": ""
+          },
+          "industrialMetals": {
+            "name": "โลหะอุตสาหกรรมและการทำเหมือง",
+            "description": ""
+          },
+          "preciousMetals": {
+            "name": "โลหะมีค่าและการทำเหมือง",
+            "description": ""
+          },
+          "chemicals": {
             "name": "สารเคมี",
-            "description": "ให้วัตถุดิบเคมีเช่นพลาสติกดิบและสารเคมีพื้นฐานสำหรับอุตสาหกรรมอื่น"
+            "description": ""
           },
-          "construction": {
-            "name": "วัสดุก่อสร้าง",
-            "description": "ให้วัตถุดิบเช่นปูนซีเมนต์ เหล็ก และอิฐสำหรับบริษัทก่อสร้าง"
-          },
-          "mining": {
-            "name": "การขุดเหมือง",
-            "description": "ให้วัตถุดิบเช่นหิน ทราย กรวด และแร่โลหะสำหรับอุตสาหกรรมก่อสร้างและโลหะวิทยา"
+          "oilGasCoal": {
+            "name": "น้ำมัน ก๊าซ และถ่านหิน",
+            "description": ""
           }
         }
       },
       "services": {
         "title": "การผลิตและแปรรูปสำหรับผลิตภัณฑ์ผู้บริโฟคสุดท้าย",
         "sectors": {
-          "foodManufacturing": {
-            "name": "ผู้ผลิตอาหารและเครื่องดื่ม",
-            "description": "แปรรูปและผลิตผลิตภัณฑ์อาหารและเครื่องดื่มสำหรับผู้บริโฟคในตลาดค้าปลีก"
+          "medicalEquipment": {
+            "name": "อุปกรณ์และบริการทางการแพทย์",
+            "description": ""
           },
-          "fashionManufacturing": {
-            "name": "การผลิตสิ่งทอ ผลิตภัณฑ์แฟชั่น",
-            "description": "ผลิตเสื้อผ้า เครื่องประดับแฟชั่น และผลิตภัณฑ์สิ่งทอเพื่อการส่งออก"
+          "pharmaBiotech": {
+            "name": "เภสัชกรรมและเทคโนโลยีชีวภาพ",
+            "description": ""
           },
-          "consumerGoods": {
-            "name": "ผู้ผลิตสินค้าอุปโภคบริโฟค",
-            "description": "ผลิตสินค้าอุปโภคบริโฟคที่จำเป็นเช่นเครื่องสำอาง สิ่งของใช้ในบ้าน และเครื่องใช้สำนักงาน"
+          "automobilesParts": {
+            "name": "ยานยนต์และชิ้นส่วน",
+            "description": ""
           },
-          "electronics": {
-            "name": "ผู้ผลิตอิเล็กทรอนิกส์และเครื่องใช้ไฟฟ้าในบ้าน",
-            "description": "ผลิตและประกอบอุปกรณ์อิเล็กทรอนิกส์ เครื่องจักร และเครื่องใช้ไฟฟ้าในบ้านสมัยใหม่"
+          "householdGoods": {
+            "name": "ของใช้ในครัวเรือนและการสร้างบ้าน",
+            "description": ""
           },
-          "automotive": {
-            "name": "ผู้ผลิตยานพาหนะและชิ้นส่วน",
-            "description": "ผลิตและประกอบรถยนต์ จักรยานยนต์ และชิ้นส่วนอะไหล่"
+          "leisureGoods": {
+            "name": "สินค้าสันทนาการ",
+            "description": ""
+          },
+          "personalGoods": {
+            "name": "สินค้าส่วนบุคคล",
+            "description": ""
+          },
+          "electronicEquipment": {
+            "name": "อุปกรณ์อิเล็กทรอนิกส์และไฟฟ้า",
+            "description": ""
+          },
+          "generalIndustrials": {
+            "name": "อุตสาหกรรมทั่วไป",
+            "description": ""
           }
         }
       },
       "infrastructure": {
         "title": "การแปรรูปชิ้นส่วนอุตสาหกรรมและการสนับสนุน",
         "sectors": {
-          "industrialComponents": {
-            "name": "การแปรรูปชิ้นส่วนสนับสนุนอุตสาหกรรม",
-            "description": "ผลิตชิ้นส่วนและคอมโพเนนต์ที่ใช้ในอุตสาหกรรมต่าง ๆ"
+          "techHardware": {
+            "name": "ฮาร์ดแวร์และอุปกรณ์เทคโนโลยี",
+            "description": ""
           },
-          "semiconductor": {
-            "name": "การแปรรูปชิ้นส่วนอุตสาหกรรมเซมิคอนดักเตอร์",
-            "description": "ผลิตและแปรรูปวงจรรวมและทรานซิสเตอร์"
+          "telecomEquipment": {
+            "name": "อุปกรณ์โทรคมนาคม",
+            "description": ""
           },
-          "precision": {
-            "name": "การแปรรูปกลไกความแม่นยำ",
-            "description": "การกลึง มิลลิ่ง CNC การแปรรูปแม่พิมพ์ ให้บริการอุตสาหกรรมเช่นยานยนต์ ระบบอัตโนมัติ และการผลิตเครื่องจักร"
+          "aerospaceDefense": {
+            "name": "การบินและอวกาศและการป้องกันประเทศ",
+            "description": ""
           },
-          "specializedEquipment": {
-            "name": "การผลิตและจัดหาอุปกรณ์เฉพาะทาง",
-            "description": "แปรรูป ผลิต และจัดหาอุปกรณ์เฉพาะทางสำหรับอุตสาหกรรมอุปกรณ์การแพทย์ อุปกรณ์อัตโนมัติ และชิ้นส่วนยานยนต์"
+          "industrialEngineering": {
+            "name": "วิศวกรรมอุตสาหการ",
+            "description": ""
           }
         }
       }

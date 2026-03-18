@@ -164,9 +164,21 @@ const resources = {
   },
 };
 
+// Detect language from URL path synchronously at init time
+// This prevents the flash of English content before LanguageSync kicks in
+function getInitialLanguage(): string {
+  if (typeof window !== "undefined") {
+    const match = window.location.pathname.match(/^\/(vi|en|jp|th)/);
+    if (match) return match[1];
+  }
+  return "en";
+}
+
+const detectedLng = getInitialLanguage();
+
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en", // Default language is English
+  lng: detectedLng, // Use language detected from URL instead of hardcoding "en"
   fallbackLng: "en",
 
   interpolation: {

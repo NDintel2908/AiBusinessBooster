@@ -11,122 +11,202 @@
     },
     "businessGroups": {
       "manufacturing": {
-        "title": "専門サービスプロバイダー",    
+        "title": "専門サービスプロバイダー",
         "sectors": {
-          "itDevelopment": {
-            "name": "ITソフトウェア開発、AIとIoTのアウトソーシング",
-            "description": "アプリケーション開発、ソフトウェアシステム、AIソリューション、スマートIoTデバイス"
+          "softwareAndComputer": {
+            "name": "ソフトウェアおよびコンピュータサービス",
+            "description": ""
           },
-          "consulting": {
-            "name": "会計、金融、法律、保険コンサルティング",
-            "description": "財務、会計、法律、保険の専門コンサルティングサービス"
+          "telecommunicationsProviders": {
+            "name": "通信サービス提供者",
+            "description": ""
           },
-          "hr": {
-            "name": "人事、採用、トレーニングサービス",
-            "description": "HRコンサルティング、人材採用、トレーニングプログラム開発"
+          "healthCare": {
+            "name": "医療提供者",
+            "description": ""
           },
-          "marketing": {
-            "name": "広告代理店、マーケティング",
-            "description": "マーケティング戦略設計、広告、ブランド構築"
+          "banks": {
+            "name": "銀行",
+            "description": ""
           },
-          "distribution": {
-            "name": "流通サービス、国内貿易",
-            "description": "製品の流通、小売業、国内商業"
+          "financeAndCredit": {
+            "name": "金融および信用サービス",
+            "description": ""
           },
-          "logistics": {
-            "name": "運輸、物流、流通、倉庫管理サービス",
-            "description": "サプライチェーン管理、運輸、専門物流倉庫"
+          "investmentBanking": {
+            "name": "投資銀行および証券仲介サービス",
+            "description": ""
           },
-          "architecture": {
-            "name": "建築設計、オフィスインテリア",
-            "description": "建築設計、スペースプランニング、専門インテリアデザイン"
+          "mortgageRealEstate": {
+            "name": "住宅ローン不動産投資信託",
+            "description": ""
           },
-          "realEstate": {
-            "name": "オフィス、商業、小売、工業地産ビジネス",
-            "description": "投資、開発、商業および工業地産プロジェクトのビジネス"
+          "closedEndInvestments": {
+            "name": "クローズド・エンド型投資",
+            "description": ""
           },
-          "export": {
-            "name": "輸出サービスグループ、クロスボーダーマーケット開発",
-            "description": "輸出サポート、国際市場の拡大、クロスボーダー貿易"
+          "openEndInvestments": {
+            "name": "オープン・エンド型およびその他の投資ビークル",
+            "description": ""
+          },
+          "lifeInsurance": {
+            "name": "生命保険",
+            "description": ""
+          },
+          "nonlifeInsurance": {
+            "name": "損害保険",
+            "description": ""
+          },
+          "realEstateDev": {
+            "name": "不動産投資・サービス開発",
+            "description": ""
+          },
+          "realEstateTrusts": {
+            "name": "不動産投資信託",
+            "description": ""
+          },
+          "consumerServices": {
+            "name": "消費者向けサービス",
+            "description": ""
+          },
+          "media": {
+            "name": "メディア",
+            "description": ""
+          },
+          "retailers": {
+            "name": "小売業者",
+            "description": ""
+          },
+          "travelAndLeisure": {
+            "name": "旅行・レジャー",
+            "description": ""
+          },
+          "personalCare": {
+            "name": "パーソナルケア、薬局、食料品店",
+            "description": ""
+          },
+          "industrialSupport": {
+            "name": "産業支援サービス",
+            "description": ""
+          },
+          "industrialTransportation": {
+            "name": "産業運輸",
+            "description": ""
+          },
+          "alternativeEnergy": {
+            "name": "代替エネルギー",
+            "description": ""
+          },
+          "electricity": {
+            "name": "電力",
+            "description": ""
+          },
+          "gasWater": {
+            "name": "ガス、水道、複合公益事業",
+            "description": ""
+          },
+          "wasteAndDisposal": {
+            "name": "廃棄物処理サービス",
+            "description": ""
           }
         }
       },
       "technology": {
         "title": "製造業の原材料と商品提供",
         "sectors": {
-          "agriculture": {
-            "name": "農業と水産業",
-            "description": "食品加工企業のための原材料、農業製品、海産品の提供"
+          "beverages": {
+            "name": "飲料",
+            "description": ""
           },
-          "food": {
-            "name": "食品原材料",
-            "description": "食品加工企業のための食品原料、野菜油、香辛料の提供"
+          "foodProducers": {
+            "name": "食品製造業",
+            "description": ""
           },
-          "textile": {
-            "name": "繊維",
-            "description": "衣料品企業のための原材料、糸、布の提供"
+          "tobacco": {
+            "name": "タバコ",
+            "description": ""
           },
-          "paper": {
-            "name": "紙",
-            "description": "紙と包装製造企業のための原材料、パルプ、生紙の提供"
+          "constructionMaterials": {
+            "name": "建設および材料",
+            "description": ""
           },
-          "chemical": {
-            "name": "化学",
-            "description": "他の業界のための原材料、未加工のプラスチック、基本化学品の提供"
+          "industrialMaterials": {
+            "name": "産業用材料",
+            "description": ""
           },
-          "construction": {
-            "name": "建設材料",
-            "description": "建設企業のための原材料、セメント、鋼、レンガの提供"
+          "industrialMetals": {
+            "name": "産業用金属および鉱業",
+            "description": ""
           },
-          "mining": {
-            "name": "採掘",
-            "description": "建設と冶金業のための原材料、石、砂、砂利、金属鉱石の提供"
+          "preciousMetals": {
+            "name": "貴金属および鉱業",
+            "description": ""
+          },
+          "chemicals": {
+            "name": "化学製品",
+            "description": ""
+          },
+          "oilGasCoal": {
+            "name": "石油、ガス、石炭",
+            "description": ""
           }
         }
       },
       "services": {
         "title": "エンドユーザー製品の製造と加工",
         "sectors": {
-          "foodManufacturing": {
-            "name": "食品と飲料の製造",
-            "description": "小売市場のための消費者向け食品と飲料製品の加工と製造"
+          "medicalEquipment": {
+            "name": "医療機器およびサービス",
+            "description": ""
           },
-          "fashionManufacturing": {
-            "name": "繊維製造、ファッション製品",
-            "description": "衣料品、ファッションアクセサリー、繊維製品の輸出製品の製造"
+          "pharmaBiotech": {
+            "name": "医薬品およびバイオテクノロジー",
+            "description": ""
           },
-          "consumerGoods": {
-            "name": "消費者向け製品の製造",
-            "description": "化粧品、家庭用品、オフィス用品などの基本的な消費者向け製品の製造"
+          "automobilesParts": {
+            "name": "自動車および部品",
+            "description": ""
           },
-          "electronics": {
-            "name": "電子機器と家庭用機器の製造",
-            "description": "電子機器、機械、最新の家庭用機器の製造と組立"
+          "householdGoods": {
+            "name": "家庭用品および住宅建設",
+            "description": ""
           },
-          "automotive": {
-            "name": "車両と部品の製造",
-            "description": "自動車、二輪車、交換部品、コンポーネントの製造と組立"
+          "leisureGoods": {
+            "name": "レジャー用品",
+            "description": ""
+          },
+          "personalGoods": {
+            "name": "個人用品",
+            "description": ""
+          },
+          "electronicEquipment": {
+            "name": "電子・電気機器",
+            "description": ""
+          },
+          "generalIndustrials": {
+            "name": "一般産業",
+            "description": ""
           }
         }
       },
       "infrastructure": {
         "title": "産業部品の加工とサポート",
         "sectors": {
-          "industrialComponents": {
-            "name": "産業部品の加工",
-            "description": "さまざまな業界で使用される部品とコンポーネントの製造"
+          "techHardware": {
+            "name": "テクノロジーハードウェアおよび機器",
+            "description": ""
           },
-          "semiconductor": {
-            "name": "半導体業界の部品加工",
-            "description": "集積回路とトランジスタの製造と加工"
+          "telecomEquipment": {
+            "name": "通信機器",
+            "description": ""
           },
-          "precision": {
-            "name": "精密機械加工",
-            "description": "CNC旋盤加工、金型加工、自動車、自動化、機械製造業などの業界へのサービス"
+          "aerospaceDefense": {
+            "name": "航空宇宙および防衛",
+            "description": ""
           },
-          "specializedEquipment": {
-            "name": "専門機器の製造と供給",
-            "description": "医療機器、自動化機器、自動車部品業界のための専門機器の加工、製造、供給"
+          "industrialEngineering": {
+            "name": "産業工学",
+            "description": ""
           }
         }
       }

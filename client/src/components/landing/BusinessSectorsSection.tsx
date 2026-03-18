@@ -10,51 +10,83 @@ import "../../lib/i18n";
 const businessData = [
   {
     groupId: "manufacturing",
+    subtitle: "Group A",
+    accentColor: "#3b82f6",
+    badgeBg: "rgba(59, 130, 246, 0.15)",
     groupColor: "from-blue-500 to-cyan-500",
     sectors: [
-      { key: "itDevelopment", icon: "💻" },
-      { key: "consulting", icon: "📊" },
-      { key: "hr", icon: "👥" },
-      { key: "marketing", icon: "📢" },
-      { key: "distribution", icon: "🏪" },
-      { key: "logistics", icon: "🚛" },
-      { key: "architecture", icon: "🏗️" },
-      { key: "realEstate", icon: "🏢" },
-      { key: "export", icon: "🌍" },
+      { key: "softwareAndComputer", icon: "💻" },
+      { key: "telecommunicationsProviders", icon: "📡" },
+      { key: "healthCare", icon: "🏥" },
+      { key: "banks", icon: "🏦" },
+      { key: "financeAndCredit", icon: "💳" },
+      { key: "investmentBanking", icon: "📈" },
+      { key: "mortgageRealEstate", icon: "🏠" },
+      { key: "closedEndInvestments", icon: "📉" },
+      { key: "openEndInvestments", icon: "📊" },
+      { key: "lifeInsurance", icon: "🛡️" },
+      { key: "nonlifeInsurance", icon: "☂️" },
+      { key: "realEstateDev", icon: "🏙️" },
+      { key: "realEstateTrusts", icon: "🏢" },
+      { key: "consumerServices", icon: "👥" },
+      { key: "media", icon: "📺" },
+      { key: "retailers", icon: "🛒" },
+      { key: "travelAndLeisure", icon: "✈️" },
+      { key: "personalCare", icon: "💊" },
+      { key: "industrialSupport", icon: "🔧" },
+      { key: "industrialTransportation", icon: "🚛" },
+      { key: "alternativeEnergy", icon: "☀️" },
+      { key: "electricity", icon: "⚡" },
+      { key: "gasWater", icon: "🚰" },
+      { key: "wasteAndDisposal", icon: "🗑️" },
     ],
   },
   {
     groupId: "technology",
+    subtitle: "Group B",
+    accentColor: "#a855f7",
+    badgeBg: "rgba(168, 85, 247, 0.15)",
     groupColor: "from-purple-500 to-pink-500",
     sectors: [
-      { key: "agriculture", icon: "🌾" },
-      { key: "food", icon: "🍽️" },
-      { key: "textile", icon: "🧵" },
-      { key: "paper", icon: "📄" },
-      { key: "chemical", icon: "🧪" },
-      { key: "construction", icon: "🧱" },
-      { key: "mining", icon: "⛏️" },
+      { key: "beverages", icon: "🥤" },
+      { key: "foodProducers", icon: "🥫" },
+      { key: "tobacco", icon: "🚬" },
+      { key: "constructionMaterials", icon: "🧱" },
+      { key: "industrialMaterials", icon: "⚙️" },
+      { key: "industrialMetals", icon: "⛏️" },
+      { key: "preciousMetals", icon: "💎" },
+      { key: "chemicals", icon: "🧪" },
+      { key: "oilGasCoal", icon: "🛢️" },
     ],
   },
   {
     groupId: "services",
+    subtitle: "Group C",
+    accentColor: "#22c55e",
+    badgeBg: "rgba(34, 197, 94, 0.15)",
     groupColor: "from-green-500 to-teal-500",
     sectors: [
-      { key: "foodManufacturing", icon: "🥤" },
-      { key: "fashionManufacturing", icon: "👕" },
-      { key: "consumerGoods", icon: "🛍️" },
-      { key: "electronics", icon: "📱" },
-      { key: "automotive", icon: "🚗" },
+      { key: "medicalEquipment", icon: "🩺" },
+      { key: "pharmaBiotech", icon: "🧬" },
+      { key: "automobilesParts", icon: "🚗" },
+      { key: "householdGoods", icon: "🏠" },
+      { key: "leisureGoods", icon: "🏕️" },
+      { key: "personalGoods", icon: "🛍️" },
+      { key: "electronicEquipment", icon: "🔌" },
+      { key: "generalIndustrials", icon: "🏭" },
     ],
   },
   {
     groupId: "infrastructure",
+    subtitle: "Group D",
+    accentColor: "#f97316",
+    badgeBg: "rgba(249, 115, 22, 0.15)",
     groupColor: "from-orange-500 to-red-500",
     sectors: [
-      { key: "industrialComponents", icon: "⚙️" },
-      { key: "semiconductor", icon: "🔌" },
-      { key: "precision", icon: "🔧" },
-      { key: "specializedEquipment", icon: "🏭" },
+      { key: "techHardware", icon: "🖥️" },
+      { key: "telecomEquipment", icon: "📱" },
+      { key: "aerospaceDefense", icon: "🚀" },
+      { key: "industrialEngineering", icon: "🛠️" },
     ],
   },
 ];
@@ -64,7 +96,7 @@ export default function BusinessSectorsSection() {
   const [activeGroup, setActiveGroup] = useState<string>(businessData[0].groupId);
   const [mobileModalOpen, setMobileModalOpen] = useState<boolean>(false);
   const [selectedMobileGroup, setSelectedMobileGroup] = useState<string>("");
-  
+
   // Extract language from i18n
   const lang = i18n.language || 'en';
 
@@ -177,114 +209,126 @@ export default function BusinessSectorsSection() {
           {/* Desktop: Two Column Layout */}
           <div className="hidden lg:grid lg:grid-cols-2 gap-8">
             {/* Left Column - Menu Options */}
-            <div className="space-y-4">
-              {businessData.map((group, index) => (
-                <motion.div
-                  key={group.groupId}
-                  className={`cursor-pointer transition-all duration-300 ${
-                    activeGroup === group.groupId
-                      ? 'transform scale-105'
-                      : 'hover:transform hover:scale-102'
-                  }`}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  onMouseEnter={() => handleGroupInteraction(group.groupId, false)}
-                >
-                  <GlassCard 
-                    className={`border-gray-700/50 overflow-hidden transition-all duration-300 ${
-                      activeGroup === group.groupId
-                        ? 'bg-gray-700/50 border-blue-500/50 shadow-lg shadow-blue-500/20'
-                        : 'bg-gray-800/30 hover:bg-gray-700/40'
-                    }`}
+            <div className="bg-[#0f1623] rounded-xl flex flex-col overflow-hidden" style={{ gap: '16px', padding: '16px' }}>
+              {businessData.map((group, index) => {
+                const isActive = activeGroup === group.groupId;
+                return (
+                  <motion.div
+                    key={group.groupId}
+                    className="cursor-pointer relative flex items-center justify-between transition-all duration-300"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    onMouseEnter={() => handleGroupInteraction(group.groupId, false)}
+                    onClick={() => handleGroupInteraction(group.groupId, false)}
+                    style={{
+                      padding: '14px 16px',
+                      backgroundColor: isActive ? '#162032' : 'transparent',
+                      border: isActive ? `1px solid ${group.accentColor}40` : '1px solid transparent',
+                      borderRadius: '8px'
+                    }}
                   >
-                    <div className="px-6 py-4">
-                      <div className="flex items-center space-x-4">
-                        <div
-                          className={`w-4 h-4 rounded-full bg-gradient-to-r ${group.groupColor} ${
-                            activeGroup === group.groupId ? 'animate-pulse' : ''
-                          }`}
-                        ></div>
-                        <span 
-                          className={`text-xl font-semibold transition-colors ${
-                            activeGroup === group.groupId
-                              ? 'text-blue-400'
-                              : 'text-white hover:text-blue-300'
-                          }`}
-                        >
-                          {t(
-                            `businessSectors.businessGroups.${group.groupId}.title`,
-                          )}
-                        </span>
-                      </div>
+                    {/* Left accent bar */}
+                    <div
+                      className="absolute left-0 top-1/2 -translate-y-1/2 rounded-r-full transition-all duration-300"
+                      style={{
+                        width: '3px',
+                        height: isActive ? '80%' : '50%',
+                        backgroundColor: isActive ? group.accentColor : 'transparent',
+                        opacity: isActive ? 1 : 0
+                      }}
+                    />
+
+                    {/* Text */}
+                    <div className="flex flex-col gap-1 z-10 pl-2">
+                      <span className="text-[11px] font-normal tracking-wide" style={{ color: '#4a6070' }}>
+                        {group.subtitle}
+                      </span>
+                      <span className="text-[14px] font-semibold" style={{ color: '#c0cfe8' }}>
+                        {t(`businessSectors.businessGroups.${group.groupId}.title`)}
+                      </span>
                     </div>
-                  </GlassCard>
-                </motion.div>
-              ))}
+
+                    {/* Badge */}
+                    <div
+                      className="rounded-full px-2 py-0.5 z-10"
+                      style={{
+                        backgroundColor: group.badgeBg,
+                        color: group.accentColor,
+                        fontSize: '10px',
+                        fontWeight: 600
+                      }}
+                    >
+                      {group.sectors.length}
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
 
             {/* Right Column - Content Display */}
-            <div className="lg:pl-4">
-              <GlassCard className="border-gray-700/50 bg-gray-800/30 h-[500px] flex flex-col">
-                <div className="p-4 flex-1 overflow-hidden">
-                  {businessData
-                    .filter(group => group.groupId === activeGroup)
-                    .map((group) => (
-                      <motion.div
-                        key={group.groupId}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="h-full flex flex-col"
-                      >
-                        <div className="mb-4 flex-shrink-0">
-                          <div className="flex items-center space-x-2 mb-3">
-                            <div
-                              className={`w-4 h-4 rounded-full bg-gradient-to-r ${group.groupColor}`}
-                            ></div>
-                            <h4 className="text-lg font-semibold text-white">
-                              {t(
-                                `businessSectors.businessGroups.${group.groupId}.title`,
-                              )}
-                            </h4>
-                          </div>
-                        </div>
+            <div className="lg:pl-4 flex flex-col h-[500px]">
+              {businessData
+                .filter(group => group.groupId === activeGroup)
+                .map((group) => (
+                  <motion.div
+                    key={group.groupId}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="h-full flex flex-col space-y-4"
+                  >
+                    {/* Header Bar */}
+                    <div
+                      className="flex-shrink-0"
+                      style={{
+                        backgroundColor: '#131b2b',
+                        border: '1px solid #1e2d47',
+                        borderRadius: '12px',
+                        padding: '16px 20px'
+                      }}
+                    >
+                      <h4 className="text-[13px] md:text-[14px] font-semibold" style={{ color: '#3b82f6' }}>
+                        {group.subtitle} — {t(`businessSectors.businessGroups.${group.groupId}.title`)}
+                      </h4>
+                    </div>
 
-                        <div className="flex-1 overflow-y-auto scrollbar-thin scrollbar-track-gray-800/20 scrollbar-thumb-gray-600/50 hover:scrollbar-thumb-gray-500/70">
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pr-2">
-                            {group.sectors.map((sector, sectorIndex) => (
-                              <motion.div
-                                key={sector.key}
-                                className="flex items-start space-x-2 p-3 rounded-lg bg-gray-700/30 hover:bg-gray-600/40 transition-colors"
-                                initial={{ opacity: 0, x: 20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{
-                                  duration: 0.3,
-                                  delay: sectorIndex * 0.05,
-                                }}
-                              >
-                                <span className="text-lg flex-shrink-0">{sector.icon}</span>
-                                <div className="min-w-0">
-                                  <h5 className="font-medium text-white mb-1 text-sm">
-                                    {t(
-                                      `businessSectors.businessGroups.${group.groupId}.sectors.${sector.key}.name`,
-                                    )}
-                                  </h5>
-                                  <p className="text-xs text-gray-400 leading-relaxed">
-                                    {t(
-                                      `businessSectors.businessGroups.${group.groupId}.sectors.${sector.key}.description`,
-                                    )}
-                                  </p>
-                                </div>
-                              </motion.div>
-                            ))}
-                          </div>
+                    {/* Content List */}
+                    <GlassCard className="border-gray-700/50 bg-gray-800/30 flex-1 overflow-hidden flex flex-col">
+                      <div className="p-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-track-gray-800/20 scrollbar-thumb-gray-600/50 hover:scrollbar-thumb-gray-500/70">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pr-2">
+                          {group.sectors.map((sector, sectorIndex) => (
+                            <motion.div
+                              key={sector.key}
+                              className="flex items-start space-x-2 p-3 rounded-lg bg-gray-700/30 hover:bg-gray-600/40 transition-colors"
+                              initial={{ opacity: 0, x: 20 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{
+                                duration: 0.3,
+                                delay: sectorIndex * 0.05,
+                              }}
+                            >
+                              <span className="text-lg flex-shrink-0">{sector.icon}</span>
+                              <div className="min-w-0">
+                                <h5 className="font-medium text-white mb-1 text-sm">
+                                  {t(
+                                    `businessSectors.businessGroups.${group.groupId}.sectors.${sector.key}.name`,
+                                  )}
+                                </h5>
+                                <p className="text-xs text-gray-400 leading-relaxed">
+                                  {t(
+                                    `businessSectors.businessGroups.${group.groupId}.sectors.${sector.key}.description`,
+                                  )}
+                                </p>
+                              </div>
+                            </motion.div>
+                          ))}
                         </div>
-                      </motion.div>
-                    ))}
-                </div>
-              </GlassCard>
+                      </div>
+                    </GlassCard>
+                  </motion.div>
+                ))}
             </div>
           </div>
         </motion.div>
@@ -340,7 +384,7 @@ export default function BusinessSectorsSection() {
                       </span>
                     </DialogTitle>
                   </DialogHeader>
-                  
+
                   <div className="mt-4 max-h-[60vh] overflow-y-auto scrollbar-thin scrollbar-track-gray-800/20 scrollbar-thumb-gray-600/50">
                     <div className="space-y-3">
                       {group.sectors.map((sector, sectorIndex) => (
